@@ -1,119 +1,87 @@
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Star, Quote, ExternalLink } from "lucide-react";
+import { Star, Quote, ExternalLink, MessageCircle, DollarSign, Heart, ShieldCheck, MapPin, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const reviewStats = {
-  overall: "4.7",
-  totalReviews: 206,
-  breakdown: [
-    { stars: 5, count: 168, percentage: 82 },
-    { stars: 4, count: 24, percentage: 12 },
-    { stars: 3, count: 8, percentage: 4 },
-    { stars: 2, count: 4, percentage: 2 },
-    { stars: 1, count: 2, percentage: 1 },
-  ],
-};
-
-const featuredReviews = [
+const officeRatings = [
   {
-    name: "Sarah Mitchell",
-    location: "Centre, AL",
-    rating: 5,
-    date: "2 weeks ago",
-    text: "Coffey Agencies has been handling my family's insurance for over 10 years. They're always responsive, explain everything clearly, and have saved us money by finding better coverage. Highly recommend!",
-    office: "Centre",
+    office: "Centre, Alabama",
+    rating: "4.7",
+    reviews: 116,
+    googleUrl: "https://g.page/r/YOUR_CENTRE_GOOGLE_PLACE_ID/review",
   },
   {
-    name: "James Patterson",
-    location: "Rome, GA",
-    rating: 5,
-    date: "1 month ago",
-    text: "After shopping around for months, I found Coffey Agencies and couldn't be happier. They took the time to understand my needs and found coverage that was both comprehensive and affordable. Great local service!",
-    office: "Rome",
-  },
-  {
-    name: "Lisa Thompson",
-    location: "Gadsden, AL",
-    rating: 5,
-    date: "3 weeks ago",
-    text: "When I had a claim, the team at Coffey walked me through every step. They made a stressful situation so much easier. This is what real customer service looks like!",
-    office: "Centre",
+    office: "Rome, Georgia",
+    rating: "4.6",
+    reviews: 90,
+    googleUrl: "https://g.page/r/YOUR_ROME_GOOGLE_PLACE_ID/review",
   },
 ];
 
-const allReviews = [
+const reviews = [
   {
-    name: "Michael Davis",
-    location: "Anniston, AL",
-    rating: 5,
-    date: "1 week ago",
-    text: "Professional, knowledgeable, and genuinely care about their clients. They've earned my trust and business for life.",
-    office: "Centre",
+    text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
+    attribution: "Google Review, Centre AL",
   },
   {
-    name: "Jennifer Lee",
-    location: "Cedartown, GA",
-    rating: 5,
-    date: "2 weeks ago",
-    text: "Best insurance experience I've ever had. They found me better coverage at a lower price than my previous agent.",
-    office: "Rome",
+    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
+    attribution: "Google Review, Rome GA",
   },
   {
-    name: "Robert Wilson",
-    location: "Jacksonville, AL",
-    rating: 5,
-    date: "3 weeks ago",
-    text: "Switched to Coffey Agencies last year and haven't looked back. They're always available when I need them.",
-    office: "Centre",
+    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
+    attribution: "Google Review, Centre AL",
   },
   {
-    name: "Amanda Garcia",
-    location: "Silver Creek, GA",
-    rating: 4,
-    date: "1 month ago",
-    text: "Very helpful and responsive. Great local agency that knows the community well.",
-    office: "Rome",
+    text: "Very friendly and helpful staff. They took the time to explain my coverage options and helped me find the best rate. Highly recommend!",
+    attribution: "Google Review",
   },
   {
-    name: "David Brown",
-    location: "Oxford, AL",
-    rating: 5,
-    date: "1 month ago",
-    text: "They made getting insurance for my new business so easy. Excellent guidance throughout the process.",
-    office: "Centre",
+    text: "Switching to Coffey Agencies was the best decision. They saved me money and actually answer the phone when I call. You don't get that with the big companies.",
+    attribution: "Google Review",
   },
   {
-    name: "Emily Martinez",
-    location: "Lindale, GA",
-    rating: 5,
-    date: "2 months ago",
-    text: "Honest, fair pricing and excellent customer service. What more could you ask for?",
-    office: "Rome",
+    text: "Crystal is wonderful! She helped me update my policy and answered all my questions. Fast, friendly service every time.",
+    attribution: "Google Review, Centre AL",
   },
   {
-    name: "Christopher Taylor",
-    location: "Piedmont, AL",
-    rating: 5,
-    date: "2 months ago",
-    text: "Coffey Agencies goes above and beyond. They treat you like family, not just a policy number.",
-    office: "Centre",
+    text: "Maria was so helpful in explaining everything in Spanish for my parents. We really appreciate having an agent who speaks our language and understands our needs.",
+    attribution: "Google Review",
   },
   {
-    name: "Rachel Anderson",
-    location: "Summerville, GA",
-    rating: 5,
-    date: "3 months ago",
-    text: "Been with them for 5 years and never had a bad experience. Reliable and trustworthy.",
-    office: "Rome",
+    text: "Had a claim after a storm and they walked me through the entire process. Couldn't have been easier. This is why you work with a local agent.",
+    attribution: "Google Review",
   },
   {
-    name: "Kevin White",
-    location: "Weaver, AL",
-    rating: 4,
-    date: "3 months ago",
-    text: "Good service and competitive rates. They helped me bundle my policies and save money.",
-    office: "Centre",
+    text: "I've been a customer for over 10 years. They've always treated me right — fair prices, great service, and real people who know my name.",
+    attribution: "Google Review",
+  },
+  {
+    text: "Got my quote in 15 minutes and saved over $400 by bundling my auto and home. Wish I had switched sooner!",
+    attribution: "Google Review",
+  },
+];
+
+const highlights = [
+  {
+    icon: MessageCircle,
+    title: "They Actually Answer the Phone",
+    description: "Real people, real answers — no automated phone trees or week-long waits for callbacks.",
+  },
+  {
+    icon: DollarSign,
+    title: "They Saved Me Money",
+    description: "Bundling discounts, rate reviews, and coverage that fits your budget.",
+  },
+  {
+    icon: Heart,
+    title: "They Treated Me Like Family",
+    description: "Personal service from a team that knows your name and remembers your situation.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "They Helped Me Through My Claim",
+    description: "Local support when it matters most — guidance and advocacy from start to finish.",
   },
 ];
 
@@ -121,77 +89,69 @@ const Reviews = () => {
   return (
     <PageLayout
       title="Customer Reviews"
-      description="See what our customers have to say about their experience with Coffey Agencies."
+      description="What Our Customers Say"
     >
-      {/* Review Stats */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <Card className="border-2 border-primary/20">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-primary mb-2">
-                    {reviewStats.overall}
-                  </div>
-                  <div className="flex justify-center mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 text-yellow-500 fill-yellow-500" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground">
-                    Based on {reviewStats.totalReviews} reviews
-                  </p>
-                </div>
-
-                <div className="space-y-3">
-                  {reviewStats.breakdown.map((item) => (
-                    <div key={item.stars} className="flex items-center gap-3">
-                      <span className="text-sm text-muted-foreground w-12">
-                        {item.stars} star
-                      </span>
-                      <div className="flex-1 h-3 bg-muted rounded-full overflow-hidden">
-                        <div
-                          className="h-full bg-yellow-500"
-                          style={{ width: `${item.percentage}%` }}
-                        />
-                      </div>
-                      <span className="text-sm text-muted-foreground w-12 text-right">
-                        {item.percentage}%
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+      {/* Intro Subhead */}
+      <section className="py-8 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-lg text-muted-foreground">
+            Don't just take our word for it. Here's what families across Alabama and Georgia say about working with Coffey Agencies.
+          </p>
         </div>
       </section>
 
-      {/* Featured Reviews */}
+      {/* Office Ratings */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-6">
+            {officeRatings.map((office, index) => (
+              <Card key={index} className="border-2 border-primary/20">
+                <CardContent className="p-8 text-center">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                    {office.office}
+                  </h3>
+                  <div className="flex justify-center items-baseline gap-2 mb-2">
+                    <span className="text-5xl font-bold text-primary">
+                      {office.rating}
+                    </span>
+                    <Star className="w-8 h-8 text-accent fill-accent" />
+                  </div>
+                  <p className="text-muted-foreground mb-6">
+                    Based on {office.reviews} Google reviews
+                  </p>
+                  <Button asChild>
+                    <a 
+                      href={office.googleUrl}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      Read Reviews on Google
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Grid */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-            Featured Reviews
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {featuredReviews.map((review, index) => (
-              <Card key={index} className="border-border">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reviews.map((review, index) => (
+              <Card key={index} className="border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                  <Quote className="w-8 h-8 text-primary/20 mb-4" />
                   
-                  <div className="flex mb-3">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                    ))}
-                  </div>
-
-                  <p className="text-muted-foreground mb-4">{review.text}</p>
+                  <p className="text-muted-foreground mb-4 leading-relaxed italic">
+                    "{review.text}"
+                  </p>
 
                   <div className="border-t border-border pt-4">
-                    <p className="font-semibold text-foreground">{review.name}</p>
-                    <p className="text-sm text-muted-foreground">{review.location}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{review.date}</p>
+                    <p className="text-sm text-muted-foreground">— {review.attribution}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -200,47 +160,44 @@ const Reviews = () => {
         </div>
       </section>
 
-      {/* All Reviews */}
+      {/* What Customers Love About Us */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-            All Reviews
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
+            What Customers Love About Us
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allReviews.map((review, index) => (
-              <Card key={index} className="border-border">
-                <CardContent className="p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <div className="flex">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                      ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {highlights.map((highlight, index) => {
+              const Icon = highlight.icon;
+              return (
+                <Card key={index} className="border-border text-center">
+                  <CardContent className="p-6">
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                      <Icon className="w-8 h-8 text-primary" />
                     </div>
-                    <span className="text-xs text-muted-foreground">{review.date}</span>
-                  </div>
-
-                  <p className="text-muted-foreground text-sm mb-4">{review.text}</p>
-
-                  <div>
-                    <p className="font-semibold text-foreground text-sm">{review.name}</p>
-                    <p className="text-xs text-muted-foreground">{review.location}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    <h3 className="font-bold text-foreground mb-3">
+                      {highlight.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {highlight.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Leave a Review CTA */}
+      {/* Leave a Review */}
       <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-foreground mb-4">
-            Share Your Experience
+            Had a Great Experience?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            We'd love to hear about your experience with Coffey Agencies!
+            We'd love to hear about it! Your reviews help other families find an insurance team they can trust.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -251,7 +208,7 @@ const Reviews = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
               >
-                Review Centre Office
+                Review Us on Google - Centre
                 <ExternalLink className="w-4 h-4" />
               </a>
             </Button>
@@ -262,11 +219,28 @@ const Reviews = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
               >
-                Review Rome Office
+                Review Us on Google - Rome
                 <ExternalLink className="w-4 h-4" />
               </a>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
+            Ready to Experience the Difference?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Join thousands of Alabama and Georgia families who trust Coffey Agencies.
+          </p>
+          <Button size="lg" asChild>
+            <Link to="/contact">
+              Get Your Free Quote
+            </Link>
+          </Button>
         </div>
       </section>
     </PageLayout>
