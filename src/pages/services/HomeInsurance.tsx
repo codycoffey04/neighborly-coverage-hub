@@ -410,7 +410,7 @@ const HomeInsurance = () => {
                     {alabamaCities.map((city) => (
                       <Link
                         key={city.slug}
-                        to={`/service-areas/${city.slug}`}
+                        to={`/${city.slug}`}
                         className="text-muted-foreground hover:text-primary hover:underline transition-colors"
                       >
                         {city.name}
@@ -425,7 +425,7 @@ const HomeInsurance = () => {
                     {georgiaCities.map((city) => (
                       <Link
                         key={city.slug}
-                        to={`/service-areas/${city.slug}`}
+                        to={`/${city.slug}`}
                         className="text-muted-foreground hover:text-primary hover:underline transition-colors"
                       >
                         {city.name}

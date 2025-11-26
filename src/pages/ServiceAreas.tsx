@@ -24,13 +24,31 @@ const offices = [
 ];
 
 const alabamaCities = [
-  "Birmingham", "Montgomery", "Mobile", "Dothan", "Auburn", 
-  "Phenix City", "Foley", "Troy", "Enterprise", "Centre"
+  { name: "Centre", slug: "centre-al" },
+  { name: "Birmingham", slug: "birmingham-al" },
+  { name: "Montgomery", slug: "montgomery-al" },
+  { name: "Mobile", slug: "mobile-al" },
+  { name: "Dothan", slug: "dothan-al" },
+  { name: "Auburn", slug: "auburn-al" },
+  { name: "Phenix City", slug: "phenix-city-al" },
+  { name: "Foley", slug: "foley-al" },
+  { name: "Troy", slug: "troy-al" },
+  { name: "Enterprise", slug: "enterprise-al" }
 ];
 
 const georgiaCities = [
-  "Atlanta", "Lawrenceville", "Duluth", "Columbus", "Cartersville", 
-  "Calhoun", "Cedartown", "Summerville", "Suwanee", "Alpharetta", "Marietta", "Rome"
+  { name: "Rome", slug: "rome-ga" },
+  { name: "Atlanta", slug: "atlanta-ga" },
+  { name: "Lawrenceville", slug: "lawrenceville-ga" },
+  { name: "Duluth", slug: "duluth-ga" },
+  { name: "Columbus", slug: "columbus-ga" },
+  { name: "Cartersville", slug: "cartersville-ga" },
+  { name: "Calhoun", slug: "calhoun-ga" },
+  { name: "Cedartown", slug: "cedartown-ga" },
+  { name: "Summerville", slug: "summerville-ga" },
+  { name: "Suwanee", slug: "suwanee-ga" },
+  { name: "Alpharetta", slug: "alpharetta-ga" },
+  { name: "Marietta", slug: "marietta-ga" }
 ];
 
 const ServiceAreas = () => {
@@ -111,13 +129,14 @@ const ServiceAreas = () => {
                   Alabama
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {alabamaCities.map((city, index) => (
-                    <span 
-                      key={index} 
-                      className="px-3 py-1.5 bg-background rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                  {alabamaCities.map((city) => (
+                    <Link
+                      key={city.slug}
+                      to={`/${city.slug}`}
+                      className="px-3 py-1.5 bg-background rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors"
                     >
-                      {city}
-                    </span>
+                      {city.name}
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -129,13 +148,14 @@ const ServiceAreas = () => {
                   Georgia
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {georgiaCities.map((city, index) => (
-                    <span 
-                      key={index} 
-                      className="px-3 py-1.5 bg-background rounded-lg text-sm border hover:border-secondary hover:text-secondary transition-colors cursor-pointer"
+                  {georgiaCities.map((city) => (
+                    <Link
+                      key={city.slug}
+                      to={`/${city.slug}`}
+                      className="px-3 py-1.5 bg-background rounded-lg text-sm border hover:border-secondary hover:text-secondary transition-colors"
                     >
-                      {city}
-                    </span>
+                      {city.name}
+                    </Link>
                   ))}
                 </div>
               </div>
