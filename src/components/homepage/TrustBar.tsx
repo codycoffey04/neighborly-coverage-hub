@@ -25,10 +25,8 @@ export const TrustBar = () => {
 
           {/* Centre Rating */}
           <div className="text-center space-y-2">
-            <div className="flex justify-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-              ))}
+            <div className="flex justify-center">
+              <Star className="h-8 w-8 text-primary" />
             </div>
             <p className="text-3xl font-bold text-foreground">4.7★</p>
             <p className="text-sm text-muted-foreground">Centre, AL</p>
@@ -37,10 +35,8 @@ export const TrustBar = () => {
 
           {/* Rome Rating */}
           <div className="text-center space-y-2">
-            <div className="flex justify-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-              ))}
+            <div className="flex justify-center">
+              <Star className="h-8 w-8 text-primary" />
             </div>
             <p className="text-3xl font-bold text-foreground">4.6★</p>
             <p className="text-sm text-muted-foreground">Rome, GA</p>
