@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import coffeyLogo from "@/assets/coffey-logo.jpg";
@@ -11,28 +12,34 @@ export const Header = () => {
       <div className="container-custom">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src={coffeyLogo} 
               alt="Coffey Agencies - Insurance Services" 
               className="h-12 w-auto"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <a href="#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <a href="/#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Services
             </a>
-            <a href="#why-choose-us" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               About
-            </a>
-            <a href="#service-area" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            </Link>
+            <a href="/#service-area" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Locations
             </a>
-            <a href="#faq" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <Link to="/faq" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               FAQ
-            </a>
+            </Link>
+            <Link to="/reviews" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Reviews
+            </Link>
+            <Link to="/blog" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Blog
+            </Link>
           </nav>
 
           {/* Contact & CTA */}
@@ -48,9 +55,11 @@ export const Header = () => {
                 <span className="font-medium">(706) 784-6511</span>
               </a>
             </div>
-            <Button className="bg-accent text-accent-foreground hover:bg-accent-light">
-              Get Quote
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-accent text-accent-foreground hover:bg-accent-light">
+                Get Quote
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,33 +81,47 @@ export const Header = () => {
           <div className="lg:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
               <a 
-                href="#services" 
+                href="/#services" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Services
               </a>
-              <a 
-                href="#why-choose-us" 
+              <Link 
+                to="/about" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
-              </a>
+              </Link>
               <a 
-                href="#service-area" 
+                href="/#service-area" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Locations
               </a>
-              <a 
-                href="#faq" 
+              <Link 
+                to="/faq" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 FAQ
-              </a>
+              </Link>
+              <Link 
+                to="/reviews" 
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Reviews
+              </Link>
+              <Link 
+                to="/blog" 
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
               <div className="flex flex-col gap-2 pt-2 border-t border-border">
                 <a href="tel:256-927-6287" className="flex items-center gap-2 text-sm">
                   <Phone className="h-4 w-4" />
@@ -109,9 +132,11 @@ export const Header = () => {
                   <span>(706) 784-6511 - Rome</span>
                 </a>
               </div>
-              <Button className="w-full bg-accent text-accent-foreground hover:bg-accent-light">
-                Get Quote
-              </Button>
+              <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent-light">
+                  Get Quote
+                </Button>
+              </Link>
             </nav>
           </div>
         )}
