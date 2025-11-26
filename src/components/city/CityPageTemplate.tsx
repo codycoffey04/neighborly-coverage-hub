@@ -71,7 +71,7 @@ const whyChoosePillars = [
   }
 ];
 
-const testimonials = [
+const defaultTestimonials = [
   {
     name: "Teresa Gardiner",
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
@@ -111,6 +111,7 @@ const officeDetails = {
 export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   const office = city.isOfficeCity ? officeDetails[city.nearestOffice] : null;
   const nearestOfficeInfo = officeDetails[city.nearestOffice];
+  const testimonials = city.testimonials || defaultTestimonials;
 
   // JSON-LD Schema for FAQ
   const faqSchema = {
@@ -168,10 +169,10 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   return (
     <>
       <Helmet>
-        <title>Insurance Agency in {city.city}, {city.state} | Coffey Agencies</title>
+        <title>{city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`}</title>
         <meta 
           name="description" 
-          content={`Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
+          content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
         />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
@@ -187,7 +188,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       </Helmet>
 
       <PageLayout
-        title={`Insurance Agency in ${city.city}, ${city.state}`}
+        title={city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state}`}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Service Areas", href: "/service-areas" },
@@ -198,9 +199,15 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center space-y-6">
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Local expertise for {city.city} families — auto, home, renters, condo, and life insurance
-              </p>
+              {city.customHeroSubhead ? (
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                  {city.customHeroSubhead}
+                </p>
+              ) : (
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                  Local expertise for {city.city} families — auto, home, renters, condo, and life insurance
+                </p>
+              )}
               
               {/* Trust Indicators */}
               <div className="flex flex-wrap justify-center gap-6">
@@ -259,83 +266,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
 
         {/* Section 2: City Introduction */}
         <section className="py-16 px-4">
-          <div className="container mx-auto max-w-4xl">
-            <div className="space-y-6">
-              {city.introduction.map((paragraph, index) => (
-                <p key={index} className="text-lg text-muted-foreground leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-
-            {/* Office Details (if this is an office city) */}
-            {city.isOfficeCity && office && (
-              <Card className="mt-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <Building className="h-7 w-7 text-primary" />
-                    <CardTitle className="text-2xl">Visit Our {city.city} Office</CardTitle>
-                  </div>
-                  <p className="text-sm text-muted-foreground">DBA: {office.dba}</p>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-2">
-                        <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{office.address}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Phone className="h-5 w-5 text-primary shrink-0" />
-                        <a href={`tel:${office.phone.replace(/[^0-9]/g, '')}`} className="text-primary font-semibold hover:underline">
-                          {office.phone}
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Clock className="h-5 w-5 text-primary shrink-0" />
-                        <span className="text-muted-foreground">{office.hours}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Star className="h-5 w-5 text-accent fill-accent shrink-0" />
-                        <span className="font-semibold">{office.rating}★</span>
-                        <span className="text-muted-foreground">({office.reviews} reviews)</span>
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Our {city.city} Team:</h4>
-                      <ul className="space-y-1">
-                        {office.team.map((member, index) => (
-                          <li key={index} className="flex items-center gap-2 text-muted-foreground">
-                            <CheckCircle className="h-4 w-4 text-accent shrink-0" />
-                            {member}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <Button className="w-full mt-4" asChild>
-                    <Link to="/contact">Visit Our {city.city} Office</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Nearest Office Reference (non-office cities) */}
-            {!city.isOfficeCity && (
-              <Card className="mt-8 bg-muted/30">
-                <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Nearest Office:</strong> Our {nearestOfficeInfo.dba === "Cody Coffey Agency" ? "Centre, AL" : "Rome, GA"} office serves {city.city} residents. 
-                    Call <a href={`tel:${nearestOfficeInfo.phone.replace(/[^0-9]/g, '')}`} className="text-primary font-semibold hover:underline">{nearestOfficeInfo.phone}</a> or <Link to="/contact" className="text-primary font-semibold hover:underline">request a quote online</Link>.
-                  </p>
-                </CardContent>
-              </Card>
-            )}
-          </div>
-        </section>
-
-        {/* Section 3: Services We Offer */}
-        <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">

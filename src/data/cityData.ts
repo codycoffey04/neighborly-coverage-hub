@@ -14,6 +14,15 @@ export interface CityData {
   neighborhoods: string[];
   nearbyCities: string[];
   faqs: { question: string; answer: string; }[];
+  
+  // Extended content for flagship office pages (optional)
+  customHeroTitle?: string;
+  customHeroSubhead?: string;
+  weatherRisks?: string;
+  neighborhoodCoverage?: string;
+  economyInfo?: string;
+  localExcellence?: string;
+  testimonials?: { name: string; text: string; }[];
 }
 
 export const cityData: Record<string, CityData> = {
@@ -23,41 +32,99 @@ export const cityData: Record<string, CityData> = {
     city: "Centre",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["35960"],
+    zipCodes: ["35960", "35961", "35962", "35963", "35973", "35983", "35987", "35988", "35990"],
     isOfficeCity: true,
     nearestOffice: "centre",
+    localPhone: "(256) 927-6287",
+    customHeroTitle: "Auto Insurance Quote Centre, AL - Compare Rates & Save Up to $600",
+    customHeroSubhead: "Local help with auto insurance in the 35960 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies has proudly served Centre, Alabama families and businesses since 2009. Our Centre office at 1913 W Main Street serves as our headquarters, providing comprehensive insurance solutions to our community.",
-      "As a local agency deeply rooted in Cherokee County, we understand the unique insurance needs of Centre residents. From severe weather protection to liability coverage, our team provides personalized service backed by years of local expertise.",
-      "Visit our Centre office Monday-Friday 8:00 AM – 5:00 PM for in-person consultations, or call (256) 927-6287 for immediate assistance."
+      "The 35960 area faces unique insurance challenges requiring specialized understanding of Cherokee County risks. From tornado threats peaking during April and May to flash flooding concerns near the Coosa River and Weiss Lake, residents need insurance protection tailored to Northeast Alabama's specific hazards. Our local Centre office delivers expert coverage recommendations with the convenience of in-person service or digital options for Downtown Centre, Cedar Bluff area, or any neighborhood throughout the region.",
+      "With approximately 3,500 residents and a median household income around $35,000, this tight-knit rural community includes educators at Cherokee County Schools, healthcare professionals at Cherokee Medical Center, retail workers at Wal-Mart, public sector employees at Cherokee County Government, and manufacturing workers throughout the area. Each household has distinct insurance needs, whether protecting homes in the Gaylesville vicinity or securing auto coverage for rural commutes. Centre's character as Cherokee County's seat creates specific insurance considerations for both established neighborhoods and rural properties."
     ],
+    weatherRisks: "Living in Centre means preparing for diverse weather challenges year-round. Tornado season brings peak risks during April and May, with severe storms capable of producing significant damage across neighborhoods from the Leesburg area to Sand Rock. Severe thunderstorms deliver damaging winds and large hail affecting properties throughout Spring Garden and the Ball Play area. Straight-line winds can cause extensive tree damage in rural areas. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit.\n\nThe Coosa River and Weiss Lake present flooding risks that standard policies typically exclude. Properties near these waterways and throughout the County Road 22 corridor should consider flood insurance as critical protection. Flash flooding from severe thunderstorms can affect low-lying areas even away from major water features. Occasional winter ice storms create unique hazards for rural properties throughout Cherokee County. We analyze your specific location in Centre to determine risk levels and recommend appropriate coverage for 35960 residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Historic Downtown Centre features diverse housing stock requiring appropriate coverage reflecting property values and construction types. Rural areas near Cedar Bluff and the Gaylesville vicinity may have unique considerations including outbuildings, well water systems, and longer emergency response times. Properties in the Leesburg area, Sand Rock, and Spring Garden benefit from understanding tornado exposure and flood zone designations affecting premium calculations.\n\nBundling home and auto insurance in Centre saves money while creating comprehensive protection for rural Alabama living. Whether commuting through Cherokee County for work, traveling along the County Road 22 corridor, or navigating rural roads throughout Northeast Alabama, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Centre households facing regional weather risks and rural living considerations.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Cherokee County Schools employing hundreds of educators, many residents need reliable coverage supporting stable careers. Cherokee Medical Center represents significant healthcare employment requiring comprehensive protection for medical professionals. Wal-Mart provides retail opportunities throughout Centre. Cherokee County Government workers represent local public sector employment. Local manufacturing facilities bring industrial jobs requiring appropriate coverage for hardworking families throughout the 35960 area.\n\nZIP codes served include 35960, 35961, 35962, 35963, 35973, 35983, 35987, 35988, and 35990—each with distinct demographic and risk profiles. Our platform analyzes these factors to provide customized quotes reflecting your specific situation in Centre, whether you're a first-time homebuyer near the Ball Play area or updating established household coverage in Downtown Centre. Understanding tornado exposure, river flooding potential, and rural property considerations ensures appropriate protection levels.",
+    localExcellence: "Operating from our Centre headquarters at 1913 W Main Street, we provide both in-person service and digital convenience to Cherokee County residents. You receive comprehensive coverage analysis and personalized attention with flexible options for visiting our office or handling everything online. Licensed Alabama agents (License #416438) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks like tornado exposure and rural property challenges.\n\nOur local presence combined with modern technology enables faster quotes, streamlined claims support, and efficient policy management. This approach translates to competitive rates for auto insurance in the 35960 area while maintaining the personal service expected from your local Centre insurance agency. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during severe weather season when quick action protects your Centre property and family.",
     localConsiderations: "Centre residents face spring tornado season and occasional severe thunderstorms requiring comprehensive wind/hail coverage. Rural and suburban driving patterns call for appropriate liability limits and UM/UIM protection.",
-    neighborhoods: ["Downtown Centre", "East Centre", "West Main Street", "Highway 9 Corridor", "Cherokee County Industrial Park", "Centre School District", "Rural Cherokee County", "Lake Weiss Area"],
-    nearbyCities: ["birmingham-al", "auburn-al", "rome-ga"],
+    neighborhoods: ["Downtown Centre", "Cedar Bluff area", "Gaylesville vicinity", "Leesburg area", "Sand Rock", "Spring Garden", "Ball Play area", "County Road 22 corridor", "Cherokee County Schools area", "Cherokee Medical Center area", "Rural Cherokee County", "Northeast Alabama", "Coosa River area", "Weiss Lake area"],
+    nearbyCities: ["birmingham-al", "trussville-al", "montgomery-al"],
     faqs: [
       {
-        question: "What are the auto insurance requirements in Alabama?",
-        answer: "Alabama requires minimum liability coverage of 25/50/25 ($25,000 bodily injury per person, $50,000 per accident, $25,000 property damage). However, we recommend higher limits to protect your assets and future earnings."
+        question: "Where is your Centre office located?",
+        answer: "Our Centre office is located at 1913 W Main Street, Centre, AL 35960. We serve Cherokee County and surrounding areas with both in-person and digital insurance services. Whether you prefer visiting our office or handling everything online, we're here to help 35960 residents with comprehensive coverage."
       },
       {
-        question: "Does home insurance cover tornado damage in Centre?",
-        answer: "Yes, standard home insurance policies cover tornado wind damage. Centre sits in Dixie Alley with spring tornado risk, making comprehensive wind/hail coverage essential. We'll help you choose appropriate deductibles and coverage limits."
+        question: "How significant is flood risk near the Coosa River and Weiss Lake?",
+        answer: "Properties near the Coosa River and Weiss Lake face elevated flood risks, particularly during severe storms. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "How much does insurance cost in Centre, AL?",
-        answer: "Costs vary based on coverage type, limits, deductibles, and individual factors. Auto insurance in Cherokee County typically ranges $800-1,500 annually. Home insurance depends on rebuild cost, roof age, and coverage selections. Contact us for personalized quotes."
+        question: "What bundle savings are available for Centre residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Centre residents can maximize savings by combining multiple policies, whether insuring a home in the Cedar Bluff area and vehicles for county commutes, or protecting a property in the Leesburg area with auto coverage."
       },
       {
-        question: "Can I visit your Centre office for in-person service?",
-        answer: "Absolutely! Our Centre headquarters at 1913 W Main Street is open Monday-Friday 8:00 AM – 5:00 PM. Walk-ins welcome, or call (256) 927-6287 to schedule an appointment."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, rural driving patterns and unique considerations throughout Cherokee County often warrant higher limits for adequate protection of your family and assets."
       },
       {
-        question: "Do you offer multi-policy discounts in Centre?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We also offer discounts for safe drivers, autopay, paperless billing, and protective devices."
+        question: "How does tornado season affect insurance in Centre?",
+        answer: "Cherokee County experiences peak tornado risk during April and May as part of Northeast Alabama's severe weather patterns. Homeowners insurance rates reflect this exposure, with proper coverage ensuring protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
       },
       {
-        question: "What makes Coffey Agencies different from other Centre insurance agents?",
-        answer: "We're locally owned and operated in Centre since 2009. When you call, you speak with our Centre team who know Cherokee County's unique risks. We provide personalized service, not automated systems."
+        question: "Do rural properties have different insurance needs?",
+        answer: "Rural Cherokee County properties often have unique considerations including longer emergency response times, well water systems, outbuildings, and agricultural structures. We structure coverage addressing these rural-specific factors, ensuring comprehensive protection for properties throughout Sand Rock, Spring Garden, and surrounding areas."
+      },
+      {
+        question: "What factors affect auto insurance rates in Centre?",
+        answer: "Auto insurance rates consider your ZIP code (35960 and surrounding areas), driving record, vehicle type, and commute distance. Rural driving patterns and local factors factor into personalized rates, along with claims history and demographic considerations specific to Cherokee County."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our process means Centre residents can receive quotes within minutes and have active coverage the same day, protecting homes in Downtown Centre, the Gaylesville vicinity, or any other neighborhood throughout the 35960 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
+  },
+
+  "trussville-al": {
+    slug: "trussville-al",
+    city: "Trussville",
+    state: "Alabama",
+    stateAbbr: "AL",
+    zipCodes: ["35173", "35235"],
+    isOfficeCity: false,
+    nearestOffice: "centre",
+    introduction: [
+      "Coffey Agencies serves Trussville, Alabama residents with personalized insurance solutions. Content coming soon - contact our Centre office at (256) 927-6287 for Trussville insurance quotes."
+    ],
+    localConsiderations: "Trussville residents face tornado season and severe thunderstorms typical of central Alabama. Growing suburban community with mix of new and established neighborhoods requiring appropriate coverage levels.",
+    neighborhoods: ["Downtown Trussville", "Cahaba River area", "Deerfoot Parkway", "North Trussville"],
+    nearbyCities: ["birmingham-al", "centre-al", "montgomery-al"],
+    faqs: [
+      {
+        question: "Does Coffey Agencies serve Trussville, AL?",
+        answer: "Yes! We serve Trussville residents from our Centre, AL office. Call (256) 927-6287 for personalized insurance quotes for auto, home, renters, condo, and life insurance."
+      },
+      {
+        question: "What insurance do Trussville residents need?",
+        answer: "Trussville residents typically need auto insurance (Alabama requires 25/50/25 minimum liability), home insurance for property protection, and often renters or condo insurance depending on housing type. We'll help you determine the right coverage."
+      },
+      {
+        question: "How quickly can I get insurance in Trussville?",
+        answer: "Most quotes take 15 minutes, and coverage can often start the same day. Contact our Centre office at (256) 927-6287 for fast, personalized service."
       }
     ]
   },
