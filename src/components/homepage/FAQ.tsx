@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "What are your office hours?",
-    answer: "Our Centre, AL office is open Monday-Friday, 8:30 AM - 5:00 PM. Our Rome, GA office is open Monday-Friday, 9:00 AM - 5:30 PM. You can also reach us by phone or submit a quote request online anytime."
+    answer: "Our Centre, AL office is open Monday–Friday, 8:00 AM – 5:00 PM. Our Rome, GA office is open Monday–Friday, 8:30 AM – 4:30 PM. You can also reach us by phone or submit a quote request online anytime."
   },
   {
     question: "Can I bundle my auto and home insurance?",

@@ -93,13 +93,13 @@ export const Footer = () => {
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:2569273105" className="hover:text-primary transition-colors">
-                      (256) 927-3105
+                    <a href="tel:2569276287" className="hover:text-primary transition-colors">
+                      (256) 927-6287
                     </a>
                   </p>
                   <p className="flex items-start gap-2">
                     <Clock className="h-4 w-4 shrink-0 mt-0.5" />
-                    <span>Mon-Fri: 8:30 AM - 5:00 PM</span>
+                    <span>Monday–Friday, 8:00 AM – 5:00 PM</span>
                   </p>
                 </div>
               </div>
@@ -114,13 +114,13 @@ export const Footer = () => {
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:7062344555" className="hover:text-primary transition-colors">
-                      (706) 234-4555
+                    <a href="tel:7067846511" className="hover:text-primary transition-colors">
+                      (706) 784-6511
                     </a>
                   </p>
                   <p className="flex items-start gap-2">
                     <Clock className="h-4 w-4 shrink-0 mt-0.5" />
-                    <span>Mon-Fri: 9:00 AM - 5:30 PM</span>
+                    <span>Monday–Friday, 8:30 AM – 4:30 PM</span>
                   </p>
                 </div>
               </div>

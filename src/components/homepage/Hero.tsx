@@ -47,12 +47,12 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-6 pt-8 text-sm">
             <div className="space-y-1">
               <p className="font-semibold text-foreground">Centre, AL Office</p>
-              <p className="text-muted-foreground">(256) 927-3105</p>
+              <p className="text-muted-foreground">(256) 927-6287</p>
             </div>
             <div className="hidden sm:block w-px bg-border"></div>
             <div className="space-y-1">
               <p className="font-semibold text-foreground">Rome, GA Office</p>
-              <p className="text-muted-foreground">(706) 234-4555</p>
+              <p className="text-muted-foreground">(706) 784-6511</p>
             </div>
           </div>
         </div>

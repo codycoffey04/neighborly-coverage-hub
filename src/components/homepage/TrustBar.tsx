@@ -30,8 +30,9 @@ export const TrustBar = () => {
                 <Star key={i} className="h-5 w-5 fill-accent text-accent" />
               ))}
             </div>
-            <p className="text-3xl font-bold text-foreground">4.7</p>
-            <p className="text-sm text-muted-foreground">Centre, AL Rating</p>
+            <p className="text-3xl font-bold text-foreground">4.7★</p>
+            <p className="text-sm text-muted-foreground">Centre, AL</p>
+            <p className="text-xs text-muted-foreground">(116 reviews)</p>
           </div>
 
           {/* Rome Rating */}
@@ -41,8 +42,9 @@ export const TrustBar = () => {
                 <Star key={i} className="h-5 w-5 fill-accent text-accent" />
               ))}
             </div>
-            <p className="text-3xl font-bold text-foreground">4.6</p>
-            <p className="text-sm text-muted-foreground">Rome, GA Rating</p>
+            <p className="text-3xl font-bold text-foreground">4.6★</p>
+            <p className="text-sm text-muted-foreground">Rome, GA</p>
+            <p className="text-xs text-muted-foreground">(90 reviews)</p>
           </div>
         </div>
 
