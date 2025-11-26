@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import ServiceAreas from "./pages/ServiceAreas";
 import AutoInsurance from "./pages/services/AutoInsurance";
+import HomeInsurance from "./pages/services/HomeInsurance";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/services/auto-insurance" element={<AutoInsurance />} />
+          <Route path="/services/home-insurance" element={<HomeInsurance />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
