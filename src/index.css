@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Color System - Warm, Trustworthy Palette */
+    /* Color System - Coffey Brand Colors */
     --background: 40 25% 98%;
     --foreground: 220 20% 15%;
 
@@ -16,21 +16,21 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 15%;
 
-    /* Primary: Deep Teal - Trustworthy, Modern */
-    --primary: 195 85% 42%;
+    /* Primary: Navy Blue - Professional, Trustworthy */
+    --primary: 212 51% 24%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 195 75% 55%;
-    --primary-dark: 195 85% 32%;
+    --primary-light: 212 45% 35%;
+    --primary-dark: 212 55% 18%;
 
-    /* Secondary: Warm Sage - Calming, Growth */
-    --secondary: 140 35% 50%;
+    /* Secondary: Steel Blue - Modern, Sophisticated */
+    --secondary: 214 22% 56%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 140 35% 65%;
+    --secondary-light: 214 22% 70%;
 
-    /* Accent: Warm Amber - Friendly, Action */
-    --accent: 35 90% 60%;
-    --accent-foreground: 220 20% 15%;
-    --accent-light: 35 90% 75%;
+    /* Accent: Emerald Green - Growth, Action */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 142 71% 60%;
 
     /* Neutrals */
     --muted: 40 15% 92%;
@@ -38,7 +38,7 @@
 
     --border: 220 15% 88%;
     --input: 220 15% 88%;
-    --ring: 195 85% 42%;
+    --ring: 212 51% 24%;
 
     /* Destructive */
     --destructive: 0 72% 51%;
@@ -47,12 +47,12 @@
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 220 20% 15%;
-    --sidebar-primary: 195 85% 42%;
+    --sidebar-primary: 212 51% 24%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 40 15% 92%;
     --sidebar-accent-foreground: 220 20% 15%;
     --sidebar-border: 220 15% 88%;
-    --sidebar-ring: 195 85% 42%;
+    --sidebar-ring: 212 51% 24%;
 
     /* Spacing & Layout */
     --radius: 0.5rem;
@@ -83,37 +83,37 @@
     --popover: 220 20% 13%;
     --popover-foreground: 40 15% 95%;
 
-    --primary: 195 85% 50%;
+    --primary: 212 55% 45%;
     --primary-foreground: 220 25% 10%;
-    --primary-light: 195 75% 65%;
-    --primary-dark: 195 85% 40%;
+    --primary-light: 212 50% 55%;
+    --primary-dark: 212 60% 35%;
 
-    --secondary: 140 35% 55%;
+    --secondary: 214 25% 65%;
     --secondary-foreground: 220 25% 10%;
-    --secondary-light: 140 35% 70%;
+    --secondary-light: 214 25% 75%;
 
-    --accent: 35 90% 65%;
+    --accent: 142 71% 55%;
     --accent-foreground: 220 25% 10%;
-    --accent-light: 35 90% 80%;
+    --accent-light: 142 71% 70%;
 
     --muted: 220 20% 18%;
     --muted-foreground: 40 10% 60%;
 
     --border: 220 20% 22%;
     --input: 220 20% 22%;
-    --ring: 195 85% 50%;
+    --ring: 212 55% 45%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
     --sidebar-background: 220 20% 13%;
     --sidebar-foreground: 40 15% 95%;
-    --sidebar-primary: 195 85% 50%;
+    --sidebar-primary: 212 55% 45%;
     --sidebar-primary-foreground: 220 25% 10%;
     --sidebar-accent: 220 20% 18%;
     --sidebar-accent-foreground: 40 15% 95%;
     --sidebar-border: 220 20% 22%;
-    --sidebar-ring: 195 85% 50%;
+    --sidebar-ring: 212 55% 45%;
   }
 }
 
