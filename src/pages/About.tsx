@@ -65,9 +65,7 @@ const About = () => {
                   our community.
                 </p>
                 <p>
-                  As a family-owned and operated independent insurance agency, we've grown from serving 
-                  our neighbors in Centre, Alabama to expanding throughout the region, opening our second 
-                  office in Rome, Georgia.
+                  [About page content to be provided]
                 </p>
                 <p>
                   What sets us apart is our commitment to being more than just an insurance provider—we're 
@@ -141,9 +139,9 @@ const About = () => {
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Independent Agency</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Dedicated Partnership</h3>
               <p className="text-muted-foreground">
-                We shop multiple carriers to find you the best coverage at the best price—we work for you, not the insurance company.
+                [About page content to be provided]
               </p>
             </div>
             
