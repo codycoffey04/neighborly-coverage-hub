@@ -313,41 +313,84 @@ export const cityData: Record<string, CityData> = {
     city: "Auburn",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["36830"],
+    zipCodes: ["36830", "36832", "36849", "36804", "36801", "36866"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(334) 553-9258",
+    customHeroTitle: "Insurance in Auburn, AL (36830)",
+    customHeroSubhead: "Local help with auto insurance in the 36830 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Auburn, Alabama residents with comprehensive insurance for the Auburn-Opelika area. Home to Auburn University, our coverage protects students, families, and professionals with auto, home, renters, condo, and life insurance.",
-      "Auburn's blend of college culture, family neighborhoods, and growing commerce creates diverse insurance needs. Our team helps students, homeowners, and renters find appropriate coverage at competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Auburn insurance quotes and local service."
+      "Auburn faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with large hail to flooding concerns along Chewacla Creek and Saugahatchee Creek, residents need insurance protection tailored to East Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home near Downtown Auburn, Toomer's Corner, or any neighborhood in Lee County.",
+      "With approximately 47,543 residents in the city and 193,773 across the metro area, with a median household income around $63,761, this vibrant community includes Auburn University students and faculty, healthcare workers at East Alabama Medical Center, and professionals at Auburn Research Park tech companies. Each household has distinct insurance needs, whether protecting student apartments near campus, insuring homes near creek flood zones, or securing auto coverage for commutes along the I-85 corridor."
     ],
-    localConsiderations: "Auburn experiences spring tornado season and severe thunderstorms. High student population creates demand for renters insurance and young driver auto coverage. Football game days increase traffic density requiring adequate liability protection.",
-    neighborhoods: ["Downtown Auburn", "Auburn University campus", "College Street", "Wire Road", "Opelika Road", "Moores Mill", "Cary Woods", "Forestdale", "Garden District", "East Auburn", "Auburn-Opelika area"],
-    nearbyCities: ["birmingham-al", "montgomery-al", "phenix-city-al"],
+    weatherRisks: "Living in Auburn means preparing for diverse weather challenges year-round. Severe thunderstorm season brings heightened risk from March through May, with large hail threatening vehicles and roofs across neighborhoods from Cary Woods to Yarbrough Farms. Tornado threats occur regularly in this Dixie Alley location during spring months, requiring comprehensive wind coverage. These weather patterns make proper homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit.\n\nChewacla Creek and Saugahatchee Creek present flooding risks that standard policies typically exclude. Properties in low-lying areas and creek corridors should consider flood insurance as critical protection. Winter ice storms, while occasional, can cause power outages and tree damage requiring proper coverage. We analyze your specific location in Auburn to determine risk levels and recommend appropriate coverage for residents throughout Lee County.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. The Auburn University campus area features high-density student housing requiring specialized renters insurance and auto coverage with student discounts. Downtown Auburn properties near Toomer's Corner may have historic buildings with unique replacement cost considerations. Cary Woods and Yarbrough Farms established neighborhoods feature mature trees that can pose storm risks. Wrights Mill and Richland communities benefit from rural property coverage options. Properties along the Opelika border and I-85 corridor face different traffic-related risks.\n\nBundling home and auto insurance in Auburn saves money while creating comprehensive protection for college town living. Whether commuting to Auburn University campus, navigating College Street traffic, or traveling I-85 to Montgomery or Atlanta, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Auburn and Lee County residents, including students and university employees.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. Auburn University employs over 5,000 faculty and staff, with thousands more students needing specialized coverage including renters insurance and affordable auto policies with good grade discounts. East Alabama Medical Center healthcare workers appreciate competitive rates and flexible payment options. Auburn City Schools and Lee County School System employees benefit from our digital convenience and bundle savings. Auburn Research Park tech companies and manufacturing sector workers at KW Plastics and automotive parts suppliers may own newer vehicles requiring comprehensive auto coverage.\n\nZIP codes served include 36830, 36832, 36849, 36804, 36801, and 36866—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're an Auburn University student renting your first off-campus apartment, a first-time homebuyer in Yarbrough Farms, or updating established household coverage in rural Lee County. Student discounts and flexible policies accommodate the university's academic calendar and housing transitions between semesters.",
+    localExcellence: "Operating from Centre headquarters, we've perfected digital insurance delivery to Auburn and Lee County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or dorm room. Licensed Alabama agents (License #416438) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to East Alabama and the Chewacla Creek watershed.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 36830 area while maintaining personal service expected from local agents, despite our Centre location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—perfect for Auburn University students managing policies during breaks, busy professionals at the medical center and research park, and families managing multiple properties across Lee County. Our platform accommodates game day traffic patterns and academic calendar considerations unique to this college town.",
+    localConsiderations: "Auburn residents face severe thunderstorms, tornado risk, and flooding concerns along Chewacla Creek and Saugahatchee Creek. Auburn University students and employees have unique insurance needs including renters coverage and good student discounts.",
+    neighborhoods: [
+      "Downtown Auburn",
+      "Toomer's Corner",
+      "Cary Woods",
+      "Yarbrough Farms",
+      "Wrights Mill",
+      "Richland",
+      "Auburn University campus area",
+      "College Street area",
+      "Opelika border",
+      "I-85 corridor",
+      "Chewacla Creek area",
+      "Saugahatchee Creek area",
+      "East Auburn",
+      "Lee County"
+    ],
+    nearbyCities: ["montgomery-al", "birmingham-al", "trussville-al"],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ],
     faqs: [
       {
-        question: "Do Auburn University students need renters insurance?",
-        answer: "Yes! Many Auburn landlords and student housing require renters insurance. It protects personal property (laptops, furniture, clothing) from fire, theft, and water damage—typically $10-20/month for students."
+        question: "Do I need to visit your office to get insurance in Auburn?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes can be handled online or by phone, saving 36830 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "How much does auto insurance cost for young drivers in Auburn?",
-        answer: "Young drivers (16-25) pay higher rates due to inexperience. Auburn students can save by maintaining good grades (good student discount), taking defensive driving, and staying on parents' policies when possible."
+        question: "Do you offer student insurance for Auburn University students?",
+        answer: "Yes, we specialize in coverage for Auburn University students including renters insurance for dorms and off-campus apartments, auto insurance with student discounts and good grade reductions, and flexible policies accommodating academic calendars and summer breaks. Our digital platform makes it easy for students to get quotes and manage policies during breaks and between semesters."
       },
       {
-        question: "Can I get discounts on Auburn insurance?",
-        answer: "Yes! We offer multi-policy bundling (15-25% savings), good student discounts, safe driver discounts, autopay/paperless billing, and protective device credits. Auburn University students often qualify for multiple discounts."
+        question: "What bundle savings are available for Auburn residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Auburn residents can maximize savings by combining multiple policies, whether insuring a home in Cary Woods and vehicles for university commutes, or protecting student apartments near campus with auto coverage."
       },
       {
-        question: "What home insurance coverage do Auburn homeowners need?",
-        answer: "Auburn homes should have adequate dwelling coverage (rebuild cost, not market value), wind/hail protection, and liability coverage. Newer subdivisions may have different requirements than older neighborhoods."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on College Street, around Jordan-Hare Stadium on game days, and along the I-85 corridor often warrants higher limits for adequate protection."
       },
       {
-        question: "Does Coffey Agencies serve Auburn University students?",
-        answer: "Absolutely! We help students set up renters insurance and auto coverage. Many students save by bundling or staying on parents' policies. Call (256) 927-6287 for student quotes."
+        question: "How does creek flooding affect homeowners insurance in Auburn?",
+        answer: "Properties near Chewacla Creek and Saugahatchee Creek face elevated flood risks during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for creek-side properties and low-lying areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs in flood-prone areas of Lee County."
       },
       {
-        question: "What insurance do I need for off-campus housing in Auburn?",
-        answer: "Renters insurance is essential for off-campus apartments and houses. It covers personal property, liability, and additional living expenses if your rental becomes uninhabitable—typically $15-25/month."
+        question: "Does tornado risk affect insurance rates in Auburn?",
+        answer: "Auburn's location in Dixie Alley means elevated tornado risk, particularly during spring months. Comprehensive homeowners insurance with adequate wind and hail coverage is essential, with potential separate wind deductibles. Premiums reflect this regional risk, and we ensure coverage adequately protects your home and belongings."
+      },
+      {
+        question: "What factors affect auto insurance rates in Auburn?",
+        answer: "Auto insurance rates consider your ZIP code (36830 and surrounding areas), driving record, vehicle type, and commute distance. Traffic patterns near Auburn University campus, College Street congestion, and I-85 corridor risks factor into personalized rates. Students may qualify for good grade discounts and away-at-school reductions when the vehicle isn't regularly driven."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes in Yarbrough Farms, student apartments near Toomer's Corner, or properties in Wrights Mill and rural Lee County communities."
       }
     ]
   },
