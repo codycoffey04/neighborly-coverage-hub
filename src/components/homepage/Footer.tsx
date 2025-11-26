@@ -89,7 +89,7 @@ export const Footer = () => {
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p className="flex items-start gap-2">
                     <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                    <span>123 Main Street<br />Centre, AL 35960</span>
+                    <span>1913 W Main Street<br />Centre, AL 35960</span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
@@ -110,7 +110,7 @@ export const Footer = () => {
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p className="flex items-start gap-2">
                     <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                    <span>456 Broad Street<br />Rome, GA 30161</span>
+                    <span>1703 Turner McCall Blvd SE<br />Rome, GA 30161</span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
