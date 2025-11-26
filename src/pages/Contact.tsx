@@ -5,28 +5,39 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MapPin, Phone, Clock, Mail, Star } from "lucide-react";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { MapPin, Phone, Clock, Star } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const offices = [
   {
-    name: "Centre, Alabama Office",
-    address: "1913 W Main Street, Centre, AL 35960",
+    name: "Centre, Alabama",
+    subtitle: "(Headquarters)",
+    dba: "DBA: Cody Coffey Agency",
+    address: "1913 W Main Street",
+    cityStateZip: "Centre, AL 35960",
     phone: "(256) 927-6287",
-    hours: "Monday–Friday: 8:00 AM – 5:00 PM",
+    phoneRaw: "2569276287",
+    hours: "Monday–Friday\n8:00 AM – 5:00 PM",
     rating: "4.7",
     reviews: "116",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.123!2d-85.678!3d34.151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA5JzAzLjYiTiA4NcKwNDAnNDAuOCJX!5e0!3m2!1sen!2sus!4v1234567890",
+    mapAddress: "1913 W Main Street, Centre, AL 35960",
   },
   {
-    name: "Rome, Georgia Office",
-    address: "1703 Turner McCall Blvd SE, Rome, GA 30161",
+    name: "Rome, Georgia",
+    subtitle: "",
+    dba: "DBA: Millican & Coffey Agency",
+    address: "1703 Turner McCall Blvd SE",
+    cityStateZip: "Rome, GA 30161",
     phone: "(706) 784-6511",
-    hours: "Monday–Friday: 8:30 AM – 4:30 PM",
+    phoneRaw: "7067846511",
+    hours: "Monday–Friday\n8:30 AM – 4:30 PM",
     rating: "4.6",
     reviews: "90",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.123!2d-85.234!3d34.257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDE1JzI1LjIiTiA4NcKwMTQnMDIuNCJX!5e0!3m2!1sen!2sus!4v1234567890",
+    mapAddress: "1703 Turner McCall Blvd SE, Rome, GA 30161",
   },
 ];
 
@@ -50,7 +61,7 @@ const Contact = () => {
 
       toast({
         title: "Message Sent!",
-        description: "We'll get back to you within 24 hours.",
+        description: "We'll get back to you within one business day.",
       });
 
       form.reset();
@@ -68,163 +79,176 @@ const Contact = () => {
   return (
     <PageLayout
       title="Contact Us"
-      description="Get in touch with our team for personalized insurance solutions. We're here to help!"
+      description="Get in Touch"
     >
-      {/* Contact Form & Info */}
+      {/* Intro */}
+      <section className="py-8 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-lg text-muted-foreground">
+            Whether you need a quote, have a question, or want to make a policy change — we're here to help.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Form */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Get Your Free Quote</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form 
-                  name="coffey-insurance-lead" 
-                  method="POST" 
-                  data-netlify="true"
-                  onSubmit={handleSubmit}
-                  className="space-y-6"
-                >
-                  <input type="hidden" name="form-name" value="coffey-insurance-lead" />
-                  
+        <div className="container mx-auto max-w-4xl">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <form 
+                name="contact-form" 
+                method="POST" 
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact-form" />
+                <input type="hidden" name="bot-field" />
+                
+                <div className="space-y-2">
+                  <Label htmlFor="name">Name *</Label>
+                  <Input 
+                    id="name" 
+                    name="name" 
+                    placeholder="John Smith" 
+                    required 
+                  />
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Full Name *</Label>
+                    <Label htmlFor="email">Email *</Label>
                     <Input 
-                      id="name" 
-                      name="name" 
-                      placeholder="John Smith" 
+                      id="email" 
+                      name="email" 
+                      type="email" 
+                      placeholder="john@example.com" 
                       required 
                     />
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
-                      <Input 
-                        id="email" 
-                        name="email" 
-                        type="email" 
-                        placeholder="john@example.com" 
-                        required 
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone *</Label>
-                      <Input 
-                        id="phone" 
-                        name="phone" 
-                        type="tel" 
-                        placeholder="(256) 555-1234" 
-                        required 
-                      />
-                    </div>
-                  </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="insurance-type">Insurance Type *</Label>
-                    <Select name="insurance-type" required>
-                      <SelectTrigger id="insurance-type">
-                        <SelectValue placeholder="Select insurance type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="auto">Auto Insurance</SelectItem>
-                        <SelectItem value="home">Home Insurance</SelectItem>
-                        <SelectItem value="life">Life Insurance</SelectItem>
-                        <SelectItem value="business">Business Insurance</SelectItem>
-                        <SelectItem value="health">Health Insurance</SelectItem>
-                        <SelectItem value="multiple">Multiple Types</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      name="message" 
-                      placeholder="Tell us about your insurance needs..."
-                      rows={5}
+                    <Label htmlFor="phone">Phone *</Label>
+                    <Input 
+                      id="phone" 
+                      name="phone" 
+                      type="tel" 
+                      placeholder="(256) 555-1234" 
+                      required 
                     />
                   </div>
+                </div>
 
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? "Sending..." : "Get My Free Quote"}
-                  </Button>
+                <div className="space-y-2">
+                  <Label htmlFor="service-interest">Service Interest *</Label>
+                  <Select name="service-interest" required>
+                    <SelectTrigger id="service-interest">
+                      <SelectValue placeholder="Select service type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="auto">Auto Insurance</SelectItem>
+                      <SelectItem value="home">Home Insurance</SelectItem>
+                      <SelectItem value="renters">Renters Insurance</SelectItem>
+                      <SelectItem value="condo">Condo Insurance</SelectItem>
+                      <SelectItem value="life">Life Insurance</SelectItem>
+                      <SelectItem value="bundling">Multiple/Bundling</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
 
-                  <p className="text-sm text-muted-foreground text-center">
-                    We typically respond within 24 hours
-                  </p>
-                </form>
-              </CardContent>
-            </Card>
+                <div className="space-y-2">
+                  <Label htmlFor="message">How Can We Help?</Label>
+                  <Textarea 
+                    id="message" 
+                    name="message" 
+                    placeholder="Tell us about your insurance needs..."
+                    rows={5}
+                  />
+                </div>
 
-            {/* Quick Contact Info */}
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Prefer to Call?</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <Label>Preferred Contact Method *</Label>
+                  <RadioGroup name="contact-method" defaultValue="either" required>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="phone" id="phone-method" />
+                      <Label htmlFor="phone-method" className="font-normal cursor-pointer">Phone</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="email" id="email-method" />
+                      <Label htmlFor="email-method" className="font-normal cursor-pointer">Email</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="either" id="either-method" />
+                      <Label htmlFor="either-method" className="font-normal cursor-pointer">Either</Label>
+                    </div>
+                  </RadioGroup>
+                </div>
+
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
+
+                <p className="text-sm text-muted-foreground text-center">
+                  We typically respond within one business day. Need immediate help? Call us directly.
+                </p>
+              </form>
+            </CardContent>
+          </Card>
+
+          {/* Quick Contact Options */}
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <Card>
+              <CardContent className="pt-6 text-center">
+                <Phone className="w-10 h-10 text-primary mx-auto mb-3" />
+                <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
+                <div className="space-y-1 text-sm">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Centre, AL Office</h4>
-                    <a 
-                      href="tel:(256)927-6287" 
-                      className="text-2xl font-bold text-primary hover:underline"
-                    >
+                    <div className="text-muted-foreground">Centre:</div>
+                    <a href="tel:2569276287" className="text-primary hover:underline">
                       (256) 927-6287
                     </a>
                   </div>
-                  
-                  <div className="border-t border-border pt-4">
-                    <h4 className="font-semibold text-foreground mb-2">Rome, GA Office</h4>
-                    <a 
-                      href="tel:(706)784-6511" 
-                      className="text-2xl font-bold text-primary hover:underline"
-                    >
+                  <div>
+                    <div className="text-muted-foreground">Rome:</div>
+                    <a href="tel:7067846511" className="text-primary hover:underline">
                       (706) 784-6511
                     </a>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-3 mb-4">
-                    <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <div>
-                      <div className="font-semibold text-foreground mb-1">Email Us</div>
-                      <a 
-                        href="mailto:info@coffeyagencies.com" 
-                        className="text-primary hover:underline"
-                      >
-                        info@coffeyagencies.com
-                      </a>
-                    </div>
-                  </div>
+            <Card>
+              <CardContent className="pt-6 text-center">
+                <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
+                <h3 className="font-semibold text-foreground mb-2">Office Hours</h3>
+                <div className="space-y-1 text-sm text-muted-foreground">
+                  <div>Centre: Mon–Fri, 8 AM – 5 PM</div>
+                  <div>Rome: Mon–Fri, 8:30 AM – 4:30 PM</div>
+                </div>
+              </CardContent>
+            </Card>
 
-                  <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <div>
-                      <div className="font-semibold text-foreground mb-1">Business Hours</div>
-                      <p className="text-muted-foreground text-sm">
-                        Monday–Friday<br />
-                        Centre: 8:00 AM – 5:00 PM<br />
-                        Rome: 8:30 AM – 4:30 PM
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            <Card>
+              <CardContent className="pt-6 text-center">
+                <MapPin className="w-10 h-10 text-primary mx-auto mb-3" />
+                <h3 className="font-semibold text-foreground mb-2">Visit Us</h3>
+                <p className="text-sm text-muted-foreground">
+                  Two locations in Centre, AL and Rome, GA<br />
+                  Walk-ins welcome during business hours
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -233,45 +257,48 @@ const Contact = () => {
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Visit Our Offices</h2>
-            <p className="text-muted-foreground">
-              Stop by for in-person service at either of our convenient locations.
-            </p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Our Offices</h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {offices.map((office, index) => (
               <Card key={index}>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-4">{office.name}</h3>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    {office.name} {office.subtitle && <span className="text-lg font-normal text-muted-foreground">{office.subtitle}</span>}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-6">{office.dba}</p>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start gap-3">
                       <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{office.address}</span>
+                      <div>
+                        <div className="text-muted-foreground">{office.address}</div>
+                        <div className="text-muted-foreground">{office.cityStateZip}</div>
+                      </div>
                     </div>
                     
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                      <a href={`tel:${office.phone}`} className="text-primary hover:underline">
+                      <a href={`tel:${office.phoneRaw}`} className="text-primary hover:underline">
                         {office.phone}
                       </a>
                     </div>
                     
                     <div className="flex items-start gap-3">
                       <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{office.hours}</span>
+                      <span className="text-muted-foreground whitespace-pre-line">{office.hours}</span>
                     </div>
                     
                     <div className="flex items-center gap-2 pt-2">
                       <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                      <span className="font-semibold text-foreground">{office.rating}</span>
+                      <span className="font-semibold text-foreground">{office.rating}★</span>
                       <span className="text-muted-foreground">({office.reviews} reviews)</span>
                     </div>
                   </div>
 
-                  {/* Map Placeholder */}
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                  {/* Map */}
+                  <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-4">
                     <iframe
                       src={office.mapEmbed}
                       width="100%"
@@ -284,23 +311,57 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button 
-                    variant="outline" 
-                    className="w-full mt-4"
-                    asChild
-                  >
-                    <a 
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(office.address)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    <Button 
+                      variant="outline" 
+                      asChild
                     >
-                      Get Directions
-                    </a>
-                  </Button>
+                      <a 
+                        href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(office.mapAddress)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Get Directions
+                      </a>
+                    </Button>
+                    <Button 
+                      asChild
+                    >
+                      <a href={`tel:${office.phoneRaw}`}>
+                        Call {office.name.split(',')[0]} Office
+                      </a>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Service Area Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Serving All of Alabama & Georgia</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            From our offices in Centre and Rome, we provide insurance coverage to families throughout both states. No matter where you live in Alabama or Georgia, we can help — no office visit required.
+          </p>
+          <Button size="lg" variant="outline" asChild>
+            <a href="/service-areas">View All Service Areas</a>
+          </Button>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Get Started?</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Get a free quote in about 15 minutes. No obligation, no pressure.
+          </p>
+          <Button size="lg" asChild>
+            <a href="#contact-form">Get Your Free Quote</a>
+          </Button>
         </div>
       </section>
     </PageLayout>
