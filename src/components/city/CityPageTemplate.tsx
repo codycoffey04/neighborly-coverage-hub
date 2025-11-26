@@ -148,6 +148,23 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     }
   } : null;
 
+  // JSON-LD Schema for Place (all cities)
+  const placeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "@id": `https://coffeyagencies.com/${city.slug}#place`,
+    "name": `${city.city}, ${city.state}`,
+    "description": `Insurance services for ${city.city}, ${city.state} residents. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": city.city,
+      "addressRegion": city.stateAbbr,
+      "postalCode": city.zipCodes.join(", "),
+      "addressCountry": "US"
+    },
+    "containsPlace": city.neighborhoods.map(n => ({ "@type": "Place", "name": n }))
+  };
+
   return (
     <>
       <Helmet>
@@ -164,6 +181,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             {JSON.stringify(localBusinessSchema)}
           </script>
         )}
+        <script type="application/ld+json">
+          {JSON.stringify(placeSchema)}
+        </script>
       </Helmet>
 
       <PageLayout
@@ -211,16 +231,26 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
                 <div className="flex flex-col sm:flex-row gap-2 items-center">
-                  <div className="flex items-center gap-2 text-sm">
-                    <Phone className="h-4 w-4 text-primary" />
-                    <span className="font-semibold">Alabama:</span>
-                    <a href="tel:256-927-6287" className="text-primary hover:underline">(256) 927-6287</a>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Phone className="h-4 w-4 text-primary" />
-                    <span className="font-semibold">Georgia:</span>
-                    <a href="tel:706-784-6511" className="text-primary hover:underline">(706) 784-6511</a>
-                  </div>
+                  {city.localPhone ? (
+                    <div className="flex items-center gap-2 text-sm">
+                      <Phone className="h-4 w-4 text-primary" />
+                      <span className="font-semibold">Local:</span>
+                      <a href={`tel:${city.localPhone.replace(/[^0-9]/g, '')}`} className="text-primary hover:underline">{city.localPhone}</a>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="flex items-center gap-2 text-sm">
+                        <Phone className="h-4 w-4 text-primary" />
+                        <span className="font-semibold">Alabama:</span>
+                        <a href="tel:256-927-6287" className="text-primary hover:underline">(256) 927-6287</a>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <Phone className="h-4 w-4 text-primary" />
+                        <span className="font-semibold">Georgia:</span>
+                        <a href="tel:706-784-6511" className="text-primary hover:underline">(706) 784-6511</a>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

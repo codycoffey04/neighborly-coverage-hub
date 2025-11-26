@@ -6,6 +6,7 @@ export interface CityData {
   zipCodes: string[];
   isOfficeCity: boolean;
   nearestOffice: "centre" | "rome";
+  localPhone?: string;
   
   // Content (placeholder initially - you'll provide unique content)
   introduction: string[];
@@ -69,38 +70,41 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["35215", "35235"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(205) 880-4893",
     introduction: [
-      "Coffey Agencies proudly serves Birmingham, Alabama families with comprehensive insurance coverage tailored to the Magic City's unique needs. From Homewood to Vestavia Hills, we protect Birmingham residents with auto, home, renters, condo, and life insurance.",
-      "Birmingham's mix of urban density, suburban neighborhoods, and severe weather patterns requires thoughtful insurance planning. Our team understands Jefferson County's risks and helps you build coverage that fits your lifestyle and budget.",
-      "Contact our nearest office in Centre, AL at (256) 927-6287 for personalized Birmingham insurance quotes and service."
+      "Birmingham is Alabama's largest city and the economic hub of the state. With over 200,000 residents in the city proper and more than a million in the metro area, Birmingham families face unique insurance considerations — from dense urban traffic to severe spring weather. Whether you're in the Roebuck area (35215) or the Huffman community (35235), Coffey Agencies provides the coverage options and personal service that big-city agencies often lack."
     ],
-    localConsiderations: "Birmingham experiences spring tornado season, occasional ice storms, and urban property crime requiring comprehensive coverage. Heavy interstate traffic (I-20, I-59, I-65) increases accident risk, making higher liability limits and UM/UIM essential.",
-    neighborhoods: ["Homewood", "Mountain Brook", "Vestavia Hills", "Hoover", "Trussville", "Irondale", "Gardendale", "Five Points South", "Highland Park", "Avondale", "Crestwood", "Forest Park", "Glen Iris", "Southside"],
-    nearbyCities: ["montgomery-al", "auburn-al", "centre-al"],
+    localConsiderations: "Birmingham sits in the heart of Alabama's tornado alley, with spring bringing significant severe weather risk including tornadoes, hail, and damaging winds. The metro area's heavy traffic on I-20, I-59, and I-65 increases accident frequency, making adequate auto coverage essential. Older neighborhoods often have aging roofs vulnerable to storm damage, while newer developments in the eastern suburbs face different considerations. Comprehensive coverage and higher liability limits are particularly important for Birmingham drivers.",
+    neighborhoods: [
+      "Roebuck", "Huffman", "Center Point", "Trussville (nearby)", 
+      "Irondale", "Eastwood", "Crestwood", "Woodlawn", "East Lake", 
+      "Avondale", "Highland Park", "Forest Park", "Norwood", "North Birmingham"
+    ],
+    nearbyCities: ["montgomery-al", "auburn-al", "mobile-al"],
     faqs: [
       {
-        question: "What are typical auto insurance costs in Birmingham?",
-        answer: "Birmingham auto insurance typically costs more than rural Alabama due to higher traffic density and accident rates. Average annual premiums range $1,200-2,000 depending on coverage, driving record, and vehicle. Bundling with home or renters insurance reduces costs."
+        question: "Why is car insurance more expensive in Birmingham?",
+        answer: "Birmingham's higher population density means more vehicles on the road and increased accident risk, particularly on major interstates like I-20, I-59, and I-65. Urban areas also see higher rates of vehicle theft and vandalism. However, bundling policies and maintaining a clean driving record can significantly reduce your premium. We'll help you find every available discount."
+      },
+      {
+        question: "How does Birmingham's weather affect my home insurance?",
+        answer: "Birmingham sits in a high-risk area for tornadoes, hail, and severe thunderstorms, particularly from March through May. This means home insurance rates reflect that risk, and having adequate dwelling coverage and a reasonable deductible is critical. We recommend reviewing your policy annually to ensure your coverage keeps pace with rebuilding costs, which have increased significantly."
+      },
+      {
+        question: "What auto insurance limits do you recommend for Birmingham drivers?",
+        answer: "Given Birmingham's traffic density and the potential severity of interstate accidents, we typically recommend liability limits above state minimums — often 50/100/50 or higher. Uninsured motorist coverage is essential since Alabama has a higher-than-average rate of uninsured drivers. We'll show you pricing at several limit levels so you can make an informed choice."
       },
       {
         question: "Do I need flood insurance in Birmingham?",
-        answer: "While not universally required, low-lying areas near creeks and the Birmingham flood zones should consider flood insurance. Standard home insurance doesn't cover flood damage. We can assess your specific property's flood risk."
+        answer: "Standard home insurance doesn't cover flood damage, and Birmingham has areas prone to flash flooding, particularly near creeks and low-lying neighborhoods. Even if you're not in a FEMA flood zone, flood insurance may be worth considering. We can help you get a quote through the National Flood Insurance Program or private insurers."
       },
       {
-        question: "How much renters insurance do Birmingham residents need?",
-        answer: "Most Birmingham renters need $15,000-30,000 in personal property coverage with $300,000 liability. Renters insurance averages $15-30/month and bundles with auto insurance for savings."
+        question: "Can I get same-day coverage in Birmingham?",
+        answer: "Yes. Most quotes take about 15 minutes, and once you've selected your coverage, we can have your policy active the same day. If you need proof of insurance for a vehicle purchase, lease signing, or mortgage closing, we'll provide documentation immediately."
       },
       {
-        question: "What home insurance considerations apply to Birmingham?",
-        answer: "Birmingham homes face tornado, hail, and storm risks. Older homes may have outdated roofs, plumbing, or electrical systems affecting insurability and pricing. Roof age, updates, and protective devices significantly impact rates."
-      },
-      {
-        question: "Does Coffey Agencies serve all Birmingham neighborhoods?",
-        answer: "Yes, we serve all Birmingham areas including Homewood, Vestavia Hills, Hoover, Mountain Brook, and surrounding Jefferson County communities. Call (256) 927-6287 for Birmingham quotes."
-      },
-      {
-        question: "Can I get same-day insurance coverage in Birmingham?",
-        answer: "In many cases, yes! Auto and renters insurance often activate same-day. Home insurance may require inspection or documentation. Contact us to discuss your timeline."
+        question: "How do I get a quote if I'm in Birmingham and your office is in Centre?",
+        answer: "No office visit needed. We handle everything by phone, email, and online. You'll get the same personal service and local expertise whether you're across town or across the state. Call us at (256) 927-6287 or request a quote online — we'll take it from there."
       }
     ]
   },
