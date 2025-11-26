@@ -1,5 +1,6 @@
-import { MapPin, Building2 } from "lucide-react";
+import { MapPin, Building2, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const offices = [
   {
@@ -67,66 +68,42 @@ export const ServiceArea = () => {
                     <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span>{office.address}</span>
                   </p>
-                  <p className="font-semibold text-foreground text-lg">
-                    {office.phone}
+                  <p className="flex items-center gap-2">
+                    <Phone className="h-5 w-5 text-primary shrink-0" />
+                    <a href={`tel:${office.phone.replace(/[^0-9]/g, '')}`} className="font-semibold text-foreground text-lg hover:text-primary transition-colors">
+                      {office.phone}
+                    </a>
                   </p>
                   <p className="text-sm">
                     {office.hours}
                   </p>
                 </div>
 
-                <button className="mt-6 w-full btn-primary py-3 rounded-lg font-semibold">
-                  Get Directions
-                </button>
+                <Link to="/contact">
+                  <button className="mt-6 w-full btn-primary py-3 rounded-lg font-semibold">
+                    Get Directions
+                  </button>
+                </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Service Areas */}
-        <div className="bg-muted/30 rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Cities We Serve</h3>
+        {/* Statewide Coverage */}
+        <div className="bg-muted/30 rounded-2xl p-8 md:p-12 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">Statewide Coverage</h3>
+          <p className="text-lg text-muted-foreground mb-6">
+            Serving all of Alabama and Georgia
+          </p>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Alabama */}
-            <div>
-              <h4 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
-                <MapPin className="h-5 w-5" />
-                Alabama
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {alabamaCities.map((city, index) => (
-                  <span 
-                    key={index} 
-                    className="px-3 py-1.5 bg-background rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors cursor-pointer"
-                  >
-                    {city}
-                  </span>
-                ))}
-              </div>
-            </div>
+          <Link to="/service-areas" className="inline-block">
+            <button className="btn-primary px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+              View All Service Areas →
+            </button>
+          </Link>
 
-            {/* Georgia */}
-            <div>
-              <h4 className="text-xl font-bold mb-4 text-secondary flex items-center gap-2">
-                <MapPin className="h-5 w-5" />
-                Georgia
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {georgiaCities.map((city, index) => (
-                  <span 
-                    key={index} 
-                    className="px-3 py-1.5 bg-background rounded-lg text-sm border hover:border-secondary hover:text-secondary transition-colors cursor-pointer"
-                  >
-                    {city}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <p className="text-center text-muted-foreground mt-8">
-            Don't see your city? <span className="text-primary font-semibold cursor-pointer hover:underline">Contact us</span> to see if we can help.
+          <p className="text-muted-foreground mt-8">
+            Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> to see if we can help.
           </p>
         </div>
       </div>
