@@ -14,6 +14,7 @@ import ServiceAreas from "./pages/ServiceAreas";
 import AutoInsurance from "./pages/services/AutoInsurance";
 import HomeInsurance from "./pages/services/HomeInsurance";
 import RentersInsurance from "./pages/services/RentersInsurance";
+import CondoInsurance from "./pages/services/CondoInsurance";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/services/auto-insurance" element={<AutoInsurance />} />
           <Route path="/services/home-insurance" element={<HomeInsurance />} />
           <Route path="/services/renters-insurance" element={<RentersInsurance />} />
+          <Route path="/services/condo-insurance" element={<CondoInsurance />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
