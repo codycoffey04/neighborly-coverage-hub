@@ -139,14 +139,31 @@ const testimonials = [
 ];
 
 const alabamaCities = [
-  "Centre", "Birmingham", "Montgomery", "Mobile", "Dothan", 
-  "Auburn", "Phenix City", "Foley", "Troy", "Enterprise"
+  { name: "Centre", slug: "centre-al" },
+  { name: "Birmingham", slug: "birmingham-al" },
+  { name: "Montgomery", slug: "montgomery-al" },
+  { name: "Mobile", slug: "mobile-al" },
+  { name: "Dothan", slug: "dothan-al" },
+  { name: "Auburn", slug: "auburn-al" },
+  { name: "Phenix City", slug: "phenix-city-al" },
+  { name: "Foley", slug: "foley-al" },
+  { name: "Troy", slug: "troy-al" },
+  { name: "Enterprise", slug: "enterprise-al" }
 ];
 
 const georgiaCities = [
-  "Rome", "Atlanta", "Lawrenceville", "Duluth", "Columbus", 
-  "Cartersville", "Calhoun", "Cedartown", "Summerville", "Suwanee", 
-  "Alpharetta", "Marietta"
+  { name: "Rome", slug: "rome-ga" },
+  { name: "Atlanta", slug: "atlanta-ga" },
+  { name: "Lawrenceville", slug: "lawrenceville-ga" },
+  { name: "Duluth", slug: "duluth-ga" },
+  { name: "Columbus", slug: "columbus-ga" },
+  { name: "Cartersville", slug: "cartersville-ga" },
+  { name: "Calhoun", slug: "calhoun-ga" },
+  { name: "Cedartown", slug: "cedartown-ga" },
+  { name: "Summerville", slug: "summerville-ga" },
+  { name: "Suwanee", slug: "suwanee-ga" },
+  { name: "Alpharetta", slug: "alpharetta-ga" },
+  { name: "Marietta", slug: "marietta-ga" }
 ];
 
 const AutoInsurance = () => {
@@ -356,10 +373,10 @@ const AutoInsurance = () => {
                   {alabamaCities.map((city, index) => (
                     <Link 
                       key={index}
-                      to={`/service-areas/${city.toLowerCase().replace(' ', '-')}`}
+                      to={`/${city.slug}`}
                       className="px-3 py-1.5 bg-card rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors"
                     >
-                      {city}
+                      {city.name}
                     </Link>
                   ))}
                 </div>
@@ -375,10 +392,10 @@ const AutoInsurance = () => {
                   {georgiaCities.map((city, index) => (
                     <Link 
                       key={index}
-                      to={`/service-areas/${city.toLowerCase().replace(' ', '-')}`}
+                      to={`/${city.slug}`}
                       className="px-3 py-1.5 bg-card rounded-lg text-sm border hover:border-secondary hover:text-secondary transition-colors"
                     >
-                      {city}
+                      {city.name}
                     </Link>
                   ))}
                 </div>
