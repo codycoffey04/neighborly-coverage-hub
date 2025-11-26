@@ -532,7 +532,7 @@ const CondoInsurance = () => {
                   {alabamaCities.map((city, index) => (
                     <Link
                       key={index}
-                      to={`/service-areas/${city.slug}`}
+                      to={`/${city.slug}`}
                       className="text-primary hover:underline"
                     >
                       {city.name}
@@ -550,7 +550,7 @@ const CondoInsurance = () => {
                   {georgiaCities.map((city, index) => (
                     <Link
                       key={index}
-                      to={`/service-areas/${city.slug}`}
+                      to={`/${city.slug}`}
                       className="text-primary hover:underline"
                     >
                       {city.name}
