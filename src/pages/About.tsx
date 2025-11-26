@@ -30,7 +30,7 @@ const values = [
 const offices = [
   {
     name: "Centre, Alabama",
-    address: "1010 Centre Plaza, Centre, AL 35960",
+    address: "1913 W Main Street, Centre, AL 35960",
     phone: "(256) 927-6287",
     hours: "Monday–Friday: 8:00 AM – 5:00 PM",
     rating: "4.7",
@@ -38,7 +38,7 @@ const offices = [
   },
   {
     name: "Rome, Georgia",
-    address: "2 Riverside Parkway, Rome, GA 30161",
+    address: "1703 Turner McCall Blvd SE, Rome, GA 30161",
     phone: "(706) 784-6511",
     hours: "Monday–Friday: 8:30 AM – 4:30 PM",
     rating: "4.6",
