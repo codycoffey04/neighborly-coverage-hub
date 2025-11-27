@@ -1365,5 +1365,89 @@ export const cityData: Record<string, CityData> = {
         answer: "Driving record, property value, roof age, neighborhood, claims history, and coverage selections impact rates. We'll help you find the best coverage for your specific Marietta location."
       }
     ]
+  },
+  "forsyth-ga": {
+    slug: "forsyth-ga",
+    city: "Forsyth",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["31029", "31028", "31030", "31032", "31035", "31041", "31042", "31046", "31061"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(706) 702-1782",
+    customHeroTitle: "Auto Insurance Quote Forsyth, GA - Compare Rates Today",
+    customHeroSubhead: "Local help with auto insurance in the 31029 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
+    introduction: [
+      "The 31029 area faces unique insurance challenges requiring specialized understanding of Central Georgia risks. From severe thunderstorms capable of producing damaging hail to flooding concerns along the Towaliga River and High Falls Lake, residents need insurance protection tailored to Monroe County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Forsyth, Historic District, or any neighborhood in the region.",
+      "With approximately 4,500 residents and a median household income around $62,000, this close-knit community includes educators at Monroe County Schools, healthcare professionals at Monroe County Hospital, law enforcement trainees at Georgia Public Safety Training Center, and families throughout the county seat. Each household has distinct insurance needs, whether protecting homes near the Tift College area or securing auto coverage for commutes through North Forsyth. Forsyth's character as a small-town community with strong values creates specific insurance considerations balancing rural living with modern protection needs."
+    ],
+    weatherRisks: "Living in Forsyth means preparing for Central Georgia weather patterns year-round. Severe thunderstorms bring heightened risks throughout the spring and summer, with damaging hail events capable of impacting vehicles and roofs across neighborhoods from Johnstonville to the Brent area. Tornadoes pose threats from March through May, when atmospheric conditions favor violent storms. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit. The Towaliga River and High Falls Lake present flooding risks that standard policies typically exclude. Properties near these waterways or in the High Falls area should consider flood insurance as critical protection. Flash flooding from severe thunderstorms can affect low-lying areas throughout Monroe County even away from obvious water features. Extreme summer heat stresses home systems, while occasional winter ice storms create unique hazards. We analyze your specific location in Forsyth to determine risk levels and recommend appropriate coverage for 31029 residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Downtown Forsyth and the Historic District feature older homes that may require specialized coverage for historical properties and unique architectural features. Communities in North Forsyth and near the Tift College area may have different property values and construction standards affecting replacement costs. Rural properties in Johnstonville and the Brent area often need coverage tailored for larger lots and outbuildings. Bundling home and auto insurance in Forsyth saves money while creating comprehensive protection for Central Georgia living. Whether commuting to Monroe County Schools, traveling to the Georgia Public Safety Training Center, or navigating rural roadways throughout the region, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Forsyth households facing regional weather risks and small-town living considerations.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Monroe County Schools employing educators throughout the area, many residents need reliable coverage for daily commutes and family homes. Monroe County Hospital healthcare professionals require comprehensive protection supporting stable family finances. Georgia Public Safety Training Center represents specialized public safety employment requiring appropriate coverage for those serving the broader community. Local government employees and Tift College personnel round out a diverse employment base. ZIP codes served include 31029, 31028, 31030, 31032, 31035, 31041, 31042, 31046, and 31061—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Forsyth, whether you're a first-time homebuyer in the Historic District or updating established household coverage in the High Falls area. Understanding tornado risks, river flooding potential, and small-town characteristics ensures appropriate protection levels.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Forsyth. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and Central Georgia conditions, ensuring coverage meets all requirements while addressing regional risks like severe weather and waterway flooding. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 31029 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during storm season when quick action protects your Forsyth property and family.",
+    localConsiderations: "Central Georgia weather challenges, Towaliga River and High Falls Lake flood risks, small-town community with rural and suburban characteristics requiring balanced coverage needs",
+    neighborhoods: [
+      "Downtown Forsyth",
+      "Historic District",
+      "North Forsyth",
+      "Tift College area",
+      "Johnstonville",
+      "Brent area",
+      "High Falls area",
+      "Monroe County",
+      "South Forsyth",
+      "Rural Monroe County",
+      "Highway 42 corridor",
+      "I-75 corridor"
+    ],
+    nearbyCities: ["powder-springs-ga", "atlanta-ga", "rome-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office to get insurance in Forsyth?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 31029 residents time while receiving comprehensive coverage and personal service."
+      },
+      {
+        question: "How significant is flood risk near the Towaliga River and High Falls Lake?",
+        answer: "Properties near the Towaliga River and High Falls Lake face elevated flood risks, particularly during severe storms. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
+      },
+      {
+        question: "What bundle savings are available for Forsyth residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Forsyth residents can maximize savings by combining multiple policies, whether insuring a home in the Historic District and vehicles for work commutes, or protecting a property in North Forsyth with auto coverage."
+      },
+      {
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, comprehensive protection often warrants higher limits to adequately protect your assets and family in Forsyth."
+      },
+      {
+        question: "How does tornado season affect insurance premiums?",
+        answer: "Central Georgia's tornado risks influence homeowners insurance rates in Forsyth. Premiums reflect elevated risk during peak season (March-May), but proper coverage ensures protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
+      },
+      {
+        question: "Do small-town values mean lower insurance rates in Forsyth?",
+        answer: "Rural and small-town communities often benefit from lower crime rates and less traffic congestion, which can positively impact insurance premiums. However, distance from fire stations and weather risks also factor into rates. We analyze all these elements to provide competitive pricing for Forsyth residents."
+      },
+      {
+        question: "What factors affect auto insurance rates in Forsyth?",
+        answer: "Auto insurance rates consider your ZIP code (31029 and surrounding areas), driving record, vehicle type, and commute distance. Rural roadways and lower traffic density compared to metropolitan areas factor into personalized rates, along with local claims history and demographic factors."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Forsyth residents can receive quotes within minutes and have active coverage the same day, protecting homes in Downtown Forsyth, Johnstonville, or any other neighborhood throughout the 31029 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
   }
 };
