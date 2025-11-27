@@ -731,41 +731,69 @@ export const cityData: Record<string, CityData> = {
     city: "Atlanta",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30301"],
+    zipCodes: ["30349", "30337", "30344", "30331", "30311", "30315", "30354", "30336", "30296"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(678) 679-5311",
+    customHeroTitle: "Insurance in Atlanta, GA (30349)",
+    customHeroSubhead: "Local help with auto insurance in the 30349 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Atlanta, Georgia families with comprehensive insurance coverage for the metro area. From Midtown to Buckhead, we protect Atlanta residents with auto, home, renters, condo, and life insurance.",
-      "Atlanta's urban density, diverse neighborhoods, and severe weather patterns require thoughtful insurance planning. Our team helps you build coverage that protects your lifestyle and budget in Georgia's capital.",
-      "Contact our nearest office in Rome, GA at (706) 784-6511 for personalized Atlanta insurance quotes and service."
+      "The 30349 area faces unique insurance challenges requiring specialized understanding of metropolitan risks. From severe thunderstorms bringing damaging winds and large hail to urban flooding concerns near the Chattahoochee River and South River, residents need insurance protection tailored to Metro Atlanta's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in College Park area, East Point, or any neighborhood in the region.",
+      "With approximately 500,000 residents citywide and a median household income around $42,000, this diverse community includes aviation professionals at Hartsfield-Jackson Airport and Delta Air Lines, corporate employees at Coca-Cola and Home Depot, logistics workers at UPS, and families throughout the metropolitan area. Each household has distinct insurance needs, whether protecting homes in Camp Creek or securing auto coverage for commutes along I-285. Atlanta's role as a major metropolitan hub creates specific traffic patterns and insurance considerations across neighborhoods."
     ],
-    localConsiderations: "Atlanta experiences spring tornado season, severe thunderstorms, and occasional ice storms. Heavy interstate traffic (I-75, I-85, I-20) creates high accident frequency requiring adequate liability limits and UM/UIM coverage. Urban property crime necessitates comprehensive renters and home coverage.",
-    neighborhoods: ["Midtown", "Buckhead", "Virginia Highland", "Inman Park", "Old Fourth Ward", "Decatur", "Sandy Springs", "Dunwoody", "Brookhaven", "East Atlanta", "West Midtown", "Vinings", "Peachtree Hills"],
-    nearbyCities: ["lawrenceville-ga", "duluth-ga", "marietta-ga", "alpharetta-ga"],
+    weatherRisks: "Living in Atlanta means preparing for severe weather year-round. Severe thunderstorms bring heightened risks throughout the season, with damaging winds and large hail events capable of impacting vehicles and roofs across neighborhoods from Cascade Heights to Southwest Atlanta. Urban flooding poses significant challenges, as extensive pavement and drainage systems can become overwhelmed during heavy rainfall. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit. The Chattahoochee River and South River present flooding risks that standard policies typically exclude. Properties in Adams Park and Princeton Lakes near waterways should consider flood insurance as critical protection. Urban flooding from severe thunderstorms affects low-lying areas even away from major waterways. Tornado season from March through May adds unpredictable risks, while extreme summer heat can stress home systems. We analyze your specific location in Atlanta to determine risk levels and recommend appropriate coverage for 30349 residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like College Park area and East Point feature diverse property types affecting replacement costs and coverage needs. Communities in Camp Creek and Cascade Heights may have different property values requiring tailored coverage limits. Properties near Hartsfield-Jackson Airport might benefit from specialized coverage addressing noise concerns and unique location factors affecting property values. Bundling home and auto insurance in Atlanta saves money while creating comprehensive protection for metropolitan living. Whether commuting on I-285, navigating I-85 traffic, or traveling throughout Fulton County for work, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Atlanta households facing urban traffic risks and severe weather exposure.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Hartsfield-Jackson Airport and Delta Air Lines employing thousands of aviation professionals, many residents need reliable coverage for shift work commutes and valuable homes. Coca-Cola and Home Depot represent major corporate employers requiring comprehensive protection for families throughout Atlanta. UPS logistics workers need coverage addressing unique schedules and vehicle considerations throughout the metropolitan area. ZIP codes served include 30349, 30337, 30344, 30331, 30311, 30315, 30354, 30336, and 30296—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Atlanta, whether you're a first-time homebuyer in Southwest Atlanta or updating established household coverage in Princeton Lakes. Understanding urban flooding risks, severe storm exposure, and high traffic density ensures appropriate protection levels.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Atlanta. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and metropolitan conditions, ensuring coverage meets all requirements while addressing regional risks like urban flooding and high-traffic collision exposure. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30349 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during severe weather season when quick action protects your Atlanta property and family.",
+    localConsiderations: "Atlanta experiences spring tornado season, severe thunderstorms, and urban flooding. Heavy interstate traffic (I-75, I-85, I-20) creates high accident frequency requiring adequate liability limits and UM/UIM coverage. Urban property crime necessitates comprehensive renters and home coverage.",
+    neighborhoods: ["College Park area", "East Point", "Camp Creek", "Cascade Heights", "Adams Park", "Princeton Lakes", "Southwest Atlanta", "I-285 corridor", "I-85 corridor", "Fulton County", "South Atlanta", "Downtown area"],
+    nearbyCities: ["powder-springs-ga", "alpharetta-ga", "duluth-ga"],
     faqs: [
       {
-        question: "What are typical auto insurance costs in Atlanta?",
-        answer: "Atlanta auto insurance costs more than rural Georgia due to traffic density and accident rates. Average annual premiums range $1,400-2,200 depending on coverage, driving record, and location. Bundling reduces costs significantly."
+        question: "Do I need to visit your office to get insurance in Atlanta?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30349 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "Do Atlanta renters need insurance?",
-        answer: "Yes! Many Atlanta landlords require renters insurance. It protects belongings from fire, theft, and water damage while providing liability coverage—typically $20-35/month in metro Atlanta, less when bundled with auto."
+        question: "How significant is flood risk near the Chattahoochee River and South River?",
+        answer: "Properties near the Chattahoochee River and South River face elevated flood risks, particularly during severe storms. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "How much condo insurance do Atlanta condo owners need?",
-        answer: "Atlanta condo insurance (HO-6) should coordinate with the master policy and include Loss Assessment coverage. Costs vary by property value and coverage, typically $300-800 annually depending on building and coverage selections."
+        question: "What bundle savings are available for Atlanta residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Atlanta residents can maximize savings by combining multiple policies, whether insuring a home in College Park area and vehicles for airport commutes, or protecting a property in East Point with auto coverage."
       },
       {
-        question: "What factors affect Atlanta home insurance rates?",
-        answer: "Property value, roof age, claims history, protective devices, and coverage selections impact rates. Older in-town homes may have higher premiums due to roof age or outdated systems. Bundling and protective devices help reduce costs."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy metropolitan traffic on I-285 and I-85 often warrants higher limits for adequate protection."
       },
       {
-        question: "Does Coffey Agencies serve all Atlanta metro neighborhoods?",
-        answer: "Yes, we serve all Atlanta areas including Buckhead, Midtown, Decatur, Dunwoody, Sandy Springs, and surrounding metro communities. Call (706) 784-6511 for Atlanta quotes."
+        question: "How does urban traffic affect auto insurance rates?",
+        answer: "Metropolitan Atlanta's high traffic density influences auto insurance rates. Premiums reflect elevated collision risks from congestion on I-285, I-85, and major surface streets. Higher claim frequency in urban areas factors into personalized pricing for 30349 residents."
       },
       {
-        question: "Can I get same-day insurance coverage in Atlanta?",
-        answer: "Auto and renters insurance often activate same-day. Home and condo insurance may require property details and sometimes inspection. Contact us to discuss your timeline."
+        question: "Do airport employees get special insurance considerations?",
+        answer: "Employees at Hartsfield-Jackson Airport often have unique commuting patterns and schedules. We can structure coverage that accounts for non-traditional work hours and parking situations, ensuring appropriate protection for aviation professionals and their families."
+      },
+      {
+        question: "What factors affect auto insurance rates in Atlanta?",
+        answer: "Auto insurance rates consider your ZIP code (30349 and surrounding areas), driving record, vehicle type, and commute distance. Urban traffic density and higher claim frequency in metropolitan areas factor into rates, along with local demographic factors for personalized pricing."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Atlanta residents can receive quotes within minutes and have active coverage the same day, protecting homes in Southwest Atlanta, Camp Creek, or any other neighborhood throughout the 30349 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
