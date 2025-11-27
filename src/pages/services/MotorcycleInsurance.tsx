@@ -1,0 +1,466 @@
+import { PageLayout } from "@/components/shared/PageLayout";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { 
+  Shield, Car, Umbrella, Users, Heart, Wrench,
+  FileCheck, CreditCard, DollarSign, TrendingDown, Target, Home,
+  Phone, MapPin, Star, CheckCircle, Bike
+} from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Helmet } from "react-helmet";
+
+const coverageTypes = [
+  {
+    icon: Shield,
+    title: "Liability (BI/PD)",
+    description: "Required in both Alabama and Georgia at 25/50/25 minimums. Pays for injuries and property damage you cause to others. Higher limits protect your assets if you're sued after a serious accident—especially important given medical costs and litigation trends."
+  },
+  {
+    icon: Car,
+    title: "Collision",
+    description: "Covers damage to your motorcycle from crashes with vehicles or objects, regardless of fault. Required if your bike is financed. Choose a deductible that matches your emergency fund—higher deductibles lower premiums but increase out-of-pocket costs at claim time."
+  },
+  {
+    icon: Umbrella,
+    title: "Comprehensive",
+    description: "Protects against theft, vandalism, fire, falling objects, and weather damage. With motorcycle theft rates significantly higher than cars and Alabama's severe storm season, comprehensive coverage is worth considering even on older bikes."
+  },
+  {
+    icon: Users,
+    title: "Uninsured/Underinsured Motorist (UM/UIM)",
+    description: "Covers your injuries when an at-fault driver has no insurance or not enough. Riders are more vulnerable than car occupants, making adequate UM/UIM limits critical. Many riders match these to their liability limits for balanced protection."
+  },
+  {
+    icon: Heart,
+    title: "Medical Payments (MedPay)",
+    description: "Pays medical bills for you and your passenger regardless of fault. Useful if you have high-deductible health insurance or want immediate coverage for emergency care. Neither Alabama nor Georgia requires PIP, so MedPay fills this gap."
+  },
+  {
+    icon: Wrench,
+    title: "Accessory & Custom Parts",
+    description: "Standard policies include $1,000–$3,000 for aftermarket parts. Chrome, custom exhaust, saddlebags, upgraded seats, and performance modifications can push values much higher. We can increase limits up to $30,000 to match your investment."
+  }
+];
+
+const savingsTips = [
+  {
+    icon: FileCheck,
+    title: "Complete an MSF course",
+    description: "The Motorcycle Safety Foundation course satisfies licensing requirements and earns premium discounts with most carriers. The skills pay dividends beyond the savings."
+  },
+  {
+    icon: Home,
+    title: "Bundle policies",
+    description: "Combining motorcycle with auto, home, or renters insurance unlocks multi-policy discounts and simplifies your coverage."
+  },
+  {
+    icon: Bike,
+    title: "Choose your bike wisely",
+    description: "Cruisers and touring motorcycles cost less to insure than sport bikes. If you're shopping for a new ride, insurance cost is worth factoring in."
+  },
+  {
+    icon: Shield,
+    title: "Secure storage",
+    description: "Garaging your bike and installing anti-theft devices (alarms, GPS trackers, disc locks) can reduce comprehensive premiums."
+  },
+  {
+    icon: DollarSign,
+    title: "Pay in full",
+    description: "Annual payment typically costs less than monthly installments. We'll quote both so you can compare."
+  },
+  {
+    icon: Target,
+    title: "Maintain a clean record",
+    description: "Tickets and claims increase rates. Consistent safe riding habits pay off over time."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need motorcycle insurance in Alabama and Georgia?",
+    answer: "Yes, motorcycle insurance is legally required in both states. Alabama and Georgia mandate identical minimum liability limits: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage (25/50/25). Riding without insurance in Alabama carries fines up to $500 and registration suspension. Georgia penalties range from $200–$300 plus suspension. We recommend limits above minimums for real-world protection."
+  },
+  {
+    question: "How much does motorcycle insurance cost in Alabama and Georgia?",
+    answer: "Liability-only coverage averages around $160/year in Alabama and $190/year in Georgia. Full coverage (adding collision and comprehensive) typically runs $400–$600 annually depending on your bike type, riding history, and location. Sport bikes cost more to insure than cruisers or touring motorcycles. We'll quote your specific situation so you know exactly what to expect."
+  },
+  {
+    question: "Is motorcycle insurance cheaper than car insurance?",
+    answer: "Generally yes. Motorcycles typically cost less to insure because they cause less property damage in accidents. However, medical coverage and liability limits should still be adequate since riders face higher injury risk. Many riders find comprehensive coverage worthwhile given theft rates and weather exposure in the Southeast."
+  },
+  {
+    question: "What does motorcycle insurance cover?",
+    answer: "Motorcycle insurance covers liability for injuries and damage you cause, collision damage to your bike, comprehensive losses (theft, weather, vandalism), uninsured motorist protection, medical payments, and accessory coverage for custom parts. Optional add-ons include roadside assistance, trip interruption, total loss replacement, and trailer coverage for transport."
+  },
+  {
+    question: "Does motorcycle insurance cover passengers in Alabama?",
+    answer: "Alabama's guest passenger statute limits a passenger's ability to sue the rider for ordinary negligence, which affects how standard policies respond. Many Alabama riders add guest passenger liability coverage to ensure passengers are fully protected. Georgia treats passengers as third parties with standard coverage. We'll structure your policy appropriately based on where you ride."
+  },
+  {
+    question: "Are custom parts and accessories covered?",
+    answer: "Standard policies include $1,000–$3,000 in accessory coverage. If you've added chrome, saddlebags, custom exhaust, or upgraded components, you can increase this limit up to $30,000 depending on your carrier. Document modifications with photos and receipts for smoother claims. We'll help you determine the right limit for your setup."
+  },
+  {
+    question: "Can I suspend motorcycle insurance during winter?",
+    answer: "Laid-up or storage coverage keeps comprehensive active while suspending liability during months you're not riding. However, Alabama requires continuous liability on registered vehicles. If you suspend coverage, you may need to surrender your registration temporarily. We'll structure the right approach for your situation—keeping you protected without overpaying during the off-season."
+  },
+  {
+    question: "Do motorcycle safety courses lower insurance premiums?",
+    answer: "Yes, completing an MSF (Motorcycle Safety Foundation) course qualifies you for discounts with most carriers. The course also satisfies licensing requirements in both Alabama and Georgia. Other available discounts include multi-policy bundles, anti-theft devices, paid-in-full payments, and claims-free history. We'll identify every discount you qualify for."
+  }
+];
+
+const testimonials = [
+  {
+    name: "Teresa Gardiner",
+    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+  },
+  {
+    name: "Steve Smith",
+    text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+  },
+  {
+    name: "Ricky Salas",
+    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+  }
+];
+
+const alabamaCities = [
+  { name: "Centre", slug: "centre-al" },
+  { name: "Birmingham", slug: "birmingham-al" },
+  { name: "Montgomery", slug: "montgomery-al" },
+  { name: "Mobile", slug: "mobile-al" },
+  { name: "Dothan", slug: "dothan-al" },
+  { name: "Auburn", slug: "auburn-al" },
+  { name: "Phenix City", slug: "phenix-city-al" },
+  { name: "Foley", slug: "foley-al" },
+  { name: "Troy", slug: "troy-al" },
+  { name: "Enterprise", slug: "enterprise-al" },
+  { name: "Trussville", slug: "trussville-al" }
+];
+
+const georgiaCities = [
+  { name: "Rome", slug: "rome-ga" },
+  { name: "Atlanta", slug: "atlanta-ga" },
+  { name: "Lawrenceville", slug: "lawrenceville-ga" },
+  { name: "Duluth", slug: "duluth-ga" },
+  { name: "Cartersville", slug: "cartersville-ga" },
+  { name: "Calhoun", slug: "calhoun-ga" },
+  { name: "Cedartown", slug: "cedartown-ga" },
+  { name: "Summerville", slug: "summerville-ga" },
+  { name: "Suwanee", slug: "suwanee-ga" },
+  { name: "Alpharetta", slug: "alpharetta-ga" },
+  { name: "Powder Springs", slug: "powder-springs-ga" },
+  { name: "Rockmart", slug: "rockmart-ga" },
+  { name: "Forsyth", slug: "forsyth-ga" }
+];
+
+const MotorcycleInsurance = () => {
+  // JSON-LD Schema for FAQ
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Motorcycle Insurance in Alabama & Georgia | Coffey Agencies</title>
+        <meta name="description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents who ride, and honest advice on limits." />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+
+      <PageLayout
+        title="Motorcycle Insurance in Alabama & Georgia"
+        description="Coverage built for riders—whether you're on a cruiser, sport bike, or touring machine"
+      >
+        {/* Hero Section */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-8">
+              <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
+                We understand the risks unique to two wheels: exposed riding, custom parts, and seasonal storage. Get clear options, honest advice on limits, and a team that answers when you need us.
+              </p>
+              
+              {/* Trust indicators */}
+              <div className="flex flex-wrap justify-center gap-6 mb-8">
+                <div className="flex items-center gap-2 text-sm">
+                  <Bike className="h-5 w-5 text-secondary" />
+                  <span>Cruisers, sport bikes & touring</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <Wrench className="h-5 w-5 text-secondary" />
+                  <span>Custom parts coverage available</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <Phone className="h-5 w-5 text-secondary" />
+                  <span>Local agents who ride</span>
+                </div>
+              </div>
+
+              {/* CTA buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="text-lg" asChild>
+                  <Link to="/contact">Get Your Quote</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg" asChild>
+                  <a href="tel:2569276287">Call (256) 927-6287</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Coverage Types Section */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Build a Policy That Protects You and Your Bike</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Motorcycle insurance works differently than auto insurance. Riders face unique exposures—no steel cage around you, higher theft rates, and custom modifications that standard policies don't cover. We structure coverage to address these realities while keeping premiums reasonable. Bundle with home or auto for multi-policy savings.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {coverageTypes.map((coverage, index) => {
+                const Icon = coverage.icon;
+                return (
+                  <Card key={index} className="border-2">
+                    <CardHeader>
+                      <div className="mb-2">
+                        <Icon className="h-8 w-8 text-secondary" />
+                      </div>
+                      <CardTitle className="text-xl">{coverage.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{coverage.description}</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Regional Considerations Section */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-6">Riding Risks in Alabama and Georgia</h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-muted-foreground mb-6">
+                The Southeast offers year-round riding but comes with hazards that shape how we recommend coverage. Georgia recorded 221 motorcyclist fatalities in 2022—the highest in a decade. Alabama saw motorcycle deaths jump 36% from 2023 to 2024. Understanding these risks helps you choose appropriate limits and deductibles.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <Card className="border-2">
+                  <CardContent className="pt-6">
+                    <h3 className="font-bold text-lg mb-3">Seasonal weather</h3>
+                    <p className="text-muted-foreground">Spring storms bring sudden rain and hail. Summer heat causes fatigue. Fall means leaves on pavement and peak deer season from October through December. Comprehensive coverage addresses weather and animal strikes.</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2">
+                  <CardContent className="pt-6">
+                    <h3 className="font-bold text-lg mb-3">High-risk corridors</h3>
+                    <p className="text-muted-foreground">I-20, I-65, I-75, I-85, and US-431 (nicknamed "Highway to Hell") see disproportionate motorcycle incidents. Higher liability and UM/UIM limits make sense if you ride these routes regularly.</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2">
+                  <CardContent className="pt-6">
+                    <h3 className="font-bold text-lg mb-3">Urban vs. rural</h3>
+                    <p className="text-muted-foreground">Metro areas like Atlanta and Birmingham have more crashes overall, while rural roads see more fatalities due to higher speeds and delayed emergency response. Either environment warrants adequate medical coverage.</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Ways to Save Section */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-6 text-center">Ways to Lower Your Motorcycle Insurance Premium</h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {savingsTips.map((tip, index) => {
+                const Icon = tip.icon;
+                return (
+                  <Card key={index} className="border-2">
+                    <CardHeader>
+                      <div className="mb-2">
+                        <Icon className="h-8 w-8 text-secondary" />
+                      </div>
+                      <CardTitle className="text-lg">{tip.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{tip.description}</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Alabama Guest Passenger Law Section */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <Card className="border-2 bg-accent/5">
+              <CardHeader>
+                <CardTitle className="text-2xl">Alabama's Guest Passenger Law</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-lg">
+                  Alabama's guest statute limits a passenger's ability to sue the rider for ordinary negligence. This affects how standard liability coverage responds if your passenger is injured. Many Alabama riders add guest passenger liability coverage to ensure passengers have full protection. Georgia does not have this limitation—passengers there are treated as standard third parties. We'll explain how this affects your specific situation during the quote process.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-3xl font-bold mb-8 text-center">Motorcycle Insurance Questions We Answer Every Day</h2>
+            
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-4">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-4">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="border-2">
+                  <CardContent className="pt-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">Google Review</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/reviews">Read All Google Reviews →</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Areas We Serve Section */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-8 text-center">Areas We Serve</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Alabama Cities */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-secondary" />
+                  Alabama
+                </h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {alabamaCities.map((city, index) => (
+                    <Link 
+                      key={index}
+                      to={`/${city.slug}`}
+                      className="text-primary hover:underline"
+                    >
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Georgia Cities */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-secondary" />
+                  Georgia
+                </h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {georgiaCities.map((city, index) => (
+                    <Link 
+                      key={index}
+                      to={`/${city.slug}`}
+                      className="text-primary hover:underline"
+                    >
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-16 px-4 bg-secondary text-white">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl font-bold mb-4">Ready to Get Your Motorcycle Covered?</h2>
+            <p className="text-lg mb-8 opacity-90">
+              Call us today or request a free quote online. We'll walk you through your options and answer every question.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Button size="lg" variant="outline" className="bg-white text-secondary hover:bg-white/90 border-0" asChild>
+                <Link to="/contact">Get Your Free Quote</Link>
+              </Button>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center text-sm">
+              <a href="tel:2569276287" className="flex items-center gap-2 hover:opacity-80">
+                <Phone className="h-4 w-4" />
+                <span>Centre, AL: (256) 927-6287</span>
+              </a>
+              <a href="tel:7067846511" className="flex items-center gap-2 hover:opacity-80">
+                <Phone className="h-4 w-4" />
+                <span>Rome, GA: (706) 784-6511</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </PageLayout>
+    </>
+  );
+};
+
+export default MotorcycleInsurance;
