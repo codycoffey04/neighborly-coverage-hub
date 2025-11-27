@@ -85,7 +85,7 @@ export const ServiceArea = () => {
           {/* View All link */}
           <Link 
             to="/service-areas" 
-            className="inline-flex items-center gap-2 text-secondary font-medium hover:underline"
+            className="inline-flex items-center gap-2 text-white/80 font-medium hover:text-white hover:underline"
           >
             View All Locations
             <ArrowRight className="h-4 w-4" />
@@ -94,7 +94,7 @@ export const ServiceArea = () => {
           {/* Contact fallback */}
           <p className="text-white/70 text-sm">
             Don't see your city?{" "}
-            <Link to="/contact" className="text-secondary font-medium hover:underline">
+            <Link to="/contact" className="text-white/80 font-medium hover:text-white hover:underline">
               Contact us
             </Link>{" "}
             to see if we can help.
