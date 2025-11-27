@@ -164,6 +164,7 @@ const georgiaCities = [
       <Helmet>
         <title>Life Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="$500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage and 4.8★ rated service." />
+        <link rel="canonical" href="https://coffeyagencies.com/services/life-insurance" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
@@ -937,19 +938,23 @@ const georgiaCities = [
                 <CardContent className="p-6 text-center">
                   <Phone className="h-8 w-8 text-primary mx-auto mb-3" />
                   <p className="text-sm font-medium mb-1">Alabama</p>
-                  <p className="text-2xl font-bold">(256) 927-6287</p>
+                  <a href="tel:+12569276287" className="text-2xl font-bold hover:underline block" aria-label="Call Alabama office at (256) 927-6287">
+                    (256) 927-6287
+                  </a>
                 </CardContent>
               </Card>
               <Card className="border-primary/20">
                 <CardContent className="p-6 text-center">
                   <Phone className="h-8 w-8 text-primary mx-auto mb-3" />
                   <p className="text-sm font-medium mb-1">Georgia</p>
-                  <p className="text-2xl font-bold">(706) 784-6511</p>
+                  <a href="tel:+17067846511" className="text-2xl font-bold hover:underline block" aria-label="Call Georgia office at (706) 784-6511">
+                    (706) 784-6511
+                  </a>
                 </CardContent>
               </Card>
             </div>
 
-            <Button size="lg" asChild>
+            <Button size="lg" asChild aria-label="Get your free life insurance quote">
               <Link to="/contact">Get Your Free Quote</Link>
             </Button>
           </div>

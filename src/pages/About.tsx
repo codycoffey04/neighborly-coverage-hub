@@ -98,6 +98,9 @@ const About = () => {
       breadcrumbs={[{ label: "About", href: "/about" }]}
     >
       <Helmet>
+        <title>About Coffey Agencies | Your Local Insurance Team Since 2009</title>
+        <meta name="description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. 8,000+ policies protected." />
+        <link rel="canonical" href="https://coffeyagencies.com/about" />
         <script type="application/ld+json">
           {JSON.stringify(aboutSchema)}
         </script>
@@ -341,7 +344,11 @@ const About = () => {
                     
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                      <a href={`tel:${office.phone}`} className="text-primary hover:underline">
+                      <a 
+                        href={`tel:+1${office.phone.replace(/[^0-9]/g, '')}`}
+                        className="text-primary hover:underline"
+                        aria-label={`Call ${office.name} office at ${office.phone}`}
+                      >
                         {office.phone}
                       </a>
                     </div>
@@ -364,7 +371,7 @@ const About = () => {
                   </div>
 
                   <Link to="/contact">
-                    <Button variant="outline" className="w-full">
+                    <Button variant="outline" className="w-full" aria-label={`Get directions to ${office.name} office`}>
                       Get Directions
                     </Button>
                   </Link>
@@ -385,7 +392,7 @@ const About = () => {
             Let us help you find the perfect coverage for your needs.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="min-w-[200px]">
+            <Button size="lg" className="min-w-[200px]" aria-label="Get a free insurance quote">
               Get Your Free Quote
             </Button>
           </Link>

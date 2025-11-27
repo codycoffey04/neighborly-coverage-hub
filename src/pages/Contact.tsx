@@ -97,6 +97,9 @@ const Contact = () => {
       breadcrumbs={[{ label: "Contact", href: "/contact" }]}
     >
       <Helmet>
+        <title>Contact Us | Coffey Agencies | Alabama & Georgia Insurance</title>
+        <meta name="description" content="Contact Coffey Agencies for insurance quotes. Offices in Centre, AL (256) 927-6287 and Rome, GA (706) 784-6511. Get a free quote today." />
+        <link rel="canonical" href="https://coffeyagencies.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}
         </script>
@@ -214,6 +217,7 @@ const Contact = () => {
                   size="lg" 
                   className="w-full"
                   disabled={isSubmitting}
+                  aria-label="Send contact message"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
@@ -234,13 +238,13 @@ const Contact = () => {
                 <div className="space-y-1 text-sm">
                   <div>
                     <div className="text-muted-foreground">Centre:</div>
-                    <a href="tel:2569276287" className="text-primary hover:underline">
+                    <a href="tel:+12569276287" className="text-primary hover:underline" aria-label="Call Centre, Alabama office at (256) 927-6287">
                       (256) 927-6287
                     </a>
                   </div>
                   <div>
                     <div className="text-muted-foreground">Rome:</div>
-                    <a href="tel:7067846511" className="text-primary hover:underline">
+                    <a href="tel:+17067846511" className="text-primary hover:underline" aria-label="Call Rome, Georgia office at (706) 784-6511">
                       (706) 784-6511
                     </a>
                   </div>
@@ -300,7 +304,7 @@ const Contact = () => {
                     
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                      <a href={`tel:${office.phoneRaw}`} className="text-primary hover:underline">
+                      <a href={`tel:+1${office.phoneRaw}`} className="text-primary hover:underline" aria-label={`Call ${office.name} office at ${office.phone}`}>
                         {office.phone}
                       </a>
                     </div>
@@ -340,6 +344,7 @@ const Contact = () => {
                         href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(office.mapAddress)}`}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`Get directions to ${office.name} office`}
                       >
                         Get Directions
                       </a>
@@ -347,7 +352,7 @@ const Contact = () => {
                     <Button 
                       asChild
                     >
-                      <a href={`tel:${office.phoneRaw}`}>
+                      <a href={`tel:+1${office.phoneRaw}`} aria-label={`Call ${office.name.split(',')[0]} office at ${office.phone}`}>
                         Call {office.name.split(',')[0]} Office
                       </a>
                     </Button>
@@ -379,7 +384,7 @@ const Contact = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Get a free quote in about 15 minutes. No obligation, no pressure.
           </p>
-          <Button size="lg" asChild>
+          <Button size="lg" asChild aria-label="Get your free insurance quote">
             <a href="#contact-form">Get Your Free Quote</a>
           </Button>
         </div>

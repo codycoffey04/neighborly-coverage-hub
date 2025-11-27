@@ -60,6 +60,7 @@ const Learn = () => {
       <Helmet>
         <title>Insurance Learning Center | Coffey Agencies</title>
         <meta name="description" content="Expert insurance guides covering auto, home, renters, condo, and life insurance in Alabama and Georgia. Plain English answers to your coverage questions." />
+        <link rel="canonical" href="https://coffeyagencies.com/learn" />
         <script type="application/ld+json">
           {JSON.stringify(collectionSchema)}
         </script>
@@ -100,7 +101,7 @@ const Learn = () => {
                     </p>
 
                     <Link to={`/learn/${article.slug}`}>
-                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
+                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80" aria-label={`Read guide about ${article.title}`}>
                         Read Guide
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </Button>
@@ -139,7 +140,7 @@ const Learn = () => {
                     </p>
 
                     <Link to={`/learn/${article.slug}`}>
-                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
+                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80" aria-label={`Read guide about ${article.title}`}>
                         Read Guide
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </Button>
@@ -160,7 +161,7 @@ const Learn = () => {
             Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent-light">
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
               Get Your Free Quote
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>

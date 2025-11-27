@@ -79,7 +79,7 @@ export const FinalCTA = () => {
               </div>
 
               {/* Submit Button */}
-              <Button type="submit" size="lg" className="w-full btn-primary h-14 text-lg font-semibold">
+              <Button type="submit" size="lg" className="w-full btn-primary h-14 text-lg font-semibold" aria-label="Submit form to get your free insurance quote">
                 Get Your Free Quote
               </Button>
 
