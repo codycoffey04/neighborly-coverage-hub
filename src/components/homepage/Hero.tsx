@@ -12,8 +12,8 @@ export const Hero = () => {
         backgroundPosition: 'center' 
       }}
     >
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/60 to-primary/80" />
+      {/* Subtle overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/10 to-primary/20" />
       
       {/* Content */}
       <div className="relative z-10 container-custom w-full">
