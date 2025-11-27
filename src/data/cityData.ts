@@ -297,40 +297,67 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36301", "36303"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    customHeroTitle: "Insurance in Dothan, AL (36301 & 36303)",
+    customHeroSubhead: "Local help with auto insurance in the 36301 and 36303 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Dothan, Alabama families with comprehensive insurance coverage for the Wiregrass region. From Ross Clark Circle to Taylor Road, we protect Dothan residents with auto, home, renters, condo, and life insurance.",
-      "As the hub of the Wiregrass, Dothan combines small-town values with regional commerce. Our team understands Houston County's insurance needs and provides personalized service with competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Dothan insurance quotes and local expertise."
+      "The 36301 and 36303 areas of Dothan face unique insurance challenges requiring specialized understanding of Wiregrass Region risks. From tropical storm threats during hurricane season to severe thunderstorms rolling through Houston County year-round, residents need insurance protection tailored to southeast Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Westgate, Northside, or any neighborhood across the Peanut Capital of the World.",
+      "With approximately 70,000 residents in the city and over 150,000 in the metro area, Dothan serves as the commercial hub for Alabama's Wiregrass Region and the tri-state area extending into Georgia and Florida. The 36301 ZIP code encompasses downtown Dothan, Westgate, and established neighborhoods south of Ross Clark Circle, while 36303 covers the western and northwestern portions including areas near Dothan Regional Airport. This diverse community includes healthcare workers at Southeast Health, retail and hospitality employees serving the regional shopping destination, military families connected to Fort Novosel (formerly Fort Rucker), and agricultural workers throughout Houston County's peanut and cotton farms. Each household has distinct insurance needs, whether protecting a historic home near downtown or securing auto coverage for Highway 231 commutes."
     ],
-    localConsiderations: "Dothan experiences spring tornado season, severe thunderstorms, and occasional tropical storm remnants from the Gulf. Agricultural and commercial corridors along US-84 and US-231 create mixed traffic patterns requiring thoughtful auto coverage.",
-    neighborhoods: ["Downtown Dothan", "Westgate", "Northside", "Eastside", "Ross Clark Circle", "Taylor Road", "Honeysuckle Road", "Napier Field area", "Wiregrass Commons", "Westgate Park", "Flowers Hospital area"],
-    nearbyCities: ["enterprise-al", "troy-al", "mobile-al"],
+    weatherRisks: "Living in Dothan means preparing for the Wiregrass Region's distinct weather patterns. While southeast Alabama sees fewer tornadoes than the state's central corridor, severe thunderstorms bring damaging straight-line winds, large hail, and dangerous lightning throughout spring and summer. The region's proximity to the Gulf of Mexico means tropical systems regularly impact Houston County — hurricane remnants bring flooding rains, sustained winds, and occasional tornado spinoffs from June through November.\n\nThe Choctawhatchee River and numerous creeks drain Houston County, creating flood risks that standard homeowners policies exclude entirely. Low-lying areas throughout 36301 and 36303 — particularly near Beaver Creek and drainage basins feeding the Choctawhatchee — should treat flood insurance as essential protection. The region averages over 55 inches of rain annually, and tropical systems can dump 10+ inches in 24 hours, overwhelming drainage systems far from major waterways.\n\nSummer brings extreme heat and humidity that stress home cooling systems and can cause foundation movement in the region's clay soils. Winter weather is typically mild, but occasional ice storms create hazardous driving conditions and property damage from falling tree limbs. We analyze your specific address in 36301 or 36303 to determine risk levels and recommend coverage that actually protects your Dothan home and vehicles.",
+    neighborhoodCoverage: "Dothan's neighborhoods each present distinct insurance considerations that generic online quotes miss entirely.\n\n**Downtown and Westgate (36301):** The historic downtown area features early 20th century homes alongside mid-century construction. Older electrical systems, original roofing materials, and mature trees throughout established neighborhoods create specific risk profiles. Westgate's commercial development along Ross Clark Circle means higher traffic density affecting auto rates. Property values in revitalized downtown areas have increased, requiring updated dwelling coverage estimates.\n\n**Northside and Selma Street Area (36301):** Established residential neighborhoods with 1950s-1970s housing stock. Mature pecan and oak trees provide shade but pose storm risks during severe weather. Proximity to Southeast Health and regional employers means steady commuter traffic. Some areas near creek drainage may have elevated flood risk.\n\n**Cottonwood Road and Airport Area (36303):** Mix of established homes and newer subdivisions on Dothan's west side. Proximity to Dothan Regional Airport creates specific considerations — generally lower crime rates but occasional noise factors. Growing retail development along this corridor has increased traffic and property values.\n\n**Rehobeth and Ashford (nearby 36303):** More rural character with larger lots and agricultural influence. Lower population density typically means lower auto rates, but distance from fire stations can affect home insurance. Newer construction in developing subdivisions often qualifies for modern building code discounts.\n\n**Headland Highway Corridor (36303):** Suburban growth area with newer construction and developing infrastructure. Access to Highway 431 provides connectivity but creates commuter traffic considerations. Mix of single-family homes and apartment communities serving Fort Novosel families.",
+    economyInfo: "Dothan's role as the Wiregrass Region's commercial center creates varied insurance needs across the 36301 and 36303 communities.\n\n**Healthcare workers** at Southeast Health (the region's largest employer), Flowers Hospital, and numerous medical practices need reliable coverage for varied shift schedules. Medical professionals benefit from higher liability limits given income levels that could be targeted after an at-fault accident.\n\n**Military families** connected to Fort Novosel (formerly Fort Rucker) have specific insurance needs including coverage that transfers if relocated and protection for homes during deployments. We understand military family dynamics and the importance of responsive service when a service member is away.\n\n**Retail and hospitality workers** serving Dothan's regional shopping destination — including Wiregrass Commons Mall, numerous restaurants, and hotels — often have varied schedules and multiple drivers in households.\n\n**Agricultural workers** throughout Houston County's peanut, cotton, and row crop operations may have specialized vehicle considerations and rural property needs.\n\n**Education employees** at Dothan City Schools, Houston County Schools, Troy University's Dothan campus, and Wallace Community College benefit from stable employment and educator discounts where available.\n\nWe customize coverage recommendations based on your specific employment, commute patterns, and household needs — not just your ZIP code.",
+    localExcellence: "Operating from our Centre, Alabama headquarters approximately 200 miles north of Dothan, we've built digital insurance delivery that serves 36301 and 36303 residents better than many local storefronts. You receive comprehensive coverage analysis and personalized attention matching face-to-face meetings, with the convenience of handling everything from your home in Westgate or your office near Ross Clark Circle.\n\nLicensed Alabama agents (Agency License #416438) understand state regulations and Houston County conditions, ensuring coverage meets requirements while addressing regional risks like tropical weather exposure and the unique dynamics of the Wiregrass economy.\n\nTechnology enables faster quotes — most take about 15 minutes. Streamlined claims support means you reach a real person who knows your policy. Efficient policy management lets you update coverage, add vehicles, or adjust deductibles without scheduling appointments. This efficiency translates to competitive rates while maintaining personal service.\n\nDuring tropical weather season, our digital tools prove especially valuable. Track approaching systems with us and verify coverage before impact. File claims online the moment damage occurs. Reach us by phone when your neighborhood is dealing with storm aftermath. We're built for how Wiregrass families actually live.",
+    localConsiderations: "Dothan's proximity to the Gulf of Mexico means hurricane and tropical storm remnants regularly impact the Wiregrass Region from June through November. The Choctawhatchee River watershed and Beaver Creek create significant flooding risks even far from major waterways. Ross Clark Circle and Highway 231 traffic density increases accident frequency, while Alabama's 18%+ uninsured driver rate makes UM coverage essential. Fort Novosel military families need flexible coverage accommodating relocations and deployments.",
+    neighborhoods: ["Downtown Dothan", "Westgate", "Northside", "Selma Street area", "Cottonwood Road corridor", "Airport area", "Rehobeth", "Ashford", "Headland Highway corridor", "Ross Clark Circle", "Flowers Hospital area", "Wiregrass Commons area", "Napier Field", "Taylor Road", "Webb", "Midland City"],
     faqs: [
       {
-        question: "What are typical insurance costs in Dothan?",
-        answer: "Dothan auto insurance averages $900-1,500 annually. Home insurance varies by property value and roof age, typically $1,000-2,200 annually. Bundling auto and home saves 15-25%."
+        question: "Do I need to visit your office to get insurance in Dothan?",
+        answer: "No office visit required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes to claims support happens online or by phone. Dothan residents in 36301 and 36303 save time while receiving comprehensive coverage analysis and personal attention from licensed Alabama agents who understand Houston County's specific risks."
       },
       {
-        question: "Does Dothan require special tornado coverage?",
-        answer: "Standard home insurance covers tornado wind damage. Dothan sits in Dixie Alley with spring tornado risk. We recommend adequate wind/hail coverage with affordable deductibles."
+        question: "How does tropical weather affect insurance in Dothan?",
+        answer: "Dothan's proximity to the Gulf of Mexico means hurricane and tropical storm remnants regularly impact the Wiregrass Region from June through November. These systems bring flooding rains, sustained winds, and occasional tornadoes. Homeowners insurance rates reflect this exposure, and your policy's wind deductible may differ from your standard deductible. Comprehensive auto coverage protects vehicles from flood and wind damage during tropical events."
       },
       {
-        question: "Can Dothan residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We'll quote bundled and standalone options to maximize your savings."
+        question: "Is flood insurance necessary in Dothan?",
+        answer: "Standard homeowners insurance excludes flood damage entirely. While Dothan isn't coastal, tropical systems and severe thunderstorms regularly produce flash flooding. Properties near the Choctawhatchee River watershed, Beaver Creek, or low-lying drainage areas face elevated risk. Even properties outside FEMA flood zones experience flooding — over 20% of flood claims come from outside designated high-risk areas. We analyze your specific address to assess flood risk and coverage needs."
       },
       {
-        question: "What factors affect Dothan home insurance rates?",
-        answer: "Roof age/material, dwelling replacement cost, protective devices, claims history, and coverage selections impact rates. Newer roofs and monitored security systems can reduce premiums."
+        question: "What bundle savings are available for Dothan residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on combined premiums — often $400-600 annually for Wiregrass families. You can maximize savings by combining multiple policies: home and auto, renters and auto, or adding condo and life insurance to your package. One household, one agency, one discount."
       },
       {
-        question: "Do Dothan renters need insurance?",
-        answer: "While not legally required, many Dothan landlords mandate renters insurance. It protects personal property from fire, theft, and storms while providing liability coverage—typically $15-30/month."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, these minimums rarely provide adequate protection. A serious accident on Highway 231 or Ross Clark Circle can easily generate claims exceeding minimum limits. We typically recommend higher liability limits plus matching uninsured motorist coverage."
       },
       {
-        question: "How do I get a quote for Dothan insurance?",
-        answer: "Call our Centre, AL office at (256) 927-6287 or request a quote online. We serve all Dothan and Houston County areas with personalized service."
+        question: "Do Fort Novosel military families have special insurance options?",
+        answer: "Military families often benefit from specific discounts and flexible policy options. We understand the unique needs of service members and their families — including coverage that accommodates relocations, protection during deployments, and responsive service when the service member is away. Contact us to discuss military family coverage options."
+      },
+      {
+        question: "What factors affect auto insurance rates in Dothan?",
+        answer: "Your specific address in 36301 or 36303, driving record, vehicle types, annual mileage, and commute patterns all affect rates. Traffic density near Ross Clark Circle differs from rural roads toward Ashford or Rehobeth. Garaging location affects theft and vandalism risk. We consider all these factors — plus available discounts for safe drivers, good students, bundled policies, and more — to find your best rate."
+      },
+      {
+        question: "How quickly can I get coverage for my Dothan home or vehicle?",
+        answer: "Most policies can begin the same day. Our digital process means Dothan residents receive quotes within about 15 minutes. Once you've reviewed options and made a decision, coverage activates immediately. Need proof of insurance for a vehicle purchase, apartment lease, or mortgage closing? We provide documentation right away."
       }
-    ]
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ],
+    nearbyCities: ["enterprise-al", "troy-al", "phenix-city-al"]
   },
 
   "auburn-al": {
