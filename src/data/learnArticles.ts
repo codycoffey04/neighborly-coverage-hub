@@ -246,24 +246,269 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "home-insurance-guide",
-    title: "Home Insurance in Alabama & Georgia: Complete Protection Guide",
-    metaTitle: "Home Insurance in Alabama & Georgia: Complete Guide | Coffey Agencies",
-    metaDescription: "Learn what homeowners insurance covers, how much you need, and ways to save on premiums in Alabama and Georgia.",
-    excerpt: "Your home is likely your largest investment. Understanding what homeowners insurance covers — and what it doesn't — helps you protect that investment without overpaying.",
+    title: "Home Insurance in Alabama & Georgia: Coverage That Matches Your Risks",
+    metaTitle: "Home Insurance in Alabama & Georgia: Coverage Guide | Coffey Agencies",
+    metaDescription: "Learn what home insurance covers in Alabama and Georgia, what standard policies exclude, regional risks like flooding and tornadoes, and how to save on premiums.",
+    excerpt: "Your home is likely your largest investment. Home insurance protects that investment — but not all policies are equal, and not all risks are covered.",
     category: "Home Insurance",
-    readTime: "7 min read",
+    readTime: "8 min read",
     featured: false,
     content: [
       {
         type: 'paragraph',
-        content: "Detailed home insurance guide content coming soon. This will cover dwelling coverage, personal property, liability, additional living expenses, and regional considerations for Alabama and Georgia homeowners."
+        content: "Your home is likely your largest investment. Home insurance protects that investment — but not all policies are equal, and not all risks are covered. Alabama and Georgia homeowners face specific threats that generic policies may miss. This guide explains what home insurance covers, what it doesn't, and how to build a policy that actually protects you."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Home Insurance Covers"
+      },
+      {
+        type: 'paragraph',
+        content: "Standard homeowners policies (HO-3) include several coverage types:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Dwelling Coverage (Coverage A)"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers the structure itself — walls, roof, foundation, built-in appliances. This is the core of your policy. Coverage should reflect replacement cost, not market value. A $200,000 home might cost $280,000 to rebuild after a total loss."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Other Structures (Coverage B)"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers detached structures: garages, sheds, fences, pools. Typically set at 10% of dwelling coverage automatically."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Personal Property (Coverage C)"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers your belongings — furniture, electronics, clothing, appliances. Standard policies cover around 50-70% of dwelling coverage. Actual cash value policies pay depreciated value; replacement cost policies pay to replace items with new equivalents. Replacement cost is worth the premium difference."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Loss of Use (Coverage D)"
+      },
+      {
+        type: 'paragraph',
+        content: "Pays additional living expenses if your home becomes uninhabitable. Hotel costs, restaurant meals, temporary housing — covered while repairs happen."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability (Coverage E)"
+      },
+      {
+        type: 'paragraph',
+        content: "Protects you if someone is injured on your property or you damage someone else's property. Also covers legal defense costs. Standard coverage is $100,000, but $300,000-$500,000 is often recommended."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Medical Payments (Coverage F)"
+      },
+      {
+        type: 'paragraph',
+        content: "Pays minor medical expenses for guests injured on your property, regardless of fault. Typically $1,000-$5,000. Helps avoid lawsuits over small injuries."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Standard Policies Don't Cover"
+      },
+      {
+        type: 'paragraph',
+        content: "Here's where Alabama and Georgia homeowners get burned:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Flood Damage"
+      },
+      {
+        type: 'paragraph',
+        content: "Standard policies exclude flooding entirely — from any source. Rising water, storm surge, flash floods, overflowing rivers — none covered. You need separate flood insurance through NFIP or private insurers. This matters across both states, not just coastal areas. Birmingham floods. Atlanta floods. Anywhere it rains hard, it can flood."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Earthquake Damage"
+      },
+      {
+        type: 'paragraph',
+        content: "Not covered under standard policies. Less relevant in our region but worth understanding."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Maintenance Issues"
+      },
+      {
+        type: 'paragraph',
+        content: "Gradual damage from neglected maintenance — roof leaks you ignored, slow plumbing leaks, pest damage — isn't covered. Insurance covers sudden, accidental events, not homeowner negligence."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Sewer Backup"
+      },
+      {
+        type: 'paragraph',
+        content: "Water damage from backed-up sewers or drains typically requires a separate endorsement. Worth adding — a sewer backup can cause $10,000+ in damage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "High-Value Items"
+      },
+      {
+        type: 'paragraph',
+        content: "Jewelry, art, collectibles, firearms — standard policies cap coverage, often at $1,500-$2,500. Scheduled personal property endorsements cover specific high-value items at appraised value."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Alabama & Georgia: Regional Risks"
+      },
+      {
+        type: 'paragraph',
+        content: "Our states face weather patterns that demand specific coverage attention:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Severe Storms and Tornadoes"
+      },
+      {
+        type: 'paragraph',
+        content: "Alabama ranks among the highest states for tornado frequency. Georgia sees fewer but isn't immune. Wind and hail damage is covered under standard policies, but deductibles may differ. Some policies have separate wind/hail deductibles — often 1-2% of dwelling coverage rather than flat dollar amounts. Know your deductible before storm season."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Hurricane and Tropical Storm Exposure"
+      },
+      {
+        type: 'paragraph',
+        content: "Coastal Alabama (Mobile, Baldwin County) and southern Georgia face direct hurricane risk. Even inland areas experience tropical storm remnants. Wind deductibles may apply during named storms. Flood insurance becomes essential."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Hail"
+      },
+      {
+        type: 'paragraph',
+        content: "Both states see significant hail, especially in spring. A single hailstorm can require roof replacement across entire neighborhoods. Document your roof's age and condition — insurers may decline claims on older roofs or depreciate payouts."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Humidity and Water Damage"
+      },
+      {
+        type: 'paragraph',
+        content: "Our climate promotes mold growth. Water damage claims are covered if sudden (burst pipe), but mold remediation limits may apply. Slow leaks and humidity damage from poor ventilation? Not covered."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Much Coverage Do You Need?"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Dwelling Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Enough to completely rebuild your home — not what you paid or current market value. Rebuild costs often exceed purchase price. Get a replacement cost estimate, not a guess."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Personal Property"
+      },
+      {
+        type: 'paragraph',
+        content: "Inventory your belongings. Most people underestimate what they own. A typical household has $50,000-$100,000 in personal property. Home inventory apps make documentation easier."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability"
+      },
+      {
+        type: 'paragraph',
+        content: "Minimum $300,000 recommended. If you have significant assets, consider an umbrella policy for additional protection."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Deductibles"
+      },
+      {
+        type: 'paragraph',
+        content: "Higher deductibles lower premiums but increase out-of-pocket costs when you claim. Choose what you can actually afford to pay."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How to Save on Home Insurance"
+      },
+      {
+        type: 'list',
+        content: [
+          "Bundle with Auto: 15-25% savings, often $400-600 annually.",
+          "Improve Home Security: Deadbolts, alarm systems, fire/smoke detectors, and security cameras can qualify for discounts.",
+          "Upgrade Your Roof: Impact-resistant shingles may qualify for significant discounts in hail-prone areas. When replacing your roof, ask about insurance-rated materials.",
+          "Increase Deductibles: Moving from $1,000 to $2,500 deductible can lower premiums 10-15%.",
+          "Review Coverage Annually: As home values change, coverage should adjust. Underinsured homes create problems at claim time. Overinsured homes waste money."
+        ]
       }
     ],
-    faqs: [],
+    faqs: [
+      {
+        question: "Is flood insurance required in Alabama or Georgia?",
+        answer: "Only if your mortgage lender requires it — typically for homes in FEMA-designated flood zones. But flooding happens outside those zones too. Over 20% of flood claims come from outside high-risk areas. If you're near water, low-lying, or in an area with drainage issues, consider flood insurance regardless of requirements."
+      },
+      {
+        question: "What's the difference between actual cash value and replacement cost?",
+        answer: "Actual cash value pays what your damaged property was worth at the time of loss — original value minus depreciation. A 10-year-old couch might be worth $100. Replacement cost pays to replace it with a similar new item — maybe $800. Replacement cost coverage costs more but pays significantly better claims."
+      },
+      {
+        question: "How does my roof age affect coverage?",
+        answer: "Insurers increasingly limit coverage on older roofs. Some won't insure homes with roofs over 15-20 years old. Others cover older roofs at actual cash value only, meaning depreciated payouts. A 20-year-old roof might only get 20-30% of replacement cost. Know your roof's age and your policy's terms."
+      },
+      {
+        question: "What happens if I'm underinsured when I file a claim?",
+        answer: "If your dwelling coverage is significantly below replacement cost, you may face coinsurance penalties. Policies often require you to insure at least 80% of replacement cost. Fall below that, and the insurer may only pay a proportional share of claims — even partial losses."
+      },
+      {
+        question: "Should I file small claims?",
+        answer: "Consider carefully. Multiple claims — even small ones — can increase premiums or lead to non-renewal. If damage is close to your deductible, paying out-of-pocket may be smarter long-term."
+      },
+      {
+        question: "How do I document my belongings for insurance purposes?",
+        answer: "Walk through your home with your phone, recording video of every room, closet, and cabinet. Open drawers. Note brands and models of electronics and appliances. Store the video in cloud storage or email it to yourself. Update annually or when you make major purchases."
+      }
+    ],
     relatedArticles: ["auto-insurance-guide", "bundling-home-and-auto", "condo-insurance-guide"],
     internalLinks: [
-      { text: "Get Your Free Home Insurance Quote", href: "/contact" },
-      { text: "Bundle Auto + Home and Save", href: "/learn/bundling-home-and-auto" }
+      { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Bundle Home + Auto and Save", href: "/learn/bundling-home-and-auto" },
+      { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
+      { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" }
     ]
   },
   {
