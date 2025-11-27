@@ -595,41 +595,69 @@ export const cityData: Record<string, CityData> = {
     city: "Phenix City",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["36867"],
+    zipCodes: ["36867", "36868", "31902", "31908", "36869", "36870"],
+    localPhone: "(334) 553-9258",
+    customHeroTitle: "Insurance in Phenix City, AL (36867)",
+    customHeroSubhead: "Local help with auto insurance in the 36867 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     isOfficeCity: false,
     nearestOffice: "centre",
     introduction: [
-      "Coffey Agencies serves Phenix City, Alabama families with comprehensive insurance for the Chattahoochee Valley. Neighboring Columbus, GA, we protect Phenix City residents with auto, home, renters, condo, and life insurance.",
-      "Phenix City's location on the Alabama-Georgia border creates unique opportunities and insurance considerations. Our team serves Russell County residents with personalized coverage and competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Phenix City insurance quotes and border-area expertise."
+      "Phenix City faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with damaging winds to flooding concerns along the Chattahoochee River and Uchee Creek, residents need insurance protection tailored to East Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Phenix City, Idle Hour, or any neighborhood in the region.",
+      "With approximately 22,505 residents and a median household income around $46,847, this diverse community includes military families serving at Fort Moore (Fort Benning), technology workers at TSYS, and healthcare professionals at Columbus Regional Healthcare. Each household has distinct insurance needs, whether protecting homes near Chattahoochee River flood zones or securing auto coverage for commutes to Fort Moore."
     ],
-    localConsiderations: "Phenix City experiences spring severe weather and tornado risk. Proximity to Fort Benning and Columbus, GA creates military-connected insurance needs. Cross-border commuters should ensure adequate auto coverage for Georgia travel.",
-    neighborhoods: ["Downtown Phenix City", "Summerville", "Ladonia", "Phenix City Riverwalk", "Highway 280 corridor", "Russell County area", "Smiths Station", "Fort Mitchell"],
-    nearbyCities: ["auburn-al", "columbus-ga", "montgomery-al"],
+    weatherRisks: "Living in Phenix City means preparing for severe weather year-round. Thunderstorm season brings heightened risk from March through May, with damaging winds and large hail threatening vehicles and roofs. Tornado threats occur regularly during spring months, potentially impacting neighborhoods from Ladonia to Summerville. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit.\n\nThe Chattahoochee River and Uchee Creek present flooding risks that standard policies typically exclude. Properties in riverside areas and low-lying neighborhoods should consider flood insurance as critical protection. Winter ice storms, while occasional, can cause significant damage requiring proper coverage. We analyze your specific location to determine risk levels and recommend appropriate coverage for Phenix City residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Downtown Phenix City and Idle Hour feature mature trees that can pose storm risks. Newer developments in Phenix Estates may have different construction standards affecting replacement costs. Properties near the Columbus border and along US-280 might benefit from increased liability limits due to higher traffic volumes.\n\nBundling home and auto insurance in Phenix City saves money while creating comprehensive protection for East Alabama living. Whether commuting to Fort Moore gates, navigating US-280, or crossing the Chattahoochee River into Columbus, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Russell County residents.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Fort Moore employing over 42,000 personnel, many military families need flexible policies accommodating frequent moves and deployments. TSYS technology workers may own newer vehicles requiring comprehensive auto coverage. Healthcare professionals at Columbus Regional Healthcare may benefit from higher liability limits given professional responsibilities.\n\nZIP codes served include 36867, 36868, 31902, 31908, 36869, and 36870—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a first-time homebuyer in Summerville or updating established household coverage in Ladonia. Retail sector workers and Phenix City School District employees benefit from our competitive rates and bundle savings.",
+    localExcellence: "Operating from Centre headquarters, we've perfected digital insurance delivery to Phenix City. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Alabama agents (License #416438) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to the Chattahoochee River valley.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 36867 area while maintaining personal service expected from local agents, despite our Centre location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7, perfect for military families and busy professionals working at Fort Moore and TSYS.",
+    localConsiderations: "Phenix City residents near Fort Moore (Fort Benning) benefit from stable property values and strong military community infrastructure. The diverse economy includes technology sector (TSYS), healthcare (Columbus Regional Healthcare), and military installations. Properties along the Chattahoochee River and Uchee Creek require flood insurance consideration. Commuter traffic to Fort Moore gates and US-280 corridor creates specific auto insurance needs. Bundle home and auto coverage to save up to $600 annually while maintaining comprehensive protection for East Alabama weather risks and regional considerations.",
+    neighborhoods: ["Downtown Phenix City", "Idle Hour", "Summerville", "Ladonia", "Phenix Estates", "Highway 280 corridor", "Russell County area", "Smiths Station", "Fort Mitchell", "Phenix City Riverwalk", "Fort Moore vicinity", "Columbus border area"],
+    nearbyCities: ["auburn-al", "montgomery-al", "dothan-al"],
     faqs: [
       {
-        question: "Do I need Georgia coverage if I live in Phenix City but work in Columbus?",
-        answer: "Your Alabama auto insurance covers you in Georgia. Alabama policies meet Georgia's minimum requirements. However, ensure adequate liability limits for cross-border commuting and higher traffic areas."
+        question: "Do I need to visit your office to get insurance in Phenix City?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes can be handled online or by phone, saving 36867 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "Does Coffey Agencies serve military families at Fort Benning?",
-        answer: "Yes! We serve Phenix City military families connected to Fort Benning. We understand deployment-related insurance needs and offer flexible coverage options. Call (256) 927-6287."
+        question: "How does Fort Moore (Fort Benning) proximity affect insurance rates?",
+        answer: "Properties near Fort Moore benefit from stable neighborhoods and strong property values. Military families often qualify for special coverage options including deployment protection and relocation clauses. We understand the unique needs of service members and structure policies providing continuous protection during deployments and permanent change of station moves."
       },
       {
-        question: "What are typical Phenix City insurance costs?",
-        answer: "Phenix City auto insurance averages $900-1,400 annually. Home insurance depends on property value and coverage, typically $1,000-2,000 annually. Bundling saves 15-25%."
+        question: "What bundle savings are available for Phenix City residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Residents can maximize savings by combining multiple policies, whether insuring a home in Idle Hour and vehicles for Fort Moore commutes, or protecting a property near downtown with comprehensive auto coverage."
       },
       {
-        question: "Do Phenix City renters need insurance?",
-        answer: "While not legally required, many landlords mandate renters insurance. It protects belongings from fire, theft, and storms while providing liability coverage—typically $15-30/month."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on US-280 and around Fort Moore gates often warrants higher limits for adequate protection."
       },
       {
-        question: "What weather risks affect Phenix City insurance?",
-        answer: "Phenix City faces spring tornado season and severe thunderstorms. Home insurance should include wind/hail coverage with appropriate deductibles for Alabama weather patterns."
+        question: "How does Chattahoochee River flooding affect homeowners insurance?",
+        answer: "Properties near the Chattahoochee River and Uchee Creek face elevated flood risks during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for riverside properties. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs in flood-prone areas."
       },
       {
-        question: "Can I get same-day coverage in Phenix City?",
-        answer: "Auto and renters insurance often activate same-day. Home insurance may require property details and documentation. Contact us at (256) 927-6287 to discuss your timeline."
+        question: "Can Fort Moore military families get special coverage?",
+        answer: "Military families have unique insurance needs including deployment clauses, coverage for frequent relocations, and protection during temporary duty assignments. We structure policies providing continuous protection whether stationed at Fort Moore or deployed elsewhere, with flexible terms accommodating military service requirements."
+      },
+      {
+        question: "What factors affect auto insurance rates in Phenix City?",
+        answer: "Auto insurance rates consider your ZIP code (36867 and surrounding areas), driving record, vehicle type, and commute distance. Traffic patterns near Fort Moore gates, US-280 corridor risks, and bridge crossings into Columbus all factor into personalized rates for Russell County residents."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes in Phenix Estates, Ladonia, or any other neighborhood in the area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
@@ -1189,49 +1217,6 @@ export const cityData: Record<string, CityData> = {
     ]
   },
 
-  "columbus-ga": {
-    slug: "columbus-ga",
-    city: "Columbus",
-    state: "Georgia",
-    stateAbbr: "GA",
-    zipCodes: ["31901"],
-    isOfficeCity: false,
-    nearestOffice: "rome",
-    introduction: [
-      "Coffey Agencies serves Columbus, Georgia families with comprehensive insurance for the Chattahoochee Valley. From Midtown to North Columbus, we protect Columbus residents and Fort Benning families with auto, home, renters, condo, and life insurance.",
-      "Columbus combines urban amenities, military presence, and Southern charm. Our team understands Muscogee County's insurance needs and serves both civilians and military families with personalized coverage.",
-      "Contact our Rome, GA office at (706) 784-6511 for Columbus insurance quotes and Chattahoochee Valley service."
-    ],
-    localConsiderations: "Columbus experiences spring tornado season and severe thunderstorms. Strong military presence at Fort Benning creates deployment-related insurance needs. Proximity to Alabama creates cross-border coverage considerations for commuters.",
-    neighborhoods: ["Downtown Columbus", "Midtown", "North Columbus", "Uptown", "Wynnton", "Green Island Hills", "St. Elmo", "Lakebottom", "Fort Benning area", "Phenix City vicinity"],
-    nearbyCities: ["phenix-city-al", "auburn-al", "atlanta-ga"],
-    faqs: [
-      {
-        question: "Does Coffey Agencies serve Fort Benning military families?",
-        answer: "Yes! We serve Columbus and Fort Benning military families. We understand deployment-related insurance needs, PCS moves, and offer flexible coverage options. Call (706) 784-6511."
-      },
-      {
-        question: "What are typical insurance costs in Columbus?",
-        answer: "Columbus auto insurance averages $1,000-1,600 annually. Home insurance varies by property value and coverage, typically $1,100-2,000 annually. Military discounts may be available."
-      },
-      {
-        question: "Do Columbus renters near Fort Benning need insurance?",
-        answer: "Yes! Renters insurance protects personal property from fire, theft, and storms while providing liability coverage. Many landlords require it—typically $16-28/month, less when bundled."
-      },
-      {
-        question: "Can military families suspend coverage during deployment?",
-        answer: "Coverage requirements vary by lender and situation. We'll work with you on deployment-related insurance adjustments while maintaining necessary coverage. Contact us to discuss specifics."
-      },
-      {
-        question: "What home insurance do Columbus homeowners need?",
-        answer: "Columbus homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Tornado season makes adequate wind coverage essential."
-      },
-      {
-        question: "Does my Georgia insurance work if I commute to Alabama?",
-        answer: "Yes, Georgia auto insurance covers you in Alabama. Ensure adequate liability limits for cross-border commuting and higher traffic areas around Columbus-Phenix City."
-      }
-    ]
-  },
 
   "cartersville-ga": {
     slug: "cartersville-ga",
