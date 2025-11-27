@@ -3,6 +3,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -12,8 +13,36 @@ interface PageLayoutProps {
 }
 
 export const PageLayout = ({ children, title, description, breadcrumbs }: PageLayoutProps) => {
+  // Generate BreadcrumbList schema
+  const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      ...breadcrumbs.map((crumb, index) => ({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": crumb.label,
+        "item": `https://coffeyagencies.com${crumb.href}`
+      }))
+    ]
+  } : null;
+
   return (
     <div className="min-h-screen">
+      {breadcrumbSchema && (
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify(breadcrumbSchema)}
+          </script>
+        </Helmet>
+      )}
+      
       <Header />
       
       {/* Hero Banner */}

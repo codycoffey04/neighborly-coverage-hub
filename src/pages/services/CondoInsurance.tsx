@@ -191,6 +191,32 @@ const faqs = [
   }
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Condo Insurance (HO-6)",
+  "provider": {
+    "@type": "InsuranceAgency",
+    "name": "Coffey Agencies",
+    "url": "https://coffeyagencies.com"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Alabama"
+    },
+    {
+      "@type": "State",
+      "name": "Georgia"
+    }
+  ],
+  "description": "Specialized HO-6 condo insurance protecting walls-in coverage, betterments, personal property, loss assessment, and liability for Alabama and Georgia condo owners.",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock"
+  }
+};
+
 const testimonials = [
   {
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
@@ -264,6 +290,9 @@ const CondoInsurance = () => {
         />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
 

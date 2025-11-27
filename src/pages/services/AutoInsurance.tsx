@@ -180,6 +180,33 @@ const AutoInsurance = () => {
     }))
   };
 
+  // Service Schema
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Auto Insurance",
+    "provider": {
+      "@type": "InsuranceAgency",
+      "name": "Coffey Agencies",
+      "url": "https://coffeyagencies.com"
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Alabama"
+      },
+      {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    ],
+    "description": "Comprehensive auto insurance coverage including liability, collision, comprehensive, and uninsured motorist protection for Alabama and Georgia drivers.",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -187,6 +214,9 @@ const AutoInsurance = () => {
         <meta name="description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance coverage in Alabama and Georgia with local expertise." />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
 

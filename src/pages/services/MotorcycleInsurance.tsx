@@ -176,6 +176,33 @@ const MotorcycleInsurance = () => {
     }))
   };
 
+  // Service Schema
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Motorcycle Insurance",
+    "provider": {
+      "@type": "InsuranceAgency",
+      "name": "Coffey Agencies",
+      "url": "https://coffeyagencies.com"
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Alabama"
+      },
+      {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    ],
+    "description": "Motorcycle insurance coverage for cruisers, sport bikes, and touring machines including liability, collision, comprehensive, and custom parts protection up to $30,000.",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -183,6 +210,9 @@ const MotorcycleInsurance = () => {
         <meta name="description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents who ride, and honest advice on limits." />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
 

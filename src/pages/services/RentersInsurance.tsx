@@ -165,6 +165,38 @@ const faqSchema = {
   }))
 };
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Renters Insurance",
+  "provider": {
+    "@type": "InsuranceAgency",
+    "name": "Coffey Agencies",
+    "url": "https://coffeyagencies.com"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Alabama"
+    },
+    {
+      "@type": "State",
+      "name": "Georgia"
+    }
+  ],
+  "description": "Affordable renters insurance starting at $8/month when bundled, protecting personal property, liability, and providing temporary housing coverage.",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "8.00",
+      "priceCurrency": "USD",
+      "unitText": "MONTH"
+    }
+  }
+};
+
 const RentersInsurance = () => {
   return (
     <>
@@ -176,6 +208,9 @@ const RentersInsurance = () => {
         />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
 
