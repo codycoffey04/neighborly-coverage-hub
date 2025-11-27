@@ -161,8 +161,7 @@ const georgiaCities = [
   { name: "Cedartown", slug: "cedartown-ga" },
   { name: "Summerville", slug: "summerville-ga" },
   { name: "Suwanee", slug: "suwanee-ga" },
-  { name: "Alpharetta", slug: "alpharetta-ga" },
-  { name: "Marietta", slug: "marietta-ga" }
+  { name: "Alpharetta", slug: "alpharetta-ga" }
 ];
 
 const AutoInsurance = () => {

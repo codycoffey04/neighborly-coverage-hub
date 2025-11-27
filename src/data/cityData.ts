@@ -1660,49 +1660,6 @@ export const cityData: Record<string, CityData> = {
     ]
   },
 
-  "marietta-ga": {
-    slug: "marietta-ga",
-    city: "Marietta",
-    state: "Georgia",
-    stateAbbr: "GA",
-    zipCodes: ["30060"],
-    isOfficeCity: false,
-    nearestOffice: "rome",
-    introduction: [
-      "Coffey Agencies serves Marietta, Georgia families with comprehensive insurance for Cobb County. From the square to East Cobb, we protect Marietta residents with auto, home, renters, condo, and life insurance.",
-      "Marietta's historic charm, diverse neighborhoods, and strong economy create varied insurance needs. Our team provides personalized coverage at competitive rates for Cobb County families.",
-      "Contact our Rome, GA office at (706) 784-6511 for Marietta insurance quotes and Cobb County service."
-    ],
-    localConsiderations: "Marietta experiences spring severe weather and tornado risk. I-75 corridor and heavy suburban traffic create auto insurance considerations. Diverse neighborhood values from historic to upscale create varied home insurance needs.",
-    neighborhoods: ["Marietta Square", "East Cobb", "West Cobb", "South Cobb", "Smyrna", "Kennesaw", "Acworth vicinity", "Sandy Plains", "Johnson Ferry"],
-    nearbyCities: ["atlanta-ga", "alpharetta-ga", "cartersville-ga"],
-    faqs: [
-      {
-        question: "What are typical insurance costs in Marietta?",
-        answer: "Marietta auto insurance averages $1,200-1,900 annually. Home insurance varies widely by neighborhood, typically $1,200-2,400 annually. East Cobb homes may have higher premiums due to property values."
-      },
-      {
-        question: "Do Marietta renters need insurance?",
-        answer: "Yes! Renters insurance protects belongings and provides liability coverage. Many Marietta landlords require it—typically $18-30/month, less when bundled with auto insurance."
-      },
-      {
-        question: "What home insurance do Marietta homeowners need?",
-        answer: "Marietta homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Older historic homes may have different requirements than newer East Cobb properties."
-      },
-      {
-        question: "Can Marietta residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We also offer safe driver, autopay, and protective device discounts."
-      },
-      {
-        question: "Does Coffey Agencies serve all Cobb County?",
-        answer: "Yes, we serve Marietta, Smyrna, Kennesaw, Acworth, and all Cobb County communities. Call (706) 784-6511 for personalized Cobb County quotes."
-      },
-      {
-        question: "What factors affect Marietta insurance rates?",
-        answer: "Driving record, property value, roof age, neighborhood, claims history, and coverage selections impact rates. We'll help you find the best coverage for your specific Marietta location."
-      }
-    ]
-  },
   "forsyth-ga": {
     slug: "forsyth-ga",
     city: "Forsyth",
