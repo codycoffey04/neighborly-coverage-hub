@@ -987,39 +987,74 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["30043", "30044"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    customHeroTitle: "Insurance in Lawrenceville, GA (30043 & 30044)",
+    customHeroSubhead: "Local help with auto insurance in the 30043 and 30044 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Lawrenceville, Georgia families with comprehensive insurance for Gwinnett County. From downtown to Sugarloaf Parkway, we protect Lawrenceville residents with auto, home, renters, condo, and life insurance.",
-      "Lawrenceville's blend of suburban neighborhoods, commercial corridors, and diverse communities creates varied insurance needs. Our team helps you find coverage that fits your family and budget.",
-      "Contact our Rome, GA office at (706) 784-6511 for Lawrenceville insurance quotes and Gwinnett County expertise."
+      "The 30043 and 30044 areas of Lawrenceville face unique insurance challenges requiring specialized understanding of Gwinnett County's county seat and the dynamics of Georgia's most populous county. From severe thunderstorm threats throughout spring and summer to the daily reality of Highway 316 and I-85 traffic, residents need insurance protection tailored to this established yet growing community. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Collins Hill, Mountain Park, or anywhere across historic Lawrenceville.",
+      "With approximately 30,000 residents in the city and over 950,000 in Gwinnett County, Lawrenceville serves as the governmental and judicial hub for one of America's fastest-growing counties. The 30043 ZIP code encompasses areas south of downtown including Collins Hill, Harbins Road corridor, and portions toward Snellville, while 30044 covers northern Lawrenceville including the downtown square, Mountain Park, and areas stretching toward Buford. This diverse community includes county government employees at the Gwinnett Justice and Administration Center, healthcare workers at Eastside Medical Center, educators throughout Gwinnett County Public Schools, and small business owners in the revitalized downtown. Each household has distinct insurance needs, whether protecting a historic home near the square or securing auto coverage for Highway 316 commutes to Athens or Atlanta."
     ],
-    localConsiderations: "Lawrenceville experiences spring severe weather and tornado risk. Heavy suburban traffic along I-85 and Sugarloaf Parkway increases accident frequency. Growing community diversity creates demand for multilingual insurance service.",
-    neighborhoods: ["Downtown Lawrenceville", "Sugarloaf", "Hamilton Mill", "Collins Hill", "Grayson", "Dacula", "Snellville area", "Loganville vicinity", "Gwinnett Place", "Pleasant Hill"],
-    nearbyCities: ["atlanta-ga", "duluth-ga", "suwanee-ga"],
+    weatherRisks: "Living in Lawrenceville means preparing for Georgia's severe weather concentrated in spring and early summer. Severe thunderstorms sweep through Gwinnett County regularly from March through July, bringing damaging hail that can total vehicles and destroy roofs across Collins Hill and Mountain Park within minutes. The 2008 Atlanta tornado outbreak affected portions of Gwinnett, demonstrating that established communities aren't immune to tornado damage.\n\nSummer brings intense heat and daily afternoon thunderstorms capable of producing flash flooding, particularly in low-lying areas and near the numerous creeks draining into the Yellow River watershed. Lawrenceville averages around 52 inches of rain annually, and intense summer storms regularly overwhelm drainage infrastructure. Older portions of Lawrenceville developed before modern stormwater management requirements.\n\nWinter occasionally brings ice storms that create hazardous driving and property damage from falling tree limbs. Mature trees throughout established Lawrenceville neighborhoods create beautiful canopy but significant storm debris exposure. The historic downtown area and surrounding neighborhoods feature large oaks that can damage homes, vehicles, and power lines during ice events.\n\nWe analyze your specific address in 30043 or 30044 to determine risk levels and recommend coverage that actually protects your Lawrenceville home and vehicles.",
+    neighborhoodCoverage: "Lawrenceville's neighborhoods each present distinct insurance considerations that generic online quotes miss entirely.\n\n**Historic Downtown Lawrenceville:** The revitalized square and surrounding streets feature historic homes requiring specialized coverage for period details and construction methods. Properties with historic designation may have specific replacement requirements. Mixed commercial and residential uses create unique liability considerations for some properties.\n\n**Collins Hill (30043):** Established residential community anchored by Collins Hill High School. Mix of 1980s-2000s construction in well-maintained subdivisions. Property values have appreciated significantly, potentially requiring coverage updates. Mature landscaping throughout creates storm debris exposure.\n\n**Mountain Park (30044):** Popular residential area with good schools and family-oriented neighborhoods. Mix of established subdivisions and newer construction. Higher elevations in some areas reduce flood concern but don't eliminate storm risk. Active neighborhood associations maintain property standards.\n\n**Harbins Road Corridor (30043):** More rural character transitioning toward Snellville. Larger lots with mix of established farms and newer subdivision development. Distance from fire stations in some areas affects home insurance. Agricultural neighbors may create different exposures.\n\n**Sugarloaf Parkway Corridor:** Growing commercial and residential corridor connecting Lawrenceville to Duluth and I-85. Newer apartment and townhome communities serve young professionals. Heavy traffic volume affects auto rates.\n\n**Northbrook and Puckett's Mill (30043/30044):** Master-planned communities with amenities and newer construction. Modern building codes and planned development often translate to competitive insurance rates. HOA requirements may specify coverage minimums.",
+    economyInfo: "Lawrenceville's position as Gwinnett County's governmental center creates varied insurance needs across the 30043 and 30044 communities.\n\n**County government employees** at the Gwinnett Justice and Administration Center, courthouse complex, and county offices throughout Lawrenceville often have stable careers with benefits worth protecting. Many commute from throughout Gwinnett or neighboring counties.\n\n**Healthcare workers** at Eastside Medical Center and medical facilities throughout Lawrenceville work around-the-clock schedules requiring reliable coverage for varied commute times. Medical professionals benefit from higher liability limits.\n\n**Educators and school staff** throughout Gwinnett County Public Schools — one of the nation's largest school districts — often live in Lawrenceville. School schedules create specific driving patterns with morning and afternoon commute peaks.\n\n**Legal and professional services workers** supporting the county courthouse, law firms, and professional offices throughout downtown benefit from adequate liability coverage and professional image considerations.\n\n**Small business owners** in revitalized downtown Lawrenceville and throughout commercial corridors may need commercial auto or business owner policies alongside personal coverage.\n\n**Retail and service workers** throughout Lawrenceville's shopping centers and restaurant districts work varied schedules with different driving exposures than traditional 9-to-5 commuters.\n\nWe customize coverage recommendations based on your specific employment, commute patterns, and household needs — not just your ZIP code.",
+    localExcellence: "Operating from our Rome, Georgia office approximately 75 miles northwest of Lawrenceville, we've built digital insurance delivery that serves 30043 and 30044 residents better than many local storefronts. You receive comprehensive coverage analysis and personalized attention matching face-to-face meetings, with the convenience of handling everything from your home in Collins Hill or your office near the courthouse square.\n\nLicensed Georgia agents (Agency License #149612) understand state regulations and Gwinnett County conditions, ensuring coverage meets requirements while addressing regional risks like severe storm exposure and metro Atlanta traffic dynamics.\n\nTechnology enables faster quotes — most take about 15 minutes. Streamlined claims support means you reach a real person who knows your policy. Efficient policy management lets you update coverage, add vehicles, or adjust deductibles without scheduling appointments. This efficiency translates to competitive rates while maintaining personal service.\n\nDuring severe storm season, our digital tools prove especially valuable. Track approaching storms with us and verify coverage before impact. File claims online the moment damage occurs. Reach us by phone when your neighborhood is dealing with aftermath. We're built for how Gwinnett County families actually live.",
+    localConsiderations: "Lawrenceville's position as Gwinnett County seat means elevated auto rates due to Highway 316 traffic and metro Atlanta accident frequency. Severe thunderstorms March-July bring damaging hail affecting homes and vehicles. Yellow River watershed creates flood risks excluded from standard homeowners policies. Georgia's 12% uninsured rate requires adequate UM coverage. Mature trees in established neighborhoods create storm debris exposure.",
+    neighborhoods: [
+      "Downtown Lawrenceville",
+      "Collins Hill",
+      "Mountain Park",
+      "Harbins Road",
+      "Sugarloaf Parkway corridor",
+      "Northbrook",
+      "Puckett's Mill",
+      "Gwinnett Justice Center area",
+      "Archer High School area",
+      "Hurricane Shoals",
+      "Grayson vicinity",
+      "Dacula border",
+      "Snellville area",
+      "Loganville vicinity",
+      "Duluth Highway corridor",
+      "Mall of Georgia vicinity"
+    ],
+    nearbyCities: ["duluth-ga", "suwanee-ga", "atlanta-ga"],
     faqs: [
       {
-        question: "What are typical insurance costs in Lawrenceville?",
-        answer: "Lawrenceville auto insurance averages $1,200-1,800 annually. Home insurance varies by property value and roof age, typically $1,200-2,200 annually. Bundling saves 15-25% on both policies."
+        question: "Do I need to visit your office to get insurance in Lawrenceville?",
+        answer: "No office visit required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes to claims support happens online or by phone. Lawrenceville residents in 30043 and 30044 save time while receiving comprehensive coverage analysis and personal attention from licensed Georgia agents who understand Gwinnett County's specific challenges."
       },
       {
-        question: "Do Lawrenceville renters need insurance?",
-        answer: "Yes! Many Lawrenceville landlords require renters insurance. It protects belongings from fire, theft, and storms while providing liability coverage—typically $18-30/month, less when bundled."
+        question: "Why is auto insurance more expensive in Lawrenceville than rural Georgia?",
+        answer: "Gwinnett County's position in metro Atlanta means higher traffic density, more accidents, elevated vehicle theft rates, and more expensive claims. Highway 316 and local roads see significant daily traffic volume. Urban and suburban areas simply have more insurance risk than rural communities. However, bundling policies, maintaining a clean record, and exploring all available discounts help offset higher base rates."
       },
       {
-        question: "What home insurance do Lawrenceville homeowners need?",
-        answer: "Lawrenceville homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Roof age and protective devices significantly impact pricing."
+        question: "How do severe storms affect insurance in Lawrenceville?",
+        answer: "Severe thunderstorms with damaging hail occur regularly in Gwinnett County from March through July. Mature trees throughout established Lawrenceville neighborhoods create debris risk during high winds and ice storms. Homeowners insurance rates reflect this exposure. Your policy's hail and wind deductibles may differ from your standard deductible."
       },
       {
-        question: "Can I bundle insurance policies in Lawrenceville?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We'll quote bundled and standalone options to show your savings."
+        question: "Is flood insurance necessary in Lawrenceville?",
+        answer: "Standard homeowners insurance excludes flood damage entirely. Properties near the Yellow River watershed, local creeks, and low-lying areas face elevated flood risk. Older parts of Lawrenceville may have drainage infrastructure that struggles during intense storms. We analyze your specific address to assess flood risk and coverage needs."
       },
       {
-        question: "Does Coffey Agencies serve all Gwinnett County?",
-        answer: "Yes, we serve Lawrenceville, Duluth, Suwanee, Dacula, Grayson, and all Gwinnett County communities. Call (706) 784-6511 for personalized quotes."
+        question: "What bundle savings are available for Lawrenceville residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on combined premiums — often $400-600 annually for Gwinnett County families. Given the area's higher auto rates, bundle discounts are particularly valuable. Combining multiple policies also simplifies your insurance management."
       },
       {
-        question: "What factors affect Lawrenceville auto insurance rates?",
-        answer: "Driving record, age, vehicle type, coverage selections, and location within Gwinnett affect rates. High-traffic areas may have slightly higher premiums. Safe driving and bundling reduce costs."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, these minimums are dangerously low for Gwinnett County traffic. A serious Highway 316 or I-85 accident can easily exceed $100,000 in damages. We typically recommend 50/100/50 or higher limits plus matching uninsured motorist coverage."
+      },
+      {
+        question: "What factors affect auto insurance rates in Lawrenceville?",
+        answer: "Your specific address in 30043 or 30044, driving record, vehicle types, annual mileage, and commute patterns all affect rates. Highway 316 commuters face different exposure than local-only drivers. Garaging location affects theft and vandalism risk. We consider all these factors — plus available discounts — to find your best rate."
+      },
+      {
+        question: "How quickly can I get coverage for my Lawrenceville home or vehicle?",
+        answer: "Most policies can begin the same day. Our digital process means Lawrenceville residents receive quotes within about 15 minutes. Once you've reviewed options and made a decision, coverage activates immediately. Need proof of insurance for a vehicle purchase, apartment lease, or mortgage closing? We provide documentation right away."
       }
+    ],
+    testimonials: [
+      { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
+      { name: "Steve Smith", text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
+      { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
     ]
   },
 
