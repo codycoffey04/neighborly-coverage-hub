@@ -1092,42 +1092,74 @@ export const cityData: Record<string, CityData> = {
     city: "Cedartown",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30125"],
+    zipCodes: ["30125", "30153", "30104", "30161", "30165", "30178"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    customHeroTitle: "Auto Insurance Quote Cedartown, GA - Compare Rates & Save Up to $600",
+    customHeroSubhead: "Local help with auto insurance in the 30125 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Cedartown, Georgia families with comprehensive insurance for Polk County. From downtown to Rockmart, we protect Cedartown residents with auto, home, renters, condo, and life insurance.",
-      "Cedartown's small-town character and historic downtown create a strong community foundation. Our team provides personalized coverage at competitive rates for Polk County families.",
-      "Contact our Rome, GA office at (706) 784-6511 for Cedartown insurance quotes and Polk County service."
+      "Cedartown faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May to flooding concerns along Silver Creek and Spring Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Cedartown, Big Spring Park area, Piedmont, or any neighborhood in Polk County.",
+      "With approximately 10,190 residents in the city and 42,000 throughout Polk County, and a median household income around $55,704, this diverse community includes manufacturing workers continuing the area's industrial heritage, educators at Polk County School District, healthcare professionals, and retail workers. Each household has distinct insurance needs, whether protecting homes near Silver Creek flood zones or securing auto coverage for US-27 commutes to major employers throughout the region."
     ],
-    localConsiderations: "Cedartown experiences spring tornado season and severe weather typical of West Georgia. Rural and small-town driving patterns create unique auto insurance considerations. Agricultural presence creates specialized coverage needs.",
-    neighborhoods: ["Downtown Cedartown", "Rockmart", "Aragon", "Taylorsville", "Polk County", "Highway 27 corridor", "Cave Spring vicinity"],
-    nearbyCities: ["rome-ga", "cartersville-ga", "douglasville-ga"],
+    weatherRisks: "Living in Cedartown means preparing for severe weather year-round. Tornado season brings heightened risk from March through May, with severe thunderstorms capable of producing damaging hail and destructive winds. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit separately. Silver Creek and Spring Creek present flooding risks that standard policies typically exclude. Properties near waterways in Cedartown and throughout Polk County should consider flood insurance as critical protection. Flash flooding during heavy rainfall events can damage homes quickly, especially in low-lying areas and creek valleys. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Cedartown residents. Occasional winter ice storms add another dimension to property and auto coverage needs throughout the area.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Downtown Cedartown features historic architecture that may require specialized replacement cost assessments and preservation considerations. The Big Spring Park area combines residential charm with proximity to recreational amenities. Piedmont and areas near the Rockmart border have distinct community characteristics affecting coverage needs. Rural Polk County properties require attention to outbuildings, extended property boundaries, and longer emergency response times. Bundling home and auto insurance in Cedartown saves money while creating comprehensive protection for Northwest Georgia living. Whether commuting on US-27, navigating local roads to manufacturing facilities, or traveling to Rome or Atlanta for work and shopping, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Polk County households.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Cedartown's manufacturing heritage continuing through local facilities, many residents require reliable auto coverage for daily commutes. Polk County School District employs educators and staff who benefit from understanding coverage options that fit public service budgets. Healthcare professionals at area medical facilities may need higher liability limits given professional responsibilities. The retail sector provides employment for many residents requiring affordable, comprehensive coverage. ZIP codes served include 30125, 30153, 30104, 30161, 30165, and 30178—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Cedartown, whether you're a manufacturing worker near Downtown Cedartown, a first-time homebuyer in Piedmont, or updating established household coverage in rural Polk County.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Cedartown and throughout Polk County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to Cedartown. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30125 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7, perfect for busy manufacturing workers, educators, healthcare professionals, and families across Cedartown and Polk County.",
+    localConsiderations: "Cedartown's position in Northwest Georgia creates specific insurance needs. Spring weather brings tornado risks requiring comprehensive wind coverage. Properties near Silver Creek and Spring Creek need flood insurance beyond standard homeowners policies. US-27 corridor traffic affects auto insurance rates. Our Rome-based team understands these local factors and provides coverage recommendations tailored to Polk County's unique risk profile.",
+    neighborhoods: [
+      "Downtown Cedartown",
+      "Big Spring Park area",
+      "Piedmont",
+      "Rockmart border",
+      "Rural Polk County",
+      "US-27 corridor",
+      "Aragon",
+      "Cave Spring vicinity",
+      "Highway 278 corridor",
+      "North Cedartown",
+      "South Cedartown",
+      "Industrial district"
+    ],
+    nearbyCities: ["rome-ga", "rockmart-ga", "atlanta-ga"],
     faqs: [
       {
-        question: "What are typical insurance costs in Cedartown?",
-        answer: "Cedartown auto insurance averages $850-1,300 annually. Home insurance varies by property value and coverage, typically $900-1,700 annually for Polk County homes. Bundling saves 15-25%."
+        question: "Do I need to visit your office to get insurance in Cedartown?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30125 residents time while receiving comprehensive coverage and personal service tailored to Polk County needs."
       },
       {
-        question: "Do Cedartown renters need insurance?",
-        answer: "Yes! Many Cedartown landlords require renters insurance. It protects belongings from fire, theft, and storms while providing liability coverage—typically $14-24/month."
+        question: "How do Silver Creek and Spring Creek affect flood insurance needs?",
+        answer: "Properties near Silver Creek and Spring Creek face elevated flood risks, especially during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for waterfront and low-lying properties in Polk County. We analyze FEMA flood maps for your specific address in Cedartown to determine risk levels and coverage needs."
       },
       {
-        question: "What home insurance do Cedartown homeowners need?",
-        answer: "Cedartown homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Spring weather makes comprehensive wind coverage important."
+        question: "What bundle savings are available for Cedartown residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Residents can maximize savings by combining multiple policies, whether insuring a home in Downtown Cedartown and vehicles for manufacturing facility commutes, or protecting a property in Piedmont with auto coverage for US-27 travel."
       },
       {
-        question: "Can Cedartown residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We also offer safe driver, autopay, and protective device discounts."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, US-27 corridor traffic and commutes to manufacturing centers often warrant higher limits for adequate protection in Polk County."
       },
       {
-        question: "Does Coffey Agencies serve all Polk County?",
-        answer: "Yes, we serve Cedartown, Rockmart, Aragon, and all Polk County communities. Call (706) 784-6511 for personalized Polk County insurance quotes."
+        question: "How does tornado season affect insurance premiums in Cedartown?",
+        answer: "Northwest Georgia experiences tornado threats primarily from March through May. Homeowners insurance rates reflect this elevated risk, with wind and hail deductibles often applying separately from standard deductibles. Proper coverage ensures protection when severe weather strikes the area."
       },
       {
-        question: "What factors affect Cedartown insurance rates?",
-        answer: "Driving record, property value, roof age, claims history, and coverage selections impact rates. Rural Polk County may have different pricing than urban Georgia areas."
+        question: "What coverage do manufacturing workers in Cedartown need?",
+        answer: "Employees at local manufacturing facilities should consider comprehensive and collision coverage for vehicles, along with adequate liability limits for commuting. Many workers benefit from bundling home and auto policies for maximum savings, especially important for families in the area."
+      },
+      {
+        question: "What factors affect auto insurance rates in Cedartown?",
+        answer: "Auto insurance rates consider your ZIP code, driving record, vehicle type, and commute distance. Traffic patterns on US-27, proximity to manufacturing centers, and local claim history all influence personalized rates for Polk County drivers. We analyze these factors to provide competitive quotes."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Cedartown residents can receive quotes within minutes and have active coverage the same day, protecting homes in Big Spring Park area, Piedmont, or any neighborhood throughout Polk County."
       }
+    ],
+    testimonials: [
+      { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
+      { name: "Steve Smith", text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
+      { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
     ]
   },
 
