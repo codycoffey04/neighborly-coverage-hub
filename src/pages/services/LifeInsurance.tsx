@@ -110,18 +110,19 @@ const LifeInsurance = () => {
     { name: "Enterprise", slug: "enterprise-al" }
   ];
 
-  const georgiaCities = [
-    { name: "Rome", slug: "rome-ga" },
-    { name: "Atlanta", slug: "atlanta-ga" },
-    { name: "Lawrenceville", slug: "lawrenceville-ga" },
-    { name: "Duluth", slug: "duluth-ga" },
-    { name: "Cartersville", slug: "cartersville-ga" },
-    { name: "Calhoun", slug: "calhoun-ga" },
-    { name: "Cedartown", slug: "cedartown-ga" },
-    { name: "Summerville", slug: "summerville-ga" },
-    { name: "Suwanee", slug: "suwanee-ga" },
-    { name: "Alpharetta", slug: "alpharetta-ga" }
-  ];
+const georgiaCities = [
+  { name: "Rome", slug: "rome-ga" },
+  { name: "Atlanta", slug: "atlanta-ga" },
+  { name: "Lawrenceville", slug: "lawrenceville-ga" },
+  { name: "Duluth", slug: "duluth-ga" },
+  { name: "Cartersville", slug: "cartersville-ga" },
+  { name: "Calhoun", slug: "calhoun-ga" },
+  { name: "Cedartown", slug: "cedartown-ga" },
+  { name: "Summerville", slug: "summerville-ga" },
+  { name: "Suwanee", slug: "suwanee-ga" },
+  { name: "Alpharetta", slug: "alpharetta-ga" },
+  { name: "Powder Springs", slug: "powder-springs-ga" }
+];
 
   return (
     <>

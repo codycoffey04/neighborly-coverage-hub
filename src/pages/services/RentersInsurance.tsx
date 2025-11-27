@@ -148,7 +148,8 @@ const georgiaCities = [
   { name: "Cedartown", slug: "cedartown-ga" },
   { name: "Summerville", slug: "summerville-ga" },
   { name: "Suwanee", slug: "suwanee-ga" },
-  { name: "Alpharetta", slug: "alpharetta-ga" }
+  { name: "Alpharetta", slug: "alpharetta-ga" },
+  { name: "Powder Springs", slug: "powder-springs-ga" }
 ];
 
 const faqSchema = {

@@ -1827,5 +1827,90 @@ export const cityData: Record<string, CityData> = {
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
+  },
+  
+  "powder-springs-ga": {
+    slug: "powder-springs-ga",
+    city: "Powder Springs",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["30127", "30064", "30106", "30126", "30141", "30152", "30168", "30082", "30080"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    customHeroTitle: "Insurance in Powder Springs, GA (30127)",
+    customHeroSubhead: "Local help with auto insurance in the 30127 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
+    introduction: [
+      "The 30127 area faces unique insurance challenges requiring specialized understanding of Cobb County risks. From severe thunderstorms bringing damaging hail to flash flooding concerns near Sweetwater Creek and Noses Creek, residents need insurance protection tailored to West Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Powder Springs, the Lost Mountain area, or any neighborhood in the region.",
+      "With approximately 16,000 residents and a median household income around $65,000, this tight-knit suburban community includes educators at Cobb County School District, healthcare professionals at WellStar Health System, aviation workers at McCollum Airport businesses, and public sector employees at City of Powder Springs. Each household has distinct insurance needs, whether protecting homes in Macedonia or securing auto coverage for commutes along the Brownsville Road corridor. Powder Springs' character as a growing Cobb County community creates specific insurance considerations balancing small-town living with metropolitan proximity."
+    ],
+    weatherRisks: "Living in Powder Springs means preparing for diverse weather challenges year-round. Severe thunderstorms deliver intense rainfall and damaging winds affecting properties from New Macland to the Hopkins Road area. Tornado season from March through May brings unpredictable threats requiring comprehensive wind damage coverage. Damaging hail events can impact vehicles and roofs throughout the Lost Mountain area. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit.\n\nSweetwater Creek and Noses Creek present flooding risks that standard policies typically exclude. Properties near these waterways should consider flood insurance as critical protection against flash flooding during severe storms. Extreme summer heat stresses home systems while occasional winter ice storms create unique hazards throughout Powder Springs. We analyze your specific location to determine risk levels and recommend appropriate coverage for 30127 residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Historic Downtown Powder Springs features diverse housing stock requiring appropriate coverage reflecting property values and architectural character. Established areas in the Lost Mountain region and Macedonia may have mature trees posing storm risks. Properties along the Hopkins Road area and Brownsville Road corridor benefit from understanding commuting patterns affecting auto insurance needs and liability considerations.\n\nBundling home and auto insurance in Powder Springs saves money while creating comprehensive protection for suburban living with Atlanta access. Whether commuting to metropolitan employment, traveling to WellStar Health System facilities, or navigating throughout Cobb County for work, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Powder Springs households facing regional weather risks and commuting patterns.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Cobb County School District employing hundreds of educators, many residents need reliable coverage supporting stable careers. WellStar Health System represents significant healthcare employment requiring comprehensive protection for medical professionals. McCollum Airport businesses bring aviation-related employment needing appropriate coverage. City of Powder Springs public sector workers represent local government employment throughout the 30127 area.\n\nZIP codes served include 30127, 30064, 30106, 30126, 30141, 30152, 30168, 30082, and 30080—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Powder Springs, whether you're a first-time homebuyer in New Macland or updating established household coverage in the Lost Mountain area. Understanding tornado exposure, creek flooding potential, and Atlanta commuting patterns ensures appropriate protection levels.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Powder Springs. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and Cobb County conditions, ensuring coverage meets all requirements while addressing regional risks like severe weather and creek flooding.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30127 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during storm season when quick action protects your Powder Springs property and family.",
+    localConsiderations: "Tornado exposure, creek flooding (Sweetwater Creek, Noses Creek), Atlanta commuting patterns, Cobb County suburban dynamics",
+    neighborhoods: [
+      "Downtown Powder Springs",
+      "Lost Mountain",
+      "Macedonia",
+      "New Macland",
+      "Hopkins Road area",
+      "Brownsville Road corridor",
+      "Seven Springs",
+      "Austell border",
+      "Hiram area",
+      "Sweetwater Creek area",
+      "Clarkdale",
+      "West Cobb"
+    ],
+    nearbyCities: ["rome-ga", "atlanta-ga", "cartersville-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office to get insurance in Powder Springs?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30127 residents time while receiving comprehensive coverage and personal service."
+      },
+      {
+        question: "How significant is flood risk near Sweetwater Creek and Noses Creek?",
+        answer: "Properties near Sweetwater Creek and Noses Creek face elevated flood risks, particularly during severe storms. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
+      },
+      {
+        question: "What bundle savings are available for Powder Springs residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Powder Springs residents can maximize savings by combining multiple policies, whether insuring a home in the Lost Mountain area and vehicles for Atlanta commutes, or protecting a property in Macedonia with auto coverage."
+      },
+      {
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, many Powder Springs residents commute to Atlanta or throughout Cobb County, often warranting higher limits for adequate protection."
+      },
+      {
+        question: "How do tornadoes affect insurance in Powder Springs?",
+        answer: "Powder Springs faces tornado risks during peak season (March-May) as part of North Georgia's severe weather patterns. Homeowners insurance rates reflect this exposure, with proper coverage ensuring protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
+      },
+      {
+        question: "Do commuters to Atlanta need higher auto coverage?",
+        answer: "Many Powder Springs residents commute to Atlanta for work, increasing daily mileage and exposure to metropolitan traffic. Higher liability limits often make sense for frequent highway commuters, providing better protection against accidents on busy interstates and urban corridors."
+      },
+      {
+        question: "What factors affect auto insurance rates in Powder Springs?",
+        answer: "Auto insurance rates consider your ZIP code (30127 and surrounding areas), driving record, vehicle type, and commute distance. Proximity to Atlanta and local traffic patterns factor into personalized rates, along with claims history and demographic considerations specific to Cobb County."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Powder Springs residents can receive quotes within minutes and have active coverage the same day, protecting homes in Downtown Powder Springs, New Macland, or any other neighborhood throughout the 30127 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
   }
 };
