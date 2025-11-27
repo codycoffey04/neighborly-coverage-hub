@@ -153,14 +153,14 @@ const Learn = () => {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-20 px-4 bg-primary text-white">
+      <section className="py-20 px-4 bg-accent text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Still Have Questions?</h2>
           <p className="text-lg text-white/90 mb-8">
             Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
           </p>
           <Link to="/contact">
-            <Button size="lg" variant="secondary" className="bg-secondary text-white hover:bg-secondary/90">
+            <Button size="lg" className="bg-white text-accent hover:bg-white/90">
               Get Your Free Quote
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
