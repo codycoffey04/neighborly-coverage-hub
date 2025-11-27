@@ -576,23 +576,311 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "alabama-insurance-requirements",
-    title: "Alabama Insurance Requirements: What the Law Requires",
-    metaTitle: "Alabama Auto Insurance Requirements & Laws | Coffey Agencies",
-    metaDescription: "Complete guide to Alabama insurance requirements, minimum coverage limits, penalties for driving uninsured, and recommended coverage levels.",
-    excerpt: "Alabama law requires specific minimum insurance coverage. Understanding these requirements — and why you should carry more than the minimum — protects you financially and legally.",
+    title: "Alabama Insurance Requirements: Minimums, Penalties & What You Actually Need",
+    metaTitle: "Alabama Insurance Requirements: Minimums, Penalties & Coverage Guide | Coffey Agencies",
+    metaDescription: "Alabama requires 25/50/25 auto liability minimums, but that's rarely enough. Learn state requirements, penalties for non-compliance, and coverage levels that actually protect you.",
+    excerpt: "Alabama law requires certain insurance coverages — but minimums rarely provide adequate protection. This guide covers what Alabama mandates, what penalties apply for non-compliance, and what coverage levels actually protect your finances.",
     category: "State Requirements",
-    readTime: "5 min read",
+    readTime: "7 min read",
     featured: false,
     content: [
       {
-        type: 'paragraph',
-        content: "Detailed Alabama insurance requirements guide coming soon. This will cover minimum liability limits (25/50/25), proof of insurance requirements, penalties for violations, and recommended coverage levels for Alabama drivers."
+        type: "paragraph",
+        content: "Alabama law requires certain insurance coverages — but minimums rarely provide adequate protection. This guide covers what Alabama mandates, what penalties apply for non-compliance, and what coverage levels actually protect your finances."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Auto Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama requires liability insurance for all registered vehicles."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Minimum Liability Coverage (25/50/25)"
+      },
+      {
+        type: "list",
+        content: [
+          "$25,000 bodily injury per person",
+          "$50,000 bodily injury per accident",
+          "$25,000 property damage per accident"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "What This Means"
+      },
+      {
+        type: "paragraph",
+        content: "If you cause an accident, your insurance pays up to these limits for the other party's injuries and vehicle damage. Beyond these limits, you're personally responsible."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "What's NOT Required"
+      },
+      {
+        type: "list",
+        content: [
+          "Collision coverage",
+          "Comprehensive coverage",
+          "Uninsured/underinsured motorist coverage",
+          "Medical payments coverage"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "The Problem with Minimums"
+      },
+      {
+        type: "paragraph",
+        content: "A serious accident easily exceeds $50,000 in medical bills alone. Property damage to newer vehicles routinely exceeds $25,000. If you cause a multi-car accident, $50,000 covers almost nothing. Alabama's minimums are among the lowest in the country — adequate for legal compliance, inadequate for financial protection."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Our Recommendation"
+      },
+      {
+        type: "paragraph",
+        content: "At minimum, 50/100/50 liability. If you have assets to protect — home equity, savings, retirement accounts — consider 100/300/100. Add uninsured motorist coverage matching your liability limits."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Penalties for Driving Uninsured"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama enforces insurance requirements through its online verification system."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "First Offense"
+      },
+      {
+        type: "list",
+        content: [
+          "$500 fine",
+          "$200 reinstatement fee",
+          "Vehicle registration suspension"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Second Offense"
+      },
+      {
+        type: "list",
+        content: [
+          "$1,000 fine",
+          "$400 reinstatement fee",
+          "Four-month registration suspension"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Third and Subsequent Offenses"
+      },
+      {
+        type: "list",
+        content: [
+          "$2,500 fine",
+          "Four-month registration suspension",
+          "Potential SR-22 requirement"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Beyond Legal Penalties"
+      },
+      {
+        type: "paragraph",
+        content: "If you cause an accident without insurance, you're personally liable for all damages. Injured parties can sue you directly. Wages can be garnished. Assets can be seized. A single uninsured accident can mean financial devastation."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Home Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama doesn't legally require homeowners insurance — but your mortgage lender almost certainly does."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Lender Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Most mortgages require dwelling coverage at least equal to the loan amount. Lenders are named on policies as \"mortgagee\" so they're notified of changes or cancellations."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Flood Insurance"
+      },
+      {
+        type: "paragraph",
+        content: "If your property is in a FEMA-designated Special Flood Hazard Area and you have a federally-backed mortgage, flood insurance is required. But flooding happens everywhere it rains. Voluntary flood coverage makes sense for many Alabama homes outside official flood zones."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "What Lenders Don't Require (But You Should Consider)"
+      },
+      {
+        type: "list",
+        content: [
+          "Adequate personal property coverage",
+          "Replacement cost vs. actual cash value",
+          "Liability coverage beyond minimums",
+          "Water backup/sewer coverage",
+          "Adequate dwelling coverage (lenders care about loan balance, not full replacement cost)"
+        ]
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Renters Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama doesn't require renters insurance, but many landlords do."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "What Landlord Policies Don't Cover"
+      },
+      {
+        type: "paragraph",
+        content: "Your landlord's insurance protects the building — not your belongings, not your liability. If a fire destroys your apartment, your landlord's insurance rebuilds the unit. Your furniture, electronics, clothing? Unprotected without renters insurance."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Why It Matters"
+      },
+      {
+        type: "paragraph",
+        content: "Renters insurance typically costs $15-25/month. For that, you get:"
+      },
+      {
+        type: "list",
+        content: [
+          "Personal property protection",
+          "Liability coverage (someone slips in your apartment)",
+          "Additional living expenses if your unit becomes uninhabitable"
+        ]
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Condo Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Condo insurance needs depend on your HOA's master policy."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Master Policy Types"
+      },
+      {
+        type: "list",
+        content: [
+          "Bare Walls: HOA covers structure only. You insure everything inside — walls, flooring, cabinets, fixtures, plus belongings and liability.",
+          "All-In: HOA covers interior finishes as originally built. You insure your upgrades, belongings, and liability."
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "What You Always Need"
+      },
+      {
+        type: "list",
+        content: [
+          "Personal property coverage",
+          "Liability coverage",
+          "Loss assessment coverage (if HOA has a major claim and assesses owners)",
+          "Improvements and betterments coverage"
+        ]
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Alabama-Specific Considerations"
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Severe Weather"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama ranks high nationally for tornado activity. Wind and hail damage claims are common. Understand your policy's wind/hail deductible — it may be a percentage (1-2% of dwelling coverage) rather than a flat dollar amount."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Uninsured Drivers"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama's uninsured motorist rate exceeds 18% — among the highest in the country. Uninsured/underinsured motorist coverage isn't required but is essential. When an uninsured driver hits you, UM coverage pays your medical bills and vehicle repairs."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Flood Risk"
+      },
+      {
+        type: "paragraph",
+        content: "Alabama isn't just coastal. Inland flooding from heavy rain, poor drainage, and river overflow affects communities statewide. Standard policies exclude flood damage entirely."
       }
     ],
-    faqs: [],
-    relatedArticles: ["georgia-insurance-requirements", "auto-insurance-guide"],
+    faqs: [
+      {
+        question: "What's an SR-22 and when is it required?",
+        answer: "An SR-22 is a certificate proving you carry required insurance. Alabama may require SR-22 after driving uninsured, DUI convictions, or multiple violations. Your insurer files it with the state. SR-22 requirements typically last three years and significantly increase premiums."
+      },
+      {
+        question: "Can I register a vehicle without insurance in Alabama?",
+        answer: "No. Alabama's online verification system checks insurance status during registration. Uninsured vehicles cannot be registered or renewed."
+      },
+      {
+        question: "Does Alabama require uninsured motorist coverage?",
+        answer: "No, but it should. With 18%+ of Alabama drivers uninsured, UM coverage is essential protection. It costs relatively little and protects you when irresponsible drivers don't."
+      },
+      {
+        question: "What happens if my insurance lapses?",
+        answer: "Alabama's verification system may flag the lapse. You could face fines and registration suspension. More importantly, you're driving without financial protection — one accident could mean personal bankruptcy."
+      },
+      {
+        question: "Is umbrella insurance worth it?",
+        answer: "If you have assets beyond your home — savings, investments, retirement accounts — umbrella insurance adds $1-2 million in liability protection for roughly $200-400/year. It's one of the best values in insurance."
+      }
+    ],
+    relatedArticles: ["georgia-insurance-requirements", "auto-insurance-guide", "home-insurance-guide"],
     internalLinks: [
-      { text: "Get Your Free Auto Insurance Quote", href: "/contact" }
+      { text: "Get an Auto Insurance Quote", href: "/contact" },
+      { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
+      { text: "Understanding Uninsured Motorist Coverage", href: "/learn/auto-insurance-guide" }
     ]
   },
   {
