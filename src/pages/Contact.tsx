@@ -22,7 +22,8 @@ const offices = [
     hours: "Monday–Friday\n8:00 AM – 5:00 PM",
     rating: "4.7",
     reviews: "116",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.123!2d-85.678!3d34.151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA5JzAzLjYiTiA4NcKwNDAnNDAuOCJX!5e0!3m2!1sen!2sus!4v1234567890",
+    // TODO: Replace with real Google Maps embed code for Centre office
+    mapEmbed: "https://www.google.com/maps/embed?pb=CENTRE_OFFICE_EMBED_CODE",
     mapAddress: "1913 W Main Street, Centre, AL 35960",
   },
   {
@@ -36,7 +37,8 @@ const offices = [
     hours: "Monday–Friday\n8:30 AM – 4:30 PM",
     rating: "4.6",
     reviews: "90",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.123!2d-85.234!3d34.257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDE1JzI1LjIiTiA4NcKwMTQnMDIuNCJX!5e0!3m2!1sen!2sus!4v1234567890",
+    // TODO: Replace with real Google Maps embed code for Rome office
+    mapEmbed: "https://www.google.com/maps/embed?pb=ROME_OFFICE_EMBED_CODE",
     mapAddress: "1703 Turner McCall Blvd SE, Rome, GA 30161",
   },
 ];
