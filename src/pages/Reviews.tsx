@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, ExternalLink, MessageCircle, DollarSign, Heart, ShieldCheck, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const officeRatings = [
   {
@@ -88,11 +89,43 @@ const highlights = [
 ];
 
 const Reviews = () => {
+  const reviewsSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Customer Reviews - Coffey Agencies",
+    "description": "Read customer reviews for Coffey Agencies insurance services",
+    "url": "https://coffeyagencies.com/reviews",
+    "mainEntity": {
+      "@type": "InsuranceAgency",
+      "@id": "https://coffeyagencies.com/#organization",
+      "aggregateRating": [
+        {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "116",
+          "name": "Centre, Alabama Office"
+        },
+        {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "90",
+          "name": "Rome, Georgia Office"
+        }
+      ]
+    }
+  };
+
   return (
     <PageLayout
       title="Customer Reviews"
       description="What Our Customers Say"
+      breadcrumbs={[{ label: "Reviews", href: "/reviews" }]}
     >
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(reviewsSchema)}
+        </script>
+      </Helmet>
       {/* Intro Subhead */}
       <section className="py-8 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl text-center">
