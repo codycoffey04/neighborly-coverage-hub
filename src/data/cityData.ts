@@ -138,42 +138,67 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
+    customHeroTitle: "Insurance in Birmingham, AL (35215 & 35235)",
+    customHeroSubhead: "Local help with auto insurance in the 35215 and 35235 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Birmingham is Alabama's largest city and the economic hub of the state. With over 200,000 residents in the city proper and more than a million in the metro area, Birmingham families face unique insurance considerations — from dense urban traffic to severe spring weather. Whether you're in the Roebuck area (35215) or the Huffman community (35235), Coffey Agencies provides the coverage options and personal service that big-city agencies often lack."
+      "The 35215 and 35235 areas of eastern Birmingham face unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns along the Cahaba River and Village Creek, residents need insurance protection tailored to Jefferson County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Roebuck, Huffman, Center Point, or any neighborhood in the region.",
+      "With approximately 200,000 residents citywide and a metro population exceeding one million, Birmingham is Alabama's largest city and economic engine. The 35215 ZIP code encompasses Roebuck, Killough Springs, and portions of Huffman, while 35235 covers Center Point, Pinson, Clay, and Chalkville. This diverse community includes healthcare workers at UAB Hospital and Grandview Medical Center, financial professionals at Regions Bank and BBVA, logistics workers at the intermodal facility, and educators throughout Jefferson County Schools. Each household has distinct insurance needs, whether protecting a 1960s ranch in Roebuck or securing auto coverage for I-59 commutes through Center Point."
     ],
-    localConsiderations: "Birmingham sits in the heart of Alabama's tornado alley, with spring bringing significant severe weather risk including tornadoes, hail, and damaging winds. The metro area's heavy traffic on I-20, I-59, and I-65 increases accident frequency, making adequate auto coverage essential. Older neighborhoods often have aging roofs vulnerable to storm damage, while newer developments in the eastern suburbs face different considerations. Comprehensive coverage and higher liability limits are particularly important for Birmingham drivers.",
-    neighborhoods: [
-      "Roebuck", "Huffman", "Center Point", "Trussville (nearby)", 
-      "Irondale", "Eastwood", "Crestwood", "Woodlawn", "East Lake", 
-      "Avondale", "Highland Park", "Forest Park", "Norwood", "North Birmingham"
-    ],
-    nearbyCities: ["montgomery-al", "auburn-al", "mobile-al"],
+    weatherRisks: "Living in Birmingham means preparing for Alabama's most severe weather corridor. Tornado season brings heightened risk from March through May, with the region sitting squarely in Dixie Alley — the southeastern extension of Tornado Alley. The April 27, 2011 Super Outbreak devastated communities across Jefferson County, a reminder that adequate wind and storm coverage isn't optional here. Severe thunderstorms occur year-round, bringing damaging hail that can total vehicles and destroy roofs across Huffman, Center Point, and Clay in minutes.\n\nThe Cahaba River runs through eastern Jefferson County, and Village Creek drains significant portions of the 35215 and 35235 areas. These waterways create flooding risks that standard homeowners policies exclude entirely. Properties in low-lying areas near these watersheds — including portions of Roebuck and Center Point — should treat flood insurance as essential, not optional. Flash flooding from severe thunderstorms regularly overwhelms aging drainage infrastructure even miles from major waterways.\n\nSummer brings extreme heat and humidity that stress HVAC systems and can cause foundation issues in older homes. Winter ice storms, while less frequent, create liability risks from falling tree limbs and can leave neighborhoods without power for days.",
+    neighborhoodCoverage: "Eastern Birmingham's neighborhoods each present distinct insurance considerations that generic online quotes miss entirely.\n\n**Roebuck and Killough Springs (35215):** These established neighborhoods feature 1950s-1970s housing stock with mature trees throughout. Original roofs on older homes face higher premiums and may require inspection. Large oak and pine trees create beautiful canopy but pose significant storm risks — wind events regularly bring down limbs onto homes and vehicles. Higher replacement cost estimates account for older construction methods and materials.\n\n**Huffman and East Lake (35215):** Mixed housing ages with some newer construction alongside post-war homes. Proximity to I-59 affects auto rates due to commuter traffic density. Some flood-prone areas near Village Creek require separate flood policies.\n\n**Center Point (35235):** This incorporated city within the Birmingham metro has its own fire department, which can positively affect homeowners rates. Housing ranges from 1960s subdivisions to 1990s developments. Traffic on Center Point Parkway and Highway 75 creates auto insurance considerations for daily commuters.\n\n**Pinson and Clay (35235):** More rural character with larger lots and newer construction. Lower population density typically means lower auto rates, but distance from fire stations can affect home insurance. Clay's growth has brought newer subdivisions with modern building codes and impact-resistant construction.\n\n**Chalkville (35235):** Suburban community with mix of established and newer homes. Good access to I-59 for commuters heading to downtown Birmingham or toward Gadsden. Lower crime rates than urban Birmingham neighborhoods can benefit both auto and home premiums.\n\n**Highway Corridor Considerations:** I-59 runs directly through both ZIP codes, carrying heavy truck traffic between Birmingham and Chattanooga. I-20 provides east-west access to downtown and the airport. I-459 forms the southern bypass. Daily commuters face elevated accident risk on these high-speed corridors. Uninsured motorist coverage matters significantly — Alabama's uninsured driver rate exceeds 18%. Bundling home and auto insurance saves Birmingham families up to $600 annually.",
+    economyInfo: "Birmingham's economic diversity creates varied insurance needs across the 35215 and 35235 communities. Healthcare workers at UAB Hospital, Grandview Medical Center, St. Vincent's, and the VA Medical Center often work non-traditional hours, with late-night commutes creating different risk profiles. Reliable auto coverage and adequate liability limits protect medical professionals whose incomes could be garnished after an at-fault accident.\n\nFinancial and professional services employees at Regions Bank, BBVA, Protective Life, and Blue Cross Blue Shield of Alabama may have higher liability exposure and benefit from umbrella policies supplementing standard coverage. Industrial and logistics workers at U.S. Steel Fairfield, the BNSF intermodal facility, and Mercedes-Benz supplier plants often have specialized vehicle or equipment considerations. Educators and public employees throughout Jefferson County Schools, Birmingham City Schools, and local government benefit from stable employment but need coverage that fits public-sector budgets.",
+    localExcellence: "Operating from our Centre, Alabama headquarters approximately 60 miles northeast of Birmingham, we've built digital insurance delivery that serves 35215 and 35235 residents better than most local storefronts. You receive comprehensive coverage analysis and personalized attention matching face-to-face meetings, with the convenience of handling everything from your home in Roebuck or your office in Center Point.\n\nLicensed Alabama agents (Agency License #416438) understand state regulations and Jefferson County conditions, ensuring coverage meets requirements while addressing regional risks like tornado exposure and river flooding. Technology enables faster quotes — most take about 15 minutes. Streamlined claims support means you reach a real person who knows your policy. During severe weather season, our digital tools prove especially valuable. Update coverage instantly before a forecasted storm. File claims online the moment damage occurs.",
+    localConsiderations: "Eastern Birmingham sits in Dixie Alley with peak tornado activity March-May, exemplified by the devastating April 27, 2011 Super Outbreak. Cahaba River and Village Creek create significant flooding risks requiring separate flood insurance for vulnerable properties. Heavy I-59/I-20/I-459 traffic increases accident frequency. Alabama's high uninsured driver rate (18%+) makes UM coverage essential for Birmingham commuters.",
+    neighborhoods: ["Roebuck", "Killough Springs", "Huffman", "East Lake", "Center Point", "Pinson", "Clay", "Chalkville", "Irondale", "Eastwood", "Crestwood", "Woodlawn", "Avondale", "Highland Park", "Forest Park", "North Birmingham"],
     faqs: [
       {
-        question: "Why is car insurance more expensive in Birmingham?",
-        answer: "Birmingham's higher population density means more vehicles on the road and increased accident risk, particularly on major interstates like I-20, I-59, and I-65. Urban areas also see higher rates of vehicle theft and vandalism. However, bundling policies and maintaining a clean driving record can significantly reduce your premium. We'll help you find every available discount."
+        question: "Do I need to visit your office to get insurance in Birmingham?",
+        answer: "No office visit required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes to claims support happens online or by phone. Birmingham residents in 35215 and 35235 save time while receiving comprehensive coverage analysis and personal attention from licensed Alabama agents who understand Jefferson County's specific risks."
       },
       {
-        question: "How does Birmingham's weather affect my home insurance?",
-        answer: "Birmingham sits in a high-risk area for tornadoes, hail, and severe thunderstorms, particularly from March through May. This means home insurance rates reflect that risk, and having adequate dwelling coverage and a reasonable deductible is critical. We recommend reviewing your policy annually to ensure your coverage keeps pace with rebuilding costs, which have increased significantly."
+        question: "How significant is flood risk near the Cahaba River and Village Creek?",
+        answer: "Properties near the Cahaba River and Village Creek face meaningful flood risk, particularly during spring storms and tropical remnants in fall. Standard homeowners policies exclude flood damage entirely — you need separate flood insurance through the National Flood Insurance Program or private insurers. Low-lying portions of Roebuck, Center Point, and areas near Village Creek should treat flood coverage as essential. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "What auto insurance limits do you recommend for Birmingham drivers?",
-        answer: "Given Birmingham's traffic density and the potential severity of interstate accidents, we typically recommend liability limits above state minimums — often 50/100/50 or higher. Uninsured motorist coverage is essential since Alabama has a higher-than-average rate of uninsured drivers. We'll show you pricing at several limit levels so you can make an informed choice."
+        question: "What bundle savings are available for Birmingham residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on combined premiums — often $400-600 annually for Birmingham families. You can maximize savings by combining multiple policies: home and auto, renters and auto, or adding condo and life insurance to your package. One household, one agency, one discount."
       },
       {
-        question: "Do I need flood insurance in Birmingham?",
-        answer: "Standard home insurance doesn't cover flood damage, and Birmingham has areas prone to flash flooding, particularly near creeks and low-lying neighborhoods. Even if you're not in a FEMA flood zone, flood insurance may be worth considering. We can help you get a quote through the National Flood Insurance Program or private insurers."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, these minimums rarely provide adequate protection for Birmingham drivers. A serious accident on I-59 or I-20 can easily generate claims exceeding $100,000. We typically recommend 50/100/50 or higher limits, plus matching uninsured motorist coverage."
       },
       {
-        question: "Can I get same-day coverage in Birmingham?",
-        answer: "Yes. Most quotes take about 15 minutes, and once you've selected your coverage, we can have your policy active the same day. If you need proof of insurance for a vehicle purchase, lease signing, or mortgage closing, we'll provide documentation immediately."
+        question: "How does tornado season affect insurance in Birmingham?",
+        answer: "Birmingham sits in Dixie Alley — the southeastern extension of Tornado Alley with peak activity March through May. This elevated tornado risk affects homeowners insurance rates throughout Jefferson County. Premiums reflect the reality that Birmingham homes face greater wind damage probability than homes in other regions. Your policy's wind and hail deductible may be higher than your standard deductible. Adequate dwelling coverage ensures you can actually rebuild after a catastrophic storm."
       },
       {
-        question: "How do I get a quote if I'm in Birmingham and your office is in Centre?",
-        answer: "No office visit needed. We handle everything by phone, email, and online. You'll get the same personal service and local expertise whether you're across town or across the state. Call us at (256) 927-6287 or request a quote online — we'll take it from there."
+        question: "Do neighborhoods like Center Point and Roebuck have different insurance needs?",
+        answer: "Absolutely. Center Point is an incorporated city with its own fire department, which can improve homeowners rates. Roebuck's older housing stock and mature trees create different risk profiles than newer subdivisions in Clay or Pinson. Property values, construction types, crime statistics, and proximity to fire protection all vary across 35215 and 35235 neighborhoods. We customize coverage for each address, not just each ZIP code."
+      },
+      {
+        question: "What factors affect auto insurance rates in Birmingham?",
+        answer: "Your specific address in 35215 or 35235, driving record, vehicle types, annual mileage, and commute patterns all affect rates. Urban traffic density in Roebuck differs from rural roads in Pinson. Garaging location affects theft and vandalism risk. We consider all these factors — plus available discounts for safe drivers, good students, bundled policies, and more — to find your best rate."
+      },
+      {
+        question: "How quickly can I get coverage for my Birmingham home or vehicle?",
+        answer: "Most policies can begin the same day. Our digital process means Birmingham residents receive quotes within about 15 minutes. Once you've reviewed options and made a decision, coverage activates immediately. Need proof of insurance for a vehicle purchase, apartment lease, or mortgage closing? We provide documentation right away."
       }
-    ]
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ],
+    nearbyCities: ["trussville-al", "montgomery-al", "auburn-al"]
   },
 
   "montgomery-al": {
