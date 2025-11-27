@@ -885,44 +885,449 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "georgia-insurance-requirements",
-    title: "Georgia Insurance Requirements: What the Law Requires",
-    metaTitle: "Georgia Auto Insurance Requirements & Laws | Coffey Agencies",
-    metaDescription: "Complete guide to Georgia insurance requirements, minimum coverage limits, penalties for driving uninsured, and recommended coverage levels.",
-    excerpt: "Georgia law requires specific minimum insurance coverage. Understanding these requirements — and why you should carry more than the minimum — protects you financially and legally.",
+    title: "Georgia Insurance Requirements: Minimums, Penalties & What You Actually Need",
+    metaTitle: "Georgia Insurance Requirements: Minimums, Penalties & Coverage Guide | Coffey Agencies",
+    metaDescription: "Georgia requires 25/50/25 auto liability minimums with optional PIP. Learn state requirements, GEICS enforcement, penalties for non-compliance, and coverage that protects you.",
+    excerpt: "Georgia requires specific insurance coverages — but state minimums leave significant gaps. This guide covers Georgia's requirements, penalties for non-compliance, and coverage levels that actually protect you and your family.",
     category: "State Requirements",
-    readTime: "5 min read",
+    readTime: "7 min read",
     featured: false,
     content: [
       {
-        type: 'paragraph',
-        content: "Detailed Georgia insurance requirements guide coming soon. This will cover minimum liability limits (25/50/25), proof of insurance requirements, penalties for violations, and recommended coverage levels for Georgia drivers."
+        type: "paragraph",
+        content: "Georgia requires specific insurance coverages — but state minimums leave significant gaps. This guide covers Georgia's requirements, penalties for non-compliance, and coverage levels that actually protect you and your family."
+      },
+      {
+        type: "heading",
+        content: "Auto Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Georgia requires liability insurance and offers optional PIP coverage."
+      },
+      {
+        type: "paragraph",
+        content: "Minimum Liability Coverage (25/50/25):"
+      },
+      {
+        type: "list",
+        content: [
+          "$25,000 bodily injury per person",
+          "$50,000 bodily injury per accident",
+          "$25,000 property damage per accident"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "**Optional Personal Injury Protection (PIP):** Georgia doesn't require PIP, but insurers must offer it. PIP covers medical expenses and lost wages regardless of fault — useful for faster claim resolution."
+      },
+      {
+        type: "paragraph",
+        content: "What's NOT Required:"
+      },
+      {
+        type: "list",
+        content: [
+          "Collision coverage",
+          "Comprehensive coverage",
+          "Uninsured/underinsured motorist coverage (but insurers must offer it)",
+          "Medical payments coverage"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "**The Problem with Minimums:** $25,000 property damage barely covers a new sedan's value — and does nothing for higher-end vehicles. $50,000 per accident covers one serious injury. Medical costs in metro Atlanta routinely exceed these limits. Minimums satisfy the law, not your financial protection."
+      },
+      {
+        type: "paragraph",
+        content: "**Our Recommendation:** 50/100/50 minimum for most drivers. 100/300/100 if you have significant assets. Always add UM/UIM coverage matching your liability limits — Georgia's uninsured rate hovers around 12%."
+      },
+      {
+        type: "heading",
+        content: "Penalties for Driving Uninsured"
+      },
+      {
+        type: "paragraph",
+        content: "Georgia enforces insurance through its Electronic Insurance Compliance System (GEICS)."
+      },
+      {
+        type: "paragraph",
+        content: "First Offense:"
+      },
+      {
+        type: "list",
+        content: [
+          "$200 fine",
+          "$60 reinstatement fee",
+          "Registration suspension",
+          "License plate surrender"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Second Offense (within 5 years):"
+      },
+      {
+        type: "list",
+        content: [
+          "$500 fine",
+          "$60 reinstatement fee",
+          "90-day registration suspension"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Third and Subsequent Offenses:"
+      },
+      {
+        type: "list",
+        content: [
+          "$1,000 fine",
+          "6-month registration suspension",
+          "Possible SR-22 requirement"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "**Super Speeder + No Insurance:** Georgia's \"Super Speeder\" law adds $200 to speeding fines for excessive speed. Combine that with no insurance, and penalties multiply quickly."
+      },
+      {
+        type: "paragraph",
+        content: "**Beyond Legal Penalties:** Without insurance, you're personally liable for all accident damages. Georgia allows injured parties to sue you directly. Judgments can follow you for years, affecting credit, wages, and assets."
+      },
+      {
+        type: "heading",
+        content: "Home Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Georgia doesn't legally require homeowners insurance — but mortgage lenders do."
+      },
+      {
+        type: "paragraph",
+        content: "**Lender Requirements:** Mortgages require dwelling coverage at minimum equal to the loan balance. Many lenders require replacement cost coverage."
+      },
+      {
+        type: "paragraph",
+        content: "**Flood Insurance:** Required for properties in FEMA flood zones with federally-backed mortgages. But Georgia sees significant flooding outside designated zones — Atlanta's flash flooding demonstrates this regularly. Consider flood insurance even if not required."
+      },
+      {
+        type: "paragraph",
+        content: "What Lenders Don't Require (But You Should Consider):"
+      },
+      {
+        type: "list",
+        content: [
+          "Adequate personal liability coverage",
+          "Replacement cost on personal property",
+          "Water backup coverage",
+          "Updated dwelling coverage reflecting current rebuild costs"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Renters Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Georgia doesn't require renters insurance, but many landlords mandate it in lease agreements."
+      },
+      {
+        type: "paragraph",
+        content: "**Why It Matters:** Your landlord's policy covers the building structure — not your belongings, not your liability. A break-in, fire, or water leak could destroy everything you own with no compensation."
+      },
+      {
+        type: "paragraph",
+        content: "What You Get:"
+      },
+      {
+        type: "list",
+        content: [
+          "Personal property protection (theft, fire, water damage)",
+          "Liability coverage",
+          "Additional living expenses if displaced",
+          "Typically $15-25/month — some of the cheapest protection available"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Condo Insurance Requirements"
+      },
+      {
+        type: "paragraph",
+        content: "Georgia condo owners need coverage beyond the HOA master policy."
+      },
+      {
+        type: "paragraph",
+        content: "Understanding Master Policies:"
+      },
+      {
+        type: "list",
+        content: [
+          "All-In Coverage: HOA covers structure including interior finishes as originally built",
+          "Bare Walls Coverage: HOA covers structure only; you insure interior finishes, fixtures, appliances"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "What You Need Regardless:"
+      },
+      {
+        type: "list",
+        content: [
+          "Personal property coverage",
+          "Personal liability coverage",
+          "Loss assessment coverage",
+          "Improvements and upgrades coverage"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Review your HOA's master policy to understand where their coverage ends and yours begins."
+      },
+      {
+        type: "heading",
+        content: "Georgia-Specific Considerations"
+      },
+      {
+        type: "paragraph",
+        content: "**Metro Atlanta Traffic:** Gwinnett, Fulton, Cobb, and DeKalb counties see significantly higher accident rates than rural Georgia. Higher density means higher risk — and higher premiums. Adequate liability limits matter more in metro areas."
+      },
+      {
+        type: "paragraph",
+        content: "**Severe Weather:** Georgia experiences severe thunderstorms, tornadoes, and tropical storm impacts. Hail damage claims spike in spring. Coastal and southern Georgia face hurricane exposure. Understanding wind/hail deductibles is essential — they're often percentage-based, not flat amounts."
+      },
+      {
+        type: "paragraph",
+        content: "**Uninsured Drivers:** Georgia's uninsured rate is approximately 12% — lower than Alabama but still significant. UM/UIM coverage protects you when other drivers can't pay."
+      },
+      {
+        type: "paragraph",
+        content: "**Flooding:** Atlanta's aging infrastructure and rapid development create flash flood risk across the metro. Coastal Georgia faces storm surge. Standard policies exclude flood damage entirely — separate flood insurance is essential for many Georgia homes."
       }
     ],
-    faqs: [],
-    relatedArticles: ["alabama-insurance-requirements", "auto-insurance-guide"],
+    faqs: [
+      {
+        question: "What's a Georgia SR-22 and when do I need one?",
+        answer: "An SR-22 is a certificate proving you maintain required insurance. Georgia may require SR-22 after DUI conviction, driving without insurance, or accumulating too many points. Your insurer files it with the Georgia DDS. Requirements typically last three years and come with higher premiums."
+      },
+      {
+        question: "How does Georgia's GEICS system work?",
+        answer: "Georgia's Electronic Insurance Compliance System automatically verifies insurance status for registered vehicles. If your insurer reports a policy cancellation or lapse, the state is notified immediately. You'll receive a notice to prove coverage or face registration suspension."
+      },
+      {
+        question: "Does Georgia require uninsured motorist coverage?",
+        answer: "No, but insurers must offer it, and you must sign a written rejection to decline. Given Georgia's 12% uninsured driver rate, declining UM coverage is penny-wise and pound-foolish. It costs little and protects significantly."
+      },
+      {
+        question: "What if I let my Georgia insurance lapse?",
+        answer: "GEICS flags the lapse automatically. You'll receive notice to prove coverage within 30 days or face fines and registration suspension. Even brief lapses create problems — and leave you unprotected."
+      },
+      {
+        question: "Is PIP coverage worth it in Georgia?",
+        answer: "PIP covers your medical expenses and lost wages regardless of fault. It's useful for faster access to funds after an accident without waiting for fault determination. Costs are modest. Worth considering, especially if your health insurance has high deductibles."
+      }
+    ],
+    relatedArticles: ["alabama-insurance-requirements", "auto-insurance-guide", "home-insurance-guide"],
     internalLinks: [
-      { text: "Get Your Free Auto Insurance Quote", href: "/contact" }
+      { text: "Get an Auto Insurance Quote", href: "/contact" },
+      { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
+      { text: "Understanding Uninsured Motorist Coverage", href: "/learn/auto-insurance-guide" }
     ]
   },
   {
     slug: "bundling-home-and-auto",
-    title: "Bundle Auto + Home Insurance: Save Up to $600 Annually",
-    metaTitle: "Bundle Home and Auto Insurance to Save | Coffey Agencies",
-    metaDescription: "Learn how bundling auto and home insurance saves 15-25% on premiums, simplifies billing, and provides better coverage coordination.",
-    excerpt: "Bundling auto and home insurance typically saves 15-25% on premiums — often $400-600 annually. But savings aren't the only benefit.",
+    title: "Bundling Home and Auto Insurance: How to Save Up to $600/Year",
+    metaTitle: "Bundling Home and Auto Insurance: Save Up to $600/Year | Coffey Agencies",
+    metaDescription: "Bundling home and auto insurance saves 15-25% on combined premiums — often $400-600 annually. Learn how bundling works and whether it's right for you.",
+    excerpt: "Bundling home and auto insurance is the simplest way to save money without sacrificing coverage. Most families save 15-25% on combined premiums — often $400-600 annually.",
     category: "Tips & Advice",
-    readTime: "5 min read",
+    readTime: "6 min read",
     featured: false,
     content: [
       {
-        type: 'paragraph',
-        content: "Detailed bundling guide content coming soon. This will cover multi-policy discounts, simplified billing, coverage coordination benefits, and how to calculate whether bundling saves you money."
+        type: "paragraph",
+        content: "Bundling home and auto insurance is the simplest way to save money without sacrificing coverage. Most families save 15-25% on combined premiums — often $400-600 annually. But bundling offers more than just savings. Here's how it works and whether it's right for you."
+      },
+      {
+        type: "heading",
+        content: "What Is Bundling?"
+      },
+      {
+        type: "paragraph",
+        content: "Bundling means purchasing multiple insurance policies from the same company. The most common bundle combines homeowners and auto insurance, but you can also add:"
+      },
+      {
+        type: "list",
+        content: [
+          "Renters insurance",
+          "Condo insurance",
+          "Life insurance",
+          "Umbrella liability policies"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Each additional policy typically increases your multi-policy discount."
+      },
+      {
+        type: "heading",
+        content: "How Much Can You Save?"
+      },
+      {
+        type: "paragraph",
+        content: "Savings vary by insurer and location, but typical discounts include:"
+      },
+      {
+        type: "paragraph",
+        content: "**Home + Auto Bundle:** 15-25% combined discount — $400-600/year for average Alabama and Georgia families"
+      },
+      {
+        type: "paragraph",
+        content: "**Adding Renters or Condo Insurance:** 5-10% additional discount on auto"
+      },
+      {
+        type: "paragraph",
+        content: "**Adding Life Insurance:** 5-10% additional discount on package"
+      },
+      {
+        type: "paragraph",
+        content: "**Example:**"
+      },
+      {
+        type: "list",
+        content: [
+          "Auto insurance: $1,400/year standalone",
+          "Home insurance: $1,600/year standalone",
+          "Total standalone: $3,000/year",
+          "Bundled with 20% discount: $2,400/year",
+          "Annual savings: $600"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Benefits Beyond Savings"
+      },
+      {
+        type: "paragraph",
+        content: "**Single Point of Contact:** One agency handles all your policies. One phone call answers any question. One team knows your entire insurance picture."
+      },
+      {
+        type: "paragraph",
+        content: "**Coordinated Coverage:** Bundled policies can work together. If a tree falls on your car in your driveway, claims coordination is smoother when one company handles both."
+      },
+      {
+        type: "paragraph",
+        content: "**One Renewal Date:** Many bundlers align renewal dates, making annual reviews simpler."
+      },
+      {
+        type: "paragraph",
+        content: "**Simplified Billing:** One bill, one payment, one date to remember."
+      },
+      {
+        type: "paragraph",
+        content: "**Loyalty Benefits:** Long-term bundled customers often receive additional discounts and forgiveness programs."
+      },
+      {
+        type: "heading",
+        content: "When Bundling Makes Sense"
+      },
+      {
+        type: "paragraph",
+        content: "Best Candidates for Bundling:"
+      },
+      {
+        type: "list",
+        content: [
+          "Homeowners with vehicles",
+          "Renters who want simple coverage",
+          "Families with multiple cars and a home",
+          "Anyone who values convenience and simplicity"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Bundling Works When:"
+      },
+      {
+        type: "list",
+        content: [
+          "The bundled price beats shopping separately",
+          "The insurer has strong claims service",
+          "Coverage options meet your needs",
+          "You're getting adequate coverage, not just cheap coverage"
+        ]
+      },
+      {
+        type: "heading",
+        content: "When to Shop Separately"
+      },
+      {
+        type: "paragraph",
+        content: "Bundling isn't always the best deal. Consider separate policies when:"
+      },
+      {
+        type: "paragraph",
+        content: "**Significant Rate Differences Exist:** Sometimes one insurer offers dramatically better home rates while another beats their auto pricing. The spread may exceed bundle discounts."
+      },
+      {
+        type: "paragraph",
+        content: "**Specialty Needs Arise:** High-value homes, classic cars, or unusual risks may be better served by specialty insurers."
+      },
+      {
+        type: "paragraph",
+        content: "**Claims History Issues:** If you've filed claims with one policy type but not the other, bundling might increase the clean policy's rate."
+      },
+      {
+        type: "paragraph",
+        content: "**Always Run the Numbers:** Get bundled quotes AND separate quotes. The math tells the truth. But factor in convenience value — managing two companies has hidden costs too."
+      },
+      {
+        type: "heading",
+        content: "How to Bundle with Coffey Agencies"
+      },
+      {
+        type: "paragraph",
+        content: "**Request a Quote:** Tell us what you need — auto, home, condo, renters, life. We'll build options."
+      },
+      {
+        type: "paragraph",
+        content: "**Review Your Options:** We show you bundled pricing versus separate pricing. You see exactly what you save."
+      },
+      {
+        type: "paragraph",
+        content: "**Get Covered:** Choose your bundle and coverage activates — often the same day."
       }
     ],
-    faqs: [],
-    relatedArticles: ["auto-insurance-guide", "home-insurance-guide"],
+    faqs: [
+      {
+        question: "Can I bundle if I have a condo or rent instead of own a home?",
+        answer: "Absolutely. Renters insurance and condo insurance bundle with auto insurance just like homeowners policies. Discounts are similar."
+      },
+      {
+        question: "Do I have to bundle all policies with one company?",
+        answer: "No. You can bundle some and keep others separate. But maximum discounts come from consolidating."
+      },
+      {
+        question: "What if I only need auto insurance right now?",
+        answer: "Start with auto. When you buy a home or need renters coverage, add it to your existing policy for immediate bundle discounts."
+      },
+      {
+        question: "Can I bundle life insurance too?",
+        answer: "Yes. Many insurers offer additional discounts when you add life insurance to a home/auto bundle."
+      },
+      {
+        question: "Will bundling lock me into lower coverage?",
+        answer: "No. Bundling affects pricing, not coverage options. You still choose coverage levels for each policy. Never sacrifice adequate coverage for a bundle discount."
+      }
+    ],
+    relatedArticles: ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide"],
     internalLinks: [
-      { text: "Get Your Free Bundle Quote", href: "/contact" }
+      { text: "Get a Bundled Quote", href: "/contact" },
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
+      { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
+      { text: "Renters Insurance Guide", href: "/learn/renters-insurance-guide" }
     ]
   }
 ];
