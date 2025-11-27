@@ -6,7 +6,7 @@ import { Check } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
-    <section className="section-spacing bg-secondary relative overflow-hidden">
+    <section className="section-spacing bg-primary relative overflow-hidden">
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
