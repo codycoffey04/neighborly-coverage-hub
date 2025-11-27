@@ -37,8 +37,8 @@ export const Header = () => {
             <Link to="/reviews" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Reviews
             </Link>
-            <Link to="/blog" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Blog
+            <Link to="/learn" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Learn
             </Link>
           </nav>
 
@@ -116,11 +116,11 @@ export const Header = () => {
                 Reviews
               </Link>
               <Link 
-                to="/blog" 
+                to="/learn" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Blog
+                Learn
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t border-border">
                 <a href="tel:256-927-6287" className="flex items-center gap-2 text-sm">
