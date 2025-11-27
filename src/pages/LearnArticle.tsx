@@ -1,222 +1,261 @@
+import { useParams, Link, Navigate } from "react-router-dom";
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Link, useParams } from "react-router-dom";
-import { Clock, User, ArrowRight } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Clock, User, ArrowRight, AlertCircle, Info } from "lucide-react";
+import { learnArticles, ContentSection } from "@/data/learnArticles";
+import { Helmet } from "react-helmet";
 
-// This is a template - in production, you'd fetch post data based on slug
 const LearnArticle = () => {
   const { slug } = useParams();
+  const article = learnArticles.find(a => a.slug === slug);
 
-  // Template post data
-  const post = {
-    title: "Understanding Auto Insurance Coverage: A Complete Guide",
-    category: "Auto Insurance",
-    readTime: "5 min read",
-    author: "Coffey Agencies Team",
+  // 404 if article not found
+  if (!article) {
+    return <Navigate to="/404" replace />;
+  }
+
+  // Get related articles
+  const relatedArticles = learnArticles.filter(a => 
+    article.relatedArticles.includes(a.slug)
+  ).slice(0, 3);
+
+  // Render content sections
+  const renderContent = (section: ContentSection, index: number) => {
+    switch (section.type) {
+      case 'heading':
+        const HeadingTag = `h${section.level}` as keyof JSX.IntrinsicElements;
+        return (
+          <HeadingTag 
+            key={index}
+            className={section.level === 2 ? "text-2xl font-bold text-foreground mb-4 mt-8" : "text-xl font-bold text-foreground mb-3 mt-6"}
+          >
+            {section.content as string}
+          </HeadingTag>
+        );
+      
+      case 'paragraph':
+        return (
+          <p key={index} className="text-lg text-muted-foreground mb-6 leading-relaxed">
+            {section.content as string}
+          </p>
+        );
+      
+      case 'list':
+        return (
+          <ul key={index} className="space-y-3 mb-6">
+            {(section.content as string[]).map((item, i) => {
+              // Split on — to get title and description
+              const [title, ...descParts] = item.split(' — ');
+              const description = descParts.join(' — ');
+              
+              return (
+                <li key={i} className="flex gap-3">
+                  <span className="text-secondary font-bold mt-1">•</span>
+                  <span className="text-muted-foreground">
+                    {description ? (
+                      <>
+                        <strong className="text-foreground">{title}</strong> — {description}
+                      </>
+                    ) : (
+                      title
+                    )}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        );
+      
+      case 'callout':
+        const Icon = section.variant === 'warning' ? AlertCircle : Info;
+        return (
+          <Card key={index} className={`mb-6 border-l-4 ${section.variant === 'warning' ? 'border-l-destructive bg-destructive/5' : 'border-l-secondary bg-secondary/5'}`}>
+            <CardContent className="p-6">
+              <div className="flex gap-3">
+                <Icon className={`w-5 h-5 mt-1 flex-shrink-0 ${section.variant === 'warning' ? 'text-destructive' : 'text-secondary'}`} />
+                <div className="whitespace-pre-line text-foreground">
+                  {section.content as string}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        );
+      
+      default:
+        return null;
+    }
   };
 
-  const relatedPosts = [
-    {
-      slug: "homeowners-insurance-101",
-      title: "Homeowners Insurance 101: What You Need to Know",
-      category: "Home Insurance",
+  // Build Article JSON-LD
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.metaDescription,
+    "author": {
+      "@type": "Organization",
+      "name": "Coffey Agencies"
     },
-    {
-      slug: "save-money-insurance-tips",
-      title: "10 Ways to Save Money on Insurance",
-      category: "Tips & Advice",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Coffey Agencies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://coffeyagencies.com/coffey-logo.png"
+      }
     },
-    {
-      slug: "life-insurance-for-families",
-      title: "Life Insurance for Young Families",
-      category: "Life Insurance",
-    },
-  ];
+    "mainEntityOfPage": `https://coffeyagencies.com/learn/${article.slug}`
+  };
+
+  // Build FAQPage JSON-LD if FAQs exist
+  const faqSchema = article.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": article.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
 
   return (
-    <PageLayout
-      title={post.title}
-      breadcrumbs={[
-        { label: "Learn", href: "/learn" },
-        { label: post.title, href: `/learn/${slug}` },
-      ]}
-    >
-      <article className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          {/* Article Header */}
-          <div className="mb-8">
-            <Badge className="mb-4">{post.category}</Badge>
-            
-            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                {post.author}
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                {post.readTime}
+    <>
+      <Helmet>
+        <title>{article.metaTitle}</title>
+        <meta name="description" content={article.metaDescription} />
+        <meta property="og:title" content={article.metaTitle} />
+        <meta property="og:description" content={article.metaDescription} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://coffeyagencies.com/learn/${article.slug}`} />
+        <link rel="canonical" href={`https://coffeyagencies.com/learn/${article.slug}`} />
+        
+        {/* Article Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        
+        {/* FAQPage Schema */}
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
+      </Helmet>
+
+      <PageLayout
+        title={article.title}
+        description={article.excerpt}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Learn", href: "/learn" },
+          { label: article.title, href: `/learn/${article.slug}` }
+        ]}
+      >
+        {/* Article Header */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <div className="flex items-center gap-3 mb-6">
+              <Badge>{article.category}</Badge>
+              <Separator orientation="vertical" className="h-5" />
+              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-1">
+                  <Clock className="w-4 h-4" />
+                  {article.readTime}
+                </div>
+                <div className="flex items-center gap-1">
+                  <User className="w-4 h-4" />
+                  Coffey Agencies Team
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Featured Image Placeholder */}
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 aspect-video rounded-lg mb-12" />
+            <Separator className="mb-8" />
 
-          {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold text-foreground mb-4">
-              Introduction
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Understanding your auto insurance coverage is essential for making informed decisions 
-              about protecting yourself, your vehicle, and your financial future. In this comprehensive 
-              guide, we'll break down the different types of coverage available and help you determine 
-              what's right for your needs.
-            </p>
+            {/* Article Content */}
+            <article className="prose prose-lg max-w-none">
+              {article.content.map((section, index) => renderContent(section, index))}
+            </article>
 
-            <h2 className="text-2xl font-bold text-foreground mb-4 mt-8">
-              Types of Auto Insurance Coverage
-            </h2>
-            
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">
-              1. Liability Coverage
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Liability coverage is required by law in most states and protects you if you're responsible 
-              for an accident. It includes bodily injury liability (covers medical expenses for others) 
-              and property damage liability (covers damage to others' property).
-            </p>
-
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">
-              2. Collision Coverage
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Collision coverage pays for damage to your vehicle resulting from a collision with another 
-              vehicle or object, regardless of who was at fault. This coverage is especially important 
-              for newer or higher-value vehicles.
-            </p>
-
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">
-              3. Comprehensive Coverage
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Comprehensive coverage protects your vehicle from damage caused by events other than 
-              collisions, such as theft, vandalism, fire, natural disasters, or hitting an animal. 
-              It's often paired with collision coverage.
-            </p>
-
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">
-              4. Uninsured/Underinsured Motorist Coverage
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              This coverage protects you if you're in an accident caused by a driver who doesn't have 
-              insurance or doesn't have enough coverage to pay for your damages. It's highly recommended 
-              even though it may not be required in your state.
-            </p>
-
-            <h2 className="text-2xl font-bold text-foreground mb-4 mt-8">
-              How to Choose the Right Coverage
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              When selecting auto insurance coverage, consider these factors:
-            </p>
-            <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
-              <li>Your vehicle's age and value</li>
-              <li>Your financial situation and ability to pay for repairs or replacement</li>
-              <li>State minimum requirements and recommended coverage levels</li>
-              <li>Your driving habits and risk tolerance</li>
-              <li>Available discounts for bundling or safe driving</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-foreground mb-4 mt-8">
-              Conclusion
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Choosing the right auto insurance coverage doesn't have to be complicated. At Coffey 
-              Agencies, our experienced team can help you understand your options, compare quotes from 
-              multiple carriers, and find coverage that fits your needs and budget.
-            </p>
-          </div>
-
-          {/* Author Bio */}
-          <Card className="my-12 border-border bg-muted/30">
-            <CardContent className="p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <User className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-2">About {post.author}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    The Coffey Agencies team has over 16 years of experience helping families and 
-                    businesses find the right insurance coverage. We're committed to providing expert 
-                    guidance and personalized service to our community.
-                  </p>
-                </div>
+            {/* FAQ Section */}
+            {article.faqs.length > 0 && (
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
+                <Accordion type="single" collapsible className="w-full">
+                  {article.faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`faq-${index}`}>
+                      <AccordionTrigger className="text-left text-lg font-semibold">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground leading-relaxed">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
               </div>
-            </CardContent>
-          </Card>
+            )}
 
-          {/* CTA */}
-          <Card className="mb-12 border-2 border-primary/20">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-3">
-                Need Help With Your Auto Insurance?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Our team is ready to help you find the perfect coverage for your needs.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact">
-                  <Button size="lg">
-                    Get Your Free Quote
-                  </Button>
-                </Link>
-                <a href="tel:(256)927-6287">
-                  <Button variant="outline" size="lg">
-                    Call (256) 927-6287
-                  </Button>
-                </a>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </article>
-
-      {/* Related Posts */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold text-foreground mb-8">Related Articles</h2>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {relatedPosts.map((relatedPost) => (
-              <Card key={relatedPost.slug} className="border-border hover:border-primary/50 transition-colors group">
-                <CardContent className="p-6">
-                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 aspect-video rounded-lg mb-4" />
-                  
-                  <Badge variant="secondary" className="mb-3">
-                    {relatedPost.category}
-                  </Badge>
-                  
-                  <h3 className="text-lg font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                    {relatedPost.title}
-                  </h3>
-
-                  <Link to={`/learn/${relatedPost.slug}`}>
-                    <Button variant="link" className="p-0 h-auto">
-                      Read Article
-                      <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
-                  </Link>
+            {/* Internal Links CTA */}
+            {article.internalLinks.length > 0 && (
+              <Card className="mt-12 bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {article.internalLinks.map((link, index) => (
+                      <Link key={index} to={link.href}>
+                        <Button variant={index === 0 ? "default" : "outline"}>
+                          {link.text}
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      </Link>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
-        </div>
-      </section>
-    </PageLayout>
+        </section>
+
+        {/* Related Articles */}
+        {relatedArticles.length > 0 && (
+          <section className="py-16 px-4 bg-muted/30">
+            <div className="container mx-auto max-w-6xl">
+              <h2 className="text-2xl font-bold text-foreground mb-8">Related Guides</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {relatedArticles.map((related) => (
+                  <Card key={related.slug} className="border-border hover:border-primary/50 transition-colors group">
+                    <CardContent className="p-6">
+                      <Badge variant="secondary" className="mb-3">
+                        {related.category}
+                      </Badge>
+                      <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {related.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                        {related.excerpt}
+                      </p>
+                      <Link to={`/learn/${related.slug}`}>
+                        <Button variant="link" className="p-0 h-auto">
+                          Read Guide
+                          <ArrowRight className="w-4 h-4 ml-1" />
+                        </Button>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </PageLayout>
+    </>
   );
 };
 
