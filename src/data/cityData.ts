@@ -209,40 +209,97 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36116", "36117"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    customHeroTitle: "Insurance in Montgomery, AL (36116 & 36117)",
+    customHeroSubhead: "Local help with auto insurance in the 36116 and 36117 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Montgomery, Alabama residents with personalized insurance solutions for the state capital. From downtown to Prattville, we protect Montgomery families with comprehensive auto, home, renters, condo, and life insurance.",
-      "As Alabama's capital city, Montgomery combines urban density, suburban growth, and severe weather exposure. Our team helps you navigate coverage options that protect your property, vehicles, and family.",
-      "Contact our Centre, AL office at (256) 927-6287 for Montgomery insurance quotes and expert guidance."
+      "The 36116 and 36117 areas of eastern Montgomery face unique insurance challenges requiring specialized understanding of Alabama's capital city. From tornado threats peaking in spring to the daily reality of commuting on I-85 and the Eastern Bypass, residents need insurance protection tailored to Montgomery County's specific risks. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Dalraida, Woodmere, or anywhere across the River Region.",
+      "With approximately 200,000 residents in the city and over 385,000 in the metro area, Montgomery is Alabama's capital and second-largest city. The 36116 ZIP code encompasses established eastern neighborhoods including Dalraida, Arrowhead, and areas along Vaughn Road, while 36117 covers the high-growth eastern suburbs including Wynlakes, Pike Road, and the Eastchase corridor. This diverse community includes state government employees, Maxwell-Gunter Air Force Base personnel, healthcare workers at Baptist Health and Jackson Hospital, automotive workers at Hyundai and suppliers, and Riverfront entertainment district employees. Each household has distinct insurance needs, whether protecting an established ranch in Dalraida or securing auto coverage for Eastern Bypass commutes."
     ],
-    localConsiderations: "Montgomery experiences tornado season, severe thunderstorms, and occasional tropical storm remnants. Urban traffic on I-85 and I-65 increases accident frequency, requiring adequate liability and UM/UIM coverage.",
-    neighborhoods: ["Downtown Montgomery", "Cloverdale", "Old Cloverdale", "Capitol Heights", "Garden District", "Cottage Hill", "Eastdale", "Dalraida", "Vaughn Road", "East Montgomery", "Pike Road", "Prattville area"],
-    nearbyCities: ["birmingham-al", "dothan-al", "auburn-al"],
+    weatherRisks:
+      "Living in Montgomery means preparing for central Alabama's severe weather reality. The capital city sits in the state's tornado corridor, with peak risk from March through May when Gulf moisture collides with cold fronts pushing through the region. Montgomery has experienced significant tornado events, including the 2019 tornado that struck the Arrowhead community in 36116, destroying homes and claiming lives. Severe storms bring damaging hail that can total vehicles and destroy roofs across eastern Montgomery within minutes.\n\nSummer brings intense heat and humidity — Montgomery averages more than 90 days above 90 degrees annually. This climate stresses HVAC systems and can cause foundation movement in the region's clay-heavy soils. Tropical storm remnants occasionally reach Montgomery in fall, bringing flooding rains that overwhelm drainage systems designed for normal rainfall.\n\nThe Alabama River and numerous creeks drain Montgomery County, creating flood risks that standard homeowners policies exclude entirely. Low-lying areas throughout 36116 and 36117 — particularly near Catoma Creek and drainage basins feeding the Alabama River — should treat flood insurance as essential protection. The region averages around 52 inches of rain annually, and tropical systems can produce extreme rainfall totals.",
+    neighborhoodCoverage:
+      "**Dalraida (36116):** One of Montgomery's most established neighborhoods, Dalraida features 1950s-1970s housing stock with mature tree canopy throughout. Original roofs on older homes face higher premiums and may require inspection. Large oaks and pines provide beautiful shade but pose storm debris risks during severe weather. Many Dalraida homes have been updated, but original construction details affect replacement cost calculations.\n\n**Arrowhead (36116):** Mixed housing ages with some areas devastated by the 2019 tornado and since rebuilt to modern codes. Newer construction typically qualifies for wind mitigation discounts. Traffic on Vaughn Road and access to I-85 affects auto rates. Proximity to Eastdale Mall retail area increases traffic density.\n\n**Woodmere (36116):** Established residential neighborhood with 1960s-1980s housing. Good access to the Eastern Bypass for commuters. Mature landscaping and established lots. Generally stable property values with well-maintained homes throughout.\n\n**Wynlakes (36117):** Upscale planned community with golf course, newer construction, and higher property values. Modern building codes mean most homes have hurricane-resistant features. Gated portions provide security benefits. Higher dwelling values require higher coverage limits.\n\n**Pike Road (36117):** Rapidly growing suburb that became its own incorporated city in 1997. Mix of newer subdivisions and rural properties. Excellent schools drive property values. Distance from fire stations in some areas can affect home insurance rates. Lower crime rates than urban Montgomery.\n\n**Eastchase and Bell Road Corridor (36117):** High-growth retail and residential corridor anchored by Eastchase shopping and entertainment district. Newer apartments and condos alongside single-family subdivisions. Heavy traffic on Bell Road and the Eastern Bypass creates auto insurance considerations.",
+    economyInfo:
+      "Montgomery's role as Alabama's capital creates varied insurance needs across the 36116 and 36117 communities. State government employees at the Capitol complex, RSA Tower, and agencies throughout downtown often have stable incomes that warrant higher liability protection. Many commute from eastern suburbs via the Eastern Bypass or I-85. State retirement benefits are worth protecting with adequate coverage.\n\nMilitary families at Maxwell-Gunter Air Force Base have specific insurance needs including coverage that transfers if relocated, protection during deployments, and understanding of BAH considerations for housing. We understand military family dynamics and the importance of responsive service.\n\nAutomotive workers at Hyundai Manufacturing Alabama in nearby Hope Hull and tier-one suppliers throughout the region represent the capital's industrial employment base. Shift work schedules mean non-traditional commute hours. Healthcare workers at Baptist Health, Jackson Hospital, and medical facilities throughout Montgomery work around-the-clock schedules requiring reliable coverage for varied commute times. Education employees at Montgomery Public Schools, Alabama State University, Huntingdon College, Faulkner University, and Auburn University Montgomery benefit from educator-specific considerations.",
+    localExcellence:
+      "Operating from our Centre, Alabama headquarters approximately 115 miles north of Montgomery, we've built digital insurance delivery that serves 36116 and 36117 residents better than many local storefronts. You receive comprehensive coverage analysis and personalized attention matching face-to-face meetings, with the convenience of handling everything from your home in Wynlakes or your office near the Capitol.\n\nLicensed Alabama agents (Agency License #416438) understand state regulations and Montgomery County conditions, ensuring coverage meets requirements while addressing regional risks like tornado exposure and the unique dynamics of the capital city. Technology enables faster quotes — most take about 15 minutes. Streamlined claims support means you reach a real person who knows your policy. Efficient policy management lets you update coverage, add vehicles, or adjust deductibles without scheduling appointments. This efficiency translates to competitive rates while maintaining personal service.\n\nDuring severe weather season, our digital tools prove especially valuable. Track approaching storms with us and verify coverage before impact. File claims online the moment damage occurs. Reach us by phone when your neighborhood is dealing with aftermath. We're built for how River Region families actually live.",
+    localConsiderations:
+      "Montgomery sits in Alabama's tornado corridor with peak risk March-May. The 2019 Arrowhead tornado demonstrated real eastern Montgomery danger. Catoma Creek and Alabama River flooding requires flood insurance consideration. I-85 and Eastern Bypass commuting plus Alabama's 18%+ uninsured rate requires adequate liability and UM coverage. Maxwell-Gunter AFB military families need transfer-ready policies.",
+    neighborhoods: [
+      "Dalraida",
+      "Arrowhead",
+      "Woodmere",
+      "Wynlakes",
+      "Pike Road",
+      "Eastchase",
+      "Capitol Heights",
+      "Vaughn Road",
+      "Bell Road Corridor",
+      "Chantilly",
+      "Halcyon",
+      "Old Cloverdale",
+      "Taylor Road",
+      "Atlanta Highway",
+      "Catoma",
+      "Eastern Bypass",
+    ],
     faqs: [
       {
-        question: "What are Alabama's minimum insurance requirements for Montgomery drivers?",
-        answer: "Alabama requires 25/50/25 liability coverage ($25,000 bodily injury per person, $50,000 per accident, $25,000 property damage). We recommend higher limits to protect your assets in Alabama's capital city."
+        question: "Do I need to visit your office to get insurance in Montgomery?",
+        answer:
+          "No office visit required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes to claims support happens online or by phone. Montgomery residents in 36116 and 36117 save time while receiving comprehensive coverage analysis and personal attention from licensed Alabama agents who understand the capital region's specific risks.",
       },
       {
-        question: "How much does home insurance cost in Montgomery?",
-        answer: "Montgomery home insurance varies by property value, roof age, and coverage selections. Average annual premiums range $1,200-2,500. Factors include rebuild cost, wind/hail deductibles, and protective devices."
+        question: "How does tornado risk affect insurance in Montgomery?",
+        answer:
+          "Montgomery sits in Alabama's tornado corridor with peak risk from March through May. The 2019 Arrowhead tornado demonstrated the real danger eastern Montgomery faces. Homeowners insurance rates reflect this elevated wind risk, and adequate dwelling coverage is essential. Your policy's wind and hail deductible may apply separately from your standard deductible. Newer homes built to modern codes may qualify for wind mitigation discounts.",
       },
       {
-        question: "Do Montgomery renters need insurance?",
-        answer: "While not legally required, many Montgomery landlords mandate renters insurance. It protects your belongings from fire, theft, and storm damage while providing liability coverage—typically $15-30/month."
+        question: "Is flood insurance necessary in Montgomery?",
+        answer:
+          "Standard homeowners insurance excludes flood damage entirely. While Montgomery isn't coastal, flash flooding occurs during heavy thunderstorms and tropical remnants, particularly near Catoma Creek and low-lying areas throughout 36116 and 36117. Properties outside designated FEMA flood zones still experience flooding. We analyze your specific address to assess flood risk and coverage needs.",
       },
       {
-        question: "What weather risks affect Montgomery insurance?",
-        answer: "Montgomery faces spring tornado season, severe thunderstorms, and occasional tropical moisture. Home and property insurance should include wind/hail coverage with appropriate deductibles."
+        question: "What bundle savings are available for Montgomery residents?",
+        answer:
+          "Bundling home and auto insurance typically saves 15-25% on combined premiums — often $400-600 annually for River Region families. You can maximize savings by combining multiple policies: home and auto, renters and auto, or adding condo and life insurance to your package. One household, one agency, one discount.",
       },
       {
-        question: "Can I bundle auto and home insurance in Montgomery?",
-        answer: "Yes! Bundling typically saves 15-25% on both policies. We'll quote standalone and bundled options to show your savings."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer:
+          "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, these minimums rarely provide adequate protection for Montgomery drivers facing I-85 traffic and Eastern Bypass congestion. We typically recommend higher liability limits plus matching uninsured motorist coverage.",
       },
       {
-        question: "How quickly can I get insurance coverage in Montgomery?",
-        answer: "Auto and renters insurance often activates same-day. Home insurance may require property details and sometimes an inspection. Contact us at (256) 927-6287 to start your Montgomery quote."
-      }
-    ]
+        question: "Do military families at Maxwell-Gunter have special insurance options?",
+        answer:
+          "Military families often benefit from specific discounts and flexible policy options. We understand the unique needs of service members and their families — including coverage that accommodates relocations and protection during deployments. Contact us to discuss military family coverage options.",
+      },
+      {
+        question: "What factors affect auto insurance rates in Montgomery?",
+        answer:
+          "Your specific address in 36116 or 36117, driving record, vehicle types, annual mileage, and commute patterns all affect rates. Urban Eastern Bypass commuters face different exposure than Pike Road suburban drivers. Garaging location affects theft and vandalism risk. We consider all these factors — plus available discounts for safe drivers, good students, bundled policies, and more — to find your best rate.",
+      },
+      {
+        question: "How quickly can I get coverage for my Montgomery home or vehicle?",
+        answer:
+          "Most policies can begin the same day. Our digital process means Montgomery residents receive quotes within about 15 minutes. Once you've reviewed options and made a decision, coverage activates immediately. Need proof of insurance for a vehicle purchase, apartment lease, or mortgage closing? We provide documentation right away.",
+      },
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
+      },
+    ],
+    nearbyCities: ["auburn-al", "birmingham-al", "troy-al"],
   },
 
   "mobile-al": {
