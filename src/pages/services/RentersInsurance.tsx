@@ -143,7 +143,6 @@ const georgiaCities = [
   { name: "Atlanta", slug: "atlanta-ga" },
   { name: "Lawrenceville", slug: "lawrenceville-ga" },
   { name: "Duluth", slug: "duluth-ga" },
-  { name: "Columbus", slug: "columbus-ga" },
   { name: "Cartersville", slug: "cartersville-ga" },
   { name: "Calhoun", slug: "calhoun-ga" },
   { name: "Cedartown", slug: "cedartown-ga" },
