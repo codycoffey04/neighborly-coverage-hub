@@ -8,21 +8,275 @@ import { ServiceArea } from "@/components/homepage/ServiceArea";
 import { FAQ } from "@/components/homepage/FAQ";
 import { FinalCTA } from "@/components/homepage/FinalCTA";
 import { Footer } from "@/components/homepage/Footer";
+import { Helmet } from "react-helmet";
 
 const Index = () => {
+  // Comprehensive Schema.org JSON-LD for homepage
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "InsuranceAgency",
+        "@id": "https://coffeyagencies.com/#organization",
+        "name": "Coffey Agencies",
+        "legalName": "Cody Coffey Agency",
+        "description": "Alabama & Georgia's trusted insurance partner offering auto, home, condo, renters, life, and motorcycle insurance with local expertise and digital convenience.",
+        "url": "https://coffeyagencies.com",
+        "telephone": "(256) 927-6287",
+        "foundingDate": "2009",
+        "founder": {
+          "@type": "Person",
+          "name": "Cody Coffey"
+        },
+        "areaServed": [
+          {
+            "@type": "State",
+            "name": "Alabama"
+          },
+          {
+            "@type": "State",
+            "name": "Georgia"
+          }
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": ["Cash", "Credit Card", "Check", "Electronic Payment"],
+        "currenciesAccepted": "USD",
+        "logo": "https://coffeyagencies.com/coffey-logo.png",
+        "image": "https://coffeyagencies.com/coffey-logo.png",
+        "numberOfEmployees": "6-10",
+        "slogan": "Your trusted insurance partner in Alabama & Georgia",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Insurance Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Auto Insurance",
+                "description": "Comprehensive auto insurance coverage for Alabama and Georgia drivers"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Home Insurance",
+                "description": "Complete homeowners insurance protection"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Renters Insurance",
+                "description": "Affordable renters insurance starting at $8/month"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Condo Insurance",
+                "description": "Specialized HO-6 condo insurance coverage"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Life Insurance",
+                "description": "Term and whole life insurance protection"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Motorcycle Insurance",
+                "description": "Coverage for cruisers, sport bikes, and touring motorcycles"
+              }
+            }
+          ]
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "(256) 927-6287",
+            "contactType": "customer service",
+            "areaServed": "Alabama",
+            "availableLanguage": ["English", "Spanish"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "(706) 784-6511",
+            "contactType": "customer service",
+            "areaServed": "Georgia",
+            "availableLanguage": "English"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://coffeyagencies.com/#organization",
+        "name": "Coffey Agencies",
+        "url": "https://coffeyagencies.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://coffeyagencies.com/coffey-logo.png",
+          "width": 250,
+          "height": 60
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Cody Coffey",
+          "jobTitle": "CEO & Founder"
+        },
+        "foundingDate": "2009",
+        "numberOfEmployees": "6-10",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "1913 W Main Street",
+            "addressLocality": "Centre",
+            "addressRegion": "AL",
+            "postalCode": "35960",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "1703 Turner McCall Blvd SE",
+            "addressLocality": "Rome",
+            "addressRegion": "GA",
+            "postalCode": "30161",
+            "addressCountry": "US"
+          }
+        ],
+        "sameAs": [
+          "https://www.google.com/maps?cid=CENTRE_OFFICE_PLACE_ID",
+          "https://www.google.com/maps?cid=ROME_OFFICE_PLACE_ID"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://coffeyagencies.com/#centre-office",
+        "name": "Coffey Agencies - Centre, AL (Cody Coffey Agency)",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1913 W Main Street",
+          "addressLocality": "Centre",
+          "addressRegion": "AL",
+          "postalCode": "35960",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "34.15",
+          "longitude": "-85.68"
+        },
+        "telephone": "(256) 927-6287",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "116",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "parentOrganization": {
+          "@id": "https://coffeyagencies.com/#organization"
+        },
+        "priceRange": "$$",
+        "image": "https://coffeyagencies.com/centre-office.jpg"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://coffeyagencies.com/#rome-office",
+        "name": "Coffey Agencies - Rome, GA (Millican & Coffey Agency)",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1703 Turner McCall Blvd SE",
+          "addressLocality": "Rome",
+          "addressRegion": "GA",
+          "postalCode": "30161",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "34.25",
+          "longitude": "-85.16"
+        },
+        "telephone": "(706) 784-6511",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:30",
+            "closes": "16:30"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "90",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "parentOrganization": {
+          "@id": "https://coffeyagencies.com/#organization"
+        },
+        "priceRange": "$$",
+        "image": "https://coffeyagencies.com/rome-office.jpg"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://coffeyagencies.com/#website",
+        "url": "https://coffeyagencies.com",
+        "name": "Coffey Agencies",
+        "description": "Auto, Home, Life & Motorcycle Insurance in Alabama & Georgia",
+        "publisher": {
+          "@id": "https://coffeyagencies.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://coffeyagencies.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <ServicesOverview />
-      <WhyChooseUs />
-      <HowItWorks />
-      <Testimonials />
-      <ServiceArea />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
-    </div>
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen">
+        <Header />
+        <Hero />
+        <ServicesOverview />
+        <WhyChooseUs />
+        <HowItWorks />
+        <Testimonials />
+        <ServiceArea />
+        <FAQ />
+        <FinalCTA />
+        <Footer />
+      </div>
+    </>
   );
 };
 

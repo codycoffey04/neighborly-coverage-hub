@@ -163,6 +163,32 @@ const HomeInsurance = () => {
     }))
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Home Insurance",
+    "provider": {
+      "@type": "InsuranceAgency",
+      "name": "Coffey Agencies",
+      "url": "https://coffeyagencies.com"
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Alabama"
+      },
+      {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    ],
+    "description": "Complete homeowners insurance protection covering dwelling, personal property, liability, and additional living expenses for Alabama and Georgia properties.",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -170,6 +196,9 @@ const HomeInsurance = () => {
         <meta name="description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance with local expertise in Alabama and Georgia." />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
 

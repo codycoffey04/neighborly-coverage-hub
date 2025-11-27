@@ -26,6 +26,38 @@ import {
 } from "lucide-react";
 
 const LifeInsurance = () => {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Life Insurance",
+    "provider": {
+      "@type": "InsuranceAgency",
+      "name": "Coffey Agencies",
+      "url": "https://coffeyagencies.com"
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Alabama"
+      },
+      {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    ],
+    "description": "Term and whole life insurance protection for Alabama and Georgia families, with coverage from $25/month for $500K term life insurance.",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "25.00",
+        "priceCurrency": "USD",
+        "unitText": "MONTH"
+      }
+    }
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -131,6 +163,9 @@ const georgiaCities = [
         <meta name="description" content="$500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage and 4.8★ rated service." />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
 
