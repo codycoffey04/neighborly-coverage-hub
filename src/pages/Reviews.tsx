@@ -9,13 +9,15 @@ const officeRatings = [
     office: "Centre, Alabama",
     rating: "4.7",
     reviews: 116,
-    googleUrl: "https://g.page/r/YOUR_CENTRE_GOOGLE_PLACE_ID/review",
+    // TODO: Replace with real Google Place ID for Centre office
+    googleUrl: "https://g.page/r/CENTRE_GOOGLE_PLACE_ID/review",
   },
   {
     office: "Rome, Georgia",
     rating: "4.6",
     reviews: 90,
-    googleUrl: "https://g.page/r/YOUR_ROME_GOOGLE_PLACE_ID/review",
+    // TODO: Replace with real Google Place ID for Rome office
+    googleUrl: "https://g.page/r/ROME_GOOGLE_PLACE_ID/review",
   },
 ];
 
@@ -203,7 +205,7 @@ const Reviews = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
               <a 
-                href="https://g.page/r/YOUR_CENTRE_GOOGLE_PLACE_ID/review" 
+                href="https://g.page/r/CENTRE_GOOGLE_PLACE_ID/review" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
@@ -214,7 +216,7 @@ const Reviews = () => {
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a 
-                href="https://g.page/r/YOUR_ROME_GOOGLE_PLACE_ID/review" 
+                href="https://g.page/r/ROME_GOOGLE_PLACE_ID/review" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"

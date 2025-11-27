@@ -64,8 +64,8 @@ export const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center animate-fade-in"
                style={{ animationDuration: '0.8s', animationDelay: '0.8s', animationFillMode: 'both' }}>
-            <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-2xl hover:scale-105 transition-all duration-300">
-              Get Your Free Quote
+            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-2xl hover:scale-105 transition-all duration-300">
+              <a href="/contact">Get Your Free Quote</a>
             </Button>
             <Button asChild size="lg" className="bg-white/95 backdrop-blur-sm border-2 border-white text-primary hover:bg-white hover:scale-105 text-lg px-10 py-7 h-auto font-bold shadow-xl transition-all duration-300">
               <a href="tel:2569276287">Call Us Now</a>
