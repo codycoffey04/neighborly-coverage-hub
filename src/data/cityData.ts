@@ -1248,43 +1248,84 @@ export const cityData: Record<string, CityData> = {
     city: "Suwanee",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30024"],
+    zipCodes: ["30024", "30097", "30005", "30043", "30096", "30518", "30046", "30519", "30092"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    customHeroTitle: "Insurance in Suwanee, GA (30024)",
+    customHeroSubhead: "Local help with auto insurance in the 30024 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Suwanee, Georgia families with comprehensive insurance for Gwinnett County. From Town Center to Johns Creek, we protect Suwanee residents with auto, home, renters, condo, and life insurance.",
-      "Suwanee's highly-rated schools, family-friendly atmosphere, and quality neighborhoods create strong community values. Our team provides personalized coverage at competitive rates for Suwanee families.",
-      "Contact our Rome, GA office at (706) 784-6511 for Suwanee insurance quotes and Gwinnett County service."
+      "The 30024 area faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with damaging winds exceeding 60 mph to flash flooding concerns along Suwanee Creek, residents need insurance protection tailored to North Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Suwanee Town Center, Laurel Springs, or any neighborhood in the region.",
+      "With approximately 24,000 residents and a median household income around $91,000, this thriving community includes professionals at Mitsubishi Electric, ARRIS International, and healthcare workers at North Fulton Hospital, along with educators at Forsyth County Schools. Each household has distinct insurance needs, whether protecting family homes near Suwanee Creek greenway areas or securing comprehensive auto coverage for I-85 commutes to Atlanta."
     ],
-    localConsiderations: "Suwanee experiences spring severe weather and tornado risk. High property values in quality neighborhoods require adequate dwelling coverage. Suburban traffic patterns along I-85 create auto insurance considerations.",
-    neighborhoods: ["Suwanee Town Center", "Johns Creek vicinity", "North Gwinnett", "Peachtree Corners area", "Lambert", "McGinnis Ferry", "Satellite Boulevard"],
-    nearbyCities: ["duluth-ga", "lawrenceville-ga", "alpharetta-ga"],
+    weatherRisks: "Living in the 30024 area means preparing for severe weather year-round. Thunderstorm season brings heightened risk with large hail events peaking in April and May, potentially damaging vehicles and roofs across neighborhoods from River Club to Morningview. Ice storms during January and February can damage trees and power lines, causing property damage. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit.\n\nSuwanee Creek and the Chattahoochee River present flooding risks that standard policies typically exclude. Properties in Wildwood at Suwanee Creek, Rivermoore Park, and along waterway corridors should consider flood insurance as critical protection. Flash flooding during heavy rainfall events can affect greenway areas and low-lying properties. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Suwanee residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Old Town Suwanee and Smithtown feature mature trees that can pose storm risks during severe weather. Newer developments in Suwanee Station and North Ivy may have different construction standards affecting replacement costs. Properties near Suwanee Town Center and McGinnis Ferry area might benefit from increased liability limits due to higher traffic and community activity exposure.\n\nBundling home and auto insurance in the area saves money while creating comprehensive protection for North Georgia living. Whether commuting on I-85, navigating Buford Highway, or parking near town center attractions, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed for Suwanee households.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With major employers like Mitsubishi Electric and ARRIS International, many residents require comprehensive auto coverage for valuable commuter vehicles. Professionals working at North Fulton Hospital or City of Suwanee may benefit from umbrella liability coverage given their professional responsibilities. Families in newer communities often need enhanced dwelling coverage reflecting modern construction costs.\n\nZIP codes served include 30024, 30097, 30005, 30043, 30096, 30518, 30046, 30519, and 30092—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a first-time homebuyer in Shadowbrook or updating established household coverage in this growing Suwanee community.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Suwanee. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30024 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing available to you 24/7.",
+    localConsiderations: "North Georgia severe weather zone with thunderstorms and large hail events, Suwanee Creek and Chattahoochee River flooding risks, high property values requiring adequate dwelling coverage, I-85 corridor commuting patterns",
+    neighborhoods: [
+      "Suwanee Town Center",
+      "Laurel Springs",
+      "River Club",
+      "Morningview",
+      "Old Town Suwanee",
+      "Smithtown",
+      "Suwanee Station",
+      "North Ivy",
+      "McGinnis Ferry area",
+      "Wildwood at Suwanee Creek",
+      "Rivermoore Park",
+      "Shadowbrook"
+    ],
     faqs: [
       {
-        question: "What are typical insurance costs in Suwanee?",
-        answer: "Suwanee auto insurance averages $1,200-1,900 annually. Home insurance varies by property value, typically $1,400-2,500 annually due to higher home values. Bundling saves 15-25%."
+        question: "Do I need to visit your office to get insurance in Suwanee?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30024 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "Do Suwanee renters need insurance?",
-        answer: "Yes! Renters insurance protects belongings and provides liability coverage. Many Suwanee apartments and townhomes require it—typically $18-30/month, less when bundled."
+        question: "How significant is flood risk near Suwanee Creek and the Chattahoochee River?",
+        answer: "Properties near Suwanee Creek and the Chattahoochee River face elevated flood risks, particularly during heavy rainfall and flash flooding events. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "What home insurance do Suwanee homeowners need?",
-        answer: "Suwanee homes often have higher values requiring adequate dwelling coverage (full rebuild cost). Include wind/hail protection, liability coverage, and appropriate deductibles. Protective devices help reduce premiums."
+        question: "What bundle savings are available for local residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Area residents can maximize savings by combining multiple policies, whether insuring a home in Laurel Springs and vehicles for Mitsubishi Electric commutes, or protecting a property near Suwanee Town Center with comprehensive auto coverage."
       },
       {
-        question: "Can Suwanee residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. Given Suwanee's higher property values, bundling creates significant savings."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on I-85 and around major employment centers often warrants higher limits for adequate protection."
       },
       {
-        question: "Does Coffey Agencies serve all North Gwinnett?",
-        answer: "Yes, we serve Suwanee, Johns Creek, Sugar Hill, and all North Gwinnett communities. Call (706) 784-6511 for personalized quotes."
+        question: "How does severe weather season affect insurance premiums?",
+        answer: "Location in North Georgia's severe weather zone influences homeowners insurance rates. Premiums reflect elevated risk from damaging winds, large hail events, and occasional tornadoes, but proper coverage ensures protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
       },
       {
-        question: "What factors affect Suwanee home insurance rates?",
-        answer: "Property value, roof age, square footage, claims history, and protective devices impact rates. Higher-value Suwanee homes need adequate coverage limits to avoid underinsurance."
+        question: "Can families near Suwanee Town Center get special coverage?",
+        answer: "Properties near Suwanee Town Center and high-traffic areas may benefit from increased liability coverage. We understand these requirements and structure policies to address proximity to commercial districts, community events, and the unique characteristics of living in active town center areas."
+      },
+      {
+        question: "What factors affect auto insurance rates in the area?",
+        answer: "Auto insurance rates consider your ZIP code (30024 and surrounding areas), driving record, vehicle type, and commute distance. Traffic patterns on I-85 and local roads, plus commute patterns to major employers like Mitsubishi Electric and ARRIS International, all factor into personalized rates."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes in River Club, Morningview, or any other neighborhood."
       }
-    ]
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ],
+    nearbyCities: ["lawrenceville-ga", "duluth-ga", "alpharetta-ga"]
   },
 
   "alpharetta-ga": {
