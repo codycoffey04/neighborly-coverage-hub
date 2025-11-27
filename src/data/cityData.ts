@@ -104,27 +104,69 @@ export const cityData: Record<string, CityData> = {
     city: "Trussville",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["35173", "35235"],
+    customHeroTitle: "Insurance in Trussville, AL (35173)",
+    customHeroSubhead: "Local help with auto insurance in the 35173 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
+    zipCodes: ["35173", "35004", "35094", "35120", "35126", "35127", "35146", "35210", "35235"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(205) 880-4893",
     introduction: [
-      "Coffey Agencies serves Trussville, Alabama residents with personalized insurance solutions. Content coming soon - contact our Centre office at (256) 927-6287 for Trussville insurance quotes."
+      "The 35173 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns along the Cahaba River, residents need insurance protection tailored to Central Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Trussville, Cahaba Project, or any neighborhood in the region.",
+      "With approximately 26,000 residents and a median household income around $93,000, this affluent community includes educators at Trussville City Schools, healthcare professionals at Gadsden Regional Medical Center, and families working throughout the Birmingham metro area. Each household has distinct insurance needs, whether protecting higher-value homes near Lake Forest or securing auto coverage for commutes along I-59. Trussville's growth as a premier Birmingham suburb creates specific insurance considerations for both established and new homeowners."
     ],
-    localConsiderations: "Trussville residents face tornado season and severe thunderstorms typical of central Alabama. Growing suburban community with mix of new and established neighborhoods requiring appropriate coverage levels.",
-    neighborhoods: ["Downtown Trussville", "Cahaba River area", "Deerfoot Parkway", "North Trussville"],
-    nearbyCities: ["birmingham-al", "centre-al", "montgomery-al"],
+    weatherRisks: "Living in Trussville means preparing for severe weather year-round. Tornado season brings heightened risk from March through May, with violent storms capable of producing significant damage across neighborhoods from Carrington Lakes to Trussville Springs. Severe thunderstorms occur regularly, bringing large hail that can impact vehicles and roofs throughout Stockton and the Edwards Lake Road area. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit.\n\nThe Cahaba River presents flooding risks that standard policies typically exclude. Properties in Happy Hollow and near river corridors should consider flood insurance as critical protection. Flash flooding from severe thunderstorms can overwhelm drainage systems even away from the river. Occasional winter ice storms add unique risks, potentially damaging trees and power lines throughout residential areas. We analyze your specific location in Trussville to determine risk levels and recommend appropriate coverage for 35173 residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Downtown Trussville and Happy Hollow feature mature trees that can pose storm risks during severe weather events. Newer developments in Cahaba Project and Trussville Springs may have different construction standards affecting replacement costs and wind resistance ratings. Higher-value properties in Lake Forest and Carrington Lakes require appropriate coverage limits ensuring adequate protection for these significant investments.\n\nBundling home and auto insurance in Trussville saves money while creating comprehensive protection for Central Alabama living. Whether commuting to Birmingham on I-59, navigating local shopping areas near Walmart and Home Depot, or traveling throughout Jefferson County, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Trussville households facing regional weather risks.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Trussville City Schools employing numerous educators and staff, many residents need reliable coverage for daily commutes and valuable homes. Healthcare professionals at Gadsden Regional Medical Center may benefit from higher liability limits given professional responsibilities. Retail workers at Walmart and Home Depot, along with City of Trussville employees, represent diverse insurance needs across income levels and property values.\n\nZIP codes served include 35173, 35004, 35094, 35120, 35126, 35127, 35146, 35210, and 35235—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Trussville, whether you're a first-time homebuyer in a new development or updating established household coverage in mature neighborhoods. Understanding local tornado risks, flooding potential, and higher property values ensures appropriate protection levels.",
+    localExcellence: "Operating from Centre headquarters, we've perfected digital insurance delivery to Trussville. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Alabama agents (License #416438) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks like tornado exposure and river flooding.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 35173 area while maintaining personal service expected from local agents, despite our Centre location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during severe weather season when quick action protects your Trussville property and family.",
+    localConsiderations: "Trussville residents face Central Alabama weather risks including tornado season (March-May), severe thunderstorms with hail, and Cahaba River flooding concerns. Properties near the river require flood insurance beyond standard homeowners policies. The community's proximity to Birmingham creates specific auto insurance considerations with I-59 commuter traffic patterns. With a median household income around $93,000, many homes require higher coverage limits reflecting property values. Bundling home and auto insurance typically saves 15-25% ($400-600 annually) while ensuring comprehensive protection for this affluent Birmingham suburb.",
+    neighborhoods: ["Downtown Trussville", "Cahaba Project", "Lake Forest", "Carrington Lakes", "Happy Hollow", "Trussville Springs", "Stockton", "Edwards Lake Road", "Deerfoot Parkway", "North Trussville", "Cahaba River area", "Jefferson County"],
+    nearbyCities: ["birmingham-al", "centre-al"],
     faqs: [
       {
-        question: "Does Coffey Agencies serve Trussville, AL?",
-        answer: "Yes! We serve Trussville residents from our Centre, AL office. Call (256) 927-6287 for personalized insurance quotes for auto, home, renters, condo, and life insurance."
+        question: "Do I need to visit your office to get insurance in Trussville?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes can be handled online or by phone, saving 35173 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "What insurance do Trussville residents need?",
-        answer: "Trussville residents typically need auto insurance (Alabama requires 25/50/25 minimum liability), home insurance for property protection, and often renters or condo insurance depending on housing type. We'll help you determine the right coverage."
+        question: "How significant is flood risk near the Cahaba River?",
+        answer: "Properties near the Cahaba River face elevated flood risks, particularly during spring storms and heavy rainfall events. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "How quickly can I get insurance in Trussville?",
-        answer: "Most quotes take 15 minutes, and coverage can often start the same day. Contact our Centre office at (256) 927-6287 for fast, personalized service."
+        question: "What bundle savings are available for Trussville residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Trussville residents can maximize savings by combining multiple policies, whether insuring a home in Carrington Lakes and vehicles for Birmingham commutes, or protecting a condo near downtown with auto coverage."
+      },
+      {
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy commuter traffic on I-59 and throughout the Birmingham metro area often warrants higher limits for adequate protection."
+      },
+      {
+        question: "How does tornado season affect insurance premiums?",
+        answer: "Central Alabama's tornado corridor influences homeowners insurance rates in Trussville. Premiums reflect elevated risk during peak season (March-May), but proper coverage ensures protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
+      },
+      {
+        question: "Are higher home values in Trussville reflected in insurance rates?",
+        answer: "With a median household income around $93,000, Trussville features higher-value homes requiring appropriate coverage limits. Replacement costs factor significantly into premiums, ensuring adequate protection for your investment. We help determine proper coverage amounts based on current construction costs and your home's specific features."
+      },
+      {
+        question: "What factors affect auto insurance rates in Trussville?",
+        answer: "Auto insurance rates consider your ZIP code (35173 and surrounding areas), driving record, vehicle type, and commute distance. Proximity to I-59 and Birmingham commuter traffic patterns factor into rates, along with local claims history and demographic factors for personalized pricing."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Trussville residents can receive quotes within minutes and have active coverage the same day, protecting homes in Lake Forest, Cahaba Project, or any other neighborhood throughout the 35173 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
