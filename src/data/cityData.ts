@@ -1694,7 +1694,7 @@ export const cityData: Record<string, CityData> = {
       "Highway 42 corridor",
       "I-75 corridor"
     ],
-    nearbyCities: ["powder-springs-ga", "atlanta-ga", "rome-ga"],
+    nearbyCities: ["atlanta-ga", "lawrenceville-ga", "rome-ga"],
     faqs: [
       {
         question: "Do I need to visit your office to get insurance in Forsyth?",
