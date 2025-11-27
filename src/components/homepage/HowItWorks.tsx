@@ -5,19 +5,19 @@ const steps = [
     icon: FileText,
     number: "01",
     title: "Get Your Quote",
-    description: "Fill out our quick online form or call one of our offices. We'll gather the info we need to find you the best coverage options."
+    description: "Fill out our quick form online or give us a call. Tell us what you need — auto, home, condo, renters, life, or bundle it all."
   },
   {
     icon: Search,
     number: "02",
     title: "Review Your Options",
-    description: "We'll present you with tailored insurance options from top carriers. Our team will walk you through each policy so you understand exactly what you're getting."
+    description: "A licensed agent calls you back within 24 hours. We walk through coverage options, answer questions, and find the policy that fits your life and budget."
   },
   {
     icon: ShieldCheck,
     number: "03",
     title: "Get Covered",
-    description: "Choose the coverage that fits your needs and budget, complete the paperwork (we make it easy), and you're protected. It's that simple."
+    description: "Approve your policy and you're protected — often the same day. Welcome to the Coffey Agencies family."
   }
 ];
 
@@ -29,7 +29,7 @@ export const HowItWorks = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-balance">Getting Covered is Easy</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            Three simple steps to the protection you need. No hassle, no confusion—just straightforward service.
+            Three steps stand between you and peace of mind. Let's make it simple.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export const HowItWorks = () => {
         <div className="mt-16 text-center bg-muted/30 rounded-2xl p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Get Started?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Request your free quote today and see why thousands of Alabama and Georgia families trust Coffey Agencies with their insurance needs.
+            Most quotes take about 15 minutes. No obligations, no pressure — just honest answers and real options.
           </p>
           <button className="btn-primary px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 hover:scale-105 transition-transform">
             Get Your Free Quote

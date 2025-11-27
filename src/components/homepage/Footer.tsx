@@ -10,8 +10,13 @@ const services = [
 
 const company = [
   { name: "About Us", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Our Team", href: "/about#team" },
   { name: "FAQ", href: "/faq" },
+  { name: "Contact", href: "/contact" }
+];
+
+const resources = [
+  { name: "Get a Quote", href: "/contact" },
   { name: "Customer Reviews", href: "/reviews" },
   { name: "Blog", href: "/blog" }
 ];
@@ -26,28 +31,26 @@ export const Footer = () => {
     <footer className="bg-muted/30 border-t">
       <div className="container-custom py-12 md:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
-          {/* Company Info */}
+          {/* Coffey Agencies */}
           <div className="lg:col-span-1 space-y-4">
-            <h3 className="text-2xl font-bold text-primary">Coffey Agencies</h3>
-            <p className="text-muted-foreground">
-              Your trusted insurance partner serving Alabama and Georgia for over 16 years.
-            </p>
-            <div className="flex gap-4">
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5 text-primary" />
-              </a>
-            </div>
+            <h4 className="font-bold text-lg mb-4">Coffey Agencies</h4>
+            <ul className="space-y-2">
+              {company.map((item, index) => (
+                <li key={index}>
+                  <a 
+                    href={item.href}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Services */}
+          {/* Insurance */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Services</h4>
+            <h4 className="font-bold text-lg mb-4">Insurance</h4>
             <ul className="space-y-2">
               {services.map((item, index) => (
                 <li key={index}>
@@ -62,11 +65,11 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Resources */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Company</h4>
+            <h4 className="font-bold text-lg mb-4">Resources</h4>
             <ul className="space-y-2">
-              {company.map((item, index) => (
+              {resources.map((item, index) => (
                 <li key={index}>
                   <a 
                     href={item.href}
@@ -132,7 +135,7 @@ export const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © {new Date().getFullYear()} Coffey Agencies Inc. All rights reserved. Licensed in Alabama and Georgia.
+              © {new Date().getFullYear()} Coffey Agencies Inc. All rights reserved. Coffey Agencies Inc. is an authorized, independently owned insurance agency. Licensed in Alabama (#416438) and Georgia (#149612).
             </p>
             <div className="flex gap-6 text-sm">
               {legal.map((item, index) => (

@@ -6,31 +6,31 @@ const services = [
   {
     icon: Car,
     title: "Auto Insurance",
-    description: "Comprehensive coverage for your vehicles with competitive rates and flexible payment options.",
+    description: "Protection that travels with you. Liability, collision, comprehensive, and uninsured motorist coverage with rates that reward good drivers.",
     link: "/services/auto-insurance"
   },
   {
     icon: Home,
     title: "Home Insurance",
-    description: "Protect your home and belongings with tailored coverage that fits your needs and budget.",
+    description: "Your home faces Alabama storms and Georgia heat. We build policies around regional risks — wind, hail, water damage — so nothing catches you off guard.",
     link: "/services/home-insurance"
   },
   {
     icon: Key,
     title: "Renters Insurance",
-    description: "Affordable protection for your personal property and liability as a renter.",
+    description: "Your landlord's insurance covers the building, not your stuff. Protect your belongings and add liability coverage starting under $20/month.",
     link: "/services/renters-insurance"
   },
   {
     icon: Building2,
     title: "Condo Insurance",
-    description: "Specialized coverage for condo owners that complements your HOA's master policy.",
+    description: "Your HOA policy has gaps. We fill them — covering your unit's interior, your belongings, and liability that master policies ignore.",
     link: "/services/condo-insurance"
   },
   {
     icon: Heart,
     title: "Life Insurance",
-    description: "Secure your family's financial future with term or permanent life insurance solutions.",
+    description: "The conversation nobody wants to have, but everyone needs. Term and permanent options that protect your family's future without wrecking today's budget.",
     link: "/services/life-insurance"
   }
 ];
@@ -43,7 +43,7 @@ export const ServicesOverview = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-balance">Insurance Solutions for Every Need</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            Whether you're protecting your car, home, or loved ones, we've got you covered with personalized service and expert guidance.
+            Coverage that fits your life — not the other way around. Get a personalized quote in minutes.
           </p>
         </div>
 

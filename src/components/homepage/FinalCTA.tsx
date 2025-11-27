@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Shield, Clock, Award } from "lucide-react";
+import { Check } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
@@ -19,7 +19,7 @@ export const FinalCTA = () => {
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-balance">Get Your Free Quote in 15 Minutes</h2>
             <p className="text-lg text-muted-foreground text-balance max-w-2xl mx-auto">
-              Join 8,000+ satisfied customers across Alabama and Georgia. Simple, fast, and no obligation.
+              No obligations, no pressure. Just honest answers and coverage that actually fits your life.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export const FinalCTA = () => {
             <form name="coffey-insurance-lead" method="POST" data-netlify="true" className="space-y-6">
               <input type="hidden" name="form-name" value="coffey-insurance-lead" />
               
-              {/* Name & Email Row */}
+              {/* Name & Phone Row */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name *</Label>
@@ -42,21 +42,6 @@ export const FinalCTA = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email Address *</Label>
-                  <Input 
-                    id="email"
-                    name="email"
-                    type="email" 
-                    placeholder="john@example.com" 
-                    required
-                    className="h-12"
-                  />
-                </div>
-              </div>
-
-              {/* Phone & Service Type Row */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number *</Label>
                   <Input 
                     id="phone"
@@ -67,36 +52,36 @@ export const FinalCTA = () => {
                     className="h-12"
                   />
                 </div>
+              </div>
+
+              {/* Email & Service Type Row */}
+              <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="service">Insurance Type *</Label>
-                  <Select name="service" required>
+                  <Label htmlFor="email">Email Address</Label>
+                  <Input 
+                    id="email"
+                    name="email"
+                    type="email" 
+                    placeholder="john@example.com" 
+                    className="h-12"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="service">Insurance Type</Label>
+                  <Select name="service">
                     <SelectTrigger id="service" className="h-12">
                       <SelectValue placeholder="Select insurance type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="auto">Auto Insurance</SelectItem>
-                      <SelectItem value="home">Home Insurance</SelectItem>
-                      <SelectItem value="renters">Renters Insurance</SelectItem>
-                      <SelectItem value="condo">Condo Insurance</SelectItem>
-                      <SelectItem value="life">Life Insurance</SelectItem>
-                      <SelectItem value="multiple">Multiple Types</SelectItem>
-                      <SelectItem value="not-sure">Not Sure Yet</SelectItem>
+                      <SelectItem value="auto">Auto</SelectItem>
+                      <SelectItem value="home">Home</SelectItem>
+                      <SelectItem value="condo">Condo</SelectItem>
+                      <SelectItem value="renters">Renters</SelectItem>
+                      <SelectItem value="life">Life</SelectItem>
+                      <SelectItem value="bundle">Bundle</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
-              </div>
-
-              {/* Location */}
-              <div className="space-y-2">
-                <Label htmlFor="location">City & State *</Label>
-                <Input 
-                  id="location"
-                  name="location"
-                  type="text" 
-                  placeholder="Centre, AL or Rome, GA" 
-                  required
-                  className="h-12"
-                />
               </div>
 
               {/* Submit Button */}
@@ -111,28 +96,16 @@ export const FinalCTA = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <div className="flex items-center gap-3 justify-center text-center md:text-left">
-              <Clock className="h-8 w-8 text-primary shrink-0" />
-              <div>
-                <p className="font-semibold text-foreground">Fast Response</p>
-                <p className="text-sm text-muted-foreground">Quotes in 15 minutes</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 justify-center text-center md:text-left">
-              <Shield className="h-8 w-8 text-primary shrink-0" />
-              <div>
-                <p className="font-semibold text-foreground">No Obligation</p>
-                <p className="text-sm text-muted-foreground">Free, no pressure</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 justify-center text-center md:text-left">
-              <Award className="h-8 w-8 text-primary shrink-0" />
-              <div>
-                <p className="font-semibold text-foreground">Expert Advice</p>
-                <p className="text-sm text-muted-foreground">16+ years experience</p>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mt-12 text-sm text-muted-foreground">
+            <span className="flex items-center gap-2 justify-center">
+              <Check className="h-4 w-4 text-secondary shrink-0" /> Licensed in Alabama & Georgia
+            </span>
+            <span className="flex items-center gap-2 justify-center">
+              <Check className="h-4 w-4 text-secondary shrink-0" /> Callback within 24 hours
+            </span>
+            <span className="flex items-center gap-2 justify-center">
+              <Check className="h-4 w-4 text-secondary shrink-0" /> No spam, no selling your info
+            </span>
           </div>
         </div>
       </div>

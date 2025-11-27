@@ -30,7 +30,7 @@ export const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto text-balance">
-            From Centre to Rome, we make insurance simple. Get quotes online, meet in person, and enjoy peace of mind backed by real local experts.
+            From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
           </p>
 
           {/* CTA Buttons */}
@@ -39,7 +39,7 @@ export const Hero = () => {
               Get Your Free Quote
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6 h-auto border-2">
-              Call Us Today
+              Call Us Now
             </Button>
           </div>
 
