@@ -6,19 +6,13 @@ import { Check } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
-    <section className="section-spacing bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
-      {/* Decorative Background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
-      </div>
-
+    <section className="section-spacing bg-secondary relative overflow-hidden">
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-balance">Get Your Free Quote in 15 Minutes</h2>
-            <p className="text-lg text-muted-foreground text-balance max-w-2xl mx-auto">
+            <h2 className="text-balance text-white text-3xl md:text-4xl lg:text-5xl tracking-tight">Get Your Free Quote in 15 Minutes</h2>
+            <p className="text-lg text-white/90 text-balance max-w-2xl mx-auto">
               No obligations, no pressure. Just honest answers and coverage that actually fits your life.
             </p>
           </div>
@@ -96,15 +90,15 @@ export const FinalCTA = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-col sm:flex-row justify-center gap-6 mt-12 text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mt-12 text-sm text-white/90">
             <span className="flex items-center gap-2 justify-center">
-              <Check className="h-4 w-4 text-secondary shrink-0" /> Licensed in Alabama & Georgia
+              <Check className="h-4 w-4 text-white shrink-0" /> Licensed in Alabama & Georgia
             </span>
             <span className="flex items-center gap-2 justify-center">
-              <Check className="h-4 w-4 text-secondary shrink-0" /> Callback within 24 hours
+              <Check className="h-4 w-4 text-white shrink-0" /> Callback within 24 hours
             </span>
             <span className="flex items-center gap-2 justify-center">
-              <Check className="h-4 w-4 text-secondary shrink-0" /> No spam, no selling your info
+              <Check className="h-4 w-4 text-white shrink-0" /> No spam, no selling your info
             </span>
           </div>
         </div>
