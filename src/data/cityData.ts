@@ -444,41 +444,82 @@ export const cityData: Record<string, CityData> = {
     city: "Foley",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["36535"],
+    zipCodes: ["36535", "36526", "36527", "36528", "36530", "36532", "36542", "36547", "36549"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(251) 551-1350",
+    customHeroTitle: "Insurance in Foley, AL (36535)",
+    customHeroSubhead: "Local help with auto insurance in the 36535 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Foley, Alabama residents with comprehensive coastal insurance coverage. From the OWA entertainment district to Gulf Shores, we protect Baldwin County families with auto, home, renters, condo, and life insurance.",
-      "Foley's proximity to the Gulf Coast brings unique insurance requirements including hurricane preparedness, wind/hail coverage, and often mandatory flood insurance. Our team helps you navigate coastal coverage while finding competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Foley insurance quotes and coastal expertise."
+      "The 36535 area faces unique insurance challenges requiring specialized understanding of coastal Alabama risks. From hurricane threats peaking June through November to flooding concerns along Wolf Bay and Bon Secour River, residents need insurance protection tailored to Baldwin County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Foley, Magnolia Springs area, or any neighborhood in the region.",
+      "With approximately 21,000 residents and a median household income around $48,000, this growing community includes healthcare workers at South Baldwin Regional Medical Center, hospitality professionals at OWA Parks & Resort and Tanger Outlets, and families throughout the county. Each household has distinct insurance needs, whether protecting homes near coastal flood zones or securing auto coverage for commutes along Highway 59. Foley's position as a retail and entertainment hub creates specific traffic patterns that factor into insurance considerations."
     ],
+    weatherRisks: "Living in Foley means preparing for severe coastal weather year-round. Hurricane season brings heightened risk from June through November, with tropical storms and hurricanes capable of producing 100+ mph winds, torrential rainfall, and devastating storm surge. Properties from Oak Hill to the Rose Trail area face these same threats, making comprehensive homeowners insurance with adequate wind coverage essential. Wind deductibles typically apply as a percentage rather than flat amounts, often ranging from 2-5% of dwelling coverage.\n\nWolf Bay and Bon Secour River present significant flooding risks that standard policies typically exclude. Properties in West Foley, Elberta, and along County Road 20 corridor should consider flood insurance as critical protection. Tropical systems can dump 10-20 inches of rain in hours, overwhelming drainage systems and creating widespread flooding even miles from major waterways. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Foley residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Magnolia Springs and Oak Hill feature mature trees that can pose storm risks during hurricanes. Newer developments in Juniper Creek and Steelwood may have different construction standards affecting replacement costs and wind resistance ratings. Properties in North Foley near commercial districts might benefit from increased liability limits due to higher traffic volumes from tourists visiting OWA Parks and Tanger Outlets.\n\nBundling home and auto insurance in the area saves money while creating comprehensive protection for coastal Alabama living. Whether commuting on Highway 59, navigating the County Road 20 corridor, or traveling to Gulf Shores beaches, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Foley households.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With South Baldwin Regional Medical Center, OWA Parks & Resort, and Tanger Outlets employing thousands, many residents commute daily through high-traffic tourist areas requiring comprehensive auto coverage. Riviera Utilities and Baldwin County Schools provide stable employment for families who need reliable homeowners protection. The tourism economy means seasonal traffic fluctuations that impact collision risks and insurance rates.\n\nZIP codes served include 36535, 36526, 36527, 36528, 36530, 36532, 36542, 36547, and 36549—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a first-time homebuyer in a new development or updating established household coverage in Downtown Foley. Understanding coastal risks and local economic factors ensures appropriate protection levels.",
+    localExcellence: "Operating from Centre headquarters, we've perfected digital insurance delivery to Foley and coastal Alabama. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Alabama agents (License #416438) understand state regulations and coastal conditions, ensuring coverage meets all requirements while addressing regional risks like hurricane exposure and flood hazards.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 36535 area while maintaining personal service expected from local agents, despite our Centre location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during hurricane season when quick action protects your property and family.",
     localConsiderations: "Foley's coastal location requires wind/hail coverage and often mandated flood insurance. Hurricane season, tropical storms, and severe weather create unique needs. Coastal properties may have higher premiums and percentage-based wind deductibles.",
-    neighborhoods: ["Downtown Foley", "OWA area", "Magnolia Springs", "Elberta", "Summerdale", "Silverhill", "Loxley", "Baldwin County beaches area", "Gulf Shores vicinity"],
-    nearbyCities: ["mobile-al", "pensacola-fl", "gulf-shores-al"],
+    neighborhoods: [
+      "Downtown Foley",
+      "Magnolia Springs",
+      "Oak Hill",
+      "Rose Trail area",
+      "West Foley",
+      "Elberta",
+      "County Road 20 corridor",
+      "Juniper Creek",
+      "Steelwood",
+      "North Foley",
+      "Highway 59 area",
+      "Baldwin County"
+    ],
+    nearbyCities: ["mobile-al", "dothan-al", "montgomery-al"],
     faqs: [
       {
-        question: "Do I need flood insurance in Foley?",
-        answer: "If you have a mortgage in a FEMA flood zone, flood insurance is required. Foley's coastal location and storm surge risk make flood coverage wise even outside mapped zones. Standard home insurance doesn't cover flooding."
+        question: "Do I need to visit your office to get insurance in Foley?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes can be handled online or by phone, saving 36535 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "How do hurricanes affect Foley home insurance?",
-        answer: "Foley properties typically have wind/hail or hurricane deductibles (often 2-5% of dwelling limit). These activate during named storms. We'll explain your deductible options and help you choose affordable amounts."
+        question: "How does hurricane risk affect insurance rates in Foley?",
+        answer: "Foley's coastal location means elevated hurricane risk from June through November. Homeowners insurance premiums reflect this exposure, with wind and hail coverage often requiring separate deductibles. Hurricane preparedness is essential for all residents, and proper coverage ensures protection when severe weather strikes. Wind deductibles may apply as a percentage of your dwelling coverage."
       },
       {
-        question: "What does coastal property insurance cost in Foley?",
-        answer: "Coastal property insurance costs more than inland Alabama due to hurricane and wind exposure. Rates vary by property value, construction type, wind deductible, and proximity to water. Contact us for Foley-specific quotes."
+        question: "What bundle savings are available for Foley residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Foley residents can maximize savings by combining multiple policies, whether insuring a home near OWA Parks and vehicles for daily commutes, or protecting a condo with auto coverage for beach trips."
       },
       {
-        question: "Can I get condo insurance for Foley beach condos?",
-        answer: "Yes! Foley and Gulf Shores condo insurance (HO-6) should coordinate with the master policy and include Loss Assessment coverage for hurricane deductibles. We specialize in coastal condo coverage."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, heavy tourist traffic on Highway 59 and around entertainment districts often warrants higher limits for adequate protection."
       },
       {
-        question: "Does Coffey Agencies write policies in coastal Baldwin County?",
-        answer: "Yes, we serve Foley, Gulf Shores, Orange Beach, and all Baldwin County coastal communities. We'll help you understand wind deductibles, flood requirements, and coastal coverage. Call (256) 927-6287."
+        question: "Is flood insurance necessary near Wolf Bay and Bon Secour River?",
+        answer: "Properties near Wolf Bay and Bon Secour River face significant flood risks, especially during tropical storms and hurricanes. Standard homeowners policies exclude flood damage, making separate flood insurance crucial for waterfront and low-lying properties. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "What's the difference between flood insurance and wind/hail coverage?",
-        answer: "Wind/hail coverage is part of your home insurance and covers hurricane wind damage. Flood insurance is separate (NFIP or private) and covers rising water, storm surge, and flooding—not covered by standard policies."
+        question: "How do tropical storms impact insurance coverage?",
+        answer: "Tropical storms bring multiple risks including flooding, wind damage, and storm surge. Comprehensive coverage should address all these perils. Wind deductibles typically apply as a percentage of coverage rather than a flat amount, and may differ from your standard deductible. Adequate coverage limits ensure proper protection during storm season."
+      },
+      {
+        question: "What factors affect auto insurance rates in Foley?",
+        answer: "Auto insurance rates consider your ZIP code (36535 and surrounding areas), driving record, vehicle type, and commute distance. Tourist traffic from OWA Parks and Tanger Outlets, plus coastal evacuation routes during hurricane season, all factor into personalized rates. Seasonal traffic fluctuations in Baldwin County also influence pricing."
+      },
+      {
+        question: "How quickly can I get coverage for my property in Foley?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Foley residents can receive quotes within minutes and have active coverage the same day, protecting homes in Magnolia Springs, Juniper Creek, or any other neighborhood throughout the 36535 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
