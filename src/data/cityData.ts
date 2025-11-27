@@ -687,41 +687,69 @@ export const cityData: Record<string, CityData> = {
     city: "Rome",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30161"],
+    zipCodes: ["30161", "30165", "30149", "30153", "30125", "30104", "30103", "30145", "30175"],
     isOfficeCity: true,
     nearestOffice: "rome",
+    localPhone: "(706) 702-1782",
+    customHeroTitle: "Auto Insurance Quote Rome, GA - Floyd County's Local Agent Since 2012",
+    customHeroSubhead: "Local help with auto insurance in the 30161 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies has proudly served Rome, Georgia families with comprehensive insurance solutions since opening our Rome office at 1703 Turner McCall Blvd SE. Operating as Millican & Coffey Agency, we provide personalized insurance service to the Rome community.",
-      "As a local agency deeply rooted in Floyd County, we understand the unique insurance needs of Rome residents. From severe weather protection to liability coverage, our team provides expert guidance backed by years of Northwest Georgia experience.",
-      "Visit our Rome office Monday-Friday 8:30 AM – 4:30 PM for in-person consultations, or call (706) 784-6511 for immediate assistance."
+      "The 30161 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns at the confluence of the Oostanaula, Etowah, and Coosa rivers, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rome, Garden Lakes, or any neighborhood in the region.",
+      "With approximately 37,000 residents and a median household income around $38,000, this diverse community includes healthcare professionals at Floyd Medical Center and Redmond Regional Medical Center, educators at Berry College and Shorter University, manufacturing workers at Pirelli Tire and F&P Georgia, and families throughout Floyd County. Each household has distinct insurance needs, whether protecting homes near the Riverside area or securing auto coverage for commutes through West Rome. Rome's unique position at the three-river confluence creates specific flooding risks that factor into insurance considerations."
     ],
-    localConsiderations: "Rome experiences spring tornado season, severe thunderstorms, and occasional ice storms requiring comprehensive coverage. Mountainous terrain and mixed urban-rural driving patterns call for appropriate liability and UM/UIM protection.",
-    neighborhoods: ["Downtown Rome", "East Rome", "West Rome", "North Rome", "Cave Spring Road", "Martha Berry Highway", "Shorter Avenue", "Riverside", "Armuchee", "Coosa Valley", "Shannon", "Lindale"],
-    nearbyCities: ["cartersville-ga", "calhoun-ga", "atlanta-ga"],
+    weatherRisks: "Living in Rome means preparing for severe weather year-round. Tornado season brings heightened risk from March through May, with violent storms capable of producing significant damage across neighborhoods from North Rome to the Armuchee area. Severe thunderstorms occur regularly, bringing damaging hail and straight-line winds that can impact vehicles and roofs throughout Turkey Mountain and the Coosa area. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit. The confluence of three major rivers creates significant flooding risks that standard policies typically exclude. Properties near the Oostanaula, Etowah, and Coosa rivers face elevated flood exposure during heavy rainfall events. The Riverside area and Downtown Rome neighborhoods require careful flood risk assessment and appropriate coverage. Flash flooding can affect low-lying areas even away from the rivers. Occasional ice storms add unique winter risks, potentially damaging trees and power lines. We analyze your specific location in Rome to determine risk levels and recommend appropriate coverage for 30161 residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Downtown Rome and Garden Lakes feature mature trees that can pose storm risks during severe weather events. Communities in West Rome and North Rome may have different property values affecting replacement costs and coverage needs. Properties near the Berry College area might benefit from student-related auto insurance discounts, while rural neighborhoods in Armuchee require specialized coverage for larger properties. Bundling home and auto insurance in Rome saves money while creating comprehensive protection for Northwest Georgia living. Whether commuting through local traffic, navigating between neighborhoods, or traveling throughout Floyd County, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Rome households facing regional weather and flooding risks.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Floyd Medical Center and Redmond Regional Medical Center employing thousands of healthcare workers, many residents need reliable coverage for daily commutes and valuable homes. Berry College and Shorter University bring student populations requiring specialized auto insurance with good student discounts. Pirelli Tire and F&P Georgia represent industrial employment requiring comprehensive protection for working families throughout Rome. ZIP codes served include 30161, 30165, 30149, 30153, 30125, 30104, 30103, 30145, and 30175—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Rome, whether you're a first-time homebuyer in Garden Lakes or updating established household coverage in Turkey Mountain. Understanding local tornado risks, significant flooding potential from the three-river system, and diverse neighborhood characteristics ensures appropriate protection levels.",
+    localExcellence: "Operating from our Rome headquarters at 1703 Turner McCall Blvd SE, we've perfected digital insurance delivery to the local community. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks like tornado exposure and river flooding at the unique three-river confluence. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30161 area while maintaining personal service expected from local agents. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—especially valuable during severe weather season when quick action protects your Rome property and family. Visit our Rome office Monday-Friday 8:30 AM – 4:30 PM for in-person consultations, or call (706) 784-6511 for immediate assistance.",
+    localConsiderations: "Northwest Georgia tornado corridor, three-river confluence flooding (Oostanaula, Etowah, Coosa), severe thunderstorm exposure, mixed urban-rural driving patterns",
+    neighborhoods: ["Downtown Rome", "Garden Lakes", "West Rome", "North Rome", "Cave Spring Road", "Martha Berry Highway", "Shorter Avenue", "Riverside", "Armuchee", "Turkey Mountain", "Coosa area", "Berry College area"],
+    nearbyCities: ["alpharetta-ga", "atlanta-ga", "powder-springs-ga"],
     faqs: [
       {
-        question: "What are the auto insurance requirements in Georgia?",
-        answer: "Georgia requires minimum liability coverage of 25/50/25 ($25,000 bodily injury per person, $50,000 per accident, $25,000 property damage). We recommend higher limits to protect your assets and future earnings in Northwest Georgia."
+        question: "Do I need to visit your office to get insurance in Rome?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30161 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "Does home insurance cover tornado damage in Rome?",
-        answer: "Yes, standard home insurance covers tornado wind damage. Rome sits in an area with spring tornado risk, making comprehensive wind/hail coverage essential. We'll help you choose appropriate deductibles and limits."
+        question: "How significant is flood risk near the river confluence?",
+        answer: "Properties near the Oostanaula, Etowah, and Coosa river confluence face elevated flood risks, particularly during spring storms. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "How much does insurance cost in Rome, GA?",
-        answer: "Rome auto insurance typically ranges $900-1,500 annually. Home insurance depends on rebuild cost, roof age, and coverage selections. Costs vary by individual factors. Contact us for personalized Rome quotes."
+        question: "What bundle savings are available for Rome residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Rome residents can maximize savings by combining multiple policies, whether insuring a home in Garden Lakes and vehicles for work commutes, or protecting a property in North Rome with auto coverage."
       },
       {
-        question: "Can I visit your Rome office for in-person service?",
-        answer: "Absolutely! Our Rome office at 1703 Turner McCall Blvd SE (Millican & Coffey Agency) is open Monday-Friday 8:30 AM – 4:30 PM. Walk-ins welcome, or call (706) 784-6511 to schedule."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, local traffic patterns throughout Rome often warrant higher limits for adequate protection."
       },
       {
-        question: "Do you offer multi-policy discounts in Rome?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We also offer safe driver, autopay, paperless, and protective device discounts."
+        question: "How does tornado season affect insurance premiums?",
+        answer: "Northwest Georgia's tornado risks influence homeowners insurance rates in Rome. Premiums reflect elevated risk during peak season (March-May), but proper coverage ensures protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
       },
       {
-        question: "What makes Coffey Agencies different from other Rome insurance agents?",
-        answer: "We're locally owned and operated in Rome with deep Floyd County roots. When you call, you speak with our Rome team who understand Northwest Georgia's unique risks. We provide personalized service, not automated systems."
+        question: "Do students at Berry College or Shorter University have special insurance needs?",
+        answer: "Students and young adults often benefit from good student discounts on auto insurance. We can help structure policies that provide adequate coverage while managing costs for college-age drivers. Academic achievement can translate to meaningful premium savings."
+      },
+      {
+        question: "What factors affect auto insurance rates in Rome?",
+        answer: "Auto insurance rates consider your ZIP code (30161 and surrounding areas), driving record, vehicle type, and commute distance. Local traffic patterns and claims history in different Rome neighborhoods factor into rates, along with demographic factors for personalized pricing."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Rome residents can receive quotes within minutes and have active coverage the same day, protecting homes in West Rome, the Berry College area, or any other neighborhood throughout the 30161 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
