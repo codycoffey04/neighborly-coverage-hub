@@ -1031,38 +1031,82 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["30095", "30096"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    customHeroTitle: "Insurance in Duluth, GA (30095 & 30096)",
+    customHeroSubhead: "Local help with auto insurance in the 30095 and 30096 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Duluth, Georgia families with comprehensive insurance for Gwinnett County. From downtown to Pleasant Hill Road, we protect Duluth residents with auto, home, renters, condo, and life insurance.",
-      "Duluth's thriving business community, diverse population, and quality neighborhoods create varied insurance needs. Our team provides personalized coverage at competitive rates.",
-      "Contact our Rome, GA office at (706) 784-6511 for Duluth insurance quotes and Gwinnett County service."
+      "The 30095 and 30096 areas of Duluth face unique insurance challenges requiring specialized understanding of Gwinnett County's fast-paced growth and metro Atlanta dynamics. From severe thunderstorm threats throughout spring and summer to the daily reality of I-85 traffic, residents need insurance protection tailored to one of Georgia's most dynamic communities. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Sugarloaf, Berkeley Hills, or anywhere across this thriving Gwinnett County city.",
+      "With approximately 30,000 residents in the city and situated within the 950,000-population Gwinnett County, Duluth has transformed from a small railroad town to a vibrant cultural and economic center. The 30095 ZIP code encompasses areas near Gas South District (formerly Infinite Energy Center) and portions of Sugarloaf, while 30096 covers central Duluth, Berkeley Hills, and residential areas stretching toward Suwanee and Johns Creek. This diverse community — one of the most ethnically diverse in the Southeast — includes technology workers, healthcare professionals at Northside Hospital Duluth, retail and hospitality employees, and business owners throughout Gwinnett Place and Pleasant Hill corridors. Each household has distinct insurance needs, whether protecting a townhome near downtown Duluth or securing auto coverage for I-85 commutes into Atlanta."
     ],
-    localConsiderations: "Duluth experiences spring severe weather and tornado risk. Commercial corridors along I-85 and Pleasant Hill Road create high traffic density requiring adequate auto coverage. Growing Asian business community benefits from multilingual service.",
-    neighborhoods: ["Downtown Duluth", "Berkeley Lake", "Peachtree Corners", "Johns Creek vicinity", "Pleasant Hill", "Satellite Boulevard", "Gwinnett Place area", "Parsons Road"],
-    nearbyCities: ["lawrenceville-ga", "suwanee-ga", "alpharetta-ga"],
+    weatherRisks: "Living in Duluth means preparing for Georgia's severe weather patterns concentrated in spring and early summer. Severe thunderstorms roll through Gwinnett County regularly from March through July, bringing damaging hail that can total vehicles and destroy roofs across Sugarloaf and Berkeley Hills within minutes. Tornadoes, while less frequent than in Alabama, do occur — the 2008 Atlanta tornado outbreak damaged portions of Gwinnett County, demonstrating that metro Atlanta isn't immune. Summer brings intense heat and afternoon thunderstorms that can produce flash flooding, particularly in low-lying areas near the Chattahoochee River watershed. Duluth averages around 52 inches of rain annually, and intense summer storms can overwhelm drainage systems designed for normal rainfall. The Chattahoochee River forms Gwinnett's western boundary, and numerous creeks drain the area, creating localized flood risks. Winter occasionally brings ice storms that create hazardous driving conditions and property damage from falling tree limbs. The 2014 'Snowpocalypse' demonstrated how even modest winter weather can paralyze metro Atlanta traffic, stranding commuters on I-85 for hours.",
+    neighborhoodCoverage: "Duluth's neighborhoods each present distinct insurance considerations that generic online quotes miss entirely. Downtown Duluth's revitalized town green area features newer mixed-use development alongside established residential neighborhoods. Townhomes and condos require different coverage structures than single-family homes. Walkable downtown creates lower auto usage for some residents but parking exposure for others. Sugarloaf (30095) is an upscale residential community anchored by Sugarloaf Country Club. Higher property values require higher dwelling coverage. Newer construction generally meets modern building codes. Gated subdivisions may provide security benefits. Mature tree canopy throughout creates storm debris exposure. Berkeley Hills (30096) is an established neighborhood with 1970s-1990s housing stock. Well-maintained homes with mature landscaping. Good access to I-85 via Pleasant Hill Road for commuters. Property values have appreciated significantly, potentially requiring coverage updates. The Gas South District Area (30095) is a growing entertainment district anchored by the arena and convention center. Mix of hotels, restaurants, and newer residential development. Higher traffic volume affects auto rates. Walkable design reduces some driving exposure. Properties near the Chattahoochee River Corridor and its tributaries face elevated flood exposure. Scenic locations command premium prices but require flood insurance consideration. Recreational access is a lifestyle benefit but doesn't offset flood risk. The Pleasant Hill and Satellite Boulevard Corridors are commercial corridors with significant traffic volume. Apartment communities and townhome developments serve young professionals and families. Higher traffic density affects auto insurance rates for residents.",
+    economyInfo: "Duluth's position in Gwinnett County's economic engine creates varied insurance needs across the 30095 and 30096 communities. Technology and professional services workers at companies throughout the I-85 Technology Corridor and Sugarloaf area often have higher incomes warranting increased liability protection. Many drive newer vehicles requiring comprehensive coverage. Remote work arrangements since 2020 may have reduced commute exposure for some. Healthcare workers at Northside Hospital Duluth, Emory Johns Creek Hospital, and medical facilities throughout Gwinnett work around-the-clock schedules. Reliable coverage for varied commute times is essential. Medical professionals benefit from higher liability limits. Hospitality and entertainment workers supporting Gas South District events, Gwinnett Place area restaurants, and the Korean and Vietnamese business communities along Pleasant Hill Road often have varied schedules with multiple drivers in households. Small business owners throughout Duluth's diverse commercial corridors may need commercial auto coverage or business owner policies in addition to personal insurance. Retail workers at Gwinnett Place, Pleasant Hill shopping areas, and throughout the Duluth commercial district often work flexible schedules with shift-based driving patterns.",
+    localExcellence: "Operating from our Rome, Georgia office approximately 70 miles northwest of Duluth, we've built digital insurance delivery that serves 30095 and 30096 residents better than many local storefronts. You receive comprehensive coverage analysis and personalized attention matching face-to-face meetings, with the convenience of handling everything from your home in Sugarloaf or your office near Gas South District. Licensed Georgia agents (Agency License #149612) understand state regulations and Gwinnett County conditions, ensuring coverage meets requirements while addressing regional risks like severe storm exposure and metro Atlanta traffic dynamics. Technology enables faster quotes — most take about 15 minutes. Streamlined claims support means you reach a real person who knows your policy. Efficient policy management lets you update coverage, add vehicles, or adjust deductibles without scheduling appointments. This efficiency translates to competitive rates while maintaining personal service. During severe storm season, our digital tools prove especially valuable. Track approaching storms with us and verify coverage before impact. File claims online the moment damage occurs. Reach us by phone when your neighborhood is dealing with aftermath. We're built for how Gwinnett County families actually live.",
+    localConsiderations: "Duluth's Gwinnett County location means elevated auto rates due to I-85 traffic density (200,000+ daily vehicles) and metro Atlanta accident frequency. Severe thunderstorms March-July bring damaging hail affecting homes and vehicles. Chattahoochee River watershed creates flood risks excluded from standard homeowners policies. Georgia's 12% uninsured rate requires adequate UM coverage.",
+    neighborhoods: [
+      "Downtown Duluth",
+      "Sugarloaf",
+      "Berkeley Hills",
+      "Gas South District",
+      "Pleasant Hill corridor",
+      "Satellite Boulevard area",
+      "Gwinnett Place area",
+      "Chattahoochee River corridor",
+      "Parsons Road",
+      "Johns Creek vicinity",
+      "Peachtree Corners nearby",
+      "Berkeley Lake",
+      "Mall of Georgia area",
+      "Buford Highway corridor",
+      "Rogers Bridge area",
+      "Suwanee border"
+    ],
+    nearbyCities: ["suwanee-ga", "lawrenceville-ga", "alpharetta-ga"],
     faqs: [
       {
-        question: "What are typical insurance costs in Duluth?",
-        answer: "Duluth auto insurance averages $1,200-1,900 annually. Home insurance varies by property value and coverage, typically $1,300-2,300 annually for Gwinnett County homes. Bundling saves 15-25%."
+        question: "Do I need to visit your office to get insurance in Duluth?",
+        answer: "No office visit required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes to claims support happens online or by phone. Duluth residents in 30095 and 30096 save time while receiving comprehensive coverage analysis and personal attention from licensed Georgia agents who understand Gwinnett County's specific challenges."
       },
       {
-        question: "Do Duluth renters need insurance?",
-        answer: "Yes! Many Duluth apartment complexes and landlords require renters insurance. It protects belongings and provides liability coverage—typically $18-32/month, less when bundled with auto insurance."
+        question: "Why is auto insurance more expensive in Duluth than rural Georgia?",
+        answer: "Gwinnett County's position in metro Atlanta means higher traffic density, more accidents, elevated vehicle theft rates, and more expensive claims. I-85 through Duluth sees over 200,000 vehicles daily. Urban and suburban areas simply have more insurance risk than rural communities. However, bundling policies, maintaining a clean record, and exploring all available discounts help offset higher base rates."
       },
       {
-        question: "What condo insurance do Duluth condo owners need?",
-        answer: "Duluth condo insurance (HO-6) should coordinate with the master policy and include adequate Loss Assessment coverage. We'll review your condo documents to ensure proper coverage."
+        question: "How do severe storms affect insurance in Duluth?",
+        answer: "Severe thunderstorms with damaging hail occur regularly in Gwinnett County from March through July. These storms can damage roofs and vehicles across entire neighborhoods in minutes. Homeowners insurance rates reflect this hail exposure. Your policy's hail deductible may differ from your standard deductible. Comprehensive auto coverage protects your vehicles from hail damage."
       },
       {
-        question: "Can Duluth residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home/renters insurance typically saves 15-25% on both policies. We offer multi-policy discounts, safe driver discounts, and protective device credits."
+        question: "Is flood insurance necessary in Duluth?",
+        answer: "Standard homeowners insurance excludes flood damage entirely. Properties near the Chattahoochee River, local creeks, and low-lying drainage areas face elevated flood risk. Even properties outside designated FEMA flood zones experience flooding during intense summer thunderstorms. We analyze your specific address to assess flood risk and coverage needs."
       },
       {
-        question: "Does Coffey Agencies serve Duluth's diverse community?",
-        answer: "Yes, we serve all Duluth residents. While we primarily serve in English, we're committed to helping all Gwinnett County families. Call (706) 784-6511 for Duluth quotes."
+        question: "What bundle savings are available for Duluth residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on combined premiums — often $400-600 annually for Gwinnett County families. Given the area's higher auto rates, bundle discounts are particularly valuable. Combining multiple policies also simplifies your insurance management."
       },
       {
-        question: "What factors affect Duluth home insurance rates?",
-        answer: "Property value, roof age, claims history, protective devices, and coverage selections impact rates. Newer homes in planned communities may qualify for better rates. We'll find your best pricing."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, these minimums are dangerously low for Gwinnett County traffic. A serious I-85 accident can easily exceed $100,000 in damages. We typically recommend 50/100/50 or higher limits plus matching uninsured motorist coverage."
+      },
+      {
+        question: "What factors affect auto insurance rates in Duluth?",
+        answer: "Your specific address in 30095 or 30096, driving record, vehicle types, annual mileage, and commute patterns all affect rates. I-85 commuters face different exposure than work-from-home residents. Garaging location affects theft and vandalism risk. We consider all these factors — plus available discounts — to find your best rate."
+      },
+      {
+        question: "How quickly can I get coverage for my Duluth home or vehicle?",
+        answer: "Most policies can begin the same day. Our digital process means Duluth residents receive quotes within about 15 minutes. Once you've reviewed options and made a decision, coverage activates immediately. Need proof of insurance for a vehicle purchase, apartment lease, or mortgage closing? We provide documentation right away."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
