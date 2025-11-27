@@ -20,6 +20,7 @@ import MotorcycleInsurance from "./pages/services/MotorcycleInsurance";
 import CityPage from "./pages/CityPage";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/services/life-insurance" element={<LifeInsurance />} />
           <Route path="/services/motorcycle-insurance" element={<MotorcycleInsurance />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           {/* Dynamic city pages */}
           <Route path="/:citySlug" element={<CityPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
