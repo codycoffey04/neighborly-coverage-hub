@@ -513,23 +513,278 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "renters-insurance-guide",
-    title: "Renters Insurance: Why Tenants Need Coverage",
-    metaTitle: "Renters Insurance Guide for Alabama & Georgia | Coffey Agencies",
-    metaDescription: "Understand why renters insurance matters, what it covers, and how affordable protection can be for tenants in Alabama and Georgia.",
-    excerpt: "Your landlord's insurance doesn't cover your belongings. Renters insurance protects your personal property and provides liability coverage for surprisingly little cost.",
+    title: "Renters Insurance: Why It's Worth Every Penny (Even If It's Not Required)",
+    metaTitle: "Renters Insurance Guide: Coverage Worth Every Penny | Coffey Agencies",
+    metaDescription: "Your landlord's insurance covers the building — not your belongings. Learn what renters insurance covers, typical costs ($15-30/month), and why it's worth every penny.",
+    excerpt: "Your landlord has insurance. It covers the building — the walls, the roof, the structure. What it doesn't cover: everything you own.",
     category: "Renters Insurance",
     readTime: "6 min read",
     featured: false,
     content: [
       {
-        type: 'paragraph',
-        content: "Detailed renters insurance guide content coming soon. This will cover personal property coverage, liability protection, additional living expenses, and why every tenant should have this affordable coverage."
+        type: "paragraph",
+        content: "Your landlord has insurance. It covers the building — the walls, the roof, the structure. What it doesn't cover: everything you own. Your furniture, electronics, clothing, everything inside your apartment? Unprotected unless you have renters insurance. Here's why it's one of the smartest insurance purchases you'll make."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "What Renters Insurance Covers"
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Personal Property (Your Stuff)"
+      },
+      {
+        type: "paragraph",
+        content: "Everything you own inside your rental unit: furniture, electronics, appliances, clothing, kitchenware, decorations. If it's stolen, damaged by fire, destroyed by water leak, or ruined by covered events — renters insurance pays to replace it."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Liability Protection"
+      },
+      {
+        type: "paragraph",
+        content: "If someone is injured in your apartment, you could be legally responsible. If you accidentally damage someone else's property, same thing. Liability coverage pays legal defense costs and judgments up to your policy limits."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Additional Living Expenses"
+      },
+      {
+        type: "paragraph",
+        content: "If your rental becomes uninhabitable — fire, flood damage, major repairs — renters insurance pays for temporary housing, hotel costs, restaurant meals, and other additional expenses while you're displaced."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Medical Payments to Others"
+      },
+      {
+        type: "paragraph",
+        content: "If a guest is injured in your apartment, medical payments coverage pays their minor medical expenses regardless of fault. Helps avoid lawsuits over small injuries."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "What Renters Insurance Doesn't Cover"
+      },
+      {
+        type: "list",
+        content: [
+          "Your Roommate's Stuff — Unless you're both named on the policy, your roommate needs their own coverage.",
+          "Floods and Earthquakes — Like homeowners insurance, standard renters policies exclude flood damage. Separate flood insurance is available if needed.",
+          "Expensive Items Above Limits — Jewelry, art, collectibles, electronics — standard policies cap coverage on certain categories. Schedule high-value items separately for full protection.",
+          "Your Car — Renters insurance covers belongings inside your apartment, not your vehicle. Auto insurance handles your car.",
+          "Intentional Damage — Damage you cause intentionally isn't covered. Neither is damage from illegal activity."
+        ]
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "How Much Does It Cost?"
+      },
+      {
+        type: "paragraph",
+        content: "Renters insurance is remarkably affordable."
+      },
+      {
+        type: "paragraph",
+        content: "Typical Costs: $15-30/month depending on:"
+      },
+      {
+        type: "list",
+        content: [
+          "Location",
+          "Coverage limits",
+          "Deductible chosen",
+          "Building security features"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "What You Get:"
+      },
+      {
+        type: "list",
+        content: [
+          "$20,000-50,000 in personal property coverage",
+          "$100,000 in liability protection",
+          "Additional living expenses coverage"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "For the cost of two streaming subscriptions, you protect everything you own."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "How Much Coverage Do You Need?"
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Personal Property"
+      },
+      {
+        type: "paragraph",
+        content: "Inventory your belongings. Walk through your apartment and estimate replacement costs. Most people own more than they realize — $20,000-30,000 is typical for a one-bedroom; $40,000+ for larger units with more stuff."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Liability"
+      },
+      {
+        type: "paragraph",
+        content: "$100,000 minimum. $300,000 recommended if you have assets to protect. Liability coverage is cheap to increase."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Deductible"
+      },
+      {
+        type: "paragraph",
+        content: "$500 is standard. Higher deductibles ($1,000) lower premiums but increase out-of-pocket costs when you claim."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Actual Cash Value vs. Replacement Cost"
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Actual Cash Value (ACV)"
+      },
+      {
+        type: "paragraph",
+        content: "Pays what your belongings were worth at time of loss — original value minus depreciation. Your 5-year-old laptop might get you $150."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Replacement Cost"
+      },
+      {
+        type: "paragraph",
+        content: "Pays to replace items with new equivalents. That same laptop gets replaced with a comparable new one — maybe $800."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Our Recommendation"
+      },
+      {
+        type: "paragraph",
+        content: "Replacement cost coverage costs slightly more but pays significantly better claims. Worth the upgrade."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "Why Your Landlord's Insurance Doesn't Help You"
+      },
+      {
+        type: "paragraph",
+        content: "Landlords insure the building because they own it. Their policy covers:"
+      },
+      {
+        type: "list",
+        content: [
+          "Structure repairs",
+          "Their liability for building conditions",
+          "Lost rental income if the unit is uninhabitable"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "It explicitly excludes:"
+      },
+      {
+        type: "list",
+        content: [
+          "Tenant belongings",
+          "Tenant liability",
+          "Tenant additional living expenses"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "You are not covered by your landlord's insurance. Period."
+      },
+      {
+        type: "heading",
+        level: 2,
+        content: "When Renters Insurance Pays Off"
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Theft"
+      },
+      {
+        type: "paragraph",
+        content: "Apartment break-in takes your electronics, jewelry, and cash. Renters insurance replaces everything."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Fire"
+      },
+      {
+        type: "paragraph",
+        content: "Whether from your kitchen or a neighbor's unit, fire damage destroys belongings fast. Renters insurance replaces them and pays for temporary housing."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Water Damage"
+      },
+      {
+        type: "paragraph",
+        content: "Upstairs neighbor leaves the tub running. Your ceiling collapses onto your furniture. Their liability might pay — eventually. Your renters insurance pays now."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Liability Claims"
+      },
+      {
+        type: "paragraph",
+        content: "Guest slips on your wet bathroom floor. Your dog bites a visitor. Your kid breaks a neighbor's window. Liability coverage handles it."
       }
     ],
-    faqs: [],
-    relatedArticles: ["condo-insurance-guide", "home-insurance-guide"],
+    faqs: [
+      {
+        question: "Is renters insurance required in Alabama or Georgia?",
+        answer: "Not by law, but many landlords require it in lease agreements. Even when not required, it's smart protection for minimal cost."
+      },
+      {
+        question: "Does renters insurance cover my stuff outside my apartment?",
+        answer: "Yes, typically worldwide. If your laptop is stolen from your car or your luggage is lost during travel, renters insurance usually covers it (subject to policy limits)."
+      },
+      {
+        question: "Can my roommate be on my policy?",
+        answer: "Some insurers allow it; others require separate policies. Named roommates share coverage limits — if they have expensive belongings, separate policies may be better."
+      },
+      {
+        question: "How do I file a renters insurance claim?",
+        answer: "Contact us first. We'll guide you through documentation and your carrier's claims process. Police reports help for theft claims."
+      },
+      {
+        question: "Does renters insurance cover bed bugs?",
+        answer: "Generally no. Pest infestations aren't considered sudden, accidental events."
+      }
+    ],
+    relatedArticles: ["condo-insurance-guide", "home-insurance-guide", "bundling-home-and-auto"],
     internalLinks: [
-      { text: "Get Your Free Renters Insurance Quote", href: "/contact" }
+      { text: "Get a Renters Insurance Quote", href: "/contact" },
+      { text: "Bundle Renters + Auto and Save", href: "/learn/bundling-home-and-auto" },
+      { text: "Understanding Liability Coverage", href: "/learn/auto-insurance-guide" }
     ]
   },
   {
