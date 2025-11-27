@@ -110,7 +110,7 @@ export const Testimonials = () => {
             Join thousands of satisfied customers across Alabama and Georgia
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="/reviews" className="btn-secondary px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2">
+            <a href="/reviews" className="text-primary font-semibold hover:underline inline-flex items-center gap-2">
               Read All Reviews
             </a>
           </div>
