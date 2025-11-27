@@ -789,23 +789,241 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "condo-insurance-guide",
-    title: "Condo Insurance (HO-6): Understanding Walls-In Coverage",
-    metaTitle: "Condo Insurance Guide (HO-6) for Alabama & Georgia | Coffey Agencies",
-    metaDescription: "Learn how condo insurance works with your HOA's master policy, what walls-in coverage means, and how to avoid coverage gaps.",
-    excerpt: "Condo insurance fills the gaps your HOA's master policy doesn't cover. Understanding the difference between walls-in and walls-out coverage is crucial.",
+    title: "Condo Insurance: What Your HOA Doesn't Cover (And Why It Matters)",
+    metaTitle: "Condo Insurance: What Your HOA Doesn't Cover | Coffey Agencies",
+    metaDescription: "Your HOA's master policy doesn't cover everything inside your unit. Learn what condo insurance (HO-6) covers, how master policies work, and how to avoid costly gaps.",
+    excerpt: "Your HOA has a master insurance policy. That's good news — the building is covered. But here's what most condo owners don't realize: the master policy probably doesn't cover everything inside your unit.",
     category: "Condo Insurance",
     readTime: "6 min read",
     featured: false,
     content: [
       {
-        type: 'paragraph',
-        content: "Detailed condo insurance guide content coming soon. This will cover HO-6 policies, master policy coordination, betterments and improvements, loss assessment coverage, and how to avoid coverage gaps."
+        type: "paragraph",
+        content: "Your HOA has a master insurance policy. That's good news — the building is covered. But here's what most condo owners don't realize: the master policy probably doesn't cover everything inside your unit. Your cabinets, flooring, fixtures, appliances, personal belongings, and liability? Those gaps are yours to fill. That's what condo insurance (HO-6 policy) does."
+      },
+      {
+        type: "heading",
+        content: "What Condo Insurance Covers"
+      },
+      {
+        type: "heading",
+        content: "Dwelling Coverage (Walls-In)",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Covers interior elements of your unit that the master policy doesn't: interior walls, flooring, cabinets, built-in appliances, light fixtures, plumbing fixtures. What's included depends on your HOA's master policy type."
+      },
+      {
+        type: "heading",
+        content: "Personal Property",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Your belongings: furniture, electronics, clothing, kitchenware, decorations. Same as renters insurance but for condo owners."
+      },
+      {
+        type: "heading",
+        content: "Liability Protection",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "If someone is injured in your unit or you damage another unit (water leak into downstairs neighbor), liability coverage pays for legal defense and damages."
+      },
+      {
+        type: "heading",
+        content: "Loss Assessment Coverage",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "When the HOA faces a major claim exceeding master policy limits, they assess owners for the difference. Loss assessment coverage pays your share."
+      },
+      {
+        type: "heading",
+        content: "Additional Living Expenses",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "If your unit becomes uninhabitable, coverage pays temporary housing and living expenses."
+      },
+      {
+        type: "heading",
+        content: "Understanding HOA Master Policies"
+      },
+      {
+        type: "paragraph",
+        content: "Your condo insurance needs depend entirely on what your HOA's master policy covers. There are two main types:"
+      },
+      {
+        type: "heading",
+        content: "Bare Walls Coverage (Walls-Out)",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Master policy covers the building structure only — exterior walls, roof, common areas. Everything inside your unit is your responsibility: interior walls, flooring, cabinets, fixtures, appliances, plus belongings and liability."
+      },
+      {
+        type: "heading",
+        content: "All-In Coverage (All-Inclusive)",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Master policy covers the building structure plus interior finishes as originally built — standard flooring, cabinets, fixtures, appliances. You cover improvements, upgrades, personal belongings, and liability."
+      },
+      {
+        type: "heading",
+        content: "Critical Step",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Get a copy of your HOA's master policy. Review exactly where their coverage ends. Build your HO-6 policy to fill those specific gaps."
+      },
+      {
+        type: "heading",
+        content: "What Your HOA's Master Policy Doesn't Cover"
+      },
+      {
+        type: "paragraph",
+        content: "Regardless of master policy type, these are always your responsibility:"
+      },
+      {
+        type: "list",
+        content: [
+          "Personal belongings — furniture, electronics, clothing",
+          "Personal liability — injuries in your unit",
+          "Improvements and upgrades — that kitchen renovation you paid for",
+          "Loss assessments — your share of major HOA claims",
+          "Additional living expenses — temporary housing if displaced"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Even \"all-in\" master policies have deductibles — often $10,000 or more. If a covered event damages your unit and the deductible applies to you, your condo insurance helps cover it."
+      },
+      {
+        type: "heading",
+        content: "How Much Coverage Do You Need?"
+      },
+      {
+        type: "heading",
+        content: "Dwelling (Interior) Coverage",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Depends on your master policy type. Bare walls coverage requires more — estimate costs to rebuild interior finishes from studs out. All-in coverage requires less — cover your upgrades and improvements."
+      },
+      {
+        type: "heading",
+        content: "Personal Property",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Inventory belongings and estimate replacement costs. $30,000-75,000 typical for condos."
+      },
+      {
+        type: "heading",
+        content: "Liability",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Minimum $100,000. $300,000 or more if you have assets to protect. Liability coverage is inexpensive to increase."
+      },
+      {
+        type: "heading",
+        content: "Loss Assessment",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "$10,000-50,000 recommended depending on HOA size and common area complexity."
+      },
+      {
+        type: "heading",
+        content: "Common Condo Insurance Mistakes"
+      },
+      {
+        type: "heading",
+        content: "Assuming the HOA Covers Everything",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "The most expensive mistake. Master policies have gaps. Your belongings and liability are never covered."
+      },
+      {
+        type: "heading",
+        content: "Not Reviewing the Master Policy",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "You can't fill gaps you don't know exist. Get a copy. Read it."
+      },
+      {
+        type: "heading",
+        content: "Underinsuring Improvements",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "That $40,000 kitchen renovation needs coverage. Standard policies won't automatically cover upgrades."
+      },
+      {
+        type: "heading",
+        content: "Skipping Loss Assessment Coverage",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Major disasters exhaust master policies. Hurricane, fire, flood — when the HOA assesses owners $15,000 each for uncovered repairs, loss assessment coverage pays."
+      },
+      {
+        type: "heading",
+        content: "Ignoring Water Damage Liability",
+        level: 3
+      },
+      {
+        type: "paragraph",
+        content: "Condo water claims are common and expensive. A leak from your unit into units below creates liability fast. Adequate liability limits matter."
       }
     ],
-    faqs: [],
-    relatedArticles: ["renters-insurance-guide", "home-insurance-guide"],
+    faqs: [
+      {
+        question: "Is condo insurance required?",
+        answer: "Not by Alabama or Georgia law, but your HOA may require it. Mortgage lenders almost always require it. Even without requirements, going uninsured leaves dangerous gaps."
+      },
+      {
+        question: "What's the difference between condo insurance and homeowners insurance?",
+        answer: "Homeowners insurance (HO-3) covers the entire structure. Condo insurance (HO-6) covers your unit's interior and belongings — the structure is covered by the HOA master policy. HO-6 policies work in coordination with master policies."
+      },
+      {
+        question: "What if my unit floods from a neighbor's leak?",
+        answer: "Your condo insurance covers your damage (belongings, interior finishes). The neighbor may be liable — your insurer may pursue their liability coverage. This is why liability coverage matters for everyone."
+      },
+      {
+        question: "Does condo insurance cover HOA special assessments?",
+        answer: "Loss assessment coverage pays your share when special assessments result from covered events (storm damage, fire, liability claims against HOA). It doesn't cover assessments for routine maintenance or improvements."
+      },
+      {
+        question: "How do I know if I have bare walls or all-in coverage?",
+        answer: "Request your HOA's master policy declaration page. It specifies coverage type. If unclear, ask your HOA management company directly."
+      }
+    ],
+    relatedArticles: ["renters-insurance-guide", "home-insurance-guide", "bundling-home-and-auto"],
     internalLinks: [
-      { text: "Get Your Free Condo Insurance Quote", href: "/contact" }
+      { text: "Get a Condo Insurance Quote", href: "/contact" },
+      { text: "Bundle Condo + Auto and Save", href: "/learn/bundling-home-and-auto" },
+      { text: "Understanding Liability Coverage", href: "/learn/auto-insurance-guide" }
     ]
   },
   {
