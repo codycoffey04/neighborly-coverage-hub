@@ -1127,41 +1127,69 @@ export const cityData: Record<string, CityData> = {
     city: "Alpharetta",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30009"],
+    zipCodes: ["30004", "30005", "30009", "30022", "30023", "30075", "30076", "30077", "30097"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    customHeroTitle: "Insurance in Alpharetta, GA (30004)",
+    customHeroSubhead: "Local help with auto insurance in the 30004 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Alpharetta, Georgia families with comprehensive insurance for North Fulton County. From downtown to Windward, we protect Alpharetta residents with auto, home, renters, condo, and life insurance.",
-      "Alpharetta's thriving business community, excellent schools, and upscale neighborhoods create diverse insurance needs. Our team provides personalized coverage for Alpharetta's quality of life.",
-      "Contact our Rome, GA office at (706) 784-6511 for Alpharetta insurance quotes and North Fulton service."
+      "The 30004 area faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms peaking between March and August to flash flooding concerns near Big Creek and the Chattahoochee River, residents need insurance protection tailored to North Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Windward, Country Club of the South, or any neighborhood in the region.",
+      "With approximately 68,000 residents and a median household income around $113,000, this affluent community includes tech professionals at Verizon Wireless, McKesson, and LexisNexis, along with financial services workers at ADP and Fiserv. Each household has distinct insurance needs, whether protecting high-value homes in prestigious neighborhoods or securing comprehensive auto coverage for GA-400 commutes to Atlanta."
     ],
+    weatherRisks: "Living in the 30004 area means preparing for severe weather year-round. Thunderstorm season brings heightened risk from March through August, with damaging hail events and occasional tornadoes threatening properties across neighborhoods from Deerfield to Preston. Ice storms during January and February can damage trees and power lines, causing property damage. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit. Big Creek and the Chattahoochee River present flooding risks that standard policies typically exclude. Properties in Webb Bridge Park area, Downtown Alpharetta, and along waterway corridors should consider flood insurance as critical protection. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Alpharetta residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Milton Park and Old Milton Parkway feature mature trees that can pose storm risks. Newer luxury developments in Windward and Country Club of the South may have higher replacement costs requiring enhanced dwelling coverage. Properties along Mansell Road corridor and Kimball Bridge near commercial districts might benefit from increased liability limits due to higher traffic exposure. Bundling home and auto insurance in the area saves money while creating comprehensive protection for North Georgia living. Whether commuting on GA-400, navigating local streets to major employers, or parking in downtown areas, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed for Alpharetta households.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With major tech and financial employers, many residents own higher-value vehicles requiring comprehensive auto coverage. Technology professionals and executives often have high-value homes needing enhanced property protection beyond standard policies. Business professionals may benefit from umbrella liability coverage given their assets and professional responsibilities. ZIP codes served include 30004, 30005, 30009, 30022, 30023, 30075, 30076, 30077, and 30097—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a first-time homebuyer or updating established household coverage in this thriving Alpharetta community.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Alpharetta. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30004 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing available to you 24/7.",
     localConsiderations: "Alpharetta experiences spring severe weather and tornado risk. High property values require adequate dwelling coverage and comprehensive protection. Heavy GA-400 corridor traffic creates auto insurance considerations.",
-    neighborhoods: ["Downtown Alpharetta", "Windward", "Crabapple", "Milton vicinity", "Roswell area", "Johns Creek area", "North Point", "Haynes Bridge", "Bethany Bend"],
-    nearbyCities: ["suwanee-ga", "duluth-ga", "marietta-ga"],
+    neighborhoods: ["Downtown Alpharetta", "Windward", "Country Club of the South", "Milton Park", "Old Milton Parkway", "Deerfield", "Preston", "Webb Bridge Park", "Mansell Road corridor", "Kimball Bridge", "Crabapple", "North Point"],
+    nearbyCities: ["duluth-ga", "suwanee-ga", "lawrenceville-ga"],
     faqs: [
       {
-        question: "What are typical insurance costs in Alpharetta?",
-        answer: "Alpharetta auto insurance averages $1,300-2,000 annually. Home insurance varies by property value, typically $1,600-3,000 annually due to higher home values. Bundling saves 15-25%."
+        question: "Do I need to visit your office to get insurance in Alpharetta?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30004 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "Do Alpharetta renters need insurance?",
-        answer: "Yes! Renters insurance protects belongings and provides liability coverage. Many Alpharetta apartments require it—typically $20-32/month, less when bundled with auto insurance."
+        question: "How significant is flood risk near Big Creek and the Chattahoochee River?",
+        answer: "Properties near Big Creek and the Chattahoochee River face elevated flood risks, particularly during spring storms and heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "What condo insurance do Alpharetta condo owners need?",
-        answer: "Alpharetta condo insurance (HO-6) should coordinate with the master policy and include Loss Assessment coverage. We'll review your condo documents to ensure proper coverage for higher-value properties."
+        question: "What bundle savings are available for local residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Area residents can maximize savings by combining multiple policies, whether insuring a home in Windward and vehicles for tech company commutes, or protecting a luxury property in Country Club of the South with comprehensive auto coverage."
       },
       {
-        question: "Can Alpharetta residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. Given Alpharetta's property values, bundling creates substantial savings."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on GA-400 and around major employment centers often warrants higher limits for adequate protection."
       },
       {
-        question: "Does Coffey Agencies serve all North Fulton?",
-        answer: "Yes, we serve Alpharetta, Milton, Johns Creek, Roswell, and all North Fulton communities. Call (706) 784-6511 for personalized North Fulton quotes."
+        question: "How does severe weather season affect insurance premiums?",
+        answer: "Location in North Georgia's severe weather zone influences homeowners insurance rates. Premiums reflect elevated risk during peak season (March-August) from hail, wind, and occasional tornadoes, but proper coverage ensures protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
       },
       {
-        question: "What factors affect Alpharetta home insurance rates?",
-        answer: "Property value, roof age, square footage, claims history, and protective devices impact rates. Higher-value Alpharetta homes need adequate limits and comprehensive coverage to avoid underinsurance."
+        question: "Can tech professionals get special coverage for high-value homes?",
+        answer: "High-value homes in neighborhoods like Country Club of the South and Windward often require enhanced coverage beyond standard policies. We understand these requirements and structure policies with appropriate dwelling limits, valuable items protection, and liability coverage matching your assets and professional responsibilities."
+      },
+      {
+        question: "What factors affect auto insurance rates in the area?",
+        answer: "Auto insurance rates consider your ZIP code (30004 and surrounding areas), driving record, vehicle type, and commute distance. Traffic density on GA-400 and local commute patterns to major employers like Verizon Wireless, McKesson, and ADP all factor into personalized rates."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes in Deerfield, Preston, or any other neighborhood."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
