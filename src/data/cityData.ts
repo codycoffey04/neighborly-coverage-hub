@@ -529,41 +529,69 @@ export const cityData: Record<string, CityData> = {
     city: "Troy",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["36081"],
+    zipCodes: ["36081", "36079", "36039", "36027", "36006", "36092"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(334) 553-9258",
+    customHeroTitle: "Insurance in Troy, AL (36081)",
+    customHeroSubhead: "Local help with auto insurance in the 36081 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Troy, Alabama residents with comprehensive insurance for the Wiregrass region. Home to Troy University, we protect students, families, and businesses with auto, home, renters, condo, and life insurance.",
-      "Troy combines college culture with small-town values. Our team understands Pike County's insurance needs and provides personalized service for students, homeowners, and renters at competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Troy insurance quotes and local expertise."
+      "Troy faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with large hail to flooding concerns along the Conecuh River and Pea River, residents need insurance protection tailored to the Wiregrass region's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Troy, near Troy University campus, or any neighborhood in Pike County.",
+      "With approximately 15,513 residents in the city and 33,000 across Pike County, with a median household income around $42,005, this diverse community includes Troy University students and faculty, workers at Lockheed Martin and Wayne Sanderson Farms, and agricultural professionals. Each household has distinct insurance needs, whether protecting student apartments near campus, insuring homes near river flood zones, or securing auto coverage for commutes along US-231."
     ],
+    weatherRisks: "Living in Troy means preparing for diverse weather challenges year-round. Severe thunderstorm season brings heightened risk from March through May, with large hail threatening vehicles and roofs across neighborhoods. Tornado threats occur regularly in the Wiregrass region during spring months, requiring comprehensive wind coverage. These weather patterns make proper homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit. The Conecuh River and Pea River present significant flooding risks that standard policies typically exclude. Properties in low-lying areas and river corridors should consider flood insurance as critical protection. Troy's inland location doesn't eliminate hurricane risk—systems like Ivan, Katrina, and Sally brought damaging winds and flooding to the region. Winter ice storms, while occasional, can cause power outages and tree damage. We analyze your specific location to determine risk levels and recommend appropriate coverage for Troy residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. The Troy University campus area features high-density student housing requiring specialized renters insurance and auto coverage with student discounts. Downtown Troy properties may have historic buildings with unique replacement cost considerations. Pike County Lake area homes face different flood risks requiring careful assessment. Properties along the Brundidge corridor and in Henderson communities benefit from rural property coverage options. Bundling home and auto insurance in Troy saves money while creating comprehensive protection for Wiregrass living. Whether commuting on US-231 to Montgomery, navigating campus traffic, or traveling rural Pike County roads, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Troy and Pike County residents.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. Troy University employs over 2,000 faculty and staff, with thousands more students needing specialized coverage including renters insurance and affordable auto policies. Lockheed Martin workers may own newer vehicles requiring comprehensive auto coverage. Wayne Sanderson Farms and Bonnie Plants employees benefit from competitive rates and flexible payment options. Healthcare workers and school district employees appreciate our digital convenience and bundle savings. ZIP codes served include 36081, 36079, 36039, 36027, 36006, and 36092—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a Troy University student renting your first apartment, a first-time homebuyer near Pike County Lake, or updating established household coverage in rural communities. Student discounts and flexible policies accommodate the university's academic calendar and housing transitions.",
+    localExcellence: "Operating from Centre headquarters, we've perfected digital insurance delivery to Troy and Pike County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or dorm room. Licensed Alabama agents (License #416438) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to the Wiregrass region and Conecuh River valley. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 36081 area while maintaining personal service expected from local agents, despite our Centre location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—perfect for Troy University students, busy professionals at Lockheed Martin and Wayne Sanderson Farms, and families managing multiple properties across Pike County.",
     localConsiderations: "Troy experiences spring tornado season and severe thunderstorms typical of southeast Alabama. Large student population creates demand for affordable renters insurance and young driver auto coverage.",
-    neighborhoods: ["Downtown Troy", "Troy University campus", "University Avenue", "Highway 231 corridor", "East Troy", "North Troy", "Pike County area", "Brundidge vicinity"],
-    nearbyCities: ["dothan-al", "enterprise-al", "montgomery-al"],
+    neighborhoods: ["Downtown Troy", "Troy University campus", "Pike County Lake", "Brundidge corridor", "Henderson", "US-231 corridor", "North Troy", "East Troy", "University Avenue area", "Rural Pike County", "West Troy", "South Troy"],
+    nearbyCities: ["montgomery-al", "dothan-al", "birmingham-al"],
     faqs: [
       {
-        question: "Do Troy University students need renters insurance?",
-        answer: "Yes! Many Troy landlords and student housing complexes require renters insurance. It protects laptops, furniture, and belongings from fire, theft, and storms—typically $10-20/month for students."
+        question: "Do I need to visit your office to get insurance in Troy?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes can be handled online or by phone, saving 36081 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "How can Troy students save on auto insurance?",
-        answer: "Troy students save through good student discounts (typically 3.0+ GPA), defensive driving courses, staying on parents' policies when possible, and bundling renters insurance with auto coverage."
+        question: "Do you offer student insurance for Troy University students?",
+        answer: "Yes, we offer specialized coverage for Troy University students including renters insurance for dorms and apartments, auto insurance with student discounts, and flexible policies for students living both on and off campus. Our digital platform makes it easy for students to get quotes and manage policies during breaks and summer vacation."
       },
       {
-        question: "What are typical insurance costs in Troy?",
-        answer: "Troy auto insurance averages $850-1,300 annually. Renters insurance costs $15-25/month. Home insurance varies by property value, typically $900-1,800 annually for Pike County homes."
+        question: "What bundle savings are available for Troy residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Troy residents can maximize savings by combining multiple policies, whether insuring a home near Pike County Lake and vehicles for university commutes, or protecting student apartments with auto coverage."
       },
       {
-        question: "Can Troy renters bundle insurance policies?",
-        answer: "Yes! Bundling renters and auto insurance saves 15-25% on both policies. Most students and young professionals qualify for bundling discounts. We'll quote both options."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on US-231 and around Troy University campus often warrants higher limits for adequate protection."
       },
       {
-        question: "What home insurance do Troy homeowners need?",
-        answer: "Troy homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Roof age and protective devices affect pricing."
+        question: "How does Conecuh River flooding affect homeowners insurance?",
+        answer: "Properties near the Conecuh River and Pea River face elevated flood risks during heavy rainfall and tropical systems. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for riverside properties. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs in flood-prone areas of Pike County."
       },
       {
-        question: "Does Coffey Agencies serve Troy University students?",
-        answer: "Absolutely! We help students with renters insurance and auto coverage. Many save through student discounts and bundling. Call (256) 927-6287 for Troy student quotes."
+        question: "Does hurricane risk from the Gulf affect Troy insurance rates?",
+        answer: "Troy's location in the Wiregrass region means occasional hurricane impacts from Gulf storms. While inland, the area can experience heavy winds and flooding from systems like Sally and Ivan. Comprehensive coverage protects against wind damage and falling trees, with separate flood insurance recommended for properties in low-lying areas."
+      },
+      {
+        question: "What factors affect auto insurance rates in Troy?",
+        answer: "Auto insurance rates consider your ZIP code (36081 and surrounding areas), driving record, vehicle type, and commute distance. Traffic patterns near Troy University campus, US-231 corridor risks, and rural Pike County roads all factor into personalized rates. Students may qualify for good grade discounts and away-at-school reductions."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes near Downtown Troy, student apartments near campus, or properties in Henderson and rural Pike County communities."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
