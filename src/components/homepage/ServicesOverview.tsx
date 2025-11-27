@@ -53,12 +53,12 @@ export const ServicesOverview = () => {
           const Icon = service.icon;
           return (
             <Card key={index} className="card-hover border-2 group overflow-hidden">
-              {/* Gray banner area with icon + title */}
-              <div className="bg-muted p-6">
-                <div className="inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-3">
+              {/* Compact gray header with icon + title inline */}
+              <div className="bg-muted px-6 py-4 flex items-center gap-3">
+                <div className="inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Icon className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">{service.title}</CardTitle>
+                <CardTitle className="text-xl">{service.title}</CardTitle>
               </div>
               
               {/* White area with description + CTA */}
