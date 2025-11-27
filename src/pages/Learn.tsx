@@ -86,8 +86,8 @@ const Learn = () => {
                 <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
                   <CardContent className="p-6">
                     {IconComponent && (
-                      <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
-                        <IconComponent className="w-6 h-6 text-secondary" />
+                      <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                        <IconComponent className="w-6 h-6 text-accent" />
                       </div>
                     )}
                     
@@ -125,8 +125,8 @@ const Learn = () => {
                 <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
                   <CardContent className="p-6">
                     {IconComponent && (
-                      <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
-                        <IconComponent className="w-6 h-6 text-secondary" />
+                      <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                        <IconComponent className="w-6 h-6 text-accent" />
                       </div>
                     )}
                     
