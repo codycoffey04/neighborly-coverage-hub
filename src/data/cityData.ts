@@ -253,40 +253,84 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36601", "36695"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    customHeroTitle: "Insurance in Mobile, AL (36601 & 36695)",
+    customHeroSubhead: "Local help with auto insurance in the 36601 and 36695 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Mobile, Alabama families with comprehensive insurance tailored to coastal living. From downtown to Daphne, we protect Mobile Bay residents with auto, home, renters, condo, and life insurance.",
-      "Mobile's coastal location brings unique insurance considerations including hurricane preparedness, wind/hail coverage, and flood protection. Our team helps you navigate coastal insurance requirements while finding competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Mobile insurance quotes and coastal coverage expertise."
+      "The 36601 and 36695 areas of Mobile face insurance challenges unlike anywhere else in Alabama. As the state's only major coastal city, Mobile residents contend with hurricane exposure, flood risk, and wind damage that inland communities simply don't experience. From downtown's historic districts to the growing western suburbs, you need insurance protection built specifically for Gulf Coast living. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Midtown, Spring Hill, or anywhere across Alabama's Port City.",
+      "With approximately 190,000 residents in the city and over 430,000 in the metro area, Mobile is Alabama's third-largest city and only coastal metropolitan area. The 36601 ZIP code encompasses historic downtown Mobile, Midtown, and established neighborhoods including Oakleigh Garden District and Old Dauphin Way. The 36695 ZIP code covers West Mobile, Tillmans Corner, and suburban communities stretching toward Theodore. This diverse community includes port workers and logistics professionals, aerospace employees at Airbus and Austal USA, healthcare workers at USA Health and Providence Hospital, and shipbuilding workers at the Mobile Aeroplex. Each household has distinct insurance needs, whether protecting a historic Midtown home or securing auto coverage for I-10 commutes across the Bay."
     ],
-    localConsiderations: "Mobile's Gulf Coast location requires wind/hail coverage and often mandated flood insurance for mortgage properties. Hurricane season, tropical storms, and severe thunderstorms create unique insurance needs. Coastal properties may have higher premiums and specific deductibles.",
-    neighborhoods: ["Downtown Mobile", "Midtown", "Spring Hill", "Oakleigh", "De Tonti Square", "Old Dauphin Way", "West Mobile", "Tillmans Corner", "Theodore", "Saraland", "Prichard", "Daphne", "Fairhope area"],
-    nearbyCities: ["foley-al", "dothan-al", "pensacola-fl"],
+    weatherRisks: "Living in Mobile means understanding that hurricane preparedness isn't optional—it's a fundamental part of life on the Gulf Coast. Mobile has experienced direct hits and near-misses from major hurricanes throughout its history, including devastating impacts from Hurricanes Ivan (2004), Katrina (2005), and Sally (2020). The city's location at the head of Mobile Bay creates surge risk for low-lying areas, while even properties miles from the water face extreme wind exposure during major storms. Hurricane season runs June through November, with peak activity in August and September. Homeowners insurance in Mobile works differently than inland Alabama—wind and hurricane deductibles are typically separate from your standard deductible, often 2-5% of your dwelling coverage. This means if your home is insured for $300,000 and has a 2% wind deductible, you're responsible for the first $6,000 of wind damage before coverage kicks in. Standard homeowners policies exclude flood damage entirely. Given Mobile Bay's surge exposure, the region's flat terrain, and annual rainfall exceeding 65 inches, flood insurance is critical throughout 36601 and 36695—not just in designated flood zones. Spring brings tornado risk as Gulf moisture fuels severe storms, while summer afternoon thunderstorms produce localized flooding and lightning damage nearly daily.",
+    neighborhoodCoverage: "Mobile's neighborhoods each present distinct insurance considerations shaped by geography, construction era, and proximity to water. Downtown and Midtown (36601) feature historic homes in the Oakleigh Garden District, DeTonti Square, and Old Dauphin Way with unique insurance considerations—many have historic designations, original construction materials, and architectural details requiring specialized replacement cost calculations. Mature live oaks provide iconic Southern beauty but create storm debris risks, and some properties have experienced previous storm damage affecting insurability and premiums. Spring Hill (36601) is one of Mobile's most desirable neighborhoods with grand historic homes alongside mid-century and newer construction—elevation is generally higher than downtown, reducing but not eliminating flood risk, while mature tree canopy creates wind debris exposure and higher property values mean higher coverage needs. West Mobile and Tillmans Corner (36695) are suburban growth areas with predominantly 1980s-2010s construction where newer homes often meet updated building codes with hurricane-resistant features including impact-rated garage doors, roof tie-downs, and wind-resistant shingles that may qualify for insurance discounts, though traffic density on Schillinger Road and Airport Boulevard affects auto rates. Theodore and Irvington (near 36695) have more rural character with larger lots and mix of manufactured and site-built homes—distance from coast slightly reduces wind exposure but doesn't eliminate hurricane risk, while Mobile County's extensive waterways create flood risk throughout these areas during tropical rainfall events. Properties along the Dauphin Island Parkway and near the causeway face the highest wind and surge exposure in the Mobile metro, where insurance availability and affordability can be challenging in these high-risk zones.",
+    economyInfo: "Mobile's unique maritime and aerospace economy creates varied insurance needs across the 36601 and 36695 communities. Port and maritime workers at APM Terminals, Alabama State Docks, and supporting logistics companies often work varied shifts with early morning or late night commutes, creating commercial traffic exposure on I-10 and in industrial areas. Aerospace and shipbuilding workers at Airbus, Austal USA, and suppliers throughout the Mobile Aeroplex represent advanced manufacturing employment with positions often including higher incomes warranting increased liability protection and comprehensive coverage for newer vehicles. Healthcare workers at USA Health University Hospital, Providence Hospital, and Mobile Infirmary work around-the-clock schedules requiring reliable coverage for varied commute times and adequate liability limits to protect medical professionals. Hospitality and service workers supporting Mobile's tourism economy, including cruise terminal operations and downtown entertainment districts, often have part-time schedules with multiple household drivers. Military families connected to Coast Guard Aviation Training Center Mobile have specific insurance needs including coverage that transfers if relocated and protection during deployments.",
+    localExcellence: "Operating from our Centre, Alabama headquarters approximately 300 miles north of Mobile, we've built digital insurance delivery that serves 36601 and 36695 residents better than many local storefronts. You receive comprehensive coverage analysis and personalized attention matching face-to-face meetings, with the convenience of handling everything from your home in Spring Hill or your office in West Mobile. Licensed Alabama agents (Agency License #416438) understand state regulations and Mobile County's unique coastal insurance market, ensuring coverage meets requirements while addressing hurricane exposure, flood risk, and wind damage concerns specific to the Gulf Coast. Technology enables faster quotes—most take about 15 minutes. Streamlined claims support means you reach a real person who knows your policy. During hurricane season, our digital tools prove especially valuable. Track approaching systems with us and verify coverage before impact. File claims online the moment damage occurs. Reach us by phone when your neighborhood is dealing with storm aftermath. We understand the stress of coastal storm seasons and we're built to support Mobile families through whatever the Gulf sends.",
+    localConsiderations: "Mobile's Gulf Coast location creates Alabama's highest hurricane and flood exposure. Wind deductibles (2-5% of dwelling) apply during named storms. Flood insurance essential throughout 36601 and 36695. I-10 tunnel/causeway commuting and 18%+ uninsured driver rate require adequate liability and UM coverage.",
+    neighborhoods: [
+      "Downtown Mobile",
+      "Midtown",
+      "Spring Hill",
+      "Oakleigh Garden District",
+      "DeTonti Square",
+      "Old Dauphin Way",
+      "West Mobile",
+      "Tillmans Corner",
+      "Theodore",
+      "Irvington",
+      "Saraland",
+      "Prichard",
+      "Chickasaw",
+      "Eight Mile",
+      "Dauphin Island Parkway",
+      "Mobile Aeroplex area"
+    ],
     faqs: [
       {
+        question: "Do I need to visit your office to get insurance in Mobile?",
+        answer: "No office visit required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes to claims support happens online or by phone. Mobile residents in 36601 and 36695 save time while receiving comprehensive coverage analysis and personal attention from licensed Alabama agents who understand Gulf Coast insurance challenges."
+      },
+      {
+        question: "How do hurricanes affect insurance in Mobile?",
+        answer: "Mobile's Gulf Coast location creates significant hurricane exposure that directly impacts insurance availability, policy structures, and premiums. Most homeowners policies have separate wind/hurricane deductibles (typically 2-5% of dwelling coverage) that apply during named storms. Some properties in high-risk areas face limited insurer options. We help Mobile families navigate these coastal insurance realities and find appropriate coverage."
+      },
+      {
         question: "Do I need flood insurance in Mobile?",
-        answer: "If you have a mortgage in a FEMA flood zone, flood insurance is required. Even outside flood zones, Mobile's coastal location and heavy rainfall make flood insurance wise. Standard home insurance doesn't cover flood damage."
+        answer: "Absolutely. Standard homeowners insurance excludes flood damage—whether from hurricane surge, tropical rainfall, or severe thunderstorms. Mobile averages over 65 inches of rain annually, and tropical systems can dump 10+ inches in hours. Properties throughout 36601 and 36695 face flood risk, not just those in designated flood zones. Flood insurance through NFIP or private insurers is essential protection for Mobile homeowners."
       },
       {
-        question: "How do hurricanes affect Mobile home insurance?",
-        answer: "Mobile properties often have wind/hail or hurricane deductibles (percentage of dwelling limit or flat amount). These special deductibles activate during named storms. We'll explain deductible options so you're prepared."
+        question: "What is a wind deductible and how does it work?",
+        answer: "Wind or hurricane deductibles are separate from your standard homeowners deductible and typically apply only during named tropical storms or hurricanes. They're often calculated as a percentage of your dwelling coverage rather than a flat dollar amount. For example, a 2% wind deductible on a $300,000 home means you're responsible for the first $6,000 of wind damage before coverage applies. Understanding this is critical for Mobile homeowners."
       },
       {
-        question: "What does Mobile auto insurance typically cost?",
-        answer: "Mobile auto insurance averages $1,000-1,800 annually depending on coverage, driving record, and vehicle. Coastal areas don't significantly impact auto rates, but traffic density and uninsured motorist frequency do."
+        question: "What bundle savings are available for Mobile residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on combined premiums—often $400-600 annually for Gulf Coast families. Given Mobile's higher coastal insurance rates, bundle discounts provide meaningful savings. Combining multiple policies also simplifies claims when a single storm damages both home and vehicles."
       },
       {
-        question: "Should Mobile condo owners have special coverage?",
-        answer: "Yes! Mobile condo insurance (HO-6) should coordinate with the master policy and include adequate Loss Assessment coverage for hurricane deductibles. Coastal condos may have unique requirements."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, these minimums rarely provide adequate protection for Mobile drivers facing I-10 traffic and commercial truck exposure. We typically recommend higher liability limits plus comprehensive coverage to protect against hurricane-related vehicle damage."
       },
       {
-        question: "Does Coffey Agencies write coastal Alabama policies?",
-        answer: "Yes, we serve all Mobile area communities including coastal properties. We'll help you understand wind/hail deductibles, flood requirements, and coastal coverage options. Call (256) 927-6287."
+        question: "What factors affect auto insurance rates in Mobile?",
+        answer: "Your specific address in 36601 or 36695, driving record, vehicle types, annual mileage, and commute patterns all affect rates. Cross-bay commuters face different exposure than West Mobile local drivers. Garaging location affects theft, vandalism, and flood exposure. We consider all these factors—plus available discounts for safe drivers, bundled policies, and more—to find your best rate."
       },
       {
-        question: "What's the difference between wind deductible and regular deductible in Mobile?",
-        answer: "Wind or hurricane deductibles apply specifically to wind/hail or named storm damage, often as a percentage (1-5%) of your dwelling limit. Your standard deductible applies to other perils like fire or theft."
+        question: "How quickly can I get coverage for my Mobile home or vehicle?",
+        answer: "Most policies can begin the same day. Our digital process means Mobile residents receive quotes within about 15 minutes. Once you've reviewed options and made a decision, coverage activates immediately. Need proof of insurance for a vehicle purchase, apartment lease, or mortgage closing? We provide documentation right away."
       }
-    ]
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ],
+    nearbyCities: ["foley-al", "dothan-al", "montgomery-al"],
   },
 
   "dothan-al": {
