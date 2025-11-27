@@ -1196,42 +1196,50 @@ export const cityData: Record<string, CityData> = {
     city: "Summerville",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30747"],
+    zipCodes: ["30747", "30741", "30734", "30143", "30161", "30165"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(706) 702-1782",
+    customHeroTitle: "Insurance in Summerville, GA (30747)",
+    customHeroSubhead: "Local help with auto insurance in the 30747 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Summerville, Georgia families with comprehensive insurance for Chattooga County. From downtown to Trion, we protect Summerville residents with auto, home, renters, condo, and life insurance.",
-      "Summerville's small-town character and scenic mountain surroundings create a unique community. Our team provides personalized coverage at competitive rates for Chattooga County families.",
-      "Contact our Rome, GA office at (706) 784-6511 for Summerville insurance quotes and Chattooga County service."
+      "Summerville faces unique insurance challenges requiring specialized understanding of local risks. Nestled in the Appalachian foothills, this charming community experiences distinct weather patterns from tornado threats peaking between March and May to occasional winter ice storms. Properties near the Chattooga River and Simms Lake need protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Summerville, Lyerly, Menlo, or any rural community in Chattooga County.",
+      "With approximately 4,500 residents in the city and 25,000 throughout Chattooga County, and a median household income around $40,000-45,000, this tight-knit community includes educators at Chattooga County School District, manufacturing workers, healthcare professionals, and agricultural operators. Each household has distinct insurance needs, whether protecting homes near Chattooga River flood zones, securing auto coverage for rural roads, or safeguarding agricultural properties unique to the region."
     ],
-    localConsiderations: "Summerville experiences spring severe weather and occasional ice storms due to mountain elevation. Rural and small-town driving patterns create unique auto insurance needs. Mountain roads and terrain require thoughtful coverage planning.",
-    neighborhoods: ["Downtown Summerville", "Trion", "Lyerly", "Menlo", "Chattooga County", "Highway 27 corridor", "Mountain area"],
-    nearbyCities: ["rome-ga", "calhoun-ga", "lafayette-ga"],
+    weatherRisks: "Living in Summerville means preparing for diverse weather challenges. The mountainous terrain creates unique weather patterns, with tornado season bringing heightened risk from March through May. Severe thunderstorms capable of producing damaging hail and destructive winds are common. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit separately. The Chattooga River and Simms Lake present flooding risks that standard policies typically exclude. Properties near waterways in Summerville, Lyerly, and throughout rural Chattooga County should consider flood insurance as critical protection. Flash flooding during heavy rainfall can damage homes quickly, especially in valley areas and near creek beds. Winter ice storms pose additional challenges in mountainous terrain, creating hazardous conditions for both properties and vehicles. We analyze your specific location to determine all risk levels and recommend appropriate coverage for Summerville residents.",
+    neighborhoodCoverage: "Each local area presents unique insurance considerations. Downtown Summerville features older construction that may require specialized replacement cost assessments and historical property considerations. The Trion area has mixed residential and industrial characteristics affecting coverage needs. Rural properties in Lyerly, Menlo, and outlying Chattooga County communities require attention to outbuildings, agricultural structures, and extended property boundaries. Bundling home and auto insurance in Summerville saves money while creating comprehensive protection for rural Northwest Georgia living. Whether navigating mountain roads, commuting to Rome for work, or traveling rural routes for agricultural operations, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Chattooga County households, including specialized rural property considerations.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Chattooga County School District as a major employer, many educators benefit from understanding coverage options that fit public service budgets. Local manufacturing facilities employ residents requiring reliable auto coverage for commuting. Healthcare workers at area medical facilities may need higher liability limits given professional responsibilities. Agricultural operations throughout Chattooga County have specialized needs including farm equipment, outbuildings, and liability coverage. ZIP codes served include 30747, 30741, 30734, 30143, 30161, and 30165—each with distinct demographic and risk profiles reflecting rural, mountainous Northwest Georgia characteristics. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Summerville, whether you're an educator in town, a manufacturing worker in Lyerly, or managing agricultural property in rural Chattooga County.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Summerville and throughout Chattooga County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or farm office. Licensed Georgia agents (License #149612) understand state regulations and local conditions specific to rural mountain communities, ensuring coverage meets all requirements while addressing regional risks unique to Summerville. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits—particularly valuable for rural residents. This efficiency translates to competitive rates for auto insurance in the 30747 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7, perfect for busy educators, manufacturing workers, and agricultural operators across Summerville and Chattooga County.",
+    localConsiderations: "Appalachian foothills location with unique weather patterns, Chattooga River and Simms Lake flooding risks, rural mountain community characteristics, agricultural property considerations, longer emergency response times",
+    neighborhoods: [
+      "Downtown Summerville",
+      "Trion",
+      "Lyerly",
+      "Menlo",
+      "Rural Chattooga County",
+      "Highway 27 corridor",
+      "Mountain area",
+      "Simms Lake area",
+      "Chattooga River corridor",
+      "Valley communities",
+      "Agricultural areas",
+      "Industrial district"
+    ],
+    nearbyCities: ["rome-ga", "rockmart-ga", "atlanta-ga"],
     faqs: [
-      {
-        question: "What are typical insurance costs in Summerville?",
-        answer: "Summerville auto insurance averages $850-1,300 annually. Home insurance varies by property value and coverage, typically $900-1,700 annually for Chattooga County homes. Bundling saves 15-25%."
-      },
-      {
-        question: "Do Summerville renters need insurance?",
-        answer: "Yes! Renters insurance protects belongings from fire, theft, and storms while providing liability coverage. Many landlords require it—typically $14-24/month, less when bundled."
-      },
-      {
-        question: "What home insurance do Summerville homeowners need?",
-        answer: "Summerville homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Mountain weather patterns create unique coverage needs."
-      },
-      {
-        question: "Can Summerville residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We offer multi-policy discounts and protective device credits."
-      },
-      {
-        question: "Does Coffey Agencies serve all Chattooga County?",
-        answer: "Yes, we serve Summerville, Trion, Lyerly, Menlo, and all Chattooga County communities. Call (706) 784-6511 for personalized insurance quotes."
-      },
-      {
-        question: "How does mountain living affect Summerville insurance?",
-        answer: "Mountain terrain may create unique home insurance considerations including foundation types, road access, and weather patterns. We'll assess your specific property's needs."
-      }
+      { question: "Do I need to visit your office to get insurance in Summerville?", answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30747 residents time while receiving comprehensive coverage and personal service tailored to Chattooga County needs—especially convenient for rural residents." },
+      { question: "How does the Chattooga River affect flood insurance needs?", answer: "Properties near the Chattooga River and Simms Lake face elevated flood risks, especially during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for waterfront and low-lying properties in Chattooga County. We analyze FEMA flood maps for your specific address in Summerville to determine risk levels and coverage needs." },
+      { question: "What bundle savings are available for Summerville residents?", answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Residents can maximize savings by combining multiple policies, whether insuring a home in Summerville and vehicles for commuting, or protecting rural property with auto coverage for mountain road travel." },
+      { question: "What are Georgia's minimum auto insurance requirements?", answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, rural mountain roads and commuting distances in Chattooga County often warrant higher limits for adequate protection." },
+      { question: "How does mountainous terrain affect insurance in Summerville?", answer: "Summerville's location in the Appalachian foothills creates unique weather patterns including severe thunderstorms and ice storms. Mountainous terrain can affect emergency response times and weather severity, factors we consider in coverage recommendations. Rural roads also present different driving risks than urban areas." },
+      { question: "What coverage do rural property owners need in Chattooga County?", answer: "Rural properties often require specialized coverage including higher liability limits due to longer emergency response times, outbuilding protection, and consideration for well and septic systems. We tailor policies to rural Chattooga County needs, including agricultural structures and extended property boundaries." },
+      { question: "What factors affect auto insurance rates in Summerville?", answer: "Auto insurance rates consider your ZIP code, driving record, vehicle type, and commute distance. Rural roads, mountainous driving conditions, and local claim history all influence personalized rates for Chattooga County drivers. Longer commutes to employment centers also factor into coverage needs." },
+      { question: "How quickly can I get coverage for my property?", answer: "Most policies can begin immediately upon approval. Our digital process means Summerville residents can receive quotes within minutes and have active coverage the same day, protecting homes in Lyerly, Menlo, or any rural community throughout Chattooga County." }
+    ],
+    testimonials: [
+      { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
+      { name: "Steve Smith", text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
+      { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
     ]
   },
 
