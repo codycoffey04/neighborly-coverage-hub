@@ -1,5 +1,6 @@
 import { MapPin, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
 
 const featuredCities = [
   {
@@ -46,65 +47,32 @@ export const ServiceArea = () => {
           </p>
         </div>
 
-        {/* Featured Cities Grid */}
-        <div className="mb-16">
-          {/* Top Row - 3 Locations */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 mb-8 lg:mb-12">
-            {featuredCities.slice(0, 3).map((city, index) => (
-              <Link key={index} to={city.link} className="group text-center space-y-3">
-                {/* Small solid green pin icon */}
-                <div className="flex justify-center">
-                  <MapPin className="h-5 w-5 text-secondary" />
-                </div>
-                
-                {/* City name - bold, white */}
-                <h3 className="text-xl font-bold text-white">
-                  {city.city}, {city.state}
-                </h3>
-                
-                {/* Descriptor - lighter, smaller */}
-                <p className="text-white/70 text-sm">
-                  {city.descriptor}
-                </p>
-                
-                {/* CTA link with arrow animation */}
-                <span className="inline-flex items-center text-sm font-medium text-secondary group-hover:underline">
-                  Get a Quote
-                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              </Link>
-            ))}
-          </div>
-
-          {/* Bottom Row - 2 Locations Centered */}
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 max-w-xl">
-              {featuredCities.slice(3, 5).map((city, index) => (
-                <Link key={index + 3} to={city.link} className="group text-center space-y-3">
-                  {/* Small solid green pin icon */}
-                  <div className="flex justify-center">
-                    <MapPin className="h-5 w-5 text-secondary" />
-                  </div>
-                  
-                  {/* City name - bold, white */}
-                  <h3 className="text-xl font-bold text-white">
+        {/* Featured Cities Grid - Card-Based Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 mb-16">
+          {featuredCities.map((city, index) => (
+            <Link key={index} to={city.link} className="block">
+              <Card className="border-2 group overflow-hidden hover:shadow-lg transition-shadow h-full">
+                {/* Gray header with inline icon + city name */}
+                <div className="bg-gray-200 px-4 py-3 flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
+                  <h3 className="text-lg font-bold text-primary">
                     {city.city}, {city.state}
                   </h3>
-                  
-                  {/* Descriptor - lighter, smaller */}
-                  <p className="text-white/70 text-sm">
+                </div>
+                
+                {/* White body with descriptor + CTA */}
+                <CardContent className="p-4 text-center">
+                  <p className="text-muted-foreground text-sm mb-3">
                     {city.descriptor}
                   </p>
-                  
-                  {/* CTA link with arrow animation */}
                   <span className="inline-flex items-center text-sm font-medium text-secondary group-hover:underline">
                     Get a Quote
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>
-                </Link>
-              ))}
-            </div>
-          </div>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
         </div>
 
         {/* Footer Section */}
