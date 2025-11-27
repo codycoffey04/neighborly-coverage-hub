@@ -291,6 +291,7 @@ const CondoInsurance = () => {
           name="description" 
           content="Clear HO-6 condo insurance for Alabama and Georgia unit owners. Walls-in coverage, Loss Assessment, master policy coordination, and local claim support from Coffey Agencies." 
         />
+        <link rel="canonical" href="https://coffeyagencies.com/services/condo-insurance" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
@@ -327,18 +328,18 @@ const CondoInsurance = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" asChild>
+              <Button size="lg" asChild aria-label="Get your free condo insurance quote">
                 <Link to="/contact">Get Your Free Quote</Link>
               </Button>
               <div className="flex items-center gap-2 text-sm">
                 <Phone className="h-4 w-4" />
                 <span className="font-semibold">Centre, AL:</span>
-                <a href="tel:256-927-6287" className="text-primary hover:underline">(256) 927-6287</a>
+                <a href="tel:+12569276287" className="text-primary hover:underline" aria-label="Call Centre, Alabama office at (256) 927-6287">(256) 927-6287</a>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Phone className="h-4 w-4" />
                 <span className="font-semibold">Rome, GA:</span>
-                <a href="tel:706-784-6511" className="text-primary hover:underline">(706) 784-6511</a>
+                <a href="tel:+17067846511" className="text-primary hover:underline" aria-label="Call Rome, Georgia office at (706) 784-6511">(706) 784-6511</a>
               </div>
             </div>
           </div>
@@ -612,7 +613,7 @@ const CondoInsurance = () => {
                     <Phone className="h-5 w-5 text-primary" />
                     <div className="text-left">
                       <div className="font-semibold">Alabama</div>
-                      <a href="tel:256-927-6287" className="text-primary hover:underline text-lg">
+                      <a href="tel:+12569276287" className="text-primary hover:underline text-lg" aria-label="Call Alabama office at (256) 927-6287">
                         (256) 927-6287
                       </a>
                     </div>
@@ -623,7 +624,7 @@ const CondoInsurance = () => {
                     <Phone className="h-5 w-5 text-primary" />
                     <div className="text-left">
                       <div className="font-semibold">Georgia</div>
-                      <a href="tel:706-784-6511" className="text-primary hover:underline text-lg">
+                      <a href="tel:+17067846511" className="text-primary hover:underline text-lg" aria-label="Call Georgia office at (706) 784-6511">
                         (706) 784-6511
                       </a>
                     </div>

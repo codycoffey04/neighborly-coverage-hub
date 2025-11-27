@@ -208,6 +208,7 @@ const MotorcycleInsurance = () => {
       <Helmet>
         <title>Motorcycle Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents who ride, and honest advice on limits." />
+        <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
@@ -246,11 +247,11 @@ const MotorcycleInsurance = () => {
 
               {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" className="text-lg" asChild>
+                <Button size="lg" className="text-lg" asChild aria-label="Get your free motorcycle insurance quote">
                   <Link to="/contact">Get Your Quote</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg" asChild>
-                  <a href="tel:2569276287">Call (256) 927-6287</a>
+                <Button size="lg" variant="outline" className="text-lg" asChild aria-label="Call Centre, Alabama office at (256) 927-6287">
+                  <a href="tel:+12569276287">Call (256) 927-6287</a>
                 </Button>
               </div>
             </div>
@@ -408,7 +409,7 @@ const MotorcycleInsurance = () => {
             </div>
 
             <div className="text-center">
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild aria-label="Read all customer reviews on Google">
                 <Link to="/reviews">Read All Google Reviews →</Link>
               </Button>
             </div>
@@ -471,17 +472,17 @@ const MotorcycleInsurance = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" variant="outline" className="bg-white text-secondary hover:bg-white/90 border-0" asChild>
+              <Button size="lg" variant="outline" className="bg-white text-secondary hover:bg-white/90 border-0" asChild aria-label="Get your free motorcycle insurance quote">
                 <Link to="/contact">Get Your Free Quote</Link>
               </Button>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center text-sm">
-              <a href="tel:2569276287" className="flex items-center gap-2 hover:opacity-80">
+              <a href="tel:+12569276287" className="flex items-center gap-2 hover:opacity-80" aria-label="Call Centre, Alabama office at (256) 927-6287">
                 <Phone className="h-4 w-4" />
                 <span>Centre, AL: (256) 927-6287</span>
               </a>
-              <a href="tel:7067846511" className="flex items-center gap-2 hover:opacity-80">
+              <a href="tel:+17067846511" className="flex items-center gap-2 hover:opacity-80" aria-label="Call Rome, Georgia office at (706) 784-6511">
                 <Phone className="h-4 w-4" />
                 <span>Rome, GA: (706) 784-6511</span>
               </a>
