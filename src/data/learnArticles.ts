@@ -1028,23 +1028,375 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "life-insurance-guide",
-    title: "Life Insurance for Families: Term vs. Whole Life Explained",
-    metaTitle: "Life Insurance Guide: Term vs Whole Life | Coffey Agencies",
-    metaDescription: "Understand the difference between term and whole life insurance, how much coverage you need, and how to protect your family's financial future.",
-    excerpt: "Life insurance isn't about you — it's about protecting the people who depend on you financially. This guide helps you choose the right coverage for your family's needs.",
+    title: "Life Insurance: The Conversation Nobody Wants (But Everyone Needs)",
+    metaTitle: "Life Insurance Guide: Term vs Whole Life Explained | Coffey Agencies",
+    metaDescription: "Life insurance is the most selfless financial decision you'll make. Learn how it works, term vs permanent coverage, how much you need, and common mistakes to avoid.",
+    excerpt: "Nobody likes thinking about life insurance. It forces uncomfortable questions about mortality, money, and what happens to people we love when we're gone. Here's what you need to know.",
     category: "Life Insurance",
-    readTime: "7 min read",
+    readTime: "8 min read",
     featured: false,
     content: [
       {
         type: 'paragraph',
-        content: "Detailed life insurance guide content coming soon. This will cover term vs. whole life, coverage amount calculations, beneficiary designations, and how to choose the right policy for your family situation."
+        content: "Nobody likes thinking about life insurance. It forces uncomfortable questions about mortality, money, and what happens to people we love when we're gone. So most people avoid it. They tell themselves they'll get to it later. Later becomes never."
+      },
+      {
+        type: 'paragraph',
+        content: "Here's the truth: life insurance is the most selfless financial decision you'll make. It's not about you — you won't be there to benefit. It's about protecting the people who depend on you from financial disaster during the worst moment of their lives."
+      },
+      {
+        type: 'paragraph',
+        content: "This guide explains how life insurance works, how much you need, and how to stop putting it off."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Life Insurance Actually Does"
+      },
+      {
+        type: 'paragraph',
+        content: "Life insurance pays a death benefit — a lump sum — to your beneficiaries when you die. That's it. Simple concept, profound impact."
+      },
+      {
+        type: 'paragraph',
+        content: "What That Money Does:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Replaces your income so your family maintains their lifestyle",
+          "Pays off mortgage so your spouse keeps the house",
+          "Covers debts you leave behind (cars, credit cards, student loans)",
+          "Funds children's education",
+          "Pays final expenses (funeral costs average $10,000-15,000)",
+          "Provides breathing room during grief — bills don't stop when you die"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Term vs. Permanent Life Insurance"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Term Life Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "Coverage for a specific period — 10, 20, or 30 years. If you die during the term, beneficiaries receive the death benefit. If you outlive the term, coverage ends. No cash value accumulates."
+      },
+      {
+        type: 'paragraph',
+        content: "Pros:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Affordable — most coverage per dollar",
+          "Simple — pure death benefit protection",
+          "Flexible terms match specific needs (kids' college years, mortgage payoff)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Cons:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Coverage ends at term expiration",
+          "No cash value or investment component",
+          "Renewals after term are expensive"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Best For: Families with temporary needs — mortgage protection, income replacement while kids are young, debt coverage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Permanent Life Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "Coverage for your entire life. Premiums are higher but fixed. Policy builds cash value over time that you can borrow against or withdraw."
+      },
+      {
+        type: 'paragraph',
+        content: "Types of Permanent Insurance:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Whole Life: Fixed premiums, guaranteed death benefit, guaranteed cash value growth",
+          "Universal Life: Flexible premiums, adjustable death benefit, cash value tied to interest rates",
+          "Variable Life: Cash value invested in sub-accounts (stocks, bonds), more risk and reward potential"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Pros:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Lifetime coverage",
+          "Cash value accumulation",
+          "Fixed premiums (whole life)",
+          "Estate planning benefits"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Cons:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Significantly more expensive than term",
+          "Complexity",
+          "Lower returns than dedicated investments (usually)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Best For: Estate planning, business succession, lifelong dependents (special needs children), high earners who've maxed other retirement accounts."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Much Life Insurance Do You Need?"
+      },
+      {
+        type: 'paragraph',
+        content: "Common Formulas:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Income Replacement Method"
+      },
+      {
+        type: 'paragraph',
+        content: "Death benefit = 10-12x your annual income. If you earn $75,000, that's $750,000-$900,000 in coverage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "DIME Method"
+      },
+      {
+        type: 'list',
+        content: [
+          "Debt: Total outstanding debts",
+          "Income: Years of income to replace × annual income",
+          "Mortgage: Remaining mortgage balance",
+          "Education: Expected college costs per child"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Add these together for your coverage target."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Practical Approach"
+      },
+      {
+        type: 'paragraph',
+        content: "Ask yourself: If I died tomorrow, what would my family need?"
+      },
+      {
+        type: 'list',
+        content: [
+          "How many years of income replacement?",
+          "Would they keep the house? What's the mortgage balance?",
+          "Would kids go to college? What will that cost?",
+          "What debts would survive me?",
+          "What about funeral costs?"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Run those numbers. That's your target."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "When to Buy Life Insurance"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Buy Earlier"
+      },
+      {
+        type: 'paragraph',
+        content: "Premiums are based on age and health. A healthy 30-year-old pays far less than a healthy 45-year-old for identical coverage. Buy when you're young and healthy — lock in low rates."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Key Life Events"
+      },
+      {
+        type: 'list',
+        content: [
+          "Getting married",
+          "Having children",
+          "Buying a home",
+          "Starting a business",
+          "Taking on significant debt"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Each event increases your need for coverage. Don't wait."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Affects Your Premium"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Age"
+      },
+      {
+        type: 'paragraph',
+        content: "Younger = cheaper. Every year you wait costs money."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Health"
+      },
+      {
+        type: 'paragraph',
+        content: "Medical history, current conditions, medications, family history — all factor in. Better health = lower rates."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Tobacco Use"
+      },
+      {
+        type: 'paragraph',
+        content: "Smokers pay 2-3x higher premiums than non-smokers."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Coverage Amount"
+      },
+      {
+        type: 'paragraph',
+        content: "More coverage costs more. But the per-thousand cost usually decreases with larger policies."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Term Length"
+      },
+      {
+        type: 'paragraph',
+        content: "Longer terms cost more per year. But locking in rates for 30 years beats renewing every 10."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Policy Type"
+      },
+      {
+        type: 'paragraph',
+        content: "Term is cheapest. Whole life costs more. Universal and variable land in between."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Common Life Insurance Mistakes"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Relying on Employer Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Group life through work is convenient but typically 1-2x salary — not enough. It also disappears if you change jobs."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Waiting for 'Someday'"
+      },
+      {
+        type: 'paragraph',
+        content: "Someday is expensive. Every year you delay costs money. And health can change without warning."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Insuring Only One Spouse"
+      },
+      {
+        type: 'paragraph',
+        content: "Even if one spouse doesn't earn income, their death creates costs — childcare, household help, reduced working hours for the survivor."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Choosing Cheap Over Adequate"
+      },
+      {
+        type: 'paragraph',
+        content: "Minimum coverage creates minimum protection. Understand your actual needs and meet them."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Not Reviewing Regularly"
+      },
+      {
+        type: 'paragraph',
+        content: "Life changes — income increases, new children, new debts, new responsibilities. Review coverage every few years."
       }
     ],
-    faqs: [],
-    relatedArticles: ["auto-insurance-guide", "home-insurance-guide"],
+    faqs: [
+      {
+        question: "How much does life insurance cost?",
+        answer: "Healthy 30-year-old: $20-30/month for $500,000 term coverage. Costs increase with age, health issues, and tobacco use. Permanent insurance costs significantly more — often 5-10x term premiums for comparable death benefits."
+      },
+      {
+        question: "Do I need life insurance if I'm single with no kids?",
+        answer: "Maybe. If someone depends on your income (aging parents, siblings), or you have significant debts a family member co-signed, coverage makes sense. Otherwise, it's lower priority."
+      },
+      {
+        question: "Can I get life insurance with health problems?",
+        answer: "Usually yes, but it costs more. Some conditions lead to ratings (higher premiums) or exclusions. Guaranteed issue policies (no medical questions) exist but have lower limits and higher costs."
+      },
+      {
+        question: "What happens if I outlive my term policy?",
+        answer: "Coverage ends. You can renew at higher rates, convert to permanent insurance (if conversion option exists), or let it expire if you no longer need coverage."
+      },
+      {
+        question: "Should I buy term and invest the difference?",
+        answer: "Common advice. If you're disciplined about actually investing the savings, it often beats whole life's cash value growth. But many people don't invest the difference — they spend it. Know yourself."
+      },
+      {
+        question: "How long should my term be?",
+        answer: "Until your dependents no longer depend on you. Kids finishing college, mortgage paid off, spouse's retirement funded. For most young families, 20-30 year terms make sense."
+      }
+    ],
+    relatedArticles: ["bundling-home-and-auto", "home-insurance-guide", "auto-insurance-guide"],
     internalLinks: [
-      { text: "Get Your Free Life Insurance Quote", href: "/contact" }
+      { text: "Get a Life Insurance Quote", href: "/contact" },
+      { text: "Bundle Life Insurance with Home + Auto", href: "/learn/bundling-home-and-auto" },
+      { text: "Understanding Your Coverage Needs", href: "/learn/home-insurance-guide" }
     ]
   },
   {
