@@ -5,7 +5,8 @@ const services = [
   { name: "Home Insurance", href: "/services/home-insurance" },
   { name: "Renters Insurance", href: "/services/renters-insurance" },
   { name: "Condo Insurance", href: "/services/condo-insurance" },
-  { name: "Life Insurance", href: "/services/life-insurance" }
+  { name: "Life Insurance", href: "/services/life-insurance" },
+  { name: "Motorcycle Insurance", href: "/services/motorcycle-insurance" }
 ];
 
 const company = [

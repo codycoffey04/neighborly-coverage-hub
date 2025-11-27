@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Home, Building2, Key, Heart, ArrowRight } from "lucide-react";
+import { Car, Home, Building2, Key, Heart, Bike, ArrowRight } from "lucide-react";
 
 const services = [
   {
@@ -32,6 +32,12 @@ const services = [
     title: "Life Insurance",
     description: "The conversation nobody wants to have, but everyone needs. Term and permanent options that protect your family's future without wrecking today's budget.",
     link: "/services/life-insurance"
+  },
+  {
+    icon: Bike,
+    title: "Motorcycle Insurance",
+    description: "Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.",
+    link: "/services/motorcycle-insurance"
   }
 ];
 
