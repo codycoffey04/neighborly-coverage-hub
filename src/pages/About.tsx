@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const values = [
   {
@@ -79,11 +80,28 @@ const offices = [
 ];
 
 const About = () => {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Coffey Agencies",
+    "description": "Your Local Insurance Team Since 2009",
+    "url": "https://coffeyagencies.com/about",
+    "mainEntity": {
+      "@id": "https://coffeyagencies.com/#organization"
+    }
+  };
+
   return (
     <PageLayout
       title="About Coffey Agencies"
       description="Your Local Insurance Team Since 2009"
+      breadcrumbs={[{ label: "About", href: "/about" }]}
     >
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(aboutSchema)}
+        </script>
+      </Helmet>
       {/* Our Story */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">

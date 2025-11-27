@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { MapPin, Phone, Clock, Star } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Helmet } from "react-helmet";
 
 const offices = [
   {
@@ -47,6 +48,17 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Coffey Agencies",
+    "description": "Get in touch with Coffey Agencies for insurance quotes and service",
+    "url": "https://coffeyagencies.com/contact",
+    "mainEntity": {
+      "@id": "https://coffeyagencies.com/#organization"
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -82,7 +94,13 @@ const Contact = () => {
     <PageLayout
       title="Contact Us"
       description="Get in Touch"
+      breadcrumbs={[{ label: "Contact", href: "/contact" }]}
     >
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(contactSchema)}
+        </script>
+      </Helmet>
       {/* Intro */}
       <section className="py-8 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl text-center">

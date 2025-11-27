@@ -45,6 +45,42 @@ const Index = () => {
         "image": "https://coffeyagencies.com/coffey-logo.png",
         "numberOfEmployees": "6-10",
         "slogan": "Your trusted insurance partner in Alabama & Georgia",
+        "hasCredential": [
+          {
+            "@type": "GovernmentPermit",
+            "name": "Alabama Resident Agency License",
+            "identifier": "#416438",
+            "validIn": {
+              "@type": "AdministrativeArea",
+              "name": "Alabama"
+            }
+          },
+          {
+            "@type": "GovernmentPermit",
+            "name": "Georgia Non-Resident Agency License",
+            "identifier": "#149612",
+            "validIn": {
+              "@type": "AdministrativeArea",
+              "name": "Georgia"
+            }
+          }
+        ],
+        "knowsAbout": [
+          "Auto Insurance",
+          "Home Insurance",
+          "Renters Insurance",
+          "Condo Insurance",
+          "Life Insurance",
+          "Motorcycle Insurance",
+          "Liability Coverage",
+          "Comprehensive Coverage",
+          "Collision Coverage",
+          "Uninsured Motorist Coverage",
+          "Bundle Insurance",
+          "Property Insurance",
+          "Alabama Insurance Requirements",
+          "Georgia Insurance Requirements"
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Insurance Services",
@@ -153,6 +189,7 @@ const Index = () => {
           }
         ],
         "sameAs": [
+          "https://www.facebook.com/CoffeyAgencies",
           "https://www.google.com/maps?cid=CENTRE_OFFICE_PLACE_ID",
           "https://www.google.com/maps?cid=ROME_OFFICE_PLACE_ID"
         ]
@@ -171,8 +208,8 @@ const Index = () => {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "34.15",
-          "longitude": "-85.68"
+          "latitude": "34.1519",
+          "longitude": "-85.6789"
         },
         "telephone": "(256) 927-6287",
         "openingHoursSpecification": [
@@ -210,8 +247,8 @@ const Index = () => {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "34.25",
-          "longitude": "-85.16"
+          "latitude": "34.2558",
+          "longitude": "-85.1644"
         },
         "telephone": "(706) 784-6511",
         "openingHoursSpecification": [
