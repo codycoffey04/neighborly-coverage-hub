@@ -169,21 +169,36 @@ const HomeInsurance = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://coffeyagencies.com/services/home-insurance#service",
     "serviceType": "Home Insurance",
     "provider": {
-      "@type": "InsuranceAgency",
-      "name": "Coffey Agencies",
-      "url": "https://coffeyagencies.com"
+      "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
-      {
-        "@type": "State",
-        "name": "Alabama"
-      },
-      {
-        "@type": "State",
-        "name": "Georgia"
-      }
+      { "@id": "https://coffeyagencies.com/centre-al#place" },
+      { "@id": "https://coffeyagencies.com/rome-ga#place" },
+      { "@id": "https://coffeyagencies.com/birmingham-al#place" },
+      { "@id": "https://coffeyagencies.com/montgomery-al#place" },
+      { "@id": "https://coffeyagencies.com/mobile-al#place" },
+      { "@id": "https://coffeyagencies.com/dothan-al#place" },
+      { "@id": "https://coffeyagencies.com/auburn-al#place" },
+      { "@id": "https://coffeyagencies.com/enterprise-al#place" },
+      { "@id": "https://coffeyagencies.com/foley-al#place" },
+      { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
+      { "@id": "https://coffeyagencies.com/troy-al#place" },
+      { "@id": "https://coffeyagencies.com/trussville-al#place" },
+      { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
+      { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
+      { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
+      { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
+      { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
+      { "@id": "https://coffeyagencies.com/duluth-ga#place" },
+      { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
+      { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
+      { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
+      { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
+      { "@id": "https://coffeyagencies.com/summerville-ga#place" },
+      { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
     ],
     "description": "Complete homeowners insurance protection covering dwelling, personal property, liability, and additional living expenses for Alabama and Georgia properties.",
     "offers": {
@@ -197,6 +212,7 @@ const HomeInsurance = () => {
       <Helmet>
         <title>Home Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance with local expertise in Alabama and Georgia." />
+        <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

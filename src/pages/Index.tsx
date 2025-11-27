@@ -19,24 +19,40 @@ const Index = () => {
         "@type": "InsuranceAgency",
         "@id": "https://coffeyagencies.com/#organization",
         "name": "Coffey Agencies",
-        "legalName": "Cody Coffey Agency",
+        "legalName": "Coffey Agencies Inc.",
         "description": "Alabama & Georgia's trusted insurance partner offering auto, home, condo, renters, life, and motorcycle insurance with local expertise and digital convenience.",
         "url": "https://coffeyagencies.com",
-        "telephone": "(256) 927-6287",
+        "telephone": ["(256) 927-6287", "(706) 784-6511"],
         "foundingDate": "2009",
         "founder": {
           "@type": "Person",
           "name": "Cody Coffey"
         },
         "areaServed": [
-          {
-            "@type": "State",
-            "name": "Alabama"
-          },
-          {
-            "@type": "State",
-            "name": "Georgia"
-          }
+          { "@id": "https://coffeyagencies.com/centre-al#place" },
+          { "@id": "https://coffeyagencies.com/rome-ga#place" },
+          { "@id": "https://coffeyagencies.com/birmingham-al#place" },
+          { "@id": "https://coffeyagencies.com/montgomery-al#place" },
+          { "@id": "https://coffeyagencies.com/mobile-al#place" },
+          { "@id": "https://coffeyagencies.com/dothan-al#place" },
+          { "@id": "https://coffeyagencies.com/auburn-al#place" },
+          { "@id": "https://coffeyagencies.com/enterprise-al#place" },
+          { "@id": "https://coffeyagencies.com/foley-al#place" },
+          { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
+          { "@id": "https://coffeyagencies.com/troy-al#place" },
+          { "@id": "https://coffeyagencies.com/trussville-al#place" },
+          { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
+          { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
+          { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
+          { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
+          { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
+          { "@id": "https://coffeyagencies.com/duluth-ga#place" },
+          { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
+          { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
+          { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
+          { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
+          { "@id": "https://coffeyagencies.com/summerville-ga#place" },
+          { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
         ],
         "priceRange": "$$",
         "paymentAccepted": ["Cash", "Credit Card", "Check", "Electronic Payment"],
@@ -79,62 +95,43 @@ const Index = () => {
           "Bundle Insurance",
           "Property Insurance",
           "Alabama Insurance Requirements",
-          "Georgia Insurance Requirements"
+          "Georgia Insurance Requirements",
+          "Dwelling Coverage",
+          "Personal Property Coverage",
+          "Loss of Use Coverage",
+          "Medical Payments Coverage",
+          "HO-6 Condo Insurance",
+          "Term Life Insurance",
+          "Whole Life Insurance"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Insurance Services",
           "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Auto Insurance",
-                "description": "Comprehensive auto insurance coverage for Alabama and Georgia drivers"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Home Insurance",
-                "description": "Complete homeowners insurance protection"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Renters Insurance",
-                "description": "Affordable renters insurance starting at $8/month"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Condo Insurance",
-                "description": "Specialized HO-6 condo insurance coverage"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Life Insurance",
-                "description": "Term and whole life insurance protection"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Motorcycle Insurance",
-                "description": "Coverage for cruisers, sport bikes, and touring motorcycles"
-              }
-            }
+            { "@id": "https://coffeyagencies.com/services/auto-insurance#service" },
+            { "@id": "https://coffeyagencies.com/services/home-insurance#service" },
+            { "@id": "https://coffeyagencies.com/services/renters-insurance#service" },
+            { "@id": "https://coffeyagencies.com/services/condo-insurance#service" },
+            { "@id": "https://coffeyagencies.com/services/life-insurance#service" },
+            { "@id": "https://coffeyagencies.com/services/motorcycle-insurance#service" }
           ]
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00",
+            "description": "Centre, AL Office Hours"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:30",
+            "closes": "16:30",
+            "description": "Rome, GA Office Hours"
+          }
+        ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -189,13 +186,11 @@ const Index = () => {
           }
         ],
         "sameAs": [
-          "https://www.facebook.com/CoffeyAgencies",
-          "https://www.google.com/maps?cid=CENTRE_OFFICE_PLACE_ID",
-          "https://www.google.com/maps?cid=ROME_OFFICE_PLACE_ID"
+          "https://www.facebook.com/codycoffeyagency"
         ]
       },
       {
-        "@type": "LocalBusiness",
+        "@type": "InsuranceAgency",
         "@id": "https://coffeyagencies.com/#centre-office",
         "name": "Coffey Agencies - Centre, AL (Cody Coffey Agency)",
         "address": {
@@ -234,7 +229,7 @@ const Index = () => {
         "image": "https://coffeyagencies.com/centre-office.jpg"
       },
       {
-        "@type": "LocalBusiness",
+        "@type": "InsuranceAgency",
         "@id": "https://coffeyagencies.com/#rome-office",
         "name": "Coffey Agencies - Rome, GA (Millican & Coffey Agency)",
         "address": {
@@ -296,6 +291,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
+        <link rel="canonical" href="https://coffeyagencies.com/" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>
