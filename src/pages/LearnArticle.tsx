@@ -3,17 +3,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link, useParams } from "react-router-dom";
-import { Calendar, Clock, User, ArrowRight } from "lucide-react";
+import { Clock, User, ArrowRight } from "lucide-react";
 
 // This is a template - in production, you'd fetch post data based on slug
-const BlogPost = () => {
+const LearnArticle = () => {
   const { slug } = useParams();
 
   // Template post data
   const post = {
     title: "Understanding Auto Insurance Coverage: A Complete Guide",
     category: "Auto Insurance",
-    date: "March 15, 2024",
     readTime: "5 min read",
     author: "Coffey Agencies Team",
   };
@@ -40,8 +39,8 @@ const BlogPost = () => {
     <PageLayout
       title={post.title}
       breadcrumbs={[
-        { label: "Blog", href: "/blog" },
-        { label: post.title, href: `/blog/${slug}` },
+        { label: "Learn", href: "/learn" },
+        { label: post.title, href: `/learn/${slug}` },
       ]}
     >
       <article className="py-16 px-4">
@@ -54,10 +53,6 @@ const BlogPost = () => {
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
                 {post.author}
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                {post.date}
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
@@ -209,7 +204,7 @@ const BlogPost = () => {
                     {relatedPost.title}
                   </h3>
 
-                  <Link to={`/blog/${relatedPost.slug}`}>
+                  <Link to={`/learn/${relatedPost.slug}`}>
                     <Button variant="link" className="p-0 h-auto">
                       Read Article
                       <ArrowRight className="w-4 h-4 ml-1" />
@@ -225,4 +220,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default LearnArticle;

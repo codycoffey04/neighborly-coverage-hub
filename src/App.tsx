@@ -8,8 +8,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Reviews from "./pages/Reviews";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
+import Learn from "./pages/Learn";
+import LearnArticle from "./pages/LearnArticle";
 import ServiceAreas from "./pages/ServiceAreas";
 import AutoInsurance from "./pages/services/AutoInsurance";
 import HomeInsurance from "./pages/services/HomeInsurance";
@@ -34,8 +34,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/learn" element={<Learn />} />
+          <Route path="/learn/:slug" element={<LearnArticle />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/services/auto-insurance" element={<AutoInsurance />} />
           <Route path="/services/home-insurance" element={<HomeInsurance />} />

@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
@@ -11,7 +11,6 @@ const blogPosts = [
     title: "Understanding Auto Insurance Coverage: A Complete Guide",
     excerpt: "Learn about the different types of auto insurance coverage and how to choose the right protection for your vehicle and budget.",
     category: "Auto Insurance",
-    date: "March 15, 2024",
     readTime: "5 min read",
     featured: true,
   },
@@ -20,7 +19,6 @@ const blogPosts = [
     title: "Homeowners Insurance 101: What You Need to Know",
     excerpt: "Protect your home and belongings with the right coverage. Discover what homeowners insurance covers and why it's essential.",
     category: "Home Insurance",
-    date: "March 10, 2024",
     readTime: "6 min read",
     featured: false,
   },
@@ -29,7 +27,6 @@ const blogPosts = [
     title: "Life Insurance for Young Families: Getting Started",
     excerpt: "Secure your family's financial future. Learn how to choose the right life insurance policy when you're just starting out.",
     category: "Life Insurance",
-    date: "March 5, 2024",
     readTime: "7 min read",
     featured: false,
   },
@@ -38,7 +35,6 @@ const blogPosts = [
     title: "Essential Insurance Coverage for Small Businesses",
     excerpt: "Protect your business with the right insurance. Explore coverage options every small business owner should consider.",
     category: "Business Insurance",
-    date: "February 28, 2024",
     readTime: "8 min read",
     featured: false,
   },
@@ -47,7 +43,6 @@ const blogPosts = [
     title: "10 Ways to Save Money on Insurance Without Sacrificing Coverage",
     excerpt: "Discover practical strategies to reduce your insurance premiums while maintaining adequate protection for what matters most.",
     category: "Tips & Advice",
-    date: "February 20, 2024",
     readTime: "6 min read",
     featured: false,
   },
@@ -56,7 +51,6 @@ const blogPosts = [
     title: "Filing an Insurance Claim: Step-by-Step Guide",
     excerpt: "Navigate the claims process with confidence. Learn what to do when you need to file an insurance claim and how to ensure a smooth experience.",
     category: "Tips & Advice",
-    date: "February 15, 2024",
     readTime: "5 min read",
     featured: false,
   },
@@ -64,14 +58,14 @@ const blogPosts = [
 
 const categories = ["All", "Auto Insurance", "Home Insurance", "Life Insurance", "Business Insurance", "Tips & Advice"];
 
-const Blog = () => {
+const Learn = () => {
   const featuredPost = blogPosts.find(post => post.featured);
   const regularPosts = blogPosts.filter(post => !post.featured);
 
   return (
     <PageLayout
-      title="Insurance Insights & Tips"
-      description="Expert advice, guides, and insights to help you make informed decisions about your insurance coverage."
+      title="Insurance Guides & Resources"
+      description="Expert guides and resources to help you make informed decisions about your insurance coverage."
     >
       {/* Featured Post */}
       {featuredPost && (
@@ -98,16 +92,12 @@ const Blog = () => {
 
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {featuredPost.date}
-                    </div>
-                    <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       {featuredPost.readTime}
                     </div>
                   </div>
 
-                  <Link to={`/blog/${featuredPost.slug}`}>
+                  <Link to={`/learn/${featuredPost.slug}`}>
                     <Button>
                       Read Full Article
                       <ArrowRight className="w-4 h-4 ml-2" />
@@ -162,16 +152,12 @@ const Blog = () => {
 
                   <div className="flex items-center gap-3 text-xs text-muted-foreground mb-4">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-3 h-3" />
-                      {post.date}
-                    </div>
-                    <div className="flex items-center gap-1">
                       <Clock className="w-3 h-3" />
                       {post.readTime}
                     </div>
                   </div>
 
-                  <Link to={`/blog/${post.slug}`}>
+                  <Link to={`/learn/${post.slug}`}>
                     <Button variant="link" className="p-0 h-auto">
                       Read More
                       <ArrowRight className="w-4 h-4 ml-1" />
@@ -204,4 +190,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Learn;

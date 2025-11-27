@@ -19,7 +19,7 @@ const company = [
 const resources = [
   { name: "Get a Quote", href: "/contact" },
   { name: "Customer Reviews", href: "/reviews" },
-  { name: "Blog", href: "/blog" }
+  { name: "Learn", href: "/learn" }
 ];
 
 const legal = [
