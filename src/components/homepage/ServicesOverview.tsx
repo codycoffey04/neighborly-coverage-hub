@@ -49,28 +49,31 @@ export const ServicesOverview = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Card key={index} className="card-hover border-2 group">
-                <CardHeader>
-                  <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                    <Icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
-                  <CardDescription className="text-base">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary-dark">
-                    Learn More 
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                </CardContent>
-              </Card>
-            );
-          })}
+        {services.map((service, index) => {
+          const Icon = service.icon;
+          return (
+            <Card key={index} className="card-hover border-2 group overflow-hidden">
+              {/* Gray banner area with icon + title */}
+              <div className="bg-muted p-6">
+                <div className="inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-3">
+                  <Icon className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-2xl">{service.title}</CardTitle>
+              </div>
+              
+              {/* White area with description + CTA */}
+              <CardContent className="p-6">
+                <CardDescription className="text-base mb-4">
+                  {service.description}
+                </CardDescription>
+                <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary-dark">
+                  Learn More 
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                </Button>
+              </CardContent>
+            </Card>
+          );
+        })}
         </div>
 
         {/* Bottom CTA */}
