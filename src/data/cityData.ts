@@ -1449,5 +1449,89 @@ export const cityData: Record<string, CityData> = {
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
+  },
+  "rockmart-ga": {
+    slug: "rockmart-ga",
+    city: "Rockmart",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["30153", "30104", "30125", "30132", "30140", "30178"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(770) 646-5540",
+    customHeroTitle: "Insurance in Rockmart, GA (30153)",
+    customHeroSubhead: "Local help with auto insurance in the 30153 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
+    introduction: [
+      "The 30153 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking in March through May to flooding concerns along Euharlee Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rockmart, Van Wert, or any neighborhood in the region.",
+      "With approximately 18,006 residents and a median household income around $55,704, this diverse community includes manufacturing workers at Miura America and Axillon Aerospace, educators at Polk County School District, and healthcare professionals at local medical facilities. Each household has distinct insurance needs, whether protecting homes near Silver Comet Trail waterways or securing auto coverage for commutes to Georgia Northwestern Technical College."
+    ],
+    weatherRisks: "Living in the 30153 area means preparing for severe weather year-round. Tornado season brings heightened risk from March through May, with the area positioned in Northwest Georgia's tornado corridor. Severe thunderstorms frequently produce damaging hail and winds, potentially affecting vehicles and roofs across neighborhoods from Aragon to Taylorsville. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit. Euharlee Creek and the waterways along Silver Comet Trail present flooding risks that standard policies typically exclude. Properties in Braswell, Seaborn Jones Park area, and near creek corridors should consider flood insurance as critical protection. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Rockmart residents. Winter ice storms, though less frequent, can cause significant property damage and require proper coverage consideration.",
+    neighborhoodCoverage: "Each Rockmart neighborhood presents unique insurance considerations. Established areas like Downtown Rockmart feature historic properties requiring specialized replacement cost valuations. Van Wert's rural setting may benefit from additional liability coverage for properties with acreage. Newer developments near the Silver Comet Trail corridor attract active families who need comprehensive protection for recreational equipment and higher liability limits. Bundling home and auto insurance in Rockmart saves money while creating comprehensive protection for Polk County living. Whether commuting on US-278, navigating local roads to Royal Metal Products, or parking downtown, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Northwest Georgia residents.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Miura America and Axillon Aerospace employing hundreds, many residents own newer vehicles requiring comprehensive auto coverage. Manufacturing workers at Royal Metal Products need flexible policies accommodating shift work schedules. Healthcare workers at medical facilities and educators at Georgia Northwestern Technical College may benefit from higher liability limits given professional responsibilities. ZIP codes served include 30153, 30104, 30125, 30132, 30140, and 30178 — each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a first-time homebuyer in Rockmart or updating established household coverage. The proximity to Rome and accessibility via US-278 influences both property values and insurance considerations throughout the service area.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Rockmart. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to Polk County. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in Rockmart while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7, perfectly suited for busy Rockmart families balancing work at major employers with community activities along the Silver Comet Trail.",
+    localConsiderations: "Northwest Georgia tornado corridor, Euharlee Creek and Silver Comet Trail waterway flood risks, manufacturing economy with shift work schedules, US-278 corridor traffic patterns",
+    neighborhoods: [
+      "Downtown Rockmart",
+      "Van Wert",
+      "Aragon",
+      "Taylorsville",
+      "Silver Comet Trail corridor",
+      "Braswell",
+      "Seaborn Jones Park area",
+      "Euharlee",
+      "Industrial district",
+      "US-278 corridor",
+      "North Rockmart",
+      "South Rockmart"
+    ],
+    nearbyCities: ["rome-ga", "atlanta-ga", "powder-springs-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office to get insurance in Rockmart?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30153 residents time while receiving comprehensive coverage and personal service."
+      },
+      {
+        question: "How significant is flood risk near Euharlee Creek and Silver Comet Trail waterways?",
+        answer: "Properties near Euharlee Creek and Silver Comet Trail waterways face elevated flood risks, particularly during spring storms. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for properties in these areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
+      },
+      {
+        question: "What bundle savings are available for Rockmart residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Rockmart residents can maximize savings by combining multiple policies, whether insuring a home near Downtown and vehicles for commutes to Miura America, or protecting property in Van Wert with auto coverage."
+      },
+      {
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on US-278 and around major employers often warrants higher limits for adequate protection."
+      },
+      {
+        question: "How does tornado season affect insurance premiums?",
+        answer: "Location in Northwest Georgia's tornado corridor influences homeowners insurance rates. Premiums reflect elevated risk during peak season (March-May), but proper coverage ensures protection when severe weather strikes. Wind and hail deductibles may apply separately from standard deductibles."
+      },
+      {
+        question: "Can employees at major local employers get special coverage?",
+        answer: "Employees at Miura America, Axillon Aerospace, and other major employers often qualify for group discounts and specialized coverage options tailored to their needs. We understand manufacturing schedules and structure policies providing continuous protection regardless of shift patterns."
+      },
+      {
+        question: "What factors affect auto insurance rates in Rockmart?",
+        answer: "Auto insurance rates consider your ZIP code (30153 and surrounding areas), driving record, vehicle type, and commute distance. Traffic patterns on US-278, proximity to major employers like Royal Metal Products, and local road conditions all factor into personalized rates for Rockmart drivers."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Rockmart residents can receive quotes within minutes and have active coverage the same day, protecting homes in Taylorsville, Aragon, or any other neighborhood throughout the 30153 area."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
   }
 };
