@@ -532,41 +532,82 @@ export const cityData: Record<string, CityData> = {
     city: "Enterprise",
     state: "Alabama",
     stateAbbr: "AL",
-    zipCodes: ["36330"],
+    zipCodes: ["36330", "36303", "36301", "36322", "36320", "36321"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(334) 553-9258",
+    customHeroTitle: "Insurance in Enterprise, AL (36330)",
+    customHeroSubhead: "Local help with auto insurance in the 36330 area, homeowners coverage, and military family protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Enterprise, Alabama families with comprehensive insurance for the Wiregrass region. Home to Fort Rucker (Fort Novosel), we protect military families and Enterprise residents with auto, home, renters, condo, and life insurance.",
-      "Enterprise's strong military connection and small-town values create unique insurance needs. Our team serves Coffee County residents with personalized coverage and competitive rates.",
-      "Contact our Centre, AL office at (256) 927-6287 for Enterprise insurance quotes and military-friendly service."
+      "Enterprise faces unique insurance challenges requiring specialized understanding of local risks. From severe tornado threats in the Wiregrass region to flooding concerns along the Pea River, residents need insurance protection tailored to Southeast Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home near Downtown Enterprise, Fort Novosel, or any neighborhood in Coffee County.",
+      "With approximately 37,874 residents in the Coffee County portion and a median household income around $71,589, this diverse community includes military families serving at Fort Novosel, workers at M1 Support Services and Wayne Farms, and healthcare professionals at Medical Center Enterprise. Each household has distinct insurance needs, whether protecting homes near Pea River flood zones or securing auto coverage for commutes to Fort Novosel gates."
     ],
-    localConsiderations: "Enterprise experiences spring tornado season and severe weather. Strong military presence at Fort Rucker creates deployment-related insurance needs. We understand military family requirements for flexible coverage and deployment accommodations.",
-    neighborhoods: ["Downtown Enterprise", "Fort Rucker (Fort Novosel)", "Boll Weevil Circle", "Highway 27 corridor", "Bellwood", "Coppinville", "New Brockton area", "Coffee County"],
-    nearbyCities: ["dothan-al", "troy-al", "ozark-al"],
+    weatherRisks: "Living in Enterprise means respecting severe weather risks year-round. The community understands tornado danger following the 2007 tragedy, making comprehensive wind coverage essential. Severe thunderstorm season brings heightened risk from March through May, with damaging winds and large hail threatening vehicles and roofs across neighborhoods from Level Plains to New Brockton. These weather patterns make proper homeowners insurance critical, particularly with adequate wind and hail coverage that standard policies might limit.\n\nThe Pea River and Choctawhatchee River tributaries present flooding risks that standard policies typically exclude. Properties in low-lying areas and river corridors should consider flood insurance as essential protection. Enterprise's proximity to the Gulf Coast means occasional hurricane impacts, with systems bringing heavy rainfall and wind damage. Winter ice storms, while infrequent, can cause power outages and tree damage requiring proper coverage. We analyze your specific location to determine risk levels and recommend appropriate coverage for Enterprise residents.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Downtown Enterprise properties near the Boll Weevil Monument may have historic buildings with unique replacement cost considerations. Fort Novosel adjacent communities feature military families needing specialized deployment and relocation coverage. Level Plains and New Brockton border areas benefit from rural property coverage options. Properties along the Pea River corridor require careful flood risk assessment and appropriate coverage levels.\n\nBundling home and auto insurance in Enterprise saves money while creating comprehensive protection for Wiregrass living. Whether commuting to Fort Novosel gates, navigating US-84, or traveling rural Coffee County roads, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Enterprise and Coffee County residents, including military families with unique needs.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. M1 Support Services employs over 5,000 Fort Novosel contractors, with military families needing flexible policies accommodating frequent relocations and deployments. Wayne Farms and Pilgrim's Pride poultry workers benefit from competitive rates and payment flexibility. Hwaseung Automotive employees may own newer vehicles requiring comprehensive auto coverage. Enterprise City School System staff and Medical Center Enterprise healthcare workers appreciate our digital convenience and bundle savings.\n\nZIP codes served include 36330, 36303, 36301, 36322, 36320, and 36321—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation, whether you're a Fort Novosel military family preparing for deployment, a first-time homebuyer near Downtown Enterprise, or updating established household coverage in Level Plains or rural Coffee County communities. Military discounts and deployment clauses accommodate service members' unique circumstances.",
+    localExcellence: "Operating from Centre headquarters, we've perfected digital insurance delivery to Enterprise and Coffee County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Alabama agents (License #416438) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to the Wiregrass region and Pea River valley.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 36330 area while maintaining personal service expected from local agents, despite our Centre location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7—perfect for military families at Fort Novosel, busy professionals at M1 Support Services and Wayne Farms, and families managing properties across Coffee County. Our digital platform accommodates deployment schedules and relocation timelines for service members.",
+    localConsiderations: "Fort Novosel military community with deployment and relocation needs, Pea River and Choctawhatchee River tributary flood zone considerations, tornado corridor risk following 2007 tragedy, rural property coverage for Coffee County homes, M1 Support Services contractor insurance requirements, Wayne Farms and Pilgrim's Pride poultry industry worker coverage, US-84 corridor traffic and commute patterns, Gulf Coast hurricane remnant impacts.",
+    neighborhoods: [
+      "Downtown Enterprise",
+      "Boll Weevil Monument area",
+      "Fort Novosel adjacent communities",
+      "Level Plains",
+      "New Brockton",
+      "Pea River corridor",
+      "US-84 corridor",
+      "East Enterprise",
+      "West Enterprise",
+      "Boll Weevil Circle",
+      "Coffee County rural areas",
+      "Wiregrass region communities"
+    ],
+    nearbyCities: ["dothan-al", "montgomery-al", "mobile-al"],
     faqs: [
       {
-        question: "Does Coffey Agencies serve Fort Rucker military families?",
-        answer: "Yes! We serve Enterprise and Fort Rucker (Fort Novosel) military families. We understand deployment-related insurance needs, PCS moves, and offer flexible coverage options. Call (256) 927-6287."
+        question: "Do I need to visit your office to get insurance in Enterprise?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Centre, AL office. Everything from quotes to policy changes can be handled online or by phone, saving 36330 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "What insurance do Enterprise renters near Fort Rucker need?",
-        answer: "Renters insurance protects personal property from fire, theft, and storms while providing liability coverage. Many landlords near Fort Rucker require it—typically $15-30/month, often less with auto bundling."
+        question: "Do you offer insurance for Fort Novosel military families?",
+        answer: "Yes, we specialize in coverage for military families including deployment protection, relocation clauses, and flexible policies accommodating permanent change of station moves and temporary duty assignments. Our digital platform makes it easy for service members to manage policies during deployments and between duty stations."
       },
       {
-        question: "How much does auto insurance cost in Enterprise?",
-        answer: "Enterprise auto insurance averages $850-1,300 annually depending on coverage, driving record, and vehicle. Military discounts may be available. Bundling with renters or home insurance saves 15-25%."
+        question: "What bundle savings are available for Enterprise residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Enterprise residents can maximize savings by combining multiple policies, whether insuring a home near Downtown Enterprise and vehicles for Fort Novosel commutes, or protecting properties in Level Plains with comprehensive auto coverage."
       },
       {
-        question: "Can military families suspend coverage during deployment?",
-        answer: "Coverage requirements vary by lender and situation. We'll work with you on deployment-related insurance adjustments while maintaining necessary coverage. Contact us to discuss your specific circumstances."
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy traffic on US-84 and around Fort Novosel gates often warrants higher limits for adequate protection."
       },
       {
-        question: "What home insurance do Enterprise homeowners need?",
-        answer: "Enterprise homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Tornado season makes adequate wind coverage essential."
+        question: "How does tornado risk affect homeowners insurance in Enterprise?",
+        answer: "Enterprise's location in the Wiregrass tornado corridor means elevated wind risk, particularly during spring months. Comprehensive homeowners insurance with adequate wind and hail coverage is essential following the community's 2007 experience. Properties may have separate wind deductibles, and we ensure coverage adequately protects your home and belongings."
       },
       {
-        question: "Does Enterprise require special tornado coverage?",
-        answer: "Standard home insurance covers tornado wind damage. Enterprise sits in the Wiregrass with spring tornado risk. We recommend comprehensive wind/hail coverage with affordable deductibles."
+        question: "Does Pea River flooding affect insurance rates?",
+        answer: "Properties near the Pea River face elevated flood risks during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance crucial for riverside properties and low-lying areas. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs in flood-prone areas of Coffee County."
+      },
+      {
+        question: "What factors affect auto insurance rates in Enterprise?",
+        answer: "Auto insurance rates consider your ZIP code (36330 and surrounding areas), driving record, vehicle type, and commute distance. Traffic patterns near Fort Novosel gates, US-84 corridor risks, and Boll Weevil Circle congestion all factor into personalized rates. Military service members may qualify for additional discounts."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes near Downtown Enterprise, Fort Novosel communities, or properties in Level Plains and rural Coffee County areas."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
   },
