@@ -5,78 +5,89 @@ import heroBackground from "@/assets/hero-background.jpg";
 export const Hero = () => {
   return (
     <section 
-      className="relative min-h-[85vh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[85vh] flex items-end overflow-hidden"
       style={{ 
         backgroundImage: `url(${heroBackground})`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center' 
       }}
     >
-      {/* Sophisticated gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/65 to-primary/80" />
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
+      {/* Light overlay for top portion */}
+      <div className="absolute inset-0 bg-primary/15" />
       
-      {/* Centered Floating Navy Card with Glassmorphism */}
-      <div className="relative z-10 container-custom py-16">
-        <div className="bg-primary/95 backdrop-blur-md rounded-2xl shadow-2xl max-w-3xl mx-auto p-10 md:p-16 space-y-8 border border-white/10 animate-fade-in"
-             style={{ animationDuration: '0.8s', animationDelay: '0.1s', animationFillMode: 'both' }}>
-          {/* Trust Indicators with Staggered Animation */}
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90 animate-fade-in"
-               style={{ animationDuration: '0.6s', animationDelay: '0.3s', animationFillMode: 'both' }}>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full">
-              <Shield className="h-4 w-4 text-white" />
-              <span>Licensed in AL & GA</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full">
-              <Award className="h-4 w-4 text-white" />
-              <span>16+ Years Experience</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full">
-              <MapPin className="h-4 w-4 text-white" />
-              <span>8,000+ Policies</span>
-            </div>
-          </div>
-
-          {/* Main Headline with Enhanced Typography */}
+      {/* Gradient fade: transparent top → darker bottom */}
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/50 to-transparent" />
+      
+      {/* Trust Indicators Floating at Top */}
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 z-10 flex flex-wrap justify-center gap-3 text-sm text-white animate-fade-in"
+           style={{ animationDuration: '0.6s', animationDelay: '0.2s', animationFillMode: 'both' }}>
+        <div className="flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+          <Shield className="h-4 w-4 text-white" />
+          <span className="font-medium">Licensed in AL & GA</span>
+        </div>
+        <div className="flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+          <Award className="h-4 w-4 text-white" />
+          <span className="font-medium">16+ Years Experience</span>
+        </div>
+        <div className="flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+          <MapPin className="h-4 w-4 text-white" />
+          <span className="font-medium">8,000+ Policies</span>
+        </div>
+      </div>
+      
+      {/* Content at Bottom */}
+      <div className="relative z-10 container-custom pb-32 pt-16">
+        <div className="max-w-4xl mx-auto space-y-6">
+          {/* Main Headline with Strong Text Shadow */}
           <h1 className="text-balance text-center animate-fade-in"
               style={{ 
                 animationDuration: '0.8s', 
-                animationDelay: '0.5s', 
+                animationDelay: '0.4s', 
                 animationFillMode: 'both',
-                textShadow: '0 2px 10px rgba(0,0,0,0.3)'
+                textShadow: '0 4px 20px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.4)'
               }}>
-            <span className="block text-white font-semibold tracking-tight">Alabama & Georgia's</span>
-            <span className="block text-white font-extrabold tracking-tight">Trusted Insurance Partner</span>
+            <span className="block text-white font-semibold tracking-tight text-2xl md:text-3xl">Alabama & Georgia's</span>
+            <span className="block text-white font-extrabold tracking-tight text-4xl md:text-6xl lg:text-7xl mt-2">Trusted Insurance Partner</span>
           </h1>
 
-          {/* Subheadline with Animation */}
-          <p className="text-xl md:text-2xl text-white/95 text-balance text-center leading-relaxed animate-fade-in"
-             style={{ animationDuration: '0.8s', animationDelay: '0.7s', animationFillMode: 'both' }}>
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-white text-balance text-center leading-relaxed animate-fade-in max-w-3xl mx-auto"
+             style={{ 
+               animationDuration: '0.8s', 
+               animationDelay: '0.6s', 
+               animationFillMode: 'both',
+               textShadow: '0 2px 12px rgba(0,0,0,0.5)'
+             }}>
             From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
           </p>
 
-          {/* CTA Buttons with Enhanced Hover Effects */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in"
-               style={{ animationDuration: '0.8s', animationDelay: '0.9s', animationFillMode: 'both' }}>
-            <Button size="lg" className="bg-accent text-white hover:bg-accent-light text-lg px-8 py-6 h-auto font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:ring-4 hover:ring-accent/30">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center animate-fade-in"
+               style={{ animationDuration: '0.8s', animationDelay: '0.8s', animationFillMode: 'both' }}>
+            <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90 text-lg px-10 py-7 h-auto font-bold shadow-2xl hover:shadow-[0_20px_60px_rgba(34,197,94,0.4)] hover:scale-105 transition-all duration-300">
               Get Your Free Quote
             </Button>
-            <Button asChild size="lg" className="bg-white/10 backdrop-blur-sm border-2 border-white/80 text-white hover:bg-white hover:text-primary text-lg px-8 py-6 h-auto font-semibold transition-all duration-300 hover:scale-105">
+            <Button asChild size="lg" className="bg-white/95 backdrop-blur-sm border-2 border-white text-primary hover:bg-white hover:scale-105 text-lg px-10 py-7 h-auto font-bold shadow-xl transition-all duration-300">
               <a href="tel:2569276287">Call Us Now</a>
             </Button>
           </div>
 
-          {/* Office Info Quick Links with Styling */}
-          <div className="flex flex-col sm:flex-row gap-6 pt-8 text-sm text-white/95 justify-center animate-fade-in"
-               style={{ animationDuration: '0.8s', animationDelay: '1.1s', animationFillMode: 'both' }}>
-            <div className="space-y-1 text-center sm:text-left bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10">
-              <p className="font-semibold text-white tracking-wide">Centre, AL Office</p>
-              <p className="text-white/90 font-medium">(256) 927-6287</p>
+          {/* Office Info */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 text-sm text-white justify-center animate-fade-in"
+               style={{ 
+                 animationDuration: '0.8s', 
+                 animationDelay: '1s', 
+                 animationFillMode: 'both',
+                 textShadow: '0 2px 8px rgba(0,0,0,0.5)'
+               }}>
+            <div className="text-center">
+              <p className="font-semibold text-white">Centre, AL Office</p>
+              <p className="text-white/95 font-medium text-base">(256) 927-6287</p>
             </div>
-            <div className="hidden sm:block w-px bg-white/30"></div>
-            <div className="space-y-1 text-center sm:text-left bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10">
-              <p className="font-semibold text-white tracking-wide">Rome, GA Office</p>
-              <p className="text-white/90 font-medium">(706) 784-6511</p>
+            <div className="hidden sm:block w-px bg-white/40 mx-2"></div>
+            <div className="text-center">
+              <p className="font-semibold text-white">Rome, GA Office</p>
+              <p className="text-white/95 font-medium text-base">(706) 784-6511</p>
             </div>
           </div>
         </div>
