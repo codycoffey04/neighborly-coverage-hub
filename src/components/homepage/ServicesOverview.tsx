@@ -54,9 +54,9 @@ export const ServicesOverview = () => {
           return (
             <Card key={index} className="card-hover border-2 group overflow-hidden">
               {/* Compact gray header with icon + title inline */}
-              <div className="bg-muted px-6 py-4 flex items-center gap-3">
+              <div className="bg-gray-200 px-6 py-4 flex items-center gap-3">
                 <div className="inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <Icon className="h-6 w-6 text-primary" />
+                  <Icon className="h-7 w-7 text-primary" />
                 </div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
               </div>
