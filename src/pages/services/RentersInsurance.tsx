@@ -135,7 +135,8 @@ const alabamaCities = [
   { name: "Phenix City", slug: "phenix-city-al" },
   { name: "Foley", slug: "foley-al" },
   { name: "Troy", slug: "troy-al" },
-  { name: "Enterprise", slug: "enterprise-al" }
+  { name: "Enterprise", slug: "enterprise-al" },
+  { name: "Trussville", slug: "trussville-al" }
 ];
 
 const georgiaCities = [
@@ -149,7 +150,9 @@ const georgiaCities = [
   { name: "Summerville", slug: "summerville-ga" },
   { name: "Suwanee", slug: "suwanee-ga" },
   { name: "Alpharetta", slug: "alpharetta-ga" },
-  { name: "Powder Springs", slug: "powder-springs-ga" }
+  { name: "Powder Springs", slug: "powder-springs-ga" },
+  { name: "Rockmart", slug: "rockmart-ga" },
+  { name: "Forsyth", slug: "forsyth-ga" }
 ];
 
 const faqSchema = {

@@ -33,7 +33,8 @@ const alabamaCities = [
   { name: "Phenix City", slug: "phenix-city-al" },
   { name: "Foley", slug: "foley-al" },
   { name: "Troy", slug: "troy-al" },
-  { name: "Enterprise", slug: "enterprise-al" }
+  { name: "Enterprise", slug: "enterprise-al" },
+  { name: "Trussville", slug: "trussville-al" }
 ];
 
 const georgiaCities = [
@@ -47,7 +48,9 @@ const georgiaCities = [
   { name: "Summerville", slug: "summerville-ga" },
   { name: "Suwanee", slug: "suwanee-ga" },
   { name: "Alpharetta", slug: "alpharetta-ga" },
-  { name: "Powder Springs", slug: "powder-springs-ga" }
+  { name: "Powder Springs", slug: "powder-springs-ga" },
+  { name: "Rockmart", slug: "rockmart-ga" },
+  { name: "Forsyth", slug: "forsyth-ga" }
 ];
 
 const ServiceAreas = () => {
@@ -55,12 +58,13 @@ const ServiceAreas = () => {
     <PageLayout
       title="Service Areas"
       description="Proudly serving Alabama and Georgia with two convenient office locations and comprehensive statewide coverage."
+      breadcrumbs={[{ label: "Service Areas", href: "/service-areas" }]}
     >
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           {/* Page Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Service Areas</h1>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Service Areas</h2>
             <p className="text-lg text-muted-foreground">
               Two convenient office locations and comprehensive coverage across Alabama and Georgia. 
               Wherever you are, we're here to help.
