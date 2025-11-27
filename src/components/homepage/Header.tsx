@@ -45,18 +45,18 @@ export const Header = () => {
           {/* Contact & CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <div className="flex items-center gap-4 text-sm">
-              <a href="tel:256-927-6287" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors">
+              <a href="tel:+12569276287" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors" aria-label="Call Centre, Alabama office at (256) 927-6287">
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">(256) 927-6287</span>
               </a>
               <span className="text-muted-foreground">|</span>
-              <a href="tel:706-784-6511" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors">
+              <a href="tel:+17067846511" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors" aria-label="Call Rome, Georgia office at (706) 784-6511">
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">(706) 784-6511</span>
               </a>
             </div>
             <Link to="/contact">
-              <Button className="bg-accent text-accent-foreground hover:bg-accent-light">
+              <Button className="bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
                 Get Quote
               </Button>
             </Link>
@@ -123,17 +123,17 @@ export const Header = () => {
                 Learn
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t border-border">
-                <a href="tel:256-927-6287" className="flex items-center gap-2 text-sm">
+                <a href="tel:+12569276287" className="flex items-center gap-2 text-sm" aria-label="Call Centre, Alabama office at (256) 927-6287">
                   <Phone className="h-4 w-4" />
                   <span>(256) 927-6287 - Centre</span>
                 </a>
-                <a href="tel:706-784-6511" className="flex items-center gap-2 text-sm">
+                <a href="tel:+17067846511" className="flex items-center gap-2 text-sm" aria-label="Call Rome, Georgia office at (706) 784-6511">
                   <Phone className="h-4 w-4" />
                   <span>(706) 784-6511 - Rome</span>
                 </a>
               </div>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent-light">
+                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
                   Get Quote
                 </Button>
               </Link>
