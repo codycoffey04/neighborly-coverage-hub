@@ -1,3 +1,24 @@
+/**
+ * IMPORTANT: Google Place ID Configuration Required
+ * 
+ * The following placeholders need to be replaced with real Google Place IDs
+ * before production deployment:
+ * 
+ * 1. CENTRE_GOOGLE_PLACE_ID - Found in Google Business Profile for Centre, AL office
+ *    - Office: 1913 W Main Street, Centre, AL 35960
+ *    - Replace at: lines ~14, ~241
+ * 
+ * 2. ROME_GOOGLE_PLACE_ID - Found in Google Business Profile for Rome, GA office
+ *    - Office: 1703 Turner McCall Blvd SE, Rome, GA 30161
+ *    - Replace at: lines ~21, ~253
+ * 
+ * To find Google Place IDs:
+ * 1. Go to Google Maps and search for your business
+ * 2. Click "Share" → "Embed a map"
+ * 3. The Place ID is in the URL after /place/
+ * OR use: https://developers.google.com/maps/documentation/places/web-service/place-id
+ */
+
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -122,6 +143,9 @@ const Reviews = () => {
       breadcrumbs={[{ label: "Reviews", href: "/reviews" }]}
     >
       <Helmet>
+        <title>Customer Reviews | 4.7★ Rating | Coffey Agencies</title>
+        <meta name="description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (116 reviews) and 4.6★ in Rome, GA (90 reviews). See why families trust us." />
+        <link rel="canonical" href="https://coffeyagencies.com/reviews" />
         <script type="application/ld+json">
           {JSON.stringify(reviewsSchema)}
         </script>

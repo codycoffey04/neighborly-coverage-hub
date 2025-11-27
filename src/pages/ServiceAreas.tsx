@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Building2, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet";
 
 const offices = [
   {
@@ -54,12 +55,54 @@ const georgiaCities = [
 ];
 
 const ServiceAreas = () => {
+  const serviceAreasSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Service Areas - Coffey Agencies",
+    "description": "Insurance services across Alabama and Georgia with offices in Centre, AL and Rome, GA",
+    "url": "https://coffeyagencies.com/service-areas",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 24,
+      "itemListElement": [
+        ...alabamaCities.map((city, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "item": {
+            "@type": "Place",
+            "@id": `https://coffeyagencies.com/${city.slug}#place`,
+            "name": `${city.name}, Alabama`,
+            "url": `https://coffeyagencies.com/${city.slug}`
+          }
+        })),
+        ...georgiaCities.map((city, index) => ({
+          "@type": "ListItem",
+          "position": alabamaCities.length + index + 1,
+          "item": {
+            "@type": "Place",
+            "@id": `https://coffeyagencies.com/${city.slug}#place`,
+            "name": `${city.name}, Georgia`,
+            "url": `https://coffeyagencies.com/${city.slug}`
+          }
+        }))
+      ]
+    }
+  };
+
   return (
     <PageLayout
       title="Service Areas"
       description="Proudly serving Alabama and Georgia with two convenient office locations and comprehensive statewide coverage."
       breadcrumbs={[{ label: "Service Areas", href: "/service-areas" }]}
     >
+      <Helmet>
+        <title>Service Areas | Alabama & Georgia Insurance | Coffey Agencies</title>
+        <meta name="description" content="Coffey Agencies serves 24 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
+        <link rel="canonical" href="https://coffeyagencies.com/service-areas" />
+        <script type="application/ld+json">
+          {JSON.stringify(serviceAreasSchema)}
+        </script>
+      </Helmet>
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           {/* Page Header */}
@@ -100,7 +143,11 @@ const ServiceAreas = () => {
                       </p>
                       <p className="flex items-center gap-2">
                         <Phone className="h-5 w-5 text-primary shrink-0" />
-                        <a href={`tel:${office.phone.replace(/[^0-9]/g, '')}`} className="font-semibold text-foreground text-lg hover:text-primary transition-colors">
+                        <a 
+                          href={`tel:+1${office.phone.replace(/[^0-9]/g, '')}`} 
+                          className="font-semibold text-foreground text-lg hover:text-primary transition-colors"
+                          aria-label={`Call ${office.city}, ${office.state} office at ${office.phone}`}
+                        >
                           {office.phone}
                         </a>
                       </p>
@@ -181,7 +228,7 @@ const ServiceAreas = () => {
                   Get Your Free Quote
                 </Button>
               </Link>
-              <a href="tel:(256)927-6287">
+              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                 <Button variant="outline" size="lg" className="min-w-[200px]">
                   Call Us Today
                 </Button>
