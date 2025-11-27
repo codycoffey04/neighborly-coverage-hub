@@ -97,7 +97,7 @@ export const Footer = () => {
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:2569276287" className="hover:text-primary transition-colors">
+                    <a href="tel:+12569276287" className="hover:text-primary transition-colors" aria-label="Call Centre office at (256) 927-6287">
                       (256) 927-6287
                     </a>
                   </p>
@@ -118,7 +118,7 @@ export const Footer = () => {
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:7067846511" className="hover:text-primary transition-colors">
+                    <a href="tel:+17067846511" className="hover:text-primary transition-colors" aria-label="Call Rome office at (706) 784-6511">
                       (706) 784-6511
                     </a>
                   </p>

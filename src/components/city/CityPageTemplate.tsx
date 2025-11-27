@@ -174,6 +174,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           name="description" 
           content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
         />
+        <link rel="canonical" href={`https://coffeyagencies.com/${city.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
@@ -242,19 +243,19 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                     <div className="flex items-center gap-2 text-sm">
                       <Phone className="h-4 w-4 text-primary" />
                       <span className="font-semibold">Local:</span>
-                      <a href={`tel:${city.localPhone.replace(/[^0-9]/g, '')}`} className="text-primary hover:underline">{city.localPhone}</a>
+                      <a href={`tel:+1${city.localPhone.replace(/[^0-9]/g, '')}`} className="text-primary hover:underline" aria-label={`Call local number ${city.localPhone}`}>{city.localPhone}</a>
                     </div>
                   ) : (
                     <>
                       <div className="flex items-center gap-2 text-sm">
                         <Phone className="h-4 w-4 text-primary" />
                         <span className="font-semibold">Alabama:</span>
-                        <a href="tel:256-927-6287" className="text-primary hover:underline">(256) 927-6287</a>
+                        <a href="tel:+12569276287" className="text-primary hover:underline" aria-label="Call Alabama office at (256) 927-6287">(256) 927-6287</a>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Phone className="h-4 w-4 text-primary" />
                         <span className="font-semibold">Georgia:</span>
-                        <a href="tel:706-784-6511" className="text-primary hover:underline">(706) 784-6511</a>
+                        <a href="tel:+17067846511" className="text-primary hover:underline" aria-label="Call Georgia office at (706) 784-6511">(706) 784-6511</a>
                       </div>
                     </>
                   )}
@@ -469,7 +470,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                 <CardContent className="pt-6 text-center">
                   <Phone className="h-8 w-8 text-primary mx-auto mb-3" />
                   <h3 className="font-semibold mb-2">Alabama Office</h3>
-                  <a href="tel:256-927-6287" className="text-2xl font-bold text-primary hover:underline">
+                  <a href="tel:+12569276287" className="text-2xl font-bold text-primary hover:underline" aria-label="Call Alabama office at (256) 927-6287">
                     (256) 927-6287
                   </a>
                   <p className="text-sm text-muted-foreground mt-2">Centre, AL</p>
@@ -480,7 +481,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                 <CardContent className="pt-6 text-center">
                   <Phone className="h-8 w-8 text-primary mx-auto mb-3" />
                   <h3 className="font-semibold mb-2">Georgia Office</h3>
-                  <a href="tel:706-784-6511" className="text-2xl font-bold text-primary hover:underline">
+                  <a href="tel:+17067846511" className="text-2xl font-bold text-primary hover:underline" aria-label="Call Georgia office at (706) 784-6511">
                     (706) 784-6511
                   </a>
                   <p className="text-sm text-muted-foreground mt-2">Rome, GA</p>

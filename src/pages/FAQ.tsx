@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const faqs = [
   {
@@ -135,11 +136,41 @@ const faqs = [
 ];
 
 const FAQ = () => {
+  // Flatten all FAQ questions for schema
+  const allQuestions = faqs.flatMap(section => section.questions);
+  
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": allQuestions.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
-    <PageLayout
-      title="Frequently Asked Questions"
-      description="Insurance Questions, Answered"
-    >
+    <>
+      <Helmet>
+        <title>Frequently Asked Questions | Coffey Agencies</title>
+        <meta name="description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
+        <link rel="canonical" href="https://coffeyagencies.com/faq" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+      
+      <PageLayout
+        title="Frequently Asked Questions"
+        description="Insurance Questions, Answered"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "FAQ", href: "" }
+        ]}
+      >
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           {/* Intro paragraph */}
@@ -199,7 +230,8 @@ const FAQ = () => {
           </Card>
         </div>
       </section>
-    </PageLayout>
+      </PageLayout>
+    </>
   );
 };
 
