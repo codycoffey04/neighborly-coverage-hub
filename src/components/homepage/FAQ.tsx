@@ -8,51 +8,39 @@ import {
 const faqs = [
   {
     question: "What types of insurance do you offer?",
-    answer: "We offer Auto Insurance, Home Insurance, Renters Insurance, Condo Insurance, and Life Insurance. Our team can help you find the right coverage for your specific needs across all these categories."
+    answer: "Auto, home, condo, renters, and life insurance across Alabama and Georgia. We also help you bundle policies for maximum savings — up to $600/year when you combine auto and home."
   },
   {
-    question: "Are you licensed in both Alabama and Georgia?",
-    answer: "Yes! Coffey Agencies is fully licensed and authorized to sell insurance in both Alabama and Georgia. We have physical offices in Centre, AL and Rome, GA to serve you locally."
+    question: "Do you serve both Alabama and Georgia?",
+    answer: "Yes. We're licensed in Alabama (#416438) and Georgia (#149612), with offices in Centre, AL and Rome, GA. We serve families across both states."
   },
   {
-    question: "How quickly can I get a quote?",
-    answer: "You can get a quote in as little as 15 minutes! Fill out our online form, give us a call, or stop by one of our offices. We'll gather the necessary information and present you with competitive options from top-rated carriers."
+    question: "How do I get a quote?",
+    answer: "Request a quote online anytime. A licensed agent will call you back within 24 hours to discuss your options — no robots, no runaround."
   },
   {
-    question: "Do I have to come into an office, or can I do everything online?",
-    answer: "It's up to you! We offer the convenience of online quotes and digital policy management, but we also love meeting customers in person at our Centre or Rome offices. Choose what works best for your schedule and preferences."
+    question: "Do I need to visit an office?",
+    answer: "Nope. Everything can be handled by phone or online. But if you're near Centre or Rome, you're welcome to stop by."
   },
   {
-    question: "What makes Coffey Agencies different from other insurance companies?",
-    answer: "We're a local, family-owned agency with over 16 years of experience serving Alabama and Georgia. Unlike big corporate insurers, you'll always talk to real people who know your community and genuinely care about finding you the best coverage at the best price."
+    question: "How fast can I get covered?",
+    answer: "Most policies activate the same day you apply. Need proof of insurance for a car purchase or apartment lease? We can usually get it to you within hours."
   },
   {
-    question: "Can you help me if I have a claim?",
-    answer: "Absolutely. We don't just sell policies—we're here for you when you need us most. Our team will guide you through the claims process, answer your questions, and work with your insurance carrier to ensure a smooth experience."
-  },
-  {
-    question: "How do I know if I have the right amount of coverage?",
-    answer: "That's what we're here for! During your quote, we'll review your situation, discuss your assets and risks, and recommend coverage levels that protect you without overpaying. We'll explain everything in plain English so you can make an informed decision."
-  },
-  {
-    question: "Do you work with multiple insurance carriers?",
-    answer: "Yes! As an independent agency, we partner with multiple top-rated insurance carriers. This means we can shop around on your behalf to find you the best coverage at the most competitive price—not just one option."
+    question: "How much can I save by bundling?",
+    answer: "Bundling home and auto typically saves 15-25% — that's up to $600 annually for most families. One agency, one renewal date, one point of contact."
   },
   {
     question: "What are your office hours?",
-    answer: "Our Centre, AL office is open Monday–Friday, 8:00 AM – 5:00 PM. Our Rome, GA office is open Monday–Friday, 8:30 AM – 4:30 PM. You can also reach us by phone or submit a quote request online anytime."
+    answer: "Centre, AL: Monday-Friday, 8:00 AM – 5:00 PM CST. Rome, GA: Monday-Friday, 8:30 AM – 4:30 PM EST."
   },
   {
-    question: "Can I bundle my auto and home insurance?",
-    answer: "Yes! Bundling your auto and home insurance is one of the easiest ways to save money. We'll help you find multi-policy discounts and streamline your coverage under one convenient plan."
+    question: "How do I file a claim?",
+    answer: "Call us first. We'll guide you through your carrier's claims process and advocate for you until it's resolved. You shouldn't have to fight your insurance company alone."
   },
   {
-    question: "How much does insurance cost?",
-    answer: "Insurance costs vary based on factors like your coverage needs, location, driving record, and more. The best way to get an accurate price is to request a free quote—we'll work with you to find coverage that fits your budget."
-  },
-  {
-    question: "What if I need to make changes to my policy?",
-    answer: "Just give us a call or stop by one of our offices. Our team can update your policy, add or remove coverage, adjust payment plans, and answer any questions you have. We make policy changes quick and easy."
+    question: "What makes Coffey Agencies different?",
+    answer: "We answer the phone. We call you back. We explain things in plain English. After 16 years and 8,000+ policies, we've learned that good insurance is really just good service."
   }
 ];
 
@@ -64,7 +52,7 @@ export const FAQ = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-balance">Frequently Asked Questions</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            Got questions? We've got answers. Here are some of the most common questions we hear from customers like you.
+            Got questions? We've got answers. Here are the most common things customers ask.
           </p>
         </div>
 
@@ -91,9 +79,9 @@ export const FAQ = () => {
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Still have questions?</p>
-          <button className="btn-primary px-6 py-3 rounded-lg font-semibold">
+          <a href="/contact" className="btn-primary px-6 py-3 rounded-lg font-semibold inline-block">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </section>
