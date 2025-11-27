@@ -96,6 +96,8 @@ const LearnArticle = () => {
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-11-01",
     "author": {
       "@type": "Organization",
       "name": "Coffey Agencies"
