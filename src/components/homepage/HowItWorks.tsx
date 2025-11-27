@@ -26,43 +26,43 @@ export const HowItWorks = () => {
     <section className="section-spacing bg-background">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance">Getting Covered is Easy</h2>
+        <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+          <h2 className="text-balance text-3xl md:text-4xl lg:text-5xl tracking-tight">Getting Covered is Easy</h2>
           <p className="text-lg text-muted-foreground text-balance">
             Three steps stand between you and peace of mind. Let's make it simple.
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
-            {/* Connection Lines (desktop only) */}
-            <div className="hidden md:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0" 
-                 style={{ top: '80px' }}></div>
-            
+        {/* Steps - Staggered Timeline */}
+        <div className="max-w-6xl mx-auto space-y-16">
             {steps.map((step, index) => {
               const Icon = step.icon;
+              const isCenter = index === 1;
+              const alignmentClass = isCenter ? "text-center mx-auto" : "text-left md:ml-0";
+              const layoutClass = isCenter ? "flex-col items-center" : "flex-col md:flex-row items-start";
+              
               return (
-                <div key={index} className="relative text-center space-y-4">
-                  {/* Step Number */}
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-6xl font-bold text-primary/10">
+                <div key={index} className={`relative flex ${layoutClass} gap-6 ${alignmentClass} max-w-3xl ${!isCenter && index === 0 ? '' : isCenter ? 'mx-auto' : 'md:ml-24'}`}>
+                  {/* Step Number Background */}
+                  <div className={`absolute -top-8 ${isCenter ? 'left-1/2 -translate-x-1/2' : 'left-0'} text-8xl md:text-9xl font-bold text-primary/5 leading-none`}>
                     {step.number}
                   </div>
                   
                   {/* Icon */}
-                  <div className="relative inline-flex p-5 rounded-2xl bg-primary text-primary-foreground shadow-lg mx-auto">
-                    <Icon className="h-8 w-8" />
+                  <div className="relative inline-flex p-6 rounded-2xl bg-primary text-primary-foreground shadow-xl shrink-0 z-10">
+                    <Icon className="h-10 w-10" />
                   </div>
                   
                   {/* Content */}
-                  <h3 className="text-2xl font-bold pt-2">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {step.description}
-                  </p>
+                  <div className={`space-y-3 ${isCenter ? 'text-center' : 'text-left'}`}>
+                    <h3 className="text-2xl md:text-3xl font-bold">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-lg">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               );
             })}
-          </div>
         </div>
 
         {/* Bottom CTA */}

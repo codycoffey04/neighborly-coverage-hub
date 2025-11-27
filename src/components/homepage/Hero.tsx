@@ -35,7 +35,7 @@ export const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-balance">
+          <h1 className="text-balance" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
             <span className="block text-white">Alabama & Georgia's</span>
             <span className="block text-white font-bold">Trusted Insurance Partner</span>
           </h1>
@@ -50,8 +50,8 @@ export const Hero = () => {
             <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-8 py-6 h-auto">
               Get Your Free Quote
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 h-auto">
-              Call Us Now
+            <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-6 h-auto">
+              <a href="tel:2569276287">Call Us Now</a>
             </Button>
           </div>
 

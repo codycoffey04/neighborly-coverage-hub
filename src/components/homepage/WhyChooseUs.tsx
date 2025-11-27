@@ -25,12 +25,12 @@ const pillars = [
 
 export const WhyChooseUs = () => {
   return (
-    <section className="section-spacing bg-muted/30">
+    <section className="section-spacing bg-primary">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance">Why Choose Coffey Agencies?</h2>
-          <p className="text-lg text-muted-foreground text-balance">
+          <h2 className="text-balance text-white text-3xl md:text-4xl lg:text-5xl tracking-tight">Why Choose Coffey Agencies?</h2>
+          <p className="text-lg text-white/80 text-balance">
             16 years of protecting Alabama and Georgia families. Here's why 8,000+ policyholders trust us.
           </p>
         </div>
@@ -42,13 +42,13 @@ export const WhyChooseUs = () => {
             return (
               <div key={index} className="text-center space-y-4 group">
                 {/* Icon */}
-                <div className="inline-flex p-4 rounded-2xl bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
-                  <Icon className="h-8 w-8 text-primary" />
+                <div className="inline-flex p-4 rounded-2xl bg-white/10 group-hover:bg-white/20 transition-all duration-300 group-hover:scale-110">
+                  <Icon className="h-8 w-8 text-secondary" />
                 </div>
                 
                 {/* Content */}
-                <h3 className="text-2xl font-bold">{pillar.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-2xl font-bold text-white">{pillar.title}</h3>
+                <p className="text-white/80 leading-relaxed">
                   {pillar.description}
                 </p>
               </div>
@@ -57,19 +57,19 @@ export const WhyChooseUs = () => {
         </div>
 
         {/* Stats Row */}
-        <div className="mt-16 pt-12 border-t border-border">
+        <div className="mt-16 pt-12 border-t border-white/20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-4xl font-bold text-primary mb-2">16+</p>
-              <p className="text-muted-foreground">Years Experience</p>
+              <p className="text-4xl font-bold text-secondary mb-2">16+</p>
+              <p className="text-white/80">Years Experience</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-primary mb-2">2</p>
-              <p className="text-muted-foreground">Office Locations</p>
+              <p className="text-4xl font-bold text-secondary mb-2">2</p>
+              <p className="text-white/80">Office Locations</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-primary mb-2">8,000+</p>
-              <p className="text-muted-foreground">Policies Protected</p>
+              <p className="text-4xl font-bold text-secondary mb-2">8,000+</p>
+              <p className="text-white/80">Policies Protected</p>
             </div>
           </div>
         </div>
