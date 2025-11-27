@@ -1066,6 +1066,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["30095", "30096"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(470) 876-7713",
     customHeroTitle: "Insurance in Duluth, GA (30095 & 30096)",
     customHeroSubhead: "Local help with auto insurance in the 30095 and 30096 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
