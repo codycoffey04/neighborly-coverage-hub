@@ -1,115 +1,87 @@
 import { PageLayout } from "@/components/shared/PageLayout";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Clock, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { learnArticles } from "@/data/learnArticles";
+import { Helmet } from "react-helmet";
 
-const categories = ["All", "Auto Insurance", "Home Insurance", "Life Insurance", "State Requirements", "Tips & Advice"];
+// Custom hub excerpts for Learn hub page
+const hubExcerpts: Record<string, string> = {
+  "auto-insurance-guide": "Everything you need to know about car insurance in Alabama and Georgia — coverage types, state requirements, and how to save.",
+  "home-insurance-guide": "Protecting your largest investment. Coverage options, regional risks, and what standard policies don't cover.",
+  "renters-insurance-guide": "Your landlord's insurance doesn't cover your stuff. Here's why renters insurance is worth every penny.",
+  "condo-insurance-guide": "What your HOA's master policy doesn't cover — and why it matters for your finances.",
+  "life-insurance-guide": "The conversation nobody wants but everyone needs. Term vs. permanent, how much you need, and when to buy.",
+  "alabama-insurance-requirements": "State minimums, penalties for non-compliance, and what coverage you actually need.",
+  "georgia-insurance-requirements": "State mandates, GEICS verification system, and recommended coverage levels.",
+  "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense."
+};
+
+const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide"];
+const topicGuides = ["alabama-insurance-requirements", "georgia-insurance-requirements", "bundling-home-and-auto"];
 
 const Learn = () => {
-  const featuredArticle = learnArticles.find(article => article.featured);
-  const regularArticles = learnArticles.filter(article => !article.featured);
+  const coverageArticles = learnArticles.filter(article => coverageGuides.includes(article.slug));
+  const topicArticles = learnArticles.filter(article => topicGuides.includes(article.slug));
+
+  // CollectionPage schema
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Insurance Learning Center",
+    "description": "Expert insurance guides covering auto, home, renters, condo, and life insurance in Alabama and Georgia. Plain English answers to your coverage questions.",
+    "url": "https://coffeyagencies.com/learn",
+    "hasPart": learnArticles.map(article => ({
+      "@type": "Article",
+      "url": `https://coffeyagencies.com/learn/${article.slug}`,
+      "headline": article.title
+    }))
+  };
 
   return (
     <PageLayout
-      title="Insurance Guides & Resources"
-      description="Expert guides and resources to help you make informed decisions about your insurance coverage."
+      title="Insurance Learning Center"
+      description="Insurance doesn't have to be confusing. We've built this resource library to answer your questions in plain English — no jargon, no sales pitch, just honest information to help you make smart coverage decisions."
+      breadcrumbs={[{ label: "Learn", href: "/learn" }]}
     >
-      {/* Featured Article */}
-      {featuredArticle && (
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-foreground mb-2">Featured Article</h2>
-            </div>
-            
-            <Card className="border-2 border-primary/20 overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 aspect-video md:aspect-auto" />
-                
-                <CardContent className="p-8 flex flex-col justify-center">
-                  <Badge className="w-fit mb-4">{featuredArticle.category}</Badge>
-                  
-                  <h3 className="text-2xl font-bold text-foreground mb-3">
-                    {featuredArticle.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground mb-6">
-                    {featuredArticle.excerpt}
-                  </p>
+      <Helmet>
+        <title>Insurance Learning Center | Coffey Agencies</title>
+        <meta name="description" content="Expert insurance guides covering auto, home, renters, condo, and life insurance in Alabama and Georgia. Plain English answers to your coverage questions." />
+        <script type="application/ld+json">
+          {JSON.stringify(collectionSchema)}
+        </script>
+      </Helmet>
 
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      {featuredArticle.readTime}
-                    </div>
-                  </div>
-
-                  <Link to={`/learn/${featuredArticle.slug}`}>
-                    <Button>
-                      Read Full Article
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </div>
-            </Card>
-          </div>
-        </section>
-      )}
-
-      {/* Category Filter (placeholder) */}
-      <section className="py-8 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={category === "All" ? "default" : "outline"}
-                size="sm"
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
+      {/* Intro Section */}
+      <section className="py-12 px-4 bg-background">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-lg text-muted-foreground">
+            Whether you're shopping for your first policy or reviewing coverage you've had for years, start here.
+          </p>
         </div>
       </section>
 
-      {/* Articles Grid */}
+      {/* Guides by Coverage Type */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-foreground mb-8">Guides by Coverage Type</h2>
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {regularArticles.map((article) => (
+            {coverageArticles.map((article) => (
               <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
-                <CardHeader className="p-0">
-                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 aspect-video" />
-                </CardHeader>
-                
                 <CardContent className="p-6">
-                  <Badge variant="secondary" className="mb-3">
-                    {article.category}
-                  </Badge>
-                  
-                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                     {article.title}
                   </h3>
                   
-                  <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                    {article.excerpt}
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {hubExcerpts[article.slug]}
                   </p>
 
-                  <div className="flex items-center gap-3 text-xs text-muted-foreground mb-4">
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {article.readTime}
-                    </div>
-                  </div>
-
                   <Link to={`/learn/${article.slug}`}>
-                    <Button variant="link" className="p-0 h-auto">
-                      Read More
+                    <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
+                      Read Guide
                       <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>
                   </Link>
@@ -117,6 +89,52 @@ const Learn = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Guides by Topic */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-foreground mb-8">Guides by Topic</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {topicArticles.map((article) => (
+              <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                    {article.title}
+                  </h3>
+                  
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {hubExcerpts[article.slug]}
+                  </p>
+
+                  <Link to={`/learn/${article.slug}`}>
+                    <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
+                      Read Guide
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+      <section className="py-20 px-4 bg-primary text-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold mb-4">Still Have Questions?</h2>
+          <p className="text-lg text-white/90 mb-8">
+            Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
+          </p>
+          <Link to="/contact">
+            <Button size="lg" variant="secondary" className="bg-secondary text-white hover:bg-secondary/90">
+              Get Your Free Quote
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </Link>
         </div>
       </section>
     </PageLayout>
