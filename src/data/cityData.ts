@@ -935,43 +935,84 @@ export const cityData: Record<string, CityData> = {
     city: "Cartersville",
     state: "Georgia",
     stateAbbr: "GA",
-    zipCodes: ["30120"],
+    zipCodes: ["30120", "30121", "30184", "30103", "30153", "30145"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    customHeroTitle: "Auto Insurance Quote Cartersville, GA - Compare Rates & Save Up to $600",
+    customHeroSubhead: "Local help with auto insurance in the 30120 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
-      "Coffey Agencies serves Cartersville, Georgia families with comprehensive insurance for Bartow County. From downtown to the I-75 corridor, we protect Cartersville residents with auto, home, renters, condo, and life insurance.",
-      "Cartersville's blend of history, industry, and growing residential areas creates diverse insurance needs. Our team provides personalized coverage at competitive rates for Bartow County families.",
-      "Contact our Rome, GA office at (706) 784-6511 for Cartersville insurance quotes and local service."
+      "Cartersville faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May to flooding concerns along the Etowah River and Lake Allatoona, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Hamilton Crossing, Red Top Mountain area, or any neighborhood in Bartow County.",
+      "With approximately 23,617 residents and a median household income around $78,640, this diverse community includes manufacturing workers at Anheuser-Busch, Qcells, and the new Hyundai/SK On EV Battery facility, healthcare professionals at Harbin Clinic, and educators at Bartow County School District. Each household has distinct insurance needs, whether protecting homes near Etowah River flood zones or securing auto coverage for I-75 commutes to major employers."
     ],
-    localConsiderations: "Cartersville experiences spring tornado season and severe thunderstorms. I-75 corridor creates high-traffic commuting patterns requiring adequate auto coverage. Growing community balances small-town values with suburban expansion.",
-    neighborhoods: ["Downtown Cartersville", "North Bartow", "Emerson", "White", "Taylorsville", "Euharlee", "I-75 corridor", "Hamilton Crossing area", "Old Alabama Road"],
-    nearbyCities: ["rome-ga", "calhoun-ga", "marietta-ga"],
+    weatherRisks: "Living in Cartersville means preparing for severe weather year-round. Tornado season brings heightened risk from March through May, with damaging thunderstorms capable of producing large hail and destructive winds. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit separately.\n\nThe Etowah River and Lake Allatoona present flooding risks that standard policies typically exclude. Properties in the Allatoona Lake community, Douthit Ferry corridor, and river-adjacent areas should consider flood insurance as critical protection. Flash flooding during heavy rainfall events can damage homes quickly. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Cartersville residents. Winter ice storms, though less frequent, can cause significant property damage and create hazardous driving conditions requiring comprehensive auto protection.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Established areas like Downtown Cartersville and Mission Road feature older construction that may require specialized replacement cost assessments. Newer developments in Hamilton Crossing have modern building standards but may face different liability exposures. Properties near Emerson and Euharlee in unincorporated Bartow County might benefit from increased coverage limits due to longer emergency response times.\n\nBundling home and auto insurance saves money while creating comprehensive protection for Northwest Georgia living. Whether commuting on I-75, navigating highway traffic to the industrial corridor, or traveling to Atlanta for work, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Cartersville households.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With major employers like Anheuser-Busch, Toyo Tire, Gerdau steel, and the massive new Hyundai/SK On EV Battery facility employing thousands, many residents own newer vehicles requiring comprehensive auto coverage. Workers at Qcells solar manufacturing and Hanwha Advanced Materials benefit from understanding how their commute patterns affect rates. Healthcare professionals at Harbin Clinic may need higher liability limits given professional responsibilities.\n\nZIP codes served include 30120, 30121, 30184, 30103, 30153, and 30145—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Cartersville, whether you're a first-time homebuyer in Hamilton Crossing or updating established household coverage near Red Top Mountain.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Cartersville and throughout Bartow County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks.\n\nTechnology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30120 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7, perfect for busy manufacturing workers and professionals across Cartersville.",
+    localConsiderations: "Etowah River and Lake Allatoona flooding risks requiring separate flood insurance for waterfront properties. Tornado season from March through May with damaging hail and destructive winds requiring wind/hail coverage. Major manufacturing employers like Hyundai/SK On EV Battery, Anheuser-Busch, and Qcells affecting commute patterns. I-75 corridor traffic increasing accident exposure for daily commuters to Atlanta metro area. Winter ice storms causing property damage and hazardous driving conditions. Older construction in downtown Cartersville requiring specialized replacement cost assessments.",
+    neighborhoods: [
+      "Downtown Cartersville",
+      "Hamilton Crossing",
+      "Red Top Mountain area",
+      "Mission Road",
+      "Allatoona Lake community",
+      "Douthit Ferry corridor",
+      "Emerson",
+      "Euharlee",
+      "I-75 corridor",
+      "North Bartow",
+      "Taylorsville",
+      "White"
+    ],
     faqs: [
       {
-        question: "What are typical insurance costs in Cartersville?",
-        answer: "Cartersville auto insurance averages $950-1,500 annually. Home insurance varies by property value and roof age, typically $1,000-1,900 annually. Bundling saves 15-25%."
+        question: "Do I need to visit your office to get insurance in Cartersville?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30120 residents time while receiving comprehensive coverage and personal service."
       },
       {
-        question: "Do Cartersville renters need insurance?",
-        answer: "Yes! Many Cartersville landlords require renters insurance. It protects belongings from fire, theft, and storms while providing liability coverage—typically $16-26/month, less when bundled."
+        question: "How does Lake Allatoona affect flood insurance needs?",
+        answer: "Properties near Lake Allatoona and the Etowah River face elevated flood risks, especially during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for waterfront properties. We analyze FEMA flood maps for your specific address to determine risk levels and coverage needs."
       },
       {
-        question: "What home insurance do Cartersville homeowners need?",
-        answer: "Cartersville homes need dwelling coverage (rebuild cost), wind/hail protection, liability coverage, and appropriate deductibles. Tornado season makes comprehensive wind coverage important."
+        question: "What bundle savings are available for Cartersville residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Residents can maximize savings by combining multiple policies, whether insuring a home in Hamilton Crossing and vehicles for Hyundai battery facility commutes, or protecting a property near downtown with auto coverage."
       },
       {
-        question: "Can Cartersville residents bundle insurance policies?",
-        answer: "Yes! Bundling auto and home insurance typically saves 15-25% on both policies. We also offer safe driver, autopay, and protective device discounts."
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, busy I-75 traffic and commutes to major industrial employers often warrant higher limits for adequate protection."
       },
       {
-        question: "Does Coffey Agencies serve all Bartow County?",
-        answer: "Yes, we serve Cartersville, Emerson, White, Taylorsville, Euharlee, and all Bartow County communities. Call (706) 784-6511 for personalized Bartow County quotes."
+        question: "How does tornado season affect insurance premiums in Cartersville?",
+        answer: "Northwest Georgia experiences tornado threats primarily from March through May. Homeowners insurance rates reflect this elevated risk, with wind and hail deductibles often applying separately from standard deductibles. Proper coverage ensures protection when severe weather strikes the area."
       },
       {
-        question: "What factors affect Cartersville insurance rates?",
-        answer: "Driving record, age, property value, roof age, claims history, and coverage selections impact rates. I-75 corridor traffic patterns may affect auto rates. We'll find your best pricing."
+        question: "What coverage do I need for commuting to the Hyundai battery facility?",
+        answer: "Employees commuting to major employers like the Hyundai/SK On EV Battery facility should consider comprehensive and collision coverage beyond state minimums, along with adequate liability limits for highway driving on I-75. High-traffic industrial corridors increase accident exposure."
+      },
+      {
+        question: "What factors affect auto insurance rates in Cartersville?",
+        answer: "Auto insurance rates consider your ZIP code, driving record, vehicle type, and commute distance. Traffic patterns on I-75, proximity to major employers like Anheuser-Busch and Toyo Tire, and local claim history all influence personalized rates for Bartow County drivers."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Cartersville residents can receive quotes within minutes and have active coverage the same day, protecting homes in the Allatoona Lake community, Mission Road area, or any other neighborhood."
       }
-    ]
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ],
+    nearbyCities: ["rome-ga", "rockmart-ga", "atlanta-ga"]
   },
 
   "calhoun-ga": {
