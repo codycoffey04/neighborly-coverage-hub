@@ -21,15 +21,15 @@ export const Hero = () => {
       {/* Trust Indicators Floating at Top */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 z-10 flex flex-wrap justify-center gap-3 text-sm text-white animate-fade-in"
            style={{ animationDuration: '0.6s', animationDelay: '0.2s', animationFillMode: 'both' }}>
-        <div className="flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+        <div className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full shadow-lg">
           <Shield className="h-4 w-4 text-white" />
           <span className="font-medium">Licensed in AL & GA</span>
         </div>
-        <div className="flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+        <div className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full shadow-lg">
           <Award className="h-4 w-4 text-white" />
           <span className="font-medium">16+ Years Experience</span>
         </div>
-        <div className="flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+        <div className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full shadow-lg">
           <MapPin className="h-4 w-4 text-white" />
           <span className="font-medium">8,000+ Policies</span>
         </div>
@@ -64,7 +64,7 @@ export const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center animate-fade-in"
                style={{ animationDuration: '0.8s', animationDelay: '0.8s', animationFillMode: 'both' }}>
-            <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90 text-lg px-10 py-7 h-auto font-bold shadow-2xl hover:shadow-[0_20px_60px_rgba(34,197,94,0.4)] hover:scale-105 transition-all duration-300">
+            <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-2xl hover:scale-105 transition-all duration-300">
               Get Your Free Quote
             </Button>
             <Button asChild size="lg" className="bg-white/95 backdrop-blur-sm border-2 border-white text-primary hover:bg-white hover:scale-105 text-lg px-10 py-7 h-auto font-bold shadow-xl transition-all duration-300">
