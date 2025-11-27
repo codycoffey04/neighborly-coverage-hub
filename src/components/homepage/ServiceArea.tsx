@@ -1,5 +1,4 @@
 import { MapPin, ArrowRight } from "lucide-react";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
 const featuredCities = [
@@ -48,50 +47,60 @@ export const ServiceArea = () => {
         </div>
 
         {/* Featured Cities Grid */}
-        <div className="mb-12">
-          {/* Top Row - 3 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+        <div className="mb-16">
+          {/* Top Row - 3 Locations */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 mb-8 lg:mb-12">
             {featuredCities.slice(0, 3).map((city, index) => (
-              <Link key={index} to={city.link}>
-                <Card className="card-hover border-2 group h-full">
-                  <CardHeader>
-                    <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <MapPin className="h-6 w-6 text-primary" />
-                    </div>
-                    <CardTitle className="text-2xl">{city.city}, {city.state}</CardTitle>
-                    <CardDescription className="text-base">{city.descriptor}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <span className="inline-flex items-center text-primary font-medium group/btn">
-                      Get a Quote
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </CardContent>
-                </Card>
+              <Link key={index} to={city.link} className="group text-center space-y-3">
+                {/* Small solid navy pin icon */}
+                <div className="flex justify-center">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </div>
+                
+                {/* City name - bold, navy */}
+                <h3 className="text-xl font-bold text-primary">
+                  {city.city}, {city.state}
+                </h3>
+                
+                {/* Descriptor - lighter, smaller */}
+                <p className="text-muted-foreground text-sm">
+                  {city.descriptor}
+                </p>
+                
+                {/* CTA link with arrow animation */}
+                <span className="inline-flex items-center text-sm font-medium text-primary group-hover:underline">
+                  Get a Quote
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
               </Link>
             ))}
           </div>
 
-          {/* Bottom Row - 2 Cards Centered */}
+          {/* Bottom Row - 2 Locations Centered */}
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 max-w-xl">
               {featuredCities.slice(3, 5).map((city, index) => (
-                <Link key={index + 3} to={city.link}>
-                  <Card className="card-hover border-2 group h-full">
-                    <CardHeader>
-                      <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <MapPin className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-2xl">{city.city}, {city.state}</CardTitle>
-                      <CardDescription className="text-base">{city.descriptor}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <span className="inline-flex items-center text-primary font-medium group/btn">
-                        Get a Quote
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </span>
-                    </CardContent>
-                  </Card>
+                <Link key={index + 3} to={city.link} className="group text-center space-y-3">
+                  {/* Small solid navy pin icon */}
+                  <div className="flex justify-center">
+                    <MapPin className="h-5 w-5 text-primary" />
+                  </div>
+                  
+                  {/* City name - bold, navy */}
+                  <h3 className="text-xl font-bold text-primary">
+                    {city.city}, {city.state}
+                  </h3>
+                  
+                  {/* Descriptor - lighter, smaller */}
+                  <p className="text-muted-foreground text-sm">
+                    {city.descriptor}
+                  </p>
+                  
+                  {/* CTA link with arrow animation */}
+                  <span className="inline-flex items-center text-sm font-medium text-primary group-hover:underline">
+                    Get a Quote
+                    <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
                 </Link>
               ))}
             </div>
@@ -99,19 +108,28 @@ export const ServiceArea = () => {
         </div>
 
         {/* Footer Section */}
-        <div className="text-center space-y-6 mt-12">
-          <div className="space-y-3">
-            <p className="text-muted-foreground font-medium">
-              Statewide coverage. Hometown service.
-            </p>
-            <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
-              View All Locations
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
+        <div className="text-center space-y-4 mt-16">
+          {/* Tagline */}
+          <p className="font-semibold text-primary">
+            Statewide coverage. Hometown service.
+          </p>
           
-          <p className="text-muted-foreground">
-            Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> to see if we can help.
+          {/* View All link */}
+          <Link 
+            to="/service-areas" 
+            className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+          >
+            View All Locations
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+          
+          {/* Contact fallback */}
+          <p className="text-muted-foreground text-sm">
+            Don't see your city?{" "}
+            <Link to="/contact" className="text-primary font-medium hover:underline">
+              Contact us
+            </Link>{" "}
+            to see if we can help.
           </p>
         </div>
       </div>
