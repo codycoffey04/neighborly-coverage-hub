@@ -2,7 +2,7 @@ import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Car, Home, Key, Building2, Heart, FileText, Layers, LucideIcon } from "lucide-react";
 import { learnArticles } from "@/data/learnArticles";
 import { Helmet } from "react-helmet";
 
@@ -16,6 +16,18 @@ const hubExcerpts: Record<string, string> = {
   "alabama-insurance-requirements": "State minimums, penalties for non-compliance, and what coverage you actually need.",
   "georgia-insurance-requirements": "State mandates, GEICS verification system, and recommended coverage levels.",
   "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense."
+};
+
+// Article icons mapping
+const articleIcons: Record<string, LucideIcon> = {
+  "auto-insurance-guide": Car,
+  "home-insurance-guide": Home,
+  "renters-insurance-guide": Key,
+  "condo-insurance-guide": Building2,
+  "life-insurance-guide": Heart,
+  "alabama-insurance-requirements": FileText,
+  "georgia-insurance-requirements": FileText,
+  "bundling-home-and-auto": Layers
 };
 
 const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide"];
@@ -68,26 +80,35 @@ const Learn = () => {
           <h2 className="text-3xl font-bold text-foreground mb-8">Guides by Coverage Type</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coverageArticles.map((article) => (
-              <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {article.title}
-                  </h3>
-                  
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {hubExcerpts[article.slug]}
-                  </p>
+            {coverageArticles.map((article) => {
+              const IconComponent = articleIcons[article.slug];
+              return (
+                <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
+                  <CardContent className="p-6">
+                    {IconComponent && (
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <IconComponent className="w-6 h-6 text-primary" />
+                      </div>
+                    )}
+                    
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h3>
+                    
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {hubExcerpts[article.slug]}
+                    </p>
 
-                  <Link to={`/learn/${article.slug}`}>
-                    <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
-                      Read Guide
-                      <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
+                    <Link to={`/learn/${article.slug}`}>
+                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
+                        Read Guide
+                        <ArrowRight className="w-4 h-4 ml-1" />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -98,26 +119,35 @@ const Learn = () => {
           <h2 className="text-3xl font-bold text-foreground mb-8">Guides by Topic</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {topicArticles.map((article) => (
-              <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {article.title}
-                  </h3>
-                  
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {hubExcerpts[article.slug]}
-                  </p>
+            {topicArticles.map((article) => {
+              const IconComponent = articleIcons[article.slug];
+              return (
+                <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
+                  <CardContent className="p-6">
+                    {IconComponent && (
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <IconComponent className="w-6 h-6 text-primary" />
+                      </div>
+                    )}
+                    
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h3>
+                    
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {hubExcerpts[article.slug]}
+                    </p>
 
-                  <Link to={`/learn/${article.slug}`}>
-                    <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
-                      Read Guide
-                      <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
+                    <Link to={`/learn/${article.slug}`}>
+                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80">
+                        Read Guide
+                        <ArrowRight className="w-4 h-4 ml-1" />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
