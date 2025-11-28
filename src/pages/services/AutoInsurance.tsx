@@ -468,7 +468,8 @@ const AutoInsurance = () => {
             
             <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
               <a 
-                href="tel:2569276287"
+                href="tel:+12569276287"
+                aria-label="Call Centre, Alabama office at (256) 927-6287"
                 className="flex items-center justify-center gap-2 bg-white text-primary px-6 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors"
               >
                 <Phone className="h-5 w-5" />
@@ -479,7 +480,8 @@ const AutoInsurance = () => {
               </a>
               
               <a 
-                href="tel:7067846511"
+                href="tel:+17067846511"
+                aria-label="Call Rome, Georgia office at (706) 784-6511"
                 className="flex items-center justify-center gap-2 bg-white text-primary px-6 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors"
               >
                 <Phone className="h-5 w-5" />

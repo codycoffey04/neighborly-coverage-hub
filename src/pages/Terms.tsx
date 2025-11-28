@@ -18,6 +18,7 @@ const Terms = () => {
       breadcrumbs={[{ label: "Terms of Service", href: "/terms" }]}
     >
       <Helmet>
+        <link rel="canonical" href="https://coffeyagencies.com/terms" />
         <script type="application/ld+json">
           {JSON.stringify(termsSchema)}
         </script>

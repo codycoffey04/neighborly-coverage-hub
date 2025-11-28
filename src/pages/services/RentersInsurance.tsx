@@ -277,12 +277,12 @@ const RentersInsurance = () => {
                   <div className="flex items-center gap-2 text-sm">
                     <Phone className="h-4 w-4 text-primary" />
                     <span className="font-semibold">Alabama:</span>
-                    <a href="tel:256-927-6287" className="text-primary hover:underline">(256) 927-6287</a>
+                    <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-primary hover:underline">(256) 927-6287</a>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Phone className="h-4 w-4 text-primary" />
                     <span className="font-semibold">Georgia:</span>
-                    <a href="tel:706-784-6511" className="text-primary hover:underline">(706) 784-6511</a>
+                    <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-primary hover:underline">(706) 784-6511</a>
                   </div>
                 </div>
               </div>
@@ -646,7 +646,8 @@ const RentersInsurance = () => {
                     <Phone className="h-8 w-8 text-primary mx-auto" />
                     <p className="font-semibold">Alabama Office</p>
                     <a 
-                      href="tel:256-927-6287" 
+                      href="tel:+12569276287"
+                      aria-label="Call Centre, Alabama office at (256) 927-6287" 
                       className="text-2xl font-bold text-primary hover:underline block"
                     >
                       (256) 927-6287
@@ -659,7 +660,8 @@ const RentersInsurance = () => {
                     <Phone className="h-8 w-8 text-primary mx-auto" />
                     <p className="font-semibold">Georgia Office</p>
                     <a 
-                      href="tel:706-784-6511" 
+                      href="tel:+17067846511"
+                      aria-label="Call Rome, Georgia office at (706) 784-6511" 
                       className="text-2xl font-bold text-primary hover:underline block"
                     >
                       (706) 784-6511
