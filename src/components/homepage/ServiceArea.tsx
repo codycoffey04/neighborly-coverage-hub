@@ -3,36 +3,11 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 
 const featuredCities = [
-  {
-    city: "Centre",
-    state: "AL",
-    descriptor: "Alabama Headquarters",
-    link: "/centre-al"
-  },
-  {
-    city: "Rome",
-    state: "GA",
-    descriptor: "Georgia Office",
-    link: "/rome-ga"
-  },
-  {
-    city: "Cedartown",
-    state: "GA",
-    descriptor: "Serving Northwest Georgia",
-    link: "/cedartown-ga"
-  },
-  {
-    city: "Rockmart",
-    state: "GA",
-    descriptor: "Serving Polk County",
-    link: "/rockmart-ga"
-  },
-  {
-    city: "Cartersville",
-    state: "GA",
-    descriptor: "Serving Bartow County",
-    link: "/cartersville-ga"
-  }
+  { city: "Centre", state: "AL", link: "/centre-al" },
+  { city: "Rome", state: "GA", link: "/rome-ga" },
+  { city: "Cedartown", state: "GA", link: "/cedartown-ga" },
+  { city: "Rockmart", state: "GA", link: "/rockmart-ga" },
+  { city: "Cartersville", state: "GA", link: "/cartersville-ga" }
 ];
 
 export const ServiceArea = () => {
@@ -60,11 +35,8 @@ export const ServiceArea = () => {
                   </h3>
                 </div>
                 
-                {/* White body with descriptor + CTA */}
-                <CardContent className="p-4 text-center min-h-[80px] flex flex-col justify-between">
-                  <p className="text-muted-foreground text-sm mb-3">
-                    {city.descriptor}
-                  </p>
+                {/* White body with CTA */}
+                <CardContent className="p-4 flex items-center justify-center">
                   <span className="inline-flex items-center text-sm font-medium text-secondary group-hover:underline">
                     Get a Quote
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
