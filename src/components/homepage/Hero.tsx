@@ -68,7 +68,7 @@ export const Hero = () => {
               <a href="/contact">Get Your Free Quote</a>
             </Button>
             <Button asChild size="lg" className="bg-white/95 backdrop-blur-sm border-2 border-white text-primary hover:bg-white hover:scale-105 text-lg px-10 py-7 h-auto font-bold shadow-xl transition-all duration-300">
-              <a href="tel:2569276287">Call Us Now</a>
+              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">Call Us Now</a>
             </Button>
           </div>
 
@@ -82,12 +82,16 @@ export const Hero = () => {
                }}>
             <div className="text-center">
               <p className="font-semibold text-white">Centre, AL Office</p>
-              <p className="text-white/95 font-medium text-base">(256) 927-6287</p>
+              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-white/95 font-medium text-base hover:text-white transition-colors">
+                (256) 927-6287
+              </a>
             </div>
             <div className="hidden sm:block w-px bg-white/40 mx-2"></div>
             <div className="text-center">
               <p className="font-semibold text-white">Rome, GA Office</p>
-              <p className="text-white/95 font-medium text-base">(706) 784-6511</p>
+              <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-white/95 font-medium text-base hover:text-white transition-colors">
+                (706) 784-6511
+              </a>
             </div>
           </div>
         </div>
