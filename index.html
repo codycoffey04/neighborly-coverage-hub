@@ -21,5 +21,25 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Tidio Chatbot - Desktop Only -->
+    <script>
+      // Set default page context for non-city pages
+      window.coffeyPageContext = {
+        pageType: 'general',
+        city: null,
+        state: null,
+        stateAbbr: null,
+        nearestOffice: null
+      };
+      
+      // Only load Tidio on desktop (768px+)
+      if (window.innerWidth >= 768) {
+        var tidioScript = document.createElement('script');
+        tidioScript.src = '//code.tidio.co/PLACEHOLDER_KEY.js';
+        tidioScript.async = true;
+        document.body.appendChild(tidioScript);
+      }
+    </script>
   </body>
 </html>
