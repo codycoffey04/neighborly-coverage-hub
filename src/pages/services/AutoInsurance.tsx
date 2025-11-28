@@ -268,21 +268,21 @@ const AutoInsurance = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button size="lg" className="text-lg px-8 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
-                <div className="flex flex-col sm:flex-row gap-2 items-center">
-                  <div className="flex items-center gap-2 text-sm">
-                    <Phone className="h-4 w-4 text-primary" />
-                    <span className="font-semibold">Alabama:</span>
-                    <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-primary hover:underline">(256) 927-6287</a>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Phone className="h-4 w-4 text-primary" />
-                    <span className="font-semibold">Georgia:</span>
-                    <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-primary hover:underline">(706) 784-6511</a>
-                  </div>
-                </div>
+                <Button size="lg" className="bg-white text-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-gray-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white text-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-gray-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
