@@ -5,9 +5,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { Phone } from "lucide-react";
 
 const faqs = [
   {
@@ -99,47 +96,12 @@ export const FAQ = () => {
           </Accordion>
         </div>
 
-        {/* Still Have Questions? CTA */}
-        <div className="mt-16 -mx-4 sm:-mx-6 md:-mx-8 lg:mx-0">
-          <div className="bg-secondary py-12 px-6 rounded-lg lg:rounded-2xl">
-            <div className="text-center max-w-2xl mx-auto space-y-4">
-              <h3 className="text-2xl md:text-3xl font-bold text-secondary-foreground">
-                Still Have Questions?
-              </h3>
-              <p className="text-secondary-foreground/90 text-lg">
-                We're here to help. Get personalized answers from our team of licensed agents.
-              </p>
-              <div className="pt-4">
-                <Link to="/contact">
-                  <Button 
-                    size="lg" 
-                    className="bg-white text-secondary hover:bg-white/90 font-semibold px-8"
-                  >
-                    Contact Us
-                  </Button>
-                </Link>
-              </div>
-              {/* Phone Numbers */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 text-secondary-foreground/90 text-sm">
-                <a 
-                  href="tel:+12569276287" 
-                  aria-label="Call Centre, Alabama office at (256) 927-6287"
-                  className="flex items-center gap-2 justify-center hover:text-secondary-foreground"
-                >
-                  <Phone className="h-4 w-4" />
-                  <span>Alabama: (256) 927-6287</span>
-                </a>
-                <a 
-                  href="tel:+17067846511" 
-                  aria-label="Call Rome, Georgia office at (706) 784-6511"
-                  className="flex items-center gap-2 justify-center hover:text-secondary-foreground"
-                >
-                  <Phone className="h-4 w-4" />
-                  <span>Georgia: (706) 784-6511</span>
-                </a>
-              </div>
-            </div>
-          </div>
+        {/* Bottom CTA */}
+        <div className="mt-12 text-center">
+          <p className="text-muted-foreground mb-4">Still have questions?</p>
+          <a href="/contact" className="btn-primary px-6 py-3 rounded-lg font-semibold inline-block">
+            Contact Us
+          </a>
         </div>
       </div>
     </section>
