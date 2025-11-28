@@ -60,16 +60,16 @@ export const WhyChooseUs = () => {
         <div className="mt-16 pt-12 border-t border-white/20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">16+</p>
-              <p className="text-white/80">Years Experience</p>
+              <p className="text-4xl font-bold text-secondary mb-2">100+</p>
+              <p className="text-white/80">Years Combined Experience</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-secondary mb-2">Hablamos</p>
               <p className="text-white/80">Español</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">2 States</p>
-              <p className="text-white/80">Licensed in Alabama & Georgia</p>
+              <p className="text-4xl font-bold text-secondary mb-2">2</p>
+              <p className="text-white/80">Locations</p>
             </div>
           </div>
         </div>
