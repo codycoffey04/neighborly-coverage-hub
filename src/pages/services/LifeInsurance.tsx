@@ -207,32 +207,23 @@ const georgiaCities = [
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <Link to="/contact">Get Your Free Quote</Link>
-                </Button>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                <Card className="border-primary/20">
-                  <CardContent className="p-4 flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <div className="text-left">
-                      <p className="text-sm font-medium">Alabama</p>
-                      <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-lg font-bold hover:text-primary transition-colors">(256) 927-6287</a>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="border-primary/20">
-                  <CardContent className="p-4 flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <div className="text-left">
-                      <p className="text-sm font-medium">Georgia</p>
-                      <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-lg font-bold hover:text-primary transition-colors">(706) 784-6511</a>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Link to="/contact">Get Your Free Quote</Link>
+              </Button>
+              <Button size="lg" className="bg-white text-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-gray-200" asChild>
+                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Alabama: (256) 927-6287
+                </a>
+              </Button>
+              <Button size="lg" className="bg-white text-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-gray-200" asChild>
+                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Georgia: (706) 784-6511
+                </a>
+              </Button>
+            </div>
             </div>
           </div>
         </section>
