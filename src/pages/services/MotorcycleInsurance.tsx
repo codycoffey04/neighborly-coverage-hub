@@ -119,14 +119,17 @@ const faqs = [
 const testimonials = [
   {
     name: "Teresa Gardiner",
+    location: "Centre, AL",
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
   },
   {
     name: "Steve Smith",
+    location: "Centre, AL",
     text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
   },
   {
     name: "Ricky Salas",
+    location: "Rome, GA",
     text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
   }
 ];
@@ -281,10 +284,10 @@ const MotorcycleInsurance = () => {
               {coverageTypes.map((coverage, index) => {
                 const Icon = coverage.icon;
                 return (
-                  <Card key={index} className="border-2">
+                  <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                     <CardHeader>
-                      <div className="mb-2">
-                        <Icon className="h-8 w-8 text-secondary" />
+                      <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-2">
+                        <Icon className="h-7 w-7 text-white" />
                       </div>
                       <CardTitle className="text-xl">{coverage.title}</CardTitle>
                     </CardHeader>
@@ -308,21 +311,21 @@ const MotorcycleInsurance = () => {
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <Card className="border-2">
+                <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6">
                     <h3 className="font-bold text-lg mb-3">Seasonal weather</h3>
                     <p className="text-muted-foreground">Spring storms bring sudden rain and hail. Summer heat causes fatigue. Fall means leaves on pavement and peak deer season from October through December. Comprehensive coverage addresses weather and animal strikes.</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-2">
+                <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6">
                     <h3 className="font-bold text-lg mb-3">High-risk corridors</h3>
                     <p className="text-muted-foreground">I-20, I-65, I-75, I-85, and US-431 (nicknamed "Highway to Hell") see disproportionate motorcycle incidents. Higher liability and UM/UIM limits make sense if you ride these routes regularly.</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-2">
+                <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6">
                     <h3 className="font-bold text-lg mb-3">Urban vs. rural</h3>
                     <p className="text-muted-foreground">Metro areas like Atlanta and Birmingham have more crashes overall, while rural roads see more fatalities due to higher speeds and delayed emergency response. Either environment warrants adequate medical coverage.</p>
@@ -342,10 +345,10 @@ const MotorcycleInsurance = () => {
               {savingsTips.map((tip, index) => {
                 const Icon = tip.icon;
                 return (
-                  <Card key={index} className="border-2">
+                  <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                     <CardHeader>
-                      <div className="mb-2">
-                        <Icon className="h-8 w-8 text-secondary" />
+                      <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-2">
+                        <Icon className="h-7 w-7 text-white" />
                       </div>
                       <CardTitle className="text-lg">{tip.title}</CardTitle>
                     </CardHeader>
@@ -402,16 +405,18 @@ const MotorcycleInsurance = () => {
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="border-2">
-                  <CardContent className="pt-6">
+                <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                  <CardContent className="pt-6 flex-grow flex flex-col">
                     <div className="flex gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
-                    <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">Google Review</p>
+                    <p className="text-muted-foreground mb-4 italic flex-grow">"{testimonial.text}"</p>
+                    <div className="border-t pt-4 mt-auto">
+                      <p className="font-semibold">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -419,7 +424,7 @@ const MotorcycleInsurance = () => {
 
             <div className="text-center">
               <Button variant="outline" size="lg" asChild aria-label="Read all customer reviews on Google">
-                <Link to="/reviews">Read All Google Reviews →</Link>
+                <Link to="/reviews">Read All Reviews →</Link>
               </Button>
             </div>
           </div>

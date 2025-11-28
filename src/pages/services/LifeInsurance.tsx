@@ -456,12 +456,12 @@ const georgiaCities = [
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <Clock className="h-8 w-8 text-primary" />
-                    <CardTitle>Age Impact</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Clock className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>Age Impact</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -473,12 +473,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <Heart className="h-8 w-8 text-primary" />
-                    <CardTitle>Health Factors</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Heart className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>Health Factors</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -490,12 +490,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <DollarSign className="h-8 w-8 text-primary" />
-                    <CardTitle>Coverage Amount</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <DollarSign className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>Coverage Amount</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -504,12 +504,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <TrendingUp className="h-8 w-8 text-primary" />
-                    <CardTitle>Term Length</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <TrendingUp className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>Term Length</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -555,12 +555,12 @@ const georgiaCities = [
             <h2 className="text-3xl font-bold mb-6 text-center">The Application Process and Medical Exams</h2>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <FileCheck className="h-8 w-8 text-primary" />
-                    <CardTitle>Traditional Process</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <FileCheck className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>Traditional Process</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -572,12 +572,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <Zap className="h-8 w-8 text-primary" />
-                    <CardTitle>No-Exam Policies</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Zap className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>No-Exam Policies</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -589,12 +589,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <TrendingUp className="h-8 w-8 text-primary" />
-                    <CardTitle>Accelerated Underwriting</CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <TrendingUp className="h-7 w-7 text-white" />
                   </div>
+                  <CardTitle>Accelerated Underwriting</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
@@ -615,12 +615,12 @@ const georgiaCities = [
             <h2 className="text-3xl font-bold mb-6 text-center">Special Considerations for Alabama and Georgia Residents</h2>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Shield className="h-6 w-6 text-primary" />
-                    Estate Planning
-                  </CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Shield className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Estate Planning</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -629,12 +629,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Building2 className="h-6 w-6 text-primary" />
-                    Business Applications
-                  </CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Building2 className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Business Applications</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -643,12 +643,12 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <GraduationCap className="h-6 w-6 text-primary" />
-                    College Planning
-                  </CardTitle>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <GraduationCap className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>College Planning</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -745,55 +745,61 @@ const georgiaCities = [
           <div className="container max-w-5xl">
             <h2 className="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <Card>
-                <CardContent className="pt-6">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardContent className="pt-6 flex-grow flex flex-col">
                   <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 flex-grow">
                     "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
                   </p>
-                  <p className="font-semibold">— Teresa Gardiner</p>
-                  <p className="text-sm text-muted-foreground">Google Review</p>
+                  <div className="border-t pt-4 mt-auto">
+                    <p className="font-semibold">Teresa Gardiner</p>
+                    <p className="text-sm text-muted-foreground">Centre, AL</p>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardContent className="pt-6">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardContent className="pt-6 flex-grow flex flex-col">
                   <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 flex-grow">
                     "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
                   </p>
-                  <p className="font-semibold">— Steve Smith</p>
-                  <p className="text-sm text-muted-foreground">Google Review</p>
+                  <div className="border-t pt-4 mt-auto">
+                    <p className="font-semibold">Steve Smith</p>
+                    <p className="text-sm text-muted-foreground">Centre, AL</p>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardContent className="pt-6">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardContent className="pt-6 flex-grow flex flex-col">
                   <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 flex-grow">
                     "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
                   </p>
-                  <p className="font-semibold">— Ricky Salas</p>
-                  <p className="text-sm text-muted-foreground">Google Review</p>
+                  <div className="border-t pt-4 mt-auto">
+                    <p className="font-semibold">Ricky Salas</p>
+                    <p className="text-sm text-muted-foreground">Rome, GA</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>
             
             <div className="text-center">
               <Button variant="outline" asChild>
-                <Link to="/reviews">Read All 200+ Google Reviews →</Link>
+                <Link to="/reviews">Read All Reviews →</Link>
               </Button>
             </div>
           </div>
@@ -804,13 +810,15 @@ const georgiaCities = [
           <div className="container max-w-5xl">
             <h2 className="text-3xl font-bold mb-8 text-center">Complete Your Coverage</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <Car className="h-10 w-10 text-primary mb-2" />
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Car className="h-7 w-7 text-white" />
+                  </div>
                   <CardTitle>Auto Insurance</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="mb-4">
+                <CardContent className="flex-grow flex flex-col">
+                  <CardDescription className="mb-4 flex-grow">
                     Protect your vehicles with comprehensive coverage across Alabama and Georgia. Competitive rates with multi-policy discounts available.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
@@ -819,13 +827,15 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <Home className="h-10 w-10 text-primary mb-2" />
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Home className="h-7 w-7 text-white" />
+                  </div>
                   <CardTitle>Home Insurance</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="mb-4">
+                <CardContent className="flex-grow flex flex-col">
+                  <CardDescription className="mb-4 flex-grow">
                     Comprehensive homeowners coverage for Alabama and Georgia properties with protection against regional weather risks and competitive rates.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
@@ -834,13 +844,15 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <Key className="h-10 w-10 text-primary mb-2" />
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Key className="h-7 w-7 text-white" />
+                  </div>
                   <CardTitle>Renters Insurance</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="mb-4">
+                <CardContent className="flex-grow flex flex-col">
+                  <CardDescription className="mb-4 flex-grow">
                     Affordable renters insurance starting at $8/month with auto bundle. Protect your belongings and liability with comprehensive coverage.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
@@ -849,13 +861,15 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
-                  <Building2 className="h-10 w-10 text-primary mb-2" />
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Building2 className="h-7 w-7 text-white" />
+                  </div>
                   <CardTitle>Condo Insurance</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="mb-4">
+                <CardContent className="flex-grow flex flex-col">
+                  <CardDescription className="mb-4 flex-grow">
                     Specialized coverage for condo owners protecting your unit improvements, personal property, and liability with flexible policy options.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
