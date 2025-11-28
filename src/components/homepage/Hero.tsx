@@ -5,7 +5,7 @@ import heroBackground from "@/assets/hero-background.jpg";
 export const Hero = () => {
   return (
     <section 
-      className="relative min-h-[85vh] flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-center"
       style={{ 
         backgroundImage: `url(${heroBackground})`, 
         backgroundSize: 'cover', 
@@ -16,7 +16,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
       
       {/* Content Centered */}
-      <div className="relative z-10 container-custom py-16">
+      <div className="relative z-10 container-custom py-16 pb-24">
         <div className="max-w-4xl mx-auto space-y-6 animate-fade-in"
              style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
           
@@ -43,7 +43,7 @@ export const Hero = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-lg md:text-2xl text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
             From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
           </p>
 
