@@ -478,7 +478,7 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 px-4 bg-secondary text-white">
+        <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light text-white">
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Get Your Motorcycle Covered?</h2>
             <p className="text-lg mb-8 opacity-90">
@@ -486,7 +486,7 @@ const MotorcycleInsurance = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" variant="outline" className="bg-white text-secondary hover:bg-white/95 border-0 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free motorcycle insurance quote">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 border-0 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free motorcycle insurance quote">
                 <Link to="/contact">Get Your Free Quote</Link>
               </Button>
             </div>
