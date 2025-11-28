@@ -12,71 +12,65 @@ export const Hero = () => {
         backgroundPosition: 'center' 
       }}
     >
-      {/* Subtle light overlay */}
-      <div className="absolute inset-0 bg-white/5" />
-      
-      {/* Subtle bottom gradient for slight contrast */}
-      <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent" />
+      {/* Subtle dark gradient for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
       
       {/* Content Centered */}
       <div className="relative z-10 container-custom py-16">
-        <div className="max-w-4xl mx-auto">
-          {/* Glassmorphism Content Card */}
-          <div className="bg-white/85 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12 space-y-6 animate-fade-in"
-               style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
-            
-            {/* Trust Indicators Inside Card */}
-            <div className="flex flex-wrap justify-center gap-3 text-xs mb-4">
-              <div className="flex items-center gap-1.5 text-primary">
-                <Shield className="h-3.5 w-3.5" />
-                <span className="font-medium">Licensed in AL & GA</span>
-              </div>
-              <div className="flex items-center gap-1.5 text-primary">
-                <Award className="h-3.5 w-3.5" />
-                <span className="font-medium">16+ Years Experience</span>
-              </div>
-              <div className="flex items-center gap-1.5 text-primary">
-                <MapPin className="h-3.5 w-3.5" />
-                <span className="font-medium">8,000+ Policies</span>
-              </div>
+        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in"
+             style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
+          
+          {/* Trust Indicators as Frosted Pills */}
+          <div className="flex flex-wrap justify-center gap-3 text-xs">
+            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
+              <Shield className="h-3.5 w-3.5" />
+              <span className="font-medium">Licensed in AL & GA</span>
             </div>
-
-            {/* Main Headline */}
-            <h1 className="text-balance text-center">
-              <span className="block text-primary font-semibold tracking-tight text-2xl md:text-3xl">Alabama & Georgia's</span>
-              <span className="block text-primary font-extrabold tracking-tight text-4xl md:text-6xl lg:text-7xl mt-2">Trusted Insurance Partner</span>
-            </h1>
-
-            {/* Subheadline */}
-            <p className="text-lg md:text-xl text-gray-700 text-balance text-center leading-relaxed max-w-3xl mx-auto">
-              From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
-                <a href="/contact">Get Your Free Quote</a>
-              </Button>
-              <Button asChild size="lg" className="border-2 border-primary text-primary bg-white hover:bg-primary hover:text-white text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">Call Us Now</a>
-              </Button>
+            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
+              <Award className="h-3.5 w-3.5" />
+              <span className="font-medium">16+ Years Experience</span>
             </div>
+            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
+              <MapPin className="h-3.5 w-3.5" />
+              <span className="font-medium">8,000+ Policies</span>
+            </div>
+          </div>
 
-            {/* Office Info */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 text-sm justify-center border-t border-gray-200 mt-6 pt-6">
-              <div className="text-center">
-                <p className="font-semibold text-primary">Centre, AL Office</p>
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-gray-700 font-medium text-base hover:text-primary transition-colors">
-                  (256) 927-6287
-                </a>
-              </div>
-              <div className="hidden sm:block w-px bg-gray-300 mx-2"></div>
-              <div className="text-center">
-                <p className="font-semibold text-primary">Rome, GA Office</p>
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-gray-700 font-medium text-base hover:text-primary transition-colors">
-                  (706) 784-6511
-                </a>
-              </div>
+          {/* Main Headline */}
+          <h1 className="text-balance text-center">
+            <span className="block text-white font-semibold tracking-tight text-2xl md:text-3xl drop-shadow-lg">Alabama & Georgia's</span>
+            <span className="block text-white font-extrabold tracking-tight text-4xl md:text-6xl lg:text-7xl mt-2 drop-shadow-lg">Trusted Insurance Partner</span>
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-lg md:text-xl text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+            From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
+              <a href="/contact">Get Your Free Quote</a>
+            </Button>
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
+              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">Call Us Now</a>
+            </Button>
+          </div>
+
+          {/* Office Info - Compact Frosted Element */}
+          <div className="flex flex-col sm:flex-row gap-4 text-sm justify-center bg-white/80 backdrop-blur-sm rounded-lg px-6 py-4 shadow-md mx-auto max-w-lg">
+            <div className="text-center">
+              <p className="font-semibold text-primary">Centre, AL Office</p>
+              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-gray-700 font-medium text-base hover:text-primary transition-colors">
+                (256) 927-6287
+              </a>
+            </div>
+            <div className="hidden sm:block w-px bg-gray-300 mx-2"></div>
+            <div className="text-center">
+              <p className="font-semibold text-primary">Rome, GA Office</p>
+              <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-gray-700 font-medium text-base hover:text-primary transition-colors">
+                (706) 784-6511
+              </a>
             </div>
           </div>
         </div>
