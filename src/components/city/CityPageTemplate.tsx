@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,19 @@ import {
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
 import { CityData } from "@/data/cityData";
+
+// Extend Window interface for Tidio page context
+declare global {
+  interface Window {
+    coffeyPageContext?: {
+      pageType: string;
+      city: string | null;
+      state: string | null;
+      stateAbbr: string | null;
+      nearestOffice: string | null;
+    };
+  }
+}
 
 interface CityPageTemplateProps {
   city: CityData;
@@ -112,6 +126,28 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   const office = city.isOfficeCity ? officeDetails[city.nearestOffice] : null;
   const nearestOfficeInfo = officeDetails[city.nearestOffice];
   const testimonials = city.testimonials || defaultTestimonials;
+
+  // Set page context for Tidio chatbot
+  useEffect(() => {
+    window.coffeyPageContext = {
+      pageType: 'city',
+      city: city.city,
+      state: city.state,
+      stateAbbr: city.stateAbbr,
+      nearestOffice: city.nearestOffice
+    };
+    
+    // Cleanup: reset to default when leaving city page
+    return () => {
+      window.coffeyPageContext = {
+        pageType: 'general',
+        city: null,
+        state: null,
+        stateAbbr: null,
+        nearestOffice: null
+      };
+    };
+  }, [city]);
 
   // JSON-LD Schema for FAQ
   const faqSchema = {
