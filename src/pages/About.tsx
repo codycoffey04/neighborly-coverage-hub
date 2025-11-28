@@ -371,7 +371,7 @@ const About = () => {
                   </div>
 
                   <Link to="/contact">
-                    <Button variant="outline" className="w-full" aria-label={`Get directions to ${office.name} office`}>
+                    <Button variant="outline" className="w-full shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" aria-label={`Get directions to ${office.name} office`}>
                       Get Directions
                     </Button>
                   </Link>
@@ -392,7 +392,7 @@ const About = () => {
             Let us help you find the perfect coverage for your needs.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="min-w-[200px]" aria-label="Get a free insurance quote">
+            <Button size="lg" className="min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" aria-label="Get a free insurance quote">
               Get Your Free Quote
             </Button>
           </Link>

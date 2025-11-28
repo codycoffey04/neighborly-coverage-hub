@@ -215,7 +215,7 @@ const Contact = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full"
+                  className="w-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                   disabled={isSubmitting}
                   aria-label="Send contact message"
                 >
@@ -335,9 +335,10 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-3">
+                   <div className="grid sm:grid-cols-2 gap-3">
                     <Button 
                       variant="outline" 
+                      className="shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                       asChild
                     >
                       <a 
@@ -350,6 +351,7 @@ const Contact = () => {
                       </a>
                     </Button>
                     <Button 
+                      className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                       asChild
                     >
                       <a href={`tel:+1${office.phoneRaw}`} aria-label={`Call ${office.name.split(',')[0]} office at ${office.phone}`}>
@@ -371,7 +373,7 @@ const Contact = () => {
           <p className="text-lg text-muted-foreground mb-8">
             From our offices in Centre and Rome, we provide insurance coverage to families throughout both states. No matter where you live in Alabama or Georgia, we can help — no office visit required.
           </p>
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
             <a href="/service-areas">View All Service Areas</a>
           </Button>
         </div>
@@ -384,7 +386,7 @@ const Contact = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Get a free quote in about 15 minutes. No obligation, no pressure.
           </p>
-          <Button size="lg" asChild aria-label="Get your free insurance quote">
+          <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free insurance quote">
             <a href="#contact-form">Get Your Free Quote</a>
           </Button>
         </div>
