@@ -448,11 +448,11 @@ const HomeInsurance = () => {
               </div>
 
               <div className="text-center">
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/reviews">
-                    Read All 200+ Google Reviews →
-                  </Link>
-                </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/reviews">
+                Read All Reviews →
+              </Link>
+            </Button>
               </div>
             </div>
           </div>
