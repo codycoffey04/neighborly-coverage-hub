@@ -64,8 +64,8 @@ export const WhyChooseUs = () => {
               <p className="text-white/80">Years Experience</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">2</p>
-              <p className="text-white/80">Office Locations</p>
+              <p className="text-4xl font-bold text-secondary mb-2">Hablamos</p>
+              <p className="text-white/80">Español</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-secondary mb-2">2 States</p>
