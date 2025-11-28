@@ -1,24 +1,3 @@
-/**
- * IMPORTANT: Google Place ID Configuration Required
- * 
- * The following placeholders need to be replaced with real Google Place IDs
- * before production deployment:
- * 
- * 1. CENTRE_GOOGLE_PLACE_ID - Found in Google Business Profile for Centre, AL office
- *    - Office: 1913 W Main Street, Centre, AL 35960
- *    - Replace at: lines ~14, ~241
- * 
- * 2. ROME_GOOGLE_PLACE_ID - Found in Google Business Profile for Rome, GA office
- *    - Office: 1703 Turner McCall Blvd SE, Rome, GA 30161
- *    - Replace at: lines ~21, ~253
- * 
- * To find Google Place IDs:
- * 1. Go to Google Maps and search for your business
- * 2. Click "Share" → "Embed a map"
- * 3. The Place ID is in the URL after /place/
- * OR use: https://developers.google.com/maps/documentation/places/web-service/place-id
- */
-
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -31,15 +10,13 @@ const officeRatings = [
     office: "Centre, Alabama",
     rating: "4.7",
     reviews: 116,
-    // TODO: Replace with real Google Place ID for Centre office
-    googleUrl: "https://g.page/r/CENTRE_GOOGLE_PLACE_ID/review",
+    googleUrl: "https://search.google.com/local/writereview?placeid=ChIJJ80TpQ5hiogRn3tzQbqNLMA",
   },
   {
     office: "Rome, Georgia",
     rating: "4.6",
     reviews: 90,
-    // TODO: Replace with real Google Place ID for Rome office
-    googleUrl: "https://g.page/r/ROME_GOOGLE_PLACE_ID/review",
+    googleUrl: "https://search.google.com/local/writereview?placeid=ChIJZQwKAM-kiogR_bIpdOhQm7o",
   },
 ];
 
@@ -262,7 +239,7 @@ const Reviews = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
               <a 
-                href="https://g.page/r/CENTRE_GOOGLE_PLACE_ID/review" 
+                href="https://search.google.com/local/writereview?placeid=ChIJJ80TpQ5hiogRn3tzQbqNLMA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
@@ -273,7 +250,7 @@ const Reviews = () => {
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a 
-                href="https://g.page/r/ROME_GOOGLE_PLACE_ID/review" 
+                href="https://search.google.com/local/writereview?placeid=ChIJZQwKAM-kiogR_bIpdOhQm7o" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
