@@ -17,7 +17,7 @@ export const Hero = () => {
       
       {/* Content Centered */}
       <div className="relative z-10 container-custom py-16">
-        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in"
+        <div className="max-w-4xl mx-auto space-y-6 animate-fade-in"
              style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
           
           {/* Trust Indicators as Frosted Pills */}
@@ -39,16 +39,16 @@ export const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-balance text-center">
             <span className="block text-white font-semibold tracking-tight text-2xl md:text-3xl drop-shadow-lg">Alabama & Georgia's</span>
-            <span className="block text-white font-extrabold tracking-tight text-4xl md:text-6xl lg:text-7xl mt-2 drop-shadow-lg">Trusted Insurance Partner</span>
+            <span className="block text-white font-extrabold tracking-tight text-4xl md:text-6xl lg:text-7xl xl:text-8xl mt-2 drop-shadow-lg">Trusted Insurance Partner</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-xl md:text-2xl text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
             From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
             <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
               <a href="/contact">Get Your Free Quote</a>
             </Button>
