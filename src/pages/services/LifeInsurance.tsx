@@ -219,7 +219,7 @@ const georgiaCities = [
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                     <div className="text-left">
                       <p className="text-sm font-medium">Alabama</p>
-                      <p className="text-lg font-bold">(256) 927-6287</p>
+                      <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-lg font-bold hover:text-primary transition-colors">(256) 927-6287</a>
                     </div>
                   </CardContent>
                 </Card>
@@ -228,7 +228,7 @@ const georgiaCities = [
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                     <div className="text-left">
                       <p className="text-sm font-medium">Georgia</p>
-                      <p className="text-lg font-bold">(706) 784-6511</p>
+                      <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-lg font-bold hover:text-primary transition-colors">(706) 784-6511</a>
                     </div>
                   </CardContent>
                 </Card>
