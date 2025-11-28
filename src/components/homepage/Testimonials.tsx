@@ -10,7 +10,7 @@ const testimonials = [
   },
   {
     name: "Teresa Gardiner",
-    location: "Google Review",
+    location: "Centre, AL",
     rating: 5,
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
   },
@@ -77,8 +77,8 @@ export const Testimonials = () => {
         {/* Supporting Testimonials Grid - 4 cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {testimonials.slice(1, 5).map((testimonial, index) => (
-            <Card key={index + 1} className="relative border hover:shadow-lg transition-all duration-300">
-              <CardContent className="pt-6">
+            <Card key={index + 1} className="relative border hover:shadow-lg transition-all duration-300 h-full">
+              <CardContent className="pt-6 h-full flex flex-col">
                 {/* Quote Icon */}
                 <Quote className="h-6 w-6 text-primary/20 mb-3" />
                 
@@ -90,12 +90,15 @@ export const Testimonials = () => {
                 </div>
                 
                 {/* Testimonial Text */}
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   "{testimonial.text}"
                 </p>
                 
-                {/* Author */}
-                <div className="border-t pt-3">
+                {/* Flexible Spacer - pushes author to bottom */}
+                <div className="flex-grow"></div>
+                
+                {/* Author - anchored to bottom */}
+                <div className="border-t pt-3 mt-4">
                   <p className="font-semibold text-sm text-foreground">{testimonial.name}</p>
                   <p className="text-xs text-muted-foreground">{testimonial.location}</p>
                 </div>
