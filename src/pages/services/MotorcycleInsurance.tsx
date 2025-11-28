@@ -251,7 +251,10 @@ const MotorcycleInsurance = () => {
                   <Link to="/contact">Get Your Quote</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg" asChild aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <a href="tel:+12569276287">Call (256) 927-6287</a>
+                  <a href="tel:+12569276287">Alabama: (256) 927-6287</a>
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg" asChild aria-label="Call Rome, Georgia office at (706) 784-6511">
+                  <a href="tel:+17067846511">Georgia: (706) 784-6511</a>
                 </Button>
               </div>
             </div>

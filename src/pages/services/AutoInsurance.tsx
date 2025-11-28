@@ -262,6 +262,25 @@ const AutoInsurance = () => {
                   </div>
                 ))}
               </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <Button size="lg" className="text-lg px-8" asChild>
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <div className="flex flex-col sm:flex-row gap-2 items-center">
+                  <div className="flex items-center gap-2 text-sm">
+                    <Phone className="h-4 w-4 text-primary" />
+                    <span className="font-semibold">Alabama:</span>
+                    <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-primary hover:underline">(256) 927-6287</a>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Phone className="h-4 w-4 text-primary" />
+                    <span className="font-semibold">Georgia:</span>
+                    <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-primary hover:underline">(706) 784-6511</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
