@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Award, MapPin, Star } from "lucide-react";
+import { Shield, Star, MessageCircle, Heart } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 
 export const Hero = () => {
@@ -20,22 +20,6 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-6 animate-fade-in"
              style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
           
-          {/* Trust Indicators as Frosted Pills */}
-          <div className="flex flex-wrap justify-center gap-3 text-xs">
-            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
-              <Shield className="h-3.5 w-3.5" />
-              <span className="font-medium">Licensed in AL & GA</span>
-            </div>
-            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
-              <Award className="h-3.5 w-3.5" />
-              <span className="font-medium">16+ Years Experience</span>
-            </div>
-            <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
-              <MapPin className="h-3.5 w-3.5" />
-              <span className="font-medium">2 Offices</span>
-            </div>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-balance text-center">
             <span className="block text-white font-semibold tracking-tight text-2xl md:text-3xl drop-shadow-lg">Alabama & Georgia's</span>
@@ -62,15 +46,20 @@ export const Hero = () => {
       {/* Trust Stats Bar at Bottom */}
       <div className="absolute bottom-0 left-0 right-0 z-10 bg-primary/90 backdrop-blur-sm border-t border-white/10">
         <div className="container-custom">
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 py-4 text-white text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-4 text-white text-sm">
             <div className="flex items-center gap-2">
-              <Award className="h-4 w-4" />
-              <span className="font-semibold">16+ Years</span>
+              <Shield className="h-4 w-4" />
+              <span className="font-semibold">Licensed in AL & GA</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-white/20"></div>
             <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              <span className="font-semibold">2 Offices</span>
+              <MessageCircle className="h-4 w-4" />
+              <span className="font-semibold">Hablamos Español</span>
+            </div>
+            <div className="hidden sm:block w-px h-4 bg-white/20"></div>
+            <div className="flex items-center gap-2">
+              <Heart className="h-4 w-4" />
+              <span className="font-semibold">Family Owned</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-white/20"></div>
             <div className="flex items-center gap-2">
