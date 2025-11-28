@@ -90,14 +90,17 @@ const faqs = [
 const testimonials = [
   {
     name: "Teresa Gardiner",
+    location: "Centre, AL",
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
   },
   {
     name: "Steve Smith",
+    location: "Centre, AL",
     text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
   },
   {
     name: "Ricky Salas",
+    location: "Rome, GA",
     text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
   }
 ];
@@ -321,11 +324,11 @@ const RentersInsurance = () => {
               {coverageTypes.map((coverage, index) => {
                 const Icon = coverage.icon;
                 return (
-                  <Card key={index} className="border-2 hover:shadow-lg transition-shadow">
+                  <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                     <CardContent className="pt-6">
                       <div className="flex items-start gap-4">
-                        <div className="p-3 rounded-lg bg-accent/10">
-                          <Icon className="h-6 w-6 text-accent" />
+                        <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                          <Icon className="h-7 w-7 text-white" />
                         </div>
                         <div className="flex-1">
                           <h3 className="text-xl font-semibold mb-2">{coverage.title}</h3>
@@ -443,7 +446,7 @@ const RentersInsurance = () => {
                 <h3 className="text-2xl font-bold text-center">Coverage Options and Add-Ons</h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {savingsTips.map((tip, index) => (
-                    <Card key={index} className="border-2 hover:shadow-lg transition-shadow">
+                    <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                       <CardContent className="pt-6">
                         <h4 className="font-semibold mb-2 text-lg">{tip.title}</h4>
                         <p className="text-muted-foreground text-sm">{tip.description}</p>
@@ -516,15 +519,15 @@ const RentersInsurance = () => {
 
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="border-2 hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
+                <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                  <CardContent className="p-6 flex-grow flex flex-col">
                     <Quote className="h-8 w-8 text-accent/20 mb-4" />
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-6 leading-relaxed flex-grow italic">
                       "{testimonial.text}"
                     </p>
-                    <div className="border-t pt-4">
+                    <div className="border-t pt-4 mt-auto">
                       <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">Google Review</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -534,7 +537,7 @@ const RentersInsurance = () => {
             <div className="text-center mt-8">
               <Button variant="secondary" asChild>
                 <Link to="/reviews">
-                  Read All 200+ Google Reviews <ArrowRight className="ml-2 h-4 w-4" />
+                  Read All Reviews <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
@@ -553,11 +556,11 @@ const RentersInsurance = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {crossSellServices.map((service, index) => (
-                <Card key={index} className="border-2 hover:shadow-lg transition-shadow group">
-                  <CardContent className="pt-6 space-y-4">
+                <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
+                  <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
                     <h3 className="text-xl font-semibold">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm">{service.description}</p>
-                    <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-accent-foreground" asChild>
+                    <p className="text-muted-foreground text-sm flex-grow">{service.description}</p>
+                    <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-accent-foreground mt-auto" asChild>
                       <Link to={service.link}>
                         Learn More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
