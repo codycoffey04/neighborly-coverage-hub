@@ -426,7 +426,7 @@ const CondoInsurance = () => {
                     <Shield className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Water & backup</h3>
+                    <h3 className="text-lg font-semibold mb-1">Water & backup</h3>
                     <p className="text-muted-foreground">Consider Water Backup if you have lower-level plumbing or stack risers nearby.</p>
                   </div>
                 </div>
@@ -435,7 +435,7 @@ const CondoInsurance = () => {
                     <FileCheck className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">RCV vs ACV</h3>
+                    <h3 className="text-lg font-semibold mb-1">RCV vs ACV</h3>
                     <p className="text-muted-foreground">RCV on personal property pays better after a loss; ACV saves premium but pays less.</p>
                   </div>
                 </div>
@@ -444,7 +444,7 @@ const CondoInsurance = () => {
                     <Users className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Master deductible risk</h3>
+                    <h3 className="text-lg font-semibold mb-1">Master deductible risk</h3>
                     <p className="text-muted-foreground">Higher HOA deductibles can trigger assessments—boost Loss Assessment accordingly.</p>
                   </div>
                 </div>
