@@ -51,7 +51,7 @@ export const FinalCTA = () => {
               {/* Email & Service Type Row */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email Address</Label>
+                  <Label htmlFor="email">Email Address (optional)</Label>
                   <Input 
                     id="email"
                     name="email"
@@ -67,12 +67,14 @@ export const FinalCTA = () => {
                       <SelectValue placeholder="Select insurance type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="auto">Auto</SelectItem>
-                      <SelectItem value="home">Home</SelectItem>
-                      <SelectItem value="condo">Condo</SelectItem>
-                      <SelectItem value="renters">Renters</SelectItem>
-                      <SelectItem value="life">Life</SelectItem>
-                      <SelectItem value="bundle">Bundle</SelectItem>
+                      <SelectItem value="auto">Auto Insurance</SelectItem>
+                      <SelectItem value="home">Home Insurance</SelectItem>
+                      <SelectItem value="renters">Renters Insurance</SelectItem>
+                      <SelectItem value="condo">Condo Insurance</SelectItem>
+                      <SelectItem value="life">Life Insurance</SelectItem>
+                      <SelectItem value="motorcycle">Motorcycle Insurance</SelectItem>
+                      <SelectItem value="bundle">Bundle (Multiple Policies)</SelectItem>
+                      <SelectItem value="not-sure">Not Sure — Help Me Decide</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -99,6 +101,9 @@ export const FinalCTA = () => {
             </span>
             <span className="flex items-center gap-2 justify-center">
               <Check className="h-4 w-4 text-white shrink-0" /> No spam, no selling your info
+            </span>
+            <span className="flex items-center gap-2 justify-center">
+              <Check className="h-4 w-4 text-white shrink-0" /> Hablamos Español
             </span>
           </div>
         </div>
