@@ -32,7 +32,7 @@ export const Hero = () => {
             </div>
             <div className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1.5 text-primary shadow-md">
               <MapPin className="h-3.5 w-3.5" />
-              <span className="font-medium">8,000+ Policies</span>
+              <span className="font-medium">2 Offices</span>
             </div>
           </div>
 
@@ -57,21 +57,19 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Office Info - Compact Frosted Element */}
-          <div className="flex flex-col sm:flex-row gap-4 text-sm justify-center bg-white/80 backdrop-blur-sm rounded-lg px-6 py-4 shadow-md mx-auto max-w-lg">
-            <div className="text-center">
-              <p className="font-semibold text-primary">Centre, AL Office</p>
-              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" className="text-gray-700 font-medium text-base hover:text-primary transition-colors">
-                (256) 927-6287
-              </a>
-            </div>
-            <div className="hidden sm:block w-px bg-gray-300 mx-2"></div>
-            <div className="text-center">
-              <p className="font-semibold text-primary">Rome, GA Office</p>
-              <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" className="text-gray-700 font-medium text-base hover:text-primary transition-colors">
-                (706) 784-6511
-              </a>
-            </div>
+          {/* Office Info - Inline White Text */}
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 text-sm justify-center pt-2">
+            <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287" 
+               className="text-white hover:text-white/80 transition-colors text-center drop-shadow-md">
+              <span className="block font-semibold">Centre, AL</span>
+              <span className="block text-white/90">(256) 927-6287</span>
+            </a>
+            <div className="hidden sm:block text-white/50">|</div>
+            <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511" 
+               className="text-white hover:text-white/80 transition-colors text-center drop-shadow-md">
+              <span className="block font-semibold">Rome, GA</span>
+              <span className="block text-white/90">(706) 784-6511</span>
+            </a>
           </div>
         </div>
       </div>
@@ -86,8 +84,8 @@ export const Hero = () => {
             </div>
             <div className="hidden sm:block w-px h-4 bg-white/20"></div>
             <div className="flex items-center gap-2">
-              <Shield className="h-4 w-4" />
-              <span className="font-semibold">8,000+ Policies</span>
+              <MapPin className="h-4 w-4" />
+              <span className="font-semibold">2 Offices</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-white/20"></div>
             <div className="flex items-center gap-2">
