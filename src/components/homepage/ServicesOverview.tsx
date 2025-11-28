@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Car, Home, Building2, Key, Heart, Bike, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -72,9 +73,11 @@ export const ServicesOverview = () => {
                 <CardDescription className="text-base mb-4">
                   {service.description}
                 </CardDescription>
-                <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary-dark">
-                  Learn More 
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary-dark" asChild>
+                  <Link to={service.link}>
+                    Learn More 
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -85,8 +88,8 @@ export const ServicesOverview = () => {
         {/* Bottom CTA */}
         <div className="text-center">
           <p className="text-muted-foreground mb-4">Not sure which coverage you need?</p>
-          <Button size="lg" variant="outline" className="border-2">
-            Talk to an Expert
+          <Button size="lg" variant="outline" className="border-2" asChild>
+            <Link to="/contact">Talk to an Expert</Link>
           </Button>
         </div>
       </div>
