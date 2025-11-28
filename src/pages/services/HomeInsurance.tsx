@@ -397,11 +397,11 @@ const HomeInsurance = () => {
 
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-                    <AccordionTrigger className="text-left hover:no-underline">
-                      <span className="font-semibold pr-4">{item.question}</span>
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                    <AccordionTrigger className="text-left hover:no-underline py-5">
+                      <span className="font-semibold text-lg pr-4">{item.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                    <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
