@@ -20,7 +20,8 @@ import {
   AlertCircle,
   Camera,
   PhoneCall,
-  Wrench
+  Wrench,
+  Quote
 } from "lucide-react";
 import {
   Accordion,
@@ -219,16 +220,19 @@ const serviceSchema = {
 
 const testimonials = [
   {
-    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
-    attribution: "Teresa Gardiner (Google Review)"
+    name: "Teresa Gardiner",
+    location: "Centre, AL",
+    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
   },
   {
-    text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
-    attribution: "Steve Smith (Google Review)"
+    name: "Steve Smith",
+    location: "Centre, AL",
+    text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
   },
   {
-    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
-    attribution: "Ricky Salas (Google Review)"
+    name: "Ricky Salas",
+    location: "Rome, GA",
+    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
   }
 ];
 
@@ -356,11 +360,11 @@ const CondoInsurance = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coverageTypes.map((coverage, index) => (
-              <Card key={index} className="border-2 hover:border-primary/50 transition-colors">
+              <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/10">
-                      <coverage.icon className="h-6 w-6 text-primary" />
+                    <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                      <coverage.icon className="h-7 w-7 text-white" />
                     </div>
                     <CardTitle className="text-lg">{coverage.title}</CardTitle>
                   </div>
@@ -458,11 +462,11 @@ const CondoInsurance = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {savingsTips.map((tip, index) => (
-              <Card key={index} className="border-2 hover:border-accent/50 transition-colors">
+              <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-accent/10">
-                      <tip.icon className="h-6 w-6 text-accent" />
+                    <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                      <tip.icon className="h-7 w-7 text-white" />
                     </div>
                     <CardTitle className="text-xl">{tip.title}</CardTitle>
                   </div>
@@ -489,7 +493,7 @@ const CondoInsurance = () => {
               <Card key={index} className="text-center border-2 hover:border-primary/50 transition-colors">
                 <CardHeader>
                   <div className="mx-auto">
-                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mb-3 mx-auto">
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md text-primary-foreground flex items-center justify-center text-xl font-bold mb-3 mx-auto">
                       {step.number}
                     </div>
                     <step.icon className="h-8 w-8 text-primary mx-auto mb-3" />
@@ -534,17 +538,21 @@ const CondoInsurance = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-2">
-                <CardContent className="p-6">
-                  <p className="text-lg mb-4 italic">"{testimonial.text}"</p>
-                  <p className="text-sm font-semibold text-muted-foreground">— {testimonial.attribution}</p>
+              <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardContent className="p-6 flex-grow flex flex-col">
+                  <Quote className="h-8 w-8 text-accent/20 mb-4" />
+                  <p className="text-muted-foreground mb-6 leading-relaxed flex-grow italic">"{testimonial.text}"</p>
+                  <div className="border-t pt-4 mt-auto">
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
           <div className="text-center">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/reviews">Read All 200+ Google Reviews →</Link>
+              <Link to="/reviews">Read All Reviews →</Link>
             </Button>
           </div>
         </div>
