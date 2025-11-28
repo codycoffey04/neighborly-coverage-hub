@@ -3,7 +3,7 @@ import { PageLayout } from "@/components/shared/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Quote, Star } from "lucide-react";
+import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Quote, Star, FileCheck, CreditCard, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const coverageTypes = [
@@ -56,22 +56,27 @@ const coverageTypes = [
 
 const savingsTips = [
   {
+    icon: FileCheck,
     title: "Bundle home & auto",
     description: "One account, fewer headaches, and meaningful multi-policy savings. We'll price both ways so you can see the difference."
   },
   {
+    icon: Shield,
     title: "Protective devices",
     description: "Monitored security systems, smoke/CO detectors, water shut-off valves, and leak sensors can reduce loss risk—and may qualify for discounts."
   },
   {
+    icon: Home,
     title: "Newer roof",
     description: "Updating an aging roof can improve insurability and pricing. Document materials and install date; some carriers favor impact-resistant shingles."
   },
   {
+    icon: CreditCard,
     title: "Autopay & paperless",
     description: "Set-and-forget billing helps avoid lapses and can trim premium. Paperless delivery keeps everything in one place."
   },
   {
+    icon: DollarSign,
     title: "Right-size deductibles",
     description: "Raising deductibles lowers premium, but keep them at a level you could comfortably pay after a storm. We'll model a few options."
   }
@@ -107,16 +112,19 @@ const faqItems = [
 const testimonials = [
   {
     name: "Teresa Gardiner",
+    location: "Centre, AL",
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
     rating: 5
   },
   {
     name: "Steve Smith",
+    location: "Centre, AL",
     text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
     rating: 5
   },
   {
     name: "Ricky Salas",
+    location: "Rome, GA",
     text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
     rating: 5
   }
@@ -300,16 +308,12 @@ const HomeInsurance = () => {
                 {coverageTypes.map((coverage, index) => {
                   const Icon = coverage.icon;
                   return (
-                    <Card key={index} className="border-2 hover:border-primary/50 transition-colors">
+                    <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
                       <CardHeader>
-                        <div className="flex items-start gap-4">
-                          <div className="p-3 rounded-lg bg-primary/10">
-                            <Icon className="h-6 w-6 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <CardTitle className="text-lg mb-2">{coverage.title}</CardTitle>
-                          </div>
+                        <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                          <Icon className="h-6 w-6 text-white" />
                         </div>
+                        <CardTitle className="text-lg">{coverage.title}</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <CardDescription className="text-sm leading-relaxed">
@@ -358,18 +362,24 @@ const HomeInsurance = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {savingsTips.map((tip, index) => (
-                  <Card key={index} className="border-2 hover:border-accent/50 transition-colors">
-                    <CardHeader>
-                      <CardTitle className="text-lg">{tip.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-sm leading-relaxed">
-                        {tip.description}
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                ))}
+                {savingsTips.map((tip, index) => {
+                  const Icon = tip.icon;
+                  return (
+                    <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
+                      <CardHeader>
+                        <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                          <Icon className="h-6 w-6 text-white" />
+                        </div>
+                        <CardTitle className="text-lg">{tip.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <CardDescription className="text-sm leading-relaxed">
+                          {tip.description}
+                        </CardDescription>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -413,7 +423,7 @@ const HomeInsurance = () => {
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 {testimonials.map((testimonial, index) => (
-                  <Card key={index} className="border-2">
+                  <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <Quote className="h-5 w-5 text-primary" />
@@ -424,12 +434,14 @@ const HomeInsurance = () => {
                         </div>
                       </div>
                     </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground mb-4 leading-relaxed">
+                    <CardContent className="flex flex-col h-full">
+                      <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
                         "{testimonial.text}"
                       </p>
-                      <p className="font-semibold">— {testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">(Google Review)</p>
+                      <div className="mt-auto">
+                        <p className="font-semibold">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
