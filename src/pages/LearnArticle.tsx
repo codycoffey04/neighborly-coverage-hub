@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Clock, User, ArrowRight, AlertCircle, Info } from "lucide-react";
+import { Clock, User, ArrowRight, AlertCircle, Info, Phone } from "lucide-react";
 import { learnArticles, ContentSection } from "@/data/learnArticles";
 import { Helmet } from "react-helmet";
 
@@ -89,6 +90,46 @@ const LearnArticle = () => {
         return null;
     }
   };
+
+  // Mid-Article CTA Component
+  const MidArticleCTA = () => (
+    <Card className="my-10 bg-primary text-primary-foreground border-0 overflow-hidden">
+      <CardContent className="p-8">
+        <div className="text-center">
+          <h3 className="text-xl font-bold mb-2">Ready for Your Free Quote?</h3>
+          <p className="text-primary-foreground/80 mb-6">
+            No obligation. We'll find the right coverage for your needs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/contact">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                Get Your Free Quote
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+            <div className="flex flex-col sm:flex-row gap-3 text-sm">
+              <a 
+                href="tel:+12569276287" 
+                aria-label="Call Centre, Alabama office at (256) 927-6287" 
+                className="flex items-center gap-2 hover:underline"
+              >
+                <Phone className="h-4 w-4" />
+                <span>AL: (256) 927-6287</span>
+              </a>
+              <a 
+                href="tel:+17067846511" 
+                aria-label="Call Rome, Georgia office at (706) 784-6511"
+                className="flex items-center gap-2 hover:underline"
+              >
+                <Phone className="h-4 w-4" />
+                <span>GA: (706) 784-6511</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
 
   // Build Article JSON-LD
   const articleSchema = {
@@ -182,7 +223,13 @@ const LearnArticle = () => {
 
             {/* Article Content */}
             <article className="prose prose-lg max-w-none">
-              {article.content.map((section, index) => renderContent(section, index))}
+              {article.content.map((section, index) => (
+                <React.Fragment key={index}>
+                  {renderContent(section, index)}
+                  {/* Insert mid-article CTA after 4th content section */}
+                  {index === 3 && article.content.length > 4 && <MidArticleCTA />}
+                </React.Fragment>
+              ))}
             </article>
 
             {/* FAQ Section */}
