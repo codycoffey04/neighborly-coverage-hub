@@ -233,17 +233,10 @@ const HomeInsurance = () => {
         title="Home Insurance in Alabama & Georgia"
         description="Clear coverage built around your roof, rebuild cost, and risk"
       >
-        {/* Hero Section */}
+        {/* CTA Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Home Insurance in Alabama & Georgia
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8">
-                Clear coverage built around your roof, rebuild cost, and risk. We price multiple coverage levels side-by-side and explain them in plain English. Expect straight talk on dwelling limits, deductibles, and how roof age affects claims.
-              </p>
-              
+            <div className="max-w-4xl mx-auto text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                 <Link to="/contact">Get Your Free Quote</Link>
