@@ -241,7 +241,7 @@ const HomeInsurance = () => {
                   <a href="#quote-form">Get Your Quote</a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <a href="tel:256-927-6287">
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                     <Phone className="mr-2 h-5 w-5" />
                     Call 256-927-6287
                   </a>
@@ -514,7 +514,8 @@ const HomeInsurance = () => {
                   </CardHeader>
                   <CardContent>
                     <a
-                      href="tel:256-927-6287"
+                      href="tel:+12569276287"
+                      aria-label="Call Centre, Alabama office at (256) 927-6287"
                       className="text-2xl font-bold text-primary hover:underline"
                     >
                       (256) 927-6287
@@ -531,7 +532,8 @@ const HomeInsurance = () => {
                   </CardHeader>
                   <CardContent>
                     <a
-                      href="tel:706-784-6511"
+                      href="tel:+17067846511"
+                      aria-label="Call Rome, Georgia office at (706) 784-6511"
                       className="text-2xl font-bold text-primary hover:underline"
                     >
                       (706) 784-6511
