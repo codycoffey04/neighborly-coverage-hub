@@ -18,7 +18,7 @@ const featuredCities = [
   {
     city: "Cedartown",
     state: "GA",
-    descriptor: "Serving Polk County",
+    descriptor: "Serving Northwest Georgia",
     link: "/cedartown-ga"
   },
   {
@@ -61,7 +61,7 @@ export const ServiceArea = () => {
                 </div>
                 
                 {/* White body with descriptor + CTA */}
-                <CardContent className="p-4 text-center">
+                <CardContent className="p-4 text-center min-h-[80px] flex flex-col justify-between">
                   <p className="text-muted-foreground text-sm mb-3">
                     {city.descriptor}
                   </p>
