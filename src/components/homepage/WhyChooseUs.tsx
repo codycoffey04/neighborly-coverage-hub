@@ -31,7 +31,7 @@ export const WhyChooseUs = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-balance text-white text-3xl md:text-4xl lg:text-5xl tracking-tight">Why Choose Coffey Agencies?</h2>
           <p className="text-lg text-white/80 text-balance">
-            16 years of protecting Alabama and Georgia families. Here's why 8,000+ policyholders trust us.
+            16 years of protecting Alabama and Georgia families. Here's why our clients trust us.
           </p>
         </div>
 
@@ -42,8 +42,8 @@ export const WhyChooseUs = () => {
             return (
               <div key={index} className="text-center space-y-4 group">
                 {/* Icon */}
-                <div className="inline-flex p-4 rounded-2xl bg-white/10 group-hover:bg-white/20 transition-all duration-300 group-hover:scale-110">
-                  <Icon className="h-8 w-8 text-secondary" />
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#1e3a5f] shadow-md group-hover:scale-110 transition-all duration-300">
+                  <Icon className="h-8 w-8 text-white" />
                 </div>
                 
                 {/* Content */}
@@ -68,8 +68,8 @@ export const WhyChooseUs = () => {
               <p className="text-white/80">Office Locations</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">8,000+</p>
-              <p className="text-white/80">Policies Protected</p>
+              <p className="text-4xl font-bold text-secondary mb-2">2 States</p>
+              <p className="text-white/80">Licensed in Alabama & Georgia</p>
             </div>
           </div>
         </div>
