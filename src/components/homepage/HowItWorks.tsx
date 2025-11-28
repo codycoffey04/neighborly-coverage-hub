@@ -1,21 +1,23 @@
 import { FileText, Search, ShieldCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
     icon: FileText,
-    number: "01",
+    number: "1",
     title: "Get Your Quote",
     description: "Fill out our quick form online or give us a call. Tell us what you need — auto, home, condo, renters, life, or bundle it all."
   },
   {
     icon: Search,
-    number: "02",
+    number: "2",
     title: "Review Your Options",
     description: "A licensed agent calls you back within 24 hours. We walk through coverage options, answer questions, and find the policy that fits your life and budget."
   },
   {
     icon: ShieldCheck,
-    number: "03",
+    number: "3",
     title: "Get Covered",
     description: "Approve your policy and you're protected — often the same day. Welcome to the Coffey Agencies family."
   }
@@ -33,36 +35,44 @@ export const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Steps - Staggered Timeline */}
-        <div className="max-w-6xl mx-auto space-y-16">
-            {steps.map((step, index) => {
-              const Icon = step.icon;
-              const isCenter = index === 1;
-              const alignmentClass = isCenter ? "text-center mx-auto" : "text-left md:ml-0";
-              const layoutClass = isCenter ? "flex-col items-center" : "flex-col md:flex-row items-start";
-              
-              return (
-                <div key={index} className={`relative flex ${layoutClass} gap-6 ${alignmentClass} max-w-3xl ${!isCenter && index === 0 ? '' : isCenter ? 'mx-auto' : 'md:ml-24'}`}>
-                  {/* Step Number Background */}
-                  <div className={`absolute -top-8 ${isCenter ? 'left-1/2 -translate-x-1/2' : 'left-0'} text-8xl md:text-9xl font-bold text-primary/5 leading-none`}>
-                    {step.number}
-                  </div>
-                  
-                  {/* Icon */}
-                  <div className="relative inline-flex p-6 rounded-2xl bg-primary text-primary-foreground shadow-xl shrink-0 z-10">
-                    <Icon className="h-10 w-10" />
+        {/* Steps with Connecting Lines */}
+        <div className="max-w-4xl mx-auto space-y-8">
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            const isLast = index === steps.length - 1;
+            
+            return (
+              <div key={index} className="relative">
+                {/* Step Row */}
+                <div className="flex items-start gap-6">
+                  {/* Icon Circle with Step Number Badge */}
+                  <div className="relative shrink-0">
+                    {/* Navy Circle with Icon */}
+                    <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary shadow-md">
+                      <Icon className="h-7 w-7 text-white" />
+                    </div>
+                    {/* Step Number Badge */}
+                    <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center shadow-sm">
+                      {step.number}
+                    </div>
                   </div>
                   
                   {/* Content */}
-                  <div className={`space-y-3 ${isCenter ? 'text-center' : 'text-left'}`}>
-                    <h3 className="text-2xl md:text-3xl font-bold">{step.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-lg">
+                  <div className="pt-1">
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       {step.description}
                     </p>
                   </div>
                 </div>
-              );
-            })}
+                
+                {/* Connecting Line (except for last step) */}
+                {!isLast && (
+                  <div className="absolute left-7 top-16 w-0.5 h-8 bg-gray-200"></div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Bottom CTA */}
@@ -71,9 +81,13 @@ export const HowItWorks = () => {
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Most quotes take about 15 minutes. No obligations, no pressure — just honest answers and real options.
           </p>
-          <button className="btn-primary px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 hover:scale-105 transition-transform">
-            Get Your Free Quote
-          </button>
+          <Button 
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            asChild
+          >
+            <Link to="/contact">Get Your Free Quote</Link>
+          </Button>
         </div>
       </div>
     </section>
