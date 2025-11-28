@@ -1,11 +1,38 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import coffeyLogo from "@/assets/coffey-logo-transparent.png";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+
+const serviceLinks = [
+  { name: "Auto Insurance", href: "/services/auto-insurance" },
+  { name: "Home Insurance", href: "/services/home-insurance" },
+  { name: "Renters Insurance", href: "/services/renters-insurance" },
+  { name: "Condo Insurance", href: "/services/condo-insurance" },
+  { name: "Life Insurance", href: "/services/life-insurance" },
+  { name: "Motorcycle Insurance", href: "/services/motorcycle-insurance" },
+];
+
+const learnLinks = [
+  { name: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
+  { name: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
+  { name: "Renters Insurance Guide", href: "/learn/renters-insurance-guide" },
+  { name: "Condo Insurance Guide", href: "/learn/condo-insurance-guide" },
+  { name: "Life Insurance Guide", href: "/learn/life-insurance-guide" },
+];
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesExpanded, setServicesExpanded] = useState(false);
+  const [learnExpanded, setLearnExpanded] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -22,24 +49,67 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <a href="/#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Services
-            </a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:text-primary">
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-56 gap-1 p-2">
+                      {serviceLinks.map((link) => (
+                        <li key={link.href}>
+                          <NavigationMenuLink asChild>
+                            <Link 
+                              to={link.href} 
+                              className="block px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors"
+                            >
+                              {link.name}
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            
             <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               About
             </Link>
-            <a href="/#service-area" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Locations
-            </a>
             <Link to="/faq" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               FAQ
             </Link>
             <Link to="/reviews" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Reviews
             </Link>
-            <Link to="/learn" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Learn
-            </Link>
+            
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:text-primary">
+                    Learn
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-56 gap-1 p-2">
+                      {learnLinks.map((link) => (
+                        <li key={link.href}>
+                          <NavigationMenuLink asChild>
+                            <Link 
+                              to={link.href} 
+                              className="block px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors"
+                            >
+                              {link.name}
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </nav>
 
           {/* Contact & CTA */}
@@ -80,13 +150,31 @@ export const Header = () => {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
-              <a 
-                href="/#services" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Services
-              </a>
+              {/* Services - expandable */}
+              <div className="space-y-2">
+                <button
+                  onClick={() => setServicesExpanded(!servicesExpanded)}
+                  className="flex items-center justify-between w-full text-sm font-medium text-foreground hover:text-primary transition-colors"
+                >
+                  Services
+                  <ChevronDown className={`h-4 w-4 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
+                </button>
+                {servicesExpanded && (
+                  <div className="pl-4 space-y-2">
+                    {serviceLinks.map((link) => (
+                      <Link 
+                        key={link.href}
+                        to={link.href} 
+                        onClick={() => setMobileMenuOpen(false)} 
+                        className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <Link 
                 to="/about" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
@@ -94,13 +182,6 @@ export const Header = () => {
               >
                 About
               </Link>
-              <a 
-                href="/#service-area" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Locations
-              </a>
               <Link 
                 to="/faq" 
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
@@ -115,13 +196,32 @@ export const Header = () => {
               >
                 Reviews
               </Link>
-              <Link 
-                to="/learn" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Learn
-              </Link>
+
+              {/* Learn - expandable */}
+              <div className="space-y-2">
+                <button
+                  onClick={() => setLearnExpanded(!learnExpanded)}
+                  className="flex items-center justify-between w-full text-sm font-medium text-foreground hover:text-primary transition-colors"
+                >
+                  Learn
+                  <ChevronDown className={`h-4 w-4 transition-transform ${learnExpanded ? 'rotate-180' : ''}`} />
+                </button>
+                {learnExpanded && (
+                  <div className="pl-4 space-y-2">
+                    {learnLinks.map((link) => (
+                      <Link 
+                        key={link.href}
+                        to={link.href} 
+                        onClick={() => setMobileMenuOpen(false)} 
+                        className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <div className="flex flex-col gap-2 pt-2 border-t border-border">
                 <a href="tel:+12569276287" className="flex items-center gap-2 text-sm" aria-label="Call Centre, Alabama office at (256) 927-6287">
                   <Phone className="h-4 w-4" />
