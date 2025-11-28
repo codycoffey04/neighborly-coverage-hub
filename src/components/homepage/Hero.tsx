@@ -7,7 +7,7 @@ export const Hero = () => {
     <section 
       className="relative min-h-[85vh] flex items-center overflow-hidden"
       style={{ 
-        backgroundImage: `url('https://media.istockphoto.com/id/1294192554/photo/sunrise-at-lake-weiss.jpg?s=1024x1024&w=is&k=20&c=mUnJ5C9dRE0UDPT3pRXaPk0RUiNI4OOkIItt1Q8T80A=')`, 
+        backgroundImage: `url('https://media.istockphoto.com/id/1268111693/photo/aerial-view-of-sunrise-on-alabama-lake.jpg?s=1024x1024&w=is&k=20&c=c_7ApQ7ihUFDgVGWD2DotK3w3u1WOBXOwJdE1LkySZI=')`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center' 
       }}
