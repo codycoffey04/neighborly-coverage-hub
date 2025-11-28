@@ -10,7 +10,7 @@ const services = [
 ];
 
 const company = [
-  { name: "About Us", href: "/about" },
+  { name: "About", href: "/about" },
   { name: "Our Team", href: "/about#team" },
   { name: "FAQ", href: "/faq" },
   { name: "Contact", href: "/contact" }
@@ -18,7 +18,7 @@ const company = [
 
 const resources = [
   { name: "Get a Quote", href: "/contact" },
-  { name: "Customer Reviews", href: "/reviews" },
+  { name: "Reviews", href: "/reviews" },
   { name: "Learn", href: "/learn" }
 ];
 
@@ -32,9 +32,9 @@ export const Footer = () => {
     <footer className="bg-muted/30 border-t">
       <div className="container-custom py-12 md:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
-          {/* Coffey Agencies */}
+          {/* Coffey Agencies Inc. */}
           <div className="lg:col-span-1 space-y-4">
-            <h4 className="font-bold text-lg mb-4">Coffey Agencies</h4>
+            <h4 className="font-bold text-lg mb-4">Coffey Agencies Inc.</h4>
             <ul className="space-y-2">
               {company.map((item, index) => (
                 <li key={index}>
@@ -49,9 +49,9 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Insurance */}
+          {/* Services */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Insurance</h4>
+            <h4 className="font-bold text-lg mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((item, index) => (
                 <li key={index}>
