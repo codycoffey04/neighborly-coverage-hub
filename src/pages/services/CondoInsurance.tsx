@@ -328,7 +328,7 @@ const CondoInsurance = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" asChild aria-label="Get your free condo insurance quote">
+              <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free condo insurance quote">
                 <Link to="/contact">Get Your Free Quote</Link>
               </Button>
               <div className="flex items-center gap-2 text-sm">

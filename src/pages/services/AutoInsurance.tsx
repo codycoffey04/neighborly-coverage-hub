@@ -268,7 +268,7 @@ const AutoInsurance = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button size="lg" className="text-lg px-8" asChild>
+                <Button size="lg" className="text-lg px-8 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
                 <div className="flex flex-col sm:flex-row gap-2 items-center">

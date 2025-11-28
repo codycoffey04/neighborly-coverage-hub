@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
@@ -113,9 +115,13 @@ export const Testimonials = () => {
             Join thousands of satisfied customers across Alabama and Georgia
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="/reviews" className="text-primary font-semibold hover:underline inline-flex items-center gap-2">
-              Read All Reviews
-            </a>
+            <Button 
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+              asChild
+            >
+              <Link to="/contact">Get Your Free Quote</Link>
+            </Button>
           </div>
         </div>
       </div>

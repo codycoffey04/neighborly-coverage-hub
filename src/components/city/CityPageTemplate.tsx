@@ -271,7 +271,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button size="lg" asChild>
+                <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
                 <div className="flex flex-col sm:flex-row gap-2 items-center">
@@ -525,7 +525,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
               </Card>
             </div>
 
-            <Button size="lg" className="text-lg px-8" asChild>
+            <Button size="lg" className="text-lg px-8 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
               <Link to="/contact">Get Your Free Quote</Link>
             </Button>
           </div>

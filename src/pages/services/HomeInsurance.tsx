@@ -245,16 +245,16 @@ const HomeInsurance = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" asChild>
+                <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="#quote-form">Get Your Quote</a>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                     <Phone className="mr-2 h-5 w-5" />
                     Alabama: (256) 927-6287
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
                     <Phone className="mr-2 h-5 w-5" />
                     Georgia: (706) 784-6511

@@ -33,10 +33,10 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
-            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
+            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
               <a href="/contact">Get Your Free Quote</a>
             </Button>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-7 h-auto font-bold shadow-lg hover:scale-105 transition-all duration-300">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 text-lg px-10 py-7 h-auto font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
               <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">Call Us Now</a>
             </Button>
           </div>

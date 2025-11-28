@@ -208,7 +208,7 @@ const georgiaCities = [
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" asChild>
+                <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
               </div>

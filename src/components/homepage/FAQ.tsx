@@ -4,6 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const faqs = [
@@ -99,9 +101,13 @@ export const FAQ = () => {
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Still have questions?</p>
-          <a href="/contact" className="btn-primary px-6 py-3 rounded-lg font-semibold inline-block">
-            Contact Us
-          </a>
+          <Button 
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            asChild
+          >
+            <Link to="/contact">Get Your Free Quote</Link>
+          </Button>
         </div>
       </div>
     </section>
