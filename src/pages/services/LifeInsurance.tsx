@@ -674,74 +674,74 @@ const georgiaCities = [
           <div className="container max-w-4xl">
             <h2 className="text-3xl font-bold mb-8 text-center">Life Insurance Questions Answered</h2>
             <Accordion type="single" collapsible className="w-full space-y-4">
-              <AccordionItem value="item-1" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">How much life insurance coverage do I need?</span>
+              <AccordionItem value="item-1" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">How much life insurance coverage do I need?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Financial experts recommend 5-10 times your annual income in life insurance coverage. For example, if you earn $60,000 annually, you should consider $300,000-$600,000 in coverage. This ensures your family can replace your income, pay off debts (including mortgages averaging $250,000 in Alabama and Georgia), cover funeral expenses ($7,000-$10,000), and fund children's education. Stay-at-home parents should also carry coverage to replace childcare, housekeeping, and other services they provide.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">What's the difference between term and whole life insurance?</span>
+              <AccordionItem value="item-2" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">What's the difference between term and whole life insurance?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Term life insurance covers you for a specific period (10, 20, or 30 years) and costs significantly less—about $20-30/month for $500,000 coverage for a healthy 30-year-old. Whole life insurance provides lifelong coverage and includes a cash value component that grows over time, but costs much more—typically $200-300/month for the same coverage. Most families choose term life for its affordability and high coverage amounts during working years when protection is most critical.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">How much does life insurance cost in Alabama and Georgia?</span>
+              <AccordionItem value="item-3" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">How much does life insurance cost in Alabama and Georgia?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Life insurance rates don't vary by state—they're based on age, health, coverage amount, and term length. A healthy 30-year-old can get $500,000 in 20-year term coverage for approximately $25/month. At age 40, the same coverage costs around $35/month, and at age 50, about $75/month. Whole life insurance costs significantly more—$200-300/month for $500,000 coverage for a 30-year-old. Rates increase with age and health conditions like smoking (smokers pay 2-3 times more than non-smokers).
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">Do I need a medical exam for life insurance?</span>
+              <AccordionItem value="item-4" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">Do I need a medical exam for life insurance?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Traditional life insurance policies typically require a medical exam, which includes basic measurements (height, weight, blood pressure) and sometimes blood/urine tests. However, no-exam life insurance policies are available for smaller coverage amounts (usually up to $250,000-$500,000) with simplified underwriting based on health questions. No-exam policies cost slightly more but offer faster approval—often within 24-48 hours instead of several weeks.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">Should stay-at-home parents have life insurance?</span>
+              <AccordionItem value="item-5" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">Should stay-at-home parents have life insurance?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Absolutely. Stay-at-home parents provide valuable services including childcare, housekeeping, cooking, transportation, and household management. Replacing these services costs an estimated $60,000-$80,000 annually in Alabama and Georgia. Financial experts recommend $300,000-$500,000 in coverage for stay-at-home parents to ensure the surviving parent can afford childcare, household help, and maintain family stability. Term life insurance for this coverage level typically costs $20-30/month.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-6" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">Can I get life insurance if I have health conditions?</span>
+              <AccordionItem value="item-6" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">Can I get life insurance if I have health conditions?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Yes. While serious health conditions increase premiums, most people can qualify for life insurance. Common conditions like controlled diabetes, high blood pressure, or past cancer treatment may result in higher rates but don't necessarily disqualify you. Guaranteed issue policies are available for those with significant health issues—these policies don't require medical questions or exams, though they cost more and have lower coverage limits. We help find the best options for your specific health situation.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-7" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">What happens if I outlive my term life insurance policy?</span>
+              <AccordionItem value="item-7" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">What happens if I outlive my term life insurance policy?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   When your term life insurance policy expires (after 10, 20, or 30 years), coverage simply ends and you stop paying premiums. This is actually the ideal outcome—it means you're alive and healthy. At that point, many people no longer need life insurance because their mortgage is paid off, children are financially independent, and retirement savings are established. If you still need coverage, you can purchase a new policy, though premiums will be higher due to increased age.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-8" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">How quickly can I get life insurance coverage?</span>
+              <AccordionItem value="item-8" className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">How quickly can I get life insurance coverage?</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   Coverage speed depends on the policy type. No-exam simplified issue policies can be approved within 24-48 hours with coverage starting immediately. Traditional policies requiring medical exams typically take 4-8 weeks—scheduling the exam, processing lab results, and underwriting review all add time. Some insurers offer accelerated underwriting using electronic health records, potentially reducing approval time to 1-2 weeks even with full underwriting.
                 </AccordionContent>
               </AccordionItem>
