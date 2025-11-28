@@ -415,14 +415,14 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </div>
             <Accordion type="single" collapsible className="space-y-4">
               {city.faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 bg-card">
-                  <AccordionTrigger className="text-left hover:no-underline">
-                    <span className="font-semibold text-foreground pr-4">{faq.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
+              <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-lg pr-4">{faq.question}</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
               ))}
             </Accordion>
           </div>
