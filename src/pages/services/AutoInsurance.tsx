@@ -126,14 +126,17 @@ const faqs = [
 const testimonials = [
   {
     name: "Teresa Gardiner",
+    location: "Centre, AL",
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
   },
   {
     name: "Steve Smith",
+    location: "Centre, AL",
     text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
   },
   {
     name: "Ricky Salas",
+    location: "Rome, GA",
     text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
   }
 ];
@@ -295,10 +298,10 @@ const AutoInsurance = () => {
               {coverageTypes.map((coverage, index) => {
                 const Icon = coverage.icon;
                 return (
-                  <Card key={index} className="card-hover">
+                  <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
                     <CardHeader>
-                      <div className="p-3 rounded-lg bg-primary/10 w-fit mb-3">
-                        <Icon className="h-6 w-6 text-primary" />
+                      <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                        <Icon className="h-6 w-6 text-white" />
                       </div>
                       <CardTitle className="text-xl">{coverage.title}</CardTitle>
                     </CardHeader>
@@ -356,10 +359,10 @@ const AutoInsurance = () => {
               {savingsTips.map((tip, index) => {
                 const Icon = tip.icon;
                 return (
-                  <Card key={index} className="card-hover">
+                  <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
                     <CardHeader>
-                      <div className="p-3 rounded-lg bg-accent/10 w-fit mb-3">
-                        <Icon className="h-6 w-6 text-accent" />
+                      <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                        <Icon className="h-6 w-6 text-white" />
                       </div>
                       <CardTitle className="text-xl">{tip.title}</CardTitle>
                     </CardHeader>
@@ -404,17 +407,20 @@ const AutoInsurance = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="card-hover">
-                  <CardContent className="pt-6">
+                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
+                  <CardContent className="pt-6 flex flex-col h-full">
                     <div className="flex gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                       ))}
                     </div>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                    <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
                       "{testimonial.text}"
                     </p>
-                    <p className="font-semibold text-foreground">— {testimonial.name}</p>
+                    <div className="mt-auto">
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
