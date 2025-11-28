@@ -59,18 +59,18 @@ export const ServicesOverview = () => {
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
-            <Card key={index} className="card-hover border-2 group overflow-hidden">
+            <Card key={index} className="bg-white border border-gray-200 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200 group overflow-hidden flex flex-col h-full">
               {/* Compact gray header with icon + title inline */}
               <div className="bg-gray-200 px-6 py-4 flex items-center gap-3">
-                <div className="inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <Icon className="h-7 w-7 text-primary" />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary transition-colors">
+                  <Icon className="h-6 w-6 text-white" />
                 </div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
               </div>
               
               {/* White area with description + CTA */}
-              <CardContent className="p-6">
-                <CardDescription className="text-base mb-4">
+              <CardContent className="p-6 flex-grow flex flex-col">
+                <CardDescription className="text-base mb-4 flex-grow">
                   {service.description}
                 </CardDescription>
                 <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary-dark" asChild>
