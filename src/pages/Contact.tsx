@@ -23,8 +23,8 @@ const offices = [
     hours: "Monday–Friday\n8:00 AM – 5:00 PM",
     rating: "4.7",
     reviews: "116",
-    // TODO: Replace with real Google Maps embed code for Centre office
-    mapEmbed: "https://www.google.com/maps/embed?pb=CENTRE_OFFICE_EMBED_CODE",
+    placeId: "ChIJJ80TpQ5hiogRn3tzQbqNLMA",
+    mapEmbed: "https://maps.google.com/maps?q=place_id:ChIJJ80TpQ5hiogRn3tzQbqNLMA&output=embed",
     mapAddress: "1913 W Main Street, Centre, AL 35960",
   },
   {
@@ -38,8 +38,8 @@ const offices = [
     hours: "Monday–Friday\n8:30 AM – 4:30 PM",
     rating: "4.6",
     reviews: "90",
-    // TODO: Replace with real Google Maps embed code for Rome office
-    mapEmbed: "https://www.google.com/maps/embed?pb=ROME_OFFICE_EMBED_CODE",
+    placeId: "ChIJZQwKAM-kiogR_bIpdOhQm7o",
+    mapEmbed: "https://maps.google.com/maps?q=place_id:ChIJZQwKAM-kiogR_bIpdOhQm7o&output=embed",
     mapAddress: "1703 Turner McCall Blvd SE, Rome, GA 30161",
   },
 ];
@@ -341,7 +341,7 @@ const Contact = () => {
                       asChild
                     >
                       <a 
-                        href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(office.mapAddress)}`}
+                        href={`https://www.google.com/maps/dir/?api=1&destination_place_id=${office.placeId}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Get directions to ${office.name} office`}
