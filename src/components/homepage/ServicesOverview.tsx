@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Home, Building2, Key, Heart, Bike, ArrowRight } from "lucide-react";
+import { Car, Home, Building2, Key, Heart, Bike, ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -86,10 +86,17 @@ export const ServicesOverview = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center">
-          <p className="text-muted-foreground mb-4">Not sure which coverage you need?</p>
-          <Button size="lg" variant="outline" className="border-2" asChild>
-            <Link to="/contact">Talk to an Expert</Link>
+        <div className="bg-gray-50 rounded-lg py-12 px-6 text-center">
+          <p className="text-lg text-muted-foreground mb-6">Not sure which coverage you need?</p>
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            asChild
+          >
+            <Link to="/contact">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Talk to an Expert
+            </Link>
           </Button>
         </div>
       </div>
