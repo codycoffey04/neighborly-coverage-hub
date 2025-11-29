@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { MapPin, Phone, Clock, Star } from "lucide-react";
+import { MapPin, Phone, Clock, Star, Check } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet";
@@ -107,49 +107,56 @@ const Contact = () => {
 
       {/* Custom Hero Section with Background Image */}
       <section 
-        className="relative min-h-[500px] flex items-end bg-cover bg-center"
+        className="relative min-h-[600px] flex items-center bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
         
         {/* Content */}
-        <div className="relative z-10 w-full py-16 px-4">
+        <div className="relative z-10 w-full py-20 px-4">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 Contact Us
               </h1>
-              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
-                Get in touch — we're here to help with quotes, questions, and claims
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto leading-relaxed">
+                Whether you need a quote, have a question about your policy, or want to file a claim — our team is ready to help. Expect quick responses and personal attention from real people who live in your community.
               </p>
               
-              {/* CTA Buttons - styled for dark background */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+              {/* Trust indicator bullet points */}
+              <div className="flex flex-col items-center gap-3 mb-8 text-white/95 text-base md:text-lg">
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-secondary flex-shrink-0 drop-shadow-md" />
+                  <span className="drop-shadow-md">Response within 1 business day — usually same day</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-secondary flex-shrink-0 drop-shadow-md" />
+                  <span className="drop-shadow-md">Speak directly with licensed agents — no call centers</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-secondary flex-shrink-0 drop-shadow-md" />
+                  <span className="drop-shadow-md">Two convenient offices in Centre, AL and Rome, GA</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="/contact#contact-form">Get Your Free Quote</a>
+                </Button>
+                <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/80 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                     <Phone className="mr-2 h-5 w-5" />
                     Alabama: (256) 927-6287
                   </a>
                 </Button>
-                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/80 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
                     <Phone className="mr-2 h-5 w-5" />
                     Georgia: (706) 784-6511
                   </a>
                 </Button>
-              </div>
-
-              {/* Trust indicators with white text */}
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
-                <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-secondary drop-shadow-md" />
-                  <span className="drop-shadow-md">Response within 1 business day</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-secondary drop-shadow-md" />
-                  <span className="drop-shadow-md">2 office locations</span>
-                </div>
               </div>
             </div>
           </div>
@@ -157,13 +164,17 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 px-4">
+      <section id="contact-form" className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">Send Us a Message</CardTitle>
-            </CardHeader>
-            <CardContent>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Send Us a Message</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Fill out the form below and we'll get back to you within one business day.
+            </p>
+          </div>
+          
+          <Card className="shadow-lg">
+            <CardContent className="pt-6">
               <form 
                 name="contact-form" 
                 method="POST" 
@@ -274,11 +285,11 @@ const Contact = () => {
 
           {/* Quick Contact Options */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <Card>
+            <Card className="shadow-md">
               <CardContent className="pt-6 text-center">
-                <Phone className="w-10 h-10 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
-                <div className="space-y-1 text-sm">
+                <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
+                <h3 className="font-bold text-foreground mb-2">Call Us</h3>
+                <div className="space-y-2 text-base">
                   <div>
                     <div className="text-muted-foreground">Centre:</div>
                     <a href="tel:+12569276287" className="text-primary hover:underline" aria-label="Call Centre, Alabama office at (256) 927-6287">
@@ -295,22 +306,22 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="shadow-md">
               <CardContent className="pt-6 text-center">
-                <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">Office Hours</h3>
-                <div className="space-y-1 text-sm text-muted-foreground">
+                <Clock className="w-8 h-8 text-primary mx-auto mb-4" />
+                <h3 className="font-bold text-foreground mb-2">Office Hours</h3>
+                <div className="space-y-2 text-base text-muted-foreground">
                   <div>Centre: Mon–Fri, 8 AM – 5 PM</div>
                   <div>Rome: Mon–Fri, 8:30 AM – 4:30 PM</div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="shadow-md">
               <CardContent className="pt-6 text-center">
-                <MapPin className="w-10 h-10 text-primary mx-auto mb-3" />
-                <h3 className="font-semibold text-foreground mb-2">Visit Us</h3>
-                <p className="text-sm text-muted-foreground">
+                <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
+                <h3 className="font-bold text-foreground mb-2">Visit Us</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Two locations in Centre, AL and Rome, GA<br />
                   Walk-ins welcome during business hours
                 </p>
@@ -325,6 +336,9 @@ const Contact = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Our Offices</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Visit us in person or connect remotely — we serve all of Alabama and Georgia from these two locations.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -334,7 +348,7 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold text-foreground">
                     {office.name} {office.subtitle && <span className="text-lg font-normal text-muted-foreground">{office.subtitle}</span>}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-6">{office.dba}</p>
+                  <p className="text-sm text-muted-foreground mb-4">{office.dba}</p>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start gap-3">
@@ -365,7 +379,7 @@ const Contact = () => {
                   </div>
 
                   {/* Map */}
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-4">
+                  <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden mb-4">
                     <iframe
                       src={office.mapEmbed}
                       width="100%"
@@ -410,26 +424,26 @@ const Contact = () => {
       </section>
 
       {/* Service Area Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-primary text-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">Serving All of Alabama & Georgia</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <h2 className="text-3xl font-bold mb-4">Serving All of Alabama & Georgia</h2>
+          <p className="text-lg text-white/90 mb-8 leading-relaxed">
             From our offices in Centre and Rome, we provide insurance coverage to families throughout both states. No matter where you live in Alabama or Georgia, we can help — no office visit required.
           </p>
-          <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
+          <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/80 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
             <a href="/service-areas">View All Service Areas</a>
           </Button>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-secondary text-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Get Started?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <p className="text-lg text-white/90 mb-8 leading-relaxed">
             Get a free quote in about 15 minutes. No obligation, no pressure.
           </p>
-          <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free insurance quote">
+          <Button size="lg" variant="outline" className="bg-white text-secondary hover:bg-white/90 border-2 border-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free insurance quote">
             <a href="#contact-form">Get Your Free Quote</a>
           </Button>
         </div>
