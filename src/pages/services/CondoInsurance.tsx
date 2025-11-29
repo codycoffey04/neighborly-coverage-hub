@@ -23,7 +23,10 @@ import {
   Camera,
   PhoneCall,
   Wrench,
-  Quote
+  Star,
+  MapPin,
+  CheckCircle,
+  ArrowRight
 } from "lucide-react";
 import {
   Accordion,
@@ -557,12 +560,16 @@ const CondoInsurance = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardContent className="p-6 flex-grow flex flex-col">
-                  <Quote className="h-8 w-8 text-accent/20 mb-4" />
-                  <p className="text-muted-foreground mb-6 leading-relaxed flex-grow italic">"{testimonial.text}"</p>
-                  <div className="border-t pt-4 mt-auto">
-                    <p className="font-semibold">{testimonial.name}</p>
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">"{testimonial.text}"</p>
+                  <div className="mt-auto">
+                    <p className="font-semibold text-foreground">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                   </div>
                 </CardContent>
@@ -571,100 +578,125 @@ const CondoInsurance = () => {
           </div>
           <div className="text-center">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/reviews">Read All Reviews →</Link>
+              <Link to="/reviews">Read All Reviews</Link>
             </Button>
           </div>
         </div>
       </section>
 
       {/* Service Areas */}
-      <section className="py-16 bg-muted/30">
-        <div className="container max-w-6xl mx-auto px-4">
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Condo Insurance Across Alabama & Georgia</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Alabama</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-3">
-                  {alabamaCities.map((city, index) => (
-                    <Link
-                      key={index}
-                      to={`/${city.slug}`}
-                      className="text-primary hover:underline"
-                    >
-                      {city.name}
-                    </Link>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Georgia</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-3">
-                  {georgiaCities.map((city, index) => (
-                    <Link
-                      key={index}
-                      to={`/${city.slug}`}
-                      className="text-primary hover:underline"
-                    >
-                      {city.name}
-                    </Link>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Alabama - gray card wrapper */}
+            <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                <MapPin className="h-5 w-5" />
+                Alabama
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {alabamaCities.map((city, index) => (
+                  <Link 
+                    key={index}
+                    to={`/${city.slug}`}
+                    className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Georgia - gray card wrapper */}
+            <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                <MapPin className="h-5 w-5" />
+                Georgia
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {georgiaCities.map((city, index) => (
+                  <Link 
+                    key={index}
+                    to={`/${city.slug}`}
+                    className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-          <p className="text-center text-muted-foreground mt-8">
-            Don't see your city? <Link to="/contact" className="text-primary hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
+
+          <p className="text-center text-muted-foreground">
+            Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
           </p>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4">
-          <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-accent/5">
-            <CardContent className="p-8 text-center">
-              <h2 className="text-3xl font-bold mb-4">Have Questions About HO-6 Coverage?</h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Call a local agent today to discuss your condo insurance needs.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                <Card className="border-2">
-                  <CardContent className="p-4 flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <div className="text-left">
-                      <div className="font-semibold">Alabama</div>
-                      <a href="tel:+12569276287" className="text-primary hover:underline text-lg" aria-label="Call Alabama office at (256) 927-6287">
-                        (256) 927-6287
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card className="border-2">
-                  <CardContent className="p-4 flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <div className="text-left">
-                      <div className="font-semibold">Georgia</div>
-                      <a href="tel:+17067846511" className="text-primary hover:underline text-lg" aria-label="Call Georgia office at (706) 784-6511">
-                        (706) 784-6511
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-              <Button size="lg" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-            </CardContent>
-          </Card>
+      <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Have Questions About HO-6 Coverage?
+          </h2>
+          <p className="text-xl text-white/90 mb-8">
+            Call a local agent today to discuss your condo insurance needs.
+          </p>
+          
+          {/* Green Button */}
+          <Button 
+            size="lg" 
+            className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            asChild
+          >
+            <Link to="/contact">Get Your Free Quote</Link>
+          </Button>
+
+          {/* Phone Links */}
+          <div className="flex flex-wrap justify-center items-center gap-4 mt-4 text-sm text-white/90">
+            <span>Or call us:</span>
+            <a 
+              href="tel:+12569276287"
+              aria-label="Call Centre, Alabama office at (256) 927-6287"
+              className="flex items-center gap-1.5 hover:text-white transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              (256) 927-6287
+            </a>
+            <span className="text-white/50">|</span>
+            <a 
+              href="tel:+17067846511"
+              aria-label="Call Rome, Georgia office at (706) 784-6511"
+              className="flex items-center gap-1.5 hover:text-white transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              (706) 784-6511
+            </a>
+          </div>
+
+          {/* Trust Badges */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Licensed in AL & GA
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Hablamos Español
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Family Owned
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              100+ Years Combined Experience
+            </span>
+          </div>
         </div>
       </section>
 
