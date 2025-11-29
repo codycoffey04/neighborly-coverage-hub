@@ -222,6 +222,8 @@ const MotorcycleInsurance = () => {
         </script>
       </Helmet>
 
+      <Header />
+
       {/* Custom Hero Section with Background Image */}
       <section 
         className="relative min-h-[600px] flex items-end bg-cover bg-center"
