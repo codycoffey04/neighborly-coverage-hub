@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import { 
   Shield, Car, Umbrella, Users, Heart, Wrench,
   FileCheck, CreditCard, DollarSign, TrendingDown, Target, Home,
-  Phone, MapPin, Star, CheckCircle, Bike, Award, Key, Building2
+  Phone, MapPin, Star, CheckCircle, Bike, Award, Key, Building2,
+  CloudRain, AlertTriangle, ShieldOff
 } from "lucide-react";
 import {
   Accordion,
@@ -324,23 +325,42 @@ const MotorcycleInsurance = () => {
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                  <CardContent className="pt-6">
+                  <CardContent className="pt-6 flex flex-col h-full">
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
+                      <CloudRain className="h-6 w-6 text-white" />
+                    </div>
                     <h3 className="font-bold text-lg mb-3">Seasonal weather</h3>
-                    <p className="text-muted-foreground">Spring storms bring sudden rain and hail. Summer heat causes fatigue. Fall means leaves on pavement and peak deer season from October through December. Comprehensive coverage addresses weather and animal strikes.</p>
+                    <p className="text-muted-foreground flex-grow">Spring storms bring sudden rain and hail. Summer heat causes fatigue. Fall means leaves on pavement and peak deer season from October through December. Comprehensive coverage addresses weather and animal strikes.</p>
                   </CardContent>
                 </Card>
 
                 <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                  <CardContent className="pt-6">
+                  <CardContent className="pt-6 flex flex-col h-full">
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
+                      <AlertTriangle className="h-6 w-6 text-white" />
+                    </div>
                     <h3 className="font-bold text-lg mb-3">High-risk corridors</h3>
-                    <p className="text-muted-foreground">I-20, I-65, I-75, I-85, and US-431 (nicknamed "Highway to Hell") see disproportionate motorcycle incidents. Higher liability and UM/UIM limits make sense if you ride these routes regularly.</p>
+                    <p className="text-muted-foreground flex-grow">I-20, I-65, I-75, I-85, and US-431 (nicknamed "Highway to Hell") see disproportionate motorcycle incidents. Higher liability and UM/UIM limits make sense if you ride these routes regularly.</p>
                   </CardContent>
                 </Card>
 
                 <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                  <CardContent className="pt-6">
+                  <CardContent className="pt-6 flex flex-col h-full">
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
+                      <MapPin className="h-6 w-6 text-white" />
+                    </div>
                     <h3 className="font-bold text-lg mb-3">Urban vs. rural</h3>
-                    <p className="text-muted-foreground">Metro areas like Atlanta and Birmingham have more crashes overall, while rural roads see more fatalities due to higher speeds and delayed emergency response. Either environment warrants adequate medical coverage.</p>
+                    <p className="text-muted-foreground flex-grow">Metro areas like Atlanta and Birmingham have more crashes overall, while rural roads see more fatalities due to higher speeds and delayed emergency response. Either environment warrants adequate medical coverage.</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                  <CardContent className="pt-6 flex flex-col h-full">
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
+                      <ShieldOff className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="font-bold text-lg mb-3">Uninsured motorists</h3>
+                    <p className="text-muted-foreground flex-grow">Alabama and Georgia rank among the highest for uninsured drivers. UM/UIM coverage protects you when the at-fault party has no insurance or insufficient limits.</p>
                   </CardContent>
                 </Card>
               </div>
