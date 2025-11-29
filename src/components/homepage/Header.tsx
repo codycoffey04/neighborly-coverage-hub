@@ -35,7 +35,7 @@ export const Header = () => {
   const [learnExpanded, setLearnExpanded] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full bg-primary shadow-md">
       <div className="container-custom">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -52,9 +52,9 @@ export const Header = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:text-primary">
-                    Services
-                  </NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-sm font-medium text-white bg-transparent hover:text-white/80">
+                Services
+              </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-56 gap-1 p-2">
                       {serviceLinks.map((link) => (
@@ -75,25 +75,25 @@ export const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
             
-            <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <Link to="/about" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
               About
             </Link>
-            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <Link to="/contact" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
               Contact
             </Link>
-            <Link to="/faq" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <Link to="/faq" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
               FAQ
             </Link>
-            <Link to="/reviews" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <Link to="/reviews" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
               Reviews
             </Link>
             
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:text-primary">
-                    Learn
-                  </NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-sm font-medium text-white bg-transparent hover:text-white/80">
+                Learn
+              </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-56 gap-1 p-2">
                       {learnLinks.map((link) => (
@@ -118,18 +118,18 @@ export const Header = () => {
           {/* Contact & CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <div className="flex items-center gap-4 text-sm">
-              <a href="tel:+12569276287" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors" aria-label="Call Centre, Alabama office at (256) 927-6287">
+              <a href="tel:+12569276287" className="flex items-center gap-1 text-white hover:text-white/80 transition-colors" aria-label="Call Centre, Alabama office at (256) 927-6287">
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">(256) 927-6287</span>
               </a>
-              <span className="text-muted-foreground">|</span>
-              <a href="tel:+17067846511" className="flex items-center gap-1 text-foreground hover:text-primary transition-colors" aria-label="Call Rome, Georgia office at (706) 784-6511">
+              <span className="text-white/50">|</span>
+              <a href="tel:+17067846511" className="flex items-center gap-1 text-white hover:text-white/80 transition-colors" aria-label="Call Rome, Georgia office at (706) 784-6511">
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">(706) 784-6511</span>
               </a>
             </div>
             <Link to="/contact">
-              <Button className="bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
+              <Button className="bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
                 Get Quote
               </Button>
             </Link>
@@ -142,22 +142,22 @@ export const Header = () => {
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border">
+        <div className="lg:hidden py-4 border-t border-white/20">
             <nav className="flex flex-col gap-4">
               {/* Services - expandable */}
               <div className="space-y-2">
                 <button
                   onClick={() => setServicesExpanded(!servicesExpanded)}
-                  className="flex items-center justify-between w-full text-sm font-medium text-foreground hover:text-primary transition-colors"
+                  className="flex items-center justify-between w-full text-sm font-medium text-white hover:text-white/80 transition-colors"
                 >
                   Services
                   <ChevronDown className={`h-4 w-4 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
@@ -169,7 +169,7 @@ export const Header = () => {
                         key={link.href}
                         to={link.href} 
                         onClick={() => setMobileMenuOpen(false)} 
-                        className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                        className="block text-sm text-white/70 hover:text-white transition-colors"
                       >
                         {link.name}
                       </Link>
@@ -180,28 +180,28 @@ export const Header = () => {
 
               <Link 
                 to="/about" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-white hover:text-white/80 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 to="/contact" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-white hover:text-white/80 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
               </Link>
               <Link 
                 to="/faq" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-white hover:text-white/80 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 FAQ
               </Link>
               <Link 
                 to="/reviews" 
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-white hover:text-white/80 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Reviews
@@ -211,7 +211,7 @@ export const Header = () => {
               <div className="space-y-2">
                 <button
                   onClick={() => setLearnExpanded(!learnExpanded)}
-                  className="flex items-center justify-between w-full text-sm font-medium text-foreground hover:text-primary transition-colors"
+                  className="flex items-center justify-between w-full text-sm font-medium text-white hover:text-white/80 transition-colors"
                 >
                   Learn
                   <ChevronDown className={`h-4 w-4 transition-transform ${learnExpanded ? 'rotate-180' : ''}`} />
@@ -223,7 +223,7 @@ export const Header = () => {
                         key={link.href}
                         to={link.href} 
                         onClick={() => setMobileMenuOpen(false)} 
-                        className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                        className="block text-sm text-white/70 hover:text-white transition-colors"
                       >
                         {link.name}
                       </Link>
@@ -232,18 +232,18 @@ export const Header = () => {
                 )}
               </div>
 
-              <div className="flex flex-col gap-2 pt-2 border-t border-border">
-                <a href="tel:+12569276287" className="flex items-center gap-2 text-sm" aria-label="Call Centre, Alabama office at (256) 927-6287">
+              <div className="flex flex-col gap-2 pt-2 border-t border-white/20">
+                <a href="tel:+12569276287" className="flex items-center gap-2 text-sm text-white" aria-label="Call Centre, Alabama office at (256) 927-6287">
                   <Phone className="h-4 w-4" />
                   <span>(256) 927-6287 - Centre</span>
                 </a>
-                <a href="tel:+17067846511" className="flex items-center gap-2 text-sm" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                <a href="tel:+17067846511" className="flex items-center gap-2 text-sm text-white" aria-label="Call Rome, Georgia office at (706) 784-6511">
                   <Phone className="h-4 w-4" />
                   <span>(706) 784-6511 - Rome</span>
                 </a>
               </div>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
+                <Button className="w-full bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
                   Get Quote
                 </Button>
               </Link>
