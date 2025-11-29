@@ -78,6 +78,9 @@ export const Header = () => {
             <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               About
             </Link>
+            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Contact
+            </Link>
             <Link to="/faq" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               FAQ
             </Link>
@@ -181,6 +184,13 @@ export const Header = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link 
+                to="/contact" 
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
               </Link>
               <Link 
                 to="/faq" 
