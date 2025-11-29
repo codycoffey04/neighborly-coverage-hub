@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import heroBackground from "@/assets/condo-insurance-hero.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -281,14 +283,9 @@ const CondoInsurance = () => {
   };
 
   return (
-    <PageLayout
-      title="Condo Insurance (HO-6) in Alabama & Georgia"
-      breadcrumbs={[
-        { label: "Home", href: "/" },
-        { label: "Services", href: "/services/auto-insurance" },
-        { label: "Condo Insurance", href: "/services/condo-insurance" }
-      ]}
-    >
+    <>
+      <Header />
+
       <Helmet>
         <title>Condo Insurance (HO-6) in Alabama & Georgia | Coffey Agencies</title>
         <meta 
@@ -304,51 +301,73 @@ const CondoInsurance = () => {
         </script>
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-muted/20">
-        <div className="container max-w-4xl mx-auto px-4">
-          <div className="text-center space-y-6">
-            <p className="text-lg text-muted-foreground">
-              Clear HO-6 coverage built around your unit, your HOA, and your budget. Condo insurance is about the space you own "from the walls-in," what the master policy covers outside your unit, and how both fit together at claim time.
-            </p>
-            
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <Zap className="h-4 w-4 text-accent" />
-                <span>Quotes in minutes</span>
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Condo Insurance (HO-6) in Alabama & Georgia
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
+                Clear HO-6 coverage built around your unit, your HOA, and your budget
+              </p>
+              
+              {/* CTA Buttons - styled for dark background */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
               </div>
-              <div className="flex items-center gap-2">
-                <ClipboardList className="h-4 w-4 text-accent" />
-                <span>HOA doc review</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Building className="h-4 w-4 text-accent" />
-                <span>Local claim support</span>
-              </div>
-            </div>
 
-            <p className="text-sm text-muted-foreground">
-              Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline">auto insurance</Link> or align a townhome/condo with the right <Link to="/services/home-insurance" className="text-primary hover:underline">home insurance</Link> where applicable to unlock savings and simpler billing.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Alabama: (256) 927-6287
-                </a>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Georgia: (706) 784-6511
-                </a>
-              </Button>
+              {/* Trust indicators with white text */}
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
+                <div className="flex items-center gap-2">
+                  <Zap className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Quotes in minutes</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <ClipboardList className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">HOA doc review</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Building className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Local claim support</span>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Intro Section - outside hero */}
+      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
+        <div className="max-w-3xl mx-auto space-y-6 text-center">
+          <p className="text-muted-foreground leading-relaxed">
+            Condo insurance is about the space you own "from the walls-in," what the master policy covers outside your unit, and how both fit together at claim time.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline">auto insurance</Link> or align a townhome/condo with the right <Link to="/services/home-insurance" className="text-primary hover:underline">home insurance</Link> where applicable to unlock savings and simpler billing.
+          </p>
         </div>
       </section>
 
@@ -648,7 +667,9 @@ const CondoInsurance = () => {
           </Card>
         </div>
       </section>
-    </PageLayout>
+
+      <Footer />
+    </>
   );
 };
 
