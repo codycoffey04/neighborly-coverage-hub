@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Star, FileCheck, CreditCard, DollarSign, CheckCircle, MapPin } from "lucide-react";
+import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Star, FileCheck, CreditCard, DollarSign, CheckCircle, MapPin, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
@@ -81,6 +81,11 @@ const savingsTips = [
     icon: DollarSign,
     title: "Right-size deductibles",
     description: "Raising deductibles lowers premium, but keep them at a level you could comfortably pay after a storm. We'll model a few options."
+  },
+  {
+    icon: Calendar,
+    title: "Review coverage annually",
+    description: "Life changes—renovations, paid-off mortgages, new valuables. An annual review ensures you're not overpaying or underprotected. We'll help you adjust."
   }
 ];
 
