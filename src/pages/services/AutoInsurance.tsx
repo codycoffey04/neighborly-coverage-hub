@@ -472,7 +472,7 @@ const AutoInsurance = () => {
 
               {/* Georgia */}
               <div>
-                <h3 className="text-xl font-bold mb-4 text-secondary flex items-center gap-2">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
                   Georgia
                 </h3>
@@ -481,7 +481,7 @@ const AutoInsurance = () => {
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-3 py-1.5 bg-card rounded-lg text-sm border hover:border-secondary hover:text-secondary transition-colors"
+                      className="px-3 py-1.5 bg-card rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors"
                     >
                       {city.name}
                     </Link>
@@ -547,6 +547,26 @@ const AutoInsurance = () => {
                 Get Your Free Quote
               </Button>
             </form>
+
+            {/* Trust Badges */}
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Licensed in AL & GA
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Hablamos Español
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Family Owned
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                100+ Years Combined Experience
+              </span>
+            </div>
           </div>
         </section>
 
