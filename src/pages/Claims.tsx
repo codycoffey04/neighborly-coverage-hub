@@ -132,7 +132,7 @@ const Claims = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all"
+                className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all"
               >
                 <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                   <Phone className="mr-2 h-5 w-5" />
@@ -143,7 +143,7 @@ const Claims = () => {
                 asChild 
                 size="lg" 
                 variant="outline" 
-                className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md"
+                className="bg-white hover:bg-white text-primary hover:text-primary border border-primary shadow-sm hover:shadow-md"
               >
                 <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
                   <Phone className="mr-2 h-5 w-5" />
