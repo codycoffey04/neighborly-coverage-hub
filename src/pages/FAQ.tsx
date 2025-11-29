@@ -293,6 +293,26 @@ const FAQ = () => {
               (706) 784-6511
             </a>
           </div>
+
+          {/* Trust Badges */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Licensed in AL & GA
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Hablamos Español
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Family Owned
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              100+ Years Combined Experience
+            </span>
+          </div>
         </div>
       </section>
 
