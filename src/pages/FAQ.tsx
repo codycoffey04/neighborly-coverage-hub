@@ -2,9 +2,8 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { MessageCircle, CheckCircle } from "lucide-react";
+import { MessageCircle, CheckCircle, Phone } from "lucide-react";
 import { Helmet } from "react-helmet";
 import faqHeroBackground from "@/assets/faq-hero.jpg";
 
@@ -254,24 +253,46 @@ const FAQ = () => {
       </section>
 
       {/* Still Have Questions CTA */}
-      <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto max-w-4xl">
-          <Card className="border-2 border-primary/20">
-            <CardContent className="p-8 text-center">
-              <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-foreground mb-4">
-                Still Have Questions?
-              </h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                We're here to help. Contact us by phone or email, or stop by one of our offices.
-              </p>
-              <Link to="/contact">
-                <Button size="lg">
-                  Contact Us
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+      <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
+        <div className="container mx-auto max-w-4xl text-center">
+          <MessageCircle className="w-12 h-12 text-white mx-auto mb-4" fill="currentColor" />
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Still Have Questions?
+          </h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            We're here to help. Contact us by phone, email, or stop by one of our offices.
+          </p>
+          
+          <Link to="/contact">
+            <Button 
+              size="lg" 
+              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            >
+              Contact Us
+            </Button>
+          </Link>
+
+          {/* Phone Links */}
+          <div className="flex flex-wrap justify-center items-center gap-4 mt-6 text-sm text-white/90">
+            <span>Or call us:</span>
+            <a 
+              href="tel:+12569276287"
+              aria-label="Call Centre, Alabama office at (256) 927-6287"
+              className="flex items-center gap-1.5 hover:text-white transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              (256) 927-6287
+            </a>
+            <span className="text-white/50">|</span>
+            <a 
+              href="tel:+17067846511"
+              aria-label="Call Rome, Georgia office at (706) 784-6511"
+              className="flex items-center gap-1.5 hover:text-white transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              (706) 784-6511
+            </a>
+          </div>
         </div>
       </section>
 
