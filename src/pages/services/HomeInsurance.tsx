@@ -1,10 +1,12 @@
 import { Helmet } from "react-helmet";
-import { PageLayout } from "@/components/shared/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Quote, Star, FileCheck, CreditCard, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
+import heroBackground from "@/assets/home-insurance-hero.jpg";
 
 const coverageTypes = [
   {
@@ -229,63 +231,72 @@ const HomeInsurance = () => {
         </script>
       </Helmet>
 
-      <PageLayout
-        title="Home Insurance in Alabama & Georgia"
-        description="Clear coverage built around your roof, rebuild cost, and risk"
-      >
-        {/* CTA Section */}
-        <section className="py-12 md:py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Alabama: (256) 927-6287
-                </a>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Georgia: (706) 784-6511
-                </a>
-              </Button>
-            </div>
+      <Header />
 
-              <div className="flex flex-wrap justify-center gap-6 text-sm">
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Home Insurance in Alabama & Georgia
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
+                Clear coverage built around your roof, rebuild cost, and risk
+              </p>
+              <p className="text-lg text-white/90 max-w-3xl mx-auto mb-8 drop-shadow-md">
+                Build a policy that mirrors real-world risk. Bundle with{" "}
+                <Link to="/services/auto-insurance" className="text-accent hover:underline font-semibold">
+                  auto insurance
+                </Link>{" "}
+                or add umbrella coverage to protect assets beyond your base limits.
+              </p>
+              
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
+              </div>
+
+              {/* Trust indicators */}
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
                 <div className="flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-primary" />
-                  <span>Quotes in minutes</span>
+                  <Zap className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Quotes in minutes</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Home className="h-5 w-5 text-primary" />
-                  <span>Verified rebuild costs</span>
+                  <Home className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Verified rebuild costs</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-primary" />
-                  <span>Live, local team</span>
+                  <Shield className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Live, local team</span>
                 </div>
               </div>
             </div>
-
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-muted-foreground">
-                Build a policy that mirrors real-world risk. Bundle with{" "}
-                <Link to="/services/auto-insurance" className="text-primary hover:underline">
-                  auto insurance
-                </Link>{" "}
-                or align a condo with proper walls-in coverage via{" "}
-                <Link to="/services/condo-insurance" className="text-primary hover:underline">
-                  condo insurance
-                </Link>{" "}
-                for additional savings and cleaner billing.
-              </p>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Coverage Types Section */}
         <section className="py-12 bg-muted/30">
@@ -559,7 +570,8 @@ const HomeInsurance = () => {
             </div>
           </div>
         </section>
-      </PageLayout>
+
+      <Footer />
     </>
   );
 };
