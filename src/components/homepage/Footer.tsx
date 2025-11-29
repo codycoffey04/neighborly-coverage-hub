@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Mail, Facebook } from "lucide-react";
+import coffeyLogo from "@/assets/coffey-logo-transparent.png";
 
 const services = [
   { name: "Auto Insurance", href: "/services/auto-insurance" },
@@ -29,12 +30,17 @@ const legal = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-muted/30 border-t">
+    <footer className="bg-gray-50 border-t">
       <div className="container-custom py-12 md:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Coffey Agencies Inc. */}
           <div className="lg:col-span-1 space-y-4">
-            <h4 className="font-bold text-lg mb-4">Coffey Agencies Inc.</h4>
+            <img 
+              src={coffeyLogo} 
+              alt="Coffey Agencies Inc." 
+              className="h-12 w-auto mb-3"
+            />
+            <h4 className="text-lg font-semibold mb-4">Coffey Agencies Inc.</h4>
             <ul className="space-y-2">
               {company.map((item, index) => (
                 <li key={index}>
@@ -51,7 +57,7 @@ export const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((item, index) => (
                 <li key={index}>
@@ -68,7 +74,7 @@ export const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               {resources.map((item, index) => (
                 <li key={index}>
@@ -85,7 +91,7 @@ export const Footer = () => {
 
           {/* Office Locations */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Our Offices</h4>
+            <h4 className="text-lg font-semibold mb-4">Our Offices</h4>
             <div className="space-y-4">
               {/* Centre Office */}
               <div className="space-y-2">
@@ -109,7 +115,7 @@ export const Footer = () => {
               </div>
 
               {/* Rome Office */}
-              <div className="space-y-2">
+              <div className="space-y-2 border-t border-gray-200 pt-4 mt-4">
                 <p className="font-semibold text-foreground">Rome, GA</p>
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p className="flex items-start gap-2">
