@@ -8,7 +8,7 @@ import { ServiceArea } from "@/components/homepage/ServiceArea";
 import { FAQ } from "@/components/homepage/FAQ";
 import { FinalCTA } from "@/components/homepage/FinalCTA";
 import { Footer } from "@/components/homepage/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   // Comprehensive Schema.org JSON-LD for homepage

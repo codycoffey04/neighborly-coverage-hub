@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MessageCircle, CheckCircle, Phone } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import faqHeroBackground from "@/assets/faq-hero.jpg";
 
 const faqs = [
@@ -168,6 +168,8 @@ const FAQ = () => {
 
       {/* Custom Hero Section with Background Image */}
       <section 
+        role="banner"
+        aria-label="Frequently asked questions hero section"
         className="relative min-h-[500px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${faqHeroBackground})` }}
       >

@@ -3,7 +3,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 interface PageLayoutProps {
   children: ReactNode;

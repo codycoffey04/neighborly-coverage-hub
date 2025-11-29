@@ -16,7 +16,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const coverageTypes = [
   {
@@ -227,6 +227,8 @@ const MotorcycleInsurance = () => {
 
       {/* Custom Hero Section with Background Image */}
       <section 
+        role="banner"
+        aria-label="Motorcycle insurance hero section"
         className="relative min-h-[600px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >

@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import heroBackground from "@/assets/auto-insurance-hero.jpg";
@@ -248,6 +248,8 @@ const AutoInsurance = () => {
 
       {/* Custom Hero Section with Background Image */}
       <section 
+        role="banner"
+        aria-label="Auto insurance hero section"
         className="relative min-h-[600px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -35,6 +35,8 @@ const RomeGAResources = () => {
 
       {/* Hero Section */}
       <section 
+        role="banner"
+        aria-label="Rome Georgia local resources hero section"
         className="relative min-h-[500px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >

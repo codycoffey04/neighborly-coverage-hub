@@ -11,7 +11,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { MapPin, Phone, Clock, Star, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const offices = [
   {
@@ -107,6 +107,8 @@ const Contact = () => {
 
       {/* Custom Hero Section with Background Image */}
       <section 
+        role="banner"
+        aria-label="Contact us hero section"
         className="relative min-h-[600px] flex items-center bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
