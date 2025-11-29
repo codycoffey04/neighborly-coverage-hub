@@ -6,6 +6,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import heroBackground from "@/assets/claims-hero.jpg";
 
 const callUsFirstBenefits = [
   { icon: FileText, text: "We explain what's covered and what to expect" },
@@ -109,13 +110,20 @@ const Claims = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-secondary text-white py-20 md:py-28">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg">
               Need to File a Claim? We're Here to Help.
             </h1>
-            <p className="text-xl md:text-2xl mb-8 leading-relaxed text-white/95 drop-shadow">
+            <p className="text-xl md:text-2xl mb-10 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Accidents and losses are stressful. You don't have to figure this out alone — call us first and we'll guide you through every step.
             </p>
             
@@ -145,17 +153,17 @@ const Claims = () => {
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/90">
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white">
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" />
+                <CheckCircle className="h-4 w-4 text-accent" />
                 <span>Available during business hours</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" />
+                <CheckCircle className="h-4 w-4 text-accent" />
                 <span>We stay involved throughout</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" />
+                <CheckCircle className="h-4 w-4 text-accent" />
                 <span>Hablamos Español</span>
               </div>
             </div>
