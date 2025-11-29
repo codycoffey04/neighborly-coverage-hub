@@ -1,4 +1,6 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
+import heroBackground from "@/assets/renters-insurance-hero.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
@@ -236,79 +238,86 @@ const RentersInsurance = () => {
         </script>
       </Helmet>
 
-      <PageLayout
-        title="Renters Insurance in Alabama & Georgia"
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Services", href: "/services/auto-insurance" },
-          { label: "Renters Insurance", href: "" }
-        ]}
+      <Header />
+
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        {/* Hero Section */}
-        <section className="section-spacing bg-gradient-to-b from-background to-muted/30">
-          <div className="container-custom">
-            <div className="max-w-4xl mx-auto text-center space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-balance">
-                Protect Your Belongings Starting at Just $8/Month
-              </h2>
-              <p className="text-xl text-muted-foreground text-balance">
-                Renters insurance from $8/month when bundled with auto. Most customers pay $15-30/month for complete protection. Cover your belongings, liability, and temporary housing with 4.8★ rated service across Alabama and Georgia.
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Renters Insurance in Alabama & Georgia
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
+                Protect your belongings starting at just $8/month when bundled
               </p>
               
-              {/* Trust Indicators */}
-              <div className="flex flex-wrap justify-center gap-6 pt-4">
-                <div className="flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-accent" />
-                  <span className="text-sm font-medium">Quotes in minutes</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <HomeIcon className="h-5 w-5 text-accent" />
-                  <span className="text-sm font-medium">$15-30/month typical</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Star className="h-5 w-5 text-accent fill-accent" />
-                  <span className="text-sm font-medium">4.8★ rated service</span>
-                </div>
+              {/* CTA Buttons - styled for dark background */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
               </div>
 
-              {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Alabama: (256) 927-6287
-                </a>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Georgia: (706) 784-6511
-                </a>
-              </Button>
-            </div>
-            </div>
-
-            {/* Intro Content */}
-            <div className="max-w-3xl mx-auto mt-12 space-y-6 text-center">
-              <h3 className="text-2xl font-bold">Affordable Protection for Alabama & Georgia Renters</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Nearly 50% of renters across Alabama and Georgia lack insurance coverage, leaving themselves vulnerable to devastating financial loss. The reality is stark: a single apartment fire, burglary, or storm can destroy everything you own, with average claims ranging from $3,000 to $5,000. Without renters insurance, you're responsible for replacing every item out of pocket—furniture, electronics, clothing, and irreplaceable personal items.
-              </p>
-              <div className="bg-muted/50 border-l-4 border-accent p-6 rounded-lg">
-                <p className="font-semibold text-lg mb-2">Starting at $8/month with auto bundle | Most pay $15-30/month</p>
-                <p className="text-sm text-muted-foreground">
-                  Rates vary based on coverage amount, location, and bundling. Alabama average: $27-30/month | Georgia average: $33-35/month
-                </p>
+              {/* Trust indicators with white text */}
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
+                <div className="flex items-center gap-2">
+                  <Zap className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Quotes in minutes</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <HomeIcon className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">$15-30/month typical</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="h-5 w-5 text-accent fill-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">4.8★ rated service</span>
+                </div>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline font-medium">auto insurance</Link> and save 15-25% on both policies—many customers qualify for rates as low as $8-19/month.
-              </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+
+      {/* Intro Section - outside hero */}
+      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto space-y-6 text-center">
+            <h2 className="text-2xl font-bold">Affordable Protection for Alabama & Georgia Renters</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Nearly 50% of renters across Alabama and Georgia lack insurance coverage, leaving themselves vulnerable to devastating financial loss. The reality is stark: a single apartment fire, burglary, or storm can destroy everything you own, with average claims ranging from $3,000 to $5,000. Without renters insurance, you're responsible for replacing every item out of pocket—furniture, electronics, clothing, and irreplaceable personal items.
+            </p>
+            <div className="bg-muted/50 border-l-4 border-accent p-6 rounded-lg">
+              <p className="font-semibold text-lg mb-2">Starting at $8/month with auto bundle | Most pay $15-30/month</p>
+              <p className="text-sm text-muted-foreground">
+                Rates vary based on coverage amount, location, and bundling. Alabama average: $27-30/month | Georgia average: $33-35/month
+              </p>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline font-medium">auto insurance</Link> and save 15-25% on both policies—many customers qualify for rates as low as $8-19/month.
+            </p>
+          </div>
+        </div>
+      </section>
 
         {/* Coverage Types Section */}
         <section className="section-spacing">
@@ -679,7 +688,7 @@ const RentersInsurance = () => {
             </div>
           </div>
         </section>
-      </PageLayout>
+      <Footer />
     </>
   );
 };
