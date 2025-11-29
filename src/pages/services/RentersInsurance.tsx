@@ -4,7 +4,7 @@ import heroBackground from "@/assets/renters-insurance-hero.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote } from "lucide-react";
+import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -119,21 +119,25 @@ const testimonials = [
 
 const crossSellServices = [
   {
+    icon: Car,
     title: "Auto Insurance",
     description: "Bundle with renters insurance and save 15-25% on both policies. Complete protection for your vehicles across Alabama and Georgia.",
     link: "/services/auto-insurance"
   },
   {
+    icon: Heart,
     title: "Life Insurance",
     description: "Protect your family's financial future with affordable term or whole life coverage starting at $25/month for $500K protection.",
     link: "/services/life-insurance"
   },
   {
+    icon: HomeIcon,
     title: "Home Insurance",
     description: "Comprehensive homeowners coverage for Alabama and Georgia properties with protection against regional weather risks and competitive rates.",
     link: "/services/home-insurance"
   },
   {
+    icon: Building2,
     title: "Condo Insurance",
     description: "Specialized coverage for condo owners protecting your unit improvements, personal property, and liability with flexible policy options.",
     link: "/services/condo-insurance"
@@ -586,19 +590,25 @@ const RentersInsurance = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {crossSellServices.map((service, index) => (
-                <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
+            {crossSellServices.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
                   <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
+                      <Icon className="h-6 w-6 text-white" />
+                    </div>
                     <h3 className="text-xl font-semibold">{service.title}</h3>
                     <p className="text-muted-foreground text-sm flex-grow">{service.description}</p>
-                    <Button variant="outline" className="w-full group-hover:bg-accent group-hover:text-accent-foreground mt-auto" asChild>
+                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild>
                       <Link to={service.link}>
                         Learn More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </CardContent>
                 </Card>
-              ))}
+              );
+            })}
             </div>
           </div>
         </section>
