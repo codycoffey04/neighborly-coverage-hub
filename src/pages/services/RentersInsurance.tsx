@@ -366,7 +366,7 @@ const RentersInsurance = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border-2">
+                <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6 space-y-4">
                     <h3 className="text-xl font-semibold">Alabama Risks</h3>
                     <ul className="space-y-3 text-muted-foreground">
@@ -382,7 +382,7 @@ const RentersInsurance = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2">
+                <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6 space-y-4">
                     <h3 className="text-xl font-semibold">Georgia Risks</h3>
                     <ul className="space-y-3 text-muted-foreground">

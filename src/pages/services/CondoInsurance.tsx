@@ -422,8 +422,8 @@ const CondoInsurance = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-primary/10 mt-1">
-                    <Shield className="h-5 w-5 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                    <Shield className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Water & backup</h3>
@@ -431,8 +431,8 @@ const CondoInsurance = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-primary/10 mt-1">
-                    <FileCheck className="h-5 w-5 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                    <FileCheck className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">RCV vs ACV</h3>
@@ -440,8 +440,8 @@ const CondoInsurance = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-primary/10 mt-1">
-                    <Users className="h-5 w-5 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Master deductible risk</h3>
@@ -490,7 +490,7 @@ const CondoInsurance = () => {
           </div>
           <div className="grid md:grid-cols-5 gap-6">
             {claimsSteps.map((step, index) => (
-              <Card key={index} className="text-center border-2 hover:border-primary/50 transition-colors">
+              <Card key={index} className="text-center h-full border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="mx-auto">
                     <div className="w-12 h-12 rounded-full bg-primary shadow-md text-primary-foreground flex items-center justify-center text-xl font-bold mb-3 mx-auto">
