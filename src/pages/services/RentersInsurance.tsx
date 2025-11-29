@@ -4,7 +4,7 @@ import heroBackground from "@/assets/renters-insurance-hero.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, Quote } from "lucide-react";
+import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, Quote, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -517,25 +517,29 @@ const RentersInsurance = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="section-spacing">
-          <div className="container-custom">
-            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-              <h2>What Our Clients Say</h2>
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
               <p className="text-lg text-muted-foreground text-balance">
                 Real reviews from renters we've helped protect across Alabama and Georgia.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                  <CardContent className="p-6 flex-grow flex flex-col">
-                    <Quote className="h-8 w-8 text-accent/20 mb-4" />
-                    <p className="text-muted-foreground mb-6 leading-relaxed flex-grow italic">
+                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
+                  <CardContent className="pt-6 flex flex-col h-full">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
                       "{testimonial.text}"
                     </p>
-                    <div className="border-t pt-4 mt-auto">
-                      <p className="font-semibold">{testimonial.name}</p>
+                    <div className="mt-auto">
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                     </div>
                   </CardContent>
@@ -544,10 +548,8 @@ const RentersInsurance = () => {
             </div>
 
             <div className="text-center mt-8">
-              <Button variant="secondary" asChild>
-                <Link to="/reviews">
-                  Read All Reviews <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+              <Button variant="outline" asChild>
+                <Link to="/reviews">Read All Reviews →</Link>
               </Button>
             </div>
           </div>
@@ -582,109 +584,117 @@ const RentersInsurance = () => {
         </section>
 
         {/* Areas We Serve Section */}
-        <section className="section-spacing">
-          <div className="container-custom">
-            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-              <h2>Renters Insurance Across Alabama & Georgia</h2>
-              <p className="text-lg text-muted-foreground text-balance">
-                We proudly serve renters in major cities and communities throughout both states.
-              </p>
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Renters Insurance Across Alabama & Georgia</h2>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Alabama */}
+              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                  <MapPin className="h-5 w-5" />
+                  Alabama
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {alabamaCities.map((city, index) => (
+                    <Link 
+                      key={index}
+                      to={`/${city.slug}`}
+                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                    >
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Georgia */}
+              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                  <MapPin className="h-5 w-5" />
+                  Georgia
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {georgiaCities.map((city, index) => (
+                    <Link 
+                      key={index}
+                      to={`/${city.slug}`}
+                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                    >
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="border-2">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-accent" />
-                    Alabama Cities
-                  </h3>
-                  <div className="grid grid-cols-2 gap-2">
-                    {alabamaCities.map((city) => (
-                      <Link
-                        key={city.slug}
-                        to={`/${city.slug}`}
-                        className="text-primary hover:underline text-sm"
-                      >
-                        {city.name}
-                      </Link>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-accent" />
-                    Georgia Cities
-                  </h3>
-                  <div className="grid grid-cols-2 gap-2">
-                    {georgiaCities.map((city) => (
-                      <Link
-                        key={city.slug}
-                        to={`/${city.slug}`}
-                        className="text-primary hover:underline text-sm"
-                      >
-                        {city.name}
-                      </Link>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <p className="text-center text-muted-foreground mt-8">
-              Don't see your city? <Link to="/contact" className="text-primary hover:underline font-medium">Contact us</Link> — we serve all of Alabama and Georgia.
+            <p className="text-center text-muted-foreground">
+              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
             </p>
           </div>
         </section>
 
         {/* Final CTA Section */}
-        <section className="section-spacing bg-gradient-to-b from-muted/30 to-background" id="quote-form">
-          <div className="container-custom">
-            <div className="max-w-2xl mx-auto text-center space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-balance">
-                  Ready to protect your belongings for less than your monthly streaming subscriptions?
-                </h2>
-                <p className="text-xl text-muted-foreground text-balance">
-                  Get a quote that fits your budget starting at $8/month
-                </p>
-              </div>
+        <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light" id="quote-form">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Ready to protect your belongings for less than your monthly streaming subscriptions?
+            </h2>
+            <p className="text-xl text-white/90 mb-8">
+              Get a quote that fits your budget starting at $8/month
+            </p>
+            
+            {/* Primary CTA - Green Button */}
+            <Button 
+              size="lg" 
+              className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+              asChild
+            >
+              <Link to="/contact">Get Your Free Quote</Link>
+            </Button>
 
-              <div className="grid sm:grid-cols-2 gap-4">
-                <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors">
-                  <CardContent className="pt-6 text-center space-y-2">
-                    <Phone className="h-8 w-8 text-primary mx-auto" />
-                    <p className="font-semibold">Alabama Office</p>
-                    <a 
-                      href="tel:+12569276287"
-                      aria-label="Call Centre, Alabama office at (256) 927-6287" 
-                      className="text-2xl font-bold text-primary hover:underline block"
-                    >
-                      (256) 927-6287
-                    </a>
-                  </CardContent>
-                </Card>
+            {/* Phone Links - Secondary CTAs */}
+            <div className="flex flex-wrap justify-center items-center gap-4 mt-4 text-sm text-white/90">
+              <span>Or call us:</span>
+              <a 
+                href="tel:+12569276287"
+                aria-label="Call Centre, Alabama office at (256) 927-6287"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                (256) 927-6287
+              </a>
+              <span className="text-white/50">|</span>
+              <a 
+                href="tel:+17067846511"
+                aria-label="Call Rome, Georgia office at (706) 784-6511"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                (706) 784-6511
+              </a>
+            </div>
 
-                <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors">
-                  <CardContent className="pt-6 text-center space-y-2">
-                    <Phone className="h-8 w-8 text-primary mx-auto" />
-                    <p className="font-semibold">Georgia Office</p>
-                    <a 
-                      href="tel:+17067846511"
-                      aria-label="Call Rome, Georgia office at (706) 784-6511" 
-                      className="text-2xl font-bold text-primary hover:underline block"
-                    >
-                      (706) 784-6511
-                    </a>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Button size="lg" className="text-lg px-12" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
+            {/* Trust Badges */}
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Licensed in AL & GA
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Hablamos Español
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Family Owned
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                100+ Years Combined Experience
+              </span>
             </div>
           </div>
         </section>
