@@ -1,5 +1,4 @@
 import { MapPin, Phone, Clock, Mail, Facebook } from "lucide-react";
-import coffeyLogo from "@/assets/coffey-logo-transparent.png";
 
 const services = [
   { name: "Auto Insurance", href: "/services/auto-insurance" },
@@ -31,18 +30,9 @@ const legal = [
 export const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t">
-      <div className="container-custom py-12 md:py-16">
-        {/* Logo Row */}
-        <div className="pb-8 mb-8 border-b border-gray-200">
-          <img 
-            src={coffeyLogo} 
-            alt="Coffey Agencies Inc." 
-            className="h-12 w-auto"
-          />
-        </div>
-
+      <div className="container-custom py-10 md:py-12">
         {/* Columns Row */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
           {/* Company */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
@@ -58,6 +48,19 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
+            
+            {/* Social Link */}
+            <div className="mt-4">
+              <a 
+                href="https://www.facebook.com/codycoffeyagency"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
+                className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white hover:bg-primary/90 transition-colors"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           {/* Services */}
@@ -144,7 +147,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border">
+        <div className="pt-6 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
               © {new Date().getFullYear()} Coffey Agencies Inc. All rights reserved. Coffey Agencies Inc. is an authorized, independently owned insurance agency. Licensed in Alabama (#416438) and Georgia (#149612).
