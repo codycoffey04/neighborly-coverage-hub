@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Mail, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   { name: "Auto Insurance", href: "/services/auto-insurance" },
@@ -42,12 +43,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               {company.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href}
+                  <Link 
+                    to={item.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -72,12 +73,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               {services.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href}
+                  <Link 
+                    to={item.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -89,12 +90,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               {resources.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href}
+                  <Link 
+                    to={item.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -157,13 +158,13 @@ export const Footer = () => {
             </p>
             <div className="flex gap-6 text-sm">
               {legal.map((item, index) => (
-                <a 
+                <Link 
                   key={index}
-                  href={item.href}
+                  to={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
