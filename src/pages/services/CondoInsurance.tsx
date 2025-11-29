@@ -323,56 +323,48 @@ const CondoInsurance = () => {
                 Clear HO-6 coverage built around your unit, your HOA, and your budget
               </p>
               
-              {/* CTA Buttons - styled for dark background */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              {/* Supporting Paragraph - moved from intro section */}
+              <p className="text-lg text-white/90 max-w-3xl mx-auto mb-6 drop-shadow-md">
+                Condo insurance is about the space you own "from the walls-in," what the master policy covers outside your unit, and how both fit together at claim time. Bundle with auto insurance or align a townhome/condo with the right home insurance where applicable to unlock savings and simpler billing.
+              </p>
+              
+              {/* Trust Badges - 3-column grid with CheckCircle */}
+              <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+                {[
+                  "Quotes in minutes with the info you already have",
+                  "We review HOA docs to align your HO-6 with the master policy",
+                  "Local help at claim time—we coordinate with your HOA"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-2 text-left">
+                    <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5 drop-shadow-md" />
+                    <p className="text-sm text-white drop-shadow-md">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
-                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                     <Phone className="mr-2 h-5 w-5" />
                     Alabama: (256) 927-6287
                   </a>
                 </Button>
-                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
                     <Phone className="mr-2 h-5 w-5" />
                     Georgia: (706) 784-6511
                   </a>
                 </Button>
               </div>
-
-              {/* Trust indicators with white text */}
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
-                <div className="flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-accent drop-shadow-md" />
-                  <span className="drop-shadow-md">Quotes in minutes</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <ClipboardList className="h-5 w-5 text-accent drop-shadow-md" />
-                  <span className="drop-shadow-md">HOA doc review</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Building className="h-5 w-5 text-accent drop-shadow-md" />
-                  <span className="drop-shadow-md">Local claim support</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Intro Section - outside hero */}
-      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
-        <div className="max-w-3xl mx-auto space-y-6 text-center">
-          <p className="text-muted-foreground leading-relaxed">
-            Condo insurance is about the space you own "from the walls-in," what the master policy covers outside your unit, and how both fit together at claim time.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline">auto insurance</Link> or align a townhome/condo with the right <Link to="/services/home-insurance" className="text-primary hover:underline">home insurance</Link> where applicable to unlock savings and simpler billing.
-          </p>
-        </div>
-      </section>
 
       {/* Coverage Types */}
       <section className="py-16">
