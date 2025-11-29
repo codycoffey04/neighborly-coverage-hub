@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Quote, Star, FileCheck, CreditCard, DollarSign } from "lucide-react";
+import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Star, FileCheck, CreditCard, DollarSign, CheckCircle, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
@@ -428,22 +428,17 @@ const HomeInsurance = () => {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 {testimonials.map((testimonial, index) => (
                   <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
-                    <CardHeader>
-                      <div className="flex items-center gap-2 mb-2">
-                        <Quote className="h-5 w-5 text-primary" />
-                        <div className="flex gap-1">
-                          {[...Array(testimonial.rating)].map((_, i) => (
-                            <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                          ))}
-                        </div>
+                    <CardContent className="pt-6 flex flex-col h-full">
+                      <div className="flex gap-1 mb-4">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                        ))}
                       </div>
-                    </CardHeader>
-                    <CardContent className="flex flex-col h-full">
                       <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
                         "{testimonial.text}"
                       </p>
                       <div className="mt-auto">
-                        <p className="font-semibold">{testimonial.name}</p>
+                        <p className="font-semibold text-foreground">{testimonial.name}</p>
                         <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                       </div>
                     </CardContent>
@@ -452,19 +447,19 @@ const HomeInsurance = () => {
               </div>
 
               <div className="text-center">
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/reviews">
-                Read All Reviews →
-              </Link>
-            </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <Link to="/reviews">
+                    Read All Reviews →
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
         </section>
 
         {/* Areas We Serve */}
-        <section className="py-12">
-          <div className="container mx-auto px-4">
+        <section className="py-16 px-4">
+          <div className="container mx-auto">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -472,15 +467,19 @@ const HomeInsurance = () => {
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">Alabama</h3>
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {/* Alabama */}
+                <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+                  <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                    <MapPin className="h-5 w-5" />
+                    Alabama
+                  </h3>
                   <div className="flex flex-wrap gap-3">
                     {alabamaCities.map((city) => (
                       <Link
                         key={city.slug}
                         to={`/${city.slug}`}
-                        className="text-muted-foreground hover:text-primary hover:underline transition-colors"
+                        className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                       >
                         {city.name}
                       </Link>
@@ -488,14 +487,18 @@ const HomeInsurance = () => {
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">Georgia</h3>
+                {/* Georgia */}
+                <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+                  <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                    <MapPin className="h-5 w-5" />
+                    Georgia
+                  </h3>
                   <div className="flex flex-wrap gap-3">
                     {georgiaCities.map((city) => (
                       <Link
                         key={city.slug}
                         to={`/${city.slug}`}
-                        className="text-muted-foreground hover:text-primary hover:underline transition-colors"
+                        className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                       >
                         {city.name}
                       </Link>
@@ -516,57 +519,64 @@ const HomeInsurance = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-accent/10">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Ready to Protect Your Home?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Get a quote that fits your home, roof, and budget.
-              </p>
+        <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Ready to Protect Your Home?
+            </h2>
+            <p className="text-xl text-white/90 mb-8">
+              Get a quote that fits your home, roof, and budget.
+            </p>
+            
+            {/* Primary CTA - Green Button */}
+            <Button 
+              size="lg" 
+              className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 mb-4"
+              asChild
+            >
+              <Link to="/contact">Get Your Free Quote</Link>
+            </Button>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <Card className="border-2 hover:border-primary transition-colors">
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-center gap-2">
-                      <Phone className="h-5 w-5" />
-                      Alabama
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <a
-                      href="tel:+12569276287"
-                      aria-label="Call Centre, Alabama office at (256) 927-6287"
-                      className="text-2xl font-bold text-primary hover:underline"
-                    >
-                      (256) 927-6287
-                    </a>
-                  </CardContent>
-                </Card>
+            {/* Phone Links - Secondary CTAs */}
+            <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-white/90 mb-6">
+              <span>Or call us:</span>
+              <a 
+                href="tel:+12569276287" 
+                aria-label="Call Centre, Alabama office at (256) 927-6287"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                (256) 927-6287
+              </a>
+              <span className="text-white/50">|</span>
+              <a 
+                href="tel:+17067846511" 
+                aria-label="Call Rome, Georgia office at (706) 784-6511"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                (706) 784-6511
+              </a>
+            </div>
 
-                <Card className="border-2 hover:border-primary transition-colors">
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-center gap-2">
-                      <Phone className="h-5 w-5" />
-                      Georgia
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <a
-                      href="tel:+17067846511"
-                      aria-label="Call Rome, Georgia office at (706) 784-6511"
-                      className="text-2xl font-bold text-primary hover:underline"
-                    >
-                      (706) 784-6511
-                    </a>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Button size="lg" className="text-lg px-8" asChild>
-                <a href="#quote-form">Get Your Free Quote</a>
-              </Button>
+            {/* Trust Badges */}
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Licensed in AL & GA
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Hablamos Español
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Family Owned
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                100+ Years Combined Experience
+              </span>
             </div>
           </div>
         </section>
