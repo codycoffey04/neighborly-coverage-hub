@@ -25,7 +25,8 @@ import {
   Key,
   FileText,
   MapPin,
-  CheckCircle
+  CheckCircle,
+  Bike
 } from "lucide-react";
 
 const LifeInsurance = () => {
@@ -657,8 +658,15 @@ const georgiaCities = [
         {/* Cross-Sell Section */}
         <section className="py-12">
           <div className="container max-w-5xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">Complete Your Coverage</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Complete Your Coverage</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Life insurance is an important part of your financial plan—but most families need more than just one policy. Bundle your coverage and get the protection you deserve.
+              </p>
+            </div>
+
+            {/* Top row: 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
               <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
@@ -668,7 +676,7 @@ const georgiaCities = [
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <CardDescription className="mb-4 flex-grow">
-                    Protect your vehicles with comprehensive coverage across Alabama and Georgia. Competitive rates with multi-policy discounts available.
+                    Required by law and essential for protecting your vehicle. Get liability, collision, and comprehensive coverage that fits your budget.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
                     <Link to="/services/auto-insurance">Learn More →</Link>
@@ -685,7 +693,7 @@ const georgiaCities = [
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <CardDescription className="mb-4 flex-grow">
-                    Comprehensive homeowners coverage for Alabama and Georgia properties with protection against regional weather risks and competitive rates.
+                    Protect your biggest investment from storms, fire, theft, and liability. Coverage built for Alabama and Georgia homeowners.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
                     <Link to="/services/home-insurance">Learn More →</Link>
@@ -702,14 +710,17 @@ const georgiaCities = [
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <CardDescription className="mb-4 flex-grow">
-                    Affordable renters insurance starting at $8/month with auto bundle. Protect your belongings and liability with comprehensive coverage.
+                    Affordable coverage for your belongings and liability protection. Often costs less than $20/month for solid coverage.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
                     <Link to="/services/renters-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
               </Card>
+            </div>
 
+            {/* Bottom row: 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
               <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
@@ -719,10 +730,27 @@ const georgiaCities = [
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <CardDescription className="mb-4 flex-grow">
-                    Specialized coverage for condo owners protecting your unit improvements, personal property, and liability with flexible policy options.
+                    HO-6 coverage for walls-in, betterments, and upgrades. Coordinates with your HOA's master policy to fill the gaps.
                   </CardDescription>
                   <Button variant="outline" asChild className="w-full">
                     <Link to="/services/condo-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Bike className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Motorcycle Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <CardDescription className="mb-4 flex-grow">
+                    Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.
+                  </CardDescription>
+                  <Button variant="outline" asChild className="w-full">
+                    <Link to="/services/motorcycle-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
               </Card>
