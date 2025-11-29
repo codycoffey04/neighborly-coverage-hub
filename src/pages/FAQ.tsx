@@ -236,8 +236,8 @@ const FAQ = () => {
                       value={`${sectionIndex}-${faqIndex}`}
                       className="border border-border rounded-lg px-6"
                     >
-                      <AccordionTrigger className="text-left hover:no-underline">
-                        <span className="font-semibold text-foreground pr-4">
+                      <AccordionTrigger className="text-left hover:no-underline py-5">
+                        <span className="font-semibold text-lg text-foreground pr-4">
                           {faq.question}
                         </span>
                       </AccordionTrigger>
