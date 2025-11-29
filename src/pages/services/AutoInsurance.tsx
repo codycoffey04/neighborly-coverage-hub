@@ -506,37 +506,11 @@ const AutoInsurance = () => {
               Start online or talk with a friendly local agent today.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
-              <a 
-                href="tel:+12569276287"
-                aria-label="Call Centre, Alabama office at (256) 927-6287"
-                className="flex items-center justify-center gap-2 bg-white text-primary px-6 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors"
-              >
-                <Phone className="h-5 w-5" />
-                <div className="text-left">
-                  <div className="text-xs opacity-75">Centre, AL</div>
-                  <div>(256) 927-6287</div>
-                </div>
-              </a>
-              
-              <a 
-                href="tel:+17067846511"
-                aria-label="Call Rome, Georgia office at (706) 784-6511"
-                className="flex items-center justify-center gap-2 bg-white text-primary px-6 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors"
-              >
-                <Phone className="h-5 w-5" />
-                <div className="text-left">
-                  <div className="text-xs opacity-75">Rome, GA</div>
-                  <div>(706) 784-6511</div>
-                </div>
-              </a>
-            </div>
-
             <form
               name="coffey-insurance-lead"
               method="POST"
               data-netlify="true"
-              className="max-w-md mx-auto"
+              className="max-w-md mx-auto mb-4"
             >
               <input type="hidden" name="form-name" value="coffey-insurance-lead" />
               <Button 
@@ -547,6 +521,28 @@ const AutoInsurance = () => {
                 Get Your Free Quote
               </Button>
             </form>
+
+            {/* Phone Links - Secondary CTAs */}
+            <div className="flex flex-wrap justify-center items-center gap-4 mt-4 text-sm text-white/90">
+              <span>Or call us:</span>
+              <a 
+                href="tel:+12569276287"
+                aria-label="Call Centre, Alabama office at (256) 927-6287"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                (256) 927-6287
+              </a>
+              <span className="text-white/50">|</span>
+              <a 
+                href="tel:+17067846511"
+                aria-label="Call Rome, Georgia office at (706) 784-6511"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                (706) 784-6511
+              </a>
+            </div>
 
             {/* Trust Badges */}
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
