@@ -1,6 +1,8 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import heroBackground from "@/assets/contact-hero.jpg";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -91,11 +93,7 @@ const Contact = () => {
   };
 
   return (
-    <PageLayout
-      title="Contact Us"
-      description="Get in Touch"
-      breadcrumbs={[{ label: "Contact", href: "/contact" }]}
-    >
+    <>
       <Helmet>
         <title>Contact Us | Coffey Agencies | Alabama & Georgia Insurance</title>
         <meta name="description" content="Contact Coffey Agencies for insurance quotes. Offices in Centre, AL (256) 927-6287 and Rome, GA (706) 784-6511. Get a free quote today." />
@@ -104,12 +102,57 @@ const Contact = () => {
           {JSON.stringify(contactSchema)}
         </script>
       </Helmet>
-      {/* Intro */}
-      <section className="py-8 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-lg text-muted-foreground">
-            Whether you need a quote, have a question, or want to make a policy change — we're here to help.
-          </p>
+
+      <Header />
+
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[500px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Contact Us
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
+                Get in touch — we're here to help with quotes, questions, and claims
+              </p>
+              
+              {/* CTA Buttons - styled for dark background */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
+              </div>
+
+              {/* Trust indicators with white text */}
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
+                <div className="flex items-center gap-2">
+                  <Clock className="h-5 w-5 text-secondary drop-shadow-md" />
+                  <span className="drop-shadow-md">Response within 1 business day</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-secondary drop-shadow-md" />
+                  <span className="drop-shadow-md">2 office locations</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -391,7 +434,8 @@ const Contact = () => {
           </Button>
         </div>
       </section>
-    </PageLayout>
+      <Footer />
+    </>
   );
 };
 
