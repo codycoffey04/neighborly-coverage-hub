@@ -15,7 +15,6 @@ import {
   Clock, 
   FileCheck,
   Phone,
-  Baby,
   GraduationCap,
   Home,
   TrendingUp,
@@ -24,7 +23,6 @@ import {
   Building2,
   Car,
   Key,
-  Quote,
   FileText,
   MapPin,
   CheckCircle
@@ -253,15 +251,6 @@ const georgiaCities = [
               </p>
             </div>
 
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4">How Much Life Insurance Coverage Do You Need?</h3>
-              <p className="text-lg text-muted-foreground mb-4">
-                Financial experts recommend <strong>5-10 times your annual income</strong> in life insurance coverage. This guideline ensures your family can replace your income for several years while adjusting to new circumstances. For someone earning $60,000 annually, this means $300,000-$600,000 in coverage. Higher earners or those with significant debts may need more—someone with a $250,000 mortgage (the approximate average in Alabama and Georgia) and two children planning for college should consider $500,000-$1,000,000 in coverage.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                The calculation should also account for specific financial obligations. In Alabama and Georgia, average home prices hover around $250,000-$280,000, with typical mortgage payments of $1,500-$2,000 monthly. College costs at Alabama institutions average $12,000-$25,000 annually for in-state students, while Georgia universities range from $11,000-$30,000 per year. Funeral expenses typically run $7,000-$10,000 in both states. Your life insurance should cover all these potential costs plus provide income replacement for your family's daily needs.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -269,7 +258,7 @@ const georgiaCities = [
         <section className="py-12">
           <div className="container max-w-5xl">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4">Affordable Protection for Young Families</h2>
+              <h2 className="text-3xl font-bold mb-4">How Much Life Insurance Coverage Do You Need?</h2>
               <p className="text-muted-foreground mb-6">Sample rates for $500K 20-year term life insurance</p>
             </div>
 
@@ -303,80 +292,7 @@ const georgiaCities = [
           </div>
         </section>
 
-        {/* Customer Story #1 - Mark & Tasha */}
-        <section className="py-12 bg-muted/30">
-          <div className="container max-w-5xl">
-            <Card className="border-primary/20 bg-card">
-              <CardHeader>
-                <div className="flex items-start gap-3 mb-2">
-                  <Quote className="h-8 w-8 text-primary flex-shrink-0" />
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Real Customer: Young Rome Family Secures Peace of Mind</CardTitle>
-                    <CardDescription className="text-base">Mark and Tasha, both 32, Rome, GA</CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Mark and Tasha live in Rome, GA with their two young children and a new $250,000 mortgage. After buying their home and welcoming their second child, they realized one parent's sudden death could devastate the family financially. They each purchased 20-year term life insurance policies for $500,000—enough to pay off the mortgage, replace several years of income, and fund college for both kids.
-                </p>
-                <p className="text-muted-foreground">
-                  Their combined premium? Just <strong>$50 monthly</strong> (about $25 each for healthy young adults). Before getting coverage, Mark constantly worried about leaving his family with financial burden. Now they both sleep easier knowing their children are protected no matter what happens.
-                </p>
-                <blockquote className="border-l-4 border-primary pl-4 italic text-lg">
-                  "We used to lie awake worrying what would happen to our family if one of us was gone. Now we have peace of mind. For $50 a month, there's no reason not to protect your family."
-                </blockquote>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
-        {/* Stay-at-Home Parent Coverage */}
-        <section className="py-12">
-          <div className="container max-w-5xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Baby className="h-10 w-10 text-primary" />
-                  <h2 className="text-3xl font-bold">Stay-at-Home Parents Need Coverage Too</h2>
-                </div>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Stay-at-home parents also need life insurance, though many families overlook this. A stay-at-home parent provides valuable services—childcare, housekeeping, cooking, transportation, household management—worth an estimated <strong>$60,000-$80,000 annually</strong> if replaced with paid services.
-                </p>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Financial experts recommend <strong>$300,000-$500,000</strong> in coverage for stay-at-home parents, ensuring the surviving parent can afford childcare and maintain household stability. Term life insurance for this coverage level typically costs just <strong>$20-30 monthly</strong>.
-                </p>
-              </div>
-              <Card className="bg-primary/5 border-primary/20">
-                <CardHeader>
-                  <CardTitle>Stay-at-Home Parent Services</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Baby className="h-5 w-5 text-primary" />
-                    <span>Childcare & education support</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Home className="h-5 w-5 text-primary" />
-                    <span>Housekeeping & maintenance</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Car className="h-5 w-5 text-primary" />
-                    <span>Transportation & errands</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-primary" />
-                    <span>Household management</span>
-                  </div>
-                  <div className="pt-4 border-t">
-                    <p className="text-sm text-muted-foreground mb-2">Estimated replacement value:</p>
-                    <p className="text-2xl font-bold text-primary">$60,000-$80,000/year</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
 
         {/* Term vs Whole Life Comparison Table */}
         <section className="py-12 bg-muted/30">
@@ -531,33 +447,6 @@ const georgiaCities = [
           </div>
         </section>
 
-        {/* Customer Story #2 - Felicia */}
-        <section className="py-12 bg-muted/30">
-          <div className="container max-w-5xl">
-            <Card className="border-primary/20 bg-card">
-              <CardHeader>
-                <div className="flex items-start gap-3 mb-2">
-                  <Quote className="h-8 w-8 text-primary flex-shrink-0" />
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Real Customer: Single Montgomery Mom Ensures Children's Future</CardTitle>
-                    <CardDescription className="text-base">Felicia, 38, single mother in Montgomery, AL</CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Felicia, a 38-year-old single mother in Montgomery with two kids ages 5 and 8, serves as her family's sole provider. After a close friend's health scare, Felicia realized her children would have no financial safety net if something happened to her. She purchased a 20-year term policy for $300,000—enough to pay off her $150,000 mortgage and create an education fund.
-                </p>
-                <p className="text-muted-foreground">
-                  Her premium? Just <strong>$25 monthly</strong> for high-quality term coverage. Before getting life insurance, Felicia felt guilty and fearful about not having a backup plan. Now she feels empowered, knowing her children would be financially secure even in worst-case scenarios.
-                </p>
-                <blockquote className="border-l-4 border-primary pl-4 italic text-lg">
-                  "As a single mom, I used to worry constantly about what would happen to my kids if I wasn't around. Life insurance gave me peace of mind—it's one more way I'm taking care of their future, no matter what."
-                </blockquote>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
         {/* Application Process */}
         <section className="py-12">
@@ -619,56 +508,6 @@ const georgiaCities = [
           </div>
         </section>
 
-        {/* AL/GA Considerations */}
-        <section className="py-12 bg-muted/30">
-          <div className="container max-w-5xl">
-            <h2 className="text-3xl font-bold mb-6 text-center">Special Considerations for Alabama and Georgia Residents</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Shield className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Estate Planning</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Alabama has no state estate tax, and Georgia eliminated its estate tax in 2014. The federal estate tax exemption stands at $13.61 million per individual in 2024. For most families, estate taxes don't drive life insurance needs. However, life insurance remains valuable for providing immediate liquidity to pay final expenses and creating equal inheritances.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Building2 className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Business Applications</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Both states have strong business communities where life insurance plays crucial roles. Business partners often use life insurance to fund buy-sell agreements. Key person insurance protects businesses from the financial impact of losing essential employees or owners.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <GraduationCap className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>College Planning</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    The average four-year degree at public universities costs approximately $50,000-$100,000 for in-state students in Alabama and Georgia when including tuition, fees, room, board, and books. Life insurance ensures these educational goals remain achievable even if the primary earner dies.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="py-12">
