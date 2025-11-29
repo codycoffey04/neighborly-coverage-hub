@@ -1,10 +1,10 @@
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import heroBackground from "@/assets/renters-insurance-hero.jpg";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, Quote, CheckCircle } from "lucide-react";
+import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -33,25 +33,35 @@ const coverageTypes = [
 
 const savingsTips = [
   {
+    icon: Car,
     title: "Bundle with Auto Insurance",
-    description: "Save 15-25% on both policies by combining renters and auto insurance. Most customers qualify for rates as low as $8-19/month on renters coverage when bundled."
+    description: "Save 15-25% on both policies by combining renters and auto insurance. Most customers qualify for rates as low as $8-19/month on renters coverage when bundled.",
   },
   {
+    icon: Gem,
     title: "High-Value Item Scheduling",
-    description: "Schedule expensive jewelry, electronics, or collections separately at appraised value for full coverage beyond standard sub-limits (typically $1,500 for jewelry)."
+    description: "Schedule expensive jewelry, electronics, or collections separately at appraised value for full coverage beyond standard sub-limits (typically $1,500 for jewelry).",
   },
   {
+    icon: RefreshCw,
     title: "Replacement Cost Coverage",
-    description: "Upgrade from actual cash value to replacement cost coverage for just a few dollars monthly—pays full replacement value without depreciation."
+    description: "Upgrade from actual cash value to replacement cost coverage for just a few dollars monthly—pays full replacement value without depreciation.",
   },
   {
-    title: "Water Backup Coverage",
-    description: "Add protection against sewer or drain backup damage, particularly relevant in older Alabama and Georgia rental properties."
+    icon: Umbrella,
+    title: "Liability Protection",
+    description: "Covers you if someone is injured in your rental or you accidentally damage someone else's property. Most policies include $100,000, with options to increase.",
   },
   {
+    icon: DollarSign,
     title: "Right-Size Your Deductible",
-    description: "Balance premium savings with affordable out-of-pocket costs. We'll model multiple deductible options ($500 or $1,000) to find your sweet spot."
-  }
+    description: "Balance premium savings with affordable out-of-pocket costs. We'll model multiple deductible options ($500 or $1,000) to find your sweet spot.",
+  },
+  {
+    icon: Key,
+    title: "Loss of Use Coverage",
+    description: "Pays for temporary housing, meals, and living expenses if your rental becomes uninhabitable due to a covered loss. Essential protection often overlooked.",
+  },
 ];
 
 const faqs = [
@@ -451,19 +461,29 @@ const RentersInsurance = () => {
               </Card>
 
               {/* Ways to Save Grid */}
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-center">Coverage Options and Add-Ons</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {savingsTips.map((tip, index) => (
-                    <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                      <CardContent className="pt-6">
-                        <h4 className="font-semibold mb-2 text-lg">{tip.title}</h4>
-                        <p className="text-muted-foreground text-sm">{tip.description}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-center">Coverage Options and Add-Ons</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {savingsTips.map((tip, index) => {
+                const Icon = tip.icon;
+                return (
+                  <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                        <Icon className="h-6 w-6 text-white" />
+                      </div>
+                      <CardTitle className="text-xl">{tip.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {tip.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
 
               {/* Customer Story 2 - Sarah & Mike */}
               <Card className="border-2 border-accent/20 bg-accent/5">
