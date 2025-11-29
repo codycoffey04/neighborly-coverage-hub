@@ -1,10 +1,12 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
+import faqHeroBackground from "@/assets/faq-hero.jpg";
 
 const faqs = [
   {
@@ -163,14 +165,56 @@ const FAQ = () => {
         </script>
       </Helmet>
       
-      <PageLayout
-        title="Frequently Asked Questions"
-        description="Insurance Questions, Answered"
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "FAQ", href: "" }
-        ]}
+      <Header />
+
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[500px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${faqHeroBackground})` }}
       >
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center">
+              {/* Breadcrumbs */}
+              <nav className="mb-6">
+                <ol className="flex justify-center gap-2 text-sm text-white/80">
+                  <li><Link to="/" className="hover:text-white">Home</Link></li>
+                  <li>/</li>
+                  <li className="text-white">FAQ</li>
+                </ol>
+              </nav>
+              
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Frequently Asked Questions
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
+                Insurance Questions, Answered
+              </p>
+              
+              {/* Trust indicators */}
+              <div className="flex flex-wrap justify-center gap-6 mt-8">
+                <div className="flex items-center gap-2 text-white">
+                  <CheckCircle className="h-5 w-5 text-accent" />
+                  <span className="text-sm">Plain English answers</span>
+                </div>
+                <div className="flex items-center gap-2 text-white">
+                  <CheckCircle className="h-5 w-5 text-accent" />
+                  <span className="text-sm">Expert local guidance</span>
+                </div>
+                <div className="flex items-center gap-2 text-white">
+                  <CheckCircle className="h-5 w-5 text-accent" />
+                  <span className="text-sm">Real help when you need it</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           {/* Intro paragraph */}
@@ -230,7 +274,8 @@ const FAQ = () => {
           </Card>
         </div>
       </section>
-      </PageLayout>
+
+      <Footer />
     </>
   );
 };
