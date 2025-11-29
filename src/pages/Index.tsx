@@ -291,6 +291,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
+        <title>Coffey Agencies Inc. | Insurance in Alabama & Georgia</title>
+        <meta name="description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
