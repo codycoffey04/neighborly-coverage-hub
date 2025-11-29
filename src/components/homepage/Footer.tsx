@@ -32,15 +32,20 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t">
       <div className="container-custom py-12 md:py-16">
+        {/* Logo Row */}
+        <div className="pb-8 mb-8 border-b border-gray-200">
+          <img 
+            src={coffeyLogo} 
+            alt="Coffey Agencies Inc." 
+            className="h-12 w-auto"
+          />
+        </div>
+
+        {/* Columns Row */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
-          {/* Coffey Agencies Inc. */}
-          <div className="lg:col-span-1 space-y-4">
-            <img 
-              src={coffeyLogo} 
-              alt="Coffey Agencies Inc." 
-              className="h-12 w-auto mb-3"
-            />
-            <h4 className="text-lg font-semibold mb-4">Coffey Agencies Inc.</h4>
+          {/* Company */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               {company.map((item, index) => (
                 <li key={index}>
