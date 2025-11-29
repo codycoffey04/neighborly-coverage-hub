@@ -301,14 +301,16 @@ const Index = () => {
       
       <div className="min-h-screen">
         <Header />
-        <Hero />
-        <ServicesOverview />
-        <WhyChooseUs />
-        <HowItWorks />
-        <Testimonials />
-        <ServiceArea />
-        <FAQ />
-        <FinalCTA />
+        <main id="main-content">
+          <Hero />
+          <ServicesOverview />
+          <WhyChooseUs />
+          <HowItWorks />
+          <Testimonials />
+          <ServiceArea />
+          <FAQ />
+          <FinalCTA />
+        </main>
         <Footer />
       </div>
     </>

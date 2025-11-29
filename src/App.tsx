@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { MobileCTABar } from "@/components/shared/MobileCTABar";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
 import { ScrollToTopButton } from "@/components/shared/ScrollToTopButton";
+import { SkipLink } from "@/components/shared/SkipLink";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -38,10 +39,11 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+          <SkipLink />
           <ScrollToTop />
-        <MobileCTABar />
-        <ScrollToTopButton />
-        <Routes>
+          <MobileCTABar />
+          <ScrollToTopButton />
+          <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
