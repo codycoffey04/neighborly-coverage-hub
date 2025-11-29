@@ -534,7 +534,7 @@ const CentreALResources = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all"
+                className="bg-white hover:bg-white text-primary hover:text-primary border border-primary shadow-sm hover:shadow-md transition-all"
               >
                 <Link to="/contact">Contact Us</Link>
               </Button>
