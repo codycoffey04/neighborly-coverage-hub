@@ -6,6 +6,8 @@ import heroBackground from "@/assets/hero-background.jpg";
 export const Hero = () => {
   return (
     <section 
+      role="banner"
+      aria-label="Coffey Agencies homepage hero"
       className="relative min-h-[85vh] flex items-center overflow-hidden"
       style={{ 
         backgroundImage: `url(${heroBackground})`, 

@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Clock, User, ArrowRight, AlertCircle, Info, Phone } from "lucide-react";
 import { learnArticles, ContentSection } from "@/data/learnArticles";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const LearnArticle = () => {
   const { slug } = useParams();

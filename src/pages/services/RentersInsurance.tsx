@@ -6,7 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2, Bike } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const coverageTypes = [
   {
@@ -262,6 +262,8 @@ const RentersInsurance = () => {
 
       {/* Custom Hero Section with Background Image */}
       <section 
+        role="banner"
+        aria-label="Renters insurance hero section"
         className="relative min-h-[600px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >

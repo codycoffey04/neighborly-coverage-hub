@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote, ExternalLink, MessageCircle, DollarSign, Heart, ShieldCheck, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import heroBackground from "@/assets/contact-hero.jpg";
 
 const officeRatings = [
@@ -158,6 +158,8 @@ const Reviews = () => {
       
       {/* Custom Hero Section */}
       <section 
+        role="banner"
+        aria-label="Customer reviews hero section"
         className="relative min-h-[500px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >

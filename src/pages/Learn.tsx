@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Car, Home, Key, Building2, Heart, FileText, Layers, LucideIcon } from "lucide-react";
 import { learnArticles } from "@/data/learnArticles";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 // Custom hub excerpts for Learn hub page
 const hubExcerpts: Record<string, string> = {

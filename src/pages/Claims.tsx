@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import heroBackground from "@/assets/claims-hero.jpg";
 
@@ -111,6 +111,8 @@ const Claims = () => {
 
       {/* Hero Section */}
       <section 
+        role="banner"
+        aria-label="Claims help hero section"
         className="relative min-h-[600px] flex items-end bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
