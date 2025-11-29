@@ -4,6 +4,7 @@ import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import heroBackground from "@/assets/contact-hero.jpg";
 import { 
   Car, 
   IdCard, 
@@ -34,16 +35,23 @@ const CentreALResources = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary to-primary-light text-white py-16 md:py-20">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <section 
+        className="relative min-h-[500px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
               Local Resources for Centre, AL & Cherokee County
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
+            <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-md">
               Quick access to DMV offices, law enforcement, courts, emergency services, and more — all in one place.
             </p>
-            <div className="inline-flex items-center gap-2 text-sm text-white/80">
+            <div className="inline-flex items-center gap-2 text-sm text-white/80 drop-shadow-md">
               <CheckCircle className="h-4 w-4" />
               <span>Updated regularly | Your local insurance partner since 2009</span>
             </div>
