@@ -23,6 +23,7 @@ import MotorcycleInsurance from "./pages/services/MotorcycleInsurance";
 import CityPage from "./pages/CityPage";
 import Claims from "./pages/Claims";
 import CentreALResources from "./pages/resources/CentreALResources";
+import RomeGAResources from "./pages/resources/RomeGAResources";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -57,6 +58,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/claims" element={<Claims />} />
           <Route path="/resources/centre-al" element={<CentreALResources />} />
+          <Route path="/resources/rome-ga" element={<RomeGAResources />} />
           {/* Dynamic city pages */}
           <Route path="/:citySlug" element={<CityPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

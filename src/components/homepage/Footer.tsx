@@ -21,7 +21,8 @@ const resources = [
   { name: "Reviews", href: "/reviews" },
   { name: "Learn", href: "/learn" },
   { name: "Claims Help", href: "/claims" },
-  { name: "Centre, AL Resources", href: "/resources/centre-al" }
+  { name: "Centre, AL Resources", href: "/resources/centre-al" },
+  { name: "Rome, GA Resources", href: "/resources/rome-ga" }
 ];
 
 const legal = [
