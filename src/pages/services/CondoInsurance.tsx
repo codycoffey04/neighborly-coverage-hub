@@ -431,7 +431,7 @@ const CondoInsurance = () => {
           </div>
           <Card className="border-2">
             <CardContent className="p-8">
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-base text-muted-foreground leading-relaxed mb-6">
                 Across Alabama and Georgia, severe thunderstorms, tornado tracks, and occasional tropical remnants can drive wind and water losses. In multi-story buildings, small leaks can turn into large losses as water travels between units. That's why walls-in coverage, Loss Assessment, and thoughtful deductibles matter. We'll verify how the master policy treats wind/hail and whether special deductibles apply—then size your HO-6 to play well with it.
               </p>
               <div className="space-y-4">
