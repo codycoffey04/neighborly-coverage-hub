@@ -1,4 +1,6 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
+import heroBackground from "@/assets/life-insurance-hero.jpg";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -22,7 +24,8 @@ import {
   Building2,
   Car,
   Key,
-  Quote
+  Quote,
+  FileText
 } from "lucide-react";
 
 const LifeInsurance = () => {
@@ -173,60 +176,63 @@ const georgiaCities = [
         </script>
       </Helmet>
 
-      <PageLayout
-        title="Life Insurance in Alabama & Georgia"
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Services", href: "/#services" },
-          { label: "Life Insurance", href: "/services/life-insurance" }
-        ]}
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        {/* Hero Section */}
-        <section className="py-12 md:py-16">
-          <div className="container max-w-5xl">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-                Secure Your Family's Future
-              </h2>
-              <p className="text-xl text-muted-foreground mb-6">
-                $500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage and 4.8★ rated service across Alabama and Georgia.
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Life Insurance in Alabama & Georgia
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
+                Peace of mind starts with the right protection. Term life, whole life, or a blend—we help you choose coverage that fits your family and budget.
               </p>
-
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <div className="flex items-center gap-2 text-sm">
-                  <Zap className="h-5 w-5 text-primary" />
-                  <span>Quotes in minutes</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <DollarSign className="h-5 w-5 text-primary" />
-                  <span>$25/month for $500K</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <Star className="h-5 w-5 text-primary" />
-                  <span>4.8★ rated service</span>
-                </div>
+              
+              {/* CTA Buttons - styled for dark background */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
               </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Alabama: (256) 927-6287
-                </a>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Georgia: (706) 784-6511
-                </a>
-              </Button>
-            </div>
+              {/* Trust indicators with white text */}
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
+                <div className="flex items-center gap-2">
+                  <Zap className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Instant quotes for many applicants</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Heart className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Rates locked for term length</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <FileText className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">No-exam policies available</span>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Why Life Insurance Matters */}
         <section className="py-12 bg-muted/30">
@@ -964,7 +970,7 @@ const georgiaCities = [
             </Button>
           </div>
         </section>
-      </PageLayout>
+      <Footer />
     </>
   );
 };

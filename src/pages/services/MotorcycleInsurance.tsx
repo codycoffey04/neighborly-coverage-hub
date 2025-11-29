@@ -1,11 +1,13 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
+import heroBackground from "@/assets/motorcycle-insurance-hero.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
   Shield, Car, Umbrella, Users, Heart, Wrench,
   FileCheck, CreditCard, DollarSign, TrendingDown, Target, Home,
-  Phone, MapPin, Star, CheckCircle, Bike
+  Phone, MapPin, Star, CheckCircle, Bike, Award
 } from "lucide-react";
 import {
   Accordion,
@@ -220,55 +222,63 @@ const MotorcycleInsurance = () => {
         </script>
       </Helmet>
 
-      <PageLayout
-        title="Motorcycle Insurance in Alabama & Georgia"
-        description="Coverage built for riders—whether you're on a cruiser, sport bike, or touring machine"
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        {/* Hero Section */}
-        <section className="py-12 px-4">
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <div className="text-center mb-8">
-              <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-                We understand the risks unique to two wheels: exposed riding, custom parts, and seasonal storage. Get clear options, honest advice on limits, and a team that answers when you need us.
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Motorcycle Insurance in Alabama & Georgia
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
+                Hit the road with confidence. Custom coverage for your bike, your gear, and your riding style—whether you're cruising backroads or commuting daily.
               </p>
               
-              {/* Trust indicators */}
-              <div className="flex flex-wrap justify-center gap-6 mb-8">
-                <div className="flex items-center gap-2 text-sm">
-                  <Bike className="h-5 w-5 text-secondary" />
-                  <span>Cruisers, sport bikes & touring</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <Wrench className="h-5 w-5 text-secondary" />
-                  <span>Custom parts coverage available</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <Phone className="h-5 w-5 text-secondary" />
-                  <span>Local agents who ride</span>
-                </div>
+              {/* CTA Buttons - styled for dark background */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Alabama: (256) 927-6287
+                  </a>
+                </Button>
+                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                  <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Georgia: (706) 784-6511
+                  </a>
+                </Button>
               </div>
 
-              {/* CTA buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Alabama: (256) 927-6287
-                </a>
-              </Button>
-              <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Georgia: (706) 784-6511
-                </a>
-              </Button>
+              {/* Trust indicators with white text */}
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
+                <div className="flex items-center gap-2">
+                  <Bike className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Custom parts coverage available</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Shield className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Uninsured motorist protection</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Award className="h-5 w-5 text-accent drop-shadow-md" />
+                  <span className="drop-shadow-md">Safety course discounts</span>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Coverage Types Section */}
         <section className="py-16 px-4 bg-muted/30">
@@ -503,7 +513,7 @@ const MotorcycleInsurance = () => {
             </div>
           </div>
         </section>
-      </PageLayout>
+      <Footer />
     </>
   );
 };
