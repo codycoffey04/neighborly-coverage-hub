@@ -81,7 +81,7 @@ export const PageLayout = ({ children, title, description, breadcrumbs }: PageLa
       </section>
 
       {/* Main Content */}
-      <main>{children}</main>
+      <main id="main-content">{children}</main>
 
       <Footer />
     </div>

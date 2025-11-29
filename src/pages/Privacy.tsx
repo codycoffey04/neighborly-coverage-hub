@@ -19,6 +19,8 @@ const Privacy = () => {
       breadcrumbs={[{ label: "Privacy Policy", href: "/privacy" }]}
     >
       <Helmet>
+        <title>Privacy Policy | Coffey Agencies Inc.</title>
+        <meta name="description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
         <link rel="canonical" href="https://coffeyagencies.com/privacy" />
         <script type="application/ld+json">
           {JSON.stringify(privacySchema)}
