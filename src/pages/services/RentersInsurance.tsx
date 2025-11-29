@@ -4,7 +4,7 @@ import heroBackground from "@/assets/renters-insurance-hero.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2 } from "lucide-react";
+import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2, Bike } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -141,6 +141,12 @@ const crossSellServices = [
     title: "Condo Insurance",
     description: "Specialized coverage for condo owners protecting your unit improvements, personal property, and liability with flexible policy options.",
     link: "/services/condo-insurance"
+  },
+  {
+    icon: Bike,
+    title: "Motorcycle Insurance",
+    description: "Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.",
+    link: "/services/motorcycle-insurance"
   }
 ];
 
@@ -589,21 +595,45 @@ const RentersInsurance = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {crossSellServices.map((service, index) => {
+            {/* Top row: 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            {crossSellServices.slice(0, 3).map((service, index) => {
               const Icon = service.icon;
               return (
                 <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
                   <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
-                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-white" />
+                    <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center">
+                      <Icon className="h-7 w-7 text-white" />
                     </div>
-                    <h3 className="text-xl font-semibold">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm flex-grow">{service.description}</p>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </div>
                     <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild>
-                      <Link to={service.link}>
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
+                      <Link to={service.link}>Learn More →</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
+            </div>
+
+            {/* Bottom row: 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
+            {crossSellServices.slice(3, 5).map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
+                  <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
+                    <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center">
+                      <Icon className="h-7 w-7 text-white" />
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </div>
+                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild>
+                      <Link to={service.link}>Learn More →</Link>
                     </Button>
                   </CardContent>
                 </Card>
