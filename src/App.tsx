@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MobileCTABar } from "@/components/shared/MobileCTABar";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
+import { ScrollToTopButton } from "@/components/shared/ScrollToTopButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -34,6 +35,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <MobileCTABar />
+        <ScrollToTopButton />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
