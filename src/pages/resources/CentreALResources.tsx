@@ -45,7 +45,7 @@ const CentreALResources = () => {
         {/* Content */}
         <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
               Local Resources for Centre, AL & Cherokee County
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-md">
