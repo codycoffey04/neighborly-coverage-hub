@@ -450,19 +450,19 @@ const AutoInsurance = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Auto Insurance Across Alabama & Georgia</h2>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Alabama */}
-              <div>
+              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
                   Alabama
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                   {alabamaCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-3 py-1.5 bg-card rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors"
+                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -471,17 +471,17 @@ const AutoInsurance = () => {
               </div>
 
               {/* Georgia */}
-              <div>
+              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
                   Georgia
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                   {georgiaCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-3 py-1.5 bg-card rounded-lg text-sm border hover:border-primary hover:text-primary transition-colors"
+                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
