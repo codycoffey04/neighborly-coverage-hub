@@ -127,22 +127,22 @@ const Contact = () => {
               {/* Trust indicator bullet points - horizontal grid */}
               <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
                 <div className="flex items-start gap-2 text-left">
-                  <CheckCircle className="h-5 w-5 text-secondary shrink-0 mt-0.5 drop-shadow-md" />
+                  <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5 drop-shadow-md" />
                   <p className="text-sm text-white drop-shadow-md">Response within 1 business day — usually same day</p>
                 </div>
                 <div className="flex items-start gap-2 text-left">
-                  <CheckCircle className="h-5 w-5 text-secondary shrink-0 mt-0.5 drop-shadow-md" />
+                  <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5 drop-shadow-md" />
                   <p className="text-sm text-white drop-shadow-md">Speak directly with licensed agents — no call centers</p>
                 </div>
                 <div className="flex items-start gap-2 text-left">
-                  <CheckCircle className="h-5 w-5 text-secondary shrink-0 mt-0.5 drop-shadow-md" />
+                  <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5 drop-shadow-md" />
                   <p className="text-sm text-white drop-shadow-md">Two convenient offices in Centre, AL and Rome, GA</p>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="/contact#contact-form">Get Your Free Quote</a>
                 </Button>
                 <Button size="lg" variant="outline" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md" asChild>
