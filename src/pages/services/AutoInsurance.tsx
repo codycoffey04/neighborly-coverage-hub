@@ -1,4 +1,3 @@
-import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -14,6 +13,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
+import heroBackground from "@/assets/auto-insurance-hero.jpg";
 
 const coverageTypes = [
   {
@@ -242,32 +244,44 @@ const AutoInsurance = () => {
         </script>
       </Helmet>
 
-      <PageLayout
-        title="Auto Insurance in Alabama & Georgia"
-        description="Clear options, fast quotes, and a team that actually picks up the phone"
+      <Header />
+
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[600px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        {/* Hero Section */}
-        <section className="py-12 px-4">
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <div className="text-center mb-8">
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Auto Insurance in Alabama & Georgia
+              </h1>
+              <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
+                Clear options, fast quotes, and a team that actually picks up the phone
+              </p>
+              <p className="text-lg text-white/90 max-w-3xl mx-auto mb-6 drop-shadow-md">
                 We help you choose coverages that protect your budget and your daily life. Expect straight talk on limits and deductibles, quick paperwork, and follow-through at claim time. Bundle with home insurance or condo insurance to unlock additional savings.
               </p>
-              <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
                 {[
                   "Most quotes in minutes with the info you already have",
                   "We explain coverages in plain English—no jargon, no upsell pressure",
                   "Local help if something goes wrong, from fender-benders to major storms"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-2 text-left">
-                    <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                    <p className="text-sm text-foreground">{item}</p>
+                    <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5 drop-shadow-md" />
+                    <p className="text-sm text-white drop-shadow-md">{item}</p>
                   </div>
                 ))}
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
@@ -286,7 +300,8 @@ const AutoInsurance = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Coverage Types */}
         <section className="py-16 px-4 bg-muted/30">
@@ -527,14 +542,15 @@ const AutoInsurance = () => {
               <Button 
                 type="submit"
                 size="lg" 
-                className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto"
+                className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               >
                 Get Your Free Quote
               </Button>
             </form>
           </div>
         </section>
-      </PageLayout>
+
+      <Footer />
     </>
   );
 };
