@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { 
   Shield, Car, Umbrella, Users, Heart, Wrench,
   FileCheck, CreditCard, DollarSign, TrendingDown, Target, Home,
-  Phone, MapPin, Star, CheckCircle, Bike, Award
+  Phone, MapPin, Star, CheckCircle, Bike, Award, Key, Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -438,6 +438,114 @@ const MotorcycleInsurance = () => {
               <Button variant="outline" size="lg" asChild aria-label="Read all customer reviews on Google">
                 <Link to="/reviews">Read All Reviews →</Link>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Complete Your Coverage Section */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Complete Your Coverage</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Explore additional insurance options to protect every aspect of your life.
+              </p>
+            </div>
+            
+            {/* Top row: 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+              {/* Auto Insurance */}
+              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                    <Car className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Auto Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <p className="text-muted-foreground mb-4 flex-grow">
+                    Protect your vehicles with comprehensive coverage across Alabama and Georgia. Competitive rates with multi-policy discounts.
+                  </p>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                    <Link to="/services/auto-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Home Insurance */}
+              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                    <Home className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Home Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <p className="text-muted-foreground mb-4 flex-grow">
+                    Comprehensive homeowners coverage for Alabama and Georgia properties with protection against regional weather risks.
+                  </p>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                    <Link to="/services/home-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Renters Insurance */}
+              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                    <Key className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Renters Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <p className="text-muted-foreground mb-4 flex-grow">
+                    Affordable renters insurance starting at $8/month with auto bundle. Protect your belongings and liability.
+                  </p>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                    <Link to="/services/renters-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Bottom row: 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
+              {/* Condo Insurance */}
+              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                    <Building2 className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Condo Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <p className="text-muted-foreground mb-4 flex-grow">
+                    Specialized coverage for condo owners protecting your unit improvements, personal property, and liability.
+                  </p>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                    <Link to="/services/condo-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Life Insurance */}
+              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                    <Heart className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Life Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <p className="text-muted-foreground mb-4 flex-grow">
+                    Protect your family's financial future with affordable term or whole life coverage starting at $25/month.
+                  </p>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                    <Link to="/services/life-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
