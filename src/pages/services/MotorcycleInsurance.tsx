@@ -248,13 +248,13 @@ const MotorcycleInsurance = () => {
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
-                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                     <Phone className="mr-2 h-5 w-5" />
                     Alabama: (256) 927-6287
                   </a>
                 </Button>
-                <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+                <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
                     <Phone className="mr-2 h-5 w-5" />
                     Georgia: (706) 784-6511
@@ -298,8 +298,8 @@ const MotorcycleInsurance = () => {
                 return (
                   <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                     <CardHeader>
-                      <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-2">
-                        <Icon className="h-7 w-7 text-white" />
+                      <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-2">
+                        <Icon className="h-6 w-6 text-white" />
                       </div>
                       <CardTitle className="text-xl">{coverage.title}</CardTitle>
                     </CardHeader>
@@ -359,8 +359,8 @@ const MotorcycleInsurance = () => {
                 return (
                   <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                     <CardHeader>
-                      <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-2">
-                        <Icon className="h-7 w-7 text-white" />
+                      <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-2">
+                        <Icon className="h-6 w-6 text-white" />
                       </div>
                       <CardTitle className="text-lg">{tip.title}</CardTitle>
                     </CardHeader>
@@ -411,7 +411,7 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
             
@@ -421,7 +421,7 @@ const MotorcycleInsurance = () => {
                   <CardContent className="pt-6 flex-grow flex flex-col">
                     <div className="flex gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                        <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                       ))}
                     </div>
                     <p className="text-muted-foreground mb-4 italic flex-grow">"{testimonial.text}"</p>
@@ -551,23 +551,25 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* Areas We Serve Section */}
-        <section className="py-16 px-4 bg-muted/30">
+        <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">Areas We Serve</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Motorcycle Insurance Across Alabama & Georgia</h2>
+            </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Alabama Cities */}
-              <div>
-                <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-secondary" />
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Alabama */}
+              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                  <MapPin className="h-5 w-5" />
                   Alabama
                 </h3>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="flex flex-wrap gap-3">
                   {alabamaCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="text-primary hover:underline"
+                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -575,18 +577,18 @@ const MotorcycleInsurance = () => {
                 </div>
               </div>
 
-              {/* Georgia Cities */}
-              <div>
-                <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-secondary" />
+              {/* Georgia */}
+              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                  <MapPin className="h-5 w-5" />
                   Georgia
                 </h3>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="flex flex-wrap gap-3">
                   {georgiaCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="text-primary hover:underline"
+                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -594,6 +596,10 @@ const MotorcycleInsurance = () => {
                 </div>
               </div>
             </div>
+
+            <p className="text-center text-muted-foreground">
+              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
+            </p>
           </div>
         </section>
 
@@ -605,21 +611,54 @@ const MotorcycleInsurance = () => {
               Call us today or request a free quote online. We'll walk you through your options and answer every question.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 border-0 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free motorcycle insurance quote">
+            <div className="mb-6">
+              <Button 
+                size="lg" 
+                className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+                asChild
+              >
                 <Link to="/contact">Get Your Free Quote</Link>
               </Button>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center text-sm">
-              <a href="tel:+12569276287" className="flex items-center gap-2 hover:opacity-80" aria-label="Call Centre, Alabama office at (256) 927-6287">
+            <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-white/90">
+              <span>Or call us:</span>
+              <a 
+                href="tel:+12569276287"
+                aria-label="Call Centre, Alabama office at (256) 927-6287"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
                 <Phone className="h-4 w-4" />
-                <span>Centre, AL: (256) 927-6287</span>
+                (256) 927-6287
               </a>
-              <a href="tel:+17067846511" className="flex items-center gap-2 hover:opacity-80" aria-label="Call Rome, Georgia office at (706) 784-6511">
+              <span className="text-white/50">|</span>
+              <a 
+                href="tel:+17067846511"
+                aria-label="Call Rome, Georgia office at (706) 784-6511"
+                className="flex items-center gap-1.5 hover:text-white transition-colors"
+              >
                 <Phone className="h-4 w-4" />
-                <span>Rome, GA: (706) 784-6511</span>
+                (706) 784-6511
               </a>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Licensed in AL & GA
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Hablamos Español
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                Family Owned
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-white">
+                <CheckCircle className="h-4 w-4" />
+                100+ Years Combined Experience
+              </span>
             </div>
           </div>
         </section>
