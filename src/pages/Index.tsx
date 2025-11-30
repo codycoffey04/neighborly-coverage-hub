@@ -9,6 +9,7 @@ import { FAQ } from "@/components/homepage/FAQ";
 import { FinalCTA } from "@/components/homepage/FinalCTA";
 import { Footer } from "@/components/homepage/Footer";
 import { Helmet } from "react-helmet-async";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Index = () => {
   // Comprehensive Schema.org JSON-LD for homepage
@@ -294,6 +295,7 @@ const Index = () => {
         <title>Coffey Agencies Inc. | Insurance in Alabama & Georgia</title>
         <meta name="description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
+        <link rel="preload" as="image" href={heroBackground} />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

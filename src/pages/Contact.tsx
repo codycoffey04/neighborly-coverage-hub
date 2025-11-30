@@ -186,7 +186,7 @@ const Contact = () => {
                 className="space-y-6"
               >
                 <input type="hidden" name="form-name" value="contact-form" />
-                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" aria-hidden="true" tabIndex={-1} />
                 
                 <div className="space-y-2">
                   <Label htmlFor="name">Name *</Label>
