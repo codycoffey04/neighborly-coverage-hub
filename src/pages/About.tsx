@@ -98,7 +98,7 @@ const About = () => {
     <>
       <Helmet>
         <title>About Coffey Agencies | Your Local Insurance Team Since 2009</title>
-        <meta name="description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. 8,000+ policies protected." />
+        <meta name="description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
         <link rel="canonical" href="https://coffeyagencies.com/about" />
         <script type="application/ld+json">
           {JSON.stringify(aboutSchema)}
@@ -160,7 +160,7 @@ const About = () => {
                   In 2021, we consolidated our four physical locations into two strategic hubs in Centre and Rome. This allows our team to serve clients throughout both states with the same people they've trusted for years — combining local expertise with digital convenience.
                 </p>
                 <p>
-                  Today, Coffey Agencies protects over 8,000 policies across Alabama and Georgia with a dedicated team of insurance professionals who believe in doing things the right way.
+                  Today, Coffey Agencies protects families across Alabama and Georgia with a dedicated team of insurance professionals who believe in doing things the right way.
                 </p>
               </div>
             </div>
@@ -174,10 +174,10 @@ const About = () => {
                   <div className="text-4xl font-bold text-primary mb-2">2</div>
                   <div className="text-muted-foreground">Office Locations</div>
                 </div>
-                <div>
-                  <div className="text-4xl font-bold text-primary mb-2">8,000+</div>
-                  <div className="text-muted-foreground">Policies Protected</div>
-                </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">A+</div>
+              <div className="text-muted-foreground">BBB Rating</div>
+            </div>
                 <div>
                   <div className="text-4xl font-bold text-primary mb-2">100+</div>
                   <div className="text-muted-foreground">Years Combined Team Experience</div>
@@ -333,7 +333,7 @@ const About = () => {
                 </div>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• 16+ years serving Alabama and Georgia families</li>
-                  <li>• 8,000+ policies protected</li>
+                  <li>• A+ Rating with the Better Business Bureau</li>
                   <li>• 100+ years combined team experience</li>
                   <li>• 4.7★ Google rating in Centre (116 reviews)</li>
                   <li>• 4.6★ Google rating in Rome (90 reviews)</li>
