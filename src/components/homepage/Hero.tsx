@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Star, MessageCircle, Heart } from "lucide-react";
+import { Shield, Star, MessageCircle, Heart, ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
@@ -35,13 +35,27 @@ export const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
-            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-7 h-auto font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
-              <Link to="/contact">Get Your Free Quote</Link>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center items-center">
+            <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-10 py-7 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+              <Link to="/contact">
+                Get Your Free Quote
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 text-lg px-10 py-7 h-auto font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
-              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">Call Us Now</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Centre: (256) 927-6287
+                </a>
+              </Button>
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Rome: (706) 784-6511
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
