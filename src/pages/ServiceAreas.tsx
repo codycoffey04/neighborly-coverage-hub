@@ -157,9 +157,9 @@ const ServiceAreas = () => {
                     </div>
 
                     <Link to="/contact">
-                      <button className="mt-6 w-full btn-primary py-3 rounded-lg font-semibold">
+                      <Button className="mt-6 w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
                         Get Directions
-                      </button>
+                      </Button>
                     </Link>
                   </CardContent>
                 </Card>
