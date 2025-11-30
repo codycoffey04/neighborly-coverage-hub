@@ -1,5 +1,6 @@
 import { Header } from "@/components/homepage/Header";
 import { Hero } from "@/components/homepage/Hero";
+import { TrustBar } from "@/components/homepage/TrustBar";
 import { ServicesOverview } from "@/components/homepage/ServicesOverview";
 import { WhyChooseUs } from "@/components/homepage/WhyChooseUs";
 import { HowItWorks } from "@/components/homepage/HowItWorks";
@@ -7,6 +8,7 @@ import { Testimonials } from "@/components/homepage/Testimonials";
 import { ServiceArea } from "@/components/homepage/ServiceArea";
 import { FAQ } from "@/components/homepage/FAQ";
 import { FinalCTA } from "@/components/homepage/FinalCTA";
+import { BottomCTA } from "@/components/homepage/BottomCTA";
 import { Footer } from "@/components/homepage/Footer";
 import { Helmet } from "react-helmet-async";
 import heroBackground from "@/assets/hero-background.jpg";
@@ -305,13 +307,15 @@ const Index = () => {
         <Header />
         <main id="main-content">
           <Hero />
-          <ServicesOverview />
+          <TrustBar />
           <WhyChooseUs />
+          <ServicesOverview />
           <HowItWorks />
           <Testimonials />
           <ServiceArea />
           <FAQ />
           <FinalCTA />
+          <BottomCTA />
         </main>
         <Footer />
       </div>

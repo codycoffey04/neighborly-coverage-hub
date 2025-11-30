@@ -40,9 +40,9 @@ export const WhyChooseUs = () => {
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return (
-              <div key={index} className="text-center space-y-4 group">
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out group text-center space-y-4">
                 {/* Icon */}
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#1e3a5f] shadow-md group-hover:scale-110 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#1e3a5f] shadow-md group-hover:scale-110 group-hover:animate-pulse transition-transform duration-300">
                   <Icon className="h-8 w-8 text-white" />
                 </div>
                 
