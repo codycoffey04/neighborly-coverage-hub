@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Clock, User, ArrowRight, AlertCircle, Info, Phone, ChevronRight } from "lucide-react";
+import { Clock, User, ArrowRight, AlertCircle, Info, Phone, ChevronRight, CheckCircle } from "lucide-react";
 import { learnArticles, ContentSection } from "@/data/learnArticles";
 import { Helmet } from "react-helmet-async";
 
@@ -371,9 +371,9 @@ const LearnArticle = () => {
               {relatedArticles.map((related) => (
                 <Card key={related.slug} className="border-border hover:border-primary/50 transition-colors group">
                   <CardContent className="p-6">
-                    <Badge variant="secondary" className="mb-3">
-                      {related.category}
-                    </Badge>
+                  <Badge className="mb-3">
+                    {related.category}
+                  </Badge>
                     <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {related.title}
                     </h3>
@@ -393,6 +393,60 @@ const LearnArticle = () => {
           </div>
         </section>
       )}
+
+      {/* Final CTA Section */}
+      <section className="py-16 px-4 bg-[#1e3a5f]">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Have Questions About Your Coverage?</h2>
+          <p className="text-lg text-white/90 mb-8 leading-relaxed">
+            Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
+          </p>
+          
+          {/* CTA Button - Green */}
+          <Link to="/contact">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+              Get Your Free Quote
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </Link>
+          
+          {/* Phone Numbers */}
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
+            <span>Or call us:</span>
+            <a 
+              href="tel:+12569276287" 
+              className="text-white hover:text-accent transition-colors"
+              aria-label="Call Centre, Alabama office at (256) 927-6287"
+            >
+              (256) 927-6287
+            </a>
+            <span className="hidden sm:inline">|</span>
+            <a 
+              href="tel:+17067846511" 
+              className="text-white hover:text-accent transition-colors"
+              aria-label="Call Rome, Georgia office at (706) 784-6511"
+            >
+              (706) 784-6511
+            </a>
+          </div>
+          
+          {/* Trust Badges */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-white/80">
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Licensed in AL & GA
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Hablamos Español
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Family Owned
+            </span>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>
