@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  Car, Home as HomeIcon, Key, Building2, Heart, 
+  Car, Home as HomeIcon, Key, Building2, Heart, Bike,
   Zap, MapPin, Star, Phone, Shield, Users, Clock,
   CheckCircle, Building, Quote, ArrowRight
 } from "lucide-react";
@@ -65,6 +65,12 @@ const services = [
     title: "Life Insurance",
     description: "Term and whole life coverage from $25/month protecting your family's financial future.",
     link: "/services/life-insurance"
+  },
+  {
+    icon: Bike,
+    title: "Motorcycle Insurance",
+    description: "Rider-specific coverage for motorcycles, custom parts, and accessories with competitive rates.",
+    link: "/services/motorcycle-insurance"
   }
 ];
 
