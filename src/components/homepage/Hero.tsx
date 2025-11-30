@@ -43,18 +43,18 @@ export const Hero = () => {
               </Link>
             </Button>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Centre: (256) 927-6287
-                </a>
-              </Button>
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Rome: (706) 784-6511
-                </a>
-              </Button>
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-4 sm:py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                <Phone className="mr-2 h-4 w-4" />
+                Centre: (256) 927-6287
+              </a>
+            </Button>
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-4 sm:py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                <Phone className="mr-2 h-4 w-4" />
+                Rome: (706) 784-6511
+              </a>
+            </Button>
             </div>
           </div>
         </div>
