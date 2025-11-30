@@ -264,9 +264,14 @@ const RentersInsurance = () => {
       <section 
         role="banner"
         aria-label="Renters insurance hero section"
-        className="relative min-h-[600px] flex items-end bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="relative min-h-[600px] flex items-end overflow-hidden"
       >
+        <img 
+          src={heroBackground} 
+          alt="" 
+          fetchPriority="high"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
         

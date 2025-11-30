@@ -9,12 +9,14 @@ export const Hero = () => {
       role="banner"
       aria-label="Coffey Agencies homepage hero"
       className="relative min-h-[55vh] md:min-h-[70vh] flex items-end pb-16 md:pb-20 overflow-hidden"
-      style={{ 
-        backgroundImage: `url(${heroBackground})`, 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center 35%' 
-      }}
     >
+      <img 
+        src={heroBackground} 
+        alt="" 
+        fetchPriority="high"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: 'center 35%' }}
+      />
       {/* Subtle dark gradient for text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       

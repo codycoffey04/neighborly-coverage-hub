@@ -230,3 +230,16 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Performance: GPU-accelerated animations */
+.hover-scale,
+[class*="hover:scale"],
+[class*="hover:-translate"] {
+  will-change: transform;
+}
+
+.hover-scale:not(:hover),
+[class*="hover:scale"]:not(:hover),
+[class*="hover:-translate"]:not(:hover) {
+  will-change: auto;
+}
