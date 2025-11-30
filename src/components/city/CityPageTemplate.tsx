@@ -16,7 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet-async";
-import { CityData } from "@/data/cityData";
+import { CityData, cityData } from "@/data/cityData";
 
 // Extend Window interface for Tidio page context
 declare global {
@@ -457,21 +457,28 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {city.nearbyCities.map((citySlug, index) => (
-              <Link key={index} to={`/${citySlug}`}>
-                <Card className="card-hover border-2 h-full">
-                  <CardContent className="pt-6 text-center">
-                    <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
-                    <h3 className="font-semibold text-lg mb-2">
-                      {citySlug.split('-')[0].charAt(0).toUpperCase() + citySlug.split('-')[0].slice(1).replace('-', ' ')}, {citySlug.split('-')[1].toUpperCase()}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      View insurance services
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+            {city.nearbyCities.map((citySlug, index) => {
+              const nearbyCity = cityData[citySlug];
+              const displayName = nearbyCity 
+                ? `${nearbyCity.city}, ${nearbyCity.stateAbbr}`
+                : citySlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+              
+              return (
+                <Link key={index} to={`/${citySlug}`}>
+                  <Card className="card-hover border-2 h-full">
+                    <CardContent className="pt-6 text-center">
+                      <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
+                      <h3 className="font-semibold text-lg mb-2">
+                        {displayName}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        View insurance services
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
