@@ -7,6 +7,7 @@ export interface CityData {
   isOfficeCity: boolean;
   nearestOffice: "centre" | "rome";
   localPhone?: string;
+  heroImage?: string; // "alabama-hero.jpg" or "georgia-hero.jpg"
   
   // Content (placeholder initially - you'll provide unique content)
   introduction: string[];
@@ -36,6 +37,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: true,
     nearestOffice: "centre",
     localPhone: "(256) 927-6287",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Auto Insurance Quote Centre, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 35960 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -110,6 +112,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
+    heroImage: "alabama-hero.jpg",
     introduction: [
       "The 35173 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns along the Cahaba River, residents need insurance protection tailored to Central Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Trussville, Cahaba Project, or any neighborhood in the region.",
       "With approximately 26,000 residents and a median household income around $93,000, this affluent community includes educators at Trussville City Schools, healthcare professionals at Gadsden Regional Medical Center, and families working throughout the Birmingham metro area. Each household has distinct insurance needs, whether protecting higher-value homes near Lake Forest or securing auto coverage for commutes along I-59. Trussville's growth as a premier Birmingham suburb creates specific insurance considerations for both established and new homeowners."
@@ -180,6 +183,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Birmingham, AL (35215 & 35235)",
     customHeroSubhead: "Local help with auto insurance in the 35215 and 35235 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -251,6 +255,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36116", "36117"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Montgomery, AL (36116 & 36117)",
     customHeroSubhead: "Local help with auto insurance in the 36116 and 36117 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -352,6 +357,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36601", "36695"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Mobile, AL (36601 & 36695)",
     customHeroSubhead: "Local help with auto insurance in the 36601 and 36695 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -440,6 +446,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36301", "36303"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Dothan, AL (36301 & 36303)",
     customHeroSubhead: "Local help with auto insurance in the 36301 and 36303 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -512,6 +519,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Auburn, AL (36830)",
     customHeroSubhead: "Local help with auto insurance in the 36830 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -601,6 +609,7 @@ export const cityData: Record<string, CityData> = {
     customHeroSubhead: "Local help with auto insurance in the 36867 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     isOfficeCity: false,
     nearestOffice: "centre",
+    heroImage: "alabama-hero.jpg",
     introduction: [
       "Phenix City faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with damaging winds to flooding concerns along the Chattahoochee River and Uchee Creek, residents need insurance protection tailored to East Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Phenix City, Idle Hour, or any neighborhood in the region.",
       "With approximately 22,505 residents and a median household income around $46,847, this diverse community includes military families serving at Fort Moore (Fort Benning), technology workers at TSYS, and healthcare professionals at Columbus Regional Healthcare. Each household has distinct insurance needs, whether protecting homes near Chattahoochee River flood zones or securing auto coverage for commutes to Fort Moore."
@@ -671,6 +680,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(251) 551-1350",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Foley, AL (36535)",
     customHeroSubhead: "Local help with auto insurance in the 36535 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -756,6 +766,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Troy, AL (36081)",
     customHeroSubhead: "Local help with auto insurance in the 36081 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -828,6 +839,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
+    heroImage: "alabama-hero.jpg",
     customHeroTitle: "Insurance in Enterprise, AL (36330)",
     customHeroSubhead: "Local help with auto insurance in the 36330 area, homeowners coverage, and military family protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -914,6 +926,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: true,
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Auto Insurance Quote Rome, GA - Floyd County's Local Agent Since 2012",
     customHeroSubhead: "Local help with auto insurance in the 30161 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -986,6 +999,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(678) 679-5311",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Atlanta, GA (30349)",
     customHeroSubhead: "Local help with auto insurance in the 30349 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1057,6 +1071,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["30043", "30044"],
     isOfficeCity: false,
     nearestOffice: "rome",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Lawrenceville, GA (30043 & 30044)",
     customHeroSubhead: "Local help with auto insurance in the 30043 and 30044 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1137,6 +1152,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(470) 876-7713",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Duluth, GA (30095 & 30096)",
     customHeroSubhead: "Local help with auto insurance in the 30095 and 30096 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1227,6 +1243,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Auto Insurance Quote Cartersville, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30120 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1312,6 +1329,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(706) 702-1782",
     isOfficeCity: false,
     nearestOffice: "rome",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Calhoun, GA (30701)",
     customHeroSubhead: "Local help with auto insurance in the 30701 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1384,6 +1402,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Auto Insurance Quote Cedartown, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30125 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1460,6 +1479,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Summerville, GA (30747)",
     customHeroSubhead: "Local help with auto insurance in the 30747 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1512,6 +1532,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Suwanee, GA (30024)",
     customHeroSubhead: "Local help with auto insurance in the 30024 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1597,6 +1618,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Alpharetta, GA (30004)",
     customHeroSubhead: "Local help with auto insurance in the 30004 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1669,6 +1691,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Auto Insurance Quote Forsyth, GA - Compare Rates Today",
     customHeroSubhead: "Local help with auto insurance in the 31029 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
@@ -1753,6 +1776,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 646-5540",
+    heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Rockmart, GA (30153)",
     customHeroSubhead: "Local help with auto insurance in the 30153 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call. Save up to $600 annually.",
     introduction: [
