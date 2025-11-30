@@ -53,16 +53,20 @@ export const Footer = () => {
               ))}
             </ul>
             
-            {/* Social Link */}
-            <div className="mt-4">
+            {/* Social Links */}
+            <div className="mt-6 pt-4 border-t border-gray-200">
+              <p className="text-sm text-muted-foreground mb-3">Follow Us</p>
               <a 
                 href="https://www.facebook.com/codycoffeyagency"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow us on Facebook"
-                className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white hover:bg-primary/90 transition-colors"
+                aria-label="Follow Coffey Agencies on Facebook"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
               >
-                <Facebook className="h-4 w-4" />
+                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-primary text-white group-hover:bg-primary/90 group-hover:scale-110 transition-all">
+                  <Facebook className="h-4 w-4" />
+                </span>
+                <span className="text-sm font-medium">Facebook</span>
               </a>
             </div>
           </div>
