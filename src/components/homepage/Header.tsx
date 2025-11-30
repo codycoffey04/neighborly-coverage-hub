@@ -45,7 +45,6 @@ export const Header = () => {
               alt="Coffey Agencies - Insurance Services" 
               width={150}
               height={48}
-              loading="lazy"
               className="h-12 w-auto"
             />
           </Link>
