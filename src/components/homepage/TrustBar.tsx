@@ -48,15 +48,15 @@ export const TrustBar = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-secondary" />
+              <CheckCircle2 className="h-4 w-4 text-accent" />
               <span className="font-semibold">Licensed in AL & GA</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-secondary" />
+              <CheckCircle2 className="h-4 w-4 text-accent" />
               <span className="font-semibold">Hablamos Español</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-secondary" />
+              <CheckCircle2 className="h-4 w-4 text-accent" />
               <span className="font-semibold">Family Owned</span>
             </div>
           </div>

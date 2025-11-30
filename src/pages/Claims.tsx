@@ -134,7 +134,7 @@ const Claims = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all"
+                className="bg-accent hover:bg-accent/90 text-white shadow-lg hover:shadow-xl transition-all"
               >
                 <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
                   <Phone className="mr-2 h-5 w-5" />
