@@ -378,7 +378,7 @@ const Reviews = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg transition-all" asChild>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg transition-all" asChild>
               <a 
                 href="https://search.google.com/local/writereview?placeid=ChIJJ80TpQ5hiogRn3tzQbqNLMA" 
                 target="_blank" 
