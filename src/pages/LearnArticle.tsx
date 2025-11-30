@@ -1,12 +1,13 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Clock, User, ArrowRight, AlertCircle, Info, Phone } from "lucide-react";
+import { Clock, User, ArrowRight, AlertCircle, Info, Phone, ChevronRight } from "lucide-react";
 import { learnArticles, ContentSection } from "@/data/learnArticles";
 import { Helmet } from "react-helmet-async";
 
@@ -23,6 +24,16 @@ const LearnArticle = () => {
   const relatedArticles = learnArticles.filter(a => 
     article.relatedArticles.includes(a.slug)
   ).slice(0, 3);
+
+  // Load hero image dynamically if provided
+  let heroImage: string | undefined;
+  if (article.heroImage) {
+    try {
+      heroImage = new URL(`../assets/${article.heroImage}`, import.meta.url).href;
+    } catch (e) {
+      console.error(`Failed to load hero image: ${article.heroImage}`);
+    }
+  }
 
   // Render content sections
   const renderContent = (section: ContentSection, index: number) => {
@@ -168,6 +179,32 @@ const LearnArticle = () => {
     }))
   } : null;
 
+  // Build BreadcrumbList JSON-LD
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://coffeyagencies.com/learn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `https://coffeyagencies.com/learn/${article.slug}`
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -190,120 +227,174 @@ const LearnArticle = () => {
             {JSON.stringify(faqSchema)}
           </script>
         )}
+
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
-      <PageLayout
-        title={article.title}
-        description={article.excerpt}
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Learn", href: "/learn" },
-          { label: article.title, href: `/learn/${article.slug}` }
-        ]}
-      >
-        {/* Article Header */}
-        <section className="py-12 px-4">
-          <div className="container mx-auto max-w-4xl">
-            <div className="flex items-center gap-3 mb-6">
-              <Badge>{article.category}</Badge>
-              <Separator orientation="vertical" className="h-5" />
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <Clock className="w-4 h-4" />
-                  {article.readTime}
-                </div>
-                <div className="flex items-center gap-1">
-                  <User className="w-4 h-4" />
-                  Coffey Agencies Team
-                </div>
-              </div>
+      <Header />
+
+      {/* Custom Hero Section with Background Image or Fallback */}
+      {heroImage ? (
+        <section 
+          role="banner"
+          aria-label={`${article.title} hero section`}
+          className="relative min-h-[400px] md:min-h-[500px] flex items-end bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        >
+          {/* Dark gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+          
+          {/* Content */}
+          <div className="relative z-10 w-full py-12 px-4">
+            <div className="container mx-auto max-w-4xl">
+              {/* Breadcrumbs */}
+              <nav className="flex items-center gap-2 text-sm text-white/80 mb-4" aria-label="Breadcrumb">
+                <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-4 h-4" />
+                <Link to="/learn" className="hover:text-white transition-colors">Learn</Link>
+                <ChevronRight className="w-4 h-4" />
+                <span className="text-white">{article.title}</span>
+              </nav>
+              
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+                {article.title}
+              </h1>
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl drop-shadow-md">
+                {article.excerpt}
+              </p>
             </div>
-
-            <Separator className="mb-8" />
-
-            {/* Article Content */}
-            <article className="prose prose-lg max-w-none">
-              {article.content.map((section, index) => (
-                <React.Fragment key={index}>
-                  {renderContent(section, index)}
-                  {/* Insert mid-article CTA after 4th content section */}
-                  {index === 3 && article.content.length > 4 && <MidArticleCTA />}
-                </React.Fragment>
-              ))}
-            </article>
-
-            {/* FAQ Section */}
-            {article.faqs.length > 0 && (
-              <div className="mt-12">
-                <h2 className="text-2xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
-                <Accordion type="single" collapsible className="w-full">
-                  {article.faqs.map((faq, index) => (
-                    <AccordionItem key={index} value={`faq-${index}`}>
-                      <AccordionTrigger className="text-left text-lg font-semibold">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground leading-relaxed">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </div>
-            )}
-
-            {/* Internal Links CTA */}
-            {article.internalLinks.length > 0 && (
-              <Card className="mt-12 bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
-                  <div className="flex flex-wrap gap-3">
-                    {article.internalLinks.map((link, index) => (
-                      <Link key={index} to={link.href}>
-                        <Button variant={index === 0 ? "default" : "outline"}>
-                          {link.text}
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </Link>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            )}
           </div>
         </section>
+      ) : (
+        /* Fallback gradient hero for articles without hero images */
+        <section className="relative py-16 px-4 bg-gradient-to-br from-primary via-primary to-primary/90">
+          <div className="container mx-auto max-w-4xl">
+            {/* Breadcrumbs */}
+            <nav className="flex items-center gap-2 text-sm text-white/80 mb-4" aria-label="Breadcrumb">
+              <Link to="/" className="hover:text-white transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link to="/learn" className="hover:text-white transition-colors">Learn</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white">{article.title}</span>
+            </nav>
+            
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              {article.title}
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl">
+              {article.excerpt}
+            </p>
+          </div>
+        </section>
+      )}
 
-        {/* Related Articles */}
-        {relatedArticles.length > 0 && (
-          <section className="py-16 px-4 bg-muted/30">
-            <div className="container mx-auto max-w-6xl">
-              <h2 className="text-2xl font-bold text-foreground mb-8">Related Guides</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                {relatedArticles.map((related) => (
-                  <Card key={related.slug} className="border-border hover:border-primary/50 transition-colors group">
-                    <CardContent className="p-6">
-                      <Badge variant="secondary" className="mb-3">
-                        {related.category}
-                      </Badge>
-                      <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                        {related.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                        {related.excerpt}
-                      </p>
-                      <Link to={`/learn/${related.slug}`}>
-                        <Button variant="link" className="p-0 h-auto">
-                          Read Guide
-                          <ArrowRight className="w-4 h-4 ml-1" />
-                        </Button>
-                      </Link>
-                    </CardContent>
-                  </Card>
-                ))}
+      {/* Article Header */}
+      <section className="py-8 px-4 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex items-center gap-3 mb-6">
+            <Badge>{article.category}</Badge>
+            <Separator orientation="vertical" className="h-5" />
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-1">
+                <Clock className="w-4 h-4" />
+                {article.readTime}
+              </div>
+              <div className="flex items-center gap-1">
+                <User className="w-4 h-4" />
+                Coffey Agencies Team
               </div>
             </div>
-          </section>
-        )}
-      </PageLayout>
+          </div>
+
+          <Separator className="mb-8" />
+
+          {/* Article Content */}
+          <article className="prose prose-lg max-w-none">
+            {article.content.map((section, index) => (
+              <React.Fragment key={index}>
+                {renderContent(section, index)}
+                {/* Insert mid-article CTA after 4th content section */}
+                {index === 3 && article.content.length > 4 && <MidArticleCTA />}
+              </React.Fragment>
+            ))}
+          </article>
+
+          {/* FAQ Section */}
+          {article.faqs.length > 0 && (
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
+              <Accordion type="single" collapsible className="w-full">
+                {article.faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`faq-${index}`}>
+                    <AccordionTrigger className="text-left text-lg font-semibold">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          )}
+
+          {/* Internal Links CTA */}
+          {article.internalLinks.length > 0 && (
+            <Card className="mt-12 bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
+                <div className="flex flex-wrap gap-3">
+                  {article.internalLinks.map((link, index) => (
+                    <Link key={index} to={link.href}>
+                      <Button variant={index === 0 ? "default" : "outline"}>
+                        {link.text}
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      {relatedArticles.length > 0 && (
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-2xl font-bold text-foreground mb-8">Related Guides</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {relatedArticles.map((related) => (
+                <Card key={related.slug} className="border-border hover:border-primary/50 transition-colors group">
+                  <CardContent className="p-6">
+                    <Badge variant="secondary" className="mb-3">
+                      {related.category}
+                    </Badge>
+                    <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {related.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                      {related.excerpt}
+                    </p>
+                    <Link to={`/learn/${related.slug}`}>
+                      <Button variant="link" className="p-0 h-auto">
+                        Read Guide
+                        <ArrowRight className="w-4 h-4 ml-1" />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <Footer />
     </>
   );
 };
