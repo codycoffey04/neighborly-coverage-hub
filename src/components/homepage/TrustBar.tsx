@@ -1,4 +1,4 @@
-import { Star, Users, Award, CheckCircle2 } from "lucide-react";
+import { Star, Award, CheckCircle2 } from "lucide-react";
 
 export const TrustBar = () => {
   return (
@@ -14,13 +14,13 @@ export const TrustBar = () => {
             <p className="text-sm text-muted-foreground">Years Serving You</p>
           </div>
 
-          {/* Policies Written */}
+          {/* BBB Rating */}
           <div className="text-center space-y-2">
             <div className="flex justify-center">
-              <Users className="h-8 w-8 text-primary" />
+              <Award className="h-8 w-8 text-primary" />
             </div>
-            <p className="text-3xl font-bold text-foreground">8,000+</p>
-            <p className="text-sm text-muted-foreground">Policies Written</p>
+            <p className="text-3xl font-bold text-foreground">A+</p>
+            <p className="text-sm text-muted-foreground">BBB Rating</p>
           </div>
 
           {/* Centre Rating */}

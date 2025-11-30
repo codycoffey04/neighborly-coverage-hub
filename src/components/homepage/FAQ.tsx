@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "What makes Coffey Agencies different?",
-    answer: "We answer the phone. We call you back. We explain things in plain English. After 16 years and 8,000+ policies, we've learned that good insurance is really just good service."
+    answer: "We answer the phone. We call you back. We explain things in plain English. After 16 years serving Alabama and Georgia families, we've learned that good insurance is really just good service."
   }
 ];
 
