@@ -8,19 +8,19 @@ export const Hero = () => {
     <section 
       role="banner"
       aria-label="Coffey Agencies homepage hero"
-      className="relative min-h-[85vh] flex items-center overflow-hidden"
+      className="relative min-h-[70vh] flex items-end pb-16 md:pb-20 overflow-hidden"
       style={{ 
         backgroundImage: `url(${heroBackground})`, 
         backgroundSize: 'cover', 
-        backgroundPosition: 'center' 
+        backgroundPosition: 'center 35%' 
       }}
     >
       {/* Subtle dark gradient for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       
-      {/* Content Centered */}
-      <div className="relative z-10 container-custom py-16">
-        <div className="max-w-4xl mx-auto space-y-6 animate-fade-in"
+      {/* Content Positioned at Bottom */}
+      <div className="relative z-10 container-custom pt-8 pb-0">
+        <div className="max-w-4xl mx-auto space-y-5 animate-fade-in"
              style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
           
           {/* Main Headline */}
