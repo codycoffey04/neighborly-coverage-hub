@@ -181,7 +181,7 @@ const FAQ = () => {
           <div className="container mx-auto max-w-5xl">
             <div className="text-center">
               {/* Breadcrumbs */}
-              <nav className="mb-6">
+              <nav aria-label="Breadcrumb" className="mb-6">
                 <ol className="flex justify-center gap-2 text-sm text-white/80">
                   <li><Link to="/" className="hover:text-white">Home</Link></li>
                   <li>/</li>

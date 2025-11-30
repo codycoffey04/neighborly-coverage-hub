@@ -8,7 +8,7 @@ export const TrustBar = () => {
           {/* Years in Business */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Clock className="h-6 w-6 text-accent" />
+              <Clock className="h-6 w-6 text-accent" aria-hidden="true" />
               <p className="text-3xl font-bold text-foreground">16+</p>
             </div>
             <p className="text-sm text-muted-foreground">Years Serving You</p>
@@ -17,7 +17,7 @@ export const TrustBar = () => {
           {/* BBB Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <ShieldCheck className="h-6 w-6 text-accent" />
+              <ShieldCheck className="h-6 w-6 text-accent" aria-hidden="true" />
               <p className="text-3xl font-bold text-foreground">A+</p>
             </div>
             <p className="text-sm text-muted-foreground">BBB Rating</p>
@@ -26,7 +26,7 @@ export const TrustBar = () => {
           {/* Centre Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" />
+              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" aria-hidden="true" />
               <p className="text-3xl font-bold text-foreground">4.7★</p>
             </div>
             <p className="text-sm text-muted-foreground">Centre, AL</p>
@@ -36,7 +36,7 @@ export const TrustBar = () => {
           {/* Rome Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" />
+              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" aria-hidden="true" />
               <p className="text-3xl font-bold text-foreground">4.6★</p>
             </div>
             <p className="text-sm text-muted-foreground">Rome, GA</p>
@@ -48,15 +48,15 @@ export const TrustBar = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-accent" />
+              <CheckCircle2 className="h-4 w-4 text-accent" aria-hidden="true" />
               <span className="font-semibold">Licensed in AL & GA</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-accent" />
+              <CheckCircle2 className="h-4 w-4 text-accent" aria-hidden="true" />
               <span className="font-semibold">Hablamos Español</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-accent" />
+              <CheckCircle2 className="h-4 w-4 text-accent" aria-hidden="true" />
               <span className="font-semibold">Family Owned</span>
             </div>
           </div>

@@ -142,6 +142,7 @@ export const Header = () => {
             className="lg:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
           >
           {mobileMenuOpen ? (
               <X className="h-6 w-6 text-primary" />
@@ -160,12 +161,14 @@ export const Header = () => {
                 <button
                   onClick={() => setServicesExpanded(!servicesExpanded)}
                   className="flex items-center justify-between w-full text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                  aria-expanded={servicesExpanded}
+                  aria-controls="mobile-services-menu"
                 >
                   Services
                   <ChevronDown className={`h-4 w-4 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
                 </button>
                 {servicesExpanded && (
-                  <div className="pl-4 space-y-2">
+                  <div id="mobile-services-menu" className="pl-4 space-y-2">
                     {serviceLinks.map((link) => (
                       <Link 
                         key={link.href}
@@ -214,12 +217,14 @@ export const Header = () => {
                 <button
                   onClick={() => setLearnExpanded(!learnExpanded)}
                   className="flex items-center justify-between w-full text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                  aria-expanded={learnExpanded}
+                  aria-controls="mobile-learn-menu"
                 >
                   Learn
                   <ChevronDown className={`h-4 w-4 transition-transform ${learnExpanded ? 'rotate-180' : ''}`} />
                 </button>
                 {learnExpanded && (
-                  <div className="pl-4 space-y-2">
+                  <div id="mobile-learn-menu" className="pl-4 space-y-2">
                     {learnLinks.map((link) => (
                       <Link 
                         key={link.href}
