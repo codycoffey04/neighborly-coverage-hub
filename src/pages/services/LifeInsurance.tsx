@@ -622,7 +622,7 @@ const georgiaCities = [
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
-                    "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+                    "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
                   </p>
                   <div className="mt-auto">
                     <p className="font-semibold text-foreground">Steve Smith</p>

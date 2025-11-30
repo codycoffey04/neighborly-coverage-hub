@@ -92,7 +92,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -555,7 +555,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -662,7 +662,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -748,7 +748,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -821,7 +821,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -907,7 +907,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -981,7 +981,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1054,7 +1054,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1310,7 +1310,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1384,7 +1384,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1465,7 +1465,7 @@ export const cityData: Record<string, CityData> = {
     ],
     testimonials: [
       { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
-      { name: "Steve Smith", text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
+      { name: "Steve Smith", text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
       { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
     ]
   },
@@ -1518,7 +1518,7 @@ export const cityData: Record<string, CityData> = {
     ],
     testimonials: [
       { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
-      { name: "Steve Smith", text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
+      { name: "Steve Smith", text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
       { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
     ]
   },
@@ -1599,7 +1599,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1673,7 +1673,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1759,7 +1759,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1844,7 +1844,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",
@@ -1929,7 +1929,7 @@ export const cityData: Record<string, CityData> = {
       },
       {
         name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Center office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
       },
       {
         name: "Ricky Salas",

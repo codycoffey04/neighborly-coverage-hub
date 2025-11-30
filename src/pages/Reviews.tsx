@@ -92,7 +92,7 @@ const reviews = [
     location: "Rome, GA"
   },
   {
-    text: "I've been with Allstate for years and always worked with Karen. When she left I wanted to find someone as caring and helpful as Karen had been. I started working with Kathy and she has been so helpful each time I call. She is courteous, caring, and always very pleasant.",
+    text: "I've been with the agency for years and always worked with Karen. When she left I wanted to find someone as caring and helpful as Karen had been. I started working with Kathy and she has been so helpful each time I call. She is courteous, caring, and always very pleasant.",
     name: "Sue H.",
     location: "Rome, GA"
   },
@@ -112,7 +112,7 @@ const reviews = [
     location: "Rome, GA"
   },
   {
-    text: "Crystal was very kind, patient, professional and very helpful; representing Allstate well as we changed vehicles receiving appropriate insurance coverage. Thank you so very much!",
+    text: "Crystal was very kind, patient, professional and very helpful as we changed vehicles receiving appropriate insurance coverage. Thank you so very much!",
     name: "Phillip A.",
     location: "Rome, GA"
   },
