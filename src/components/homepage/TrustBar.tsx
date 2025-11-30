@@ -26,7 +26,7 @@ export const TrustBar = () => {
           {/* Centre Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Star className="h-6 w-6 text-accent" />
+              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" />
               <p className="text-3xl font-bold text-foreground">4.7★</p>
             </div>
             <p className="text-sm text-muted-foreground">Centre, AL</p>
@@ -36,7 +36,7 @@ export const TrustBar = () => {
           {/* Rome Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Star className="h-6 w-6 text-accent" />
+              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" />
               <p className="text-3xl font-bold text-foreground">4.6★</p>
             </div>
             <p className="text-sm text-muted-foreground">Rome, GA</p>
