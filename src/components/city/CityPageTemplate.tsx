@@ -283,7 +283,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
               Serving {city.city}
             </span>
             <span className="flex items-center gap-2 text-white/90 text-sm">
-              <Star className="h-4 w-4 text-accent fill-accent" />
+              <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
               4.7★ rated service
             </span>
           </div>
@@ -501,7 +501,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                   </p>
                   <div className="flex items-center gap-1 mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-yellow-400" />
                     ))}
                   </div>
                   <p className="font-semibold text-sm">

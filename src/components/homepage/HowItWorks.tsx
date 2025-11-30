@@ -48,8 +48,8 @@ export const HowItWorks = () => {
                   {/* Icon Circle with Step Number Badge */}
                   <div className="relative shrink-0">
                     {/* Navy Circle with Icon */}
-                    <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary shadow-md">
-                      <Icon className="h-7 w-7 text-white" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary shadow-md">
+                      <Icon className="h-6 w-6 text-white" />
                     </div>
                     {/* Step Number Badge */}
                     <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center shadow-sm">

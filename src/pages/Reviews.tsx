@@ -248,7 +248,7 @@ const Reviews = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-6">
             {officeRatings.map((office, index) => (
-              <Card key={index} className="border border-gray-200 shadow-sm rounded-lg hover:shadow-md transition-all">
+              <Card key={index} className="border border-gray-200 shadow-sm rounded-xl hover:shadow-md transition-all">
                 <CardContent className="p-8 text-center">
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     {office.office}
@@ -298,7 +298,7 @@ const Reviews = () => {
               const initial = review.name.charAt(0).toUpperCase();
               
               return (
-                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md rounded-lg transition-all flex flex-col h-full">
+                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md rounded-xl transition-all flex flex-col h-full">
                   <CardContent className="p-6 flex flex-col h-full">
                     {/* 5 gold stars at top */}
                     <div className="flex gap-0.5 mb-4">
@@ -347,7 +347,7 @@ const Reviews = () => {
             {highlights.map((highlight, index) => {
               const Icon = highlight.icon;
               return (
-                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md rounded-lg transition-all text-center flex flex-col h-full">
+                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md rounded-xl transition-all text-center flex flex-col h-full">
                   <CardContent className="p-6 flex flex-col items-center h-full">
                     {/* Navy circle with white icon - matching service pages */}
                     <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
