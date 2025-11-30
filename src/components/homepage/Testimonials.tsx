@@ -50,7 +50,7 @@ export const Testimonials = () => {
 
         {/* Featured Hero Quote - Steve Smith */}
         <div className="max-w-4xl mx-auto mb-12">
-          <Card className="relative border-2 shadow-2xl bg-gradient-to-br from-primary/5 to-secondary/5">
+          <Card className="relative border-2 shadow-2xl rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 hover:scale-105 hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out">
             <CardContent className="pt-12 pb-12 px-8 md:px-12 text-center">
               {/* Large Quote Icon */}
               <Quote className="h-16 w-16 text-primary/20 mb-6 mx-auto" />
@@ -79,7 +79,7 @@ export const Testimonials = () => {
         {/* Supporting Testimonials Grid - 4 cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {testimonials.slice(1, 5).map((testimonial, index) => (
-            <Card key={index + 1} className="relative border hover:shadow-lg transition-all duration-300 h-full">
+            <Card key={index + 1} className="relative border rounded-xl hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out h-full">
               <CardContent className="pt-6 h-full flex flex-col">
                 {/* Quote Icon */}
                 <Quote className="h-6 w-6 text-primary/20 mb-3" />

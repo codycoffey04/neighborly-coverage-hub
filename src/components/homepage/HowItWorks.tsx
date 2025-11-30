@@ -42,7 +42,7 @@ export const HowItWorks = () => {
             const isLast = index === steps.length - 1;
             
             return (
-              <div key={index} className="relative">
+              <div key={index} className="relative bg-white rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out">
                 {/* Step Row */}
                 <div className="flex items-start gap-6">
                   {/* Icon Circle with Step Number Badge */}

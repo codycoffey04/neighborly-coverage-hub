@@ -25,12 +25,12 @@ export const Hero = () => {
           
           {/* Main Headline */}
           <h1 className="text-balance text-center">
-            <span className="block text-white font-semibold tracking-tight text-2xl md:text-3xl drop-shadow-lg">Alabama & Georgia's</span>
-            <span className="block text-white font-extrabold tracking-tight text-4xl md:text-6xl lg:text-7xl xl:text-8xl mt-2 drop-shadow-lg">Trusted Insurance Partner</span>
+            <span className="block text-white font-semibold tracking-tight text-[clamp(1.25rem,3vw,1.875rem)] drop-shadow-lg">Alabama & Georgia's</span>
+            <span className="block text-white font-extrabold tracking-tight text-[clamp(2rem,5vw,3.5rem)] mt-2 drop-shadow-lg">Trusted Insurance Partner</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
             From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
           </p>
 
@@ -38,7 +38,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center items-center">
             <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-10 py-7 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
               <Link to="/contact">
-                Get Your Free Quote
+                Get a Free Quote in 60 Seconds
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
