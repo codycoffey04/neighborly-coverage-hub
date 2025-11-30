@@ -338,8 +338,8 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
               return (
                 <Card key={index} className="card-hover border-2">
                   <CardHeader>
-                    <div className="p-3 rounded-lg bg-accent/10 w-fit mb-3">
-                      <Icon className="h-6 w-6 text-accent" />
+                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-3">
+                      <Icon className="h-6 w-6 text-white" />
                     </div>
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                   </CardHeader>

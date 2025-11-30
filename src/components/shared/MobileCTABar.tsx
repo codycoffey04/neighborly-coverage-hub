@@ -30,7 +30,7 @@ export const MobileCTABar = () => {
             <Link to="/contact" className="flex-1">
               <Button 
                 size="sm" 
-                className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
+                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold"
               >
                 Get Quote
               </Button>
