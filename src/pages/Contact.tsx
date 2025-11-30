@@ -432,13 +432,13 @@ const Contact = () => {
       </section>
 
       {/* Service Area Section */}
-      <section className="py-16 px-4 bg-primary text-white">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold mb-4">Serving All of Alabama & Georgia</h2>
-          <p className="text-lg text-white/90 mb-8 leading-relaxed">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Serving All of Alabama & Georgia</h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             From our offices in Centre and Rome, we provide insurance coverage to families throughout both states. No matter where you live in Alabama or Georgia, we can help — no office visit required.
           </p>
-          <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/80 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
             <a href="/service-areas">View All Service Areas</a>
           </Button>
         </div>
