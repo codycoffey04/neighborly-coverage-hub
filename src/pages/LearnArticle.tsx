@@ -369,7 +369,7 @@ const LearnArticle = () => {
             <h2 className="text-2xl font-bold text-foreground mb-8">Related Guides</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {relatedArticles.map((related) => (
-                <Card key={related.slug} className="border-border hover:border-primary/50 transition-colors group">
+                <Card key={related.slug} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out group">
                   <CardContent className="p-6">
                   <Badge className="mb-3">
                     {related.category}

@@ -315,7 +315,7 @@ const AutoInsurance = () => {
               {coverageTypes.map((coverage, index) => {
                 const Icon = coverage.icon;
                 return (
-                  <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
+                  <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200 flex flex-col h-full">
                     <CardHeader>
                       <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
                         <Icon className="h-6 w-6 text-white" />
