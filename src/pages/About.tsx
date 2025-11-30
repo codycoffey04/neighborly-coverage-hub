@@ -2,7 +2,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award, ChevronRight, Home } from "lucide-react";
+import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award, ChevronRight, Home, Users, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import aboutHero from "@/assets/about-hero.png";
@@ -23,6 +23,21 @@ const values = [
     icon: MessageCircle,
     title: "Approachability",
     description: "Insurance can be confusing. We make it simple. Call us, email us, stop by — we're real people ready to help.",
+  },
+  {
+    icon: Users,
+    title: "Community",
+    description: "We live and work in the same communities we serve. Your neighbors are our neighbors — and that matters to us.",
+  },
+  {
+    icon: Phone,
+    title: "Responsiveness",
+    description: "When you call, a real person answers. When you need help, we act fast. No phone trees, no week-long waits.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Advocacy",
+    description: "We're in your corner — especially at claim time when it matters most. We guide you through the process and follow up until it's resolved.",
   },
 ];
 
@@ -354,15 +369,15 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="border-border hover:border-primary/50 transition-colors">
-                <CardContent className="pt-6">
+              <Card key={index} className="border-border hover:border-primary/50 transition-colors h-full">
+                <CardContent className="pt-6 h-full flex flex-col">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <value.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{value.title}</h3>
-                  <p className="text-sm text-muted-foreground">{value.description}</p>
+                  <p className="text-sm text-muted-foreground flex-grow">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
