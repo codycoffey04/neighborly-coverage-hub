@@ -275,6 +275,23 @@ const RentersInsurance = () => {
           content="Renters insurance from $8/month when bundled with auto. Protect your belongings, liability, and temporary housing. 4.8★ rated service across Alabama and Georgia." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/renters-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies" />
+        <meta property="og:description" content="Renters insurance from $8/month when bundled with auto. Protect your belongings, liability, and temporary housing. 4.8★ rated service across Alabama and Georgia." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/renters-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Renters Insurance from $8/Month | Alabama & Georgia" />
+        <meta name="twitter:description" content="Protect your belongings, liability, and temporary housing with affordable renters insurance in AL and GA." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

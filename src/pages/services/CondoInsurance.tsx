@@ -325,6 +325,23 @@ const CondoInsurance = () => {
           content="Clear HO-6 condo insurance for Alabama and Georgia unit owners. Walls-in coverage, Loss Assessment, master policy coordination, and local claim support from Coffey Agencies." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/condo-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Condo Insurance (HO-6) in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Clear HO-6 condo insurance for Alabama and Georgia unit owners. Walls-in coverage, Loss Assessment, master policy coordination, and local claim support." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/condo-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Condo Insurance (HO-6) in Alabama & Georgia" />
+        <meta name="twitter:description" content="Clear HO-6 condo insurance for unit owners. Walls-in coverage, Loss Assessment, master policy coordination." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

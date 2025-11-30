@@ -194,6 +194,23 @@ const georgiaCities = [
         <title>Life Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="$500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage and 4.8★ rated service." />
         <link rel="canonical" href="https://coffeyagencies.com/services/life-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Life Insurance in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="$500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/life-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Life Insurance from $25/Month | Alabama & Georgia" />
+        <meta name="twitter:description" content="$500K term life insurance from $25/month. Protect your family's financial security with affordable coverage." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

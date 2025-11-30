@@ -210,11 +210,23 @@ const LearnArticle = () => {
       <Helmet>
         <title>{article.metaTitle}</title>
         <meta name="description" content={article.metaDescription} />
+        <link rel="canonical" href={`https://coffeyagencies.com/learn/${article.slug}`} />
+        
+        {/* OpenGraph Meta Tags */}
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://coffeyagencies.com/learn/${article.slug}`} />
-        <link rel="canonical" href={`https://coffeyagencies.com/learn/${article.slug}`} />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={article.title} />
+        <meta name="twitter:description" content={article.excerpt} />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Article Schema */}
         <script type="application/ld+json">

@@ -115,6 +115,23 @@ const About = () => {
         <title>About Coffey Agencies | Your Local Insurance Team Since 2009</title>
         <meta name="description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
         <link rel="canonical" href="https://coffeyagencies.com/about" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="About Coffey Agencies | Your Local Insurance Team Since 2009" />
+        <meta property="og:description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/about" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Coffey Agencies | Your Local Insurance Team Since 2009" />
+        <meta name="twitter:description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(aboutSchema)}
         </script>

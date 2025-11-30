@@ -254,6 +254,23 @@ const HomeInsurance = () => {
         <title>Home Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance with local expertise in Alabama and Georgia." />
         <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Home Insurance in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance with local expertise in Alabama and Georgia." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/home-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home Insurance in Alabama & Georgia" />
+        <meta name="twitter:description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance in AL and GA." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

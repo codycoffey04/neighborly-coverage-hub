@@ -22,6 +22,23 @@ const Privacy = () => {
         <title>Privacy Policy | Coffey Agencies Inc.</title>
         <meta name="description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
         <link rel="canonical" href="https://coffeyagencies.com/privacy" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Privacy Policy | Coffey Agencies Inc." />
+        <meta property="og:description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/privacy" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Privacy Policy | Coffey Agencies Inc." />
+        <meta name="twitter:description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(privacySchema)}
         </script>

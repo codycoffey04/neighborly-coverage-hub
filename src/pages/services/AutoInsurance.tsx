@@ -262,6 +262,23 @@ const AutoInsurance = () => {
         <title>Auto Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance coverage in Alabama and Georgia with local expertise." />
         <link rel="canonical" href="https://coffeyagencies.com/services/auto-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Auto Insurance in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance coverage in Alabama and Georgia with local expertise." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/auto-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Auto Insurance in Alabama & Georgia" />
+        <meta name="twitter:description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance in AL and GA." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

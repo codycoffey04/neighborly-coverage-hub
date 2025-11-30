@@ -241,6 +241,23 @@ const MotorcycleInsurance = () => {
         <title>Motorcycle Insurance in Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents who ride, and honest advice on limits." />
         <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Motorcycle Insurance in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents, and honest advice on limits." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/motorcycle-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Motorcycle Insurance in Alabama & Georgia" />
+        <meta name="twitter:description" content="Coverage for riders—cruisers, sport bikes, touring machines. Custom parts coverage up to $30,000." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
