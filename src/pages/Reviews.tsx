@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -25,65 +24,132 @@ const officeRatings = [
 ];
 
 const reviews = [
+  // Centre, AL Reviews (10)
   {
-    text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
-    name: "Google Review",
-    location: "Centre, AL",
-    filter: "centre"
+    text: "Crystal and Kimberly set up our home and auto plan at a very respectable price. If I could give 10 stars I would. I think this agency will be great to work with in the future.",
+    name: "Thomas K.",
+    location: "Centre, AL"
   },
   {
-    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
-    name: "Google Review",
-    location: "Rome, GA",
-    filter: "rome"
+    text: "Kimberly was so helpful and attentive. She answered all my questions and made the process stress-free.",
+    name: "Tyler M.",
+    location: "Centre, AL"
   },
   {
-    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
-    name: "Google Review",
-    location: "Centre, AL",
-    filter: "centre"
+    text: "I always talk with Crystal and she's so helpful and professional. She makes me feel like a valued policyholder. Highly recommend them.",
+    name: "Kim S.",
+    location: "Centre, AL"
   },
   {
-    text: "Very friendly and helpful staff. They took the time to explain my coverage options and helped me find the best rate. Highly recommend!",
-    name: "Google Review",
-    location: "Alabama",
-    filter: "centre"
+    text: "Lexi was patient and helpful when I stopped by to ask multiple questions. She's an asset to the office.",
+    name: "Teresa G.",
+    location: "Centre, AL"
   },
   {
-    text: "Switching to Coffey Agencies was the best decision. They saved me money and actually answer the phone when I call. You don't get that with the big companies.",
-    name: "Google Review",
-    location: "Georgia",
-    filter: "rome"
+    text: "Professional and quick to respond. I've been with other agencies but this one is top notch. Kimberly Fletcher is so friendly. Highly recommend the agency.",
+    name: "Lloyd N.",
+    location: "Centre, AL"
   },
   {
-    text: "Crystal is wonderful! She helped me update my policy and answered all my questions. Fast, friendly service every time.",
-    name: "Google Review",
-    location: "Centre, AL",
-    filter: "centre"
+    text: "Great experience. They cover my vehicles, RV, boat and home. Crystal makes sure I always leave satisfied.",
+    name: "John B.",
+    location: "Centre, AL"
   },
   {
-    text: "Maria was so helpful in explaining everything in Spanish for my parents. We really appreciate having an agent who speaks our language and understands our needs.",
-    name: "Google Review",
-    location: "Alabama",
-    filter: "centre"
+    text: "Crystal gives excellent customer service and tech support. She's very sweet. I definitely recommend this location.",
+    name: "Tammy B.",
+    location: "Centre, AL"
   },
   {
-    text: "Had a claim after a storm and they walked me through the entire process. Couldn't have been easier. This is why you work with a local agent.",
-    name: "Google Review",
-    location: "Georgia",
-    filter: "rome"
+    text: "Best agency. Great customer service. Kimberly helps with all my insurance needs. Love being covered for car, home and life.",
+    name: "Cassie N.",
+    location: "Centre, AL"
   },
   {
-    text: "I've been a customer for over 10 years. They've always treated me right — fair prices, great service, and real people who know my name.",
-    name: "Google Review",
-    location: "Alabama",
-    filter: "centre"
+    text: "Recently switched all my insurance to Allstate with Cody. Customer service is impressive and rates are lower. Transition was painless.",
+    name: "Kerry G.",
+    location: "Centre, AL"
   },
   {
-    text: "Got my quote in 15 minutes and saved over $400 by bundling my auto and home. Wish I had switched sooner!",
-    name: "Google Review",
-    location: "Georgia",
-    filter: "rome"
+    text: "Cody's associates are always ready to help with friendliness and efficiency. I always feel important. They are the best.",
+    name: "Gina W.",
+    location: "Centre, AL"
+  },
+  // Rome, GA Reviews (15)
+  {
+    text: "I've worked with the Coffey agency for many years and always had high-level experiences with every agent. Crystal was patient, knowledgeable, honest and thorough in answering questions about policy coverages and hypotheticals. They treat people with exceptional knowledge, communication and kindness.",
+    name: "Sarah R.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Been with the Coffey Agency almost 10 years; they respond quickly and help get the best price for coverage. I usually work with Kathy; she is thorough, professional and friendly.",
+    name: "Tracey D.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Crystal was very patient and polite with me as a new policy holder. I have had insurance for many years and I have learned more from Crystal in 2 months than over this long life time. She explains in details how insurance works. Again thank you Crystal.",
+    name: "Priscilla J.",
+    location: "Rome, GA"
+  },
+  {
+    text: "I've been with Allstate for years and always worked with Karen. When she left I wanted to find someone as caring and helpful as Karen had been. I started working with Kathy and she has been so helpful each time I call. She is courteous, caring, and always very pleasant.",
+    name: "Sue H.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Staff is always helpful and goes above and beyond to be sure I'm taken care of on top of offering the best rates on home and auto insurance.",
+    name: "Chad L.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Crystal was extremely professional, courteous, and pleasant. We've been with Cody's team for many years as they continue to serve our insurance needs with excellent customer service and comprehensive coverage. Many thanks!",
+    name: "Patrick R.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Special thank you to your representative Crystal Brozio. She is simply extraordinary, no effort in her professionalism and knowledge of the services offered and available.",
+    name: "Monica W.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Crystal was very kind, patient, professional and very helpful; representing Allstate well as we changed vehicles receiving appropriate insurance coverage. Thank you so very much!",
+    name: "Phillip A.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Kathy at Cody Coffey helped to resolve a blunder involving my insurance renewal being submitted to the state DMV. In 2 days, it was corrected. Thanks Kathy.",
+    name: "Clyde B.",
+    location: "Rome, GA"
+  },
+  {
+    text: "The office staff were very friendly and helpful. They made sure I received my policies for both home and auto. They also called to follow up to see if we had any questions. I would definitely recommend this office to anyone looking to renew or upgrade their policy. Also the discounts were great!",
+    name: "Barbara R.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Excellent customer service. Even though Cody is not local to me, he and his agency are very hands on. They keep in touch by all the means available — email, website, monthly magazine, even the old fashioned phone call.",
+    name: "Benita D.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Wonderful insurance agent and staff. Always helpful when changing vehicles and/or coverage. Cody and all of his staff are knowledgeable, professional and understanding. Been with them for years and very happy with my agent!",
+    name: "Annette C.",
+    location: "Rome, GA"
+  },
+  {
+    text: "I have been an Allstate customer since 1989. Every issue, question or claim has always been cared for quickly, friendly and professionally. Give Cody Coffey a call — you'll be glad you did.",
+    name: "Karen P.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Cody and the gang helped me understand insurance on a recent home purchase I made. They also got me a better deal.",
+    name: "John G.",
+    location: "Rome, GA"
+  },
+  {
+    text: "Always professional, informative, punctual, and respectful. Good company.",
+    name: "Kathy H.",
+    location: "Rome, GA"
   },
 ];
 
@@ -111,12 +177,6 @@ const highlights = [
 ];
 
 const Reviews = () => {
-  const [activeFilter, setActiveFilter] = useState<"all" | "centre" | "rome">("all");
-  
-  const filteredReviews = activeFilter === "all" 
-    ? reviews 
-    : reviews.filter(review => review.filter === activeFilter);
-  
   const reviewsSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -233,48 +293,14 @@ const Reviews = () => {
         </div>
       </section>
 
-      {/* Reviews Section with Filter Tabs */}
+      {/* Reviews Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2 mb-10">
-            <button
-              onClick={() => setActiveFilter("all")}
-              className={`px-6 py-2 rounded-full font-medium transition-all ${
-                activeFilter === "all"
-                  ? "bg-primary text-white shadow-md"
-                  : "bg-white text-primary border border-primary hover:bg-gray-50"
-              }`}
-            >
-              All Reviews
-            </button>
-            <button
-              onClick={() => setActiveFilter("centre")}
-              className={`px-6 py-2 rounded-full font-medium transition-all ${
-                activeFilter === "centre"
-                  ? "bg-primary text-white shadow-md"
-                  : "bg-white text-primary border border-primary hover:bg-gray-50"
-              }`}
-            >
-              Centre, AL
-            </button>
-            <button
-              onClick={() => setActiveFilter("rome")}
-              className={`px-6 py-2 rounded-full font-medium transition-all ${
-                activeFilter === "rome"
-                  ? "bg-primary text-white shadow-md"
-                  : "bg-white text-primary border border-primary hover:bg-gray-50"
-              }`}
-            >
-              Rome, GA
-            </button>
-          </div>
-          
           {/* Reviews Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredReviews.map((review, index) => {
+            {reviews.map((review, index) => {
               // Get initial for avatar
-              const initial = review.name === "Google Review" ? "G" : review.name.charAt(0).toUpperCase();
+              const initial = review.name.charAt(0).toUpperCase();
               
               return (
                 <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md rounded-lg transition-all flex flex-col h-full">
@@ -312,13 +338,6 @@ const Reviews = () => {
               );
             })}
           </div>
-          
-          {/* Show message if no reviews match filter */}
-          {filteredReviews.length === 0 && (
-            <p className="text-center text-muted-foreground py-8">
-              No reviews found for this location.
-            </p>
-          )}
         </div>
       </section>
 
