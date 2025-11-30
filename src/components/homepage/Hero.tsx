@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Star, MessageCircle, Heart, ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
@@ -55,40 +55,6 @@ export const Hero = () => {
                   Rome: (706) 784-6511
                 </a>
               </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Trust Stats Bar at Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 bg-primary/90 backdrop-blur-sm border-t border-white/10">
-        <div className="container-custom">
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-4 text-white text-sm">
-            <div className="flex items-center gap-2">
-              <Shield className="h-4 w-4" />
-              <span className="font-semibold">Licensed in AL & GA</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-white/20"></div>
-            <div className="flex items-center gap-2">
-              <MessageCircle className="h-4 w-4" />
-              <span className="font-semibold">Hablamos Español</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-white/20"></div>
-            <div className="flex items-center gap-2">
-              <Heart className="h-4 w-4" />
-              <span className="font-semibold">Family Owned</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-white/20"></div>
-            <div className="flex items-center gap-2">
-              <Star className="h-4 w-4 fill-current" />
-              <span className="font-semibold">4.7★ Centre</span>
-              <span className="text-white/70 text-xs">(116 reviews)</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-white/20"></div>
-            <div className="flex items-center gap-2">
-              <Star className="h-4 w-4 fill-current" />
-              <span className="font-semibold">4.6★ Rome</span>
-              <span className="text-white/70 text-xs">(90 reviews)</span>
             </div>
           </div>
         </div>

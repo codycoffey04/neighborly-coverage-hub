@@ -44,11 +44,21 @@ export const TrustBar = () => {
           </div>
         </div>
 
-        {/* Licensed States */}
+        {/* Trust Badges */}
         <div className="mt-8 pt-8 border-t border-border">
-          <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-muted-foreground">
-            <CheckCircle2 className="h-4 w-4 text-secondary" />
-            <span className="font-semibold">Licensed & Authorized in Alabama and Georgia</span>
+          <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-secondary" />
+              <span className="font-semibold">Licensed in AL & GA</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-secondary" />
+              <span className="font-semibold">Hablamos Español</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-secondary" />
+              <span className="font-semibold">Family Owned</span>
+            </div>
           </div>
         </div>
       </div>
