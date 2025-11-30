@@ -287,7 +287,7 @@ const Contact = () => {
 
           {/* Quick Contact Options */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <Card className="shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+            <Card className="shadow-md hover:shadow-lg hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
               <CardContent className="p-6 pt-4 text-center">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-6 h-6 text-primary" />
@@ -310,7 +310,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+            <Card className="shadow-md hover:shadow-lg hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
               <CardContent className="p-6 pt-4 text-center">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-6 h-6 text-primary" />
@@ -323,7 +323,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+            <Card className="shadow-md hover:shadow-lg hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
               <CardContent className="p-6 pt-4 text-center">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-6 h-6 text-primary" />

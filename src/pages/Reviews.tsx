@@ -66,7 +66,7 @@ const reviews = [
     location: "Centre, AL"
   },
   {
-    text: "Recently switched all my insurance to Allstate with Cody. Customer service is impressive and rates are lower. Transition was painless.",
+    text: "Recently switched all my insurance with Cody. Customer service is impressive and rates are lower. Transition was painless.",
     name: "Kerry G.",
     location: "Centre, AL"
   },
@@ -137,7 +137,7 @@ const reviews = [
     location: "Rome, GA"
   },
   {
-    text: "I have been an Allstate customer since 1989. Every issue, question or claim has always been cared for quickly, friendly and professionally. Give Cody Coffey a call — you'll be glad you did.",
+    text: "I've been a customer since 1989. Every issue, question or claim has always been cared for quickly, friendly and professionally. Give Cody Coffey a call — you'll be glad you did.",
     name: "Karen P.",
     location: "Rome, GA"
   },
