@@ -102,7 +102,7 @@ const NotFound = () => {
 
       <Header />
 
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Hero Section - Navy Gradient Background */}
         <section className="relative bg-gradient-to-br from-primary via-primary to-secondary py-20 md:py-32">
           <div className="container mx-auto px-4 text-center">

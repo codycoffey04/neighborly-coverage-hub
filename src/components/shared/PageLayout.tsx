@@ -50,7 +50,7 @@ export const PageLayout = ({ children, title, description, breadcrumbs }: PageLa
         <div className="container mx-auto max-w-6xl">
           {/* Breadcrumbs */}
           {breadcrumbs && breadcrumbs.length > 0 && (
-            <nav className="flex items-center gap-2 text-sm text-primary-foreground/80 mb-4">
+            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-primary-foreground/80 mb-4">
               <Link to="/" className="hover:text-primary-foreground transition-colors">
                 Home
               </Link>
