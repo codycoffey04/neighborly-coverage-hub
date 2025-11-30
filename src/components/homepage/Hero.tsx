@@ -8,7 +8,7 @@ export const Hero = () => {
     <section 
       role="banner"
       aria-label="Coffey Agencies homepage hero"
-      className="relative min-h-[70vh] flex items-end pb-16 md:pb-20 overflow-hidden"
+      className="relative min-h-[55vh] md:min-h-[70vh] flex items-end pb-16 md:pb-20 overflow-hidden"
       style={{ 
         backgroundImage: `url(${heroBackground})`, 
         backgroundSize: 'cover', 
