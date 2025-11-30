@@ -190,7 +190,7 @@ const Claims = () => {
                 return (
                   <Card 
                     key={index}
-                    className="border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+                    className="border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all rounded-xl"
                   >
                     <CardContent className="p-6 flex flex-col items-center text-center h-full">
                       <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
@@ -226,7 +226,7 @@ const Claims = () => {
             </div>
 
             {/* After-Hours Note */}
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
               <div className="flex gap-4">
                 <Clock className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
@@ -253,7 +253,7 @@ const Claims = () => {
               {immediateSteps.map((step) => (
                 <Card 
                   key={step.step}
-                  className="border-gray-200 shadow-sm hover:shadow-md transition-all"
+                  className="border-gray-200 shadow-sm hover:shadow-md transition-all rounded-xl"
                 >
                   <CardContent className="p-6 flex gap-6 items-start">
                     <div className="w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center flex-shrink-0 shadow-md">

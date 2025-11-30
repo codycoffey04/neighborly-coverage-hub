@@ -311,7 +311,7 @@ const RentersInsurance = () => {
                   <span className="drop-shadow-md">$15-30/month typical</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Star className="h-5 w-5 text-accent fill-accent drop-shadow-md" />
+                  <Star className="h-5 w-5 text-yellow-400 fill-yellow-400 drop-shadow-md" />
                   <span className="drop-shadow-md">4.8★ rated service</span>
                 </div>
               </div>
@@ -358,8 +358,8 @@ const RentersInsurance = () => {
                   <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                     <CardContent className="pt-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
-                          <Icon className="h-7 w-7 text-white" />
+                        <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                          <Icon className="h-6 w-6 text-white" />
                         </div>
                         <div className="flex-1">
                           <h3 className="text-xl font-semibold mb-2">{coverage.title}</h3>
@@ -564,7 +564,7 @@ const RentersInsurance = () => {
                   <CardContent className="pt-6 flex flex-col h-full">
                     <div className="flex gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
                       ))}
                     </div>
                     <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
@@ -604,8 +604,8 @@ const RentersInsurance = () => {
               return (
                 <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
                   <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
-                    <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center">
-                      <Icon className="h-7 w-7 text-white" />
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
+                      <Icon className="h-6 w-6 text-white" />
                     </div>
                     <div className="flex-grow">
                       <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -627,8 +627,8 @@ const RentersInsurance = () => {
               return (
                 <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
                   <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
-                    <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center">
-                      <Icon className="h-7 w-7 text-white" />
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
+                      <Icon className="h-6 w-6 text-white" />
                     </div>
                     <div className="flex-grow">
                       <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

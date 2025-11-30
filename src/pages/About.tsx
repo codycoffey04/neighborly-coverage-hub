@@ -179,7 +179,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-8 border border-border">
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-8 border border-border">
               <div className="space-y-6">
                 <div>
                   <div className="text-4xl font-bold text-primary mb-2">16+</div>
@@ -232,7 +232,7 @@ const About = () => {
               </div>
               
               {/* Credentials Box - now below text instead of sidebar */}
-              <div className="mt-8 bg-background rounded-lg p-6 border border-border">
+              <div className="mt-8 bg-background rounded-xl p-6 border border-border">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Credentials</h3>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">

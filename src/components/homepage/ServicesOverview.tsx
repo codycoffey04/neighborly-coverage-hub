@@ -86,7 +86,7 @@ export const ServicesOverview = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="bg-gray-50 rounded-lg py-12 px-6 text-center">
+        <div className="bg-gray-50 rounded-xl py-12 px-6 text-center">
           <p className="text-lg text-muted-foreground mb-6">Not sure which coverage you need?</p>
           <Button 
             size="lg" 
