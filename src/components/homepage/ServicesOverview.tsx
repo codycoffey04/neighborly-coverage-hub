@@ -59,7 +59,7 @@ export const ServicesOverview = () => {
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
-            <Card key={index} className="bg-white border border-gray-200 shadow-md rounded-xl hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out group overflow-hidden flex flex-col h-full">
+            <Card key={index} className="bg-white border border-[#1e3a5f]/20 shadow-md rounded-xl hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] transition-all duration-300 ease-in-out group overflow-hidden flex flex-col h-full">
               {/* Compact gray header with icon + title inline */}
               <div className="bg-gray-200 px-6 py-4 flex items-center gap-3">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary transition-colors">

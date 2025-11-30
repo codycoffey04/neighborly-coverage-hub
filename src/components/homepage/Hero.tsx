@@ -26,7 +26,7 @@ export const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-balance text-center">
             <span className="block text-white font-semibold tracking-tight text-[clamp(1.25rem,3vw,1.875rem)] drop-shadow-lg">Alabama & Georgia's</span>
-            <span className="block text-white font-extrabold tracking-tight text-[clamp(2rem,5vw,3.5rem)] mt-2 drop-shadow-lg">Trusted Insurance Partner</span>
+            <span className="block text-white font-[800] tracking-tight text-[clamp(2.2rem,5vw,3.5rem)] mt-2 drop-shadow-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.25)' }}>Trusted Insurance Partner</span>
           </h1>
 
           {/* Subheadline */}
@@ -36,7 +36,7 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center items-center">
-            <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-10 py-7 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+            <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-12 py-8 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:shadow-[0_0_12px_rgba(34,197,94,0.55)] ring-1 ring-white/30 hover:-translate-y-1 transition-all duration-300 group">
               <Link to="/contact">
                 Get a Free Quote in 60 Seconds
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

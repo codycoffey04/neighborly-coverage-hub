@@ -90,8 +90,10 @@ export const FAQ = () => {
                 <AccordionTrigger className="text-left hover:no-underline py-5">
                   <span className="font-semibold text-lg pr-4">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                  {faq.answer}
+                <AccordionContent className="pb-5">
+                  <div className="text-[0.925rem] text-muted-foreground leading-relaxed border-l-2 border-[#22c55e] pl-4">
+                    {faq.answer}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}
