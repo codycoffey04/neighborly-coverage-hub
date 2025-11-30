@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
   Car, Home as HomeIcon, Key, Building2, Heart, 
   Zap, MapPin, Star, Phone, Shield, Users, Clock,
-  CheckCircle, Building, Quote
+  CheckCircle, Building, Quote, ArrowRight
 } from "lucide-react";
 import {
   Accordion,
@@ -224,313 +225,322 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </script>
       </Helmet>
 
-      <PageLayout
-        title={city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state}`}
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Service Areas", href: "/service-areas" },
-          { label: `${city.city}, ${city.stateAbbr}`, href: "" }
-        ]}
+      <Header />
+
+      {/* Custom Hero with Background Image */}
+      <section 
+        className="relative min-h-[400px] flex items-end pb-16 pt-32"
+        role="banner"
+        aria-label={`Insurance services for ${city.city}, ${city.state}`}
       >
-        {/* Section 1: Hero */}
-        <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
-          <div className="container mx-auto max-w-5xl">
-            <div className="text-center space-y-6">
-              {city.customHeroSubhead ? (
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  {city.customHeroSubhead}
-                </p>
-              ) : (
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Local expertise for {city.city} families — auto, home, renters, condo, and life insurance
-                </p>
-              )}
-              
-              {/* Trust Indicators */}
-              <div className="flex flex-wrap justify-center gap-6">
-                <div className="flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-accent" />
-                  <span className="text-sm font-medium">Quotes in minutes</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-accent" />
-                  <span className="text-sm font-medium">Serving {city.city}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Star className="h-5 w-5 text-accent fill-accent" />
-                  <span className="text-sm font-medium">4.7★ rated service</span>
-                </div>
-              </div>
-
-              {/* ZIP Codes */}
-              {city.zipCodes.length > 0 && (
-                <p className="text-sm text-muted-foreground">
-                  Serving ZIP {city.zipCodes.length > 1 ? 'codes' : 'code'}: <span className="font-semibold text-foreground">{city.zipCodes.join(', ')}</span>
-                </p>
-              )}
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button size="lg" className="shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <Link to="/contact">Get Your Free Quote</Link>
-                </Button>
-                <div className="flex flex-col sm:flex-row gap-2 items-center">
-                  {city.localPhone ? (
-                    <div className="flex items-center gap-2 text-sm">
-                      <Phone className="h-4 w-4 text-primary" />
-                      <span className="font-semibold">Local:</span>
-                      <a href={`tel:+1${city.localPhone.replace(/[^0-9]/g, '')}`} className="text-primary hover:underline" aria-label={`Call local number ${city.localPhone}`}>{city.localPhone}</a>
-                    </div>
-                  ) : (
-                    <>
-                      <div className="flex items-center gap-2 text-sm">
-                        <Phone className="h-4 w-4 text-primary" />
-                        <span className="font-semibold">Alabama:</span>
-                        <a href="tel:+12569276287" className="text-primary hover:underline" aria-label="Call Alabama office at (256) 927-6287">(256) 927-6287</a>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm">
-                        <Phone className="h-4 w-4 text-primary" />
-                        <span className="font-semibold">Georgia:</span>
-                        <a href="tel:+17067846511" className="text-primary hover:underline" aria-label="Call Georgia office at (706) 784-6511">(706) 784-6511</a>
-                      </div>
-                    </>
-                  )}
-                </div>
-              </div>
-            </div>
+        {/* Background Image */}
+        {city.heroImage && (
+          <img
+            src={new URL(`../../assets/${city.heroImage}`, import.meta.url).href}
+            alt={`${city.state} landscape`}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        )}
+        
+        {/* Dark Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        
+        {/* Hero Content */}
+        <div className="container mx-auto max-w-5xl px-4 relative z-10">
+          {/* Breadcrumbs */}
+          <nav className="mb-6" aria-label="Breadcrumb">
+            <ol className="flex items-center gap-2 text-sm text-white/80">
+              <li><Link to="/" className="hover:text-white">Home</Link></li>
+              <li>/</li>
+              <li><Link to="/service-areas" className="hover:text-white">Service Areas</Link></li>
+              <li>/</li>
+              <li className="text-white font-medium">{city.city}, {city.stateAbbr}</li>
+            </ol>
+          </nav>
+          
+          {/* Title & Subhead */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+            {city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state}`}
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mb-6 drop-shadow">
+            {city.customHeroSubhead || `Local expertise for ${city.city} families — auto, home, renters, condo, and life insurance`}
+          </p>
+          
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap gap-4 mb-6">
+            <span className="flex items-center gap-2 text-white/90 text-sm">
+              <Zap className="h-4 w-4 text-accent" />
+              Quotes in minutes
+            </span>
+            <span className="flex items-center gap-2 text-white/90 text-sm">
+              <MapPin className="h-4 w-4 text-accent" />
+              Serving {city.city}
+            </span>
+            <span className="flex items-center gap-2 text-white/90 text-sm">
+              <Star className="h-4 w-4 text-accent fill-accent" />
+              4.7★ rated service
+            </span>
           </div>
-        </section>
-
-        {/* Section 2: City Introduction */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Insurance Services in {city.city}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Complete protection for {city.city} families and businesses
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, index) => {
-                const Icon = service.icon;
-                return (
-                  <Card key={index} className="card-hover border-2">
-                    <CardHeader>
-                      <div className="p-3 rounded-lg bg-accent/10 w-fit mb-3">
-                        <Icon className="h-6 w-6 text-accent" />
-                      </div>
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                        {service.description}
-                      </p>
-                      <Button variant="outline" size="sm" asChild>
-                        <Link to={service.link}>Learn More →</Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
+          
+          {/* ZIP Codes */}
+          <p className="text-sm text-white/80 mb-6">
+            Serving ZIP {city.zipCodes.length > 1 ? 'codes' : 'code'}: <span className="font-semibold text-white">{city.zipCodes.join(', ')}</span>
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg" asChild>
+              <Link to="/contact">
+                Get Your Free Quote
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </Button>
+            <a 
+              href="tel:+12569276287" 
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-white/95 text-primary font-medium rounded-md shadow-sm hover:shadow-md transition-all"
+              aria-label="Call Centre, Alabama office at (256) 927-6287"
+            >
+              <Phone className="w-4 h-4" />
+              (256) 927-6287
+            </a>
+            <a 
+              href="tel:+17067846511" 
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-white/95 text-primary font-medium rounded-md shadow-sm hover:shadow-md transition-all"
+              aria-label="Call Rome, Georgia office at (706) 784-6511"
+            >
+              <Phone className="w-4 h-4" />
+              (706) 784-6511
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Section 4: Why Choose Coffey Agencies */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Why Choose Coffey Agencies in {city.city}
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {whyChoosePillars.map((pillar, index) => {
-                const Icon = pillar.icon;
-                return (
-                  <div key={index} className="text-center space-y-4">
-                    <div className="p-4 rounded-full bg-primary/10 w-fit mx-auto">
-                      <Icon className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold">{pillar.title}</h3>
-                    <p className="text-muted-foreground">
-                      We understand {city.city}'s {pillar.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Section 5: Local Considerations */}
-        <section className="py-16 px-4 bg-muted/30">
-          <div className="container mx-auto max-w-4xl">
-            <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <Shield className="h-7 w-7 text-primary" />
-                  <CardTitle className="text-2xl">{city.city} Insurance Considerations</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
-                  {city.localConsiderations}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Section 6: Neighborhoods We Serve */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Neighborhoods We Serve in {city.city}
-              </h2>
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {city.neighborhoods.map((neighborhood, index) => (
-                <span 
-                  key={index}
-                  className="px-4 py-2 bg-card border rounded-lg text-sm font-medium hover:border-primary hover:text-primary transition-colors"
-                >
-                  {neighborhood}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Section 7: FAQ */}
-        <section className="py-16 px-4 bg-muted/30">
-          <div className="container mx-auto max-w-4xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                {city.city} Insurance Questions Answered
-              </h2>
-            </div>
-            <Accordion type="single" collapsible className="space-y-4">
-              {city.faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
-                <AccordionTrigger className="text-left hover:no-underline py-5">
-                  <span className="font-semibold text-lg pr-4">{faq.question}</span>
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </section>
-
-        {/* Section 8: Nearby Cities */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Nearby Cities We Serve
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {city.nearbyCities.map((citySlug, index) => (
-                <Link key={index} to={`/${citySlug}`}>
-                  <Card className="card-hover border-2 h-full">
-                    <CardContent className="pt-6 text-center">
-                      <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
-                      <h3 className="font-semibold text-lg mb-2">
-                        {citySlug.split('-')[0].charAt(0).toUpperCase() + citySlug.split('-')[0].slice(1).replace('-', ' ')}, {citySlug.split('-')[1].toUpperCase()}
-                      </h3>
-                      <p className="text-sm text-primary hover:underline">
-                        View Insurance Options →
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-            <p className="text-center text-muted-foreground mt-8">
-              Don't see your city? <Link to="/service-areas" className="text-primary font-semibold hover:underline">View all service areas</Link> or <Link to="/contact" className="text-primary font-semibold hover:underline">contact us</Link> — we serve all of {city.state}.
+      {/* Section 2: City Introduction with Services - WHITE */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Insurance Services in {city.city}
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Complete protection for {city.city} families and businesses
             </p>
           </div>
-        </section>
-
-        {/* Section 9: Testimonials */}
-        <section className="py-16 px-4 bg-muted/30">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="card-hover">
-                  <CardContent className="pt-6">
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-                      ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <Card key={index} className="card-hover border-2">
+                  <CardHeader>
+                    <div className="p-3 rounded-lg bg-accent/10 w-fit mb-3">
+                      <Icon className="h-6 w-6 text-accent" />
                     </div>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      "{testimonial.text}"
+                    <CardTitle className="text-xl">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                      {service.description}
                     </p>
-                    <p className="font-semibold text-foreground">— {testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">(Google Review)</p>
+                    <Button variant="outline" size="sm" asChild>
+                      <Link to={service.link}>Learn More →</Link>
+                    </Button>
                   </CardContent>
                 </Card>
-              ))}
-            </div>
-            <div className="text-center mt-8">
-              <Button variant="outline" asChild>
-                <Link to="/reviews">Read All 200+ Google Reviews →</Link>
-              </Button>
-            </div>
+              );
+            })}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Section 10: Final CTA */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-4xl text-center">
+      {/* Section 3: Why Choose Coffey Agencies - GRAY */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to protect what matters in {city.city}?
+              Why Choose Coffey Agencies in {city.city}
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Get a quote that fits your {city.city} family's needs and budget
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
-              <Card className="border-2 hover:border-primary transition-colors">
-                <CardContent className="pt-6 text-center">
-                  <Phone className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Alabama Office</h3>
-                  <a href="tel:+12569276287" className="text-2xl font-bold text-primary hover:underline" aria-label="Call Alabama office at (256) 927-6287">
-                    (256) 927-6287
-                  </a>
-                  <p className="text-sm text-muted-foreground mt-2">Centre, AL</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="border-2 hover:border-primary transition-colors">
-                <CardContent className="pt-6 text-center">
-                  <Phone className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Georgia Office</h3>
-                  <a href="tel:+17067846511" className="text-2xl font-bold text-primary hover:underline" aria-label="Call Georgia office at (706) 784-6511">
-                    (706) 784-6511
-                  </a>
-                  <p className="text-sm text-muted-foreground mt-2">Rome, GA</p>
-                </CardContent>
-              </Card>
-            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {whyChoosePillars.map((pillar, index) => {
+              const Icon = pillar.icon;
+              return (
+                <div key={index} className="text-center space-y-4">
+                  <div className="p-4 rounded-full bg-primary/10 w-fit mx-auto">
+                    <Icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold">{pillar.title}</h3>
+                  <p className="text-muted-foreground">
+                    We understand {city.city}'s {pillar.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-            <Button size="lg" className="text-lg px-8 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-              <Link to="/contact">Get Your Free Quote</Link>
+      {/* Section 4: Local Considerations - WHITE */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <Shield className="h-7 w-7 text-primary" />
+                <CardTitle className="text-2xl">{city.city} Insurance Considerations</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground leading-relaxed">
+                {city.localConsiderations}
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Section 5: Neighborhoods We Serve - GRAY */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Neighborhoods We Serve in {city.city}
+            </h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {city.neighborhoods.map((neighborhood, index) => (
+              <span 
+                key={index}
+                className="px-4 py-2 bg-card border rounded-lg text-sm font-medium hover:border-primary hover:text-primary transition-colors"
+              >
+                {neighborhood}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: FAQ - WHITE */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {city.city} Insurance Questions Answered
+            </h2>
+          </div>
+          <Accordion type="single" collapsible className="space-y-4">
+            {city.faqs.map((faq, index) => (
+            <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+              <AccordionTrigger className="text-left hover:no-underline py-5">
+                <span className="font-semibold text-lg pr-4">{faq.question}</span>
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Section 7: Nearby Cities - GRAY */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Nearby Cities We Serve
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {city.nearbyCities.map((citySlug, index) => (
+              <Link key={index} to={`/${citySlug}`}>
+                <Card className="card-hover border-2 h-full">
+                  <CardContent className="pt-6 text-center">
+                    <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
+                    <h3 className="font-semibold text-lg mb-2">
+                      {citySlug.split('-')[0].charAt(0).toUpperCase() + citySlug.split('-')[0].slice(1).replace('-', ' ')}, {citySlug.split('-')[1].toUpperCase()}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      View insurance services
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 8: Testimonials - WHITE */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              What {city.city} Customers Say
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-2">
+                <CardContent className="pt-6">
+                  <Quote className="h-8 w-8 text-primary mb-4" />
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    {testimonial.text}
+                  </p>
+                  <div className="flex items-center gap-1 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                    ))}
+                  </div>
+                  <p className="font-semibold text-sm">
+                    {testimonial.name}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Button variant="outline" asChild>
+              <Link to="/reviews">Read All Reviews</Link>
             </Button>
           </div>
-        </section>
-      </PageLayout>
+        </div>
+      </section>
+
+      {/* Section 9: Final CTA - NAVY */}
+      <section className="py-16 px-4 bg-[#1e3a5f]">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Ready to protect what matters in {city.city}?
+          </h2>
+          <p className="text-lg text-white/90 mb-8">
+            Get a quote that fits your {city.city} family's needs and budget
+          </p>
+          
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg" asChild>
+            <Link to="/contact">
+              Get Your Free Quote
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </Button>
+          
+          {/* Phone Numbers */}
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
+            <span>Or call us:</span>
+            <a href="tel:+12569276287" className="text-white hover:text-accent transition-colors" aria-label="Call Centre, Alabama office">(256) 927-6287</a>
+            <span className="hidden sm:inline">|</span>
+            <a href="tel:+17067846511" className="text-white hover:text-accent transition-colors" aria-label="Call Rome, Georgia office">(706) 784-6511</a>
+          </div>
+          
+          {/* Trust Badges */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-white/80">
+            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" />Licensed in AL & GA</span>
+            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" />Hablamos Español</span>
+            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" />Family Owned</span>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 };
