@@ -26,8 +26,8 @@ export const TrustBar = () => {
           {/* Centre Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-              <p className="text-3xl font-bold text-foreground">4.7★</p>
+              <Star className="h-6 w-6 text-accent fill-accent" aria-hidden="true" />
+              <p className="text-3xl font-bold text-foreground">4.7<span className="text-accent">★</span></p>
             </div>
             <p className="text-sm text-muted-foreground">Centre, AL</p>
             <p className="text-xs text-muted-foreground">(116 reviews)</p>
@@ -36,8 +36,8 @@ export const TrustBar = () => {
           {/* Rome Rating */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
-              <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-              <p className="text-3xl font-bold text-foreground">4.6★</p>
+              <Star className="h-6 w-6 text-accent fill-accent" aria-hidden="true" />
+              <p className="text-3xl font-bold text-foreground">4.6<span className="text-accent">★</span></p>
             </div>
             <p className="text-sm text-muted-foreground">Rome, GA</p>
             <p className="text-xs text-muted-foreground">(90 reviews)</p>
