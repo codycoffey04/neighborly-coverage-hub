@@ -245,6 +245,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             src={new URL(`../../assets/${city.heroImage}`, import.meta.url).href}
             alt={city.state === "Alabama" ? "Rolling hills and pine forests of rural Alabama countryside" : "Georgia Appalachian foothills with mountain landscapes"}
             className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
           />
         )}
         

@@ -126,9 +126,14 @@ const About = () => {
       <section 
         role="banner"
         aria-label="Coffey Agencies Centre, Alabama office exterior"
-        className="relative min-h-[500px] flex items-end bg-cover bg-center"
-        style={{ backgroundImage: `url(${aboutHero})` }}
+        className="relative min-h-[500px] flex items-end overflow-hidden"
       >
+        <img 
+          src={aboutHero} 
+          alt="" 
+          fetchPriority="high"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/50" />
         
@@ -213,6 +218,9 @@ const About = () => {
                 src={codyHeadshot}
                 alt="Cody Coffey, CEO of Coffey Agencies Inc."
                 className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-white"
+                loading="lazy"
+                width="192"
+                height="192"
               />
             </div>
             
