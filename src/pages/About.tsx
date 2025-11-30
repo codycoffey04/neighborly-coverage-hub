@@ -2,7 +2,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award, ChevronRight, Home, Users, ShieldCheck } from "lucide-react";
+import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award, ChevronRight, Home, Users, ShieldCheck, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import aboutHero from "@/assets/about-hero.png";
@@ -159,7 +159,7 @@ const About = () => {
         </div>
       </section>
       {/* Our Story */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
@@ -204,7 +204,7 @@ const About = () => {
       </section>
 
       {/* Meet Cody Coffey, CEO */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
             {/* Headshot Image - Left side on desktop, centered above on mobile */}
@@ -255,7 +255,7 @@ const About = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Our Team</h2>
@@ -313,7 +313,7 @@ const About = () => {
       </section>
 
       {/* Our Credentials */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Our Credentials</h2>
@@ -360,7 +360,7 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Our Values</h2>
@@ -386,7 +386,7 @@ const About = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Visit Our Offices</h2>
@@ -448,19 +448,61 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Work With a Team That Puts You First?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-white/90 mb-8">
             Let us help you find the perfect coverage for your needs.
           </p>
+          
+          {/* CTA Button */}
           <Link to="/contact">
-            <Button size="lg" className="min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" aria-label="Get a free insurance quote">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" aria-label="Get a free insurance quote">
               Get Your Free Quote
             </Button>
           </Link>
+          
+          {/* Phone Numbers */}
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
+            <span>Or call us:</span>
+            <a 
+              href="tel:+12569276287" 
+              className="text-white hover:text-accent transition-colors"
+              aria-label="Call Centre, Alabama office at (256) 927-6287"
+            >
+              (256) 927-6287
+            </a>
+            <span className="hidden sm:inline">|</span>
+            <a 
+              href="tel:+17067846511" 
+              className="text-white hover:text-accent transition-colors"
+              aria-label="Call Rome, Georgia office at (706) 784-6511"
+            >
+              (706) 784-6511
+            </a>
+          </div>
+          
+          {/* Trust Badges */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-white/80">
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Licensed in AL & GA
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Hablamos Español
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Family Owned
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              100+ Years Combined Experience
+            </span>
+          </div>
         </div>
       </section>
 
