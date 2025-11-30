@@ -42,7 +42,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Coffey Agencies Inc.</h4>
             <ul className="space-y-2">
               {company.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="py-1">
                   <Link 
                     to={item.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -76,7 +76,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="py-1">
                   <Link 
                     to={item.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -93,7 +93,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               {resources.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="py-1">
                   <Link 
                     to={item.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
