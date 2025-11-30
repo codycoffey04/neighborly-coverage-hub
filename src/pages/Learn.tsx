@@ -101,7 +101,7 @@ const Learn = () => {
                     </p>
 
                     <Link to={`/learn/${article.slug}`}>
-                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80" aria-label={`Read guide about ${article.title}`}>
+                      <Button variant="link" className="p-0 h-auto text-accent hover:text-accent/80" aria-label={`Read guide about ${article.title}`}>
                         Read Guide
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </Button>
@@ -140,7 +140,7 @@ const Learn = () => {
                     </p>
 
                     <Link to={`/learn/${article.slug}`}>
-                      <Button variant="link" className="p-0 h-auto text-secondary hover:text-secondary/80" aria-label={`Read guide about ${article.title}`}>
+                      <Button variant="link" className="p-0 h-auto text-accent hover:text-accent/80" aria-label={`Read guide about ${article.title}`}>
                         Read Guide
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </Button>
