@@ -1,9 +1,12 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award } from "lucide-react";
+import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award, ChevronRight, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import aboutHero from "@/assets/about-hero.png";
+import codyHeadshot from "@/assets/cody-coffey-headshot.png";
 
 const values = [
   {
@@ -92,11 +95,7 @@ const About = () => {
   };
 
   return (
-    <PageLayout
-      title="About Coffey Agencies"
-      description="Your Local Insurance Team Since 2009"
-      breadcrumbs={[{ label: "About", href: "/about" }]}
-    >
+    <>
       <Helmet>
         <title>About Coffey Agencies | Your Local Insurance Team Since 2009</title>
         <meta name="description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. 8,000+ policies protected." />
@@ -105,6 +104,45 @@ const About = () => {
           {JSON.stringify(aboutSchema)}
         </script>
       </Helmet>
+
+      <Header />
+
+      {/* Custom Hero Section with Background Image */}
+      <section 
+        role="banner"
+        aria-label="Coffey Agencies Centre, Alabama office exterior"
+        className="relative min-h-[500px] flex items-end bg-cover bg-center"
+        style={{ backgroundImage: `url(${aboutHero})` }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full py-16 px-4">
+          <div className="container mx-auto max-w-6xl">
+            {/* Breadcrumbs */}
+            <nav aria-label="Breadcrumb" className="mb-6">
+              <ol className="flex items-center gap-2 text-sm text-white/80">
+                <li>
+                  <Link to="/" className="hover:text-white flex items-center gap-1">
+                    <Home className="w-4 h-4" />
+                    Home
+                  </Link>
+                </li>
+                <ChevronRight className="w-4 h-4" />
+                <li className="text-white font-medium">About</li>
+              </ol>
+            </nav>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+              About Coffey Agencies
+            </h1>
+            <p className="text-xl md:text-2xl text-white/95 max-w-2xl drop-shadow-md leading-relaxed">
+              Your Local Insurance Team Since 2009
+            </p>
+          </div>
+        </div>
+      </section>
       {/* Our Story */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -153,9 +191,19 @@ const About = () => {
       {/* Meet Cody Coffey, CEO */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-12 items-start">
-            <div className="md:col-span-2">
-              <h2 className="text-3xl font-bold text-foreground mb-6">Meet Cody Coffey, CEO</h2>
+          <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
+            {/* Headshot Image - Left side on desktop, centered above on mobile */}
+            <div className="flex-shrink-0">
+              <img 
+                src={codyHeadshot}
+                alt="Cody Coffey, CEO of Coffey Agencies Inc."
+                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-white"
+              />
+            </div>
+            
+            {/* Text Content */}
+            <div className="flex-1">
+              <h2 className="text-3xl font-bold text-foreground mb-6 text-center md:text-left">Meet Cody Coffey, CEO</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I got my start in insurance in 2004 at 18 years old, learning the industry from the ground up. By age 22, we purchased our first agency in Centre, Alabama. That decision — buying a business at such a young age — set the foundation for everything that followed.
@@ -167,23 +215,25 @@ const About = () => {
                   I've been married to my wife Jessica for 20 years. We have two kids — Bentley, who's 20, and Ellabee, who's 16. Every day I come to work knowing that the families we protect are counting on us the same way my family counts on me.
                 </p>
               </div>
-            </div>
-            <div className="bg-background rounded-lg p-6 border border-border">
-              <h3 className="text-lg font-semibold text-foreground mb-4">Credentials</h3>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Licensed Property & Casualty Agent (Alabama & Georgia)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>Licensed Life & Health Agent (Alabama & Georgia)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>20+ years in the insurance industry</span>
-                </li>
-              </ul>
+              
+              {/* Credentials Box - now below text instead of sidebar */}
+              <div className="mt-8 bg-background rounded-lg p-6 border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-4">Credentials</h3>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Licensed Property & Casualty Agent (Alabama & Georgia)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Licensed Life & Health Agent (Alabama & Georgia)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>20+ years in the insurance industry</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -398,7 +448,9 @@ const About = () => {
           </Link>
         </div>
       </section>
-    </PageLayout>
+
+      <Footer />
+    </>
   );
 };
 
