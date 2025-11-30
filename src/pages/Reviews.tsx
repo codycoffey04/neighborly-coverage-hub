@@ -146,11 +146,6 @@ const reviews = [
     name: "John G.",
     location: "Rome, GA"
   },
-  {
-    text: "Always professional, informative, punctual, and respectful. Good company.",
-    name: "Kathy H.",
-    location: "Rome, GA"
-  },
 ];
 
 const highlights = [
@@ -358,7 +353,7 @@ const Reviews = () => {
                     <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-4">
                       <Icon className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="font-bold text-foreground mb-3">
+                    <h3 className="text-lg font-bold text-foreground mb-3">
                       {highlight.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
