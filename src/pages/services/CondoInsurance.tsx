@@ -380,7 +380,7 @@ const CondoInsurance = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coverageTypes.map((coverage, index) => (
-              <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card key={index} className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">

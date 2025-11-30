@@ -84,7 +84,7 @@ const Learn = () => {
             {coverageArticles.map((article) => {
               const IconComponent = articleIcons[article.slug];
               return (
-                <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
+                <Card key={article.slug} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out group">
                   <CardContent className="p-6">
                     {IconComponent && (
                       <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
@@ -123,7 +123,7 @@ const Learn = () => {
             {topicArticles.map((article) => {
               const IconComponent = articleIcons[article.slug];
               return (
-                <Card key={article.slug} className="border-border hover:border-primary/50 transition-colors group">
+                <Card key={article.slug} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out group">
                   <CardContent className="p-6">
                     {IconComponent && (
                       <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">

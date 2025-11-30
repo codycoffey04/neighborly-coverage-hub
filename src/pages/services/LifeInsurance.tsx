@@ -385,7 +385,7 @@ const georgiaCities = [
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <Clock className="h-7 w-7 text-white" />
@@ -402,7 +402,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <Heart className="h-7 w-7 text-white" />
@@ -419,7 +419,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <DollarSign className="h-7 w-7 text-white" />
@@ -433,7 +433,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <TrendingUp className="h-7 w-7 text-white" />
@@ -457,7 +457,7 @@ const georgiaCities = [
             <h2 className="text-3xl font-bold mb-6 text-center">The Application Process and Medical Exams</h2>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <FileCheck className="h-7 w-7 text-white" />
@@ -474,7 +474,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <Zap className="h-7 w-7 text-white" />
@@ -491,7 +491,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <TrendingUp className="h-7 w-7 text-white" />
@@ -597,7 +597,7 @@ const georgiaCities = [
           <div className="container max-w-5xl">
             <h2 className="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardContent className="pt-6 flex flex-col h-full">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -614,7 +614,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardContent className="pt-6 flex flex-col h-full">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -631,7 +631,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardContent className="pt-6 flex flex-col h-full">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -669,7 +669,7 @@ const georgiaCities = [
 
             {/* Top row: 3 cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <Car className="h-7 w-7 text-white" />
@@ -686,7 +686,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <Home className="h-7 w-7 text-white" />
@@ -703,7 +703,7 @@ const georgiaCities = [
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
                   <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
                     <Key className="h-7 w-7 text-white" />

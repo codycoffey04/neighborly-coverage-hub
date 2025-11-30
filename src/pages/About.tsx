@@ -269,7 +269,7 @@ const About = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6">Centre, AL Office</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {teamMembers.centre.map((member, index) => (
-                <Card key={index} className="border-border">
+                <Card key={index} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
                   <CardContent className="pt-6">
                     <div className="mb-4">
                       <h4 className="text-lg font-semibold text-foreground">{member.name}</h4>
@@ -292,7 +292,7 @@ const About = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6">Rome, GA Office</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {teamMembers.rome.map((member, index) => (
-                <Card key={index} className="border-border">
+                <Card key={index} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
                   <CardContent className="pt-6">
                     <div className="mb-4">
                       <h4 className="text-lg font-semibold text-foreground">{member.name}</h4>
@@ -323,7 +323,7 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-border">
+            <Card className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
               <CardContent className="pt-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -338,7 +338,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
               <CardContent className="pt-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -371,7 +371,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="border-border hover:border-primary/50 transition-colors h-full">
+              <Card key={index} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out h-full">
                 <CardContent className="pt-6 h-full flex flex-col">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <value.icon className="w-6 h-6 text-primary" />
@@ -397,7 +397,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {offices.map((office, index) => (
-              <Card key={index} className="border-border">
+              <Card key={index} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-4">{office.name}</h3>
                   
