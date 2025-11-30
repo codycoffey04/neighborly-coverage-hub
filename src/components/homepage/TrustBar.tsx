@@ -1,4 +1,4 @@
-import { Star, Award, CheckCircle2 } from "lucide-react";
+import { Star, Award, CheckCircle2, Clock, ShieldCheck } from "lucide-react";
 
 export const TrustBar = () => {
   return (
@@ -7,38 +7,38 @@ export const TrustBar = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Years in Business */}
           <div className="text-center space-y-2">
-            <div className="flex justify-center">
-              <Award className="h-8 w-8 text-primary" />
+            <div className="flex items-center justify-center gap-2">
+              <Clock className="h-6 w-6 text-accent" />
+              <p className="text-3xl font-bold text-foreground">16+</p>
             </div>
-            <p className="text-3xl font-bold text-foreground">16+</p>
             <p className="text-sm text-muted-foreground">Years Serving You</p>
           </div>
 
           {/* BBB Rating */}
           <div className="text-center space-y-2">
-            <div className="flex justify-center">
-              <Award className="h-8 w-8 text-primary" />
+            <div className="flex items-center justify-center gap-2">
+              <ShieldCheck className="h-6 w-6 text-accent" />
+              <p className="text-3xl font-bold text-foreground">A+</p>
             </div>
-            <p className="text-3xl font-bold text-foreground">A+</p>
             <p className="text-sm text-muted-foreground">BBB Rating</p>
           </div>
 
           {/* Centre Rating */}
           <div className="text-center space-y-2">
-            <div className="flex justify-center">
-              <Star className="h-8 w-8 text-primary" />
+            <div className="flex items-center justify-center gap-2">
+              <Star className="h-6 w-6 text-accent" />
+              <p className="text-3xl font-bold text-foreground">4.7★</p>
             </div>
-            <p className="text-3xl font-bold text-foreground">4.7★</p>
             <p className="text-sm text-muted-foreground">Centre, AL</p>
             <p className="text-xs text-muted-foreground">(116 reviews)</p>
           </div>
 
           {/* Rome Rating */}
           <div className="text-center space-y-2">
-            <div className="flex justify-center">
-              <Star className="h-8 w-8 text-primary" />
+            <div className="flex items-center justify-center gap-2">
+              <Star className="h-6 w-6 text-accent" />
+              <p className="text-3xl font-bold text-foreground">4.6★</p>
             </div>
-            <p className="text-3xl font-bold text-foreground">4.6★</p>
             <p className="text-sm text-muted-foreground">Rome, GA</p>
             <p className="text-xs text-muted-foreground">(90 reviews)</p>
           </div>
