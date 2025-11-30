@@ -209,6 +209,32 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     "containsPlace": city.neighborhoods.map(n => ({ "@type": "Place", "name": n }))
   };
 
+  // JSON-LD Schema for BreadcrumbList
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Service Areas",
+        "item": "https://coffeyagencies.com/service-areas"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": `${city.city}, ${city.stateAbbr}`,
+        "item": `https://coffeyagencies.com/${city.slug}`
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -228,6 +254,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         )}
         <script type="application/ld+json">
           {JSON.stringify(placeSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
 

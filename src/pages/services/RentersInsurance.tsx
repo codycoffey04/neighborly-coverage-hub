@@ -240,6 +240,31 @@ const serviceSchema = {
   }
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://coffeyagencies.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://coffeyagencies.com/#services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Renters Insurance",
+      "item": "https://coffeyagencies.com/services/renters-insurance"
+    }
+  ]
+};
+
 const RentersInsurance = () => {
   return (
     <>
@@ -256,12 +281,15 @@ const RentersInsurance = () => {
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Header />
 
       {/* Custom Hero Section with Background Image */}
-      <section 
+      <section
         role="banner"
         aria-label="Renters insurance hero section"
         className="relative min-h-[600px] flex items-end overflow-hidden"
@@ -278,6 +306,17 @@ const RentersInsurance = () => {
         {/* Content */}
         <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-5xl">
+            {/* Breadcrumbs */}
+            <nav className="mb-6" aria-label="Breadcrumb">
+              <ol className="flex items-center justify-center gap-2 text-sm text-white/80">
+                <li><Link to="/" className="hover:text-white">Home</Link></li>
+                <li>/</li>
+                <li><Link to="/#services" className="hover:text-white">Services</Link></li>
+                <li>/</li>
+                <li className="text-white font-medium">Renters Insurance</li>
+              </ol>
+            </nav>
+            
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
                 Renters Insurance in Alabama & Georgia
