@@ -166,7 +166,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section id="contact-form" className="py-16 px-4">
+      <section id="contact-form" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-foreground mb-4">Send Us a Message</h2>
@@ -340,7 +340,7 @@ const Contact = () => {
       </section>
 
       {/* Office Locations with Maps */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Our Offices</h2>
@@ -445,15 +445,62 @@ const Contact = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 px-4 bg-secondary text-white">
+      <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
             Get a free quote in about 15 minutes. No obligation, no pressure.
           </p>
-          <Button size="lg" variant="outline" className="bg-white text-secondary hover:bg-white/90 border-2 border-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild aria-label="Get your free insurance quote">
+          
+          {/* CTA Button - Green */}
+          <Button 
+            size="lg" 
+            className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" 
+            asChild 
+            aria-label="Get your free insurance quote"
+          >
             <a href="#contact-form">Get Your Free Quote</a>
           </Button>
+          
+          {/* Phone Numbers */}
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
+            <span>Or call us:</span>
+            <a 
+              href="tel:+12569276287" 
+              className="text-white hover:text-accent transition-colors"
+              aria-label="Call Centre, Alabama office at (256) 927-6287"
+            >
+              (256) 927-6287
+            </a>
+            <span className="hidden sm:inline">|</span>
+            <a 
+              href="tel:+17067846511" 
+              className="text-white hover:text-accent transition-colors"
+              aria-label="Call Rome, Georgia office at (706) 784-6511"
+            >
+              (706) 784-6511
+            </a>
+          </div>
+          
+          {/* Trust Badges */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-white/80">
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Licensed in AL & GA
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Hablamos Español
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Family Owned
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              100+ Years Combined Experience
+            </span>
+          </div>
         </div>
       </section>
       <Footer />
