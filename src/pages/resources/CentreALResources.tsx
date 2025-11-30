@@ -30,6 +30,22 @@ const CentreALResources = () => {
           content="DMV, police, courts, emergency services, and more for Cherokee County, Alabama. Your local resource guide from Coffey Agencies in Centre." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/resources/centre-al" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Local Resources for Centre, AL | Cherokee County | Coffey Agencies" />
+        <meta property="og:description" content="DMV, police, courts, emergency services, and more for Cherokee County, Alabama. Your local resource guide from Coffey Agencies in Centre." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/resources/centre-al" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Local Resources for Centre, AL | Cherokee County" />
+        <meta name="twitter:description" content="DMV, police, courts, emergency services for Cherokee County, Alabama. Your local resource guide." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
       </Helmet>
 
       <Header />

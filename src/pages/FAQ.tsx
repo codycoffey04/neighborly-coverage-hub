@@ -159,6 +159,23 @@ const FAQ = () => {
         <title>Frequently Asked Questions | Coffey Agencies</title>
         <meta name="description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
         <link rel="canonical" href="https://coffeyagencies.com/faq" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Frequently Asked Questions | Coffey Agencies" />
+        <meta property="og:description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/faq" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Frequently Asked Questions | Coffey Agencies" />
+        <meta name="twitter:description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

@@ -99,6 +99,23 @@ const ServiceAreas = () => {
         <title>Service Areas | Alabama & Georgia Insurance | Coffey Agencies</title>
         <meta name="description" content="Coffey Agencies serves 24 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
         <link rel="canonical" href="https://coffeyagencies.com/service-areas" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Service Areas | Alabama & Georgia Insurance | Coffey Agencies" />
+        <meta property="og:description" content="Coffey Agencies serves 24 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/service-areas" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Service Areas | Alabama & Georgia Insurance" />
+        <meta name="twitter:description" content="Coffey Agencies serves 24 cities across Alabama and Georgia. Find local insurance coverage near you." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(serviceAreasSchema)}
         </script>

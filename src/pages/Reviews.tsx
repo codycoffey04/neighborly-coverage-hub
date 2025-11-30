@@ -204,6 +204,23 @@ const Reviews = () => {
         <title>Customer Reviews | 4.7★ Rating | Coffey Agencies</title>
         <meta name="description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (116 reviews) and 4.6★ in Rome, GA (90 reviews). See why families trust us." />
         <link rel="canonical" href="https://coffeyagencies.com/reviews" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Customer Reviews | 4.7★ Rating | Coffey Agencies" />
+        <meta property="og:description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (116 reviews) and 4.6★ in Rome, GA (90 reviews). See why families trust us." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/reviews" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Customer Reviews | 4.7★ Rating | Coffey Agencies" />
+        <meta name="twitter:description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL and 4.6★ in Rome, GA. See why families trust us." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(reviewsSchema)}
         </script>

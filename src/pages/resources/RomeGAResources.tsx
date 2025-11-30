@@ -29,6 +29,22 @@ const RomeGAResources = () => {
           content="DMV, police, courts, emergency services, and more for Floyd County, Georgia. Your local resource guide from Coffey Agencies in Rome." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/resources/rome-ga" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Local Resources for Rome, GA | Floyd County | Coffey Agencies" />
+        <meta property="og:description" content="DMV, police, courts, emergency services, and more for Floyd County, Georgia. Your local resource guide from Coffey Agencies in Rome." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/resources/rome-ga" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Local Resources for Rome, GA | Floyd County" />
+        <meta name="twitter:description" content="DMV, police, courts, emergency services for Floyd County, Georgia. Your local resource guide." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
       </Helmet>
 
       <Header />

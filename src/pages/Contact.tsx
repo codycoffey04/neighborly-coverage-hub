@@ -98,6 +98,23 @@ const Contact = () => {
         <title>Contact Us | Coffey Agencies | Alabama & Georgia Insurance</title>
         <meta name="description" content="Contact Coffey Agencies for insurance quotes. Offices in Centre, AL (256) 927-6287 and Rome, GA (706) 784-6511. Get a free quote today." />
         <link rel="canonical" href="https://coffeyagencies.com/contact" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Contact Us | Coffey Agencies | Alabama & Georgia Insurance" />
+        <meta property="og:description" content="Contact Coffey Agencies for insurance quotes. Offices in Centre, AL (256) 927-6287 and Rome, GA (706) 784-6511. Get a free quote today." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/contact" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | Coffey Agencies" />
+        <meta name="twitter:description" content="Contact Coffey Agencies for insurance quotes. Offices in Centre, AL and Rome, GA. Get a free quote today." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}
         </script>

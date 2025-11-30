@@ -244,6 +244,23 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
         />
         <link rel="canonical" href={`https://coffeyagencies.com/${city.slug}`} />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content={city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`} />
+        <meta property="og:description" content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service.`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://coffeyagencies.com/${city.slug}`} />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`Insurance in ${city.city}, ${city.stateAbbr} | Coffey Agencies`} />
+        <meta name="twitter:description" content={`Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance.`} />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

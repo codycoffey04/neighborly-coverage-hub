@@ -297,6 +297,23 @@ const Index = () => {
         <title>Coffey Agencies Inc. | Insurance in Alabama & Georgia</title>
         <meta name="description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="Coffey Agencies Inc. | Insurance in Alabama & Georgia" />
+        <meta property="og:description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Coffey Agencies Inc. | Insurance in Alabama & Georgia" />
+        <meta name="twitter:description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <link rel="preload" as="image" href={heroBackground} />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}

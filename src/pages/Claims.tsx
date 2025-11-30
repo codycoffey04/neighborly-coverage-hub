@@ -90,6 +90,22 @@ const Claims = () => {
         />
         <link rel="canonical" href="https://coffeyagencies.com/claims" />
         
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="How to File an Insurance Claim | Coffey Agencies Inc." />
+        <meta property="og:description" content="Step-by-step guidance for filing auto, home, renters, condo, or life insurance claims. Call Coffey Agencies first — we'll help you through the process." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/claims" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="How to File an Insurance Claim | Coffey Agencies" />
+        <meta name="twitter:description" content="Step-by-step guidance for filing auto, home, renters, condo, or life insurance claims. Call us first for help." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
