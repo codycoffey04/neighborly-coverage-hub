@@ -24,6 +24,7 @@ export interface LearnArticle {
   category: string;
   readTime: string;
   featured: boolean;
+  heroImage?: string;
   content: ContentSection[];
   faqs: FAQ[];
   relatedArticles: string[];
@@ -40,6 +41,7 @@ export const learnArticles: LearnArticle[] = [
     category: "Auto Insurance",
     readTime: "8 min read",
     featured: true,
+    heroImage: "auto-insurance-hero.jpg",
     content: [
       {
         type: 'paragraph',
@@ -253,6 +255,7 @@ export const learnArticles: LearnArticle[] = [
     category: "Home Insurance",
     readTime: "8 min read",
     featured: false,
+    heroImage: "home-insurance-hero.jpg",
     content: [
       {
         type: 'paragraph',
@@ -520,6 +523,7 @@ export const learnArticles: LearnArticle[] = [
     category: "Renters Insurance",
     readTime: "6 min read",
     featured: false,
+    heroImage: "renters-insurance-hero.jpg",
     content: [
       {
         type: "paragraph",
@@ -796,6 +800,7 @@ export const learnArticles: LearnArticle[] = [
     category: "Condo Insurance",
     readTime: "6 min read",
     featured: false,
+    heroImage: "condo-insurance-hero.jpg",
     content: [
       {
         type: "paragraph",
@@ -1035,6 +1040,7 @@ export const learnArticles: LearnArticle[] = [
     category: "Life Insurance",
     readTime: "8 min read",
     featured: false,
+    heroImage: "life-insurance-hero.jpg",
     content: [
       {
         type: 'paragraph',
