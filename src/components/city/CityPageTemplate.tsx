@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -372,9 +373,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <SectionHeading centered className="mb-4">
               Insurance Services in {city.city}
-            </h2>
+            </SectionHeading>
             <p className="text-lg text-muted-foreground">
               Complete protection for {city.city} families and businesses
             </p>
@@ -409,9 +410,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <SectionHeading centered className="mb-4">
               Why Choose Coffey Agencies in {city.city}
-            </h2>
+            </SectionHeading>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {whyChoosePillars.map((pillar, index) => {
@@ -455,9 +456,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <SectionHeading centered className="mb-4">
               Neighborhoods We Serve in {city.city}
-            </h2>
+            </SectionHeading>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {city.neighborhoods.map((neighborhood, index) => (
@@ -476,9 +477,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <SectionHeading centered className="mb-4">
               {city.city} Insurance Questions Answered
-            </h2>
+            </SectionHeading>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
             {city.faqs.map((faq, index) => (
@@ -499,9 +500,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <SectionHeading centered className="mb-4">
               Nearby Cities We Serve
-            </h2>
+            </SectionHeading>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {city.nearbyCities.map((citySlug, index) => {
@@ -534,9 +535,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <SectionHeading centered className="mb-4">
               What {city.city} Customers Say
-            </h2>
+            </SectionHeading>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
@@ -569,9 +570,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       {/* Section 9: Final CTA - NAVY */}
       <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <SectionHeading variant="white" centered className="mb-4">
             Ready to protect what matters in {city.city}?
-          </h2>
+          </SectionHeading>
           <p className="text-lg text-white/90 mb-8">
             Get a quote that fits your {city.city} family's needs and budget
           </p>
