@@ -248,7 +248,7 @@ const FAQ = () => {
           <div className="space-y-12">
             {faqs.map((section, sectionIndex) => (
               <div key={sectionIndex}>
-                <h2 className="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6 pb-2 border-b border-border">
                   {section.category}
                 </h2>
                 
@@ -280,7 +280,7 @@ const FAQ = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
         <div className="container mx-auto max-w-4xl text-center">
           <MessageCircle className="w-12 h-12 text-white mx-auto mb-4" fill="currentColor" />
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
             Still Have Questions?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">

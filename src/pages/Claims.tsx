@@ -241,7 +241,7 @@ const Claims = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-primary text-center">
               Before You Do Anything Else — Call Us
             </h2>
             <p className="text-lg leading-relaxed mb-12 text-center max-w-3xl mx-auto text-foreground/80">
@@ -309,7 +309,7 @@ const Claims = () => {
       <section className="py-16 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-12 text-primary text-center">
               Immediate Steps After an Incident
             </h2>
 
@@ -343,7 +343,7 @@ const Claims = () => {
               <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
                 <Car className="h-6 w-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
                 Filing an Auto Insurance Claim
               </h2>
             </div>
@@ -430,7 +430,7 @@ const Claims = () => {
               <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
                 <Home className="h-6 w-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
                 Filing a Home Insurance Claim
               </h2>
             </div>
@@ -512,7 +512,7 @@ const Claims = () => {
               <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
                 <Key className="h-6 w-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
                 Filing a Renters or Condo Insurance Claim
               </h2>
             </div>
@@ -592,7 +592,7 @@ const Claims = () => {
               <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
                 <Heart className="h-6 w-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
                 Filing a Life Insurance Claim
               </h2>
             </div>
@@ -637,7 +637,7 @@ const Claims = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-12 text-primary text-center">
               Claims Questions We Hear Every Day
             </h2>
 
@@ -661,7 +661,7 @@ const Claims = () => {
       <section className="py-16 md:py-20 bg-gradient-to-br from-primary to-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
               We're With You Through the Entire Process
             </h2>
             <p className="text-xl mb-8 leading-relaxed text-white/95">

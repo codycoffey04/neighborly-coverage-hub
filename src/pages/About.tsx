@@ -185,7 +185,7 @@ const About = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   Coffey Agencies started with a simple belief: insurance should be personal, straightforward, and local. In March 2009, Cody Coffey purchased his first agency in Centre, Alabama at just 22 years old. That decision set the foundation for everything that followed.
@@ -243,7 +243,7 @@ const About = () => {
             
             {/* Text Content */}
             <div className="flex-1">
-              <h2 className="text-3xl font-bold text-foreground mb-6 text-center md:text-left">Meet Cody Coffey, CEO</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6 text-center md:text-left">Meet Cody Coffey, CEO</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I got my start in insurance in 2004 at 18 years old, learning the industry from the ground up. By age 22, we purchased our first agency in Centre, Alabama. That decision — buying a business at such a young age — set the foundation for everything that followed.
@@ -283,7 +283,7 @@ const About = () => {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Team</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Team</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Meet the dedicated professionals who make Coffey Agencies exceptional.
             </p>
@@ -341,7 +341,7 @@ const About = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Credentials</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Credentials</h2>
             <p className="text-muted-foreground">
               Licensed, experienced, and trusted across Alabama and Georgia.
             </p>
@@ -388,7 +388,7 @@ const About = () => {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Values</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Values</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               The principles that guide every interaction and decision we make.
             </p>
@@ -414,7 +414,7 @@ const About = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Visit Our Offices</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Visit Our Offices</h2>
             <p className="text-muted-foreground">
               Stop by one of our convenient locations to discuss your insurance needs in person.
             </p>
@@ -475,7 +475,7 @@ const About = () => {
       {/* CTA */}
       <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
             Ready to Work With a Team That Puts You First?
           </h2>
           <p className="text-lg text-white/90 mb-8">
