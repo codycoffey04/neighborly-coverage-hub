@@ -95,7 +95,7 @@ const Learn = () => {
       {/* Guides by Coverage Type */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-8">Guides by Coverage Type</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-8">Guides by Coverage Type</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coverageArticles.map((article) => {
@@ -134,7 +134,7 @@ const Learn = () => {
       {/* Guides by Topic */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-8">Guides by Topic</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-8">Guides by Topic</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {topicArticles.map((article) => {
@@ -173,7 +173,7 @@ const Learn = () => {
       {/* Bottom CTA */}
       <section className="py-20 px-4 bg-primary text-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold mb-4">Still Have Questions?</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Still Have Questions?</h2>
           <p className="text-lg text-white/90 mb-8">
             Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
           </p>
