@@ -289,7 +289,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         {city.heroImage && (
           <img
             src={new URL(`../../assets/${city.heroImage}`, import.meta.url).href}
-            alt={city.state === "Alabama" ? "Rolling hills and pine forests of rural Alabama countryside" : "Georgia Appalachian foothills with mountain landscapes"}
+            alt={`${city.city}, ${city.state} neighborhood residential street`}
             className="absolute inset-0 w-full h-full object-cover"
             fetchPriority="high"
           />
