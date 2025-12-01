@@ -232,9 +232,14 @@ const Reviews = () => {
       <section 
         role="banner"
         aria-label="Customer reviews hero section"
-        className="relative min-h-[500px] flex items-end bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="relative min-h-[500px] flex items-end overflow-hidden"
       >
+        <img 
+          src={heroBackground} 
+          alt="Happy family protected by insurance"
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
         <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-5xl">

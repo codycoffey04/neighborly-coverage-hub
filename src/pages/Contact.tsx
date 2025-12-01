@@ -126,9 +126,14 @@ const Contact = () => {
       <section 
         role="banner"
         aria-label="Contact us hero section"
-        className="relative min-h-[600px] flex items-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="relative min-h-[600px] flex items-center overflow-hidden"
       >
+        <img 
+          src={heroBackground} 
+          alt="Insurance agent helping customer at desk"
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+        />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
         

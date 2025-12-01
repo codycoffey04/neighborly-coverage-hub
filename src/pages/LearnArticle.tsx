@@ -253,9 +253,14 @@ const LearnArticle = () => {
         <section 
           role="banner"
           aria-label={`${article.title} hero section`}
-          className="relative min-h-[400px] md:min-h-[500px] flex items-end bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="relative min-h-[400px] md:min-h-[500px] flex items-end overflow-hidden"
         >
+          <img 
+            src={heroImage} 
+            alt={`${article.title} insurance guide`}
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+          />
           {/* Dark gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
           
