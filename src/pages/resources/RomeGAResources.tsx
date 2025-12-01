@@ -18,6 +18,7 @@ import {
   ExternalLink,
   CheckCircle
 } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const RomeGAResources = () => {
   return (
@@ -80,9 +81,9 @@ const RomeGAResources = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Vehicle & Driver Services
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
@@ -206,9 +207,9 @@ const RomeGAResources = () => {
       <section className="py-16 md:py-20 bg-muted/30">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Law Enforcement
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -348,9 +349,9 @@ const RomeGAResources = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Courts & Legal
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="max-w-3xl mx-auto mb-8">
@@ -429,9 +430,9 @@ const RomeGAResources = () => {
       <section className="py-16 md:py-20 bg-muted/30">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Emergency Services
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-8">
@@ -590,9 +591,9 @@ const RomeGAResources = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Insurance-Related Resources
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
@@ -642,9 +643,9 @@ const RomeGAResources = () => {
       {/* Section 6: Bottom CTA */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-primary to-primary-light text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <SectionHeading variant="white" centered className="mb-4">
             Questions About Your Coverage?
-          </h2>
+          </SectionHeading>
           <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
             If you've been in an accident or need help understanding your policy, we're here. Contact Coffey Agencies — your local insurance team in Rome, GA.
           </p>

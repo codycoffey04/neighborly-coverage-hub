@@ -1,4 +1,5 @@
 import { MapPin, Users, Zap, DollarSign } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const pillars = [
   {
@@ -29,7 +30,7 @@ export const WhyChooseUs = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance text-white text-3xl md:text-4xl lg:text-5xl tracking-tight">Why Choose Coffey Agencies?</h2>
+          <SectionHeading variant="white" centered className="lg:text-5xl tracking-tight">Why Choose Coffey Agencies?</SectionHeading>
           <p className="text-lg text-white/80 text-balance">
             16 years of protecting Alabama and Georgia families. Here's why our clients trust us.
           </p>

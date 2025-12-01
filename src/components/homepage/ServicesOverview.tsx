@@ -2,6 +2,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Button } from "@/components/ui/button";
 import { Car, Home, Building2, Key, Heart, Bike, ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const services = [
   {
@@ -48,7 +49,7 @@ export const ServicesOverview = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance">Insurance Solutions for Every Need</h2>
+          <SectionHeading centered>Insurance Solutions for Every Need</SectionHeading>
           <p className="text-lg text-muted-foreground text-balance">
             Coverage that fits your life — not the other way around. Get a personalized quote in minutes.
           </p>

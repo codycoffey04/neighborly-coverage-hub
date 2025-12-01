@@ -7,6 +7,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const faqs = [
   {
@@ -72,7 +73,7 @@ export const FAQ = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance">Frequently Asked Questions</h2>
+          <SectionHeading centered>Frequently Asked Questions</SectionHeading>
           <p className="text-lg text-muted-foreground text-balance">
             Got questions? We've got answers. Here are the most common things customers ask.
           </p>

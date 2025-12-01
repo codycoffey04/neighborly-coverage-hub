@@ -19,6 +19,7 @@ import {
   ExternalLink,
   CheckCircle
 } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const CentreALResources = () => {
   return (
@@ -81,9 +82,9 @@ const CentreALResources = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Vehicle & Driver Services
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
@@ -207,9 +208,9 @@ const CentreALResources = () => {
       <section className="py-16 md:py-20 bg-muted/30">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Law Enforcement
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -306,9 +307,9 @@ const CentreALResources = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Courts & Legal
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -387,9 +388,9 @@ const CentreALResources = () => {
       <section className="py-16 md:py-20 bg-muted/30">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Emergency Services
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
@@ -505,9 +506,9 @@ const CentreALResources = () => {
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <SectionHeading variant="primary" centered className="mb-4">
               Insurance-Related Resources
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="max-w-3xl mx-auto space-y-8">
@@ -562,9 +563,9 @@ const CentreALResources = () => {
       <section className="py-16 md:py-20 bg-gradient-to-br from-primary to-primary-light text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <SectionHeading variant="white" centered className="mb-6">
               Questions About Your Coverage?
-            </h2>
+            </SectionHeading>
             <p className="text-xl mb-8 text-white/90 leading-relaxed">
               If you've been in an accident or need help understanding your policy, we're here. Contact Coffey Agencies — your local insurance team in Centre, AL.
             </p>

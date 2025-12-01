@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export const BottomCTA = () => {
   return (
     <section className="bg-gradient-to-br from-primary to-primary-light py-16">
       <div className="container-custom text-center">
-        <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
+        <SectionHeading variant="white" centered className="mb-4">
           Ready to Save on Insurance?
-        </h2>
+        </SectionHeading>
         <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
           Talk to a local agent today — no pressure, just answers.
         </p>
