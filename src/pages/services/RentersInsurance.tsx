@@ -672,7 +672,7 @@ const RentersInsurance = () => {
                       <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                       <p className="text-muted-foreground">{service.description}</p>
                     </div>
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild>
+                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild aria-label={`Learn more about ${service.title}`}>
                       <Link to={service.link}>Learn More →</Link>
                     </Button>
                   </CardContent>
@@ -695,7 +695,7 @@ const RentersInsurance = () => {
                       <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                       <p className="text-muted-foreground">{service.description}</p>
                     </div>
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild>
+                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild aria-label={`Learn more about ${service.title}`}>
                       <Link to={service.link}>Learn More →</Link>
                     </Button>
                   </CardContent>

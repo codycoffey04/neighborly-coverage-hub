@@ -106,6 +106,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 4 Government Plaza, Suite 109, Rome, GA 30161 on Google Maps (opens in new tab)"
                     >
                       4 Government Plaza, Suite 109, Rome, GA 30161
                     </a>
@@ -148,6 +149,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 3390 Martha Berry Hwy NE, Rome, GA 30165 on Google Maps (opens in new tab)"
                     >
                       3390 Martha Berry Hwy NE, Rome, GA 30165
                     </a>
@@ -180,6 +182,7 @@ const RomeGAResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Georgia Department of Driver Services website (opens in new tab)"
               >
                 GA Dept. of Driver Services (DDS)
                 <ExternalLink className="h-3 w-3" />
@@ -189,6 +192,7 @@ const RomeGAResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Georgia Department of Revenue website (opens in new tab)"
               >
                 GA Dept. of Revenue – Motor Vehicle Division
                 <ExternalLink className="h-3 w-3" />
@@ -228,6 +232,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 2526 New Calhoun Hwy NE, Rome, GA 30161 on Google Maps (opens in new tab)"
                     >
                       2526 New Calhoun Hwy NE, Rome, GA 30161
                     </a>
@@ -270,6 +275,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 375 Technology Pkwy, Rome, GA 30165 on Google Maps (opens in new tab)"
                     >
                       375 Technology Pkwy, Rome, GA 30165
                     </a>
@@ -312,6 +318,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 1 Police Plaza, Rome, GA 30161 on Google Maps (opens in new tab)"
                     >
                       1 Police Plaza, Rome, GA 30161
                     </a>
@@ -367,6 +374,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 3 Government Plaza, Rome, GA 30161 on Google Maps (opens in new tab)"
                     >
                       3 Government Plaza, Rome, GA 30161
                     </a>
@@ -395,6 +403,7 @@ const RomeGAResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-accent hover:text-primary transition-colors inline-flex items-center gap-1"
+                aria-label="Visit CourtView website to pay traffic citations (opens in new tab)"
               >
                 www.courtview.net
                 <ExternalLink className="h-3 w-3" />
@@ -405,6 +414,7 @@ const RomeGAResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-accent hover:text-primary transition-colors inline-flex items-center gap-1"
+                aria-label="Visit PayCourt website to pay traffic citations (opens in new tab)"
               >
                 www.paycourt.com
                 <ExternalLink className="h-3 w-3" />
@@ -445,6 +455,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 407 E 12th Street, Rome, GA 30161 on Google Maps (opens in new tab)"
                     >
                       407 E 12th Street, Rome, GA 30161
                     </a>
@@ -487,6 +498,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 304 Turner McCall Blvd, Rome, GA 30165 on Google Maps (opens in new tab)"
                     >
                       304 Turner McCall Blvd, Rome, GA 30165
                     </a>
@@ -525,6 +537,7 @@ const RomeGAResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 501 Redmond Rd, Rome, GA 30165 on Google Maps (opens in new tab)"
                     >
                       501 Redmond Rd, Rome, GA 30165
                     </a>
@@ -553,6 +566,7 @@ const RomeGAResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Georgia Emergency Management Agency website (opens in new tab)"
               >
                 Georgia Emergency Management Agency (GEMA)
                 <ExternalLink className="h-3 w-3" />
@@ -562,6 +576,7 @@ const RomeGAResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Ready Georgia website (opens in new tab)"
               >
                 Ready Georgia
                 <ExternalLink className="h-3 w-3" />
@@ -595,6 +610,7 @@ const RomeGAResources = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors"
+                  aria-label="Visit Georgia Office of Insurance website (opens in new tab)"
                 >
                   www.oci.georgia.gov
                   <ExternalLink className="h-3 w-3" />

@@ -107,6 +107,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 260 Cedar Bluff Rd., Suite 100, Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       260 Cedar Bluff Rd., Suite 100, Centre, AL 35960
                     </a>
@@ -149,6 +150,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 260 Cedar Bluff Rd., Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       260 Cedar Bluff Rd., Centre, AL 35960
                     </a>
@@ -181,6 +183,7 @@ const CentreALResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Alabama Law Enforcement Agency website (opens in new tab)"
               >
                 ALEA Driver License Division
                 <ExternalLink className="h-3 w-3" />
@@ -190,6 +193,7 @@ const CentreALResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Alabama Department of Revenue website (opens in new tab)"
               >
                 AL Dept. of Revenue – Motor Vehicle Division
                 <ExternalLink className="h-3 w-3" />
@@ -229,6 +233,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 110 Cedar Bluff Rd., Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       110 Cedar Bluff Rd., Centre, AL 35960
                     </a>
@@ -271,6 +276,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 999 W. Main St., Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       999 W. Main St., Centre, AL 35960
                     </a>
@@ -326,6 +332,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 100 W. Main St., Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       100 W. Main St., Centre, AL 35960
                     </a>
@@ -364,6 +371,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 1111 W. Main St., Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       1111 W. Main St., Centre, AL 35960
                     </a>
@@ -405,6 +413,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 260 Cedar Bluff Rd., Suite 104, Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       260 Cedar Bluff Rd., Suite 104, Centre, AL 35960
                     </a>
@@ -443,6 +452,7 @@ const CentreALResources = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
+                      aria-label="View 400 Northwood Dr., Centre, AL 35960 on Google Maps (opens in new tab)"
                     >
                       400 Northwood Dr., Centre, AL 35960
                     </a>
@@ -471,6 +481,7 @@ const CentreALResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Alabama Emergency Management Agency website (opens in new tab)"
               >
                 Alabama Emergency Management Agency (AEMA)
                 <ExternalLink className="h-3 w-3" />
@@ -480,6 +491,7 @@ const CentreALResources = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+                aria-label="Visit Ready Alabama website (opens in new tab)"
               >
                 Ready Alabama
                 <ExternalLink className="h-3 w-3" />
@@ -515,6 +527,7 @@ const CentreALResources = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"
+                    aria-label="Visit Alabama Department of Insurance website (opens in new tab)"
                   >
                     www.aldoi.gov
                   </a>
