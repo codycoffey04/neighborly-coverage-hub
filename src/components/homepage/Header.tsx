@@ -43,9 +43,9 @@ export const Header = () => {
             <img 
               src={coffeyLogo} 
               alt="Coffey Agencies - Insurance Services" 
-              width={200}
-              height={56}
-              className="h-14 w-auto"
+              width={240}
+              height={67}
+              className="h-[67px] w-auto"
             />
           </Link>
 
