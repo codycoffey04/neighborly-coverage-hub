@@ -292,7 +292,7 @@ const HomeInsurance = () => {
       >
         <img 
           src={heroBackground} 
-          alt="" 
+          alt="Family home exterior protected by homeowners insurance" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />

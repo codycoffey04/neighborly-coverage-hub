@@ -361,7 +361,7 @@ const CondoInsurance = () => {
       >
         <img 
           src={heroBackground} 
-          alt="" 
+          alt="Modern condominium building exterior" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />

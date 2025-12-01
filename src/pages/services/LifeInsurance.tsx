@@ -232,7 +232,7 @@ const georgiaCities = [
       >
         <img 
           src={heroBackground} 
-          alt="" 
+          alt="Multi-generational family portrait representing life insurance protection" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />
