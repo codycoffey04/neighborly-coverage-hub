@@ -385,7 +385,7 @@ const RentersInsurance = () => {
       <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto space-y-6 text-center">
-            <h2 className="text-2xl font-bold">Affordable Protection for Alabama & Georgia Renters</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Affordable Protection for Alabama & Georgia Renters</h2>
             <p className="text-muted-foreground leading-relaxed">
               Nearly 50% of renters across Alabama and Georgia lack insurance coverage, leaving themselves vulnerable to devastating financial loss. The reality is stark: a single apartment fire, burglary, or storm can destroy everything you own, with average claims ranging from $3,000 to $5,000. Without renters insurance, you're responsible for replacing every item out of pocket—furniture, electronics, clothing, and irreplaceable personal items.
             </p>
@@ -613,7 +613,7 @@ const RentersInsurance = () => {
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Our Clients Say</h2>
               <p className="text-lg text-muted-foreground text-balance">
                 Real reviews from renters we've helped protect across Alabama and Georgia.
               </p>
@@ -710,7 +710,7 @@ const RentersInsurance = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Renters Insurance Across Alabama & Georgia</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Renters Insurance Across Alabama & Georgia</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -762,7 +762,7 @@ const RentersInsurance = () => {
         {/* Final CTA Section */}
         <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light" id="quote-form">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
               Ready to protect your belongings for less than your monthly streaming subscriptions?
             </h2>
             <p className="text-xl text-white/90 mb-8">

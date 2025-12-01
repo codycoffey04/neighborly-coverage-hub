@@ -437,7 +437,7 @@ const CondoInsurance = () => {
       <section className="py-16">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">What Your Condo Policy Can Include</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Your Condo Policy Can Include</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coverageTypes.map((coverage, index) => (
@@ -465,7 +465,7 @@ const CondoInsurance = () => {
       <section className="py-16 bg-muted/30">
         <div className="container max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">HO-6 Coverage at a Glance</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">HO-6 Coverage at a Glance</h2>
           </div>
           <Card>
             <CardContent className="p-6">
@@ -494,7 +494,7 @@ const CondoInsurance = () => {
       <section className="py-16">
         <div className="container max-w-4xl mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Storms, Water, and Vertical Living</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Storms, Water, and Vertical Living</h2>
           </div>
           <Card className="border-2">
             <CardContent className="p-8">
@@ -539,7 +539,7 @@ const CondoInsurance = () => {
       <section className="py-16 bg-muted/30">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Ways to Reduce Cost Without Hollowing Out Coverage</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Ways to Reduce Cost Without Hollowing Out Coverage</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {savingsTips.map((tip, index) => (
@@ -567,7 +567,7 @@ const CondoInsurance = () => {
       <section className="py-16">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How Condo Claims Typically Work</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">How Condo Claims Typically Work</h2>
           </div>
           <div className="grid md:grid-cols-5 gap-6">
             {claimsSteps.map((step, index) => (
@@ -594,7 +594,7 @@ const CondoInsurance = () => {
       <section className="py-16 bg-muted/30">
         <div className="container max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Condo Insurance Questions We Answer Every Day</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Condo Insurance Questions We Answer Every Day</h2>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
@@ -615,7 +615,7 @@ const CondoInsurance = () => {
       <section className="py-16">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Our Clients Say</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {testimonials.map((testimonial, index) => (
@@ -647,7 +647,7 @@ const CondoInsurance = () => {
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Complete Your Coverage</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Complete Your Coverage</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore additional insurance options to protect every aspect of your life.
             </p>
@@ -755,7 +755,7 @@ const CondoInsurance = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Condo Insurance Across Alabama & Georgia</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Condo Insurance Across Alabama & Georgia</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -807,7 +807,7 @@ const CondoInsurance = () => {
       {/* Final CTA */}
       <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
             Have Questions About HO-6 Coverage?
           </h2>
           <p className="text-xl text-white/90 mb-8">
