@@ -42,7 +42,7 @@ export const Testimonials = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance text-3xl md:text-4xl lg:text-5xl tracking-tight">What Our Customers Say</h2>
+          <h2 className="text-balance">What Our Customers Say</h2>
           <p className="text-lg text-muted-foreground text-balance">
             Don't take our word for it — hear from families who made the switch.
           </p>
@@ -87,12 +87,12 @@ export const Testimonials = () => {
                 {/* Stars */}
                 <div className="flex gap-1 mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-3 w-3 text-yellow-400 fill-yellow-400" />
+                    <Star key={i} className="h-4 w-4 text-yellow-400 fill-yellow-400" />
                   ))}
                 </div>
                 
                 {/* Testimonial Text */}
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   "{testimonial.text}"
                 </p>
                 
@@ -101,8 +101,8 @@ export const Testimonials = () => {
                 
                 {/* Author - anchored to bottom */}
                 <div className="border-t pt-3 mt-4">
-                  <p className="font-semibold text-sm text-foreground">{testimonial.name}</p>
-                  <p className="text-xs text-muted-foreground">{testimonial.location}</p>
+                  <p className="font-semibold text-base text-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                 </div>
               </CardContent>
             </Card>

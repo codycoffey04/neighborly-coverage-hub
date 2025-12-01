@@ -40,12 +40,12 @@ export const Footer = () => {
           {/* Company */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Coffey Agencies Inc.</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {company.map((item, index) => (
-                <li key={index} className="py-1">
+                <li key={index}>
                   <Link 
                     to={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors inline-block py-2 min-h-[44px]"
                   >
                     {item.name}
                   </Link>
@@ -74,12 +74,12 @@ export const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {services.map((item, index) => (
-                <li key={index} className="py-1">
+                <li key={index}>
                   <Link 
                     to={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors inline-block py-2 min-h-[44px]"
                   >
                     {item.name}
                   </Link>
@@ -91,12 +91,12 @@ export const Footer = () => {
           {/* Resources */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {resources.map((item, index) => (
-                <li key={index} className="py-1">
+                <li key={index}>
                   <Link 
                     to={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors inline-block py-2 min-h-[44px]"
                   >
                     {item.name}
                   </Link>
@@ -117,12 +117,10 @@ export const Footer = () => {
                     <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                     <span>1913 W Main Street<br />Centre, AL 35960</span>
                   </p>
-                  <p className="flex items-center gap-2">
+                  <a href="tel:+12569276287" className="flex items-center gap-2 hover:text-primary transition-colors min-h-[44px] py-1" aria-label="Call Centre office at (256) 927-6287">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:+12569276287" className="hover:text-primary transition-colors" aria-label="Call Centre office at (256) 927-6287">
-                      (256) 927-6287
-                    </a>
-                  </p>
+                    <span>(256) 927-6287</span>
+                  </a>
                   <p className="flex items-start gap-2">
                     <Clock className="h-4 w-4 shrink-0 mt-0.5" />
                     <span>Monday–Friday, 8:00 AM – 5:00 PM</span>
@@ -138,12 +136,10 @@ export const Footer = () => {
                     <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                     <span>1703 Turner McCall Blvd SE<br />Rome, GA 30161</span>
                   </p>
-                  <p className="flex items-center gap-2">
+                  <a href="tel:+17067846511" className="flex items-center gap-2 hover:text-primary transition-colors min-h-[44px] py-1" aria-label="Call Rome office at (706) 784-6511">
                     <Phone className="h-4 w-4" />
-                    <a href="tel:+17067846511" className="hover:text-primary transition-colors" aria-label="Call Rome office at (706) 784-6511">
-                      (706) 784-6511
-                    </a>
-                  </p>
+                    <span>(706) 784-6511</span>
+                  </a>
                   <p className="flex items-start gap-2">
                     <Clock className="h-4 w-4 shrink-0 mt-0.5" />
                     <span>Monday–Friday, 8:30 AM – 4:30 PM</span>

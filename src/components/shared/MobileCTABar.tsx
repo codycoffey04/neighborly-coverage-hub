@@ -29,8 +29,8 @@ export const MobileCTABar = () => {
             {/* Get Quote Button */}
             <Link to="/contact" className="flex-1">
               <Button 
-                size="sm" 
-                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold"
+                size="default" 
+                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold min-h-[44px]"
               >
                 Get Quote
               </Button>
@@ -41,18 +41,18 @@ export const MobileCTABar = () => {
               <a
                 href="tel:+12569276287"
                 aria-label="Call Centre, Alabama office at (256) 927-6287"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
+                className="flex items-center gap-1.5 px-3 min-h-[44px] rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
               >
-                <Phone className="h-4 w-4 text-primary-foreground" />
-                <span className="text-xs font-medium text-primary-foreground">AL</span>
+                <Phone className="h-5 w-5 text-primary-foreground" />
+                <span className="text-sm font-medium text-primary-foreground">AL</span>
               </a>
               <a
                 href="tel:+17067846511"
                 aria-label="Call Rome, Georgia office at (706) 784-6511"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
+                className="flex items-center gap-1.5 px-3 min-h-[44px] rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
               >
-                <Phone className="h-4 w-4 text-primary-foreground" />
-                <span className="text-xs font-medium text-primary-foreground">GA</span>
+                <Phone className="h-5 w-5 text-primary-foreground" />
+                <span className="text-sm font-medium text-primary-foreground">GA</span>
               </a>
             </div>
           </div>
