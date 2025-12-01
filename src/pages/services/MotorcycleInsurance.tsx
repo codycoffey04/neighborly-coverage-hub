@@ -550,7 +550,7 @@ const MotorcycleInsurance = () => {
                   <p className="text-muted-foreground mb-4 flex-grow">
                     Protect your vehicles with comprehensive coverage across Alabama and Georgia. Competitive rates with multi-policy discounts.
                   </p>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Auto Insurance">
                     <Link to="/services/auto-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -568,7 +568,7 @@ const MotorcycleInsurance = () => {
                   <p className="text-muted-foreground mb-4 flex-grow">
                     Comprehensive homeowners coverage for Alabama and Georgia properties with protection against regional weather risks.
                   </p>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Home Insurance">
                     <Link to="/services/home-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -586,7 +586,7 @@ const MotorcycleInsurance = () => {
                   <p className="text-muted-foreground mb-4 flex-grow">
                     Affordable renters insurance starting at $8/month with auto bundle. Protect your belongings and liability.
                   </p>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Renters Insurance">
                     <Link to="/services/renters-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -607,7 +607,7 @@ const MotorcycleInsurance = () => {
                   <p className="text-muted-foreground mb-4 flex-grow">
                     Specialized coverage for condo owners protecting your unit improvements, personal property, and liability.
                   </p>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Condo Insurance">
                     <Link to="/services/condo-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -625,7 +625,7 @@ const MotorcycleInsurance = () => {
                   <p className="text-muted-foreground mb-4 flex-grow">
                     Protect your family's financial future with affordable term or whole life coverage starting at $25/month.
                   </p>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Life Insurance">
                     <Link to="/services/life-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>

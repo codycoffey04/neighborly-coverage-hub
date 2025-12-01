@@ -741,7 +741,7 @@ const georgiaCities = [
                   <CardDescription className="mb-4 flex-grow">
                     Required by law and essential for protecting your vehicle. Get liability, collision, and comprehensive coverage that fits your budget.
                   </CardDescription>
-                  <Button variant="outline" asChild className="w-full">
+                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Auto Insurance">
                     <Link to="/services/auto-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -758,7 +758,7 @@ const georgiaCities = [
                   <CardDescription className="mb-4 flex-grow">
                     Protect your biggest investment from storms, fire, theft, and liability. Coverage built for Alabama and Georgia homeowners.
                   </CardDescription>
-                  <Button variant="outline" asChild className="w-full">
+                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Home Insurance">
                     <Link to="/services/home-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -775,7 +775,7 @@ const georgiaCities = [
                   <CardDescription className="mb-4 flex-grow">
                     Affordable coverage for your belongings and liability protection. Often costs less than $20/month for solid coverage.
                   </CardDescription>
-                  <Button variant="outline" asChild className="w-full">
+                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Renters Insurance">
                     <Link to="/services/renters-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -795,7 +795,7 @@ const georgiaCities = [
                   <CardDescription className="mb-4 flex-grow">
                     HO-6 coverage for walls-in, betterments, and upgrades. Coordinates with your HOA's master policy to fill the gaps.
                   </CardDescription>
-                  <Button variant="outline" asChild className="w-full">
+                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Condo Insurance">
                     <Link to="/services/condo-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
@@ -812,7 +812,7 @@ const georgiaCities = [
                   <CardDescription className="mb-4 flex-grow">
                     Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.
                   </CardDescription>
-                  <Button variant="outline" asChild className="w-full">
+                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Motorcycle Insurance">
                     <Link to="/services/motorcycle-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>

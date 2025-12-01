@@ -25,7 +25,7 @@ export const ServiceArea = () => {
         {/* Featured Cities Grid - Card-Based Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 mb-16">
           {featuredCities.map((city, index) => (
-            <Link key={index} to={city.link} className="block">
+            <Link key={index} to={city.link} className="block" aria-label={`Get insurance quote for ${city.city}, ${city.state}`}>
               <Card className="border-2 group overflow-hidden hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out h-full">
                 {/* Gray header with inline icon + city name */}
                 <div className="bg-gray-200 px-4 py-3 flex items-center gap-2">
@@ -58,6 +58,7 @@ export const ServiceArea = () => {
           <Link 
             to="/service-areas" 
             className="inline-flex items-center gap-2 text-white/80 font-medium hover:text-white hover:underline"
+            aria-label="View all insurance service locations in Alabama and Georgia"
           >
             View All Locations
             <ArrowRight className="h-4 w-4" />
