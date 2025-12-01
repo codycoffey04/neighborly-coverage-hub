@@ -1,6 +1,7 @@
 import { MapPin, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const featuredCities = [
   { city: "Centre", state: "AL", link: "/centre-al" },
@@ -16,7 +17,7 @@ export const ServiceArea = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance text-white">Areas We Serve</h2>
+          <SectionHeading variant="white" centered>Areas We Serve</SectionHeading>
           <p className="text-lg text-white/80 text-balance">
             Protecting families across Alabama and Georgia with local expertise and personal service.
           </p>

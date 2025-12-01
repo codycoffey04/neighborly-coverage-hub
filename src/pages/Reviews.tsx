@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote, ExternalLink, MessageCircle, DollarSign, Heart, ShieldCheck, CheckCircle } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import heroBackground from "@/assets/contact-hero.jpg";
@@ -268,9 +269,9 @@ const Reviews = () => {
       {/* Office Ratings */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+          <SectionHeading centered className="mb-8">
             Our Google Ratings
-          </h2>
+          </SectionHeading>
           <div className="grid md:grid-cols-2 gap-6">
             {officeRatings.map((office, index) => (
               <Card key={index} className="border border-gray-200 shadow-sm rounded-xl hover:shadow-md transition-all">
@@ -364,9 +365,9 @@ const Reviews = () => {
       {/* What Customers Love About Us */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
+          <SectionHeading centered className="mb-12">
             What Customers Love About Us
-          </h2>
+          </SectionHeading>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((highlight, index) => {
@@ -395,9 +396,9 @@ const Reviews = () => {
       {/* Leave a Review */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
+          <SectionHeading centered className="mb-4">
             Had a Great Experience?
-          </h2>
+          </SectionHeading>
           <p className="text-lg text-muted-foreground mb-8">
             We'd love to hear about it!
           </p>
@@ -437,9 +438,9 @@ const Reviews = () => {
       {/* Bottom CTA */}
       <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <SectionHeading variant="white" centered className="mb-4">
             Ready to Experience the Difference?
-          </h2>
+          </SectionHeading>
           <p className="text-lg text-white/90 mb-8">
             Join thousands of Alabama and Georgia families who trust Coffey Agencies.
           </p>

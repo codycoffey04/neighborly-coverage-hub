@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Check } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export const FinalCTA = () => {
   return (
@@ -11,7 +12,7 @@ export const FinalCTA = () => {
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-balance text-white text-3xl md:text-4xl lg:text-5xl tracking-tight">Get Your Free Quote in 15 Minutes</h2>
+            <SectionHeading variant="white" centered className="lg:text-5xl tracking-tight">Get Your Free Quote in 15 Minutes</SectionHeading>
             <p className="text-lg text-white/90 text-balance max-w-2xl mx-auto">
               No obligations, no pressure. Just honest answers and coverage that actually fits your life.
             </p>

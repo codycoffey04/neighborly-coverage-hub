@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const testimonials = [
   {
@@ -42,7 +43,7 @@ export const Testimonials = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-balance">What Our Customers Say</h2>
+          <SectionHeading centered>What Our Customers Say</SectionHeading>
           <p className="text-lg text-muted-foreground text-balance">
             Don't take our word for it — hear from families who made the switch.
           </p>

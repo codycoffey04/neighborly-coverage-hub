@@ -1,6 +1,7 @@
 import { FileText, Search, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const steps = [
   {
@@ -29,7 +30,7 @@ export const HowItWorks = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-          <h2 className="text-balance text-3xl md:text-4xl lg:text-5xl tracking-tight">Getting Covered is Easy</h2>
+          <SectionHeading centered className="lg:text-5xl tracking-tight">Getting Covered is Easy</SectionHeading>
           <p className="text-lg text-muted-foreground text-balance">
             Three steps stand between you and peace of mind. Let's make it simple.
           </p>

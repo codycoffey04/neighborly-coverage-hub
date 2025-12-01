@@ -1,6 +1,7 @@
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Building2, Phone } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
@@ -133,7 +134,7 @@ const ServiceAreas = () => {
 
           {/* Office Locations */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Our Office Locations</h2>
+            <SectionHeading centered className="mb-8">Our Office Locations</SectionHeading>
             <div className="grid md:grid-cols-2 gap-8">
               {offices.map((office, index) => (
                 <Card key={index} className="border-2 overflow-hidden">
@@ -186,7 +187,7 @@ const ServiceAreas = () => {
 
           {/* Cities We Serve */}
           <div className="bg-muted/30 rounded-2xl p-8 md:p-12">
-            <h2 className="text-3xl font-bold mb-8 text-center">Cities We Serve</h2>
+            <SectionHeading centered className="mb-8">Cities We Serve</SectionHeading>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Alabama */}
@@ -235,7 +236,7 @@ const ServiceAreas = () => {
 
           {/* CTA Section */}
           <div className="mt-16 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <SectionHeading centered className="mb-4">Ready to Get Started?</SectionHeading>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               No matter where you are in Alabama or Georgia, we're here to help protect what matters most.
             </p>

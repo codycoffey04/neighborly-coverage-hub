@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { MapPin, Phone, Clock, Star, CheckCircle } from "lucide-react";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
@@ -191,7 +192,7 @@ const Contact = () => {
       <section id="contact-form" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Send Us a Message</h2>
+            <SectionHeading centered className="mb-4">Send Us a Message</SectionHeading>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Fill out the form below and we'll get back to you within one business day.
             </p>
@@ -365,7 +366,7 @@ const Contact = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Offices</h2>
+            <SectionHeading centered className="mb-4">Our Offices</SectionHeading>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Visit us in person or connect remotely — we serve all of Alabama and Georgia from these two locations.
             </p>
@@ -456,7 +457,7 @@ const Contact = () => {
       {/* Service Area Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">Serving All of Alabama & Georgia</h2>
+          <SectionHeading centered className="mb-4">Serving All of Alabama & Georgia</SectionHeading>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             From our offices in Centre and Rome, we provide insurance coverage to families throughout both states. No matter where you live in Alabama or Georgia, we can help — no office visit required.
           </p>
@@ -469,7 +470,7 @@ const Contact = () => {
       {/* Final CTA Section */}
       <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+          <SectionHeading variant="white" centered className="mb-4">Ready to Get Started?</SectionHeading>
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
             Get a free quote in about 15 minutes. No obligation, no pressure.
           </p>
