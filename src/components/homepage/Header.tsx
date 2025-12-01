@@ -160,21 +160,21 @@ export const Header = () => {
               <div className="space-y-2">
                 <button
                   onClick={() => setServicesExpanded(!servicesExpanded)}
-                  className="flex items-center justify-between w-full text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                  className="flex items-center justify-between w-full text-base font-medium text-primary hover:text-primary/80 transition-colors min-h-[44px] py-3"
                   aria-expanded={servicesExpanded}
                   aria-controls="mobile-services-menu"
                 >
                   Services
-                  <ChevronDown className={`h-4 w-4 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`h-5 w-5 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
                 </button>
                 {servicesExpanded && (
-                  <div id="mobile-services-menu" className="pl-4 space-y-2">
+                  <div id="mobile-services-menu" className="pl-4 space-y-1">
                     {serviceLinks.map((link) => (
                       <Link 
                         key={link.href}
                         to={link.href} 
                         onClick={() => setMobileMenuOpen(false)} 
-                        className="block text-sm text-primary/70 hover:text-primary transition-colors"
+                        className="block text-base text-primary/70 hover:text-primary transition-colors min-h-[44px] py-3"
                       >
                         {link.name}
                       </Link>
@@ -185,28 +185,28 @@ export const Header = () => {
 
               <Link 
                 to="/about" 
-                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 to="/contact" 
-                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
               </Link>
               <Link 
                 to="/faq" 
-                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 FAQ
               </Link>
               <Link 
                 to="/reviews" 
-                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Reviews
@@ -216,21 +216,21 @@ export const Header = () => {
               <div className="space-y-2">
                 <button
                   onClick={() => setLearnExpanded(!learnExpanded)}
-                  className="flex items-center justify-between w-full text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                  className="flex items-center justify-between w-full text-base font-medium text-primary hover:text-primary/80 transition-colors min-h-[44px] py-3"
                   aria-expanded={learnExpanded}
                   aria-controls="mobile-learn-menu"
                 >
                   Learn
-                  <ChevronDown className={`h-4 w-4 transition-transform ${learnExpanded ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`h-5 w-5 transition-transform ${learnExpanded ? 'rotate-180' : ''}`} />
                 </button>
                 {learnExpanded && (
-                  <div id="mobile-learn-menu" className="pl-4 space-y-2">
+                  <div id="mobile-learn-menu" className="pl-4 space-y-1">
                     {learnLinks.map((link) => (
                       <Link 
                         key={link.href}
                         to={link.href} 
                         onClick={() => setMobileMenuOpen(false)} 
-                        className="block text-sm text-primary/70 hover:text-primary transition-colors"
+                        className="block text-base text-primary/70 hover:text-primary transition-colors min-h-[44px] py-3"
                       >
                         {link.name}
                       </Link>
@@ -240,12 +240,12 @@ export const Header = () => {
               </div>
 
               <div className="flex flex-col gap-2 pt-2 border-t border-primary/20">
-                <a href="tel:+12569276287" className="flex items-center gap-2 text-sm text-primary" aria-label="Call Centre, Alabama office at (256) 927-6287">
-                  <Phone className="h-4 w-4" />
+                <a href="tel:+12569276287" className="flex items-center gap-2 text-base text-primary min-h-[44px] py-2" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                  <Phone className="h-5 w-5" />
                   <span>(256) 927-6287 - Centre</span>
                 </a>
-                <a href="tel:+17067846511" className="flex items-center gap-2 text-sm text-primary" aria-label="Call Rome, Georgia office at (706) 784-6511">
-                  <Phone className="h-4 w-4" />
+                <a href="tel:+17067846511" className="flex items-center gap-2 text-base text-primary min-h-[44px] py-2" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                  <Phone className="h-5 w-5" />
                   <span>(706) 784-6511 - Rome</span>
                 </a>
               </div>

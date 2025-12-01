@@ -91,7 +91,7 @@ export const FAQ = () => {
                   <span className="font-semibold text-lg pr-4">{faq.question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="pb-5">
-                  <div className="text-[0.925rem] text-muted-foreground leading-relaxed border-l-2 border-[#22c55e] pl-4">
+                  <div className="text-lg text-muted-foreground leading-relaxed border-l-2 border-accent pl-4">
                     {faq.answer}
                   </div>
                 </AccordionContent>
