@@ -191,7 +191,7 @@ const Contact = () => {
       <section id="contact-form" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Send Us a Message</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Send Us a Message</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Fill out the form below and we'll get back to you within one business day.
             </p>
@@ -365,7 +365,7 @@ const Contact = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Offices</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Offices</h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Visit us in person or connect remotely — we serve all of Alabama and Georgia from these two locations.
             </p>
