@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
-import coffeyLogo from "@/assets/coffey-logo-transparent.png";
+import coffeyLogo from "@/assets/coffey-logo-transparent-2.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -43,9 +43,9 @@ export const Header = () => {
             <img 
               src={coffeyLogo} 
               alt="Coffey Agencies - Insurance Services" 
-              width={240}
-              height={67}
-              className="h-[67px] w-auto"
+              width={180}
+              height={56}
+              className="h-14 w-auto"
             />
           </Link>
 
