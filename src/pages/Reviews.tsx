@@ -268,6 +268,9 @@ const Reviews = () => {
       {/* Office Ratings */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+            Our Google Ratings
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {officeRatings.map((office, index) => (
               <Card key={index} className="border border-gray-200 shadow-sm rounded-xl hover:shadow-md transition-all">
