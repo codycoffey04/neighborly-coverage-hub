@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -342,7 +343,7 @@ const LearnArticle = () => {
           {/* FAQ Section */}
           {article.faqs.length > 0 && (
             <div className="mt-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
+              <SectionHeading className="mb-6">Frequently Asked Questions</SectionHeading>
               <Accordion type="single" collapsible className="w-full">
                 {article.faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`faq-${index}`}>
@@ -383,7 +384,7 @@ const LearnArticle = () => {
       {relatedArticles.length > 0 && (
         <section className="py-16 px-4 bg-gray-50">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-8">Related Guides</h2>
+            <SectionHeading className="mb-8">Related Guides</SectionHeading>
             <div className="grid md:grid-cols-3 gap-6">
               {relatedArticles.map((related) => (
                 <Card key={related.slug} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out group">
@@ -414,7 +415,7 @@ const LearnArticle = () => {
       {/* Final CTA Section */}
       <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">Have Questions About Your Coverage?</h2>
+          <SectionHeading variant="white" className="mb-4">Have Questions About Your Coverage?</SectionHeading>
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
             Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
           </p>
