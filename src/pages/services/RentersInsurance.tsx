@@ -313,7 +313,7 @@ const RentersInsurance = () => {
       >
         <img 
           src={heroBackground} 
-          alt="" 
+          alt="Apartment living room with personal belongings covered by renters insurance" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />

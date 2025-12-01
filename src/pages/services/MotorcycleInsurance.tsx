@@ -279,7 +279,7 @@ const MotorcycleInsurance = () => {
       >
         <img 
           src={heroBackground} 
-          alt="" 
+          alt="Motorcycle parked on scenic road in Alabama or Georgia" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />

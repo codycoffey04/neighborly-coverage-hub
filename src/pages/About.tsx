@@ -147,7 +147,7 @@ const About = () => {
       >
         <img 
           src={aboutHero} 
-          alt="" 
+          alt="Coffey Agencies Centre Alabama office exterior" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

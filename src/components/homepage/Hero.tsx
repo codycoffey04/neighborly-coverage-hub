@@ -12,7 +12,7 @@ export const Hero = () => {
     >
       <img 
         src={heroBackground} 
-        alt="" 
+        alt="Alabama and Georgia families reviewing insurance options with Coffey Agencies" 
         fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ objectPosition: 'center 35%' }}

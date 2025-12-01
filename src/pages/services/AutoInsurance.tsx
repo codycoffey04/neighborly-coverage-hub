@@ -300,7 +300,7 @@ const AutoInsurance = () => {
       >
         <img 
           src={heroBackground} 
-          alt="" 
+          alt="Car keys and auto insurance documents on desk" 
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />

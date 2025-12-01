@@ -121,6 +121,49 @@ const Claims = () => {
             }))
           })}
         </script>
+        
+        {/* HowTo Schema for Claims Process */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to File an Insurance Claim",
+            "description": "Step-by-step guide for filing auto, home, renters, condo, or life insurance claims with Coffey Agencies in Alabama and Georgia.",
+            "totalTime": "PT30M",
+            "step": [
+              {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Make sure everyone is safe",
+                "text": "Your safety comes first. If anyone is injured, call 911 immediately."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Call the police if required",
+                "text": "For auto accidents, theft, vandalism, or break-ins — always file a police report. You'll need the report number for your claim."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Document everything",
+                "text": "Take photos and videos of all damage before moving anything or making repairs. The more documentation, the smoother your claim."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Prevent further damage",
+                "text": "Take reasonable steps to protect your property from additional damage (tarp a roof, board a window). Keep receipts for any emergency repairs."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Contact Coffey Agencies",
+                "text": "Call Coffey Agencies so we can help you report the claim correctly and explain what happens next. Centre, AL: (256) 927-6287. Rome, GA: (706) 784-6511."
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Header />
