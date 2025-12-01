@@ -351,7 +351,7 @@ const MotorcycleInsurance = () => {
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Build a Policy That Protects You and Your Bike</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Build a Policy That Protects You and Your Bike</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Motorcycle insurance works differently than auto insurance. Riders face unique exposures—no steel cage around you, higher theft rates, and custom modifications that standard policies don't cover. We structure coverage to address these realities while keeping premiums reasonable. Bundle with home or auto for multi-policy savings.
               </p>
@@ -381,7 +381,7 @@ const MotorcycleInsurance = () => {
         {/* Regional Considerations Section */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold mb-6">Riding Risks in Alabama and Georgia</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Riding Risks in Alabama and Georgia</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
                 The Southeast offers year-round riding but comes with hazards that shape how we recommend coverage. Georgia recorded 221 motorcyclist fatalities in 2022—the highest in a decade. Alabama saw motorcycle deaths jump 36% from 2023 to 2024. Understanding these risks helps you choose appropriate limits and deductibles.
@@ -435,7 +435,7 @@ const MotorcycleInsurance = () => {
         {/* Ways to Save Section */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold mb-6 text-center">Ways to Lower Your Motorcycle Insurance Premium</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Ways to Lower Your Motorcycle Insurance Premium</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {savingsTips.map((tip, index) => {
@@ -477,7 +477,7 @@ const MotorcycleInsurance = () => {
         {/* FAQ Section */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">Motorcycle Insurance Questions We Answer Every Day</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">Motorcycle Insurance Questions We Answer Every Day</h2>
             
             <Accordion type="single" collapsible className="w-full space-y-4">
               {faqs.map((faq, index) => (
@@ -497,7 +497,7 @@ const MotorcycleInsurance = () => {
         {/* Testimonials Section */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">What Our Clients Say</h2>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {testimonials.map((testimonial, index) => (
@@ -530,7 +530,7 @@ const MotorcycleInsurance = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Complete Your Coverage</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Complete Your Coverage</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Explore additional insurance options to protect every aspect of your life.
               </p>
@@ -638,7 +638,7 @@ const MotorcycleInsurance = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Motorcycle Insurance Across Alabama & Georgia</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Motorcycle Insurance Across Alabama & Georgia</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -690,7 +690,7 @@ const MotorcycleInsurance = () => {
         {/* Final CTA Section */}
         <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light text-white">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Get Your Motorcycle Covered?</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Ready to Get Your Motorcycle Covered?</h2>
             <p className="text-lg mb-8 opacity-90">
               Call us today or request a free quote online. We'll walk you through your options and answer every question.
             </p>

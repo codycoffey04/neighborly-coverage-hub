@@ -372,7 +372,7 @@ const HomeInsurance = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                   Build a Policy That Mirrors Real-World Risk
                 </h2>
               </div>
@@ -429,7 +429,7 @@ const HomeInsurance = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                   Ways to Reduce Cost Without Underinsuring
                 </h2>
               </div>
@@ -463,7 +463,7 @@ const HomeInsurance = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                   Home Insurance Questions We Answer Every Day
                 </h2>
               </div>
@@ -489,7 +489,7 @@ const HomeInsurance = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                   What Our Clients Say
                 </h2>
               </div>
@@ -530,7 +530,7 @@ const HomeInsurance = () => {
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Complete Your Coverage</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Complete Your Coverage</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Explore additional insurance options to protect every aspect of your life.
               </p>
@@ -639,7 +639,7 @@ const HomeInsurance = () => {
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                   Home Insurance Across Alabama & Georgia
                 </h2>
               </div>
@@ -698,7 +698,7 @@ const HomeInsurance = () => {
         {/* Final CTA */}
         <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
               Ready to Protect Your Home?
             </h2>
             <p className="text-xl text-white/90 mb-8">
