@@ -356,7 +356,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg" asChild>
-              <Link to="/contact">
+              <Link to="/#quote-form">
                 Get Quote
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
@@ -587,7 +587,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           </p>
           
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg" asChild>
-            <Link to="/contact">
+            <Link to="/#quote-form">
               Get Quote
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

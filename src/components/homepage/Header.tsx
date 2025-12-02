@@ -150,7 +150,7 @@ export const Header = () => {
                 <span className="font-medium">(706) 784-6511</span>
               </TrackedPhone>
             </div>
-            <Link to="/contact">
+            <Link to="/#quote-form">
               <Button className="bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
                 Get Quote
               </Button>
@@ -287,7 +287,7 @@ export const Header = () => {
                   <span>(706) 784-6511 - Rome</span>
                 </TrackedPhone>
               </div>
-              <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/#quote-form" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
                   Get Quote
                 </Button>

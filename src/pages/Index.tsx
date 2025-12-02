@@ -12,8 +12,10 @@ import { BottomCTA } from "@/components/homepage/BottomCTA";
 import { Footer } from "@/components/homepage/Footer";
 import { Helmet } from "react-helmet-async";
 import heroBackground from "@/assets/hero-background.jpg";
+import { useScrollToQuoteForm } from "@/hooks/useScrollToQuoteForm";
 
 const Index = () => {
+  useScrollToQuoteForm();
   // Comprehensive Schema.org JSON-LD for homepage
   const organizationSchema = {
     "@context": "https://schema.org",

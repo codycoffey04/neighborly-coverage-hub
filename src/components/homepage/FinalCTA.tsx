@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export const FinalCTA = () => {
   return (
-    <section className="section-spacing bg-primary relative overflow-hidden">
+    <section id="quote-form" className="section-spacing bg-primary relative overflow-hidden">
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           {/* Header */}

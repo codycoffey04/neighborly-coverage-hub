@@ -414,7 +414,7 @@ const CondoInsurance = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <Link to="/contact">Get Quote</Link>
+                  <Link to="/#quote-form">Get Quote</Link>
                 </Button>
                 <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <TrackedPhone
@@ -838,7 +838,7 @@ const CondoInsurance = () => {
             className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             asChild
           >
-            <Link to="/contact">Get Quote</Link>
+            <Link to="/#quote-form">Get Quote</Link>
           </Button>
 
           {/* Phone Links */}

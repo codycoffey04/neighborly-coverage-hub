@@ -149,7 +149,7 @@ const NotFound = () => {
                     Back to Home
                   </Button>
                 </Link>
-                <Link to="/contact">
+                <Link to="/#quote-form">
                   <Button className="bg-accent text-accent-foreground hover:bg-accent/90" aria-label="Get your free insurance quote">
                     Get Quote
                   </Button>

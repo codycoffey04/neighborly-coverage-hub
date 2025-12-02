@@ -491,7 +491,7 @@ const About = () => {
           </p>
           
           {/* CTA Button */}
-          <Link to="/contact">
+          <Link to="/#quote-form">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" aria-label="Get a free insurance quote">
               Get Quote
             </Button>

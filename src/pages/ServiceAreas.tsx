@@ -248,7 +248,7 @@ const ServiceAreas = () => {
               No matter where you are in Alabama or Georgia, we're here to help protect what matters most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
+              <Link to="/#quote-form">
                 <Button size="lg" className="min-w-[200px]">
                   Get Quote
                 </Button>
