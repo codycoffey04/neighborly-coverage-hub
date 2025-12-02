@@ -113,7 +113,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "Alabama vs. Georgia: Minimum Requirements"
+        content: "What Are Alabama & Georgia's Minimum Requirements?"
       },
       {
         type: 'paragraph',
@@ -136,7 +136,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "What Affects Your Rate"
+        content: "What Affects My Auto Insurance Rate?"
       },
       {
         type: 'paragraph',
@@ -199,7 +199,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "How to Save on Auto Insurance"
+        content: "How Can I Save on Auto Insurance?"
       },
       {
         type: 'list',
@@ -327,7 +327,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "What Standard Policies Don't Cover"
+        content: "What Doesn't Standard Home Insurance Cover?"
       },
       {
         type: 'paragraph',
@@ -381,7 +381,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "Alabama & Georgia: Regional Risks"
+        content: "What Regional Risks Affect Alabama & Georgia Homes?"
       },
       {
         type: 'paragraph',
@@ -467,7 +467,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "How to Save on Home Insurance"
+        content: "How Can I Save on Home Insurance?"
       },
       {
         type: 'list',
@@ -658,7 +658,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Actual Cash Value vs. Replacement Cost"
+        content: "What's the Difference Between ACV and Replacement Cost?"
       },
       {
         type: "heading",
@@ -723,7 +723,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "When Renters Insurance Pays Off"
+        content: "When Does Renters Insurance Pay Off?"
       },
       {
         type: "heading",
@@ -857,7 +857,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Understanding HOA Master Policies"
+        content: "What Does the HOA Master Policy Cover?"
       },
       {
         type: "paragraph",
@@ -954,7 +954,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Common Condo Insurance Mistakes"
+        content: "What Condo Insurance Mistakes Should I Avoid?"
       },
       {
         type: "heading",
@@ -1081,7 +1081,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "Term vs. Permanent Life Insurance"
+        content: "What's the Difference Between Term and Permanent Insurance?"
       },
       {
         type: 'heading',
@@ -1232,7 +1232,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "When to Buy Life Insurance"
+        content: "When Should I Buy Life Insurance?"
       },
       {
         type: 'heading',
@@ -1265,7 +1265,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "What Affects Your Premium"
+        content: "What Affects My Life Insurance Premium?"
       },
       {
         type: 'heading',
@@ -1324,7 +1324,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'heading',
         level: 2,
-        content: "Common Life Insurance Mistakes"
+        content: "What Life Insurance Mistakes Should I Avoid?"
       },
       {
         type: 'heading',
@@ -1422,7 +1422,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Auto Insurance Requirements"
+        content: "What Auto Insurance Does Alabama Require?"
       },
       {
         type: "paragraph",
@@ -1485,7 +1485,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Penalties for Driving Uninsured"
+        content: "What Are the Penalties for Driving Uninsured in Alabama?"
       },
       {
         type: "paragraph",
@@ -1542,7 +1542,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Home Insurance Requirements"
+        content: "What Home Insurance Does Alabama Require?"
       },
       {
         type: "paragraph",
@@ -1584,7 +1584,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Renters Insurance Requirements"
+        content: "Is Renters Insurance Required in Alabama?"
       },
       {
         type: "paragraph",
@@ -1619,7 +1619,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Condo Insurance Requirements"
+        content: "Is Condo Insurance Required in Alabama?"
       },
       {
         type: "paragraph",
@@ -1654,7 +1654,7 @@ export const learnArticles: LearnArticle[] = [
       {
         type: "heading",
         level: 2,
-        content: "Alabama-Specific Considerations"
+        content: "What Should Alabama Residents Know?"
       },
       {
         type: "heading",
@@ -1730,7 +1730,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Auto Insurance Requirements"
+        content: "What Auto Insurance Does Georgia Require?"
       },
       {
         type: "paragraph",
@@ -1775,7 +1775,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Penalties for Driving Uninsured"
+        content: "What Are the Penalties for Driving Uninsured in Georgia?"
       },
       {
         type: "paragraph",
@@ -1828,7 +1828,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Home Insurance Requirements"
+        content: "What Home Insurance Does Georgia Require?"
       },
       {
         type: "paragraph",
@@ -1918,7 +1918,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Georgia-Specific Considerations"
+        content: "What Should Georgia Residents Know?"
       },
       {
         type: "paragraph",
@@ -2038,7 +2038,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "Benefits Beyond Savings"
+        content: "What Are the Benefits Beyond Savings?"
       },
       {
         type: "paragraph",
@@ -2062,7 +2062,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "When Bundling Makes Sense"
+        content: "When Does Bundling Make Sense?"
       },
       {
         type: "paragraph",
@@ -2092,7 +2092,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "heading",
-        content: "When to Shop Separately"
+        content: "When Should I Shop Separately?"
       },
       {
         type: "paragraph",
