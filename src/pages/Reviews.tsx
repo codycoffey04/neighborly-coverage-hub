@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote, ExternalLink, MessageCircle, DollarSign, Heart, ShieldCheck, CheckCircle } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import heroBackground from "@/assets/contact-hero.jpg";
 
 const officeRatings = [

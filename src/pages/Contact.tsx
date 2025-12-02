@@ -514,8 +514,9 @@ const Contact = () => {
                         pageType="contact-office"
                         pageUrl={location.pathname}
                         ariaLabel={`Call ${office.name.split(',')[0]} office at ${office.phone}`}
+                      >
                         Call {office.name.split(',')[0]} Office
-                      </a>
+                      </TrackedPhone>
                     </Button>
                   </div>
                 </CardContent>
