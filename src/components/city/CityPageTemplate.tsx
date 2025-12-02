@@ -337,7 +337,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </span>
             <span className="flex items-center gap-2 text-white/90 text-sm">
               <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-              4.7★ rated service
+              4.7 rated service
             </span>
           </div>
           
