@@ -189,7 +189,7 @@ const Contact = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <a href="/contact#contact-form">Get Your Free Quote</a>
+                  <a href="/contact#contact-form">Get Quote</a>
                 </Button>
                 <Button size="lg" variant="outline" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md" asChild>
                   <TrackedPhone
@@ -554,7 +554,7 @@ const Contact = () => {
             asChild 
             aria-label="Get your free insurance quote"
           >
-            <a href="#contact-form">Get Your Free Quote</a>
+            <a href="#contact-form">Get Quote</a>
           </Button>
           
           {/* Phone Numbers */}

@@ -151,7 +151,7 @@ const NotFound = () => {
                 </Link>
                 <Link to="/contact">
                   <Button className="bg-accent text-accent-foreground hover:bg-accent/90" aria-label="Get your free insurance quote">
-                    Get Your Free Quote
+                    Get Quote
                   </Button>
                 </Link>
               </div>

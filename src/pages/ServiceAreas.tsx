@@ -250,7 +250,7 @@ const ServiceAreas = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="min-w-[200px]">
-                  Get Your Free Quote
+                  Get Quote
                 </Button>
               </Link>
               <TrackedPhone
