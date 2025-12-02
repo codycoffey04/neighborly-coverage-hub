@@ -17,7 +17,7 @@ export const Hero = () => {
         alt="Alabama and Georgia families reviewing insurance options with Coffey Agencies" 
         fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: 'center 20%' }}
+        style={{ objectPosition: 'center 45%' }}
       />
       {/* Subtle dark gradient for text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
