@@ -134,6 +134,11 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   const office = city.isOfficeCity ? officeDetails[city.nearestOffice] : null;
   const nearestOfficeInfo = officeDetails[city.nearestOffice];
   const testimonials = city.testimonials || defaultTestimonials;
+  
+  // Get phone number for this city - use localPhone if available, otherwise use nearest office phone
+  const displayPhone = city.localPhone || nearestOfficeInfo.phone;
+  const phoneNumber = displayPhone.replace(/\D/g, ''); // Remove non-digits for tel: link
+  const telLink = `tel:+1${phoneNumber}`;
 
   // Set page context for Tidio chatbot
   useEffect(() => {
@@ -184,7 +189,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "postalCode": city.zipCodes[0],
       "addressCountry": "US"
     },
-    "telephone": office.phone,
+    "telephone": city.localPhone || office.phone,
     "openingHours": "Mo-Fr 08:00-17:00",
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -350,20 +355,12 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
               </Link>
             </Button>
             <a 
-              href="tel:+12569276287" 
+              href={telLink}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-white/95 text-primary font-medium rounded-md shadow-sm hover:shadow-md transition-all"
-              aria-label="Call Centre, Alabama office at (256) 927-6287"
+              aria-label={`Call ${city.city} office at ${displayPhone}`}
             >
               <Phone className="w-4 h-4" />
-              (256) 927-6287
-            </a>
-            <a 
-              href="tel:+17067846511" 
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-white/95 text-primary font-medium rounded-md shadow-sm hover:shadow-md transition-all"
-              aria-label="Call Rome, Georgia office at (706) 784-6511"
-            >
-              <Phone className="w-4 h-4" />
-              (706) 784-6511
+              {displayPhone}
             </a>
           </div>
         </div>
@@ -584,12 +581,12 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </Link>
           </Button>
           
-          {/* Phone Numbers */}
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
+          {/* Phone Number */}
+          <div className="mt-6 flex items-center justify-center gap-2 text-white/90">
             <span>Or call us:</span>
-            <a href="tel:+12569276287" className="text-white hover:text-accent transition-colors" aria-label="Call Centre, Alabama office">(256) 927-6287</a>
-            <span className="hidden sm:inline">|</span>
-            <a href="tel:+17067846511" className="text-white hover:text-accent transition-colors" aria-label="Call Rome, Georgia office">(706) 784-6511</a>
+            <a href={telLink} className="text-white hover:text-accent transition-colors" aria-label={`Call ${city.city} office at ${displayPhone}`}>
+              {displayPhone}
+            </a>
           </div>
           
           {/* Trust Badges */}
