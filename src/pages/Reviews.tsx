@@ -449,7 +449,7 @@ const Reviews = () => {
           
           {/* Green CTA button */}
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg mb-6" asChild>
-            <Link to="/contact">Get Quote</Link>
+            <Link to="/#quote-form">Get Quote</Link>
           </Button>
           
           {/* Phone numbers */}

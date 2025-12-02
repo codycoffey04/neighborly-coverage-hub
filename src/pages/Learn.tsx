@@ -178,7 +178,7 @@ const Learn = () => {
           <p className="text-lg text-white/90 mb-8">
             Our guides cover the basics, but every situation is different. Talk to a licensed agent who can answer your specific questions.
           </p>
-          <Link to="/contact">
+          <Link to="/#quote-form">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
               Get Quote
               <ArrowRight className="w-5 h-5 ml-2" />

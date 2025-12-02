@@ -115,7 +115,7 @@ const LearnArticle = () => {
             No obligation. We'll find the right coverage for your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/contact">
+            <Link to="/#quote-form">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
                 Get Quote
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -433,7 +433,7 @@ const LearnArticle = () => {
           </p>
           
           {/* CTA Button - Green */}
-          <Link to="/contact">
+          <Link to="/#quote-form">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
               Get Quote
               <ArrowRight className="w-5 h-5 ml-2" />
