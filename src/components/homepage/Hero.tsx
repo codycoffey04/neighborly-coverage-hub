@@ -40,7 +40,7 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center items-center">
-            <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-12 py-8 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:shadow-[0_0_12px_rgba(34,197,94,0.55)] ring-1 ring-white/30 hover:-translate-y-1 transition-all duration-300 group">
+            <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-12 py-8 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:shadow-[0_0_12px_rgba(34,197,94,0.55)] ring-1 ring-white/30 hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 group">
               <Link to="/contact">
                 Get Your Free Quote
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
