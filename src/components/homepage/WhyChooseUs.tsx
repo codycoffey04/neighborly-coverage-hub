@@ -4,23 +4,23 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 const pillars = [
   {
     icon: MapPin,
-    title: "Local Expertise",
-    description: "Two offices. Two states. One team that actually knows your roads, your weather, and your risks. We're not a call center — we're your neighbors."
+    title: "Local to Alabama & Georgia",
+    description: "Agents in Centre, AL and Rome, GA who know your roads, weather, and lenders."
   },
   {
     icon: Users,
-    title: "Real People, Real Service",
-    description: "Request a quote online, get a callback within 24 hours from a licensed agent who answers your questions — not a script."
+    title: "Real People, Every Call",
+    description: "You talk to a licensed agent, not a bot or phone tree—start to finish."
   },
   {
     icon: Zap,
-    title: "Simple, Fast Process",
-    description: "Quote in minutes. Coverage the same day. No paperwork maze, no endless hold music, no 'your call is important to us.'"
+    title: "Fast, Simple Quotes",
+    description: "Tell us the basics once; we usually have options for you in under 15 minutes."
   },
   {
     icon: DollarSign,
-    title: "Bundle & Save Up to $600",
-    description: "Combine auto + home and keep more money where it belongs. One policy, one renewal, one team — maximum savings."
+    title: "Bundle & Save Big",
+    description: "Most families save 15–25%—up to about $600 a year—when they bundle home + auto."
   }
 ];
 
@@ -30,9 +30,9 @@ export const WhyChooseUs = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <SectionHeading variant="white" centered className="lg:text-5xl tracking-tight">Why Choose Coffey Agencies?</SectionHeading>
+          <SectionHeading variant="white" centered className="lg:text-5xl tracking-tight">Why Drivers and Homeowners Choose Coffey Agencies</SectionHeading>
           <p className="text-lg text-white/80 text-balance">
-            16 years of protecting Alabama and Georgia families. Here's why our clients trust us.
+            Four reasons Alabama & Georgia families trust us with their coverage.
           </p>
         </div>
 
@@ -62,15 +62,18 @@ export const WhyChooseUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <p className="text-4xl font-bold text-secondary mb-2">100+</p>
-              <p className="text-white/80">Years Combined Experience</p>
+              <p className="text-lg font-semibold text-white mb-1">Years of Experience</p>
+              <p className="text-sm text-white/70">Combined insurance experience across our team.</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">Hablamos</p>
-              <p className="text-white/80">Español</p>
+              <p className="text-4xl font-bold text-secondary mb-2">4.8★</p>
+              <p className="text-lg font-semibold text-white mb-1">200+ Google Reviews</p>
+              <p className="text-sm text-white/70">Rated 4.8 out of 5 by Alabama & Georgia customers.</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">2</p>
-              <p className="text-white/80">Locations</p>
+              <p className="text-4xl font-bold text-secondary mb-2">Hablamos Español</p>
+              <p className="text-lg font-semibold text-white mb-1">Bilingual Support</p>
+              <p className="text-sm text-white/70">Spanish-speaking agents available for quotes and service.</p>
             </div>
           </div>
         </div>
