@@ -2,8 +2,9 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { MessageCircle, CheckCircle, Phone } from "lucide-react";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
 import faqHeroBackground from "@/assets/faq-hero.jpg";
 
@@ -137,6 +138,7 @@ const faqs = [
 ];
 
 const FAQ = () => {
+  const location = useLocation();
   // Flatten all FAQ questions for schema
   const allQuestions = faqs.flatMap(section => section.questions);
   
@@ -299,23 +301,33 @@ const FAQ = () => {
           {/* Phone Links */}
           <div className="flex flex-wrap justify-center items-center gap-4 mt-6 text-sm text-white/90">
             <span>Or call us:</span>
-            <a 
-              href="tel:+12569276287"
-              aria-label="Call Centre, Alabama office at (256) 927-6287"
+            <TrackedPhone
+              phone="(256) 927-6287"
+              phoneRaw="2569276287"
+              location="Centre, AL"
+              office="centre"
+              pageType="faq"
+              pageUrl={location.pathname}
               className="flex items-center gap-1.5 hover:text-white transition-colors"
+              ariaLabel="Call Centre, Alabama office at (256) 927-6287"
             >
               <Phone className="h-4 w-4" />
               (256) 927-6287
-            </a>
+            </TrackedPhone>
             <span className="text-white/50">|</span>
-            <a 
-              href="tel:+17067846511"
-              aria-label="Call Rome, Georgia office at (706) 784-6511"
+            <TrackedPhone
+              phone="(706) 784-6511"
+              phoneRaw="7067846511"
+              location="Rome, GA"
+              office="rome"
+              pageType="faq"
+              pageUrl={location.pathname}
               className="flex items-center gap-1.5 hover:text-white transition-colors"
+              ariaLabel="Call Rome, Georgia office at (706) 784-6511"
             >
               <Phone className="h-4 w-4" />
               (706) 784-6511
-            </a>
+            </TrackedPhone>
           </div>
 
           {/* Trust Badges */}

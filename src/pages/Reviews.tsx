@@ -173,6 +173,7 @@ const highlights = [
 ];
 
 const Reviews = () => {
+  const location = useLocation();
   const reviewsSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -453,13 +454,31 @@ const Reviews = () => {
           {/* Phone numbers */}
           <p className="text-white/90 mb-2">Or call us:</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:+12569276287" className="text-white hover:text-accent transition-colors font-semibold" aria-label="Call Centre, Alabama office at (256) 927-6287">
+            <TrackedPhone
+              phone="(256) 927-6287"
+              phoneRaw="2569276287"
+              location="Centre, AL"
+              office="centre"
+              pageType="reviews"
+              pageUrl={location.pathname}
+              className="text-white hover:text-accent transition-colors font-semibold"
+              ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+            >
               (256) 927-6287
-            </a>
+            </TrackedPhone>
             <span className="text-white/60 hidden sm:inline">|</span>
-            <a href="tel:+17067846511" className="text-white hover:text-accent transition-colors font-semibold" aria-label="Call Rome, Georgia office at (706) 784-6511">
+            <TrackedPhone
+              phone="(706) 784-6511"
+              phoneRaw="7067846511"
+              location="Rome, GA"
+              office="rome"
+              pageType="reviews"
+              pageUrl={location.pathname}
+              className="text-white hover:text-accent transition-colors font-semibold"
+              ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+            >
               (706) 784-6511
-            </a>
+            </TrackedPhone>
           </div>
           
           {/* Trust badges */}

@@ -3,7 +3,8 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import heroBackground from "@/assets/contact-hero.jpg";
 import { 
   Car, 
@@ -22,6 +23,7 @@ import {
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const CentreALResources = () => {
+  const location = useLocation();
   return (
     <>
       <Helmet>
@@ -581,13 +583,18 @@ const CentreALResources = () => {
               <div className="text-white">
                 <span className="text-sm">Or call us:</span>
                 <div className="font-semibold text-lg">
-                  <a 
-                    href="tel:+12569276287" 
+                  <TrackedPhone
+                    phone="(256) 927-6287"
+                    phoneRaw="2569276287"
+                    location="Centre, AL"
+                    office="centre"
+                    pageType="resources-centre"
+                    pageUrl={location.pathname}
                     className="hover:text-secondary transition-colors"
-                    aria-label="Call Centre, Alabama office at (256) 927-6287"
+                    ariaLabel="Call Centre, Alabama office at (256) 927-6287"
                   >
                     (256) 927-6287
-                  </a>
+                  </TrackedPhone>
                 </div>
               </div>
             </div>

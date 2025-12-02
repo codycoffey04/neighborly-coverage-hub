@@ -3,7 +3,8 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import heroBackground from "@/assets/contact-hero.jpg";
 import { 
   Car, 
@@ -21,6 +22,7 @@ import {
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const RomeGAResources = () => {
+  const location = useLocation();
   return (
     <>
       <Helmet>
@@ -658,13 +660,18 @@ const RomeGAResources = () => {
             </Link>
             <div className="flex items-center gap-2">
               <span className="text-white/90">Or call us:</span>
-              <a 
-                href="tel:+17067846511" 
+              <TrackedPhone
+                phone="(706) 784-6511"
+                phoneRaw="7067846511"
+                location="Rome, GA"
+                office="rome"
+                pageType="resources-rome"
+                pageUrl={location.pathname}
                 className="font-semibold hover:text-white/80 transition-colors"
-                aria-label="Call Rome office at (706) 784-6511"
+                ariaLabel="Call Rome office at (706) 784-6511"
               >
                 (706) 784-6511
-              </a>
+              </TrackedPhone>
             </div>
           </div>
 

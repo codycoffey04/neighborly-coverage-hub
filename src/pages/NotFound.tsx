@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Button } from "@/components/ui/button";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Home, Phone, FileText, MapPin, HelpCircle, ArrowLeft, Shield, BookOpen, Car, Building2, Key, Building, Heart, Bike } from "lucide-react";
 
 const NotFound = () => {
@@ -235,14 +236,19 @@ const NotFound = () => {
               {/* Centre, AL Office */}
               <div className="bg-card border border-border rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-4">Centre, Alabama</h3>
-                <a 
-                  href="tel:+12569276287" 
+                <TrackedPhone
+                  phone="(256) 927-6287"
+                  phoneRaw="2569276287"
+                  location="Centre, AL"
+                  office="centre"
+                  pageType="not-found"
+                  pageUrl={location.pathname}
                   className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-md font-semibold hover:bg-accent/90 transition-colors mb-3"
-                  aria-label="Call Centre, Alabama office at (256) 927-6287"
+                  ariaLabel="Call Centre, Alabama office at (256) 927-6287"
                 >
                   <Phone className="h-5 w-5" />
                   <span>(256) 927-6287</span>
-                </a>
+                </TrackedPhone>
                 <p className="text-sm text-muted-foreground">
                   Monday–Friday: 8:00 AM – 5:00 PM
                 </p>
@@ -251,14 +257,19 @@ const NotFound = () => {
               {/* Rome, GA Office */}
               <div className="bg-card border border-border rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-4">Rome, Georgia</h3>
-                <a 
-                  href="tel:+17067846511" 
+                <TrackedPhone
+                  phone="(706) 784-6511"
+                  phoneRaw="7067846511"
+                  location="Rome, GA"
+                  office="rome"
+                  pageType="not-found"
+                  pageUrl={location.pathname}
                   className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-md font-semibold hover:bg-accent/90 transition-colors mb-3"
-                  aria-label="Call Rome, Georgia office at (706) 784-6511"
+                  ariaLabel="Call Rome, Georgia office at (706) 784-6511"
                 >
                   <Phone className="h-5 w-5" />
                   <span>(706) 784-6511</span>
-                </a>
+                </TrackedPhone>
                 <p className="text-sm text-muted-foreground">
                   Monday–Friday: 8:30 AM – 4:30 PM
                 </p>

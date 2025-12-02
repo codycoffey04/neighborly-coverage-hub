@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link, Navigate, useLocation } from "react-router-dom";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -10,9 +10,11 @@ import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Clock, User, ArrowRight, AlertCircle, Info, Phone, ChevronRight, CheckCircle } from "lucide-react";
 import { learnArticles, ContentSection } from "@/data/learnArticles";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
 
 const LearnArticle = () => {
+  const location = useLocation();
   const { slug } = useParams();
   const article = learnArticles.find(a => a.slug === slug);
 
@@ -120,22 +122,32 @@ const LearnArticle = () => {
               </Button>
             </Link>
             <div className="flex flex-col sm:flex-row gap-3 text-sm">
-              <a 
-                href="tel:+12569276287" 
-                aria-label="Call Centre, Alabama office at (256) 927-6287" 
+              <TrackedPhone
+                phone="(256) 927-6287"
+                phoneRaw="2569276287"
+                location="Centre, AL"
+                office="centre"
+                pageType="learn-article"
+                pageUrl={location.pathname}
                 className="flex items-center gap-2 hover:underline"
+                ariaLabel="Call Centre, Alabama office at (256) 927-6287"
               >
                 <Phone className="h-4 w-4" />
                 <span>AL: (256) 927-6287</span>
-              </a>
-              <a 
-                href="tel:+17067846511" 
-                aria-label="Call Rome, Georgia office at (706) 784-6511"
+              </TrackedPhone>
+              <TrackedPhone
+                phone="(706) 784-6511"
+                phoneRaw="7067846511"
+                location="Rome, GA"
+                office="rome"
+                pageType="learn-article"
+                pageUrl={location.pathname}
                 className="flex items-center gap-2 hover:underline"
+                ariaLabel="Call Rome, Georgia office at (706) 784-6511"
               >
                 <Phone className="h-4 w-4" />
                 <span>GA: (706) 784-6511</span>
-              </a>
+              </TrackedPhone>
             </div>
           </div>
         </div>
@@ -431,21 +443,31 @@ const LearnArticle = () => {
           {/* Phone Numbers */}
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
             <span>Or call us:</span>
-            <a 
-              href="tel:+12569276287" 
+            <TrackedPhone
+              phone="(256) 927-6287"
+              phoneRaw="2569276287"
+              location="Centre, AL"
+              office="centre"
+              pageType="learn-article-cta"
+              pageUrl={location.pathname}
               className="text-white hover:text-accent transition-colors"
-              aria-label="Call Centre, Alabama office at (256) 927-6287"
+              ariaLabel="Call Centre, Alabama office at (256) 927-6287"
             >
               (256) 927-6287
-            </a>
+            </TrackedPhone>
             <span className="hidden sm:inline">|</span>
-            <a 
-              href="tel:+17067846511" 
+            <TrackedPhone
+              phone="(706) 784-6511"
+              phoneRaw="7067846511"
+              location="Rome, GA"
+              office="rome"
+              pageType="learn-article-cta"
+              pageUrl={location.pathname}
               className="text-white hover:text-accent transition-colors"
-              aria-label="Call Rome, Georgia office at (706) 784-6511"
+              ariaLabel="Call Rome, Georgia office at (706) 784-6511"
             >
               (706) 784-6511
-            </a>
+            </TrackedPhone>
           </div>
           
           {/* Trust Badges */}

@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export const BottomCTA = () => {
+  const location = useLocation();
   return (
     <section className="bg-gradient-to-br from-primary to-primary-light py-16">
       <div className="container-custom text-center">
@@ -25,16 +27,32 @@ export const BottomCTA = () => {
           
           <div className="flex flex-col sm:flex-row gap-3">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+              <TrackedPhone
+                phone="(256) 927-6287"
+                phoneRaw="2569276287"
+                location="Centre, AL"
+                office="centre"
+                pageType="bottom-cta"
+                pageUrl={location.pathname}
+                ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+              >
                 <Phone className="mr-2 h-4 w-4" />
                 Centre: (256) 927-6287
-              </a>
+              </TrackedPhone>
             </Button>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+              <TrackedPhone
+                phone="(706) 784-6511"
+                phoneRaw="7067846511"
+                location="Rome, GA"
+                office="rome"
+                pageType="bottom-cta"
+                pageUrl={location.pathname}
+                ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+              >
                 <Phone className="mr-2 h-4 w-4" />
                 Rome: (706) 784-6511
-              </a>
+              </TrackedPhone>
             </Button>
           </div>
         </div>

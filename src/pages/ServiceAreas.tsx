@@ -2,7 +2,8 @@ import { PageLayout } from "@/components/shared/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Building2, Phone } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
@@ -56,6 +57,7 @@ const georgiaCities = [
 ];
 
 const ServiceAreas = () => {
+  const location = useLocation();
   const serviceAreasSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -161,13 +163,18 @@ const ServiceAreas = () => {
                       </p>
                       <p className="flex items-center gap-2">
                         <Phone className="h-5 w-5 text-primary shrink-0" />
-                        <a 
-                          href={`tel:+1${office.phone.replace(/[^0-9]/g, '')}`} 
+                        <TrackedPhone
+                          phone={office.phone}
+                          phoneRaw={office.phone.replace(/[^0-9]/g, '')}
+                          location={`${office.city}, ${office.state}`}
+                          office={office.city === "Centre" ? "centre" : "rome"}
+                          pageType="service-areas"
+                          pageUrl={location.pathname}
                           className="font-semibold text-foreground text-lg hover:text-primary transition-colors"
-                          aria-label={`Call ${office.city}, ${office.state} office at ${office.phone}`}
+                          ariaLabel={`Call ${office.city}, ${office.state} office at ${office.phone}`}
                         >
                           {office.phone}
-                        </a>
+                        </TrackedPhone>
                       </p>
                       <p className="text-sm">
                         {office.hours}
@@ -246,11 +253,19 @@ const ServiceAreas = () => {
                   Get Your Free Quote
                 </Button>
               </Link>
-              <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+              <TrackedPhone
+                phone="(256) 927-6287"
+                phoneRaw="2569276287"
+                location="Centre, AL"
+                office="centre"
+                pageType="service-areas-cta"
+                pageUrl={location.pathname}
+                ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+              >
                 <Button variant="outline" size="lg" className="min-w-[200px]">
                   Call Us Today
                 </Button>
-              </a>
+              </TrackedPhone>
             </div>
           </div>
         </div>

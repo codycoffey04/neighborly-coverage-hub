@@ -1,6 +1,8 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -131,6 +133,7 @@ const officeDetails = {
 };
 
 export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
+  const location = useLocation();
   const office = city.isOfficeCity ? officeDetails[city.nearestOffice] : null;
   const nearestOfficeInfo = officeDetails[city.nearestOffice];
   const testimonials = city.testimonials || defaultTestimonials;
@@ -138,7 +141,11 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   // Get phone number for this city - use localPhone if available, otherwise use nearest office phone
   const displayPhone = city.localPhone || nearestOfficeInfo.phone;
   const phoneNumber = displayPhone.replace(/\D/g, ''); // Remove non-digits for tel: link
-  const telLink = `tel:+1${phoneNumber}`;
+  
+  // Determine office type for tracking
+  const officeType = city.isOfficeCity 
+    ? (city.nearestOffice === "centre" ? "centre" : "rome")
+    : "city";
 
   // Set page context for Tidio chatbot
   useEffect(() => {
@@ -354,14 +361,19 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
-            <a 
-              href={telLink}
+            <TrackedPhone
+              phone={displayPhone}
+              phoneRaw={phoneNumber}
+              location={`${city.city}, ${city.stateAbbr}`}
+              office={officeType}
+              pageType="city"
+              pageUrl={location.pathname}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-white/95 text-primary font-medium rounded-md shadow-sm hover:shadow-md transition-all"
-              aria-label={`Call ${city.city} office at ${displayPhone}`}
+              ariaLabel={`Call ${city.city} office at ${displayPhone}`}
             >
               <Phone className="w-4 h-4" />
               {displayPhone}
-            </a>
+            </TrackedPhone>
           </div>
         </div>
       </section>
@@ -584,9 +596,18 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           {/* Phone Number */}
           <div className="mt-6 flex items-center justify-center gap-2 text-white/90">
             <span>Or call us:</span>
-            <a href={telLink} className="text-white hover:text-accent transition-colors" aria-label={`Call ${city.city} office at ${displayPhone}`}>
+            <TrackedPhone
+              phone={displayPhone}
+              phoneRaw={phoneNumber}
+              location={`${city.city}, ${city.stateAbbr}`}
+              office={officeType}
+              pageType="city-cta"
+              pageUrl={location.pathname}
+              className="text-white hover:text-accent transition-colors"
+              ariaLabel={`Call ${city.city} office at ${displayPhone}`}
+            >
               {displayPhone}
-            </a>
+            </TrackedPhone>
           </div>
           
           {/* Trust Badges */}

@@ -1,8 +1,11 @@
 import { PageLayout } from "@/components/shared/PageLayout";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const Privacy = () => {
+  const location = useLocation();
   const privacySchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -228,7 +231,17 @@ const Privacy = () => {
                     <p className="text-foreground/90 leading-relaxed">
                       1913 W Main St<br />
                       Centre, AL 35960<br />
-                      Phone: <a href="tel:+12569276287" className="text-accent hover:underline">256-927-6287</a>
+                      Phone: <TrackedPhone
+                        phone="(256) 927-6287"
+                        phoneRaw="2569276287"
+                        location="Centre, AL"
+                        office="centre"
+                        pageType="privacy"
+                        pageUrl={location.pathname}
+                        className="text-accent hover:underline"
+                      >
+                        256-927-6287
+                      </TrackedPhone>
                     </p>
                   </div>
                   
@@ -237,7 +250,17 @@ const Privacy = () => {
                     <p className="text-foreground/90 leading-relaxed">
                       1703 Turner McCall Blvd<br />
                       Rome, GA 30161<br />
-                      Phone: <a href="tel:+17067846511" className="text-accent hover:underline">706-784-6511</a>
+                      Phone: <TrackedPhone
+                        phone="(706) 784-6511"
+                        phoneRaw="7067846511"
+                        location="Rome, GA"
+                        office="rome"
+                        pageType="privacy"
+                        pageUrl={location.pathname}
+                        className="text-accent hover:underline"
+                      >
+                        706-784-6511
+                      </TrackedPhone>
                     </p>
                   </div>
                 </div>

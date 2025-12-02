@@ -4,7 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, BookOpen, MessageCircle, MapPin, Phone, Clock, Award, ChevronRight, Home, Users, ShieldCheck, CheckCircle } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
 import aboutHero from "@/assets/about-hero.png";
 import codyHeadshot from "@/assets/cody-coffey-headshot.png";
@@ -99,6 +100,7 @@ const offices = [
 ];
 
 const About = () => {
+  const location = useLocation();
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
@@ -435,13 +437,18 @@ const About = () => {
                     
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                      <a 
-                        href={`tel:+1${office.phone.replace(/[^0-9]/g, '')}`}
+                      <TrackedPhone
+                        phone={office.phone}
+                        phoneRaw={office.phone.replace(/[^0-9]/g, '')}
+                        location={office.name}
+                        office={office.name.includes("Centre") ? "centre" : "rome"}
+                        pageType="about"
+                        pageUrl={location.pathname}
                         className="text-primary hover:underline"
-                        aria-label={`Call ${office.name} office at ${office.phone}`}
+                        ariaLabel={`Call ${office.name} office at ${office.phone}`}
                       >
                         {office.phone}
-                      </a>
+                      </TrackedPhone>
                     </div>
                     
                     <div className="flex items-start gap-3">
@@ -493,21 +500,31 @@ const About = () => {
           {/* Phone Numbers */}
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-white/90">
             <span>Or call us:</span>
-            <a 
-              href="tel:+12569276287" 
+            <TrackedPhone
+              phone="(256) 927-6287"
+              phoneRaw="2569276287"
+              location="Centre, AL"
+              office="centre"
+              pageType="about-cta"
+              pageUrl={location.pathname}
               className="text-white hover:text-accent transition-colors"
-              aria-label="Call Centre, Alabama office at (256) 927-6287"
+              ariaLabel="Call Centre, Alabama office at (256) 927-6287"
             >
               (256) 927-6287
-            </a>
+            </TrackedPhone>
             <span className="hidden sm:inline">|</span>
-            <a 
-              href="tel:+17067846511" 
+            <TrackedPhone
+              phone="(706) 784-6511"
+              phoneRaw="7067846511"
+              location="Rome, GA"
+              office="rome"
+              pageType="about-cta"
+              pageUrl={location.pathname}
               className="text-white hover:text-accent transition-colors"
-              aria-label="Call Rome, Georgia office at (706) 784-6511"
+              ariaLabel="Call Rome, Georgia office at (706) 784-6511"
             >
               (706) 784-6511
-            </a>
+            </TrackedPhone>
           </div>
           
           {/* Trust Badges */}

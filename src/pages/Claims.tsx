@@ -5,7 +5,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import heroBackground from "@/assets/claims-hero.jpg";
 
 const callUsFirstBenefits = [
@@ -80,6 +81,7 @@ const faqs = [
 ];
 
 const Claims = () => {
+  const location = useLocation();
   return (
     <>
       <Helmet>
@@ -200,10 +202,18 @@ const Claims = () => {
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-white shadow-lg hover:shadow-xl transition-all"
               >
-                <a href="tel:+12569276287" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                <TrackedPhone
+                  phone="(256) 927-6287"
+                  phoneRaw="2569276287"
+                  location="Centre, AL"
+                  office="centre"
+                  pageType="claims"
+                  pageUrl={location.pathname}
+                  ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+                >
                   <Phone className="mr-2 h-5 w-5" />
                   Call Centre Office: (256) 927-6287
-                </a>
+                </TrackedPhone>
               </Button>
               <Button 
                 asChild 
@@ -211,10 +221,18 @@ const Claims = () => {
                 variant="outline" 
                 className="bg-white hover:bg-white text-primary hover:text-primary border border-primary shadow-sm hover:shadow-md"
               >
-                <a href="tel:+17067846511" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                <TrackedPhone
+                  phone="(706) 784-6511"
+                  phoneRaw="7067846511"
+                  location="Rome, GA"
+                  office="rome"
+                  pageType="claims"
+                  pageUrl={location.pathname}
+                  ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+                >
                   <Phone className="mr-2 h-5 w-5" />
                   Call Rome Office: (706) 784-6511
-                </a>
+                </TrackedPhone>
               </Button>
             </div>
 
@@ -271,21 +289,31 @@ const Claims = () => {
             <div className="bg-muted/30 rounded-lg p-8 mb-8 text-center">
               <h3 className="text-2xl font-bold mb-4 text-primary">Call Us First</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                <a 
-                  href="tel:+12569276287" 
+                <TrackedPhone
+                  phone="(256) 927-6287"
+                  phoneRaw="2569276287"
+                  location="Centre, AL"
+                  office="centre"
+                  pageType="claims-display"
+                  pageUrl={location.pathname}
                   className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
-                  aria-label="Call Centre, Alabama office at (256) 927-6287"
+                  ariaLabel="Call Centre, Alabama office at (256) 927-6287"
                 >
                   Centre, AL: (256) 927-6287
-                </a>
+                </TrackedPhone>
                 <span className="hidden sm:block text-muted-foreground">|</span>
-                <a 
-                  href="tel:+17067846511" 
+                <TrackedPhone
+                  phone="(706) 784-6511"
+                  phoneRaw="7067846511"
+                  location="Rome, GA"
+                  office="rome"
+                  pageType="claims-display"
+                  pageUrl={location.pathname}
                   className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
-                  aria-label="Call Rome, Georgia office at (706) 784-6511"
+                  ariaLabel="Call Rome, Georgia office at (706) 784-6511"
                 >
                   Rome, GA: (706) 784-6511
-                </a>
+                </TrackedPhone>
               </div>
             </div>
 
@@ -680,13 +708,31 @@ const Claims = () => {
 
             <p className="text-lg mb-8 text-white/90">
               Or call us:{" "}
-              <a href="tel:+12569276287" className="font-bold hover:underline" aria-label="Call Centre, Alabama office at (256) 927-6287">
+              <TrackedPhone
+                phone="(256) 927-6287"
+                phoneRaw="2569276287"
+                location="Centre, AL"
+                office="centre"
+                pageType="claims-cta"
+                pageUrl={location.pathname}
+                className="font-bold hover:underline"
+                ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+              >
                 (256) 927-6287
-              </a>
+              </TrackedPhone>
               {" "}|{" "}
-              <a href="tel:+17067846511" className="font-bold hover:underline" aria-label="Call Rome, Georgia office at (706) 784-6511">
+              <TrackedPhone
+                phone="(706) 784-6511"
+                phoneRaw="7067846511"
+                location="Rome, GA"
+                office="rome"
+                pageType="claims-cta"
+                pageUrl={location.pathname}
+                className="font-bold hover:underline"
+                ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+              >
                 (706) 784-6511
-              </a>
+              </TrackedPhone>
             </p>
 
             {/* Trust Badges */}

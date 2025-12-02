@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import coffeyLogo from "@/assets/coffey-logo-transparent-2.png";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -31,6 +32,7 @@ const learnLinks = [
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
   const [servicesExpanded, setServicesExpanded] = useState(false);
   const [learnExpanded, setLearnExpanded] = useState(false);
 
@@ -120,15 +122,33 @@ export const Header = () => {
           {/* Contact & CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <div className="flex items-center gap-4 text-sm">
-              <a href="tel:+12569276287" className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors" aria-label="Call Centre, Alabama office at (256) 927-6287">
+              <TrackedPhone
+                phone="(256) 927-6287"
+                phoneRaw="2569276287"
+                location="Centre, AL"
+                office="centre"
+                pageType="header"
+                pageUrl={location.pathname}
+                className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors"
+                ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+              >
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">(256) 927-6287</span>
-              </a>
+              </TrackedPhone>
               <span className="text-primary/50">|</span>
-              <a href="tel:+17067846511" className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors" aria-label="Call Rome, Georgia office at (706) 784-6511">
+              <TrackedPhone
+                phone="(706) 784-6511"
+                phoneRaw="7067846511"
+                location="Rome, GA"
+                office="rome"
+                pageType="header"
+                pageUrl={location.pathname}
+                className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors"
+                ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+              >
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">(706) 784-6511</span>
-              </a>
+              </TrackedPhone>
             </div>
             <Link to="/contact">
               <Button className="bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
@@ -240,14 +260,32 @@ export const Header = () => {
               </div>
 
               <div className="flex flex-col gap-2 pt-2 border-t border-primary/20">
-                <a href="tel:+12569276287" className="flex items-center gap-2 text-base text-primary min-h-[44px] py-2" aria-label="Call Centre, Alabama office at (256) 927-6287">
+                <TrackedPhone
+                  phone="(256) 927-6287"
+                  phoneRaw="2569276287"
+                  location="Centre, AL"
+                  office="centre"
+                  pageType="header-mobile"
+                  pageUrl={location.pathname}
+                  className="flex items-center gap-2 text-base text-primary min-h-[44px] py-2"
+                  ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+                >
                   <Phone className="h-5 w-5" />
                   <span>(256) 927-6287 - Centre</span>
-                </a>
-                <a href="tel:+17067846511" className="flex items-center gap-2 text-base text-primary min-h-[44px] py-2" aria-label="Call Rome, Georgia office at (706) 784-6511">
+                </TrackedPhone>
+                <TrackedPhone
+                  phone="(706) 784-6511"
+                  phoneRaw="7067846511"
+                  location="Rome, GA"
+                  office="rome"
+                  pageType="header-mobile"
+                  pageUrl={location.pathname}
+                  className="flex items-center gap-2 text-base text-primary min-h-[44px] py-2"
+                  ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+                >
                   <Phone className="h-5 w-5" />
                   <span>(706) 784-6511 - Rome</span>
-                </a>
+                </TrackedPhone>
               </div>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
