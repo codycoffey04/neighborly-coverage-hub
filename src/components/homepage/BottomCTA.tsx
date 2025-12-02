@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -16,44 +16,42 @@ export const BottomCTA = () => {
           Talk to a local agent today — no pressure, just answers.
         </p>
         
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+        {/* CTA Button */}
+        <div className="flex flex-col items-center mb-6">
+          <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group mb-4">
             <Link to="/#quote-form">
-              Get Quote
+              Get My Free Quote
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
           
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <TrackedPhone
-                phone="(256) 927-6287"
-                phoneRaw="2569276287"
-                location="Centre, AL"
-                office="centre"
-                pageType="bottom-cta"
-                pageUrl={location.pathname}
-                ariaLabel="Call Centre, Alabama office at (256) 927-6287"
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                Centre: (256) 927-6287
-              </TrackedPhone>
-            </Button>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <TrackedPhone
-                phone="(706) 784-6511"
-                phoneRaw="7067846511"
-                location="Rome, GA"
-                office="rome"
-                pageType="bottom-cta"
-                pageUrl={location.pathname}
-                ariaLabel="Call Rome, Georgia office at (706) 784-6511"
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                Rome: (706) 784-6511
-              </TrackedPhone>
-            </Button>
+          {/* Phone Links */}
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <TrackedPhone
+              phone="(256) 927-6287"
+              phoneRaw="2569276287"
+              location="Centre, AL"
+              office="centre"
+              pageType="bottom-cta"
+              pageUrl={location.pathname}
+              className="text-white/90 hover:text-white underline"
+              ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+            >
+              Centre: (256) 927-6287
+            </TrackedPhone>
+            <span className="text-white/50">|</span>
+            <TrackedPhone
+              phone="(706) 784-6511"
+              phoneRaw="7067846511"
+              location="Rome, GA"
+              office="rome"
+              pageType="bottom-cta"
+              pageUrl={location.pathname}
+              className="text-white/90 hover:text-white underline"
+              ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+            >
+              Rome: (706) 784-6511
+            </TrackedPhone>
           </div>
         </div>
 

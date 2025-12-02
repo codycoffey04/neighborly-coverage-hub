@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Home, Building2, Key, Heart, Bike, ArrowRight, MessageCircle } from "lucide-react";
+import { Car, Home, Building2, Key, Heart, Bike, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
@@ -88,15 +88,14 @@ export const ServicesOverview = () => {
 
         {/* Bottom CTA */}
         <div className="bg-gray-50 rounded-xl py-12 px-6 text-center">
-          <p className="text-lg text-muted-foreground mb-6">Not sure which coverage you need?</p>
+          <p className="text-lg text-muted-foreground mb-6">Not sure which coverages you need? Start with a quick quote and we'll walk you through options.</p>
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             asChild
           >
-            <Link to="/contact">
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Talk to an Expert
+            <Link to="/#quote-form">
+              Get My Free Quote
             </Link>
           </Button>
         </div>

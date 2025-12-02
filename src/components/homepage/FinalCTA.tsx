@@ -83,8 +83,12 @@ export const FinalCTA = () => {
 
               {/* Submit Button */}
               <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" aria-label="Submit form to get your free insurance quote">
-                Get Quote
+                Get My Free Quote
               </Button>
+
+              <p className="text-sm text-center text-muted-foreground mb-2">
+                Takes about 30 seconds. A licensed Alabama/Georgia agent will call you the same business day.
+              </p>
 
               <p className="text-sm text-center text-muted-foreground">
                 By submitting this form, you agree to be contacted by Coffey Agencies about your insurance needs. We respect your privacy and will never share your information.

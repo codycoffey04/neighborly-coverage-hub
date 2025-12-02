@@ -9,19 +9,19 @@ const steps = [
     icon: FileText,
     number: "1",
     title: "Get Your Quote",
-    description: "Fill out our quick form online or give us a call. Tell us what you need — auto, home, condo, renters, life, or bundle it all."
+    description: "Tell us a few details online or by phone (takes ~2 minutes)."
   },
   {
     icon: Search,
     number: "2",
     title: "Review Your Options",
-    description: "A licensed agent calls you back within 24 hours. We walk through coverage options, answer questions, and find the policy that fits your life and budget."
+    description: "A licensed agent walks you through 2–3 options."
   },
   {
     icon: ShieldCheck,
     number: "3",
     title: "Get Covered",
-    description: "Approve your policy and you're protected — often the same day. Welcome to the Coffey Agencies family."
+    description: "We bind coverage and send ID cards the same day in most cases."
   }
 ];
 
@@ -41,20 +41,20 @@ const howToSchema = {
       "@type": "HowToStep",
       "position": 1,
       "name": "Get Your Quote",
-      "text": "Fill out our quick form online or give us a call. Tell us what you need — auto, home, condo, renters, life, or bundle it all.",
-      "url": "https://coffeyagencies.com/contact"
+      "text": "Tell us a few details online or by phone (takes ~2 minutes).",
+      "url": "https://coffeyagencies.com/#quote-form"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "Review Your Options",
-      "text": "A licensed agent calls you back within 24 hours. We walk through coverage options, answer questions, and find the policy that fits your life and budget."
+      "text": "A licensed agent walks you through 2–3 options."
     },
     {
       "@type": "HowToStep",
       "position": 3,
       "name": "Get Covered",
-      "text": "Approve your policy and you're protected — often the same day. Welcome to the Coffey Agencies family."
+      "text": "We bind coverage and send ID cards the same day in most cases."
     }
   ]
 };

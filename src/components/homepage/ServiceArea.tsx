@@ -48,6 +48,13 @@ export const ServiceArea = () => {
           ))}
         </div>
 
+        {/* Additional Info Line */}
+        <div className="text-center mb-8">
+          <p className="text-white/90 text-lg">
+            Wherever you are in Alabama or Georgia, we can quote and bind coverage remotely.
+          </p>
+        </div>
+
         {/* Footer Section */}
         <div className="text-center space-y-4 mt-16">
           {/* Tagline */}
