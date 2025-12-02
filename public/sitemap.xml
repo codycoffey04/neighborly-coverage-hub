@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://coffeyagencies.com/</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,61 +11,61 @@
   <!-- Static Pages -->
   <url>
     <loc>https://coffeyagencies.com/about</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/contact</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/faq</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/reviews</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/privacy</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/terms</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/claims</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/resources/centre-al</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/resources/rome-ga</loc>
-    <lastmod>2025-11-29</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -73,56 +73,56 @@
   <!-- Learn Articles -->
   <url>
     <loc>https://coffeyagencies.com/learn/auto-insurance-guide</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/home-insurance-guide</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/renters-insurance-guide</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/condo-insurance-guide</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/life-insurance-guide</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/alabama-insurance-requirements</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/georgia-insurance-requirements</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/learn/bundling-home-and-auto</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://coffeyagencies.com/service-areas</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -130,37 +130,37 @@
   <!-- Service Pages -->
   <url>
     <loc>https://coffeyagencies.com/services/auto-insurance</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/services/home-insurance</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/services/renters-insurance</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/services/condo-insurance</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/services/life-insurance</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/services/motorcycle-insurance</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -168,67 +168,67 @@
   <!-- Alabama City Pages -->
   <url>
     <loc>https://coffeyagencies.com/centre-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/birmingham-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/montgomery-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/mobile-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/dothan-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/auburn-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/phenix-city-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/foley-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/troy-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/enterprise-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/trussville-al</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -236,79 +236,79 @@
   <!-- Georgia City Pages -->
   <url>
     <loc>https://coffeyagencies.com/rome-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/atlanta-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/lawrenceville-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/duluth-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/cartersville-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/calhoun-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/cedartown-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/summerville-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/suwanee-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/alpharetta-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/powder-springs-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/rockmart-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coffeyagencies.com/forsyth-ga</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
