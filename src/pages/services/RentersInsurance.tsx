@@ -451,7 +451,7 @@ const RentersInsurance = () => {
           <div className="container-custom">
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="text-center space-y-4">
-                <h2>Alabama & Georgia Risk Factors</h2>
+                <h2>What Regional Risks Affect Alabama & Georgia Renters?</h2>
                 <p className="text-lg text-muted-foreground text-balance">
                   Living in Alabama or Georgia means facing unique weather and crime risks that make renters insurance essential.
                 </p>

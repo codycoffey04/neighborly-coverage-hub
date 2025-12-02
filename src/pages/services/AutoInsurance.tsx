@@ -432,7 +432,7 @@ const AutoInsurance = () => {
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Common ways to lower your premium without underinsuring</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">How Can I Lower My Auto Insurance Premium?</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {savingsTips.map((tip, index) => {

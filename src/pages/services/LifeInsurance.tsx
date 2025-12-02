@@ -303,7 +303,7 @@ const georgiaCities = [
         {/* Why Life Insurance Matters */}
         <section className="py-12 bg-muted/30">
           <div className="container max-w-5xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Protect What Matters Most with Life Insurance</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Why Do I Need Life Insurance?</h2>
             
             <div className="prose prose-slate max-w-none mb-8">
               <p className="text-lg text-muted-foreground">
@@ -362,7 +362,7 @@ const georgiaCities = [
         <section className="py-12 bg-muted/30">
           <div className="container max-w-5xl">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Term Life vs. Whole Life Insurance: Understanding Your Options</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What's the Difference Between Term and Whole Life Insurance?</h2>
               <p className="text-lg text-muted-foreground">
                 The two primary types of life insurance serve different purposes and come at dramatically different costs. Understanding the distinction helps you choose the right coverage for your family's needs and budget.
               </p>
@@ -437,7 +437,7 @@ const georgiaCities = [
         {/* Cost Factors Section */}
         <section className="py-12">
           <div className="container max-w-5xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Life Insurance Cost Factors</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">What Factors Affect My Life Insurance Cost?</h2>
             
             <div className="prose prose-slate max-w-none mb-8">
               <p className="text-lg text-muted-foreground">
@@ -515,7 +515,7 @@ const georgiaCities = [
         {/* Application Process */}
         <section className="py-12">
           <div className="container max-w-5xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">The Application Process and Medical Exams</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">How Do I Apply for Life Insurance?</h2>
             
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">

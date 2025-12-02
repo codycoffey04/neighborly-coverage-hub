@@ -351,7 +351,7 @@ const MotorcycleInsurance = () => {
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Build a Policy That Protects You and Your Bike</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Motorcycle Insurance Coverage Do I Need?</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Motorcycle insurance works differently than auto insurance. Riders face unique exposures—no steel cage around you, higher theft rates, and custom modifications that standard policies don't cover. We structure coverage to address these realities while keeping premiums reasonable. Bundle with home or auto for multi-policy savings.
               </p>
@@ -381,7 +381,7 @@ const MotorcycleInsurance = () => {
         {/* Regional Considerations Section */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Riding Risks in Alabama and Georgia</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">What Risks Do Alabama & Georgia Riders Face?</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
                 The Southeast offers year-round riding but comes with hazards that shape how we recommend coverage. Georgia recorded 221 motorcyclist fatalities in 2022—the highest in a decade. Alabama saw motorcycle deaths jump 36% from 2023 to 2024. Understanding these risks helps you choose appropriate limits and deductibles.
@@ -435,7 +435,7 @@ const MotorcycleInsurance = () => {
         {/* Ways to Save Section */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Ways to Lower Your Motorcycle Insurance Premium</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">How Can I Save on Motorcycle Insurance?</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {savingsTips.map((tip, index) => {
@@ -463,7 +463,7 @@ const MotorcycleInsurance = () => {
           <div className="container mx-auto max-w-5xl">
             <Card className="border-2 bg-accent/5">
               <CardHeader>
-                <CardTitle className="text-2xl">Alabama's Guest Passenger Law</CardTitle>
+                <CardTitle className="text-2xl">How Does Alabama's Guest Passenger Law Affect Coverage?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-lg">

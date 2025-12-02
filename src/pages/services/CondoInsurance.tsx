@@ -437,7 +437,7 @@ const CondoInsurance = () => {
       <section className="py-16">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Your Condo Policy Can Include</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Does Condo Insurance Cover?</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coverageTypes.map((coverage, index) => (
@@ -494,7 +494,7 @@ const CondoInsurance = () => {
       <section className="py-16">
         <div className="container max-w-4xl mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Storms, Water, and Vertical Living</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Weather Risks Affect Condo Owners?</h2>
           </div>
           <Card className="border-2">
             <CardContent className="p-8">
@@ -539,7 +539,7 @@ const CondoInsurance = () => {
       <section className="py-16 bg-muted/30">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Ways to Reduce Cost Without Hollowing Out Coverage</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">How Can I Save on Condo Insurance?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {savingsTips.map((tip, index) => (
