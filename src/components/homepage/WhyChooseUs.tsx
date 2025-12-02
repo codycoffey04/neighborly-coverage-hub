@@ -66,9 +66,9 @@ export const WhyChooseUs = () => {
               <p className="text-sm text-white/70">Combined insurance experience across our team.</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-secondary mb-2">4.8★</p>
+              <p className="text-4xl font-bold text-secondary mb-2">4.7★</p>
               <p className="text-lg font-semibold text-white mb-1">200+ Google Reviews</p>
-              <p className="text-sm text-white/70">Rated 4.8 out of 5 by Alabama & Georgia customers.</p>
+              <p className="text-sm text-white/70">Combined rating across our Centre & Rome offices.</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-secondary mb-2">Hablamos Español</p>
