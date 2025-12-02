@@ -121,7 +121,7 @@ export const Testimonials = () => {
               className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               asChild
             >
-              <Link to="/contact">Get Your Free Quote</Link>
+              <Link to="/contact">Get Quote</Link>
             </Button>
           </div>
         </div>

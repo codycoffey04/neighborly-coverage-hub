@@ -180,7 +180,7 @@ const Learn = () => {
           </p>
           <Link to="/contact">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent-light" aria-label="Get your free insurance quote">
-              Get Your Free Quote
+              Get Quote
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>

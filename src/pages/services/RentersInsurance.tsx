@@ -347,7 +347,7 @@ const RentersInsurance = () => {
               {/* CTA Buttons - styled for dark background */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <Link to="/contact">Get Your Free Quote</Link>
+                  <Link to="/contact">Get Quote</Link>
                 </Button>
                 <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <TrackedPhone
@@ -454,7 +454,7 @@ const RentersInsurance = () => {
             <div className="text-center mt-8">
               <Button size="lg" asChild>
                 <a href="#quote-form">
-                  Get Your Free Quote <ArrowRight className="ml-2 h-5 w-5" />
+                  Get Quote <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <p className="text-sm text-muted-foreground mt-3">
@@ -793,7 +793,7 @@ const RentersInsurance = () => {
               className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               asChild
             >
-              <Link to="/contact">Get Your Free Quote</Link>
+              <Link to="/contact">Get Quote</Link>
             </Button>
 
             {/* Phone Links - Secondary CTAs */}

@@ -117,7 +117,7 @@ const LearnArticle = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/contact">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                Get Your Free Quote
+                Get Quote
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
@@ -435,7 +435,7 @@ const LearnArticle = () => {
           {/* CTA Button - Green */}
           <Link to="/contact">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[200px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
-              Get Your Free Quote
+              Get Quote
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
