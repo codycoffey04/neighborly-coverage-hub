@@ -16,6 +16,13 @@ import { useLocation } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
 
+// Extend Window interface for dataLayer
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, unknown>>;
+  }
+}
+
 const offices = [
   {
     name: "Centre, Alabama",
@@ -78,6 +85,17 @@ const Contact = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
       });
+
+      // Push form submit event to dataLayer for GTM
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: "netlify_form_submit",
+          form_name: "contact-form",
+          form_location: "contact_page",
+          page_url: location.pathname,
+          timestamp: new Date().toISOString(),
+        });
+      }
 
       toast({
         title: "Message Sent!",
