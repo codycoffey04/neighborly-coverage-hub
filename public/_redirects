@@ -1,3 +1,11 @@
+# Service page redirects - redirect common variations to full URLs
+/services/auto    /services/auto-insurance    301
+/services/home    /services/home-insurance    301
+/services/renters    /services/renters-insurance    301
+/services/condo    /services/condo-insurance    301
+/services/life    /services/life-insurance    301
+/services/motorcycle    /services/motorcycle-insurance    301
+
 # Netlify SPA redirect - serve index.html for all routes
 # This allows React Router to handle client-side routing
 /*    /index.html   200
