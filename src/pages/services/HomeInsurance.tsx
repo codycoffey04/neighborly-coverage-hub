@@ -373,7 +373,7 @@ const HomeInsurance = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                  Build a Policy That Mirrors Real-World Risk
+                  What Does Home Insurance Cover?
                 </h2>
               </div>
 
@@ -430,7 +430,7 @@ const HomeInsurance = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                  Ways to Reduce Cost Without Underinsuring
+                  How Can I Save on Home Insurance?
                 </h2>
               </div>
 
