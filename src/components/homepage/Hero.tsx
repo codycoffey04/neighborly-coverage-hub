@@ -10,14 +10,14 @@ export const Hero = () => {
     <section 
       role="banner"
       aria-label="Coffey Agencies homepage hero"
-      className="relative min-h-[55vh] md:min-h-[70vh] flex items-end pb-16 md:pb-20 overflow-hidden"
+      className="relative min-h-[45vh] md:min-h-[55vh] flex items-end pb-12 md:pb-16 overflow-hidden"
     >
       <img 
         src={heroBackground} 
         alt="Alabama and Georgia families reviewing insurance options with Coffey Agencies" 
         fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: 'center 35%' }}
+        style={{ objectPosition: 'center 20%' }}
       />
       {/* Subtle dark gradient for text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
