@@ -2,6 +2,7 @@ import { FileText, Search, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/shared/SectionHeading";
+import { Helmet } from "react-helmet-async";
 
 const steps = [
   {
@@ -24,9 +25,48 @@ const steps = [
   }
 ];
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get Insurance Coverage with Coffey Agencies",
+  "description": "Three simple steps to get insured: request a quote, review options with a licensed agent, and get covered — often the same day.",
+  "totalTime": "PT15M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Get Your Quote",
+      "text": "Fill out our quick form online or give us a call. Tell us what you need — auto, home, condo, renters, life, or bundle it all.",
+      "url": "https://coffeyagencies.com/contact"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Review Your Options",
+      "text": "A licensed agent calls you back within 24 hours. We walk through coverage options, answer questions, and find the policy that fits your life and budget."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Get Covered",
+      "text": "Approve your policy and you're protected — often the same day. Welcome to the Coffey Agencies family."
+    }
+  ]
+};
+
 export const HowItWorks = () => {
   return (
     <section className="section-spacing bg-background">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(howToSchema)}
+        </script>
+      </Helmet>
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
