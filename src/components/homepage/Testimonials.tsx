@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { Star, Quote, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -68,6 +68,9 @@ const allTestimonials = [
 export const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const autoplayRef = useRef<NodeJS.Timeout | null>(null);
+  const resumeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (!api) return;
@@ -79,9 +82,50 @@ export const Testimonials = () => {
     });
   }, [api]);
 
+  // Auto-play functionality
+  useEffect(() => {
+    if (!api || isPaused) return;
+    
+    if (autoplayRef.current) {
+      clearInterval(autoplayRef.current);
+    }
+    
+    autoplayRef.current = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+    
+    return () => {
+      if (autoplayRef.current) {
+        clearInterval(autoplayRef.current);
+      }
+    };
+  }, [api, isPaused]);
+
+  // Cleanup resume timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (resumeTimeoutRef.current) {
+        clearTimeout(resumeTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const handleUserInteraction = useCallback(() => {
+    setIsPaused(true);
+    
+    if (resumeTimeoutRef.current) {
+      clearTimeout(resumeTimeoutRef.current);
+    }
+    
+    resumeTimeoutRef.current = setTimeout(() => {
+      setIsPaused(false);
+    }, 10000);
+  }, []);
+
   const scrollTo = useCallback((index: number) => {
     api?.scrollTo(index);
-  }, [api]);
+    handleUserInteraction();
+  }, [api, handleUserInteraction]);
 
   return (
     <section className="py-16 md:py-24 bg-muted/30" aria-labelledby="testimonials-heading">
@@ -152,9 +196,11 @@ export const Testimonials = () => {
             
             {/* Navigation arrows */}
             <CarouselPrevious 
+              onClick={handleUserInteraction}
               className="absolute -left-10 md:-left-14 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-card border-2 border-primary/20 hover:bg-primary hover:text-primary-foreground hover:border-primary shadow-md transition-all"
             />
             <CarouselNext 
+              onClick={handleUserInteraction}
               className="absolute -right-10 md:-right-14 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-card border-2 border-primary/20 hover:bg-primary hover:text-primary-foreground hover:border-primary shadow-md transition-all"
             />
           </Carousel>
