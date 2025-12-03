@@ -106,7 +106,7 @@ export const cityData: Record<string, CityData> = {
     city: "Trussville",
     state: "Alabama",
     stateAbbr: "AL",
-    customHeroTitle: "Insurance in Trussville, AL (35173)",
+    customHeroTitle: "Auto Insurance Quote Trussville, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 35173 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     zipCodes: ["35173", "35004", "35094", "35120", "35126", "35127", "35146", "35210", "35235"],
     isOfficeCity: false,
@@ -184,7 +184,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Birmingham, AL (35215 & 35235)",
+    customHeroTitle: "Auto Insurance Quote Birmingham, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 35215 and 35235 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 35215 and 35235 areas of eastern Birmingham face unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns along the Cahaba River and Village Creek, residents need insurance protection tailored to Jefferson County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Roebuck, Huffman, Center Point, or any neighborhood in the region.",
@@ -257,7 +257,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Montgomery, AL (36116 & 36117)",
+    customHeroTitle: "Auto Insurance Quote Montgomery, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36116 and 36117 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 36116 and 36117 areas of eastern Montgomery face unique insurance challenges requiring specialized understanding of Alabama's capital city. From tornado threats peaking in spring to the daily reality of commuting on I-85 and the Eastern Bypass, residents need insurance protection tailored to Montgomery County's specific risks. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Dalraida, Woodmere, or anywhere across the River Region.",
@@ -359,7 +359,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Mobile, AL (36601 & 36695)",
+    customHeroTitle: "Auto Insurance Quote Mobile, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36601 and 36695 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 36601 and 36695 areas of Mobile face insurance challenges unlike anywhere else in Alabama. As the state's only major coastal city, Mobile residents contend with hurricane exposure, flood risk, and wind damage that inland communities simply don't experience. From downtown's historic districts to the growing western suburbs, you need insurance protection built specifically for Gulf Coast living. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Midtown, Spring Hill, or anywhere across Alabama's Port City.",
@@ -449,7 +449,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Dothan, AL (36301 & 36303)",
+    customHeroTitle: "Auto Insurance Quote Dothan, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36301 and 36303 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 36301 and 36303 areas of Dothan face unique insurance challenges requiring specialized understanding of Wiregrass Region risks. From tropical storm threats during hurricane season to severe thunderstorms rolling through Houston County year-round, residents need insurance protection tailored to southeast Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Westgate, Northside, or any neighborhood across the Peanut Capital of the World.",
@@ -522,7 +522,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Auburn, AL (36830)",
+    customHeroTitle: "Auto Insurance Quote Auburn, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36830 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "Auburn faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with large hail to flooding concerns along Chewacla Creek and Saugahatchee Creek, residents need insurance protection tailored to East Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home near Downtown Auburn, Toomer's Corner, or any neighborhood in Lee County.",
@@ -607,7 +607,7 @@ export const cityData: Record<string, CityData> = {
     stateAbbr: "AL",
     zipCodes: ["36867", "36868", "31902", "31908", "36869", "36870"],
     localPhone: "(334) 553-9258",
-    customHeroTitle: "Insurance in Phenix City, AL (36867)",
+    customHeroTitle: "Auto Insurance Quote Phenix City, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36867 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     isOfficeCity: false,
     nearestOffice: "centre",
@@ -683,7 +683,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(251) 551-1350",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Foley, AL (36535)",
+    customHeroTitle: "Auto Insurance Quote Foley, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36535 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 36535 area faces unique insurance challenges requiring specialized understanding of coastal Alabama risks. From hurricane threats peaking June through November to flooding concerns along Wolf Bay and Bon Secour River, residents need insurance protection tailored to Baldwin County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Foley, Magnolia Springs area, or any neighborhood in the region.",
@@ -769,7 +769,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Troy, AL (36081)",
+    customHeroTitle: "Auto Insurance Quote Troy, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36081 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "Troy faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with large hail to flooding concerns along the Conecuh River and Pea River, residents need insurance protection tailored to the Wiregrass region's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Troy, near Troy University campus, or any neighborhood in Pike County.",
@@ -842,7 +842,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Insurance in Enterprise, AL (36330)",
+    customHeroTitle: "Auto Insurance Quote Enterprise, AL - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 36330 area, homeowners coverage, and military family protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "Enterprise faces unique insurance challenges requiring specialized understanding of local risks. From severe tornado threats in the Wiregrass region to flooding concerns along the Pea River, residents need insurance protection tailored to Southeast Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home near Downtown Enterprise, Fort Novosel, or any neighborhood in Coffee County.",
@@ -929,7 +929,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(706) 784-6511",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Rome, GA - Floyd County's Local Agent Since 2012",
+    customHeroTitle: "Auto Insurance Quote Rome, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30161 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30161 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns at the confluence of the Oostanaula, Etowah, and Coosa rivers, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rome, Garden Lakes, or any neighborhood in the region.",
@@ -1002,7 +1002,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(678) 679-5311",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Atlanta, GA (30349)",
+    customHeroTitle: "Auto Insurance Quote Atlanta, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30349 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30349 area faces unique insurance challenges requiring specialized understanding of metropolitan risks. From severe thunderstorms bringing damaging winds and large hail to urban flooding concerns near the Chattahoochee River and South River, residents need insurance protection tailored to Metro Atlanta's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in College Park area, East Point, or any neighborhood in the region.",
@@ -1075,7 +1075,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Lawrenceville, GA (30043 & 30044)",
+    customHeroTitle: "Auto Insurance Quote Lawrenceville, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30043 and 30044 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30043 and 30044 areas of Lawrenceville face unique insurance challenges requiring specialized understanding of Gwinnett County's county seat and the dynamics of Georgia's most populous county. From severe thunderstorm threats throughout spring and summer to the daily reality of Highway 316 and I-85 traffic, residents need insurance protection tailored to this established yet growing community. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Collins Hill, Mountain Park, or anywhere across historic Lawrenceville.",
@@ -1156,7 +1156,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(470) 876-7713",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Duluth, GA (30095 & 30096)",
+    customHeroTitle: "Auto Insurance Quote Duluth, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30095 and 30096 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30095 and 30096 areas of Duluth face unique insurance challenges requiring specialized understanding of Gwinnett County's fast-paced growth and metro Atlanta dynamics. From severe thunderstorm threats throughout spring and summer to the daily reality of I-85 traffic, residents need insurance protection tailored to one of Georgia's most dynamic communities. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Sugarloaf, Berkeley Hills, or anywhere across this thriving Gwinnett County city.",
@@ -1333,7 +1333,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Calhoun, GA (30701)",
+    customHeroTitle: "Auto Insurance Quote Calhoun, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30701 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "Calhoun faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May—including the devastating 1888 tornado that reshaped the community—to flooding concerns along the Oostanaula River and Oothkalooga Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Calhoun, Resaca, or any neighborhood in Gordon County.",
@@ -1483,7 +1483,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Summerville, GA (30747)",
+    customHeroTitle: "Auto Insurance Quote Summerville, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30747 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "Summerville faces unique insurance challenges requiring specialized understanding of local risks. Nestled in the Appalachian foothills, this charming community experiences distinct weather patterns from tornado threats peaking between March and May to occasional winter ice storms. Properties near the Chattooga River and Simms Lake need protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Summerville, Lyerly, Menlo, or any rural community in Chattooga County.",
@@ -1536,7 +1536,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Suwanee, GA (30024)",
+    customHeroTitle: "Auto Insurance Quote Suwanee, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30024 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30024 area faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with damaging winds exceeding 60 mph to flash flooding concerns along Suwanee Creek, residents need insurance protection tailored to North Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Suwanee Town Center, Laurel Springs, or any neighborhood in the region.",
@@ -1622,7 +1622,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Alpharetta, GA (30004)",
+    customHeroTitle: "Auto Insurance Quote Alpharetta, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30004 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30004 area faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms peaking between March and August to flash flooding concerns near Big Creek and the Chattahoochee River, residents need insurance protection tailored to North Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Windward, Country Club of the South, or any neighborhood in the region.",
@@ -1695,7 +1695,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Forsyth, GA - Compare Rates Today",
+    customHeroTitle: "Auto Insurance Quote Forsyth, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 31029 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 31029 area faces unique insurance challenges requiring specialized understanding of Central Georgia risks. From severe thunderstorms capable of producing damaging hail to flooding concerns along the Towaliga River and High Falls Lake, residents need insurance protection tailored to Monroe County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Forsyth, Historic District, or any neighborhood in the region.",
@@ -1780,7 +1780,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Rockmart, GA (30153)",
+    customHeroTitle: "Auto Insurance Quote Rockmart, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30153 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30153 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking in March through May to flooding concerns along Euharlee Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rockmart, Van Wert, or any neighborhood in the region.",
@@ -1865,7 +1865,7 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
-    customHeroTitle: "Insurance in Powder Springs, GA (30127)",
+    customHeroTitle: "Auto Insurance Quote Powder Springs, GA - Compare Rates & Save Up to $600",
     customHeroSubhead: "Local help with auto insurance in the 30127 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
     introduction: [
       "The 30127 area faces unique insurance challenges requiring specialized understanding of Cobb County risks. From severe thunderstorms bringing damaging hail to flash flooding concerns near Sweetwater Creek and Noses Creek, residents need insurance protection tailored to West Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Powder Springs, the Lost Mountain area, or any neighborhood in the region.",
