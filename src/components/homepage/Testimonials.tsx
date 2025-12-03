@@ -1,10 +1,12 @@
+import { useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
-const testimonials = [
+const allTestimonials = [
+  // Original 5 homepage reviews
   {
     name: "Steve Smith",
     location: "Centre, AL",
@@ -34,10 +36,58 @@ const testimonials = [
     location: "Cartersville, GA",
     rating: 5,
     text: "Finally, an insurance agency that answers the phone. Real people, real help, real fast."
+  },
+  // 5 additional reviews from Reviews page for diversity
+  {
+    name: "Thomas K.",
+    location: "Centre, AL",
+    rating: 5,
+    text: "Crystal and Kimberly set up our home and auto plan at a very respectable price. If I could give 10 stars I would."
+  },
+  {
+    name: "Kerry G.",
+    location: "Centre, AL",
+    rating: 5,
+    text: "Recently switched all my insurance with Cody. Customer service is impressive and rates are lower. Transition was painless."
+  },
+  {
+    name: "Tracey D.",
+    location: "Rome, GA",
+    rating: 5,
+    text: "Been with the Coffey Agency almost 10 years; they respond quickly and help get the best price for coverage."
+  },
+  {
+    name: "Karen P.",
+    location: "Rome, GA",
+    rating: 5,
+    text: "I've been a customer since 1989. Every issue, question or claim has always been cared for quickly, friendly and professionally."
+  },
+  {
+    name: "Barbara R.",
+    location: "Rome, GA",
+    rating: 5,
+    text: "The office staff were very friendly and helpful. Also the discounts were great!"
   }
 ];
 
+// Fisher-Yates shuffle for random selection
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 export const Testimonials = () => {
+  // Randomly shuffle on page load, memoized to prevent re-shuffle on re-renders
+  const shuffledTestimonials = useMemo(() => shuffleArray(allTestimonials), []);
+  
+  // First item becomes featured, next 4 become cards
+  const featuredReview = shuffledTestimonials[0];
+  const cardReviews = shuffledTestimonials.slice(1, 5);
+
   return (
     <section className="section-spacing bg-muted/30">
       <div className="container-custom">
@@ -49,7 +99,7 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        {/* Featured Hero Quote - Steve Smith */}
+        {/* Featured Hero Quote - Randomly Selected */}
         <div className="max-w-4xl mx-auto mb-12">
           <Card className="relative border-2 shadow-2xl rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 hover:scale-105 hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out">
             <CardContent className="pt-12 pb-12 px-8 md:px-12 text-center">
@@ -58,29 +108,29 @@ export const Testimonials = () => {
               
               {/* Featured Testimonial Text */}
               <p className="text-xl md:text-2xl text-foreground mb-8 leading-relaxed font-medium">
-                "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100. Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+                "{featuredReview.text}"
               </p>
               
               {/* Stars */}
               <div className="flex gap-1 mb-4 justify-center">
-                {[...Array(5)].map((_, i) => (
+                {[...Array(featuredReview.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
               
               {/* Author */}
               <div className="pt-4">
-                <p className="font-bold text-lg text-foreground">Steve Smith</p>
-                <p className="text-muted-foreground">Centre, AL</p>
+                <p className="font-bold text-lg text-foreground">{featuredReview.name}</p>
+                <p className="text-muted-foreground">{featuredReview.location}</p>
               </div>
             </CardContent>
           </Card>
         </div>
 
-        {/* Supporting Testimonials Grid - 4 cards */}
+        {/* Supporting Testimonials Grid - 4 randomly selected cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {testimonials.slice(1, 5).map((testimonial, index) => (
-            <Card key={index + 1} className="relative border rounded-xl hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out h-full">
+          {cardReviews.map((testimonial, index) => (
+            <Card key={testimonial.name + index} className="relative border rounded-xl hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] transition-all duration-300 ease-in-out h-full">
               <CardContent className="pt-6 h-full flex flex-col">
                 {/* Quote Icon */}
                 <Quote className="h-6 w-6 text-primary/20 mb-3" />
