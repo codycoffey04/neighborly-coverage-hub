@@ -117,14 +117,14 @@ export const HowItWorks = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center bg-muted/30 rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Get Started?</h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+        <div className="mt-16 text-center bg-primary rounded-2xl p-8 md:p-12">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Ready to Get Started?</h3>
+          <p className="text-white/90 mb-6 max-w-2xl mx-auto">
             Most quotes take about 15 minutes. No obligations, no pressure — just honest answers and real options.
           </p>
           <Button 
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             asChild
           >
             <Link to="/#quote-form">Get Quote</Link>
