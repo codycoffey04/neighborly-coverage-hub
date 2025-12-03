@@ -7,12 +7,12 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 export const BottomCTA = () => {
   const location = useLocation();
   return (
-    <section className="bg-gradient-to-br from-primary to-primary-light py-16">
+    <section className="bg-gray-200 py-16">
       <div className="container-custom text-center">
-        <SectionHeading variant="white" centered className="mb-4">
+        <SectionHeading variant="default" centered className="mb-4">
           Ready to Save on Insurance?
         </SectionHeading>
-        <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+        <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
           Talk to a local agent today — no pressure, just answers.
         </p>
         
@@ -34,12 +34,12 @@ export const BottomCTA = () => {
               office="centre"
               pageType="bottom-cta"
               pageUrl={location.pathname}
-              className="text-white/90 hover:text-white underline"
+              className="text-primary hover:text-primary/80 underline"
               ariaLabel="Call Centre, Alabama office at (256) 927-6287"
             >
               Centre: (256) 927-6287
             </TrackedPhone>
-            <span className="text-white/50">|</span>
+            <span className="text-primary/50">|</span>
             <TrackedPhone
               phone="(706) 784-6511"
               phoneRaw="7067846511"
@@ -47,7 +47,7 @@ export const BottomCTA = () => {
               office="rome"
               pageType="bottom-cta"
               pageUrl={location.pathname}
-              className="text-white/90 hover:text-white underline"
+              className="text-primary hover:text-primary/80 underline"
               ariaLabel="Call Rome, Georgia office at (706) 784-6511"
             >
               Rome: (706) 784-6511
@@ -56,22 +56,22 @@ export const BottomCTA = () => {
         </div>
 
         {/* Trust Badges */}
-        <div className="flex flex-wrap justify-center items-center gap-6 text-white text-sm">
+        <div className="flex flex-wrap justify-center items-center gap-6 text-primary text-sm">
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4" />
             <span>Licensed in AL & GA</span>
           </div>
-          <div className="hidden sm:block w-px h-4 bg-white/20"></div>
+          <div className="hidden sm:block w-px h-4 bg-primary/20"></div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4" />
             <span>Hablamos Español</span>
           </div>
-          <div className="hidden sm:block w-px h-4 bg-white/20"></div>
+          <div className="hidden sm:block w-px h-4 bg-primary/20"></div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4" />
             <span>Family Owned</span>
           </div>
-          <div className="hidden sm:block w-px h-4 bg-white/20"></div>
+          <div className="hidden sm:block w-px h-4 bg-primary/20"></div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4" />
             <span>100+ Years Combined Experience</span>
