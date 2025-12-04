@@ -157,15 +157,12 @@ const LearnArticle = () => {
 
   // Build Article JSON-LD
   // Construct public image URL for schema
-  // heroImage is processed by Vite and may be a module URL, convert to public URL
-  // If no heroImage, use og-image.jpg as fallback
-  let articleImageUrl = "https://coffeyagencies.com/og-image.jpg";
-  if (heroImage && article.heroImage) {
-    // Extract filename from heroImage path and construct public URL
-    // Vite processes images to /assets/ directory
-    const filename = article.heroImage;
-    articleImageUrl = `https://coffeyagencies.com/${filename}`;
-  }
+  // Use heroImage URL if available (Vite processes it), otherwise use og-image.jpg
+  // heroImage is already a processed URL from Vite, but we need public domain URL
+  // For schema, use the filename directly or fallback to og-image
+  const articleImageUrl = article.heroImage 
+    ? `https://coffeyagencies.com/${article.heroImage}`
+    : "https://coffeyagencies.com/og-image.jpg";
 
   const articleSchema = {
     "@context": "https://schema.org",
