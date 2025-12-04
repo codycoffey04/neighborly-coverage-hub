@@ -92,6 +92,36 @@ const ServiceAreas = () => {
     }
   };
 
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Service Areas",
+        "item": "https://coffeyagencies.com/service-areas"
+      }
+    ]
+  };
+
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      serviceAreasSchema,
+      breadcrumbSchema
+    ]
+  };
+
   return (
     <PageLayout
       title="Service Areas"
@@ -119,8 +149,9 @@ const ServiceAreas = () => {
         <meta name="twitter:description" content="Coffey Agencies serves 24 cities across Alabama and Georgia. Find local insurance coverage near you." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(serviceAreasSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
       <section className="py-16 px-4">

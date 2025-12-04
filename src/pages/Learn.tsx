@@ -52,6 +52,36 @@ const Learn = () => {
     }))
   };
 
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://coffeyagencies.com/learn"
+      }
+    ]
+  };
+
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      collectionSchema,
+      breadcrumbSchema
+    ]
+  };
+
   return (
     <PageLayout
       title="Insurance Learning Center"
@@ -79,8 +109,9 @@ const Learn = () => {
         <meta name="twitter:description" content="Expert insurance guides covering auto, home, renters, condo, and life insurance. Plain English answers." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(collectionSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

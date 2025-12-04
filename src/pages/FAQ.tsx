@@ -177,6 +177,15 @@ const FAQ = () => {
     ]
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      faqSchema,
+      breadcrumbSchema
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -200,11 +209,9 @@ const FAQ = () => {
         <meta name="twitter:description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
       

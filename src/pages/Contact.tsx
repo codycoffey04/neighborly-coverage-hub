@@ -93,6 +93,15 @@ const Contact = () => {
     ]
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      contactSchema,
+      breadcrumbSchema
+    ]
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -158,11 +167,9 @@ const Contact = () => {
         <meta name="twitter:description" content="Contact Coffey Agencies for insurance quotes. Offices in Centre, AL and Rome, GA. Get a free quote today." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(contactSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

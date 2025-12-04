@@ -15,6 +15,36 @@ const Privacy = () => {
     "dateModified": "2025-10-14"
   };
 
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy",
+        "item": "https://coffeyagencies.com/privacy"
+      }
+    ]
+  };
+
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      privacySchema,
+      breadcrumbSchema
+    ]
+  };
+
   return (
     <PageLayout
       title="Privacy Policy"
@@ -42,8 +72,9 @@ const Privacy = () => {
         <meta name="twitter:description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(privacySchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

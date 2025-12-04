@@ -13,37 +13,11 @@ interface PageLayoutProps {
 }
 
 export const PageLayout = ({ children, title, description, breadcrumbs }: PageLayoutProps) => {
-  // Generate BreadcrumbList schema
-  const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "name": "Breadcrumb Navigation",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://coffeyagencies.com"
-      },
-      ...breadcrumbs.map((crumb, index) => ({
-        "@type": "ListItem",
-        "position": index + 2,
-        "name": crumb.label,
-        "item": `https://coffeyagencies.com${crumb.href}`
-      }))
-    ]
-  } : null;
-
+  // Note: Breadcrumb schema is now handled by individual pages in their @graph structures
+  // This prevents duplicate schemas and ensures all schemas render reliably
+  
   return (
     <div className="min-h-screen">
-      {breadcrumbSchema && (
-        <Helmet>
-          <script type="application/ld+json">
-            {JSON.stringify(breadcrumbSchema)}
-          </script>
-        </Helmet>
-      )}
-      
       <Header />
       
       {/* Hero Banner */}

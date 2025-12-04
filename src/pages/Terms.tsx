@@ -11,6 +11,36 @@ const Terms = () => {
     "dateModified": "2025-10-14"
   };
 
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Terms of Service",
+        "item": "https://coffeyagencies.com/terms"
+      }
+    ]
+  };
+
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      termsSchema,
+      breadcrumbSchema
+    ]
+  };
+
   return (
     <PageLayout
       title="Terms of Service"
@@ -38,8 +68,9 @@ const Terms = () => {
         <meta name="twitter:description" content="Terms of service for Coffey Agencies Inc. Read our terms and conditions for using our website and services." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(termsSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 
