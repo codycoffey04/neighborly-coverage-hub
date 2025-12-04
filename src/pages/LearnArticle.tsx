@@ -215,7 +215,7 @@ const LearnArticle = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://coffeyagencies.com/"
+        "item": "https://coffeyagencies.com"
       },
       {
         "@type": "ListItem",

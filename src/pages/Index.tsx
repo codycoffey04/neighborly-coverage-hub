@@ -184,16 +184,6 @@ const Index = () => {
             "areaServed": "Georgia",
             "availableLanguage": "English"
           }
-        ],
-        "award": [
-          {
-            "@type": "Award",
-            "name": "A+ BBB Rating",
-            "awardedBy": {
-              "@type": "Organization",
-              "name": "Better Business Bureau"
-            }
-          }
         ]
       },
       {

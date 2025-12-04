@@ -24,6 +24,28 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const CentreALResources = () => {
   const location = useLocation();
+  
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Local Resources",
+        "item": "https://coffeyagencies.com/resources/centre-al"
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -49,6 +71,11 @@ const CentreALResources = () => {
         <meta name="twitter:title" content="Local Resources for Centre, AL | Cherokee County" />
         <meta name="twitter:description" content="DMV, police, courts, emergency services for Cherokee County, Alabama. Your local resource guide." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Header />

@@ -101,21 +101,76 @@ const offices = [
 
 const About = () => {
   const location = useLocation();
+  
+  // AboutPage Schema - Enhanced for flagship site
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About Coffey Agencies",
     "description": "Your Local Insurance Team Since 2009",
     "url": "https://coffeyagencies.com/about",
+    "isPartOf": {
+      "@id": "https://coffeyagencies.com/#website"
+    },
     "mainEntity": {
       "@id": "https://coffeyagencies.com/#organization"
     }
+  };
+
+  // WebPage Schema - Additional page context for SEO
+  const webpageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "About Coffey Agencies",
+    "description": "Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA.",
+    "url": "https://coffeyagencies.com/about",
+    "isPartOf": {
+      "@id": "https://coffeyagencies.com/#website"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://coffeyagencies.com/cody-coffey-headshot.png",
+      "width": 192,
+      "height": 192
+    },
+    "breadcrumb": {
+      "@id": "https://coffeyagencies.com/about#breadcrumb"
+    }
+  };
+
+  // Person Schema for Cody Coffey (Founder/CEO) - Advanced schema for flagship site
+  const founderSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://coffeyagencies.com/#founder",
+    "name": "Cody Coffey",
+    "jobTitle": "CEO & Founder",
+    "description": "Founder and CEO of Coffey Agencies Inc. Started in insurance at age 18 in 2004, purchased first agency at age 22 in Centre, Alabama.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://coffeyagencies.com/cody-coffey-headshot.png",
+      "width": 192,
+      "height": 192
+    },
+    "worksFor": {
+      "@id": "https://coffeyagencies.com/#organization"
+    },
+    "founderOf": {
+      "@id": "https://coffeyagencies.com/#organization"
+    },
+    "knowsAbout": [
+      "Insurance",
+      "Business Management",
+      "Customer Service",
+      "Insurance Agency Operations"
+    ]
   };
 
   // BreadcrumbList Schema for SEO
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": "https://coffeyagencies.com/about#breadcrumb",
     "name": "Breadcrumb Navigation",
     "itemListElement": [
       {
@@ -156,9 +211,19 @@ const About = () => {
         <meta name="twitter:description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* AboutPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify(aboutSchema)}
         </script>
+        {/* WebPage Schema - Enhanced page context */}
+        <script type="application/ld+json">
+          {JSON.stringify(webpageSchema)}
+        </script>
+        {/* Person Schema for Founder/CEO - Advanced schema markup */}
+        <script type="application/ld+json">
+          {JSON.stringify(founderSchema)}
+        </script>
+        {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
