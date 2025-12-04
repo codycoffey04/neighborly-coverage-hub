@@ -102,6 +102,93 @@ const offices = [
 const About = () => {
   const location = useLocation();
   
+  // Organization/InsuranceAgency Schema - REQUIRED for Google Rich Results
+  // This must be on every page for Google to detect Organization/LocalBusiness
+  const organizationSchema = {
+    "@type": "InsuranceAgency",
+    "@id": "https://coffeyagencies.com/#organization",
+    "name": "Coffey Agencies",
+    "legalName": "Coffey Agencies Inc.",
+    "description": "Alabama & Georgia's trusted insurance partner offering auto, home, condo, renters, life, and motorcycle insurance with local expertise and digital convenience.",
+    "url": "https://coffeyagencies.com",
+    "telephone": ["(256) 927-6287", "(706) 784-6511"],
+    "foundingDate": "2009",
+    "founder": {
+      "@type": "Person",
+      "name": "Cody Coffey"
+    },
+    "logo": "https://coffeyagencies.com/coffey-logo.png",
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "1913 W Main Street",
+        "addressLocality": "Centre",
+        "addressRegion": "AL",
+        "postalCode": "35960",
+        "addressCountry": "US"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "1703 Turner McCall Blvd SE",
+        "addressLocality": "Rome",
+        "addressRegion": "GA",
+        "postalCode": "30161",
+        "addressCountry": "US"
+      }
+    ],
+    "priceRange": "$$",
+    "areaServed": ["Alabama", "Georgia"]
+  };
+
+  // LocalBusiness Schema for Centre, AL Office - REQUIRED for Google Rich Results
+  const centreOfficeSchema = {
+    "@type": "InsuranceAgency",
+    "name": "Coffey Agencies - Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1913 W Main Street",
+      "addressLocality": "Centre",
+      "addressRegion": "AL",
+      "postalCode": "35960",
+      "addressCountry": "US"
+    },
+    "telephone": "(256) 927-6287",
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "url": "https://coffeyagencies.com",
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "116"
+    }
+  };
+
+  // LocalBusiness Schema for Rome, GA Office - REQUIRED for Google Rich Results
+  const romeOfficeSchema = {
+    "@type": "InsuranceAgency",
+    "name": "Coffey Agencies - Rome",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1703 Turner McCall Blvd SE",
+      "addressLocality": "Rome",
+      "addressRegion": "GA",
+      "postalCode": "30161",
+      "addressCountry": "US"
+    },
+    "telephone": "(706) 784-6511",
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "url": "https://coffeyagencies.com",
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "90"
+    }
+  };
+  
   // AboutPage Schema - Enhanced for flagship site
   const aboutSchema = {
     "@context": "https://schema.org",
@@ -251,9 +338,13 @@ const About = () => {
 
   // Combine all schemas into a single @graph structure for reliable rendering
   // This ensures all schemas are included in one JSON-LD block
+  // CRITICAL: Organization and LocalBusiness schemas MUST be included for Google Rich Results
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
+      organizationSchema,
+      centreOfficeSchema,
+      romeOfficeSchema,
       aboutSchema,
       webpageSchema,
       founderSchema,
