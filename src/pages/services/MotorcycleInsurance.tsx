@@ -189,11 +189,10 @@ const MotorcycleInsurance = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://coffeyagencies.com/services/motorcycle-insurance#service",
     "serviceType": "Motorcycle Insurance",
     "provider": {
-      "@type": "InsuranceAgency",
-      "name": "Coffey Agencies",
-      "url": "https://coffeyagencies.com"
+      "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
       {

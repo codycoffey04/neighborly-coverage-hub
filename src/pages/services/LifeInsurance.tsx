@@ -35,11 +35,10 @@ const LifeInsurance = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://coffeyagencies.com/services/life-insurance#service",
     "serviceType": "Life Insurance",
     "provider": {
-      "@type": "InsuranceAgency",
-      "name": "Coffey Agencies",
-      "url": "https://coffeyagencies.com"
+      "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
       {
