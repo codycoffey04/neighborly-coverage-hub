@@ -8,6 +8,5 @@
 
 # Netlify SPA redirect - serve index.html for all routes
 # This allows React Router to handle client-side routing
-# Exclude assets and other static files from the redirect
-/assets/*    200
+# Static assets (JS, CSS, images) are served automatically by Netlify
 /*    /index.html   200
