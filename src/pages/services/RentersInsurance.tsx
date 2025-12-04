@@ -262,6 +262,42 @@ const breadcrumbSchema = {
 
 const RentersInsurance = () => {
   const location = useLocation();
+
+  // HowTo Schema for AEO/GEO optimization
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Get Renters Insurance in Alabama & Georgia",
+    "description": "Get renters insurance coverage from a local independent agent in 4 simple steps.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Request a Quote",
+        "text": "Tell us about your coverage needs online or by phone. Takes about 2 minutes."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Review Your Options",
+        "text": "A licensed agent presents 2-3 coverage options from multiple carriers."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Select Your Coverage",
+        "text": "Choose the policy that fits your needs and budget."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Get Covered",
+        "text": "We bind your coverage and send ID cards same-day in most cases."
+      }
+    ],
+    "totalTime": "PT15M"
+  };
+
   return (
     <>
       <Helmet>
@@ -296,6 +332,9 @@ const RentersInsurance = () => {
         </script>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(howToSchema)}
         </script>
       </Helmet>
 
