@@ -289,6 +289,64 @@ const Index = () => {
           },
           "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://coffeyagencies.com/#insurance-services",
+        "serviceType": "Insurance Agency Services",
+        "provider": {
+          "@id": "https://coffeyagencies.com/#organization"
+        },
+        "areaServed": [
+          {
+            "@type": "State",
+            "name": "Alabama",
+            "containsPlace": [
+              { "@type": "City", "name": "Auburn" },
+              { "@type": "City", "name": "Birmingham" },
+              { "@type": "City", "name": "Centre" },
+              { "@type": "City", "name": "Dothan" },
+              { "@type": "City", "name": "Enterprise" },
+              { "@type": "City", "name": "Foley" },
+              { "@type": "City", "name": "Mobile" },
+              { "@type": "City", "name": "Montgomery" },
+              { "@type": "City", "name": "Phenix City" },
+              { "@type": "City", "name": "Troy" },
+              { "@type": "City", "name": "Trussville" }
+            ]
+          },
+          {
+            "@type": "State",
+            "name": "Georgia",
+            "containsPlace": [
+              { "@type": "City", "name": "Alpharetta" },
+              { "@type": "City", "name": "Atlanta" },
+              { "@type": "City", "name": "Calhoun" },
+              { "@type": "City", "name": "Cartersville" },
+              { "@type": "City", "name": "Cedartown" },
+              { "@type": "City", "name": "Duluth" },
+              { "@type": "City", "name": "Forsyth" },
+              { "@type": "City", "name": "Lawrenceville" },
+              { "@type": "City", "name": "Powder Springs" },
+              { "@type": "City", "name": "Rockmart" },
+              { "@type": "City", "name": "Rome" },
+              { "@type": "City", "name": "Summerville" },
+              { "@type": "City", "name": "Suwanee" }
+            ]
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Insurance Products",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auto Insurance" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Insurance" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renters Insurance" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Condo Insurance" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Life Insurance" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle Insurance" } }
+          ]
+        }
       }
     ]
   };
