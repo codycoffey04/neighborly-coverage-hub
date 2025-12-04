@@ -161,8 +161,6 @@ const LearnArticle = () => {
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
-    "datePublished": "2025-01-01",
-    "dateModified": "2025-11-01",
     "author": {
       "@type": "Organization",
       "name": "Coffey Agencies"
@@ -172,7 +170,9 @@ const LearnArticle = () => {
       "name": "Coffey Agencies",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://coffeyagencies.com/coffey-logo.png"
+        "url": "https://coffeyagencies.com/coffey-logo.png",
+        "width": 250,
+        "height": 60
       }
     },
     "mainEntityOfPage": `https://coffeyagencies.com/learn/${article.slug}`

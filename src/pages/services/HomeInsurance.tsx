@@ -218,6 +218,8 @@ const HomeInsurance = () => {
       { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
     ],
     "description": "Complete homeowners insurance protection covering dwelling, personal property, liability, and additional living expenses for Alabama and Georgia properties.",
+    "serviceOutput": "Insurance Policy",
+    "termsOfService": "https://coffeyagencies.com/terms",
     "offers": {
       "@type": "Offer",
       "availability": "https://schema.org/InStock"

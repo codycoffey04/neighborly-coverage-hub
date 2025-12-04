@@ -226,6 +226,8 @@ const AutoInsurance = () => {
       { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
     ],
     "description": "Comprehensive auto insurance coverage including liability, collision, comprehensive, and uninsured motorist protection for Alabama and Georgia drivers.",
+    "serviceOutput": "Insurance Policy",
+    "termsOfService": "https://coffeyagencies.com/terms",
     "offers": {
       "@type": "Offer",
       "availability": "https://schema.org/InStock"

@@ -109,6 +109,16 @@ const Index = () => {
           "Term Life Insurance",
           "Whole Life Insurance"
         ],
+        "award": [
+          {
+            "@type": "Award",
+            "name": "A+ BBB Rating",
+            "awardedBy": {
+              "@type": "Organization",
+              "name": "Better Business Bureau"
+            }
+          }
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Insurance Services",
@@ -152,6 +162,16 @@ const Index = () => {
             "areaServed": "Georgia",
             "availableLanguage": "English"
           }
+        ],
+        "award": [
+          {
+            "@type": "Award",
+            "name": "A+ BBB Rating",
+            "awardedBy": {
+              "@type": "Organization",
+              "name": "Better Business Bureau"
+            }
+          }
         ]
       },
       {
@@ -191,7 +211,9 @@ const Index = () => {
           }
         ],
         "sameAs": [
-          "https://www.facebook.com/codycoffeyagency"
+          "https://www.facebook.com/codycoffeyagency",
+          "https://www.google.com/maps/place/?cid=ChIJJ80TpQ5hiogRn3tzQbqNLMA",
+          "https://www.google.com/maps/place/?cid=ChIJZQwKAM-kiogR_bIpdOhQm7o"
         ]
       },
       {

@@ -222,6 +222,8 @@ const serviceSchema = {
     }
   ],
   "description": "Specialized HO-6 condo insurance protecting walls-in coverage, betterments, personal property, loss assessment, and liability for Alabama and Georgia condo owners.",
+  "serviceOutput": "Insurance Policy",
+  "termsOfService": "https://coffeyagencies.com/terms",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock"

@@ -52,15 +52,11 @@ const LifeInsurance = () => {
       }
     ],
     "description": "Term and whole life insurance protection for Alabama and Georgia families, with coverage from $25/month for $500K term life insurance.",
+    "serviceOutput": "Insurance Policy",
+    "termsOfService": "https://coffeyagencies.com/terms",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "price": "25.00",
-        "priceCurrency": "USD",
-        "unitText": "MONTH"
-      }
+      "availability": "https://schema.org/InStock"
     }
   };
 

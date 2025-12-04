@@ -205,6 +205,8 @@ const MotorcycleInsurance = () => {
       }
     ],
     "description": "Motorcycle insurance coverage for cruisers, sport bikes, and touring machines including liability, collision, comprehensive, and custom parts protection up to $30,000.",
+    "serviceOutput": "Insurance Policy",
+    "termsOfService": "https://coffeyagencies.com/terms",
     "offers": {
       "@type": "Offer",
       "availability": "https://schema.org/InStock"

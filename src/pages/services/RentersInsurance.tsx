@@ -229,15 +229,11 @@ const serviceSchema = {
     { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
   ],
   "description": "Affordable renters insurance starting at $8/month when bundled, protecting personal property, liability, and providing temporary housing coverage.",
+  "serviceOutput": "Insurance Policy",
+  "termsOfService": "https://coffeyagencies.com/terms",
   "offers": {
     "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "price": "8.00",
-      "priceCurrency": "USD",
-      "unitText": "MONTH"
-    }
+    "availability": "https://schema.org/InStock"
   }
 };
 
