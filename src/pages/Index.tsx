@@ -64,6 +64,24 @@ const Index = () => {
         "currenciesAccepted": "USD",
         "logo": "https://coffeyagencies.com/coffey-logo.png",
         "image": "https://coffeyagencies.com/coffey-logo.png",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "1913 W Main Street",
+            "addressLocality": "Centre",
+            "addressRegion": "AL",
+            "postalCode": "35960",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "1703 Turner McCall Blvd SE",
+            "addressLocality": "Rome",
+            "addressRegion": "GA",
+            "postalCode": "30161",
+            "addressCountry": "US"
+          }
+        ],
         "numberOfEmployees": {
           "@type": "QuantitativeValue",
           "minValue": 6,
