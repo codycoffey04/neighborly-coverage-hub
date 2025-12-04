@@ -199,7 +199,6 @@ const georgiaCities = [
 
   // HowTo Schema for AEO/GEO optimization
   const howToSchema = {
-    "@context": "https://schema.org",
     "@type": "HowTo",
     "name": "How to Get Life Insurance in Alabama & Georgia",
     "description": "Get life insurance coverage from a local independent agent in 4 simple steps.",

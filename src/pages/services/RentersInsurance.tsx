@@ -263,7 +263,6 @@ const RentersInsurance = () => {
 
   // HowTo Schema for AEO/GEO optimization
   const howToSchema = {
-    "@context": "https://schema.org",
     "@type": "HowTo",
     "name": "How to Get Renters Insurance in Alabama & Georgia",
     "description": "Get renters insurance coverage from a local independent agent in 4 simple steps.",

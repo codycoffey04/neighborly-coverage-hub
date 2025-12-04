@@ -252,7 +252,6 @@ const MotorcycleInsurance = () => {
 
   // HowTo Schema for AEO/GEO optimization
   const howToSchema = {
-    "@context": "https://schema.org",
     "@type": "HowTo",
     "name": "How to Get Motorcycle Insurance in Alabama & Georgia",
     "description": "Get motorcycle insurance coverage from a local independent agent in 4 simple steps.",
