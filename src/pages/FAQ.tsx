@@ -143,7 +143,6 @@ const FAQ = () => {
   const allQuestions = faqs.flatMap(section => section.questions);
   
   const faqSchema = {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "name": "Frequently Asked Questions",
     "mainEntity": allQuestions.map(faq => ({
@@ -158,7 +157,6 @@ const FAQ = () => {
 
   // BreadcrumbList Schema for SEO
   const breadcrumbSchema = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "name": "Breadcrumb Navigation",
     "itemListElement": [
@@ -177,12 +175,36 @@ const FAQ = () => {
     ]
   };
 
+  // Organization schema reference
+  const organizationSchema = {
+    "@type": "InsuranceAgency",
+    "@id": "https://coffeyagencies.com/#organization",
+    "name": "Coffey Agencies Inc.",
+    "url": "https://coffeyagencies.com"
+  };
+
+  // WebPage schema
+  const webpageSchema = {
+    "@type": "WebPage",
+    "@id": "https://coffeyagencies.com/faq",
+    "name": "Frequently Asked Questions | Coffey Agencies",
+    "url": "https://coffeyagencies.com/faq",
+    "isPartOf": {
+      "@id": "https://coffeyagencies.com/#website"
+    },
+    "about": {
+      "@id": "https://coffeyagencies.com/#organization"
+    }
+  };
+
   // Combine all schemas into a single @graph structure for reliable rendering
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
+      organizationSchema,
       faqSchema,
-      breadcrumbSchema
+      breadcrumbSchema,
+      webpageSchema
     ]
   };
 
