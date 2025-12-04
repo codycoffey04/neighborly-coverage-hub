@@ -173,6 +173,7 @@ const HomeInsurance = () => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Home Insurance Frequently Asked Questions",
     "mainEntity": faqItems.map(item => ({
       "@type": "Question",
       "name": item.question,

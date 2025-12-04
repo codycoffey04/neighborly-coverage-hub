@@ -182,6 +182,7 @@ const LearnArticle = () => {
   const faqSchema = article.faqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": `${article.title} - Frequently Asked Questions`,
     "mainEntity": article.faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,

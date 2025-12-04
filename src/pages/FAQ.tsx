@@ -145,6 +145,7 @@ const FAQ = () => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Frequently Asked Questions",
     "mainEntity": allQuestions.map(faq => ({
       "@type": "Question",
       "name": faq.question,

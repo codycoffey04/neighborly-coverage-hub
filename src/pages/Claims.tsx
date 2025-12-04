@@ -135,6 +135,7 @@ const Claims = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            "name": "Insurance Claims Frequently Asked Questions",
             "mainEntity": faqs.map(faq => ({
               "@type": "Question",
               "name": faq.question,

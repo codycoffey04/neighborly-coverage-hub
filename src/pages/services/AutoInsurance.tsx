@@ -180,6 +180,7 @@ const AutoInsurance = () => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Auto Insurance Frequently Asked Questions",
     "mainEntity": faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,

@@ -283,6 +283,7 @@ const CondoInsurance = () => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Condo Insurance Frequently Asked Questions",
     "mainEntity": faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,

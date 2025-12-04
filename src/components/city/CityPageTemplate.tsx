@@ -173,6 +173,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": `Insurance FAQs for ${city.city}, ${city.state}`,
     "mainEntity": city.faqs.map(faq => ({
       "@type": "Question",
       "name": faq.question,

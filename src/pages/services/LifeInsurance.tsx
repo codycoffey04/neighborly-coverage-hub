@@ -63,6 +63,7 @@ const LifeInsurance = () => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Life Insurance Frequently Asked Questions",
     "mainEntity": [
       {
         "@type": "Question",
