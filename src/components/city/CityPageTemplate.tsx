@@ -209,7 +209,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
 
   // JSON-LD Schema for FAQ
   const faqSchema = {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "name": `Insurance FAQs for ${city.city}, ${city.state}`,
     "mainEntity": city.faqs.map(faq => ({
@@ -224,7 +223,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
 
   // JSON-LD Schema for LocalBusiness (office cities only)
   const localBusinessSchema = city.isOfficeCity && office ? {
-    "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": city.nearestOffice === "centre" 
       ? "https://coffeyagencies.com/#centre-office"
@@ -269,7 +267,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   // JSON-LD Schema for Place (all cities)
   const cityGeo = cityCoordinates[city.slug];
   const placeSchema = {
-    "@context": "https://schema.org",
     "@type": "Place",
     "@id": `https://coffeyagencies.com/${city.slug}#place`,
     "name": `${city.city}, ${city.state}`,
@@ -293,7 +290,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
 
   // JSON-LD Schema for BreadcrumbList
   const breadcrumbSchema = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "name": "Breadcrumb Navigation",
     "itemListElement": [
