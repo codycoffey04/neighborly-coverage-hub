@@ -12,7 +12,7 @@ import { MapPin, Phone, Clock, Star, CheckCircle } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
 
