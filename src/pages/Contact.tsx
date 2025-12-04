@@ -62,8 +62,8 @@ const Contact = () => {
   const { toast } = useToast();
 
   const contactSchema = {
-    "@context": "https://schema.org",
     "@type": "ContactPage",
+    "@id": "https://coffeyagencies.com/contact",
     "name": "Contact Coffey Agencies",
     "description": "Get in touch with Coffey Agencies for insurance quotes and service",
     "url": "https://coffeyagencies.com/contact",
@@ -74,7 +74,6 @@ const Contact = () => {
 
   // BreadcrumbList Schema for SEO
   const breadcrumbSchema = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "name": "Breadcrumb Navigation",
     "itemListElement": [
@@ -93,11 +92,88 @@ const Contact = () => {
     ]
   };
 
+  // Organization schema
+  const organizationSchema = {
+    "@type": "InsuranceAgency",
+    "@id": "https://coffeyagencies.com/#organization",
+    "name": "Coffey Agencies Inc.",
+    "url": "https://coffeyagencies.com",
+    "telephone": ["(256) 927-6287", "(706) 784-6511"],
+    "email": "info@coffeyagencies.com"
+  };
+
+  // LocalBusiness schema for Centre office
+  const centreOfficeSchema = {
+    "@type": "LocalBusiness",
+    "@id": "https://coffeyagencies.com/#centre-office",
+    "name": "Coffey Agencies - Centre, AL",
+    "telephone": "(256) 927-6287",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1913 W Main Street",
+      "addressLocality": "Centre",
+      "addressRegion": "AL",
+      "postalCode": "35960",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.1520,
+      "longitude": -85.6789
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "parentOrganization": {
+      "@id": "https://coffeyagencies.com/#organization"
+    }
+  };
+
+  // LocalBusiness schema for Rome office
+  const romeOfficeSchema = {
+    "@type": "LocalBusiness",
+    "@id": "https://coffeyagencies.com/#rome-office",
+    "name": "Coffey Agencies - Rome, GA",
+    "telephone": "(706) 784-6511",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1703 Turner McCall Blvd SE",
+      "addressLocality": "Rome",
+      "addressRegion": "GA",
+      "postalCode": "30161",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.2570,
+      "longitude": -85.1647
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "16:30"
+      }
+    ],
+    "parentOrganization": {
+      "@id": "https://coffeyagencies.com/#organization"
+    }
+  };
+
   // Combine all schemas into a single @graph structure for reliable rendering
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
+      organizationSchema,
       contactSchema,
+      centreOfficeSchema,
+      romeOfficeSchema,
       breadcrumbSchema
     ]
   };
