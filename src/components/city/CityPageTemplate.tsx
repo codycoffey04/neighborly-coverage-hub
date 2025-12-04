@@ -119,7 +119,11 @@ const officeDetails = {
     hours: "Monday–Friday 8:00 AM – 5:00 PM",
     rating: "4.7",
     reviews: "116",
-    team: ["Kimberly Fletcher", "Crystal Brozio", "Maria Rocha-Guzman"]
+    team: ["Kimberly Fletcher", "Crystal Brozio", "Maria Rocha-Guzman"],
+    geo: {
+      latitude: "34.1520",
+      longitude: "-85.6789"
+    }
   },
   rome: {
     dba: "Millican & Coffey Agency",
@@ -128,8 +132,42 @@ const officeDetails = {
     hours: "Monday–Friday 8:30 AM – 4:30 PM",
     rating: "4.6",
     reviews: "90",
-    team: ["Kathy Sewell", "Brandy Wilkins"]
+    team: ["Kathy Sewell", "Brandy Wilkins"],
+    geo: {
+      latitude: "34.2570",
+      longitude: "-85.1647"
+    }
   }
+};
+
+// City coordinates mapping for Place schema geo coordinates
+const cityCoordinates: Record<string, { latitude: string; longitude: string }> = {
+  // Alabama cities
+  "auburn-al": { latitude: "32.6099", longitude: "-85.4808" },
+  "birmingham-al": { latitude: "33.5207", longitude: "-86.8025" },
+  "centre-al": { latitude: "34.1520", longitude: "-85.6789" },
+  "dothan-al": { latitude: "31.2234", longitude: "-85.3908" },
+  "enterprise-al": { latitude: "31.3152", longitude: "-85.8552" },
+  "foley-al": { latitude: "30.4066", longitude: "-87.6836" },
+  "mobile-al": { latitude: "30.6954", longitude: "-88.0399" },
+  "montgomery-al": { latitude: "32.3668", longitude: "-86.3000" },
+  "phenix-city-al": { latitude: "32.4710", longitude: "-85.0008" },
+  "troy-al": { latitude: "31.8088", longitude: "-85.9700" },
+  "trussville-al": { latitude: "33.6198", longitude: "-86.6089" },
+  // Georgia cities
+  "alpharetta-ga": { latitude: "34.0754", longitude: "-84.2941" },
+  "atlanta-ga": { latitude: "33.7489", longitude: "-84.3900" },
+  "calhoun-ga": { latitude: "34.5026", longitude: "-84.9511" },
+  "cartersville-ga": { latitude: "34.1651", longitude: "-84.7999" },
+  "cedartown-ga": { latitude: "34.0153", longitude: "-85.2539" },
+  "duluth-ga": { latitude: "34.0029", longitude: "-84.1446" },
+  "forsyth-ga": { latitude: "33.0350", longitude: "-83.9381" },
+  "lawrenceville-ga": { latitude: "33.9562", longitude: "-83.9880" },
+  "powder-springs-ga": { latitude: "33.8595", longitude: "-84.6838" },
+  "rockmart-ga": { latitude: "34.0026", longitude: "-85.0416" },
+  "rome-ga": { latitude: "34.2570", longitude: "-85.1647" },
+  "summerville-ga": { latitude: "34.4797", longitude: "-85.3481" },
+  "suwanee-ga": { latitude: "34.0515", longitude: "-84.0713" }
 };
 
 export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
@@ -187,7 +225,10 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   // JSON-LD Schema for LocalBusiness (office cities only)
   const localBusinessSchema = city.isOfficeCity && office ? {
     "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
+    "@type": "LocalBusiness",
+    "@id": city.nearestOffice === "centre" 
+      ? "https://coffeyagencies.com/#centre-office"
+      : "https://coffeyagencies.com/#rome-office",
     "name": `Coffey Agencies - ${office.dba}`,
     "address": {
       "@type": "PostalAddress",
@@ -197,19 +238,36 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "postalCode": city.zipCodes[0],
       "addressCountry": "US"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": office.geo.latitude,
+      "longitude": office.geo.longitude
+    },
     "telephone": city.localPhone || office.phone,
-    "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png",
-    "url": "https://coffeyagencies.com",
-    "openingHours": "Mo-Fr 08:00-17:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": city.nearestOffice === "centre" ? "08:00" : "08:30",
+        "closes": city.nearestOffice === "centre" ? "17:00" : "16:30"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": office.rating,
-      "reviewCount": office.reviews
-    }
+      "reviewCount": office.reviews,
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "parentOrganization": {
+      "@id": "https://coffeyagencies.com/#organization"
+    },
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png"
   } : null;
 
   // JSON-LD Schema for Place (all cities)
+  const cityGeo = cityCoordinates[city.slug];
   const placeSchema = {
     "@context": "https://schema.org",
     "@type": "Place",
@@ -223,6 +281,13 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "postalCode": city.zipCodes.join(", "),
       "addressCountry": "US"
     },
+    ...(cityGeo && {
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": cityGeo.latitude,
+        "longitude": cityGeo.longitude
+      }
+    }),
     "containsPlace": city.neighborhoods.map(n => ({ "@type": "Place", "name": n }))
   };
 
@@ -253,11 +318,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     ]
   };
 
+  // Organization schema reference
+  const organizationSchema = {
+    "@type": "InsuranceAgency",
+    "@id": "https://coffeyagencies.com/#organization",
+    "name": "Coffey Agencies Inc.",
+    "url": "https://coffeyagencies.com"
+  };
+
   // Combine all schemas into a single @graph structure for reliable rendering
   // This ensures all schemas are included in one JSON-LD block
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
+      organizationSchema,
       faqSchema,
       placeSchema,
       breadcrumbSchema,
