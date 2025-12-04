@@ -17,6 +17,7 @@ export const PageLayout = ({ children, title, description, breadcrumbs }: PageLa
   const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
     "itemListElement": [
       {
         "@type": "ListItem",

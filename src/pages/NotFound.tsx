@@ -25,6 +25,7 @@ const NotFound = () => {
     },
     "breadcrumb": {
       "@type": "BreadcrumbList",
+      "name": "Breadcrumb Navigation",
       "itemListElement": [
         {
           "@type": "ListItem",
