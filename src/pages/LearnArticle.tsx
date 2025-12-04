@@ -232,6 +232,16 @@ const LearnArticle = () => {
     ]
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      articleSchema,
+      breadcrumbSchema,
+      ...(faqSchema ? [faqSchema] : [])
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -255,21 +265,9 @@ const LearnArticle = () => {
         <meta name="twitter:description" content={article.excerpt} />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
-        {/* Article Schema */}
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(articleSchema)}
-        </script>
-        
-        {/* FAQPage Schema */}
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
-
-        {/* BreadcrumbList Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

@@ -216,6 +216,17 @@ const georgiaCities = [
     "totalTime": "PT15M"
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      faqSchema,
+      serviceSchema,
+      breadcrumbSchema,
+      howToSchema
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -239,17 +250,9 @@ const georgiaCities = [
         <meta name="twitter:description" content="$500K term life insurance from $25/month. Protect your family's financial security with affordable coverage." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(serviceSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(howToSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

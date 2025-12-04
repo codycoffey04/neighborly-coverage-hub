@@ -225,7 +225,6 @@ const Reviews = () => {
   // Individual Review Schema for each customer review
   // This enables review rich snippets in Google search results
   const individualReviewSchemas = reviews.map((review) => ({
-    "@context": "https://schema.org",
     "@type": "Review",
     "author": {
       "@type": "Person",
@@ -244,6 +243,16 @@ const Reviews = () => {
       "@id": "https://coffeyagencies.com/#organization"
     }
   }));
+
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      reviewsSchema,
+      breadcrumbSchema,
+      ...individualReviewSchemas
+    ]
+  };
 
   return (
     <>
@@ -268,18 +277,10 @@ const Reviews = () => {
         <meta name="twitter:description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL and 4.6★ in Rome, GA. See why families trust us." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(reviewsSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-        {/* Individual Review Schemas for Rich Snippets */}
-        {individualReviewSchemas.map((reviewSchema, index) => (
-          <script key={index} type="application/ld+json">
-            {JSON.stringify(reviewSchema)}
-          </script>
-        ))}
       </Helmet>
       
       <Header />

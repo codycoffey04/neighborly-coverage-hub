@@ -269,6 +269,17 @@ const MotorcycleInsurance = () => {
     "totalTime": "PT15M"
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      faqSchema,
+      serviceSchema,
+      breadcrumbSchema,
+      howToSchema
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -292,17 +303,9 @@ const MotorcycleInsurance = () => {
         <meta name="twitter:description" content="Coverage for riders—cruisers, sport bikes, touring machines. Custom parts coverage up to $30,000." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(serviceSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(howToSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

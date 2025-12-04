@@ -283,6 +283,17 @@ const HomeInsurance = () => {
     "totalTime": "PT15M"
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      faqSchema,
+      serviceSchema,
+      breadcrumbSchema,
+      howToSchema
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -306,17 +317,9 @@ const HomeInsurance = () => {
         <meta name="twitter:description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance in AL and GA." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(serviceSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(howToSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

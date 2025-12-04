@@ -253,6 +253,18 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     ]
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  // This ensures all schemas are included in one JSON-LD block
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      faqSchema,
+      placeSchema,
+      breadcrumbSchema,
+      ...(localBusinessSchema ? [localBusinessSchema] : [])
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -279,19 +291,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         <meta name="twitter:description" content={`Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance.`} />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-        {localBusinessSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(localBusinessSchema)}
-          </script>
-        )}
-        <script type="application/ld+json">
-          {JSON.stringify(placeSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 

@@ -104,6 +104,72 @@ const Claims = () => {
     ]
   };
 
+  // FAQPage Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "Insurance Claims Frequently Asked Questions",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  // HowTo Schema for Claims Process
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to File an Insurance Claim",
+    "description": "Step-by-step guide for filing auto, home, renters, condo, or life insurance claims with Coffey Agencies in Alabama and Georgia.",
+    "totalTime": "PT30M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Make sure everyone is safe",
+        "text": "Your safety comes first. If anyone is injured, call 911 immediately."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Call the police if required",
+        "text": "For auto accidents, theft, vandalism, or break-ins — always file a police report. You'll need the report number for your claim."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Document everything",
+        "text": "Take photos and videos of all damage before moving anything or making repairs. The more documentation, the smoother your claim."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Prevent further damage",
+        "text": "Take reasonable steps to protect your property from additional damage (tarp a roof, board a window). Keep receipts for any emergency repairs."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Contact Coffey Agencies",
+        "text": "Call Coffey Agencies so we can help you report the claim correctly and explain what happens next. Centre, AL: (256) 927-6287. Rome, GA: (706) 784-6511."
+      }
+    ]
+  };
+
+  // Combine all schemas into a single @graph structure for reliable rendering
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      faqSchema,
+      howToSchema,
+      breadcrumbSchema
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -130,69 +196,9 @@ const Claims = () => {
         <meta name="twitter:description" content="Step-by-step guidance for filing auto, home, renters, condo, or life insurance claims. Call us first for help." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
-        {/* FAQPage Schema */}
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "name": "Insurance Claims Frequently Asked Questions",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })}
-        </script>
-        
-        {/* HowTo Schema for Claims Process */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to File an Insurance Claim",
-            "description": "Step-by-step guide for filing auto, home, renters, condo, or life insurance claims with Coffey Agencies in Alabama and Georgia.",
-            "totalTime": "PT30M",
-            "step": [
-              {
-                "@type": "HowToStep",
-                "position": 1,
-                "name": "Make sure everyone is safe",
-                "text": "Your safety comes first. If anyone is injured, call 911 immediately."
-              },
-              {
-                "@type": "HowToStep",
-                "position": 2,
-                "name": "Call the police if required",
-                "text": "For auto accidents, theft, vandalism, or break-ins — always file a police report. You'll need the report number for your claim."
-              },
-              {
-                "@type": "HowToStep",
-                "position": 3,
-                "name": "Document everything",
-                "text": "Take photos and videos of all damage before moving anything or making repairs. The more documentation, the smoother your claim."
-              },
-              {
-                "@type": "HowToStep",
-                "position": 4,
-                "name": "Prevent further damage",
-                "text": "Take reasonable steps to protect your property from additional damage (tarp a roof, board a window). Keep receipts for any emergency repairs."
-              },
-              {
-                "@type": "HowToStep",
-                "position": 5,
-                "name": "Contact Coffey Agencies",
-                "text": "Call Coffey Agencies so we can help you report the claim correctly and explain what happens next. Centre, AL: (256) 927-6287. Rome, GA: (706) 784-6511."
-              }
-            ]
-          })}
-        </script>
-        
-        {/* BreadcrumbList Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 
