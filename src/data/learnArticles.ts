@@ -241,6 +241,10 @@ export const learnArticles: LearnArticle[] = [
     relatedArticles: ["home-insurance-guide", "bundling-home-and-auto", "alabama-insurance-requirements"],
     internalLinks: [
       { text: "Get Your Free Auto Insurance Quote", href: "/contact" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Auto Insurance in Centre, AL", href: "/centre-al" },
+      { text: "Auto Insurance in Rome, GA", href: "/rome-ga" },
+      { text: "Auto Insurance in Birmingham, AL", href: "/birmingham-al" },
       { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
       { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
       { text: "Bundle Auto + Home and Save", href: "/learn/bundling-home-and-auto" }
@@ -509,6 +513,10 @@ export const learnArticles: LearnArticle[] = [
     relatedArticles: ["auto-insurance-guide", "bundling-home-and-auto", "condo-insurance-guide"],
     internalLinks: [
       { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Home Insurance in Centre, AL", href: "/centre-al" },
+      { text: "Home Insurance in Rome, GA", href: "/rome-ga" },
+      { text: "Home Insurance in Trussville, AL", href: "/trussville-al" },
       { text: "Bundle Home + Auto and Save", href: "/learn/bundling-home-and-auto" },
       { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
       { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" }
@@ -787,6 +795,10 @@ export const learnArticles: LearnArticle[] = [
     relatedArticles: ["condo-insurance-guide", "home-insurance-guide", "bundling-home-and-auto"],
     internalLinks: [
       { text: "Get a Renters Insurance Quote", href: "/contact" },
+      { text: "Renters Insurance Coverage", href: "/services/renters-insurance" },
+      { text: "Renters Insurance in Auburn, AL", href: "/auburn-al" },
+      { text: "Renters Insurance in Atlanta, GA", href: "/atlanta-ga" },
+      { text: "Renters Insurance in Birmingham, AL", href: "/birmingham-al" },
       { text: "Bundle Renters + Auto and Save", href: "/learn/bundling-home-and-auto" },
       { text: "Understanding Liability Coverage", href: "/learn/auto-insurance-guide" }
     ]
@@ -1027,6 +1039,10 @@ export const learnArticles: LearnArticle[] = [
     relatedArticles: ["renters-insurance-guide", "home-insurance-guide", "bundling-home-and-auto"],
     internalLinks: [
       { text: "Get a Condo Insurance Quote", href: "/contact" },
+      { text: "Condo Insurance Coverage", href: "/services/condo-insurance" },
+      { text: "Condo Insurance in Atlanta, GA", href: "/atlanta-ga" },
+      { text: "Condo Insurance in Birmingham, AL", href: "/birmingham-al" },
+      { text: "Condo Insurance in Montgomery, AL", href: "/montgomery-al" },
       { text: "Bundle Condo + Auto and Save", href: "/learn/bundling-home-and-auto" },
       { text: "Understanding Liability Coverage", href: "/learn/auto-insurance-guide" }
     ]
@@ -1401,6 +1417,10 @@ export const learnArticles: LearnArticle[] = [
     relatedArticles: ["bundling-home-and-auto", "home-insurance-guide", "auto-insurance-guide"],
     internalLinks: [
       { text: "Get a Life Insurance Quote", href: "/contact" },
+      { text: "Life Insurance Coverage", href: "/services/life-insurance" },
+      { text: "Life Insurance in Centre, AL", href: "/centre-al" },
+      { text: "Life Insurance in Rome, GA", href: "/rome-ga" },
+      { text: "Life Insurance in Birmingham, AL", href: "/birmingham-al" },
       { text: "Bundle Life Insurance with Home + Auto", href: "/learn/bundling-home-and-auto" },
       { text: "Understanding Your Coverage Needs", href: "/learn/home-insurance-guide" }
     ]
@@ -1710,6 +1730,11 @@ export const learnArticles: LearnArticle[] = [
     internalLinks: [
       { text: "Get an Auto Insurance Quote", href: "/contact" },
       { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Insurance in Centre, AL", href: "/centre-al" },
+      { text: "Insurance in Birmingham, AL", href: "/birmingham-al" },
+      { text: "Insurance in Montgomery, AL", href: "/montgomery-al" },
       { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
       { text: "Understanding Uninsured Motorist Coverage", href: "/learn/auto-insurance-guide" }
     ]
@@ -1963,6 +1988,11 @@ export const learnArticles: LearnArticle[] = [
     internalLinks: [
       { text: "Get an Auto Insurance Quote", href: "/contact" },
       { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Insurance in Rome, GA", href: "/rome-ga" },
+      { text: "Insurance in Atlanta, GA", href: "/atlanta-ga" },
+      { text: "Insurance in Lawrenceville, GA", href: "/lawrenceville-ga" },
       { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
       { text: "Understanding Uninsured Motorist Coverage", href: "/learn/auto-insurance-guide" }
     ]
@@ -2156,6 +2186,11 @@ export const learnArticles: LearnArticle[] = [
     relatedArticles: ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide"],
     internalLinks: [
       { text: "Get a Bundled Quote", href: "/contact" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Bundle Insurance in Centre, AL", href: "/centre-al" },
+      { text: "Bundle Insurance in Rome, GA", href: "/rome-ga" },
+      { text: "Bundle Insurance in Trussville, AL", href: "/trussville-al" },
       { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
       { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
       { text: "Renters Insurance Guide", href: "/learn/renters-insurance-guide" }
