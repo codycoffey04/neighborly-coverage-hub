@@ -166,6 +166,67 @@ const About = () => {
     ]
   };
 
+  // Person Schemas for Team Members - Advanced schema markup for flagship site
+  const teamMemberSchemas = [
+    // Centre, AL Office Team
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kimberly Fletcher",
+      "jobTitle": "Office Manager & Senior Sales Producer",
+      "description": "Kimberly joined our team on day one when Cody purchased the Centre office. With 5 years of agency experience before joining us, she brings deep knowledge of insurance products and exceptional client service. She manages daily operations and helps families find the right coverage for their needs.",
+      "worksFor": {
+        "@id": "https://coffeyagencies.com/#organization"
+      },
+      "knowsLanguage": ["English"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Crystal Brozio",
+      "jobTitle": "Customer Service Manager",
+      "description": "Crystal leads our customer service team with over 12 years of insurance experience. She ensures every client interaction exceeds expectations, handling policy changes, answering questions, and coordinating claims support. Her attention to detail and genuine care for clients makes her an invaluable part of our team.",
+      "worksFor": {
+        "@id": "https://coffeyagencies.com/#organization"
+      },
+      "knowsLanguage": ["English"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Maria Rocha-Guzman",
+      "jobTitle": "Senior Sales Producer (Bilingual)",
+      "description": "Maria serves our English and Spanish-speaking clients throughout Alabama and Georgia. As a bilingual senior producer, she helps families navigate insurance options, compare coverage, and find solutions that fit their budgets. She's passionate about making insurance accessible to everyone.",
+      "worksFor": {
+        "@id": "https://coffeyagencies.com/#organization"
+      },
+      "knowsLanguage": ["English", "Spanish"]
+    },
+    // Rome, GA Office Team
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kathy Sewell",
+      "jobTitle": "Customer Service Specialist",
+      "description": "Kathy joined our team with over 10 years of insurance agency experience. She specializes in policy service, helping clients with coverage questions, billing inquiries, and policy adjustments. Her extensive background means she can answer complex questions quickly and accurately.",
+      "worksFor": {
+        "@id": "https://coffeyagencies.com/#organization"
+      },
+      "knowsLanguage": ["English"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Brandy Wilkins",
+      "jobTitle": "Senior Sales Producer",
+      "description": "Brandy joined our team bringing 8 years of prior insurance agency experience. As a senior sales producer, she specializes in helping clients find the right coverage for their unique situations, whether bundling policies for maximum savings or crafting custom solutions for complex insurance needs.",
+      "worksFor": {
+        "@id": "https://coffeyagencies.com/#organization"
+      },
+      "knowsLanguage": ["English"]
+    }
+  ];
+
   // BreadcrumbList Schema for SEO
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -223,6 +284,12 @@ const About = () => {
         <script type="application/ld+json">
           {JSON.stringify(founderSchema)}
         </script>
+        {/* Person Schemas for Team Members - Advanced schema markup */}
+        {teamMemberSchemas.map((schema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        ))}
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
