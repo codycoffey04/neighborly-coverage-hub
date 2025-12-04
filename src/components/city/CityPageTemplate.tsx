@@ -198,6 +198,9 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "addressCountry": "US"
     },
     "telephone": city.localPhone || office.phone,
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "url": "https://coffeyagencies.com",
     "openingHours": "Mo-Fr 08:00-17:00",
     "aggregateRating": {
       "@type": "AggregateRating",
