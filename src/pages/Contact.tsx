@@ -99,7 +99,17 @@ const Contact = () => {
     "name": "Coffey Agencies Inc.",
     "url": "https://coffeyagencies.com",
     "telephone": ["(256) 927-6287", "(706) 784-6511"],
-    "email": "info@coffeyagencies.com"
+    "email": "info@coffeyagencies.com",
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1913 W Main Street",
+      "addressLocality": "Centre",
+      "addressRegion": "AL",
+      "postalCode": "35960",
+      "addressCountry": "US"
+    }
   };
 
   // LocalBusiness schema for Centre office

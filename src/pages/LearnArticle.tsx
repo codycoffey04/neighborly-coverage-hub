@@ -231,7 +231,19 @@ const LearnArticle = () => {
     "@type": "InsuranceAgency",
     "@id": "https://coffeyagencies.com/#organization",
     "name": "Coffey Agencies Inc.",
-    "url": "https://coffeyagencies.com"
+    "url": "https://coffeyagencies.com",
+    "telephone": ["(256) 927-6287", "(706) 784-6511"],
+    "email": "info@coffeyagencies.com",
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1913 W Main Street",
+      "addressLocality": "Centre",
+      "addressRegion": "AL",
+      "postalCode": "35960",
+      "addressCountry": "US"
+    }
   };
 
   // Combine all schemas into a single @graph structure for reliable rendering
