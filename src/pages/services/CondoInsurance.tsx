@@ -178,7 +178,7 @@ const claimsSteps = [
 const faqs = [
   {
     question: "How does an HO-6 policy differ from the condo's master policy?",
-    answer: "The master policy insures the building and common elements; your HO-6 protects the interior of your unit, your belongings, and your liability. Some associations are \"all-in,\" others are \"bare walls\" or \"walls-in.\" We review your declarations to see what's covered where, then tailor your HO-6 to fill gaps—especially for interior finishes and master deductibles."
+    answer: "Understanding the division of coverage between your condo association's master policy and your individual HO-6 policy is crucial for proper protection. The master policy insures the building structure, exterior walls, roof, common areas like hallways and lobbies, and shared amenities. Your HO-6 (condo insurance) protects the interior of your unit—walls, floors, fixtures, and any improvements you've made—along with your personal belongings and liability coverage. However, condo associations vary significantly in how they structure their master policies. Some are \"all-in\" policies that cover fixtures and built-in appliances, while others are \"bare walls\" (only structural elements) or \"walls-in\" (structural elements plus basic fixtures). We review your association's master policy declarations to identify exactly what's covered where, then tailor your HO-6 policy to fill any gaps. This is especially important for interior finishes like upgraded flooring, custom cabinets, or renovated bathrooms that might not be covered by the master policy. We also ensure your Loss Assessment coverage is adequate for your share of master policy deductibles that could be passed through after a claim."
   },
   {
     question: "What is Loss Assessment coverage and how much do I need?",
@@ -186,7 +186,7 @@ const faqs = [
   },
   {
     question: "Are improvements and betterments covered?",
-    answer: "Yes—if you've upgraded flooring, kitchens, or baths beyond what the association originally provided, we can increase your building-property limit for those improvements. Keep receipts or photos when possible; they help document value at claim time."
+    answer: "Yes, absolutely. If you've made improvements or upgrades to your condo unit beyond what the association originally provided—such as upgraded flooring, renovated kitchens or bathrooms, custom built-ins, or improved fixtures—you need adequate coverage for those investments. Standard HO-6 policies typically include building property coverage, but the default limits may not be sufficient if you've significantly upgraded your unit. We can increase your building-property coverage limit specifically for these improvements and betterments. To ensure accurate coverage and smoother claims processing, keep receipts for major improvements, take photos before and after renovations, and maintain documentation of upgrade costs. This documentation proves the value of your improvements at claim time and helps us set appropriate coverage limits upfront. Remember, if a covered loss damages your upgraded kitchen but your building-property limit is too low, you'd only receive partial reimbursement and be responsible for the difference out of pocket. We'll help you determine the right limit based on your specific improvements."
   },
   {
     question: "How do I protect valuables like jewelry, bikes, or collectibles?",
@@ -198,7 +198,7 @@ const faqs = [
   },
   {
     question: "What factors most affect my HO-6 price?",
-    answer: "Building age and construction, roof and system updates, claims history, credit-based factors, chosen deductibles, and endorsements like Water Backup or scheduled valuables. We can often lower cost via bundling and right-sizing deductibles without stripping essential protection."
+    answer: "Several key factors directly impact your HO-6 condo insurance premium in Alabama and Georgia. Your building's age and construction type matter significantly—newer buildings with modern construction may qualify for discounts, while older buildings might face higher premiums due to increased risk. Updates to building systems (roof, plumbing, electrical, HVAC) that are covered by the master policy can positively affect your individual unit's risk profile. Your personal claims history, including claims at this or previous addresses, affects pricing for 3-5 years. Credit-based insurance scores factor into premiums in most states. The deductibles you choose for your HO-6 policy directly impact your premium—higher deductibles typically mean lower premiums, but they should match your emergency fund. Any endorsements you add, like Water Backup coverage for finished basements or scheduled valuables for expensive jewelry or electronics, add to your premium but provide valuable protection. We can help optimize your premium by bundling your condo insurance with auto insurance (typically saves 15-25%), right-sizing your deductibles to balance savings with affordability, and ensuring you're getting all eligible discounts without compromising the essential protection you need for your Alabama or Georgia condo unit."
   }
 ];
 
