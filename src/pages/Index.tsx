@@ -64,7 +64,11 @@ const Index = () => {
         "currenciesAccepted": "USD",
         "logo": "https://coffeyagencies.com/coffey-logo.png",
         "image": "https://coffeyagencies.com/coffey-logo.png",
-        "numberOfEmployees": "6-10",
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "minValue": 6,
+          "maxValue": 10
+        },
         "slogan": "Your trusted insurance partner in Alabama & Georgia",
         "hasCredential": [
           {
@@ -191,7 +195,11 @@ const Index = () => {
           "jobTitle": "CEO & Founder"
         },
         "foundingDate": "2009",
-        "numberOfEmployees": "6-10",
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "minValue": 6,
+          "maxValue": 10
+        },
         "address": [
           {
             "@type": "PostalAddress",
