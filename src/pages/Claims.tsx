@@ -82,6 +82,27 @@ const faqs = [
 
 const Claims = () => {
   const location = useLocation();
+
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Claims",
+        "item": "https://coffeyagencies.com/claims"
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -166,6 +187,11 @@ const Claims = () => {
             ]
           })}
         </script>
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Header />
@@ -188,6 +214,17 @@ const Claims = () => {
         {/* Content */}
         <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-4xl text-center">
+            {/* Breadcrumbs */}
+            <nav aria-label="Breadcrumb" className="mb-6 flex justify-center">
+              <ol className="flex items-center gap-2 text-sm text-white/80">
+                <li>
+                  <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                </li>
+                <li>/</li>
+                <li className="text-white font-medium">Claims</li>
+              </ol>
+            </nav>
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg">
               Need to File a Claim? We're Here to Help.
             </h1>

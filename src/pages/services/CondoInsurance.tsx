@@ -304,12 +304,6 @@ const CondoInsurance = () => {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Services",
-        "item": "https://coffeyagencies.com/#services"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
         "name": "Condo Insurance",
         "item": "https://coffeyagencies.com/services/condo-insurance"
       }
@@ -377,8 +371,6 @@ const CondoInsurance = () => {
             <nav className="mb-6" aria-label="Breadcrumb">
               <ol className="flex items-center justify-center gap-2 text-sm text-white/80">
                 <li><Link to="/" className="hover:text-white">Home</Link></li>
-                <li>/</li>
-                <li><Link to="/#services" className="hover:text-white">Services</Link></li>
                 <li>/</li>
                 <li className="text-white font-medium">Condo Insurance</li>
               </ol>

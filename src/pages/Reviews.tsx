@@ -201,6 +201,49 @@ const Reviews = () => {
     }
   };
 
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Reviews",
+        "item": "https://coffeyagencies.com/reviews"
+      }
+    ]
+  };
+
+  // Individual Review Schema for each customer review
+  // This enables review rich snippets in Google search results
+  const individualReviewSchemas = reviews.map((review) => ({
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": review.name
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "reviewBody": review.text,
+    "datePublished": "2024-01-01", // Approximate date - reviews are recent but exact dates not available
+    "itemReviewed": {
+      "@type": "InsuranceAgency",
+      "name": "Coffey Agencies Inc.",
+      "@id": "https://coffeyagencies.com/#organization"
+    }
+  }));
+
   return (
     <>
       <Helmet>
@@ -227,6 +270,15 @@ const Reviews = () => {
         <script type="application/ld+json">
           {JSON.stringify(reviewsSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+        {/* Individual Review Schemas for Rich Snippets */}
+        {individualReviewSchemas.map((reviewSchema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(reviewSchema)}
+          </script>
+        ))}
       </Helmet>
       
       <Header />

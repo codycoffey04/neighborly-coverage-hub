@@ -72,6 +72,26 @@ const Contact = () => {
     }
   };
 
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://coffeyagencies.com/contact"
+      }
+    ]
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -140,6 +160,9 @@ const Contact = () => {
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Header />
@@ -163,6 +186,17 @@ const Contact = () => {
         <div className="relative z-10 w-full py-20 px-4">
           <div className="container mx-auto max-w-5xl flex items-end min-h-[500px]">
             <div className="w-full text-center">
+              {/* Breadcrumbs */}
+              <nav aria-label="Breadcrumb" className="mb-6 flex justify-center">
+                <ol className="flex items-center gap-2 text-sm text-white/80">
+                  <li>
+                    <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                  </li>
+                  <li>/</li>
+                  <li className="text-white font-medium">Contact</li>
+                </ol>
+              </nav>
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 Contact Us
               </h1>

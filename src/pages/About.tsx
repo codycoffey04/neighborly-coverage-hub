@@ -112,6 +112,26 @@ const About = () => {
     }
   };
 
+  // BreadcrumbList Schema for SEO
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://coffeyagencies.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://coffeyagencies.com/about"
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -137,6 +157,9 @@ const About = () => {
         
         <script type="application/ld+json">
           {JSON.stringify(aboutSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
 
