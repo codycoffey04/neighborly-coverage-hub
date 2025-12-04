@@ -41,14 +41,30 @@ const LifeInsurance = () => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
-      {
-        "@type": "State",
-        "name": "Alabama"
-      },
-      {
-        "@type": "State",
-        "name": "Georgia"
-      }
+      { "@id": "https://coffeyagencies.com/centre-al#place" },
+      { "@id": "https://coffeyagencies.com/rome-ga#place" },
+      { "@id": "https://coffeyagencies.com/birmingham-al#place" },
+      { "@id": "https://coffeyagencies.com/montgomery-al#place" },
+      { "@id": "https://coffeyagencies.com/mobile-al#place" },
+      { "@id": "https://coffeyagencies.com/dothan-al#place" },
+      { "@id": "https://coffeyagencies.com/auburn-al#place" },
+      { "@id": "https://coffeyagencies.com/enterprise-al#place" },
+      { "@id": "https://coffeyagencies.com/foley-al#place" },
+      { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
+      { "@id": "https://coffeyagencies.com/troy-al#place" },
+      { "@id": "https://coffeyagencies.com/trussville-al#place" },
+      { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
+      { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
+      { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
+      { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
+      { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
+      { "@id": "https://coffeyagencies.com/duluth-ga#place" },
+      { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
+      { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
+      { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
+      { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
+      { "@id": "https://coffeyagencies.com/summerville-ga#place" },
+      { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
     ],
     "description": "Term and whole life insurance protection for Alabama and Georgia families, with coverage from $25/month for $500K term life insurance.",
     "serviceOutput": "Insurance Policy",
