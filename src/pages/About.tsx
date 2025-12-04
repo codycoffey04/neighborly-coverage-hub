@@ -249,6 +249,19 @@ const About = () => {
     ]
   };
 
+  // Combine all schemas into a single @graph structure for reliable rendering
+  // This ensures all schemas are included in one JSON-LD block
+  const allSchemas = {
+    "@context": "https://schema.org",
+    "@graph": [
+      aboutSchema,
+      webpageSchema,
+      founderSchema,
+      breadcrumbSchema,
+      ...teamMemberSchemas
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -272,27 +285,9 @@ const About = () => {
         <meta name="twitter:description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
-        {/* AboutPage Schema */}
+        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
         <script type="application/ld+json">
-          {JSON.stringify(aboutSchema)}
-        </script>
-        {/* WebPage Schema - Enhanced page context */}
-        <script type="application/ld+json">
-          {JSON.stringify(webpageSchema)}
-        </script>
-        {/* Person Schema for Founder/CEO - Advanced schema markup */}
-        <script type="application/ld+json">
-          {JSON.stringify(founderSchema)}
-        </script>
-        {/* Person Schemas for Team Members - Advanced schema markup */}
-        {teamMemberSchemas.map((schema, index) => (
-          <script key={index} type="application/ld+json">
-            {JSON.stringify(schema)}
-          </script>
-        ))}
-        {/* BreadcrumbList Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
+          {JSON.stringify(allSchemas)}
         </script>
       </Helmet>
 
