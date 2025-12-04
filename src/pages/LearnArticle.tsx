@@ -165,21 +165,17 @@ const LearnArticle = () => {
     : "https://coffeyagencies.com/og-image.jpg";
 
   const articleSchema = {
-    "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `https://coffeyagencies.com/learn/${article.slug}#article`,
     "headline": article.title,
     "description": article.metaDescription,
     "url": `https://coffeyagencies.com/learn/${article.slug}`,
     "image": articleImageUrl,
     "author": {
-      "@type": "Organization",
-      "name": "Coffey Agencies",
-      "url": "https://coffeyagencies.com"
+      "@id": "https://coffeyagencies.com/#organization"
     },
     "publisher": {
-      "@type": "Organization",
-      "name": "Coffey Agencies",
-      "url": "https://coffeyagencies.com",
+      "@id": "https://coffeyagencies.com/#organization",
       "logo": {
         "@type": "ImageObject",
         "url": "https://coffeyagencies.com/coffey-logo.png",
@@ -192,7 +188,6 @@ const LearnArticle = () => {
 
   // Build FAQPage JSON-LD if FAQs exist
   const faqSchema = article.faqs.length > 0 ? {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "name": `${article.title} - Frequently Asked Questions`,
     "mainEntity": article.faqs.map(faq => ({
@@ -207,7 +202,6 @@ const LearnArticle = () => {
 
   // Build BreadcrumbList JSON-LD
   const breadcrumbSchema = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "name": "Breadcrumb Navigation",
     "itemListElement": [
@@ -232,10 +226,19 @@ const LearnArticle = () => {
     ]
   };
 
+  // Organization schema
+  const organizationSchema = {
+    "@type": "InsuranceAgency",
+    "@id": "https://coffeyagencies.com/#organization",
+    "name": "Coffey Agencies Inc.",
+    "url": "https://coffeyagencies.com"
+  };
+
   // Combine all schemas into a single @graph structure for reliable rendering
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
+      organizationSchema,
       articleSchema,
       breadcrumbSchema,
       ...(faqSchema ? [faqSchema] : [])
