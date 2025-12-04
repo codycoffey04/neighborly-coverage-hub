@@ -143,8 +143,9 @@ const About = () => {
 
   // LocalBusiness Schema for Centre, AL Office - REQUIRED for Google Rich Results
   const centreOfficeSchema = {
-    "@type": "InsuranceAgency",
-    "name": "Coffey Agencies - Centre",
+    "@type": "LocalBusiness",
+    "@id": "https://coffeyagencies.com/#centre-office",
+    "name": "Coffey Agencies - Centre, AL (Cody Coffey Agency)",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1913 W Main Street",
@@ -153,22 +154,39 @@ const About = () => {
       "postalCode": "35960",
       "addressCountry": "US"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "34.1519",
+      "longitude": "-85.6789"
+    },
     "telephone": "(256) 927-6287",
-    "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png",
-    "url": "https://coffeyagencies.com",
-    "openingHours": "Mo-Fr 08:00-17:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.7",
-      "reviewCount": "116"
-    }
+      "reviewCount": "116",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "parentOrganization": {
+      "@id": "https://coffeyagencies.com/#organization"
+    },
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/centre-office.jpg"
   };
 
   // LocalBusiness Schema for Rome, GA Office - REQUIRED for Google Rich Results
   const romeOfficeSchema = {
-    "@type": "InsuranceAgency",
-    "name": "Coffey Agencies - Rome",
+    "@type": "LocalBusiness",
+    "@id": "https://coffeyagencies.com/#rome-office",
+    "name": "Coffey Agencies - Rome, GA (Millican & Coffey Agency)",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1703 Turner McCall Blvd SE",
@@ -177,16 +195,32 @@ const About = () => {
       "postalCode": "30161",
       "addressCountry": "US"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "34.2558",
+      "longitude": "-85.1644"
+    },
     "telephone": "(706) 784-6511",
-    "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png",
-    "url": "https://coffeyagencies.com",
-    "openingHours": "Mo-Fr 08:00-17:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "16:30"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.6",
-      "reviewCount": "90"
-    }
+      "reviewCount": "90",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "parentOrganization": {
+      "@id": "https://coffeyagencies.com/#organization"
+    },
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/rome-office.jpg"
   };
   
   // AboutPage Schema - Enhanced for flagship site
