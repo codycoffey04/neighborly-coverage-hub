@@ -141,7 +141,9 @@ const Contact = () => {
     ],
     "parentOrganization": {
       "@id": "https://coffeyagencies.com/#organization"
-    }
+    },
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png"
   };
 
   // LocalBusiness schema for Rome office
@@ -173,7 +175,9 @@ const Contact = () => {
     ],
     "parentOrganization": {
       "@id": "https://coffeyagencies.com/#organization"
-    }
+    },
+    "priceRange": "$$",
+    "image": "https://coffeyagencies.com/coffey-logo.png"
   };
 
   // Combine all schemas into a single @graph structure for reliable rendering
