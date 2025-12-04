@@ -156,18 +156,33 @@ const LearnArticle = () => {
   );
 
   // Build Article JSON-LD
+  // Construct public image URL for schema
+  // heroImage is processed by Vite and may be a module URL, convert to public URL
+  // If no heroImage, use og-image.jpg as fallback
+  let articleImageUrl = "https://coffeyagencies.com/og-image.jpg";
+  if (heroImage && article.heroImage) {
+    // Extract filename from heroImage path and construct public URL
+    // Vite processes images to /assets/ directory
+    const filename = article.heroImage;
+    articleImageUrl = `https://coffeyagencies.com/${filename}`;
+  }
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
+    "url": `https://coffeyagencies.com/learn/${article.slug}`,
+    "image": articleImageUrl,
     "author": {
       "@type": "Organization",
-      "name": "Coffey Agencies"
+      "name": "Coffey Agencies",
+      "url": "https://coffeyagencies.com"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Coffey Agencies",
+      "url": "https://coffeyagencies.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://coffeyagencies.com/coffey-logo.png",
