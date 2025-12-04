@@ -230,6 +230,7 @@ const HomeInsurance = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "name": "Breadcrumb Navigation",
     "itemListElement": [
       {
         "@type": "ListItem",
