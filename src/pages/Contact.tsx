@@ -12,7 +12,7 @@ import { MapPin, Phone, Clock, Star, CheckCircle } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
 
@@ -58,6 +58,7 @@ const offices = [
 
 const Contact = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
@@ -217,12 +218,8 @@ const Contact = () => {
         });
       }
 
-      toast({
-        title: "Message Sent!",
-        description: "We'll get back to you within one business day.",
-      });
-
-      form.reset();
+      // Redirect to thank you page
+      navigate("/thank-you");
     } catch (error) {
       toast({
         title: "Error",
