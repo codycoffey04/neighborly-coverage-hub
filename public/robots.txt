@@ -1,16 +1,21 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /thank-you
 
 User-agent: Bingbot
 Allow: /
+Disallow: /thank-you
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /thank-you
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /thank-you
 
 User-agent: *
 Allow: /
+Disallow: /thank-you
 
 Sitemap: https://coffeyagencies.com/sitemap.xml
