@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/homepage/Header";
@@ -5,7 +6,25 @@ import { Footer } from "@/components/homepage/Footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Home } from "lucide-react";
 
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
 const ThankYou = () => {
+  useEffect(() => {
+    // Push conversion event to dataLayer for GA4
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "generate_lead",
+        form_name: "quote_request",
+        page_url: window.location.pathname,
+        timestamp: new Date().toISOString(),
+      });
+    }
+  }, []);
+
   return (
     <>
       <Helmet>
