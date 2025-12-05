@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,6 +20,7 @@ export const FinalCTA = () => {
   const [serviceValue, setServiceValue] = useState<string>("");
   const { toast } = useToast();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -54,13 +55,8 @@ export const FinalCTA = () => {
           });
         }
 
-        toast({
-          title: "Quote Request Received!",
-          description: "We'll call you the same business day to discuss your insurance needs.",
-        });
-
-        form.reset();
-        setServiceValue("");
+        // Redirect to thank you page
+        navigate("/thank-you");
       } else {
         throw new Error(`Form submission failed with status: ${response.status}`);
       }
