@@ -1,12 +1,12 @@
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Check } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { useLocation } from "react-router-dom";
 
 // Extend Window interface for dataLayer
 declare global {
@@ -23,42 +23,49 @@ export const FinalCTA = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsSubmitting(true);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    // Ensure service value is included if selected
-    if (serviceValue) {
-      formData.set("service", serviceValue);
-    }
-
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
+        redirect: "manual", // Don't follow redirects - Netlify returns a redirect but we handle it in JS
       });
 
-      // Push form submit event to dataLayer for GTM
-      if (window.dataLayer) {
-        window.dataLayer.push({
-          event: "netlify_form_submit",
-          form_name: "coffey-insurance-lead",
-          form_location: "homepage_quote_form",
-          page_url: location.pathname,
-          timestamp: new Date().toISOString(),
+      // Netlify Forms returns a redirect (303/302) on success, which becomes status 0 with redirect: "manual"
+      // Status 200 means success without redirect
+      // Status 0 typically means a redirect was intercepted
+      const isSuccess = response.ok || response.status === 0 || response.status === 303 || response.status === 302 || response.status === 301;
+
+      if (isSuccess) {
+        // Push form submit event to dataLayer for GTM
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: "netlify_form_submit",
+            form_name: "coffey-insurance-lead",
+            form_location: "homepage_quote_form",
+            page_url: location.pathname,
+            timestamp: new Date().toISOString(),
+          });
+        }
+
+        toast({
+          title: "Quote Request Received!",
+          description: "We'll call you the same business day to discuss your insurance needs.",
         });
+
+        form.reset();
+        setServiceValue("");
+      } else {
+        throw new Error(`Form submission failed with status: ${response.status}`);
       }
-
-      toast({
-        title: "Quote Request Received!",
-        description: "We'll call you the same business day to discuss your insurance needs.",
-      });
-
-      form.reset();
-      setServiceValue("");
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
         title: "Error",
         description: "Something went wrong. Please call us directly at (256) 927-6287.",
@@ -87,10 +94,13 @@ export const FinalCTA = () => {
               name="coffey-insurance-lead" 
               method="POST" 
               data-netlify="true" 
+              data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="space-y-6"
             >
               <input type="hidden" name="form-name" value="coffey-insurance-lead" />
+              <input type="hidden" name="bot-field" aria-hidden="true" tabIndex={-1} />
+              <input type="hidden" name="service" value={serviceValue} />
               
               {/* Name & Phone Row */}
               <div className="grid md:grid-cols-2 gap-6">
