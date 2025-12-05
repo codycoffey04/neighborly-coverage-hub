@@ -56,6 +56,16 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
+    <!-- Netlify Forms detection - hidden form for build-time detection -->
+    <form name="coffey-insurance-lead" netlify netlify-honeypot="bot-field" hidden>
+      <input name="form-name" type="hidden" value="coffey-insurance-lead" />
+      <input name="bot-field" type="hidden" />
+      <input name="name" type="text" />
+      <input name="phone" type="tel" />
+      <input name="email" type="email" />
+      <input name="service" type="text" />
+    </form>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     

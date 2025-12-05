@@ -40,7 +40,7 @@ export function createLazyRoute<T extends ComponentType<any>>(
                       </div>
                     </div>
                   );
-                  return Fallback as T;
+                  return Fallback as unknown as T;
                 })(),
               });
             });
