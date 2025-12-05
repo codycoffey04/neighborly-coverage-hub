@@ -4,8 +4,71 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Check } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+import { useLocation } from "react-router-dom";
+
+// Extend Window interface for dataLayer
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, unknown>>;
+  }
+}
 
 export const FinalCTA = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [serviceValue, setServiceValue] = useState<string>("");
+  const { toast } = useToast();
+  const location = useLocation();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    // Ensure service value is included if selected
+    if (serviceValue) {
+      formData.set("service", serviceValue);
+    }
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      // Push form submit event to dataLayer for GTM
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: "netlify_form_submit",
+          form_name: "coffey-insurance-lead",
+          form_location: "homepage_quote_form",
+          page_url: location.pathname,
+          timestamp: new Date().toISOString(),
+        });
+      }
+
+      toast({
+        title: "Quote Request Received!",
+        description: "We'll call you the same business day to discuss your insurance needs.",
+      });
+
+      form.reset();
+      setServiceValue("");
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please call us directly at (256) 927-6287.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="quote-form" className="section-spacing bg-primary relative overflow-hidden">
       <div className="container-custom">
@@ -20,7 +83,13 @@ export const FinalCTA = () => {
 
           {/* Form Card */}
           <div className="bg-card border-2 shadow-xl rounded-2xl p-8 md:p-12">
-            <form name="coffey-insurance-lead" method="POST" data-netlify="true" className="space-y-6">
+            <form 
+              name="coffey-insurance-lead" 
+              method="POST" 
+              data-netlify="true" 
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
               <input type="hidden" name="form-name" value="coffey-insurance-lead" />
               
               {/* Name & Phone Row */}
@@ -34,6 +103,7 @@ export const FinalCTA = () => {
                     placeholder="John Smith" 
                     required
                     className="h-12"
+                    disabled={isSubmitting}
                   />
                 </div>
                 <div className="space-y-2">
@@ -45,6 +115,7 @@ export const FinalCTA = () => {
                     placeholder="(256) 123-4567" 
                     required
                     className="h-12"
+                    disabled={isSubmitting}
                   />
                 </div>
               </div>
@@ -59,11 +130,17 @@ export const FinalCTA = () => {
                     type="email" 
                     placeholder="john@example.com" 
                     className="h-12"
+                    disabled={isSubmitting}
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="service">Insurance Type</Label>
-                  <Select name="service">
+                  <Select 
+                    name="service" 
+                    value={serviceValue}
+                    onValueChange={setServiceValue}
+                    disabled={isSubmitting}
+                  >
                     <SelectTrigger id="service" className="h-12">
                       <SelectValue placeholder="Select insurance type" />
                     </SelectTrigger>
@@ -82,8 +159,14 @@ export const FinalCTA = () => {
               </div>
 
               {/* Submit Button */}
-              <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" aria-label="Submit form to get your free insurance quote">
-                Get My Free Quote
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" 
+                aria-label="Submit form to get your free insurance quote"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Submitting..." : "Get My Free Quote"}
               </Button>
 
               <p className="text-sm text-center text-muted-foreground mb-2">

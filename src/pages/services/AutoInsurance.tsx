@@ -732,21 +732,15 @@ const AutoInsurance = () => {
               Start online or talk with a friendly local agent today.
             </p>
             
-            <form
-              name="coffey-insurance-lead"
-              method="POST"
-              data-netlify="true"
-              className="max-w-md mx-auto mb-4"
-            >
-              <input type="hidden" name="form-name" value="coffey-insurance-lead" />
+            <div className="max-w-md mx-auto mb-4">
               <Button 
-                type="submit"
                 size="lg" 
                 className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+                asChild
               >
-                Get Quote
+                <Link to="/#quote-form">Get Quote</Link>
               </Button>
-            </form>
+            </div>
 
             {/* Phone Links - Secondary CTAs */}
             <div className="flex flex-wrap justify-center items-center gap-4 mt-4 text-sm text-white/90">
