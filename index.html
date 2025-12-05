@@ -66,6 +66,18 @@
       <input name="service" type="text" />
     </form>
     
+    <!-- Netlify Forms detection - hidden form for contact page -->
+    <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+      <input name="form-name" type="hidden" value="contact-form" />
+      <input name="bot-field" type="hidden" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="phone" type="tel" />
+      <input name="service-interest" type="text" />
+      <input name="message" type="text" />
+      <input name="contact-method" type="text" />
+    </form>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
