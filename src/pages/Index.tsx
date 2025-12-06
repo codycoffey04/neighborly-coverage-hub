@@ -459,7 +459,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Coffey Agencies | Auto & Home Insurance in Alabama & Georgia</title>
-        <meta name="description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA." />
+        <meta name="description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with local offices." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
         {/* OpenGraph Meta Tags */}
