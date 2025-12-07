@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
-import coffeyLogo from "@/assets/coffey-logo-transparent-2.png";
+import coffeyLogo from "@/assets/coffey-logo-new.png";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import {
   NavigationMenu,
