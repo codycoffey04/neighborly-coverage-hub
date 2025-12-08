@@ -2998,92 +2998,69 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         type: "paragraph",
-        content: "**Telematics Programs:** Many insurers offer usage-based programs (like Drivewise, Drive Safe & Save, or Snapshot) that track your driving habits via an app. Safe drivers can earn 10-30% discounts. Rome's moderate traffic makes it easier to score well on these programs compared to Atlanta drivers."
+        content: "**Usage-Based Programs:** Many insurers offer telematics programs that track your driving habits via an app. Safe drivers can earn 10-30% discounts. Rome's moderate traffic makes it easier to score well on these programs compared to Atlanta drivers."
       },
       {
         type: "paragraph",
         content: "**Ask About All Discounts:** Insurers don't always apply every discount automatically. Ask your agent to review your policy for military discounts, professional association discounts, automatic payment discounts, and any others you might qualify for."
       },
-      // Section 7: What Coverage Do Rome Drivers Carry
+      // Section 7: What Coverage Do Rome Drivers Need
       {
         type: "heading",
-        content: "What Coverage Do Rome Drivers Actually Carry?"
+        content: "What Coverage Do Rome Drivers Actually Need?"
       },
       {
         type: "paragraph",
-        content: "Coverage choices in Rome vary, but here's what we typically see:"
+        content: "Coverage choices matter. Here's what we typically recommend and why:"
       },
       {
         type: "paragraph",
-        content: "**State Minimum (25/50/25):** Some drivers carry only the legal minimum — $25,000/$50,000 bodily injury and $25,000 property damage. This costs around $45/month in Rome. However, these limits are dangerously low. Medical bills from a serious accident can easily exceed $25,000 per person. If you cause more damage than your limits cover, you're personally responsible for the difference."
+        content: "**State Minimum (25/50/25) — Not Recommended:** Some drivers carry only the legal minimum — $25,000/$50,000 bodily injury and $25,000 property damage. This costs around $45/month in Rome. However, these limits are dangerously low. Medical bills from a serious accident can easily exceed $25,000 per person. If you cause more damage than your limits cover, you're personally responsible for the difference."
       },
       {
         type: "paragraph",
-        content: "**Full Coverage:** Most financed or leased vehicles require \"full coverage\" — liability plus comprehensive and collision. The average full coverage policy in Rome runs about $135/month. This protects your vehicle against damage from accidents, theft, hail, and other covered events."
+        content: "**Full Coverage — Recommended for Most Drivers:** \"Full coverage\" means liability plus comprehensive and collision. The average full coverage policy in Rome runs about $135/month. This protects your vehicle against damage from accidents, theft, hail, and other covered events. If you have a car loan or lease, your lender requires this coverage anyway."
       },
       {
         type: "paragraph",
-        content: "**Higher Liability Limits:** Many Rome drivers — especially homeowners with assets to protect — carry 100/300/100 liability limits instead of the minimum. The monthly cost difference is often small, but the protection is much greater."
+        content: "**Higher Liability Limits — Strongly Recommended:** We typically recommend 100/300/100 liability limits instead of the state minimum. The monthly cost difference is often small, but the protection is much greater — especially if you have assets like a home to protect."
       },
       {
         type: "paragraph",
-        content: "**Uninsured Motorist Coverage:** Given Georgia's 18% uninsured driver rate, UM coverage is critical. It protects you when an at-fault driver has no insurance or not enough insurance. We recommend carrying UM limits that match your liability limits."
+        content: "**Uninsured Motorist Coverage — Essential:** Given Georgia's 18% uninsured driver rate, UM coverage is critical. It protects you when an at-fault driver has no insurance or not enough insurance. We recommend carrying UM limits that match your liability limits."
       },
       {
         type: "paragraph",
-        content: "**Common Coverage Gaps:** The most frequent gap we see: drivers who decline rental car reimbursement coverage to save a few dollars, then face hundreds in rental costs when their car is in the shop after an accident. It's a small add-on that's worth carrying."
+        content: "**Rental Car Reimbursement — Worth the Small Cost:** This coverage pays for a rental car while yours is being repaired after a covered accident. It typically costs just a few dollars per month. Without it, you could face hundreds in rental costs if your car is in the shop for a week or more."
       },
-      // Section 8: Major Insurance Providers
+      {
+        type: "paragraph",
+        content: "**Gap Insurance — If You Owe More Than Your Car Is Worth:** If your car is totaled and you owe more on your loan than the car's value, gap insurance covers the difference. This is especially important for new cars that depreciate quickly or if you made a small down payment."
+      },
+      // Section 8: Understanding the Insurance Market
       {
         type: "heading",
-        content: "Who Are the Major Insurance Providers in Rome?"
+        content: "Understanding the Insurance Market in Rome"
       },
       {
         type: "paragraph",
-        content: "Rome has a competitive insurance market with both national carriers and regional options:"
+        content: "Rome has a competitive insurance market with various options:"
       },
       {
         type: "paragraph",
-        content: "**National Carriers:**"
-      },
-      {
-        type: "list",
-        content: [
-          "State Farm (~21% of Georgia's market) — strong local agent presence",
-          "Progressive (~15% market share) — often competitive on price",
-          "GEICO (~13%) — direct/online model",
-          "Allstate (~10-11%) — local agents with national backing",
-          "USAA (~9%) — excellent rates for military families"
-        ]
+        content: "**National Carriers:** Major insurers like State Farm (about 21% of Georgia's market), Progressive (15%), GEICO (13%), and others all serve Rome. Each company prices risk differently, so rates can vary significantly between carriers for the same driver."
       },
       {
         type: "paragraph",
-        content: "**Regional and Local Options:**"
-      },
-      {
-        type: "list",
-        content: [
-          "Georgia Farm Bureau — strong in rural areas, good for bundling with farm or home policies",
-          "Auto-Owners Insurance — often very competitive rates, sold through independent agents",
-          "Country Financial — good multi-policy discounts"
-        ]
+        content: "**Regional Carriers:** Georgia-based companies like Georgia Farm Bureau and regional carriers like Auto-Owners Insurance also serve the Rome area. These companies sometimes offer competitive rates, particularly for certain driver profiles."
       },
       {
         type: "paragraph",
-        content: "**High-Risk/Non-Standard Carriers:** For drivers with DUIs, multiple accidents, or SR-22 requirements:"
-      },
-      {
-        type: "list",
-        content: [
-          "GAINSCO (average ~$148/month in Rome)",
-          "The General (~$182/month)",
-          "Infinity (~$202/month)",
-          "Dairyland, Bristol West, National General"
-        ]
+        content: "**High-Risk Options:** Drivers with DUIs, multiple accidents, or SR-22 requirements can find coverage through specialized carriers. Rates are higher — often $150-$200/month or more — but coverage is available for virtually any driver."
       },
       {
         type: "paragraph",
-        content: "**Local Independent Agencies:** Independent agents (like us) can quote multiple carriers at once. This is especially valuable if you have a unique situation — teen drivers, high-risk history, multiple vehicles, or complex bundling needs. We can often find options that direct carriers won't offer."
+        content: "**The Value of a Local Agent:** Working with a local agent means you have someone who understands Rome's specific risks and can help you navigate coverage decisions. When you have a claim, you're not calling a 1-800 number — you're calling someone who knows your name and can advocate for you through the process."
       }
     ],
     faqs: [
@@ -3105,7 +3082,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         question: "What's the best way to insure a teen driver in Rome?",
-        answer: "Add them to your existing policy rather than getting them a separate policy — you'll get the multi-car discount. Take advantage of good student discounts (B average required). Consider telematics programs that reward safe driving. Some insurers offer better teen rates than others, so it pays to shop around when adding a young driver."
+        answer: "Add them to your existing policy rather than getting them a separate policy — you'll get the multi-car discount. Take advantage of good student discounts (B average required). Consider telematics programs that reward safe driving. Rates for teens are high everywhere, but these strategies help minimize the impact."
       },
       {
         question: "Does comprehensive coverage include flood damage?",
@@ -3113,7 +3090,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         question: "How do I get the best rate in Rome?",
-        answer: "Bundle your auto with home or renters insurance, maintain a clean driving record, ask about all available discounts, consider a higher deductible if you have savings to cover it, and compare quotes from multiple carriers. An independent agent can shop several companies at once to find your best option."
+        answer: "Bundle your auto with home or renters insurance, maintain a clean driving record, ask about all available discounts, consider a higher deductible if you have savings to cover it, and work with an agent who can help you find the right coverage at the best price."
       },
       {
         question: "Why do married drivers pay less?",
