@@ -116,7 +116,7 @@ const LearnArticle = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/#quote-form">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
                 Get Quote
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
