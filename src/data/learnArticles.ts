@@ -3809,5 +3809,659 @@ export const learnArticles: LearnArticle[] = [
       { text: "Centre, AL City Page", href: "/centre-al" },
       { text: "Bundling Home and Auto", href: "/learn/bundling-home-and-auto" }
     ]
+  },
+  {
+    slug: "what-happens-when-you-file-a-claim",
+    title: "What Actually Happens When You File an Insurance Claim",
+    metaTitle: "What Actually Happens When You File an Insurance Claim | Coffey Agencies",
+    metaDescription: "Step-by-step guide to the insurance claims process for auto and home. What to expect, common mistakes to avoid, and how a local agent helps.",
+    excerpt: "The step-by-step process for auto and home claims — and how to avoid common mistakes",
+    category: "Claims & Process",
+    readTime: "18 min read",
+    featured: false,
+    heroImage: "claims-hero.jpg",
+    content: [
+      {
+        type: 'paragraph',
+        content: "Filing an insurance claim can feel overwhelming, especially if you've never done it before. You're already dealing with the stress of an accident or home damage — the last thing you need is confusion about what happens next."
+      },
+      {
+        type: 'paragraph',
+        content: "Here's the reality: the claims process is more straightforward than most people expect. But there are specific steps that matter, timing that's important, and mistakes that can cost you money."
+      },
+      {
+        type: 'paragraph',
+        content: "We've helped hundreds of families through claims over the years. This guide walks you through exactly what to expect — for both auto and home claims — so you're prepared if that day ever comes."
+      },
+      {
+        type: 'heading',
+        content: "What Happens When You File an Auto Claim?"
+      },
+      {
+        type: 'paragraph',
+        content: "Auto claims follow a predictable sequence. Here's what happens from the moment of impact to the final resolution:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 1: Ensure Safety and Document the Scene"
+      },
+      {
+        type: 'paragraph',
+        content: "Your first priority is safety. Move to a safe location if possible, check for injuries, and call 911 if anyone is hurt or if the accident blocks traffic."
+      },
+      {
+        type: 'paragraph',
+        content: "Once safe, document everything:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Take photos of all vehicles involved (damage, license plates, positions)",
+          "Photograph the scene (traffic signs, road conditions, skid marks)",
+          "Get the other driver's insurance information, license, and contact details",
+          "Collect witness names and phone numbers if anyone stopped",
+          "Note the time, location, and weather conditions"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "A police report isn't always required, but we recommend getting one for any significant accident. It creates an official record that can help later."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 2: Contact Your Insurance Company"
+      },
+      {
+        type: 'paragraph',
+        content: "Report the claim promptly — ideally within 24 hours. You can typically file by phone, online, or through your insurer's app. Many companies have 24/7 claims lines."
+      },
+      {
+        type: 'paragraph',
+        content: "When you call, you'll provide:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Your policy number",
+          "Date, time, and location of the accident",
+          "Description of what happened",
+          "Other driver's information",
+          "Police report number (if applicable)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "You'll receive a claim number. Write it down — you'll use it for all future communication."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 3: Adjuster Assignment"
+      },
+      {
+        type: 'paragraph',
+        content: "Within 1-3 business days, an adjuster is assigned to your claim. The adjuster's job is to investigate what happened, assess the damage, and determine what the policy covers."
+      },
+      {
+        type: 'paragraph',
+        content: "The adjuster will contact you to:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Get your recorded statement about the accident",
+          "Schedule an inspection of your vehicle",
+          "Explain next steps and timeline"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Be honest and factual in your statement. Stick to what you know — don't guess or speculate."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 4: Damage Evaluation"
+      },
+      {
+        type: 'paragraph',
+        content: "Your vehicle needs to be inspected. This happens one of several ways:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Drive-in inspection: You take your car to a claims center or approved shop",
+          "Field inspection: An adjuster comes to you",
+          "Photo estimate: You submit photos through an app (increasingly common for minor damage)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "The adjuster or appraiser writes an estimate for repairs. If you disagree with the estimate, you can request a re-inspection or get a second opinion from your own shop."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 5: Repairs and Rental Car"
+      },
+      {
+        type: 'paragraph',
+        content: "Once the estimate is approved, you can proceed with repairs. You have the right to choose your own repair shop — you're not required to use the insurer's \"preferred\" shops, though those shops often offer warranties and streamlined billing."
+      },
+      {
+        type: 'paragraph',
+        content: "If you have rental car coverage, now's when you use it. Your policy has a daily limit (often $30-50/day) and a maximum duration. The rental is covered while your car is being repaired for a covered claim."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 6: Total Loss (If Applicable)"
+      },
+      {
+        type: 'paragraph',
+        content: "If repair costs exceed your vehicle's actual cash value (ACV), your car may be declared a total loss. This happens more often than people expect, especially with older vehicles."
+      },
+      {
+        type: 'paragraph',
+        content: "If your car is totaled:"
+      },
+      {
+        type: 'list',
+        content: [
+          "The insurer pays you the ACV minus your deductible",
+          "You'll receive a settlement offer based on comparable vehicle sales",
+          "If you disagree with the valuation, you can negotiate with evidence of higher values",
+          "If you have a loan, the check goes to your lender first — if you owe more than the ACV, gap insurance covers the difference"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 7: Claim Closure"
+      },
+      {
+        type: 'paragraph',
+        content: "Once repairs are complete or the total loss is settled, the claim closes. The typical auto claim resolves within 30 days, though complex claims (disputes, injuries, litigation) can take longer."
+      },
+      {
+        type: 'heading',
+        content: "What Happens When You File a Home Claim?"
+      },
+      {
+        type: 'paragraph',
+        content: "Home claims follow a similar structure but involve more complexity due to the nature of property damage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 1: Ensure Safety and Prevent Further Damage"
+      },
+      {
+        type: 'paragraph',
+        content: "Safety first. If there's structural damage, don't enter until it's been inspected. If there's a gas smell, leave immediately and call the gas company."
+      },
+      {
+        type: 'paragraph',
+        content: "You have a duty to mitigate further damage — this means taking reasonable steps to prevent the situation from getting worse:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Tarp a damaged roof to prevent water intrusion",
+          "Board up broken windows",
+          "Turn off water if pipes burst",
+          "Move undamaged belongings away from the affected area"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Keep receipts for any emergency repairs or materials. These costs are typically reimbursable as part of your claim."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 2: Document Everything"
+      },
+      {
+        type: 'paragraph',
+        content: "Before you clean up or make permanent repairs, document the damage thoroughly:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Take photos and videos of all affected areas",
+          "Photograph damaged items (don't throw them away yet)",
+          "Make a written inventory of damaged belongings with approximate values",
+          "Save damaged materials if possible — adjusters may need to see them"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "The more documentation you have, the smoother your claim will go."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 3: Notify Your Insurance Company"
+      },
+      {
+        type: 'paragraph',
+        content: "Report the claim as soon as possible. Provide:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Policy number",
+          "Date and cause of damage",
+          "Description of what's affected",
+          "Whether the home is habitable"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "You'll receive a claim number and adjuster assignment, usually within 1-3 days."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 4: Adjuster Inspection"
+      },
+      {
+        type: 'paragraph',
+        content: "A claims adjuster will schedule an inspection of your property. This is a critical step — the adjuster assesses the scope of damage and creates an estimate."
+      },
+      {
+        type: 'paragraph',
+        content: "Before the inspection:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Don't make permanent repairs (temporary/emergency repairs are fine)",
+          "Have your documentation ready",
+          "Walk through the property and note every area of damage",
+          "Be present during the inspection to point out damage they might miss"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "The adjuster's estimate becomes the basis for your settlement. If you believe they missed damage, speak up during the inspection or request a re-inspection."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 5: Review the Estimate and Settlement"
+      },
+      {
+        type: 'paragraph',
+        content: "You'll receive a written estimate and settlement offer. Review it carefully:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Does it cover all damaged areas?",
+          "Are the repair costs realistic for your area?",
+          "Does it include code upgrades if required?"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If you disagree with the estimate, you have options:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Get your own contractor estimates for comparison",
+          "Request a re-inspection with additional documentation",
+          "File a formal dispute if necessary"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 6: Settlement Payment"
+      },
+      {
+        type: 'paragraph',
+        content: "Home claim payments work differently than auto:"
+      },
+      {
+        type: 'paragraph',
+        content: "Mortgage Company Involvement: If you have a mortgage, the check is typically made out to both you and your lender. You'll need to endorse it, and your lender may hold the funds and release them in stages as repairs are completed."
+      },
+      {
+        type: 'paragraph',
+        content: "Replacement Cost vs. Actual Cash Value: If you have replacement cost coverage, you may receive the claim in two parts:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Initial payment: Actual cash value (replacement cost minus depreciation)",
+          "Recoverable depreciation: Paid after repairs are completed, when you submit receipts showing the full repair cost"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "For example, if your 15-year-old roof is damaged: Replacement cost is $15,000, depreciation (15 years) is $7,500, initial payment is $7,500 (ACV), and after repairs with receipts you receive the additional $7,500 (recoverable depreciation)."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 7: Complete Repairs"
+      },
+      {
+        type: 'paragraph',
+        content: "Once you've received payment, you can complete permanent repairs. If you have replacement cost coverage, save all receipts — you'll need them to claim the recoverable depreciation."
+      },
+      {
+        type: 'paragraph',
+        content: "You're not required to use specific contractors. Get multiple bids, check references, and choose a reputable contractor."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Step 8: Claim Closure"
+      },
+      {
+        type: 'paragraph',
+        content: "After repairs are complete and final payments made, the claim closes. Complex home claims can take several months to fully resolve."
+      },
+      {
+        type: 'heading',
+        content: "Common Mistakes That Cost You Money"
+      },
+      {
+        type: 'paragraph',
+        content: "We've seen these errors repeatedly over the years. Avoid them:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Waiting Too Long to Report"
+      },
+      {
+        type: 'paragraph',
+        content: "Most policies require \"prompt\" notification — usually interpreted as within a few days. Waiting weeks or months can give the insurer grounds to deny or reduce your claim. Even if you're unsure whether you'll file, report it early."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Poor Documentation"
+      },
+      {
+        type: 'paragraph',
+        content: "\"I wish I'd taken more photos\" is something we hear constantly. Document everything before you clean up, move items, or make repairs. Photos, videos, written lists — you can't have too much."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Making Permanent Repairs Before the Adjuster Visits"
+      },
+      {
+        type: 'paragraph',
+        content: "Emergency repairs are fine and expected. But don't replace your roof or rebuild your kitchen before the adjuster sees the damage. They need to assess the original condition."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Not Understanding Your Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "People often assume damage is covered when it isn't — or assume it isn't when it is. Know your policy before you need it. Flood damage, for example, is never covered by standard homeowners insurance. But wind damage from a storm is."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Accepting the First Offer Without Question"
+      },
+      {
+        type: 'paragraph',
+        content: "The initial estimate isn't always final. If you believe it's too low, you can negotiate. Get your own contractor estimates, point out missed damage, and push back with documentation."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Poor Communication"
+      },
+      {
+        type: 'paragraph',
+        content: "Respond promptly to adjuster calls and requests. Claims that drag on often do so because the policyholder didn't return calls or provide requested documentation. Stay on top of it."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Throwing Away Damaged Items"
+      },
+      {
+        type: 'paragraph',
+        content: "Keep damaged items until the adjuster has seen them or tells you it's okay to dispose of them. If you throw away a damaged appliance before it's inspected, proving its condition becomes difficult."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Not Knowing Your Deductible"
+      },
+      {
+        type: 'paragraph',
+        content: "Your deductible comes out of the claim payment. If your deductible is $2,500 and the damage is $3,000, you'll receive $500. For small claims close to your deductible, consider whether filing is worth the potential impact on your future premiums."
+      },
+      {
+        type: 'heading',
+        content: "How Does a Local Agent Help With Claims?"
+      },
+      {
+        type: 'paragraph',
+        content: "Here's a question we get often: \"If the insurance company handles claims, what do you actually do?\""
+      },
+      {
+        type: 'paragraph',
+        content: "Fair question. Here's the reality:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "We Don't Settle Claims — But We Guide You Through Them"
+      },
+      {
+        type: 'paragraph',
+        content: "Adjusters work for the insurance company and handle the actual claim investigation and settlement. We can't override their decisions or write checks."
+      },
+      {
+        type: 'paragraph',
+        content: "But we can:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Help you understand what's covered before you file",
+          "Walk you through the reporting process",
+          "Explain what to document and how",
+          "Answer questions as the claim progresses",
+          "Help you understand settlement offers",
+          "Escalate issues if you're being treated unfairly"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "We Advocate When Things Go Wrong"
+      },
+      {
+        type: 'paragraph',
+        content: "Most claims go smoothly. But when they don't, having a local agent matters. We can:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Contact the claims department directly on your behalf",
+          "Escalate to supervisors or managers",
+          "Push for re-inspections if damage was missed",
+          "Help you navigate disputes"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "We have relationships with the claims teams. A call from your agent often moves things faster than another call from the policyholder."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "We Know the Local Context"
+      },
+      {
+        type: 'paragraph',
+        content: "We understand Centre and Rome. We know which contractors are reputable. We know what storm damage looks like in Cherokee County. We know the local building codes and typical repair costs. That local knowledge helps when reviewing estimates and settlements."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "We're Here After the Claim"
+      },
+      {
+        type: 'paragraph',
+        content: "Once your claim settles, we help you understand how it affects your policy going forward. We can re-shop your coverage if needed, adjust your deductibles, or review whether your coverage limits are still appropriate."
+      },
+      {
+        type: 'heading',
+        content: "Should You File Every Claim?"
+      },
+      {
+        type: 'paragraph',
+        content: "Not necessarily. Here's the honest truth:"
+      },
+      {
+        type: 'paragraph',
+        content: "Filing a claim can affect your premiums. Insurance companies track your claims history, and multiple claims can lead to higher rates or even non-renewal. This doesn't mean you shouldn't file legitimate claims — that's what insurance is for. But for minor damage close to your deductible, it's worth considering."
+      },
+      {
+        type: 'paragraph',
+        content: "The general rule:"
+      },
+      {
+        type: 'list',
+        content: [
+          "If damage significantly exceeds your deductible (by thousands, not hundreds), file the claim",
+          "If damage is close to your deductible, consider paying out of pocket",
+          "If you're unsure, call us — we can help you think through it without filing"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "What counts as a claim: Even if you call to ask a question, some insurers log it as a claim inquiry. Before calling the company directly, call us. We can often answer your question without anything being logged."
+      },
+      {
+        type: 'heading',
+        content: "Red Flags and When to Escalate"
+      },
+      {
+        type: 'paragraph',
+        content: "Most claims go smoothly. But watch for these warning signs:"
+      },
+      {
+        type: 'paragraph',
+        content: "Red Flags in Claims Handling:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Adjuster is unresponsive or misses appointments",
+          "Estimate seems unreasonably low compared to contractor bids",
+          "Damage you pointed out isn't included in the estimate",
+          "Delays without explanation",
+          "Pressure to use specific contractors or close the claim quickly"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "When to Escalate:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Start with your adjuster: Give them a chance to address the issue directly",
+          "Ask for a supervisor: If the adjuster isn't responsive, request their manager",
+          "Involve your agent: Call us — we can often resolve issues with a direct call",
+          "File a formal complaint: If you're still not getting resolution, file a complaint with the insurer's customer service department",
+          "Contact the state: Georgia Department of Insurance (404-656-2070) or Alabama Department of Insurance (334-269-3550) handle complaints against insurers",
+          "Consider professional help: For large claims with significant disputes, public adjusters or attorneys can help — though they take a percentage of the settlement"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Most claims never need to go past step 3. But knowing your options matters."
+      },
+      {
+        type: 'heading',
+        content: "Auto vs. Home Claims: Key Differences"
+      },
+      {
+        type: 'paragraph',
+        content: "While the general process is similar, there are important distinctions:"
+      },
+      {
+        type: 'table',
+        content: {
+          headers: ["Factor", "Auto Claims", "Home Claims"],
+          rows: [
+            ["Typical Timeline", "2-4 weeks", "1-6 months"],
+            ["Payment Structure", "Usually single payment", "Often multiple payments (ACV + depreciation)"],
+            ["Total Loss", "Common (older cars)", "Rare (only catastrophic damage)"],
+            ["Mortgage/Lender", "Lender involved if car financed", "Mortgage company almost always involved"],
+            ["Repair Choice", "Your choice of shop", "Your choice of contractor"],
+            ["Living Expenses", "Rental car coverage (if you have it)", "Additional living expenses (ALE) if home uninhabitable"],
+            ["Depreciation", "ACV is standard", "RCV or ACV depending on policy"]
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: "The Biggest Difference: Complexity. Auto claims are relatively standardized. The car goes to a shop, gets fixed or totaled, done. Home claims involve more variables: multiple contractors, code requirements, mortgage company procedures, staged payments, and longer timelines. Patience and documentation are even more important."
+      }
+    ],
+    faqs: [
+      {
+        question: "How long do I have to file a claim?",
+        answer: "Policies typically require \"prompt\" notification — usually interpreted as within a few days of the incident. However, you generally have 1-2 years to formally pursue a claim under most policies. That said, waiting hurts your case. File promptly while evidence is fresh and witnesses remember what happened."
+      },
+      {
+        question: "Will filing a claim raise my rates?",
+        answer: "It can, especially if you file multiple claims within a few years or if you were at-fault in an auto accident. A single claim often has minimal impact, but patterns of claims can lead to higher premiums. For very small claims near your deductible, consider whether filing is worth the potential rate impact."
+      },
+      {
+        question: "What if I disagree with the adjuster's estimate?",
+        answer: "You have options. Get your own contractor estimates and present them to the adjuster. Request a re-inspection if damage was missed. Ask for the adjuster's supervisor. If you still can't reach agreement, you can file a formal dispute or hire a public adjuster to advocate for you."
+      },
+      {
+        question: "Can I choose my own repair shop or contractor?",
+        answer: "Yes. You're never required to use the insurer's \"preferred\" vendors. However, preferred shops often offer streamlined billing and warranties. Get multiple bids and choose based on reputation and price, not just insurer preference."
+      },
+      {
+        question: "What if my claim is denied?",
+        answer: "Ask for the denial in writing with specific policy language cited. Review your policy to see if the denial is valid. If you believe it's wrong, appeal in writing with documentation supporting your position. You can also file a complaint with your state insurance department or consult an attorney for large claims."
+      },
+      {
+        question: "Do I have to pay my deductible?",
+        answer: "Yes — your deductible is subtracted from the claim payment. If damage is $10,000 and your deductible is $1,000, you receive $9,000. The only exception is if another party is at-fault and their insurance pays (in which case, no deductible applies to their payment)."
+      },
+      {
+        question: "What is \"recoverable depreciation\"?",
+        answer: "If you have replacement cost coverage on your home, the insurer initially pays actual cash value (replacement cost minus depreciation). After you complete repairs and submit receipts, they pay the remaining depreciation. This ensures you actually make the repairs rather than pocketing the money."
+      },
+      {
+        question: "How do I track my claim status?",
+        answer: "Most insurers have online portals or apps where you can check status. You can also call the claims department directly using your claim number. Keep a log of all communications — dates, names, what was discussed — in case you need to reference it later."
+      }
+    ],
+    relatedArticles: ["home-insurance-guide", "auto-insurance-guide", "home-insurance-centre-al-storm-season"],
+    internalLinks: [
+      { text: "Contact Us", href: "/contact" },
+      { text: "Claims Help Page", href: "/claims" },
+      { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
+      { text: "Storm Season Guide", href: "/learn/home-insurance-centre-al-storm-season" }
+    ]
   }
 ];
