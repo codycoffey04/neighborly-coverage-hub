@@ -2442,6 +2442,7 @@ export const learnArticles: LearnArticle[] = [
     category: "State Comparison",
     readTime: "12 min read",
     featured: false,
+    heroImage: "alabama-hero.jpg",
     content: [
       {
         type: 'paragraph',
