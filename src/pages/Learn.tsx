@@ -1,4 +1,3 @@
-import { PageLayout } from "@/components/shared/PageLayout";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,6 +5,17 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Car, Home, Key, Building2, Heart, FileText, Layers, Bike, LucideIcon } from "lucide-react";
 import { learnArticles } from "@/data/learnArticles";
 import { Helmet } from "react-helmet-async";
+import { Header } from "@/components/homepage/Header";
+import { Footer } from "@/components/homepage/Footer";
+import heroImage from "@/assets/alabama-hero.jpg";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 // Custom hub excerpts for Learn hub page
 const hubExcerpts: Record<string, string> = {
@@ -97,11 +107,7 @@ const Learn = () => {
   };
 
   return (
-    <PageLayout
-      title="Insurance Learning Center"
-      description="Insurance doesn't have to be confusing. We've built this resource library to answer your questions in plain English — no jargon, no sales pitch, just honest information to help you make smart coverage decisions."
-      breadcrumbs={[{ label: "Learn", href: "/learn" }]}
-    >
+    <>
       <Helmet>
         <title>Insurance Learning Center | Coffey Agencies</title>
         <meta name="description" content="Expert insurance guides covering auto, home, renters, condo, and life insurance in Alabama and Georgia. Plain English answers to your coverage questions." />
@@ -129,6 +135,41 @@ const Learn = () => {
         </script>
       </Helmet>
 
+      <Header />
+
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[400px] flex items-end pt-32 pb-16 px-4"
+        style={{ backgroundImage: `url(${heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        aria-label="Insurance Learning Center hero section"
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+        <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Breadcrumbs */}
+          <Breadcrumb className="mb-6">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/" className="text-white/80 hover:text-white transition-colors">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="text-white/60" />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-white">Learn</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+            Insurance Learning Center
+          </h1>
+          <p className="text-xl text-white/90 max-w-3xl leading-relaxed drop-shadow-md">
+            Insurance doesn't have to be confusing. We've built this resource library to answer your questions in plain English — no jargon, no sales pitch, just honest information to help you make smart coverage decisions.
+          </p>
+        </div>
+      </section>
+
+      <main>
       {/* Intro Section */}
       <section className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-4xl text-center">
@@ -270,7 +311,10 @@ const Learn = () => {
           </Link>
         </div>
       </section>
-    </PageLayout>
+      </main>
+
+      <Footer />
+    </>
   );
 };
 
