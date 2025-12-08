@@ -33,6 +33,7 @@ const learnLinks = [
   { name: "Auto Insurance Costs: Rome, GA", href: "/learn/auto-insurance-costs-rome-ga" },
   { name: "Storm Season: Centre, AL", href: "/learn/home-insurance-centre-al-storm-season" },
   { name: "What Happens When You File a Claim", href: "/learn/what-happens-when-you-file-a-claim" },
+  { name: "Mistakes When Switching Insurance", href: "/learn/mistakes-when-switching-insurance" },
 ];
 
 export const Header = () => {

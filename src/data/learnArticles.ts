@@ -4463,5 +4463,502 @@ export const learnArticles: LearnArticle[] = [
       { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
       { text: "Storm Season Guide", href: "/learn/home-insurance-centre-al-storm-season" }
     ]
+  },
+  {
+    slug: "mistakes-when-switching-insurance",
+    title: "Common Mistakes When Switching Insurance Providers",
+    metaTitle: "Common Mistakes When Switching Insurance Providers | Coffey Agencies",
+    metaDescription: "Thinking about switching insurance companies? Avoid these costly mistakes that can leave you without coverage, pay more, or lose valuable benefits.",
+    excerpt: "How to change insurance companies without gaps, surprises, or losing benefits you've earned",
+    category: "Tips & Guidance",
+    readTime: "14 min read",
+    featured: false,
+    heroImage: "auto-insurance-hero.jpg",
+    content: [
+      {
+        type: 'paragraph',
+        content: "Switching insurance companies seems simple: get a better quote, cancel the old policy, start the new one. Done."
+      },
+      {
+        type: 'paragraph',
+        content: "Except it's not that simple. Every year, we talk to people who switched insurance and accidentally created coverage gaps, lost discounts they didn't know they had, or ended up paying more than before once they realized what was missing."
+      },
+      {
+        type: 'paragraph',
+        content: "The good news: these mistakes are entirely avoidable. Here's what to watch for — whether you're switching auto, home, or both."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Mistake #1: Creating a Coverage Gap"
+      },
+      {
+        type: 'paragraph',
+        content: "This is the most dangerous mistake, and it happens more often than you'd think."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Happens"
+      },
+      {
+        type: 'paragraph',
+        content: "You cancel your old policy on the 15th. Your new policy starts on the 16th. You think you're fine — it's just one day. But that one day matters. A lot."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Why It's a Problem"
+      },
+      {
+        type: 'paragraph',
+        content: "In Georgia and Alabama, driving without insurance is illegal. Even a single day without coverage can trigger:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Fines ($25-$200+ depending on the state)",
+          "License suspension",
+          "Vehicle registration suspension",
+          "SR-22 requirement (which dramatically increases your rates)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "But the bigger issue is what insurers do with gaps: Gaps raise your future rates. Insurance companies view lapses as a red flag. Even a one-day gap can cost you the \"continuous coverage\" discount — typically 10-15% of your premium. A gap of 30+ days can push you into high-risk territory with significantly higher rates."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "How to Avoid It"
+      },
+      {
+        type: 'list',
+        content: [
+          "Never cancel your old policy until your new policy is active and confirmed",
+          "Set your new policy start date for the same day your old policy ends — or overlap by a day to be safe",
+          "Get written confirmation (declarations page or policy number) before canceling anything",
+          "If you're ending mid-term, coordinate the exact effective dates carefully"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "The Safe Sequence"
+      },
+      {
+        type: 'list',
+        content: [
+          "Get new policy quote and application approved",
+          "Receive new policy documents with confirmed start date",
+          "Only then cancel old policy, effective the same date",
+          "Keep proof of both policies in case questions arise later"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Mistake #2: Comparing Policies That Aren't Equal"
+      },
+      {
+        type: 'paragraph',
+        content: "That quote that's $40/month cheaper? It might not be the deal it looks like."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Happens"
+      },
+      {
+        type: 'paragraph',
+        content: "You get a quote that's significantly lower than what you're paying now. You switch. Six months later, you file a claim and discover your new policy has a $2,000 deductible instead of $500, doesn't include rental car coverage, and has lower liability limits."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Common Differences People Miss"
+      },
+      {
+        type: 'paragraph',
+        content: "Liability Limits: Old policy might be 100/300/100, while the new \"cheaper\" policy is 50/100/50. The new policy costs less because it covers less. If you cause a serious accident, you could be personally liable for tens of thousands of dollars."
+      },
+      {
+        type: 'paragraph',
+        content: "Deductibles: Old policy might have $500 comprehensive and $500 collision, while the new policy has $1,000 for each. Lower premium, but you pay $500-$1,000 more out of pocket when you file a claim."
+      },
+      {
+        type: 'paragraph',
+        content: "Coverage Gaps: Rental car reimbursement, roadside assistance, uninsured motorist coverage matching limits vs. state minimum, and medical payments ($5,000 vs. $1,000) — these are often different between policies."
+      },
+      {
+        type: 'paragraph',
+        content: "Home Insurance Differences: Replacement cost vs. actual cash value on roof, water backup coverage included vs. excluded, personal property limits ($100,000 vs. $50,000), and deductible ($1,000 vs. $2,500)."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "How to Compare Properly"
+      },
+      {
+        type: 'list',
+        content: [
+          "Get your current declarations page (the summary of your coverage)",
+          "Compare line by line — same limits, same deductibles, same coverages",
+          "Ask the new company to quote the exact same coverage first",
+          "Then decide if you want to adjust coverage levels"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "The cheapest quote is meaningless if it's not covering the same things."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Mistake #3: Forgetting About Bundling Discounts"
+      },
+      {
+        type: 'paragraph',
+        content: "Switching one policy can affect what you pay on all your policies."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Happens"
+      },
+      {
+        type: 'paragraph',
+        content: "You have auto and home insurance bundled with the same company, saving 15% on both. You find a cheaper auto quote and switch just your auto. Your home premium goes up because you lost the bundle discount. Net result: you're paying more than before."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "The Math"
+      },
+      {
+        type: 'paragraph',
+        content: "Let's say you pay Auto: $1,200/year (with 15% bundle discount already applied) and Home: $1,400/year (with 15% bundle discount already applied). Without the bundle, your home would cost $1,610/year — that's $210 more. If your new auto policy saves you $150/year, you actually lose $60 overall."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Other Discounts You Might Lose"
+      },
+      {
+        type: 'list',
+        content: [
+          "Multi-policy discount: The bundle discount described above",
+          "Loyalty discount: Some companies increase discounts the longer you stay",
+          "Accident forgiveness: Often only available after 3+ years with a company — you may lose this protection if you switch",
+          "Vanishing deductible: Some policies reduce your deductible over time for claim-free years — that resets when you switch",
+          "Claims-free discount: Built up over years, may not transfer to new company"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "How to Avoid This"
+      },
+      {
+        type: 'list',
+        content: [
+          "Calculate total cost across all policies, not just the one you're switching",
+          "Ask your current company what you'd lose by unbundling",
+          "If you're going to switch, consider moving all policies together",
+          "Factor in earned benefits that take years to rebuild"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Mistake #4: Bad Timing"
+      },
+      {
+        type: 'paragraph',
+        content: "When you switch matters more than most people realize."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Mid-Policy Cancellation Fees"
+      },
+      {
+        type: 'paragraph',
+        content: "Some insurers charge a short-rate cancellation penalty if you cancel before your policy term ends. This means you don't get a full pro-rata refund — you might lose 10% of your remaining premium. Example: You cancel 3 months into a 6-month policy. Instead of getting 50% back, you might only get 40% back."
+      },
+      {
+        type: 'paragraph',
+        content: "The Fix: Time your switch to coincide with your renewal date when possible. You'll get the full benefit of premiums you've already paid."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Switching During an Open Claim"
+      },
+      {
+        type: 'paragraph',
+        content: "Never switch while you have an open claim. Your current insurer is obligated to handle claims that occurred while you were covered, but switching mid-claim creates confusion, delays, and potential coverage disputes. Wait until the claim is fully closed before making any changes."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Switching After a Violation"
+      },
+      {
+        type: 'paragraph',
+        content: "If you recently got a ticket or had an accident, your current insurer may not have applied the increase yet (especially if renewal is months away). Shopping around right now means the new company sees the violation immediately and prices it in, while your current company might not increase your rate until renewal."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Strategic Timing"
+      },
+      {
+        type: 'paragraph',
+        content: "The best time to switch is usually: at renewal (when you've paid through the end of your term), 3+ years after any accidents or major violations (they \"age off\" your record), or when life changes justify re-shopping anyway (new home, new car, marriage, etc.)."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Mistake #5: Paperwork and Process Errors"
+      },
+      {
+        type: 'paragraph',
+        content: "Administrative mistakes can create real problems months later."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Not Formally Canceling Your Old Policy"
+      },
+      {
+        type: 'paragraph',
+        content: "You start your new policy and assume the old one will just... stop. It doesn't. Insurance policies auto-renew unless you cancel them in writing. What happens: Your old policy renews, your bank account gets charged, you have two active policies, and sorting it out becomes a headache. The Fix: Always formally cancel in writing. Get confirmation with a cancellation date in writing."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Not Updating Your Lienholder"
+      },
+      {
+        type: 'paragraph',
+        content: "If you have a car loan or mortgage, your lender is listed on your policy. When you switch, the new policy needs to list the same lender. What happens if you don't: Your lender gets notified that coverage lapsed (because the old policy was canceled). They may purchase force-placed insurance — expensive coverage that protects the lender but costs you 2-3x normal rates — and bill you for it. The Fix: Provide your lender information to your new insurer during signup. Confirm the lender appears on your new declarations page."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Losing Proof of Prior Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "Your prior insurance history affects your rates. Continuous coverage discounts require proof you've been insured. What happens if you can't prove it: You may be rated as a new customer or someone with a lapse — higher rates either way. The Fix: Keep your old declarations pages and ID cards. Get a \"proof of prior insurance\" letter from your old company before canceling."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Forgetting to Set Up Autopay"
+      },
+      {
+        type: 'paragraph',
+        content: "Your new policy requires a payment. You meant to set up autopay but forgot. You miss the first payment. The policy cancels for non-payment. Now you have a gap and a record of cancellation for non-pay. The Fix: Set up autopay during the application process, not \"later.\""
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What to Compare Before Switching"
+      },
+      {
+        type: 'paragraph',
+        content: "Before you make any decision, compare these items line by line:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Coverage Limits"
+      },
+      {
+        type: 'list',
+        content: [
+          "Bodily injury liability (per person/per accident)",
+          "Property damage liability",
+          "Uninsured/underinsured motorist",
+          "Medical payments or PIP",
+          "Comprehensive and collision",
+          "Dwelling coverage (home)",
+          "Personal property coverage (home)",
+          "Liability coverage (home)"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Deductibles"
+      },
+      {
+        type: 'list',
+        content: [
+          "Comprehensive deductible",
+          "Collision deductible",
+          "Home deductible (flat dollar vs. percentage)",
+          "Wind/hail deductible (home — often separate)"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Included Coverages"
+      },
+      {
+        type: 'list',
+        content: [
+          "Rental car reimbursement",
+          "Roadside assistance",
+          "Gap coverage",
+          "Water backup (home)",
+          "Personal injury protection",
+          "Custom equipment coverage"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Exclusions"
+      },
+      {
+        type: 'list',
+        content: [
+          "What's specifically not covered?",
+          "Any unusual limitations?"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Beyond Price"
+      },
+      {
+        type: 'list',
+        content: [
+          "Claims reputation: How does the company handle claims? Online reviews and J.D. Power ratings can help.",
+          "Financial stability: Check A.M. Best ratings — you want a company that can pay claims.",
+          "Service model: Are you comfortable with online-only, or do you want a local agent?"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "When Switching Actually Makes Sense"
+      },
+      {
+        type: 'paragraph',
+        content: "Despite all these warnings, sometimes switching is absolutely the right move:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Significant Rate Increases"
+      },
+      {
+        type: 'paragraph',
+        content: "If your premium jumps 20%+ at renewal without any claims or changes on your end, it's worth shopping around. Companies adjust their pricing models, and you might no longer fit their preferred profile."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Life Changes"
+      },
+      {
+        type: 'paragraph',
+        content: "Major life events often justify re-shopping:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Moving to a new state (rates vary dramatically)",
+          "Buying a home (bundling opportunities)",
+          "Adding a teen driver (some companies handle this better than others)",
+          "Getting married (married rates are lower)",
+          "Retiring (some companies offer better senior rates)",
+          "Buying a new car (some vehicles cost more to insure with certain companies)"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Poor Service or Claims Experience"
+      },
+      {
+        type: 'paragraph',
+        content: "If you've had a bad claims experience — slow response, unfair settlement, poor communication — that's a valid reason to switch. Insurance is only as good as the service when you need it."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Company Instability"
+      },
+      {
+        type: 'paragraph',
+        content: "If your insurer is having financial trouble, losing their license in your state, or pulling out of your market, it's time to find a new home for your coverage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "How to Switch the Right Way"
+      },
+      {
+        type: 'list',
+        content: [
+          "Get quotes for equivalent coverage (same limits, same deductibles)",
+          "Calculate total cost across all policies, including lost discounts",
+          "Verify the new company's financial strength and claims reputation",
+          "Time the switch for your renewal date if possible",
+          "Get the new policy fully issued before canceling the old one",
+          "Formally cancel the old policy in writing",
+          "Update lienholders and keep proof of prior coverage",
+          "Set up autopay on the new policy immediately"
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "How do I avoid a coverage gap when switching?",
+        answer: "Never cancel your old policy until your new policy is active and confirmed in writing. Set the new policy start date for the same day your old policy ends — or overlap by one day to be safe. A single day without coverage can trigger fines, license issues, and higher future rates."
+      },
+      {
+        question: "Will switching insurance companies raise my rates?",
+        answer: "Not automatically, but you might lose discounts that take years to earn — accident forgiveness, vanishing deductibles, loyalty discounts. You may also pay more if you lose a bundle discount by switching just one policy. Calculate total costs before deciding."
+      },
+      {
+        question: "How do I know if a cheaper quote is actually better?",
+        answer: "Compare coverage line by line, not just price. The \"cheaper\" policy might have higher deductibles, lower limits, or missing coverages like rental reimbursement. Ask the new company to match your current coverage exactly, then compare prices."
+      },
+      {
+        question: "Can I switch insurance with an open claim?",
+        answer: "You can, but it's not advisable. Your current insurer handles claims for incidents that occurred while you were covered, but switching mid-claim creates confusion. Wait until the claim is fully closed before changing companies."
+      },
+      {
+        question: "What documents do I need to keep from my old policy?",
+        answer: "Keep your declarations page (coverage summary), proof of prior insurance, and any ID cards. You may need these to prove continuous coverage to your new insurer or to document your history if questions arise later."
+      },
+      {
+        question: "Do I need to notify my mortgage company or car lender when I switch?",
+        answer: "Your new insurer should list them automatically if you provide their information during signup. Confirm they appear on your new declarations page. If lenders don't receive proof of new coverage, they may purchase expensive force-placed insurance and bill you."
+      },
+      {
+        question: "Is it better to switch at renewal or mid-policy?",
+        answer: "Renewal is usually better. You've paid through the end of your term, so there's no short-rate cancellation fee. Switching mid-policy may cost you a penalty and could leave you paying for coverage you didn't use."
+      },
+      {
+        question: "How long should I stay with one insurance company?",
+        answer: "There's no magic number, but some benefits take 3-5 years to fully accrue (accident forgiveness, loyalty discounts). That said, don't stay out of inertia — if your rates have climbed significantly or service has declined, shopping around is smart. Just factor in what you might lose."
+      }
+    ],
+    relatedArticles: ["auto-insurance-guide", "home-insurance-guide", "bundling-home-and-auto"],
+    internalLinks: [
+      { text: "Contact Us", href: "/contact" },
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
+      { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
+      { text: "Bundling Guide", href: "/learn/bundling-home-and-auto" }
+    ]
   }
 ];
