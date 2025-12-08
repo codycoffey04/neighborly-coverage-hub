@@ -33,6 +33,243 @@ export interface LearnArticle {
 
 export const learnArticles: LearnArticle[] = [
   {
+    slug: "motorcycle-insurance-guide",
+    title: "Motorcycle Insurance Guide: Alabama & Georgia Rider Coverage",
+    metaTitle: "Motorcycle Insurance Guide | Alabama & Georgia | Coffey Agencies",
+    metaDescription: "Learn about motorcycle insurance coverage, costs, and Alabama & Georgia requirements. Get expert guidance from Coffey Agencies.",
+    excerpt: "Everything Alabama and Georgia riders need to know about coverage, costs, and protecting your bike.",
+    category: "Motorcycle Insurance",
+    readTime: "10 min read",
+    featured: false,
+    heroImage: "motorcycle-insurance-hero.jpg",
+    content: [
+      {
+        type: 'paragraph',
+        content: "Motorcycle insurance protects you, your bike, and your finances when things go wrong on the road. Unlike auto insurance, motorcycle coverage addresses the unique risks riders face — no steel cage protection, exposure to the elements, and higher injury rates per mile traveled. In Alabama and Georgia, motorcycle insurance isn't just smart — it's required by law."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Is Motorcycle Insurance?"
+      },
+      {
+        type: 'paragraph',
+        content: "Motorcycle insurance works similarly to auto insurance but is tailored for two-wheeled vehicles. It covers liability when you're at fault, damage to your bike, medical expenses, and protection against uninsured drivers. The key difference: motorcycles have higher risk profiles due to less physical protection, which affects both coverage needs and premiums."
+      },
+      {
+        type: 'paragraph',
+        content: "Both Alabama and Georgia require minimum liability coverage to register and operate a motorcycle. But state minimums often fall short of real-world costs after a serious accident, making additional coverage essential for most riders."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Types of Motorcycle Coverage Are Available?"
+      },
+      {
+        type: 'paragraph',
+        content: "Motorcycle insurance policies bundle several coverage types. Understanding each helps you build the right protection:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Pays for injuries and property damage you cause to others in an accident. This is the coverage state law requires. If you're at fault and the other driver has $50,000 in medical bills plus a totaled car, liability coverage pays — up to your policy limits. State minimums (25/50/25) often aren't enough for serious accidents."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Collision Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Repairs or replaces your motorcycle after an accident, regardless of fault. Hit a pothole and lay down the bike? Collision covers repairs. Get rear-ended at a stoplight? Collision handles your bike while you pursue the other driver's insurance."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Comprehensive Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers non-collision damage: theft, vandalism, fire, falling objects, weather damage, and hitting animals. Motorcycles are theft targets — especially sport bikes and Harleys. Comprehensive protection is particularly important for bikes stored outside or in areas with high theft rates."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Uninsured/Underinsured Motorist (UM/UIM)"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers your injuries and bike damage when the at-fault driver has no insurance or insufficient coverage. Alabama has an 18%+ uninsured driver rate; Georgia hovers around 12%. When a driver with no insurance hits you, UM coverage pays your medical bills and bike repairs. For riders, this may be the most important coverage after liability."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Medical Payments (MedPay)"
+      },
+      {
+        type: 'paragraph',
+        content: "Pays medical expenses for you and your passenger regardless of fault. Covers hospital bills, surgery, rehabilitation, and related costs. Given the higher injury severity in motorcycle accidents, MedPay provides crucial gap coverage while health insurance claims process."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Custom Parts & Equipment Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers aftermarket accessories and modifications: custom exhaust systems, chrome upgrades, saddlebags, audio equipment, and performance parts. Standard policies may only cover factory equipment. If you've invested in customizing your bike, this coverage protects that investment — often up to $30,000 in added value."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Affects Your Motorcycle Insurance Cost?"
+      },
+      {
+        type: 'paragraph',
+        content: "Insurance companies evaluate multiple factors when setting your premium:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Bike Type"
+      },
+      {
+        type: 'paragraph',
+        content: "Sport bikes cost significantly more to insure than cruisers or touring bikes. A 600cc sport bike might cost twice as much to insure as a cruiser of similar value. The reason: sport bikes are ridden more aggressively, have higher accident rates, and attract theft."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Engine Size"
+      },
+      {
+        type: 'paragraph',
+        content: "Larger displacement engines mean higher premiums. A 1200cc bike costs more to insure than a 500cc bike. More power equals more risk in underwriters' calculations."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Riding Experience"
+      },
+      {
+        type: 'paragraph',
+        content: "Years with a motorcycle license and completion of safety courses both reduce premiums. MSF (Motorcycle Safety Foundation) course completion often qualifies for 5-15% discounts."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Age"
+      },
+      {
+        type: 'paragraph',
+        content: "Younger riders pay more — significantly more under age 25. Rates typically stabilize between 25-65, then may increase slightly for older riders."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Location"
+      },
+      {
+        type: 'paragraph',
+        content: "Urban areas have higher theft and accident rates than rural locations. Your specific ZIP code affects your premium. Birmingham and Atlanta riders pay more than those in rural Cherokee County."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Coverage Limits"
+      },
+      {
+        type: 'paragraph',
+        content: "Higher liability limits and lower deductibles increase premiums. But the difference between state minimum coverage and adequate protection might only be $100-200 annually — worth every dollar when you need it."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Are Alabama & Georgia Motorcycle Laws?"
+      },
+      {
+        type: 'paragraph',
+        content: "Both states have specific requirements for motorcyclists:"
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Alabama Requirements:\n• Minimum liability: 25/50/25 ($25,000 per person, $50,000 per accident bodily injury, $25,000 property damage)\n• Helmet required for ALL riders regardless of age\n• Eye protection required unless bike has windscreen\n• Class M motorcycle license or endorsement required"
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Georgia Requirements:\n• Minimum liability: 25/50/25 ($25,000 per person, $50,000 per accident bodily injury, $25,000 property damage)\n• Helmet required for riders under 21\n• Proof of insurance required (GEICS verification system)\n• Class M motorcycle license required"
+      },
+      {
+        type: 'paragraph',
+        content: "Important note: Alabama's guest passenger statute affects liability coverage for passengers. Unlike other states, passengers may have limited ability to sue the rider for injuries. Understanding this unique law matters for coverage decisions."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Can I Save on Motorcycle Insurance?"
+      },
+      {
+        type: 'list',
+        content: [
+          "Bundle with Auto or Home — Combining motorcycle insurance with your auto or homeowners policy typically saves 10-25%. Most riders already have other policies where bundling makes sense.",
+          "Complete a Safety Course — MSF Basic RiderCourse or similar training often qualifies for discounts of 5-15%. The course also makes you a safer rider, reducing accident risk.",
+          "Install Anti-Theft Devices — Disc locks, chains, GPS trackers, and garage storage all reduce theft risk and may qualify for premium discounts.",
+          "Maintain a Clean Riding Record — No accidents or moving violations keeps rates low. Some insurers offer accident forgiveness programs for long-term customers.",
+          "Pay Annually Instead of Monthly — Most insurers charge fees for monthly billing. Paying your full premium annually saves $50-100 per year.",
+          "Ask About Seasonal or Lay-Up Discounts — If you don't ride year-round, some insurers offer reduced rates during winter months when the bike is stored. This can save 10-50% during off-season months."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Do I need motorcycle insurance in Alabama and Georgia?",
+        answer: "Yes, both states require minimum liability insurance to register and operate a motorcycle. Alabama and Georgia both mandate 25/50/25 coverage — $25,000 per person bodily injury, $50,000 per accident bodily injury, and $25,000 property damage. Operating without insurance results in fines, license suspension, and personal liability for any damages."
+      },
+      {
+        question: "Does my auto insurance cover my motorcycle?",
+        answer: "No. Auto insurance policies specifically exclude motorcycles. You need a separate motorcycle insurance policy. However, many insurers offer multi-policy discounts when you bundle motorcycle and auto coverage together."
+      },
+      {
+        question: "What's the difference between motorcycle and auto insurance?",
+        answer: "The core coverages are similar — liability, collision, comprehensive, UM/UIM — but motorcycle policies account for unique risks. Motorcycles have higher injury severity, different theft patterns, and seasonal riding considerations. Motorcycle policies often include custom parts coverage and may offer lay-up discounts for winter storage. Premiums vary more dramatically based on bike type than car insurance does based on vehicle type."
+      },
+      {
+        question: "Are custom parts covered by standard policies?",
+        answer: "Standard motorcycle policies typically only cover factory-original equipment. If you've added aftermarket exhaust, custom chrome, upgraded audio, or performance modifications, you need Custom Parts & Equipment coverage. This endorsement covers the added value of your modifications, often up to $30,000 depending on the policy."
+      },
+      {
+        question: "What happens if I only ride seasonally?",
+        answer: "Many insurers offer lay-up or seasonal discounts when your bike is stored and not ridden. During lay-up periods, comprehensive coverage remains active (protecting against theft, fire, weather) while liability and collision are suspended. This can reduce premiums by 10-50% during off-season months. Ask your agent about seasonal options."
+      },
+      {
+        question: "Does motorcycle insurance cover passengers?",
+        answer: "Yes, with some considerations. Your liability coverage pays for passenger injuries if you're at fault. Medical payments coverage applies to both rider and passenger. However, Alabama's unique guest passenger statute limits passengers' ability to sue the rider for negligence, which affects how claims are handled."
+      },
+      {
+        question: "What if I'm hit by an uninsured driver?",
+        answer: "Uninsured/Underinsured Motorist (UM/UIM) coverage protects you. With 12-18% of drivers in Alabama and Georgia uninsured, this coverage is essential. UM pays your medical bills and bike repairs when the at-fault driver has no insurance or insufficient coverage to cover your losses."
+      },
+      {
+        question: "How do I file a motorcycle insurance claim?",
+        answer: "Call your insurance agent immediately after an accident — before calling the insurance company's 800 number. Your agent knows your policy and can guide the process. Document everything: photos of damage, witness information, police report number. Avoid admitting fault at the scene. Your agent will help you navigate repairs, medical coverage, and dealing with other parties' insurers."
+      }
+    ],
+    relatedArticles: ["auto-insurance-guide", "bundling-home-and-auto", "alabama-insurance-requirements"],
+    internalLinks: [
+      { text: "Get Your Free Motorcycle Insurance Quote", href: "/contact" },
+      { text: "Motorcycle Insurance Coverage", href: "/services/motorcycle-insurance" },
+      { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
+      { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
+      { text: "Bundle Motorcycle + Auto and Save", href: "/learn/bundling-home-and-auto" }
+    ]
+  },
+  {
     slug: "auto-insurance-guide",
     title: "Auto Insurance in Alabama & Georgia: What You Actually Need to Know",
     metaTitle: "Auto Insurance in Alabama & Georgia: Complete Guide | Coffey Agencies",
