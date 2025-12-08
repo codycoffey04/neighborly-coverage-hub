@@ -18,7 +18,8 @@ const hubExcerpts: Record<string, string> = {
   "alabama-insurance-requirements": "State minimums, penalties for non-compliance, and what coverage you actually need.",
   "georgia-insurance-requirements": "State mandates, GEICS verification system, and recommended coverage levels.",
   "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense.",
-  "alabama-vs-georgia-insurance": "Key differences in requirements, costs, and regulations for cross-state families."
+  "alabama-vs-georgia-insurance": "Key differences in requirements, costs, and regulations for cross-state families.",
+  "auto-insurance-costs-rome-ga": "What Rome drivers actually pay, what affects your premium, and how to save. Real local data for Floyd County."
 };
 
 // Article icons mapping
@@ -32,15 +33,18 @@ const articleIcons: Record<string, LucideIcon> = {
   "alabama-insurance-requirements": FileText,
   "georgia-insurance-requirements": FileText,
   "bundling-home-and-auto": Layers,
-  "alabama-vs-georgia-insurance": Layers
+  "alabama-vs-georgia-insurance": Layers,
+  "auto-insurance-costs-rome-ga": Car
 };
 
 const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide", "motorcycle-insurance-guide"];
 const topicGuides = ["alabama-insurance-requirements", "georgia-insurance-requirements", "bundling-home-and-auto", "alabama-vs-georgia-insurance"];
+const localGuides = ["auto-insurance-costs-rome-ga"];
 
 const Learn = () => {
   const coverageArticles = learnArticles.filter(article => coverageGuides.includes(article.slug));
   const topicArticles = learnArticles.filter(article => topicGuides.includes(article.slug));
+  const localArticles = learnArticles.filter(article => localGuides.includes(article.slug));
 
   // CollectionPage schema
   const collectionSchema = {
@@ -174,6 +178,45 @@ const Learn = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {topicArticles.map((article) => {
+              const IconComponent = articleIcons[article.slug];
+              return (
+                <Card key={article.slug} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out group">
+                  <CardContent className="p-6">
+                    {IconComponent && (
+                      <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                        <IconComponent className="w-6 h-6 text-accent" />
+                      </div>
+                    )}
+                    
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h3>
+                    
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {hubExcerpts[article.slug]}
+                    </p>
+
+                    <Link to={`/learn/${article.slug}`}>
+                      <Button variant="link" className="p-0 h-auto text-accent hover:text-accent/80" aria-label={`Read guide about ${article.title}`}>
+                        Read Guide
+                        <ArrowRight className="w-4 h-4 ml-1" />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Local Guides */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <SectionHeading className="mb-8">Local Guides</SectionHeading>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {localArticles.map((article) => {
               const IconComponent = articleIcons[article.slug];
               return (
                 <Card key={article.slug} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] hover:scale-105 transition-all duration-300 ease-in-out group">
