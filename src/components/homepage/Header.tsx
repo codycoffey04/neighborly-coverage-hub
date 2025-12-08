@@ -29,6 +29,7 @@ const learnLinks = [
   { name: "Condo Insurance Guide", href: "/learn/condo-insurance-guide" },
   { name: "Life Insurance Guide", href: "/learn/life-insurance-guide" },
   { name: "Motorcycle Insurance Guide", href: "/learn/motorcycle-insurance-guide" },
+  { name: "Alabama vs Georgia Insurance", href: "/learn/alabama-vs-georgia-insurance" },
 ];
 
 export const Header = () => {

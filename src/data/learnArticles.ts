@@ -2432,5 +2432,359 @@ export const learnArticles: LearnArticle[] = [
       { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
       { text: "Renters Insurance Guide", href: "/learn/renters-insurance-guide" }
     ]
+  },
+  {
+    slug: "alabama-vs-georgia-insurance",
+    title: "Alabama vs Georgia Insurance: Key Differences",
+    metaTitle: "Alabama vs Georgia Insurance: Key Differences | Coffey Agencies",
+    metaDescription: "Compare Alabama and Georgia insurance requirements, costs, and regulations. Learn the key differences for auto, home, renters, and life insurance across state lines.",
+    excerpt: "What you need to know if you live, work, or drive across state lines",
+    category: "State Comparison",
+    readTime: "12 min read",
+    featured: false,
+    content: [
+      {
+        type: 'paragraph',
+        content: "If you live in Centre, Alabama and commute to Rome, Georgia — or vice versa — you're not alone. Thousands of families in our area cross state lines daily for work, shopping, and visiting family. But when it comes to insurance, which state's rules apply? And how do Alabama and Georgia actually compare?"
+      },
+      {
+        type: 'paragraph',
+        content: "As an agency licensed in both states, we help clients navigate these questions every day. Here's what you need to know about the key differences between Alabama and Georgia insurance requirements, costs, and regulations."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Do Auto Insurance Requirements Compare?"
+      },
+      {
+        type: 'paragraph',
+        content: "Good news: Alabama and Georgia have identical minimum liability requirements."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Minimum Liability Limits (Both States)"
+      },
+      {
+        type: 'list',
+        content: [
+          "$25,000 per person for bodily injury",
+          "$50,000 per accident for bodily injury",
+          "$25,000 for property damage"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "This is often written as \"25/50/25.\" While these minimums are the same, we typically recommend higher limits — a serious accident can easily exceed $25,000 in medical bills alone."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Uninsured/Underinsured Motorist Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "This is where the states differ significantly."
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Alabama:\n• UM coverage is included unless you reject it in writing\n• Alabama treats underinsured situations under the same UM coverage\n• Stacking is limited to up to 3 vehicles on the same policy"
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Georgia:\n• UM coverage applies unless rejected in writing\n• Georgia offers two types of underinsured motorist coverage:\n  - Add-on/Excess: Your UM applies in addition to the at-fault driver's liability\n  - Reduced-by: Your UM is reduced by what the at-fault driver's insurance pays\n• The \"add-on\" version is default unless you specifically choose \"reduced-by\""
+      },
+      {
+        type: 'paragraph',
+        content: "Why This Matters: If you commute into Georgia and get hit by an underinsured driver, the type of UM coverage you chose can significantly affect your payout. The \"add-on\" option generally provides better protection."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "At-Fault States"
+      },
+      {
+        type: 'paragraph',
+        content: "Both Alabama and Georgia are \"at-fault\" (tort) states. This means the driver who caused the accident is responsible for damages. Neither state uses no-fault insurance."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What About SR-22 Requirements?"
+      },
+      {
+        type: 'paragraph',
+        content: "If you've had a DUI, multiple violations, or drove without insurance, you may need an SR-22 — a certificate proving you carry the required minimum coverage."
+      },
+      {
+        type: 'paragraph',
+        content: "Both states require SR-22 for approximately 3 years after certain violations. However, the process differs:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Georgia — SR-22 is filed through the Department of Driver Services (DDS). If coverage lapses, the 3-year clock restarts.",
+          "Alabama — SR-22 is filed through ALEA/Department of Revenue. Similar 3-year requirement."
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "We handle SR-22 filings for clients in both states and can help you understand exactly what's required for your situation."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Happens If My Coverage Lapses?"
+      },
+      {
+        type: 'paragraph',
+        content: "This is where Alabama and Georgia take different approaches — and Georgia's system is stricter."
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Alabama:\n• If caught uninsured, your registration is suspended\n• Reinstatement fees: $200 (first violation), $400 (subsequent)"
+      },
+      {
+        type: 'callout',
+        variant: 'warning',
+        content: "Georgia:\n• Georgia tracks insurance status continuously through an electronic verification system\n• Lapse fines: $25 per lapse while registered\n• Registration suspension reinstatement: $25 lapse fine + $60 reinstatement fee\n• Multiple suspensions (3+ in 5 years): Up to $160 reinstatement fee plus lapse fines"
+      },
+      {
+        type: 'paragraph',
+        content: "Bottom Line: Georgia is more aggressive about tracking coverage lapses. Even a short gap can trigger fines and reinstatement fees. If you're insured in either state, don't let your coverage lapse — even for a day."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Which State Has Higher Auto Insurance Rates?"
+      },
+      {
+        type: 'paragraph',
+        content: "Georgia is significantly more expensive for auto insurance."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "2025 Average Annual Premiums"
+      },
+      {
+        type: 'table',
+        content: {
+          headers: ["Coverage Type", "Alabama", "Georgia", "Difference"],
+          rows: [
+            ["Full Coverage", "$2,155", "$2,909", "GA is $754 higher"],
+            ["Minimum Liability", "$562", "$1,046", "GA is $484 higher"]
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Why the Difference?"
+      },
+      {
+        type: 'paragraph',
+        content: "Georgia's higher rates are driven by:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Higher population density (especially metro Atlanta influence on statewide averages)",
+          "More accidents and claims",
+          "Higher medical costs",
+          "More uninsured drivers"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If you live in Alabama but work in Georgia, your policy is rated based on where your vehicle is garaged (your home address), not where you drive. So Alabama residents generally pay Alabama rates even if they commute into Georgia."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Does Home Insurance Compare?"
+      },
+      {
+        type: 'paragraph',
+        content: "Neither state requires homeowners insurance by law, but your mortgage lender almost certainly does."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "2025 Average Annual Premiums (for $300,000 dwelling coverage)"
+      },
+      {
+        type: 'table',
+        content: {
+          headers: ["State", "Average Premium"],
+          rows: [
+            ["Alabama", "$3,114"],
+            ["Georgia", "$2,041"]
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Why Alabama Costs More"
+      },
+      {
+        type: 'paragraph',
+        content: "Alabama's higher home insurance rates reflect greater catastrophe exposure — tornadoes, hurricanes (even inland effects), and severe thunderstorms. Northeast Alabama, including Cherokee County, sits in FEMA Wind Zone IV (highest risk)."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Key Coverage Considerations"
+      },
+      {
+        type: 'list',
+        content: [
+          "Flood insurance is NOT included in standard homeowners policies in either state. If you're near Weiss Lake, the Coosa River, or any flood-prone area, you need separate flood insurance.",
+          "Wind/hail deductibles are common in Alabama. Many policies have a percentage-based deductible (1-5% of dwelling coverage) for wind and hail claims rather than a flat dollar amount."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What About Renters Insurance?"
+      },
+      {
+        type: 'paragraph',
+        content: "Neither Alabama nor Georgia requires renters insurance by law, though your landlord may require it in your lease."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Average Annual Renters Insurance Premiums"
+      },
+      {
+        type: 'table',
+        content: {
+          headers: ["State", "Average Premium"],
+          rows: [
+            ["Alabama", "$219"],
+            ["Georgia", "$205"]
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: "Costs are similar and relatively affordable in both states. We recommend renters insurance for anyone who doesn't own their home — it covers your belongings and provides liability protection for very little cost."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Are There Differences in Life Insurance?"
+      },
+      {
+        type: 'paragraph',
+        content: "Life insurance is primarily governed by federal tax law, so the basics are the same in both states:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Death benefits are generally not subject to federal income tax",
+          "Cash value growth is tax-deferred"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "State-Specific Notes"
+      },
+      {
+        type: 'list',
+        content: [
+          "Both Alabama and Georgia provide a 10-day \"free look\" period — you can return a new life policy within 10 days for a full refund if you change your mind",
+          "Licensing and continuing education requirements differ for agents, but this doesn't affect your coverage",
+          "Estate planning implications may vary — consult an attorney for complex situations"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What If I Live in One State and Work in the Other?"
+      },
+      {
+        type: 'paragraph',
+        content: "This is common in our area. Here's what you need to know:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Auto Insurance"
+      },
+      {
+        type: 'list',
+        content: [
+          "Your policy is rated based on where the vehicle is garaged (your home address)",
+          "Living in Centre, AL and commuting to Rome, GA? You're insured under Alabama requirements",
+          "However, if you're in an accident in Georgia, Georgia's laws and courts may govern the claim"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "The UM/UIM Choice Matters"
+      },
+      {
+        type: 'paragraph',
+        content: "If you commute into Georgia regularly, your Georgia accident would be handled under your Alabama policy. But Georgia's rules about underinsured motorist claims can affect how fault and damages are determined. Having strong UM coverage is important for cross-state commuters."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Home Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "Your home is insured based on its physical location — period. A home in Centre, AL is under Alabama insurance regulations regardless of where you work."
+      }
+    ],
+    faqs: [
+      {
+        question: "Do I need separate insurance for each state if I live in Alabama but work in Georgia?",
+        answer: "No. Your auto insurance covers you in any state — you don't need separate policies. Your policy is rated based on your home address (where the car is garaged), and that coverage travels with you wherever you drive. However, if you move across state lines, you'll need to update your policy to reflect your new address and that state's requirements."
+      },
+      {
+        question: "Which state has more uninsured drivers?",
+        answer: "Georgia has a higher uninsured motorist rate — approximately 18% of Georgia drivers are uninsured, one of the highest rates in the country. This makes uninsured motorist coverage especially important if you drive in Georgia regularly. Alabama's rate is lower but still significant enough to warrant UM coverage."
+      },
+      {
+        question: "Why is Georgia auto insurance so much more expensive than Alabama?",
+        answer: "Georgia's higher rates are driven by several factors: greater population density (especially metro Atlanta's influence on statewide averages), higher accident frequency, more expensive medical costs, increased vehicle theft rates, and a higher percentage of uninsured drivers. Rural Georgia areas like Rome have lower rates than Atlanta, but still higher than most of Alabama."
+      },
+      {
+        question: "If I'm in an accident in Georgia but live in Alabama, whose laws apply?",
+        answer: "Both, in different ways. Your Alabama insurance policy governs your coverage and what your insurer pays. But Georgia's traffic laws, fault determination rules, and court system may govern the legal aspects of the accident — especially if there's a lawsuit. This is one reason having adequate liability and UM coverage matters."
+      },
+      {
+        question: "Is flood insurance required in either state?",
+        answer: "Neither state requires flood insurance by law. However, if your home is in a FEMA-designated high-risk flood zone and you have a mortgage, your lender will require flood insurance. Standard homeowners policies in both states exclude flood damage — you need a separate flood policy through the NFIP or a private insurer."
+      },
+      {
+        question: "Do Alabama and Georgia have hands-free driving laws?",
+        answer: "Yes, both states prohibit holding and using a phone while driving. Alabama's hands-free law took effect June 15, 2023. Georgia's \"Hands Free Georgia Act\" has been in effect since 2018. Violations can result in fines and points on your license, which can affect your insurance rates."
+      },
+      {
+        question: "Can I save money by insuring my car in the cheaper state?",
+        answer: "No — and attempting this is insurance fraud. Your policy must reflect where the vehicle is actually garaged. Insurers verify this, and misrepresenting your address can result in claim denials or policy cancellation. The good news: if you legitimately live in Alabama, you're already in the cheaper state for auto insurance."
+      },
+      {
+        question: "What should I do if I'm moving from Alabama to Georgia (or vice versa)?",
+        answer: "Notify your insurance agent before you move. We'll update your policy to reflect your new address and ensure you meet the new state's requirements. If your current insurer doesn't operate in your new state, we'll help you find coverage. Don't wait until after you move — handle the insurance transition as part of your moving checklist."
+      }
+    ],
+    relatedArticles: ["alabama-insurance-requirements", "georgia-insurance-requirements", "auto-insurance-guide"],
+    internalLinks: [
+      { text: "Get Your Free Insurance Quote", href: "/contact" },
+      { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
+      { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" }
+    ]
   }
 ];

@@ -17,7 +17,8 @@ const hubExcerpts: Record<string, string> = {
   "motorcycle-insurance-guide": "Everything riders need to know about coverage, costs, and protecting your bike in Alabama and Georgia.",
   "alabama-insurance-requirements": "State minimums, penalties for non-compliance, and what coverage you actually need.",
   "georgia-insurance-requirements": "State mandates, GEICS verification system, and recommended coverage levels.",
-  "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense."
+  "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense.",
+  "alabama-vs-georgia-insurance": "Key differences in requirements, costs, and regulations for cross-state families."
 };
 
 // Article icons mapping
@@ -30,11 +31,12 @@ const articleIcons: Record<string, LucideIcon> = {
   "motorcycle-insurance-guide": Bike,
   "alabama-insurance-requirements": FileText,
   "georgia-insurance-requirements": FileText,
-  "bundling-home-and-auto": Layers
+  "bundling-home-and-auto": Layers,
+  "alabama-vs-georgia-insurance": Layers
 };
 
 const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide", "motorcycle-insurance-guide"];
-const topicGuides = ["alabama-insurance-requirements", "georgia-insurance-requirements", "bundling-home-and-auto"];
+const topicGuides = ["alabama-insurance-requirements", "georgia-insurance-requirements", "bundling-home-and-auto", "alabama-vs-georgia-insurance"];
 
 const Learn = () => {
   const coverageArticles = learnArticles.filter(article => coverageGuides.includes(article.slug));

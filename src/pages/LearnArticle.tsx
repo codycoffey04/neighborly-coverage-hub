@@ -85,6 +85,35 @@ const LearnArticle = () => {
           </ul>
         );
       
+      case 'table':
+        const tableData = section.content as { headers: string[]; rows: string[][] };
+        return (
+          <div key={index} className="mb-6 overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-muted">
+                  {tableData.headers.map((header, i) => (
+                    <th key={i} className="border border-border px-4 py-3 text-left font-semibold text-foreground">
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {tableData.rows.map((row, rowIndex) => (
+                  <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-background' : 'bg-muted/30'}>
+                    {row.map((cell, cellIndex) => (
+                      <td key={cellIndex} className="border border-border px-4 py-3 text-muted-foreground">
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+
       case 'callout':
         const Icon = section.variant === 'warning' ? AlertCircle : Info;
         return (
