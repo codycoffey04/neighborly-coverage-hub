@@ -475,7 +475,7 @@ export const learnArticles: LearnArticle[] = [
         answer: "Collision covers accidents — you hit something or something hits you. Comprehensive covers everything else — theft, vandalism, weather, animals, falling objects. Both are optional but often required if you have a car loan."
       }
     ],
-    relatedArticles: ["home-insurance-guide", "bundling-home-and-auto", "alabama-insurance-requirements"],
+    relatedArticles: ["home-insurance-guide", "bundling-home-and-auto", "alabama-insurance-requirements", "what-happens-when-you-file-a-claim"],
     internalLinks: [
       { text: "Get Your Free Auto Insurance Quote", href: "/contact" },
       { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
@@ -747,7 +747,7 @@ export const learnArticles: LearnArticle[] = [
         answer: "Walk through your home with your phone, recording video of every room, closet, and cabinet. Open drawers. Note brands and models of electronics and appliances. Store the video in cloud storage or email it to yourself. Update annually or when you make major purchases."
       }
     ],
-    relatedArticles: ["auto-insurance-guide", "bundling-home-and-auto", "condo-insurance-guide"],
+    relatedArticles: ["auto-insurance-guide", "bundling-home-and-auto", "condo-insurance-guide", "what-happens-when-you-file-a-claim"],
     internalLinks: [
       { text: "Get a Home Insurance Quote", href: "/contact" },
       { text: "Home Insurance Coverage", href: "/services/home-insurance" },
@@ -2430,7 +2430,8 @@ export const learnArticles: LearnArticle[] = [
       { text: "Bundle Insurance in Trussville, AL", href: "/trussville-al" },
       { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
       { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
-      { text: "Renters Insurance Guide", href: "/learn/renters-insurance-guide" }
+      { text: "Renters Insurance Guide", href: "/learn/renters-insurance-guide" },
+      { text: "Mistakes When Switching Insurance", href: "/learn/mistakes-when-switching-insurance" }
     ]
   },
   {
@@ -2785,7 +2786,12 @@ export const learnArticles: LearnArticle[] = [
       { text: "Get Your Free Insurance Quote", href: "/contact" },
       { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
       { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
-      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" }
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Centre, AL Insurance", href: "/centre-al" },
+      { text: "Rome, GA Insurance", href: "/rome-ga" },
+      { text: "Mistakes When Switching Insurance", href: "/learn/mistakes-when-switching-insurance" }
     ]
   },
   // Article 10: Auto Insurance Costs in Rome, GA
@@ -4462,7 +4468,11 @@ export const learnArticles: LearnArticle[] = [
       { text: "Claims Help Page", href: "/claims" },
       { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
       { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
-      { text: "Storm Season Guide", href: "/learn/home-insurance-centre-al-storm-season" }
+      { text: "Storm Season Guide", href: "/learn/home-insurance-centre-al-storm-season" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Centre, AL Insurance", href: "/centre-al" },
+      { text: "Rome, GA Insurance", href: "/rome-ga" }
     ]
   },
   {
@@ -4959,7 +4969,11 @@ export const learnArticles: LearnArticle[] = [
       { text: "Contact Us", href: "/contact" },
       { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
       { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
-      { text: "Bundling Guide", href: "/learn/bundling-home-and-auto" }
+      { text: "Bundling Guide", href: "/learn/bundling-home-and-auto" },
+      { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
+      { text: "Home Insurance Coverage", href: "/services/home-insurance" },
+      { text: "Centre, AL Insurance", href: "/centre-al" },
+      { text: "Rome, GA Insurance", href: "/rome-ga" }
     ]
   }
 ];
