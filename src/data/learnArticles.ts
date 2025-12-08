@@ -3104,5 +3104,710 @@ export const learnArticles: LearnArticle[] = [
       { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
       { text: "Rome, GA City Page", href: "/rome-ga" }
     ]
+  },
+  {
+    slug: "home-insurance-centre-al-storm-season",
+    title: "Home Insurance for Centre, AL: Storm Season Guide",
+    metaTitle: "Home Insurance for Centre, AL: Storm Season Guide | Coffey Agencies",
+    metaDescription: "Protect your Centre, Alabama home during storm season. Learn about tornado, hail, and flood risks in Cherokee County, what's covered, and how to prepare.",
+    excerpt: "What Cherokee County homeowners need to know about tornadoes, hail, flooding, and protecting your property",
+    category: "Local Guide",
+    readTime: "15 min read",
+    featured: false,
+    heroImage: "home-insurance-hero.jpg",
+    content: [
+      {
+        type: 'paragraph',
+        content: "If you own a home in Centre, Alabama, you know storm season is serious business. Cherokee County sits in FEMA Wind Zone IV — the highest risk zone for severe wind events in the country. We see tornadoes, hail, severe thunderstorms, and flooding from Weiss Lake and the Coosa River."
+      },
+      {
+        type: 'paragraph',
+        content: "The question isn't whether storms will come — it's whether you're prepared when they do."
+      },
+      {
+        type: 'paragraph',
+        content: "As a Centre-based agency, we've helped our neighbors recover from the 2011 Super Outbreak, countless hailstorms, and flash floods that turned Park Street into a river. Here's what you need to know about protecting your home and navigating insurance when storms hit Cherokee County."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Are the Major Storm Risks in Cherokee County?"
+      },
+      {
+        type: 'paragraph',
+        content: "Cherokee County faces multiple severe weather threats. Understanding them helps you prepare — and helps you understand what your insurance does and doesn't cover."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Tornadoes"
+      },
+      {
+        type: 'paragraph',
+        content: "Cherokee County has experienced multiple significant tornadoes. From 2003-2013, the county recorded 4 tornado events causing approximately $19 million in property damage and 25 injuries."
+      },
+      {
+        type: 'paragraph',
+        content: "The most devastating was the April 27, 2011 EF-3 tornado during Alabama's historic \"Super Outbreak\" — it tore through the Gnatville area with catastrophic force. More recently, on Memorial Day 2024, an EF-1 tornado with 105 mph winds touched down near Cedar Bluff, downing trees and damaging homes."
+      },
+      {
+        type: 'paragraph',
+        content: "When Tornadoes Strike:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Primary season: March through early June (April is peak)",
+          "Secondary season: November-December",
+          "Reality: Alabama has recorded tornadoes in every month of the year"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Hail"
+      },
+      {
+        type: 'paragraph',
+        content: "Hail is actually more frequent than tornadoes — and causes significant roof and vehicle damage."
+      },
+      {
+        type: 'paragraph',
+        content: "Cherokee County recorded 71 hail events from 2003-2013, averaging about 7 per year. That's a greater than 70% chance of hail in any given year. Most events cause minor damage, but severe hail can devastate roofs, siding, and vehicles."
+      },
+      {
+        type: 'paragraph',
+        content: "The worst on record: softball-sized hail (4.5 inches) fell in Centre on May 2, 2003, causing about $65,000 in damage in a single event."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Severe Thunderstorms"
+      },
+      {
+        type: 'paragraph',
+        content: "The county logged 89 severe thunderstorm incidents (winds 58+ mph and/or large hail) from 2003-2013, resulting in approximately $470,000 in property damage. Straight-line winds from thunderstorms can be as destructive as small tornadoes — knocking down trees, ripping off siding, and downing power lines."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Flooding"
+      },
+      {
+        type: 'paragraph',
+        content: "With Weiss Lake and the Coosa River defining much of our landscape, flooding is a real concern — especially in certain areas."
+      },
+      {
+        type: 'paragraph',
+        content: "Three types of flooding affect Cherokee County:"
+      },
+      {
+        type: 'list',
+        content: [
+          "River/lake flooding: Weiss Lake can rise above its banks during heavy rain",
+          "Flash floods: Intense rain overwhelms drainage, particularly in low-lying areas",
+          "Stormwater runoff: Poor drainage causes localized flooding"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Known Flood-Prone Areas:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Cedar Bluff (Weiss Lake frontage)",
+          "North side of Centre (bordering lake and river)",
+          "Park Street in downtown Centre (has flooded to closure; a car was swept away in 2009)",
+          "LaRue Finis Road mobile home park in Leesburg",
+          "AL Highway 35 and County Road 68 intersection in Gaylesville"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "These areas fall within FEMA Special Flood Hazard Areas (Zone \"A\") — meaning a 1% annual chance of significant flooding."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Tropical Storm Remnants"
+      },
+      {
+        type: 'paragraph',
+        content: "Though we're inland, Gulf hurricanes can affect Cherokee County. Hurricane Dennis remnants (July 2005) knocked out power to 3,600 county residents. Hurricane Katrina's tail (August 2005) downed trees and power lines across the county. These events remind us that storm season runs June through November."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Does Home Insurance Cover During Storms?"
+      },
+      {
+        type: 'paragraph',
+        content: "A standard HO-3 homeowners policy covers most storm damage — but not everything. Here's what's typically covered and what's not:"
+      },
+      {
+        type: 'paragraph',
+        content: "✅ Covered by Standard Homeowners Insurance:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Wind damage: Roof damage, blown-off shingles, siding damage, broken windows from wind",
+          "Hail damage: Dented roofs, damaged siding, broken skylights",
+          "Lightning: Fire from lightning strikes, damage to electronics from power surges",
+          "Fallen trees: Damage to your home from trees knocked down by wind or lightning (plus limited debris removal)",
+          "Rain damage through storm-caused openings: If wind tears a hole in your roof and rain damages your interior, that's covered",
+          "Additional living expenses: If your home is uninhabitable after covered damage, your policy pays for temporary housing"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "❌ NOT Covered by Standard Homeowners Insurance:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Flood damage: Rising water from lakes, rivers, creeks, or heavy rainfall pooling is NOT covered — period. You need separate flood insurance.",
+          "Earthquake: Rare here, but not covered. Can be added separately.",
+          "Sewer/drain backup: Typically excluded unless you add an endorsement",
+          "Mold: Only covered if it results from a covered event and is addressed promptly",
+          "Wear and tear: If your roof was already deteriorating and a storm finishes it off, the insurer may attribute damage to neglect rather than the storm",
+          "Neglect: Leaving a window open during a storm, or failing to make temporary repairs after damage, can result in denied claims"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "The Critical Flood Exclusion"
+      },
+      {
+        type: 'paragraph',
+        content: "This is the most important thing to understand: Water from the sky (rain through a damaged roof) is covered. Water from the ground (flooding) is not."
+      },
+      {
+        type: 'paragraph',
+        content: "If Weiss Lake overflows into your home, your homeowners policy pays nothing. If a flash flood fills your basement, your homeowners policy pays nothing. Only a separate flood insurance policy covers flood damage."
+      },
+      {
+        type: 'paragraph',
+        content: "If you're anywhere near the lake, river, or known flood-prone areas, flood insurance isn't optional — it's essential."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Do Wind and Hail Deductibles Work?"
+      },
+      {
+        type: 'paragraph',
+        content: "Most Alabama homeowners policies have a separate deductible for wind and hail claims — and it works differently than your standard deductible."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Percentage-Based Deductibles"
+      },
+      {
+        type: 'paragraph',
+        content: "Instead of a flat dollar amount (like $1,000), wind/hail deductibles are typically a percentage of your dwelling coverage — commonly 1% to 5%."
+      },
+      {
+        type: 'paragraph',
+        content: "Example:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Your home is insured for $250,000",
+          "You have a 2% wind/hail deductible",
+          "A tornado causes $20,000 in damage",
+          "Your deductible is $5,000 (2% of $250,000)",
+          "Insurance pays $15,000; you pay $5,000"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Why This Matters"
+      },
+      {
+        type: 'paragraph',
+        content: "A percentage deductible can be much higher than you expect. On a $300,000 home:"
+      },
+      {
+        type: 'list',
+        content: [
+          "1% deductible = $3,000",
+          "2% deductible = $6,000",
+          "5% deductible = $15,000"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If your damage is less than your deductible, insurance pays nothing. A 5% deductible on a $200,000 home means you'd pay the first $10,000 of any wind or hail claim yourself."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What to Do"
+      },
+      {
+        type: 'list',
+        content: [
+          "Know your deductible: Check your declarations page for your wind/hail deductible percentage",
+          "Budget for it: Set aside emergency funds equal to your wind deductible so you're prepared",
+          "Consider your options: You may be able to pay a higher premium for a lower percentage deductible — worth discussing with your agent",
+          "Review annually: If your home's insured value increases, your percentage deductible increases too (2% of $300,000 is more than 2% of $250,000)"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Do I Need Flood Insurance in Cherokee County?"
+      },
+      {
+        type: 'paragraph',
+        content: "If you're in a FEMA high-risk flood zone with a mortgage — yes, it's required."
+      },
+      {
+        type: 'paragraph',
+        content: "Your lender will mandate flood insurance if your property is in Zone A or AE on FEMA flood maps. Many properties along Weiss Lake, the Coosa River, and low-lying creek areas fall into these zones."
+      },
+      {
+        type: 'paragraph',
+        content: "Even if not required, consider it anyway if:"
+      },
+      {
+        type: 'list',
+        content: [
+          "You're near Weiss Lake or any tributary",
+          "You've seen water on or near your property during heavy rain",
+          "Your neighborhood has drainage issues",
+          "You're in a low-lying area, even if not officially mapped as high-risk"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Key Facts About Flood Insurance"
+      },
+      {
+        type: 'list',
+        content: [
+          "30-day waiting period: You can't buy flood insurance the day before a storm and have it apply. New NFIP policies have a 30-day waiting period before coverage begins.",
+          "Separate policy: Flood insurance is purchased separately from homeowners insurance — either through the National Flood Insurance Program (NFIP) or private insurers.",
+          "Covers building and contents: Flood policies cover structural damage and personal belongings damaged by flooding.",
+          "Relatively affordable in low-risk zones: If you're outside the high-risk flood zones, flood insurance can be surprisingly inexpensive and provides peace of mind."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Weiss Dam Consideration"
+      },
+      {
+        type: 'paragraph',
+        content: "Weiss Dam is rated as a high-hazard dam — meaning if it ever failed, severe downstream flooding would result. While failure is extremely unlikely (Alabama Power maintains it carefully), this is another reason lakefront property owners should carry flood coverage. Dam failure flooding would be covered under flood insurance, not homeowners insurance."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What's the Difference Between Replacement Cost and Actual Cash Value?"
+      },
+      {
+        type: 'paragraph',
+        content: "This distinction matters enormously when you file a storm claim — especially for roof damage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Replacement Cost Value (RCV)"
+      },
+      {
+        type: 'list',
+        content: [
+          "Pays the full cost to repair or replace damaged property with new materials",
+          "No deduction for age or wear",
+          "You receive enough to actually restore your home to pre-loss condition"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Actual Cash Value (ACV)"
+      },
+      {
+        type: 'list',
+        content: [
+          "Pays the depreciated value of damaged property",
+          "Deducts for age, wear, and remaining useful life",
+          "You receive less than it costs to replace"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Roof Example"
+      },
+      {
+        type: 'paragraph',
+        content: "Your 15-year-old roof (expected 20-year lifespan) is destroyed by hail. Replacement cost: $20,000."
+      },
+      {
+        type: 'list',
+        content: [
+          "With RCV coverage: Insurance pays $20,000 (minus deductible) to replace the roof",
+          "With ACV coverage: Insurance pays approximately $5,000 (the depreciated value of a roof with 75% of its life used up)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "That's a $15,000 difference in your pocket."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "The Roof Age Trap"
+      },
+      {
+        type: 'paragraph',
+        content: "Many policies automatically switch to ACV for roofs over a certain age (often 10-15 years). Your policy might cover your home at replacement cost but your roof at actual cash value if it's older."
+      },
+      {
+        type: 'paragraph',
+        content: "Check your policy for language like \"roof surfaces will be settled at ACV if the roof is older than 15 years.\" If your roof is aging, ask your agent about options — some insurers offer a \"roof replacement cost\" endorsement for an additional premium."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Our Recommendation"
+      },
+      {
+        type: 'paragraph',
+        content: "Always carry replacement cost coverage on your dwelling and contents if you can. The premium difference is usually modest, but the claim difference can be tens of thousands of dollars. ACV policies save money upfront but leave you underinsured when you need protection most."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "How Should I Prepare Before Storm Season?"
+      },
+      {
+        type: 'paragraph',
+        content: "Preparation before storms hit is far easier than dealing with damage after. Here's your Cherokee County storm prep checklist:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Review Your Insurance"
+      },
+      {
+        type: 'list',
+        content: [
+          "Verify your dwelling coverage is enough to rebuild at today's construction costs",
+          "Confirm you understand your wind/hail deductible",
+          "Check whether you have replacement cost or actual cash value coverage",
+          "Consider flood insurance if you have any flood risk",
+          "Know your policy number and how to file a claim"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Strengthen Your Home"
+      },
+      {
+        type: 'list',
+        content: [
+          "Trim trees: Remove dead limbs and branches overhanging your roof or power lines",
+          "Clean gutters: Clogged gutters cause water backup and damage during heavy rain",
+          "Inspect your roof: Fix loose or damaged shingles before storms exploit weaknesses",
+          "Check windows and doors: Ensure seals are intact and closures work properly",
+          "Secure outdoor items: Have a plan to bring in or secure patio furniture, grills, trampolines"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Consider Upgrades"
+      },
+      {
+        type: 'paragraph',
+        content: "Alabama offers insurance discounts for wind mitigation features:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Hurricane straps/clips connecting roof to walls",
+          "Impact-resistant shingles or metal roofing",
+          "Reinforced garage doors",
+          "Secondary water barriers under roofing"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Ask your agent about FORTIFIED Home designation — certified upgrades that can earn significant premium discounts while dramatically improving storm resistance."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Create a Home Inventory"
+      },
+      {
+        type: 'list',
+        content: [
+          "Walk through every room with your phone and take photos/video",
+          "Document valuable items with serial numbers",
+          "Include garages, attics, and storage sheds",
+          "Store the inventory digitally (cloud storage, email to yourself) — not just on paper in your house",
+          "This makes filing claims immeasurably easier"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Prepare an Emergency Kit"
+      },
+      {
+        type: 'list',
+        content: [
+          "Flashlights and spare batteries",
+          "NOAA weather radio with alarm (storms hit at night too)",
+          "3+ days of water per person (including pets)",
+          "Non-perishable food and manual can opener",
+          "First aid kit and medications",
+          "Portable phone chargers",
+          "Important documents in waterproof container"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Know Your Safe Spot"
+      },
+      {
+        type: 'paragraph',
+        content: "Identify where you'll shelter during a tornado — interior room on the lowest floor, away from windows. Practice with your family. No mobile home is safe during a tornado; know where the nearest sturdy shelter is."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Should I Do If My Home Is Damaged?"
+      },
+      {
+        type: 'paragraph',
+        content: "When a storm damages your home, what you do in the first 24-48 hours matters for your claim."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "1. Ensure Safety First"
+      },
+      {
+        type: 'list',
+        content: [
+          "Don't enter a severely damaged structure",
+          "Watch for downed power lines, gas leaks, structural instability",
+          "Call 911 if there's immediate danger"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "2. Prevent Further Damage"
+      },
+      {
+        type: 'list',
+        content: [
+          "Your policy requires you to mitigate additional damage",
+          "Tarp a damaged roof to keep rain out",
+          "Board up broken windows",
+          "Turn off water if pipes are broken",
+          "Save receipts for all emergency repairs — they're typically reimbursable"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "3. Document Everything"
+      },
+      {
+        type: 'list',
+        content: [
+          "Take extensive photos and video of all damage BEFORE cleanup",
+          "Photograph damaged belongings before discarding",
+          "Make a written list of everything damaged",
+          "Note the date, time, and conditions of the storm"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "4. Contact Your Insurance Agent"
+      },
+      {
+        type: 'list',
+        content: [
+          "Report the damage as soon as possible",
+          "Have your policy number ready",
+          "Describe what happened and the extent of damage",
+          "Ask about next steps and timeline"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "5. Don't Make Permanent Repairs Yet"
+      },
+      {
+        type: 'list',
+        content: [
+          "The adjuster needs to see the damage",
+          "Temporary repairs to prevent further damage are fine",
+          "Wait for insurer approval before permanent repairs",
+          "If you must dispose of something (waterlogged items that will mold), document thoroughly first"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "6. Work With the Adjuster"
+      },
+      {
+        type: 'list',
+        content: [
+          "Be present for the inspection",
+          "Point out all damage — some may be hidden or easy to miss",
+          "Provide your documentation",
+          "Ask questions about anything you don't understand"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "7. Review the Settlement"
+      },
+      {
+        type: 'list',
+        content: [
+          "Compare the insurer's estimate to contractor estimates",
+          "If something was missed, notify the adjuster",
+          "Understand how depreciation holdback works (if applicable)",
+          "Don't accept a settlement you believe is inadequate without discussion"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Special Considerations for Cherokee County Properties"
+      },
+      {
+        type: 'paragraph',
+        content: "Different property types in our area have unique insurance considerations:"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Older Homes in Centre"
+      },
+      {
+        type: 'paragraph',
+        content: "Centre's housing stock skews older — the median home was built around 1973. Older homes may lack modern wind-resistant features like hurricane clips."
+      },
+      {
+        type: 'paragraph',
+        content: "Considerations:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Retrofitting with roof-to-wall connectors improves safety and may earn discounts",
+          "Upgrading to impact-resistant shingles during reroofing is worth the investment",
+          "Ensure coverage is for replacement cost, not actual cash value",
+          "Building code upgrade coverage (Ordinance or Law) covers costs to bring an older home up to current code during repairs"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Lake Homes on Weiss Lake"
+      },
+      {
+        type: 'paragraph',
+        content: "Waterfront properties have unique exposures:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Flood insurance is essential — even if not technically required",
+          "Docks, seawalls, and boat lifts may need separate coverage or higher limits",
+          "Check your \"Other Structures\" coverage limit for detached buildings, docks, and boathouses",
+          "If it's a vacation home, ensure your policy covers seasonal/secondary residence use",
+          "Boats and personal watercraft need separate policies — homeowners insurance doesn't cover them"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Mobile and Manufactured Homes"
+      },
+      {
+        type: 'paragraph',
+        content: "Mobile homes are particularly vulnerable to wind damage."
+      },
+      {
+        type: 'paragraph',
+        content: "Critical steps:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Ensure proper anchoring with tie-downs and ground anchors",
+          "Maintain skirting to prevent wind from getting underneath",
+          "Mobile home insurance is a specialized policy — confirm wind coverage isn't excluded",
+          "Know where your nearest sturdy shelter is; no mobile home is safe during a tornado",
+          "Consider retrofits like roof-over conversion or pit-set foundation for improved resistance"
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "How much does home insurance cost in Cherokee County?",
+        answer: "The average annual premium in Cherokee County is approximately $3,110 for a policy with $300,000 dwelling coverage and a $1,000 deductible. This is roughly equal to the Alabama state average. Your actual premium depends on your home's age, construction, location, coverage limits, and claims history."
+      },
+      {
+        question: "Why is Alabama home insurance more expensive than Georgia?",
+        answer: "Alabama has greater catastrophe exposure — particularly tornadoes, hurricanes (even inland effects), and severe thunderstorms. Cherokee County sits in FEMA Wind Zone IV, the highest risk category. Georgia's lower statewide average reflects less severe weather exposure overall."
+      },
+      {
+        question: "Does my homeowners insurance cover tornado damage?",
+        answer: "Yes. Wind damage from tornadoes is covered by standard homeowners insurance. However, your wind/hail deductible (often a percentage of dwelling coverage) applies, which may be higher than your standard deductible."
+      },
+      {
+        question: "What if a tree falls on my house during a storm?",
+        answer: "If wind or lightning causes a tree to fall on your home, the damage to your home is covered. Policies also typically cover limited debris removal (often $500-$1,000 per tree). If a tree falls in your yard without hitting a structure, coverage for removal may be limited or excluded."
+      },
+      {
+        question: "How long do I have to file a storm damage claim?",
+        answer: "Report damage as soon as reasonably possible — ideally within days, not weeks. While policies have different formal deadlines (often 1-2 years), delayed reporting can raise questions about when damage occurred or whether it worsened due to your delay. Prompt reporting protects your claim."
+      },
+      {
+        question: "Will filing a storm claim raise my rates?",
+        answer: "It depends. Widespread storm claims (affecting many policyholders) typically don't increase individual rates. However, if you have multiple claims in a short period, you may see rate increases or difficulty renewing. One legitimate storm claim generally won't be held against you the way an at-fault auto accident would."
+      },
+      {
+        question: "Should I get a contractor estimate before the adjuster visits?",
+        answer: "It's not required, but having a contractor present during the inspection can help identify hidden damage. You can also get contractor estimates after the adjuster's visit to compare. If there's a significant difference, discuss it with your adjuster — supplemental payments are common when contractors find additional damage."
+      },
+      {
+        question: "What's the 30-day waiting period for flood insurance?",
+        answer: "New flood insurance policies through the NFIP have a 30-day waiting period before coverage takes effect. You cannot purchase flood insurance when a storm is approaching and have it cover that storm. Buy flood insurance well before you need it — ideally now, before storm season."
+      }
+    ],
+    relatedArticles: ["home-insurance-guide", "alabama-vs-georgia-insurance", "bundling-home-and-auto"],
+    internalLinks: [
+      { text: "Request a Free Quote", href: "/contact" },
+      { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
+      { text: "Centre, AL City Page", href: "/centre-al" },
+      { text: "Bundling Home and Auto", href: "/learn/bundling-home-and-auto" }
+    ]
   }
 ];
