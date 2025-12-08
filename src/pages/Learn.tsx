@@ -19,7 +19,8 @@ const hubExcerpts: Record<string, string> = {
   "georgia-insurance-requirements": "State mandates, GEICS verification system, and recommended coverage levels.",
   "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense.",
   "alabama-vs-georgia-insurance": "Key differences in requirements, costs, and regulations for cross-state families.",
-  "auto-insurance-costs-rome-ga": "What Rome drivers actually pay, what affects your premium, and how to save. Real local data for Floyd County."
+  "auto-insurance-costs-rome-ga": "What Rome drivers actually pay, what affects your premium, and how to save. Real local data for Floyd County.",
+  "home-insurance-centre-al-storm-season": "Tornado, hail, and flood risks in Cherokee County. What's covered, preparation checklists, and claims guidance."
 };
 
 // Article icons mapping
@@ -34,12 +35,13 @@ const articleIcons: Record<string, LucideIcon> = {
   "georgia-insurance-requirements": FileText,
   "bundling-home-and-auto": Layers,
   "alabama-vs-georgia-insurance": Layers,
-  "auto-insurance-costs-rome-ga": Car
+  "auto-insurance-costs-rome-ga": Car,
+  "home-insurance-centre-al-storm-season": Home
 };
 
 const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide", "motorcycle-insurance-guide"];
 const topicGuides = ["alabama-insurance-requirements", "georgia-insurance-requirements", "bundling-home-and-auto", "alabama-vs-georgia-insurance"];
-const localGuides = ["auto-insurance-costs-rome-ga"];
+const localGuides = ["auto-insurance-costs-rome-ga", "home-insurance-centre-al-storm-season"];
 
 const Learn = () => {
   const coverageArticles = learnArticles.filter(article => coverageGuides.includes(article.slug));

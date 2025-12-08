@@ -31,6 +31,7 @@ const learnLinks = [
   { name: "Motorcycle Insurance Guide", href: "/learn/motorcycle-insurance-guide" },
   { name: "Alabama vs Georgia Insurance", href: "/learn/alabama-vs-georgia-insurance" },
   { name: "Auto Insurance Costs: Rome, GA", href: "/learn/auto-insurance-costs-rome-ga" },
+  { name: "Storm Season: Centre, AL", href: "/learn/home-insurance-centre-al-storm-season" },
 ];
 
 export const Header = () => {
