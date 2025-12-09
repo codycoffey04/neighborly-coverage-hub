@@ -24,7 +24,7 @@
     <!-- DNS prefetch and preconnect for external resources -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://code.tidio.co" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
@@ -80,24 +80,5 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Tidio Chatbot - Desktop Only -->
-    <script>
-      // Set default page context for non-city pages
-      window.coffeyPageContext = {
-        pageType: 'general',
-        city: null,
-        state: null,
-        stateAbbr: null,
-        nearestOffice: null
-      };
-      
-      // Only load Tidio on desktop (768px+)
-      if (window.innerWidth >= 768) {
-        var tidioScript = document.createElement('script');
-        tidioScript.src = '//code.tidio.co/8vgwej3qxiopo99uacjmlwidlqs6rsk0.js';
-        tidioScript.async = true;
-        document.body.appendChild(tidioScript);
-      }
-    </script>
   </body>
 </html>
