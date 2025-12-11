@@ -9,6 +9,9 @@ import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
 import aboutHero from "@/assets/about-hero.png";
 import codyHeadshot from "@/assets/cody-coffey-headshot.png";
+import kimberlyHeadshot from "@/assets/kimberly-fletcher-headshot.jpg";
+import crystalHeadshot from "@/assets/crystal-brozio-headshot.jpg";
+import mariaHeadshot from "@/assets/maria-rocha-guzman-headshot.jpg";
 
 const values = [
   {
@@ -43,25 +46,36 @@ const values = [
   },
 ];
 
-const teamMembers = {
+interface TeamMember {
+  name: string;
+  title: string;
+  since: string;
+  bio: string;
+  image?: string;
+}
+
+const teamMembers: { centre: TeamMember[]; rome: TeamMember[] } = {
   centre: [
     {
       name: "Kimberly Fletcher",
       title: "Office Manager & Senior Sales Producer",
       since: "March 2009",
       bio: "Kimberly joined our team on day one when Cody purchased the Centre office. With 5 years of agency experience before joining us, she brings deep knowledge of insurance products and exceptional client service. She manages daily operations and helps families find the right coverage for their needs.",
+      image: kimberlyHeadshot,
     },
     {
       name: "Crystal Brozio",
       title: "Customer Service Manager",
       since: "2016",
       bio: "Crystal leads our customer service team with over 12 years of insurance experience. She ensures every client interaction exceeds expectations, handling policy changes, answering questions, and coordinating claims support. Her attention to detail and genuine care for clients makes her an invaluable part of our team.",
+      image: crystalHeadshot,
     },
     {
       name: "Maria Rocha-Guzman",
       title: "Senior Sales Producer (Bilingual)",
       since: "2020",
       bio: "Maria serves our English and Spanish-speaking clients throughout Alabama and Georgia. As a bilingual senior producer, she helps families navigate insurance options, compare coverage, and find solutions that fit their budgets. She's passionate about making insurance accessible to everyone.",
+      image: mariaHeadshot,
     },
   ],
   rome: [
@@ -296,6 +310,12 @@ const About = () => {
       "name": "Kimberly Fletcher",
       "jobTitle": "Office Manager & Senior Sales Producer",
       "description": "Kimberly joined our team on day one when Cody purchased the Centre office. With 5 years of agency experience before joining us, she brings deep knowledge of insurance products and exceptional client service. She manages daily operations and helps families find the right coverage for their needs.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://coffeyagencies.com/kimberly-fletcher-headshot.jpg",
+        "width": 400,
+        "height": 400
+      },
       "worksFor": {
         "@id": "https://coffeyagencies.com/#organization"
       },
@@ -307,6 +327,12 @@ const About = () => {
       "name": "Crystal Brozio",
       "jobTitle": "Customer Service Manager",
       "description": "Crystal leads our customer service team with over 12 years of insurance experience. She ensures every client interaction exceeds expectations, handling policy changes, answering questions, and coordinating claims support. Her attention to detail and genuine care for clients makes her an invaluable part of our team.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://coffeyagencies.com/crystal-brozio-headshot.jpg",
+        "width": 400,
+        "height": 400
+      },
       "worksFor": {
         "@id": "https://coffeyagencies.com/#organization"
       },
@@ -318,6 +344,12 @@ const About = () => {
       "name": "Maria Rocha-Guzman",
       "jobTitle": "Senior Sales Producer (Bilingual)",
       "description": "Maria serves our English and Spanish-speaking clients throughout Alabama and Georgia. As a bilingual senior producer, she helps families navigate insurance options, compare coverage, and find solutions that fit their budgets. She's passionate about making insurance accessible to everyone.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://coffeyagencies.com/maria-rocha-guzman-headshot.jpg",
+        "width": 400,
+        "height": 400
+      },
       "worksFor": {
         "@id": "https://coffeyagencies.com/#organization"
       },
@@ -575,14 +607,30 @@ const About = () => {
               {teamMembers.centre.map((member, index) => (
                 <Card key={index} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
                   <CardContent className="pt-6">
-                    <div className="mb-4">
+                    {/* Photo section */}
+                    <div className="flex justify-center mb-4">
+                      {member.image ? (
+                        <img 
+                          src={member.image}
+                          alt={`${member.name} headshot`}
+                          className="w-24 h-24 rounded-full object-cover border-2 border-primary/20"
+                        />
+                      ) : (
+                        <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="text-2xl font-bold text-primary">
+                            {member.name.split(' ').map(n => n[0]).join('')}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="text-center mb-4">
                       <h4 className="text-lg font-semibold text-foreground">{member.name}</h4>
                       <p className="text-sm text-primary font-medium">{member.title}</p>
                       <p className="text-xs text-muted-foreground mt-1">
                         With Coffey Agencies since {member.since}
                       </p>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed text-center">
                       {member.bio}
                     </p>
                   </CardContent>
@@ -598,14 +646,30 @@ const About = () => {
               {teamMembers.rome.map((member, index) => (
                 <Card key={index} className="border-border hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:scale-105 transition-all duration-300 ease-in-out">
                   <CardContent className="pt-6">
-                    <div className="mb-4">
+                    {/* Photo section */}
+                    <div className="flex justify-center mb-4">
+                      {member.image ? (
+                        <img 
+                          src={member.image}
+                          alt={`${member.name} headshot`}
+                          className="w-24 h-24 rounded-full object-cover border-2 border-primary/20"
+                        />
+                      ) : (
+                        <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="text-2xl font-bold text-primary">
+                            {member.name.split(' ').map(n => n[0]).join('')}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="text-center mb-4">
                       <h4 className="text-lg font-semibold text-foreground">{member.name}</h4>
                       <p className="text-sm text-primary font-medium">{member.title}</p>
                       <p className="text-xs text-muted-foreground mt-1">
                         With Coffey Agencies since {member.since}
                       </p>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed text-center">
                       {member.bio}
                     </p>
                   </CardContent>
