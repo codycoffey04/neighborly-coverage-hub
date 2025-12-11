@@ -12,6 +12,7 @@ import codyHeadshot from "@/assets/cody-coffey-headshot.png";
 import kimberlyHeadshot from "@/assets/kimberly-fletcher-headshot.jpg";
 import crystalHeadshot from "@/assets/crystal-brozio-headshot.jpg";
 import mariaHeadshot from "@/assets/maria-rocha-guzman-headshot.jpg";
+import kathyHeadshot from "@/assets/kathy-sewell-headshot.jpg";
 
 const values = [
   {
@@ -84,6 +85,7 @@ const teamMembers: { centre: TeamMember[]; rome: TeamMember[] } = {
       title: "Customer Service Specialist",
       since: "March 2020",
       bio: "Kathy joined our team with over 10 years of insurance agency experience. She specializes in policy service, helping clients with coverage questions, billing inquiries, and policy adjustments. Her extensive background means she can answer complex questions quickly and accurately.",
+      image: kathyHeadshot,
     },
     {
       name: "Aleeah Stone",
@@ -362,6 +364,12 @@ const About = () => {
       "name": "Kathy Sewell",
       "jobTitle": "Customer Service Specialist",
       "description": "Kathy joined our team with over 10 years of insurance agency experience. She specializes in policy service, helping clients with coverage questions, billing inquiries, and policy adjustments. Her extensive background means she can answer complex questions quickly and accurately.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://coffeyagencies.com/kathy-sewell-headshot.jpg",
+        "width": 400,
+        "height": 400
+      },
       "worksFor": {
         "@id": "https://coffeyagencies.com/#organization"
       },
