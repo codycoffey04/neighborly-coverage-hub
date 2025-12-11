@@ -234,7 +234,7 @@ const About = () => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "priceRange": "$$",
-    "image": "https://coffeyagencies.com/rome-office.jpg"
+    "image": "https://coffeyagencies.com/coffey-logo.png"
   };
   
   // AboutPage Schema - Enhanced for flagship site
