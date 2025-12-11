@@ -86,10 +86,10 @@ const teamMembers: { centre: TeamMember[]; rome: TeamMember[] } = {
       bio: "Kathy joined our team with over 10 years of insurance agency experience. She specializes in policy service, helping clients with coverage questions, billing inquiries, and policy adjustments. Her extensive background means she can answer complex questions quickly and accurately.",
     },
     {
-      name: "Brandy Wilkins",
-      title: "Senior Sales Producer",
-      since: "July 2025",
-      bio: "Brandy joined our team bringing 8 years of prior insurance agency experience. As a senior sales producer, she specializes in helping clients find the right coverage for their unique situations, whether bundling policies for maximum savings or crafting custom solutions for complex insurance needs.",
+      name: "Aleeah Stone",
+      title: "Customer Service Agent & Life Specialist",
+      since: "2025",
+      bio: "With experience in both service and life insurance, Aleeah helps clients with policy updates, billing questions, and coverage explanations. She also guides families through their life insurance choices, making the process simple and approachable. Her reliability and attention to detail make her a valuable part of our Rome team.",
     },
   ],
 };
@@ -370,9 +370,9 @@ const About = () => {
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Brandy Wilkins",
-      "jobTitle": "Senior Sales Producer",
-      "description": "Brandy joined our team bringing 8 years of prior insurance agency experience. As a senior sales producer, she specializes in helping clients find the right coverage for their unique situations, whether bundling policies for maximum savings or crafting custom solutions for complex insurance needs.",
+      "name": "Aleeah Stone",
+      "jobTitle": "Customer Service Agent & Life Specialist",
+      "description": "With experience in both service and life insurance, Aleeah helps clients with policy updates, billing questions, and coverage explanations. She also guides families through their life insurance choices, making the process simple and approachable. Her reliability and attention to detail make her a valuable part of our Rome team.",
       "worksFor": {
         "@id": "https://coffeyagencies.com/#organization"
       },
