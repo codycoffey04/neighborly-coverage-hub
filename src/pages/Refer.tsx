@@ -50,6 +50,8 @@ const Refer = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": "https://coffeyagencies.com/refer#breadcrumb",
+    "name": "Breadcrumb Navigation",
     "itemListElement": [
       {
         "@type": "ListItem",
