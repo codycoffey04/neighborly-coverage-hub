@@ -77,6 +77,19 @@
       <input name="contact-method" type="text" />
     </form>
     
+    <!-- Netlify Forms detection - hidden form for referral page -->
+    <form name="referral-form" netlify netlify-honeypot="bot-field" hidden>
+      <input name="form-name" type="hidden" value="referral-form" />
+      <input name="bot-field" type="hidden" />
+      <input name="your-name" type="text" />
+      <input name="your-phone" type="tel" />
+      <input name="your-email" type="email" />
+      <input name="referral-name" type="text" />
+      <input name="referral-phone" type="tel" />
+      <input name="referral-email" type="email" />
+      <input name="closest-office" type="text" />
+    </form>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
