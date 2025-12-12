@@ -20,6 +20,7 @@ const company = [
 
 const resources = [
   { name: "Get a Quote", href: "/contact" },
+  { name: "Refer a Friend", href: "/refer" },
   { name: "Reviews", href: "/reviews" },
   { name: "Learn", href: "/learn" },
   { name: "Claims Help", href: "/claims" },

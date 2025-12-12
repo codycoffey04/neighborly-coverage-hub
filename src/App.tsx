@@ -55,6 +55,7 @@ const RomeGAResources = lazyWithRetry(() => import("./pages/resources/RomeGAReso
 const NotFound = lazyWithRetry(() => import("./pages/NotFound"));
 const Privacy = lazyWithRetry(() => import("./pages/Privacy"));
 const Terms = lazyWithRetry(() => import("./pages/Terms"));
+const Refer = lazyWithRetry(() => import("./pages/Refer"));
 const ThankYou = lazyWithRetry(() => import("./pages/ThankYou"));
 
 const queryClient = new QueryClient();
@@ -91,6 +92,7 @@ const App = () => (
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/claims" element={<Claims />} />
                 <Route path="/thank-you" element={<ThankYou />} />
+                <Route path="/refer" element={<Refer />} />
                 <Route path="/resources/centre-al" element={<CentreALResources />} />
                 <Route path="/resources/rome-ga" element={<RomeGAResources />} />
                 {/* Dynamic city pages */}
