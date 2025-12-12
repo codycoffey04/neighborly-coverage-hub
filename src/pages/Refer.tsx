@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { CheckCircle, ChevronRight, Users } from "lucide-react";
+import referHero from "@/assets/refer-hero.jpg";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Button } from "@/components/ui/button";
@@ -83,8 +84,12 @@ const Refer = () => {
 
       <main id="main-content">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary to-primary/90 text-white py-16 md:py-20">
-          <div className="container-custom">
+        <section 
+          className="relative min-h-[400px] md:min-h-[450px] flex items-end py-16 md:py-20"
+          style={{ backgroundImage: `url(${referHero})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+          <div className="container-custom relative z-10">
             {/* Breadcrumbs */}
             <nav aria-label="Breadcrumb" className="mb-6">
               <ol className="flex items-center gap-2 text-sm text-white/80">
@@ -100,15 +105,15 @@ const Refer = () => {
               <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-lg">
                 Refer a Friend
               </h1>
             </div>
 
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-md">
               Know someone who needs an insurance quote? Send them our way. When your referral gets a quote, we'll thank you with a gift card.
             </p>
-            <p className="text-lg text-white/80 mt-4">
+            <p className="text-lg text-white/80 mt-4 drop-shadow-md">
               Just share their contact info with us. We'll handle the rest.
             </p>
           </div>
