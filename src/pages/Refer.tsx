@@ -1,27 +1,19 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CheckCircle, ChevronRight, Users } from "lucide-react";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const Refer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [officeValue, setOfficeValue] = useState("");
   const { toast } = useToast();
-  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,7 +21,6 @@ const Refer = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    formData.append("closest-office", officeValue);
 
     try {
       const response = await fetch("/", {
@@ -41,7 +32,6 @@ const Refer = () => {
       if (response.ok) {
         setIsSubmitted(true);
         form.reset();
-        setOfficeValue("");
       } else {
         throw new Error("Form submission failed");
       }
@@ -176,7 +166,7 @@ const Refer = () => {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="your-phone">Your Phone Number *</Label>
+                        <Label htmlFor="your-phone">Your Phone *</Label>
                         <Input 
                           id="your-phone" 
                           name="your-phone" 
@@ -186,18 +176,6 @@ const Refer = () => {
                           className="min-h-[44px]"
                         />
                       </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="your-email">Your Email *</Label>
-                      <Input 
-                        id="your-email" 
-                        name="your-email" 
-                        type="email" 
-                        required 
-                        placeholder="john@example.com"
-                        className="min-h-[44px]"
-                      />
                     </div>
                   </div>
 
@@ -218,7 +196,7 @@ const Refer = () => {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="referral-phone">Referral's Phone Number *</Label>
+                        <Label htmlFor="referral-phone">Referral's Phone *</Label>
                         <Input 
                           id="referral-phone" 
                           name="referral-phone" 
@@ -231,31 +209,13 @@ const Refer = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="referral-email">Referral's Email (optional)</Label>
-                      <Input 
-                        id="referral-email" 
-                        name="referral-email" 
-                        type="email" 
-                        placeholder="jane@example.com"
-                        className="min-h-[44px]"
+                      <Label htmlFor="notes">Notes (optional)</Label>
+                      <Textarea 
+                        id="notes" 
+                        name="notes" 
+                        placeholder="Any additional information about your referral..."
+                        className="min-h-[100px]"
                       />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="closest-office">Which office is closest to them? *</Label>
-                      <Select 
-                        value={officeValue} 
-                        onValueChange={setOfficeValue}
-                        required
-                      >
-                        <SelectTrigger id="closest-office" className="min-h-[44px]">
-                          <SelectValue placeholder="Select an office" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="Centre, AL">Centre, AL</SelectItem>
-                          <SelectItem value="Rome, GA">Rome, GA</SelectItem>
-                        </SelectContent>
-                      </Select>
                     </div>
                   </div>
 
@@ -263,7 +223,7 @@ const Refer = () => {
                     type="submit" 
                     size="lg" 
                     className="w-full bg-accent hover:bg-accent/90 text-accent-foreground min-h-[44px]"
-                    disabled={isSubmitting || !officeValue}
+                    disabled={isSubmitting}
                   >
                     {isSubmitting ? "Submitting..." : "Submit Referral"}
                   </Button>
