@@ -32,7 +32,7 @@ const coverageTypes = [
   {
     icon: Umbrella,
     title: "Comprehensive",
-    description: "Covers non-crash losses like hail, wind, flood, fire, theft, vandalism, and falling objects. Often paired with Collision when your vehicle still has meaningful value."
+    description: "Covers non-crash losses like hail, wind, flood, fire, theft, vandalism, and falling objects — particularly important during Alabama's tornado season (March-May) and Georgia's severe thunderstorm season. Often paired with Collision when your vehicle still has meaningful value."
   },
   {
     icon: Users,
@@ -70,7 +70,7 @@ const savingsTips = [
   {
     icon: FileCheck,
     title: "Bundle with property",
-    description: "Combining auto with your home or condo can deliver sizable multi-policy savings and simplify billing. Even renters can benefit when packaging policies together."
+    description: "Combining your car insurance with your home or condo can deliver sizable multi-policy savings (15-25%) and simplify billing. AL and GA both allow credit-based insurance scoring, so maintaining good credit can also lower your auto insurance premium."
   },
   {
     icon: Shield,
@@ -123,6 +123,14 @@ const faqs = [
   {
     question: "What are the first steps if I have a claim?",
     answer: "Make sure everyone is safe, contact authorities if needed, take photos, and collect the other driver's info. Then call us—we'll help you start the claim and outline next steps like repairs, rental reimbursement, and medical care. Keep your policy number handy and avoid admitting fault at the scene. Our role is to make this process as smooth as possible."
+  },
+  {
+    question: "Does Georgia require uninsured motorist coverage?",
+    answer: "No, Georgia does not require uninsured motorist (UM) coverage by law. However, Georgia insurers must offer UM coverage to every policyholder — you have to actively decline it in writing. With approximately 12% of Georgia drivers uninsured, adding UM coverage protects you if you're hit by someone without insurance. We recommend UM coverage for both AL and GA drivers given the financial risk of an uninsured accident."
+  },
+  {
+    question: "Is car insurance cheaper in Alabama or Georgia?",
+    answer: "Generally, yes — Alabama car insurance averages about $200 less per year than Georgia. Alabama's average full coverage premium runs approximately $1,550 annually compared to Georgia's $1,760. Factors include Alabama's more rural population, lower traffic density outside Birmingham, and fewer uninsured motorist claims. However, individual rates vary significantly based on your specific location, vehicle, and driving history. Atlanta-area drivers typically pay the highest premiums in the region due to traffic congestion and vehicle theft rates."
   }
 ];
 
@@ -201,30 +209,8 @@ const AutoInsurance = () => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
-      { "@id": "https://coffeyagencies.com/centre-al#place" },
-      { "@id": "https://coffeyagencies.com/rome-ga#place" },
-      { "@id": "https://coffeyagencies.com/birmingham-al#place" },
-      { "@id": "https://coffeyagencies.com/montgomery-al#place" },
-      { "@id": "https://coffeyagencies.com/mobile-al#place" },
-      { "@id": "https://coffeyagencies.com/dothan-al#place" },
-      { "@id": "https://coffeyagencies.com/auburn-al#place" },
-      { "@id": "https://coffeyagencies.com/enterprise-al#place" },
-      { "@id": "https://coffeyagencies.com/foley-al#place" },
-      { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
-      { "@id": "https://coffeyagencies.com/troy-al#place" },
-      { "@id": "https://coffeyagencies.com/trussville-al#place" },
-      { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
-      { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
-      { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
-      { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
-      { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
-      { "@id": "https://coffeyagencies.com/duluth-ga#place" },
-      { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
-      { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
-      { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
-      { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
-      { "@id": "https://coffeyagencies.com/summerville-ga#place" },
-      { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
+      { "@type": "State", "name": "Alabama" },
+      { "@type": "State", "name": "Georgia" }
     ],
     "description": "Comprehensive auto insurance coverage including liability, collision, comprehensive, and uninsured motorist protection for Alabama and Georgia drivers.",
     "serviceOutput": "Insurance Policy",
@@ -304,13 +290,13 @@ const AutoInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Auto Insurance in Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance coverage in Alabama and Georgia with local expertise." />
+        <title>Car Insurance Alabama & Georgia - Compare Auto Insurance Quotes | Coffey Agencies</title>
+        <meta name="description" content="Car insurance in Alabama & Georgia. Compare auto insurance quotes, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
         <link rel="canonical" href="https://coffeyagencies.com/services/auto-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Auto Insurance in Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance coverage in Alabama and Georgia with local expertise." />
+        <meta property="og:title" content="Car Insurance Alabama & Georgia - Compare Auto Insurance Quotes | Coffey Agencies" />
+        <meta property="og:description" content="Car insurance in Alabama & Georgia. Compare auto insurance quotes, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/auto-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -320,8 +306,8 @@ const AutoInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Auto Insurance in Alabama & Georgia" />
-        <meta name="twitter:description" content="Clear options, fast quotes, and a team that actually picks up the phone. Get auto insurance in AL and GA." />
+        <meta name="twitter:title" content="Car Insurance Alabama & Georgia - Compare Auto Insurance Quotes" />
+        <meta name="twitter:description" content="Car insurance in Alabama & Georgia. Compare auto insurance quotes, save with bundling discounts. Serving AL & GA." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -361,13 +347,13 @@ const AutoInsurance = () => {
             
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-                Auto Insurance in Alabama & Georgia
+                Car Insurance in Alabama & Georgia
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
                 Clear options, fast quotes, and a team that actually picks up the phone
               </p>
               <p className="text-lg text-white/90 max-w-3xl mx-auto mb-6 drop-shadow-md">
-                We help you choose coverages that protect your budget and your daily life. Expect straight talk on limits and deductibles, quick paperwork, and follow-through at claim time. Bundle with home insurance or condo insurance to unlock additional savings.
+                Whether you need car insurance in Birmingham or coverage in Atlanta, we help you choose coverages that protect your budget and your daily life. Expect straight talk on limits and deductibles for AL and GA drivers, quick paperwork, and follow-through at claim time. Bundle your car insurance with home insurance or condo insurance to unlock additional savings.
               </p>
               <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
                 {[
@@ -460,7 +446,7 @@ const AutoInsurance = () => {
                   <CardTitle className="text-2xl">Storms, hail, and mixed driving environments</CardTitle>
                 </div>
                 <p className="text-muted-foreground">
-                  Alabama and Georgia drivers face a blend of rural highways, busy metro interstates, and seasonal severe weather. Spring and summer storms can bring hail and wind; fall brings deer activity; year-round, traffic density varies widely. These conditions influence how we balance deductibles and coverages.
+                  Alabama (AL) and Georgia (GA) drivers face a blend of rural highways, busy metro interstates, and seasonal severe weather. Whether you commute on I-20 through Birmingham, I-75 through Atlanta, I-65 through Montgomery, or US-431 through Anniston, we structure car insurance coverage for your specific driving patterns and risks. Spring and summer storms bring hail and wind; fall brings deer activity; year-round, traffic density varies widely. These conditions influence how we balance deductibles and coverages.
                 </p>
               </CardHeader>
               <CardContent>
@@ -669,26 +655,61 @@ const AutoInsurance = () => {
           </div>
         </section>
 
-        {/* Areas We Serve */}
+        {/* Cost Comparison Section */}
         <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <Card className="border-2 border-accent/20 bg-gradient-to-br from-accent/5 to-primary/5">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <DollarSign className="h-7 w-7 text-accent" />
+                  <CardTitle className="text-2xl">How Much Does Car Insurance Cost in Alabama vs Georgia?</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Car insurance costs vary by state, driving record, vehicle, and coverage level. On average, <strong>Alabama drivers pay approximately $1,550 per year</strong> for full coverage auto insurance, while <strong>Georgia drivers pay around $1,760</strong> — about $200 more annually. Alabama's lower population density and fewer urban traffic risks contribute to generally lower premiums.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  However, your individual rate depends on factors like your ZIP code, credit history, vehicle type, and driving record. Drivers in Atlanta typically pay more than drivers in rural AL or GA counties due to higher traffic density and theft rates.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Both states require minimum liability coverage of <strong>25/50/25</strong> — that's $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. While this meets legal requirements, most drivers benefit from higher limits, especially on busy corridors like I-20, I-65, I-75, and I-85.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Areas We Serve */}
+        <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Auto Insurance Across Alabama & Georgia</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Car Insurance Across Alabama & Georgia</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                We serve drivers across Alabama — including Jefferson County (Birmingham), Montgomery County, Mobile County, Cherokee County (Centre), Calhoun County, and Etowah County — as well as Georgia communities in Floyd County (Rome), Fulton County (Atlanta), Gwinnett County, Cobb County, and Bartow County.
+              </p>
+            </div>
+
+            {/* ZIP Codes */}
+            <div className="bg-white rounded-lg p-6 shadow-sm mb-8">
+              <p className="text-sm text-muted-foreground text-center">
+                <strong>Coverage extends to ZIP codes including:</strong> 35242, 35215, 35173 (Birmingham area), 36116, 36117 (Montgomery), 36695 (Mobile), 35960 (Centre), 30161 (Rome), 30349 (Atlanta), 30043, 30044 (Lawrenceville), and surrounding communities throughout AL and GA.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Alabama */}
-              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+              <div className="bg-white shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Alabama
+                  Alabama (AL)
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {alabamaCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                      className="px-4 py-2 bg-muted/50 rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -697,17 +718,17 @@ const AutoInsurance = () => {
               </div>
 
               {/* Georgia */}
-              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+              <div className="bg-white shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Georgia
+                  Georgia (GA)
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {georgiaCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                      className="px-4 py-2 bg-muted/50 rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -718,6 +739,19 @@ const AutoInsurance = () => {
 
             <p className="text-center text-muted-foreground">
               Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
+            </p>
+          </div>
+        </section>
+
+        {/* Internal Linking Section */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-4xl text-center">
+            <p className="text-lg text-muted-foreground">
+              Looking for more than auto coverage? Explore our{" "}
+              <Link to="/services/home-insurance" className="text-primary font-semibold hover:underline">home insurance</Link>,{" "}
+              <Link to="/services/renters-insurance" className="text-primary font-semibold hover:underline">renters insurance</Link>, or{" "}
+              <Link to="/services/motorcycle-insurance" className="text-primary font-semibold hover:underline">motorcycle insurance</Link> options. 
+              Bundle multiple policies to maximize your savings across AL and GA.
             </p>
           </div>
         </section>
