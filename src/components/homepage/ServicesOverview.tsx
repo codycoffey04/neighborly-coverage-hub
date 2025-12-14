@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Home, Building2, Key, Heart, Bike, ArrowRight } from "lucide-react";
+import { Car, Home, Building2, Key, Heart, Bike, Sailboat, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
@@ -40,6 +40,12 @@ const services = [
     title: "Motorcycle Insurance",
     description: "Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.",
     link: "/services/motorcycle-insurance"
+  },
+  {
+    icon: Sailboat,
+    title: "Boat Insurance",
+    description: "Coverage for pontoons, bass boats, jet skis, and sailboats on Weiss Lake, Allatoona, and waterways across Alabama and Georgia.",
+    link: "/services/boat-insurance"
   }
 ];
 

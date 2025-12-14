@@ -48,6 +48,7 @@ const RentersInsurance = lazyWithRetry(() => import("./pages/services/RentersIns
 const CondoInsurance = lazyWithRetry(() => import("./pages/services/CondoInsurance"));
 const LifeInsurance = lazyWithRetry(() => import("./pages/services/LifeInsurance"));
 const MotorcycleInsurance = lazyWithRetry(() => import("./pages/services/MotorcycleInsurance"));
+const BoatInsurance = lazyWithRetry(() => import("./pages/services/BoatInsurance"));
 const CityPage = lazyWithRetry(() => import("./pages/CityPage"));
 const Claims = lazyWithRetry(() => import("./pages/Claims"));
 const CentreALResources = lazyWithRetry(() => import("./pages/resources/CentreALResources"));
@@ -88,6 +89,7 @@ const App = () => (
                 <Route path="/services/condo-insurance" element={<CondoInsurance />} />
                 <Route path="/services/life-insurance" element={<LifeInsurance />} />
                 <Route path="/services/motorcycle-insurance" element={<MotorcycleInsurance />} />
+                <Route path="/services/boat-insurance" element={<BoatInsurance />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/claims" element={<Claims />} />
