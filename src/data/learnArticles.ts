@@ -33,6 +33,703 @@ export interface LearnArticle {
 
 export const learnArticles: LearnArticle[] = [
   {
+    slug: "atv-utv-insurance-guide",
+    title: "ATV & UTV Insurance Guide: Do You Need It, What It Covers, and What It Costs",
+    metaTitle: "ATV & UTV Insurance Guide: Do You Need It? What It Covers",
+    metaDescription: "Do you need ATV insurance? Learn what ATV and UTV coverage includes, how much it costs, and when it's required. Free guide for off-road vehicle owners.",
+    excerpt: "Everything ATV and UTV owners need to know about coverage types, costs, and when insurance is required vs just smart to have.",
+    category: "ATV/UTV Insurance",
+    readTime: "15 min read",
+    featured: false,
+    heroImage: "atv-insurance-hero.jpg",
+    content: [
+      {
+        type: 'paragraph',
+        content: "ATVs, UTVs, and side-by-sides are built for adventure — muddy trails, hunting land, farm work, and weekend rides with family. But when something goes wrong, the financial consequences can be serious. Accidents happen, vehicles get stolen, and expensive machines get damaged."
+      },
+      {
+        type: 'paragraph',
+        content: "The question most ATV and UTV owners ask: Do I actually need insurance?"
+      },
+      {
+        type: 'paragraph',
+        content: "This guide answers that question and covers everything else you need to know — what ATV and UTV insurance actually covers, what it costs, how it differs from your homeowners or auto policy, and when coverage is legally required versus just smart to have."
+      },
+      {
+        type: 'paragraph',
+        content: "Whether you own a Polaris RZR, Can-Am Defender, Honda Pioneer, Yamaha Grizzly, or Kawasaki Mule, understanding your coverage options helps you make the right choice for how you ride."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Do You Need ATV or UTV Insurance?"
+      },
+      {
+        type: 'paragraph',
+        content: "Short answer: It depends on how and where you ride — but most ATV and UTV owners benefit from at least liability coverage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "When ATV/UTV Insurance Is Required or Effectively Mandatory"
+      },
+      {
+        type: 'paragraph',
+        content: "Financed vehicles — If you're financing your ATV or UTV, the lender will require comprehensive coverage protecting their collateral. No insurance, no loan."
+      },
+      {
+        type: 'paragraph',
+        content: "Road-legal UTVs (Georgia MPOHV) — If you register your UTV for road use under Georgia's MPOHV (Multi-Purpose Off-Highway Vehicle) law, you need liability insurance just like any other vehicle on public roads."
+      },
+      {
+        type: 'paragraph',
+        content: "Trail parks and riding areas — Many organized trail systems and off-road parks require proof of liability insurance before allowing entry. Requirements vary, but $100,000-$300,000 in liability coverage is common."
+      },
+      {
+        type: 'paragraph',
+        content: "Personal asset protection — If you injure someone or damage property while riding, you're personally liable. Without insurance, a serious accident could put your home, savings, and future income at risk."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "When You Might Consider Skipping Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "If you own an older, low-value ATV outright, ride only on your own private property, and have minimal assets to protect, you might choose to self-insure for physical damage."
+      },
+      {
+        type: 'paragraph',
+        content: "But here's the catch: liability doesn't care where you ride. If a friend gets hurt riding with you — even on your own land — you could face a lawsuit. Liability-only coverage is affordable and covers this risk."
+      },
+      {
+        type: 'paragraph',
+        content: "The bottom line: Most ATV and UTV owners should carry at least liability coverage. If your vehicle is financed or worth more than a few thousand dollars, comprehensive coverage makes sense too."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Does ATV/UTV Insurance Cover?"
+      },
+      {
+        type: 'paragraph',
+        content: "ATV and UTV insurance policies typically include several coverage types. Here's what each one does."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Liability pays for damage you cause to others — bodily injury, property damage, or both. If you hit another rider, injure a passenger, or damage someone's property, liability coverage responds."
+      },
+      {
+        type: 'paragraph',
+        content: "This is the most important coverage for most riders. Medical bills and lawsuits can easily exceed $100,000. Standard liability limits range from $25,000 to $300,000 or higher."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Collision Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Collision covers damage to your ATV or UTV when you hit something — another vehicle, a tree, a rock, or if you roll over. This pays for repairs or replacement minus your deductible."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Comprehensive Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Comprehensive covers damage from things other than collisions — theft, fire, vandalism, falling objects, flooding, and weather damage. If your ATV is stolen from your trailer or a tree falls on your UTV during a storm, comprehensive pays."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Medical Payments Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Medical payments cover injuries to you and your passengers regardless of who caused the accident. This typically pays up to a set limit ($1,000-$10,000 per person) for immediate medical expenses."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Uninsured/Underinsured Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "If you're injured by another rider who has no insurance (or not enough), this coverage pays the difference. It protects you when someone else is at fault but can't cover your losses."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Accessory and Custom Parts Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Stock ATV/UTV policies often have limited coverage for aftermarket accessories. If you've added a winch, light bar, custom wheels, sound system, or other upgrades, you may need additional accessory coverage to protect your investment."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Roadside Assistance / Towing"
+      },
+      {
+        type: 'paragraph',
+        content: "If your ATV or UTV breaks down on the trail or road, towing coverage pays to get you home. Off-road recovery can be expensive — this coverage is inexpensive and worth having."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "ATV Insurance vs Homeowners Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "One of the biggest misconceptions: \"My homeowners policy covers my ATV.\""
+      },
+      {
+        type: 'paragraph',
+        content: "The reality: Homeowners insurance provides very limited ATV/UTV coverage — if any."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Homeowners Typically Does Cover"
+      },
+      {
+        type: 'list',
+        content: [
+          "Liability for accidents that occur on your property only",
+          "Theft of your ATV from your property (with significant limits and high deductibles)"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Homeowners Typically Does NOT Cover"
+      },
+      {
+        type: 'list',
+        content: [
+          "Liability when riding off your property",
+          "Collision damage anywhere",
+          "Accidents on trails, public land, or someone else's property",
+          "Theft away from your home (at a trailhead, campsite, etc.)",
+          "Damage while being transported on a trailer"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "The gap is huge. If you ride anywhere other than your own backyard, your homeowners policy leaves you exposed."
+      },
+      {
+        type: 'callout',
+        variant: 'warning',
+        content: "Example: You're riding at a friend's property. You lose control and injure another rider. Your homeowners liability won't cover it — the accident didn't happen on your property. Without ATV insurance, you're personally responsible for medical bills, lost wages, and potential lawsuit costs."
+      },
+      {
+        type: 'paragraph',
+        content: "Bottom line: If your ATV or UTV ever leaves your property, you need dedicated coverage. Don't assume your homeowners has you covered."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Liability Only vs Full Coverage — What's the Difference?"
+      },
+      {
+        type: 'paragraph',
+        content: "Choosing between liability-only and full coverage comes down to your vehicle's value and your risk tolerance."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability-Only Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers damage you cause to others (bodily injury and property damage). Does NOT cover damage to your own ATV or UTV."
+      },
+      {
+        type: 'paragraph',
+        content: "Best for: Older ATVs with low market value, vehicles you own outright (no loan), situations where you can afford to replace the vehicle out of pocket. Typical cost: $75-$150 per year."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Full Coverage (Liability + Collision + Comprehensive)"
+      },
+      {
+        type: 'paragraph',
+        content: "Covers damage you cause to others AND damage to your own vehicle from accidents, theft, fire, vandalism, and weather."
+      },
+      {
+        type: 'paragraph',
+        content: "Best for: Newer or higher-value ATVs and UTVs, financed vehicles (lenders require it), vehicles you can't afford to replace out of pocket. Typical cost: $150-$500+ per year depending on vehicle value."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "How to Decide"
+      },
+      {
+        type: 'paragraph',
+        content: "Consider your vehicle's current market value. If it's worth $2,000 and full coverage costs $300/year with a $500 deductible, you might choose liability-only — in a total loss scenario, you'd only recover $1,500 after deductible anyway."
+      },
+      {
+        type: 'paragraph',
+        content: "But if your side-by-side is worth $18,000 and you'd struggle to replace it out of pocket, full coverage makes sense even though the premium is higher."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Affects ATV/UTV Insurance Cost?"
+      },
+      {
+        type: 'paragraph',
+        content: "ATV and UTV insurance is generally affordable — often $100-$500 per year for full coverage on a typical recreational vehicle. But several factors affect your actual premium."
+      },
+      {
+        type: 'list',
+        content: [
+          "Vehicle type and value — Higher-value vehicles cost more to insure. A $25,000 Polaris RZR Pro costs more than a $6,000 Honda Rancher.",
+          "Engine size and speed — Larger engines and faster vehicles mean higher premiums.",
+          "How you use it — Recreational trail riding typically costs less than racing or competitive use.",
+          "Your age and experience — Younger riders and those with less experience typically pay more.",
+          "Coverage levels and deductibles — Higher liability limits and lower deductibles cost more.",
+          "Location — Areas with higher theft rates or more accidents mean higher premiums.",
+          "Claims history — Previous ATV or auto insurance claims can increase your rates.",
+          "Multi-vehicle discounts — Insuring multiple vehicles with the same company often qualifies for discounts."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Typical Annual Cost Ranges"
+      },
+      {
+        type: 'table',
+        content: {
+          headers: ["Vehicle Type", "Liability Only", "Full Coverage"],
+          rows: [
+            ["Entry-level ATV ($3,000-$6,000)", "$50-$100", "$100-$200"],
+            ["Mid-range ATV ($6,000-$10,000)", "$75-$125", "$150-$300"],
+            ["Utility UTV ($10,000-$18,000)", "$100-$175", "$200-$400"],
+            ["Sport UTV/Side-by-side ($18,000-$30,000+)", "$125-$200", "$300-$600+"]
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: "These are estimates. Your actual quote depends on all factors above."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Common Exclusions — What's NOT Covered"
+      },
+      {
+        type: 'paragraph',
+        content: "Understanding what ATV/UTV insurance doesn't cover is just as important as knowing what it does."
+      },
+      {
+        type: 'list',
+        content: [
+          "Racing and competitive use — Most recreational ATV policies exclude coverage during races, competitions, or organized speed events.",
+          "Intentional damage — Damage you cause intentionally isn't covered.",
+          "Wear and tear / mechanical breakdown — Insurance covers damage from accidents and covered perils, not normal wear or engine breakdown.",
+          "Excluded drivers — If someone not listed on your policy causes an accident, the claim may be denied.",
+          "Commercial use — Using your ATV for business purposes typically requires commercial coverage.",
+          "Illegal activity — Accidents that occur while using your ATV illegally may not be covered.",
+          "Modifications that void coverage — Extreme modifications that significantly change your vehicle's performance may affect coverage."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Does ATV Insurance Cover Passengers and Other Drivers?"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Passengers"
+      },
+      {
+        type: 'paragraph',
+        content: "Yes — your liability coverage protects you if a passenger is injured, and medical payments coverage pays for their medical expenses regardless of fault."
+      },
+      {
+        type: 'paragraph',
+        content: "However, passenger coverage has limits. Make sure your liability limits are high enough to cover potential injury claims. A serious injury can easily exceed $100,000 in medical costs."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Other Drivers"
+      },
+      {
+        type: 'paragraph',
+        content: "Coverage for other drivers depends on your policy. Typically covered: household members listed on your policy, permissive use by others (someone you've given permission to ride). May not be covered: drivers specifically excluded from your policy, unlicensed operators, drivers using the vehicle without permission."
+      },
+      {
+        type: 'paragraph',
+        content: "If friends or family regularly ride your ATV or UTV, verify they're covered under your policy. Some insurers require all household members of driving age to be listed."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Custom Parts and Accessories Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Many ATV and UTV owners customize their vehicles with aftermarket parts and accessories. Standard policies often have limited coverage for these additions."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Common Accessories That May Need Additional Coverage"
+      },
+      {
+        type: 'list',
+        content: [
+          "Winches",
+          "Light bars and auxiliary lighting",
+          "Custom wheels and tires",
+          "Lift kits and suspension upgrades",
+          "Sound systems",
+          "Gun racks and hunting accessories",
+          "Plows and work attachments",
+          "Roof, windshield, and door kits",
+          "Storage boxes and cargo accessories"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Standard policies typically include $500-$1,000 in accessory coverage. If you've invested more than that in upgrades, you'll want to increase your accessory limits."
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Example: You've added a $1,500 winch, $800 light bar, and $1,200 in wheel/tire upgrades to your UTV — $3,500 total. If your base policy only covers $1,000 in accessories, you'd be underinsured by $2,500. Accessory coverage typically costs $20-$50 per year per $1,000 in additional coverage."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Off-Road vs Road-Legal Use: When Registration Changes Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "How you use your ATV or UTV affects what insurance you need."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Off-Road Only (Trails, Private Property, Parks)"
+      },
+      {
+        type: 'paragraph',
+        content: "Most ATV and UTV insurance policies cover recreational off-road use. No special registration is required, and standard off-road vehicle policies apply."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Road-Legal Use (Georgia MPOHV Registration)"
+      },
+      {
+        type: 'paragraph',
+        content: "Georgia's Multi-Purpose Off-Highway Vehicle (MPOHV) law allows certain UTVs to be registered for limited use on public roads — typically county roads with speed limits of 35 mph or less."
+      },
+      {
+        type: 'paragraph',
+        content: "Requirements for Georgia MPOHV road use: Vehicle must meet equipment requirements (lights, mirrors, horn, etc.), must be registered as an MPOHV with the county, must display a valid MPOHV decal, operator must have a valid driver's license, and liability insurance is required — just like any other vehicle on public roads."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Alabama Road Use"
+      },
+      {
+        type: 'paragraph',
+        content: "Alabama's rules differ. SB64 (2024) allows certain off-road vehicles on county roads with proper registration and insurance, but implementation varies by county. Check your county's specific requirements."
+      },
+      {
+        type: 'paragraph',
+        content: "If you plan to ride on public roads — even occasionally — make sure your policy covers it. An accident on a public road with an off-road-only policy could leave you uninsured."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Common Trail Park & Lender Insurance Requirements"
+      },
+      {
+        type: 'paragraph',
+        content: "Trail parks and lenders often have specific insurance requirements you'll need to meet."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Trail Park Requirements"
+      },
+      {
+        type: 'paragraph',
+        content: "Many organized riding areas require proof of insurance before entry. Requirements vary but typically include: liability coverage ($100,000-$300,000 minimum), proof of insurance (certificate or insurance card), and named insured matching registration."
+      },
+      {
+        type: 'paragraph',
+        content: "Popular parks in the region like Indian Mountain ATV Park (Piedmont, AL), Highland Park Off-Road Resort (Cedartown, GA), Houston Valley OHV (Dalton, GA), Durhamtown Off-Road (Union Point, GA), and Beasley Knob OHV (Suches, GA) may have specific requirements posted on their websites. Check before you arrive."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Lender Requirements"
+      },
+      {
+        type: 'paragraph',
+        content: "If you're financing your ATV or UTV, lenders typically require: comprehensive and collision coverage (not liability-only), coverage amount at least equal to loan balance, lender named as loss payee on your policy, and continuous coverage throughout the loan term."
+      },
+      {
+        type: 'paragraph',
+        content: "If your insurance lapses, the lender may demand proof of coverage within a short window (often 10-15 days), purchase force-placed insurance and add the cost to your loan, or consider you in default. Force-placed insurance is expensive and provides minimal protection for you."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Does ATV/UTV Insurance Cover Theft While Stored or Trailering?"
+      },
+      {
+        type: 'paragraph',
+        content: "Yes — comprehensive coverage protects against theft regardless of location."
+      },
+      {
+        type: 'paragraph',
+        content: "Whether your ATV is stolen from your garage, your driveway, a trailhead parking lot, or off your trailer at a campsite, comprehensive coverage pays for the loss."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Storage Theft"
+      },
+      {
+        type: 'list',
+        content: [
+          "Covered at home (garage, shed, driveway)",
+          "Covered at storage facilities",
+          "Covered at a friend's property"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Trailering/Transport Theft"
+      },
+      {
+        type: 'list',
+        content: [
+          "Covered while on a trailer attached to your vehicle",
+          "Covered at rest stops, gas stations, campgrounds",
+          "Covered at hotels during road trips"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Trailer theft: If your trailer is stolen along with your ATV/UTV, coverage depends on your policy. Some ATV policies include the trailer; others don't. Check whether your trailer is listed and covered."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Financed ATV/UTV: What Lenders Typically Require"
+      },
+      {
+        type: 'paragraph',
+        content: "Financing an ATV or UTV means meeting your lender's insurance requirements — not just your own preferences."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Standard Lender Requirements"
+      },
+      {
+        type: 'list',
+        content: [
+          "Comprehensive and collision coverage — Protects the lender's collateral",
+          "Coverage amount ≥ loan balance — Ensures they recover their investment if it's totaled",
+          "Lender named as loss payee — Claim payments go to the lender first",
+          "No coverage gaps — Continuous insurance throughout the loan"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Gap Coverage Consideration"
+      },
+      {
+        type: 'paragraph',
+        content: "ATVs and UTVs depreciate. If your vehicle is totaled, insurance pays its current market value — which may be less than your loan balance."
+      },
+      {
+        type: 'callout',
+        variant: 'warning',
+        content: "Example: You owe $12,000 on your UTV. It's totaled in an accident. Market value is $9,500. You receive $9,500 from insurance but still owe the lender $2,500. Gap coverage pays the difference between your vehicle's actual cash value and what you owe on the loan."
+      },
+      {
+        type: 'paragraph',
+        content: "Timeline tip: Arrange insurance before finalizing your purchase. You'll need proof of coverage before the lender releases funds and you can take delivery."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Electric ATVs and UTVs — Emerging Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Electric ATVs and UTVs are growing in popularity — quieter operation, lower maintenance, and zero emissions appeal to many riders. But electric vehicles have some unique insurance considerations."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Battery Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Electric vehicle batteries are expensive — often $3,000-$8,000+ to replace. Make sure your comprehensive coverage includes battery damage and replacement, not just the vehicle itself."
+      },
+      {
+        type: 'paragraph',
+        content: "Key questions: Is battery damage covered under comprehensive? Are battery defects or degradation covered? (Usually no — that's warranty territory) What about damage from water, impact, or fire?"
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Charging Equipment"
+      },
+      {
+        type: 'paragraph',
+        content: "If you've installed charging infrastructure (home charging station, portable chargers), ask whether damage to this equipment is covered and what limits apply."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Higher Vehicle Values"
+      },
+      {
+        type: 'paragraph',
+        content: "Electric ATVs and UTVs often cost more than comparable gas-powered models. Make sure your coverage amount reflects the actual replacement cost of your electric vehicle."
+      },
+      {
+        type: 'paragraph',
+        content: "As electric off-road vehicles become more common, insurance products will evolve. For now, confirm battery and charging coverage specifically when getting quotes for electric ATVs or UTVs."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Where You Ride Matters: Trail Rules, Permits, and Road Use"
+      },
+      {
+        type: 'paragraph',
+        content: "Where and how you ride affects both your insurance needs and your coverage."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Private Property"
+      },
+      {
+        type: 'paragraph',
+        content: "You can ride on your own property or private property with permission without special registration or insurance requirements. However, accidents still happen — liability coverage protects you if someone is injured."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Public Trails and OHV Areas"
+      },
+      {
+        type: 'paragraph',
+        content: "Designated OHV (Off-Highway Vehicle) trails and riding areas may have specific requirements: proof of registration/OHV sticker, proof of liability insurance, age restrictions for operators, and equipment requirements (spark arrestors, flags, etc.)."
+      },
+      {
+        type: 'paragraph',
+        content: "Popular riding areas in the region include Indian Mountain ATV Park (Piedmont, AL), Highland Park Off-Road Resort (Cedartown, GA), Houston Valley OHV (Dalton, GA), Durhamtown Off-Road (Union Point, GA), Beasley Knob OHV (Suches, GA), and numerous smaller trail systems."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Public Roads"
+      },
+      {
+        type: 'paragraph',
+        content: "Operating ATVs or UTVs on public roads is restricted in most areas. Georgia's MPOHV law allows registered, insured UTVs on certain county roads. Alabama's SB64 (2024) provides some road-use allowances with proper registration and insurance."
+      },
+      {
+        type: 'paragraph',
+        content: "Riding on public roads without proper registration and insurance is illegal and leaves you uninsured if an accident occurs."
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "For coverage matched to how and where you actually ride, get an ATV/UTV insurance quote from our team."
+      }
+    ],
+    faqs: [
+      {
+        question: "Is ATV insurance required by law in Alabama or Georgia?",
+        answer: "Not for off-road use. However, if you register a UTV for road use under Georgia's MPOHV law, liability insurance is required. Lenders also require coverage on financed vehicles, and many trail parks require proof of insurance."
+      },
+      {
+        question: "Does my homeowners insurance cover my ATV?",
+        answer: "Only in very limited circumstances — typically just theft from your property and liability for accidents on your property. Off-property use, collision damage, and theft away from home generally aren't covered. Most ATV owners need dedicated coverage."
+      },
+      {
+        question: "How much does ATV insurance cost?",
+        answer: "Typically $100-$500 per year for full coverage on a recreational ATV or UTV. Liability-only coverage costs even less — often $50-$150 per year. Your specific rate depends on vehicle value, coverage levels, and other factors."
+      },
+      {
+        question: "Does ATV insurance cover my kids riding?",
+        answer: "Coverage for minor children depends on your policy and the specific circumstances. Many policies cover household members, but age restrictions may apply for certain vehicles. Verify with your insurer that your children are covered before they ride."
+      },
+      {
+        question: "What's the difference between ATV and UTV insurance?",
+        answer: "The coverage types are essentially the same. UTVs (side-by-sides) typically cost more to insure because they're usually more expensive vehicles. Some UTVs also have road-use capabilities that require additional coverage considerations."
+      },
+      {
+        question: "Does ATV insurance cover damage from mud and water?",
+        answer: "Yes — comprehensive coverage typically covers damage from flooding, water crossings, and related issues. However, damage from normal wear (like mud affecting seals over time) is maintenance, not a covered claim. Sudden water damage (submerging the vehicle, flood damage) is covered."
+      },
+      {
+        question: "Can I insure multiple ATVs on one policy?",
+        answer: "Yes. Most insurers offer multi-vehicle policies that cover multiple ATVs, UTVs, or a combination. You'll typically get a discount for insuring multiple vehicles together."
+      },
+      {
+        question: "Does ATV insurance cover me if I'm towing a trailer?",
+        answer: "Your ATV insurance covers the ATV. The trailer may or may not be included — check your policy. Accidents while towing (like the trailer causing damage to another vehicle) may fall under your tow vehicle's auto insurance, not your ATV policy."
+      },
+      {
+        question: "What happens if my ATV is totaled?",
+        answer: "You'll receive payment based on your coverage type — either agreed value (the amount you and the insurer agreed to) or actual cash value (current market value minus depreciation). Either way, your deductible applies."
+      },
+      {
+        question: "Does ATV insurance cover me riding on someone else's property?",
+        answer: "Yes — liability coverage protects you regardless of whose property you're on (as long as you have permission to be there). This is one of the key advantages over homeowners insurance, which only covers your own property."
+      },
+      {
+        question: "Is there a discount for taking a safety course?",
+        answer: "Many insurers offer discounts for completing ATV safety courses. The ATV Safety Institute offers courses that may qualify. Ask your insurer about available safety discounts."
+      },
+      {
+        question: "Do I need insurance for a dirt bike?",
+        answer: "Dirt bikes face similar considerations as ATVs. Dedicated off-road motorcycle or dirt bike insurance provides liability, collision, and comprehensive coverage. If your dirt bike is used exclusively off-road, standard motorcycle insurance may not be the right fit."
+      }
+    ],
+    relatedArticles: ["auto-insurance-guide", "motorcycle-insurance-guide", "home-insurance-guide"],
+    internalLinks: [
+      { text: "get an ATV/UTV insurance quote", href: "/services/atv-utv-insurance" },
+      { text: "auto insurance", href: "/services/auto-insurance" },
+      { text: "home insurance", href: "/services/home-insurance" }
+    ]
+  },
+  {
     slug: "boat-insurance-guide",
     title: "What Does Boat Insurance Cover? (Guide to Coverage, Cost & When You Need It)",
     metaTitle: "What Does Boat Insurance Cover? Guide to Cost & Coverage",
