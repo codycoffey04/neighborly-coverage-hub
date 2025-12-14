@@ -608,9 +608,9 @@ const BoatInsurance = () => {
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-white border rounded-lg px-6">
-                    <AccordionTrigger className="text-left hover:no-underline py-4">
-                      <span className="font-semibold text-foreground">{item.question}</span>
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
+                    <AccordionTrigger className="text-left hover:no-underline py-5">
+                      <span className="font-semibold text-lg pr-4">{item.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground pb-4 text-lg leading-relaxed">
                       {item.answer}
