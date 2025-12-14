@@ -33,6 +33,731 @@ export interface LearnArticle {
 
 export const learnArticles: LearnArticle[] = [
   {
+    slug: "boat-insurance-guide",
+    title: "What Does Boat Insurance Cover? (Guide to Coverage, Cost & When You Need It)",
+    metaTitle: "What Does Boat Insurance Cover? Guide to Cost & Coverage",
+    metaDescription: "What does boat insurance cover? Learn about liability, hull coverage, agreed value vs ACV, trailer protection, and what affects cost. Free guide for boat owners.",
+    excerpt: "Understand what boat insurance covers, how policies value your boat, what affects cost, and when you truly need coverage.",
+    category: "Boat Insurance",
+    readTime: "14 min read",
+    featured: false,
+    heroImage: "boat-insurance-hero.jpg",
+    content: [
+      {
+        type: 'paragraph',
+        content: "Whether you just bought your first bass boat or you've been on the water for decades, understanding boat insurance can save you thousands when something goes wrong. Unlike auto insurance, boat coverage isn't standardized — policies vary widely in what they cover, how they value your boat, and what exclusions apply."
+      },
+      {
+        type: 'paragraph',
+        content: "This guide breaks down what boat insurance actually covers, what it doesn't, how much you can expect to pay, and when you truly need it. We'll cover the differences between agreed value and actual cash value, explain what marinas and lenders typically require, and answer the most common questions boat owners ask."
+      },
+      {
+        type: 'paragraph',
+        content: "If you're researching coverage options before buying a policy — or wondering if your current coverage is enough — you're in the right place."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Do You Need Boat Insurance?"
+      },
+      {
+        type: 'paragraph',
+        content: "Boat insurance isn't legally required in most states, including Alabama and Georgia. But \"not required\" doesn't mean \"not necessary.\""
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "When Boat Insurance Is Essentially Mandatory"
+      },
+      {
+        type: 'paragraph',
+        content: "Financed boats — If you're financing your boat through a bank or dealer, the lender will almost certainly require comprehensive coverage protecting their collateral. You won't close the loan without proof of insurance."
+      },
+      {
+        type: 'paragraph',
+        content: "Marina storage — Most marinas require proof of liability insurance before they'll rent you a slip. Requirements typically range from $300,000 to $500,000 in liability coverage, and many require you to list the marina as an \"additional insured\" on your policy."
+      },
+      {
+        type: 'paragraph',
+        content: "Personal assets — If you cause an accident that injures someone or damages their property, you're personally liable. Without insurance, a serious boating accident could put your home, savings, and future earnings at risk."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "When You Might Skip Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "Some owners of older, low-value boats choose to self-insure — essentially accepting the risk of total loss. If your boat is worth $2,000 and you have no loan, paying $300-400 per year for coverage may not make financial sense."
+      },
+      {
+        type: 'paragraph',
+        content: "But liability is a different calculation. Even a cheap boat can cause expensive damage or serious injuries. Most boat owners find that liability-only coverage — which is significantly cheaper than full coverage — is worth the peace of mind."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Does Boat Insurance Cover?"
+      },
+      {
+        type: 'paragraph',
+        content: "A standard boat insurance policy typically includes several types of coverage. Understanding each helps you choose appropriate limits."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Hull Coverage (Physical Damage)"
+      },
+      {
+        type: 'paragraph',
+        content: "This covers damage to your boat itself — the hull, motor, and permanently attached equipment. Hull coverage pays for repairs or replacement if your boat is damaged by collision, fire, theft, vandalism, storm damage, or sinking."
+      },
+      {
+        type: 'paragraph',
+        content: "How your boat is valued (agreed value vs. actual cash value) determines what you'll receive if it's totaled. More on that below."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "Liability pays for damage you cause to others — bodily injury, property damage, or both. If you hit another boat, injure a passenger, or damage a dock, liability coverage responds."
+      },
+      {
+        type: 'paragraph',
+        content: "Most policies offer liability limits from $100,000 to $1,000,000. Given how expensive injuries and property damage can become, we typically recommend at least $300,000 in liability coverage. If you have significant personal assets to protect, consider $500,000 or higher."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Medical Payments"
+      },
+      {
+        type: 'paragraph',
+        content: "Medical payments coverage pays for injuries to you and your passengers regardless of who caused the accident. This typically covers immediate medical expenses up to a set limit (often $5,000-$10,000 per person)."
+      },
+      {
+        type: 'paragraph',
+        content: "This coverage fills gaps — it pays quickly without determining fault, and it covers your own injuries that liability wouldn't."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Uninsured/Underinsured Boater"
+      },
+      {
+        type: 'paragraph',
+        content: "If someone without insurance (or without enough insurance) injures you, this coverage pays the difference. It works similar to uninsured motorist coverage on your auto policy."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Personal Effects Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "This covers belongings on your boat — fishing gear, electronics, phones, coolers, water skis, and similar items. Standard limits are often $1,000-$5,000, but you can increase coverage for expensive fishing equipment or electronics."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Fuel Spill Liability"
+      },
+      {
+        type: 'paragraph',
+        content: "If your boat sinks or is damaged and leaks fuel, you're responsible for cleanup costs. Environmental cleanup is expensive — fuel spill liability coverage protects you from these costs."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "On-Water Towing"
+      },
+      {
+        type: 'paragraph',
+        content: "If your boat breaks down on the water, towing coverage pays for assistance. Without it, a tow back to the marina can cost hundreds or even thousands of dollars depending on distance and conditions."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Agreed Value vs Actual Cash Value — Which Is Better?"
+      },
+      {
+        type: 'paragraph',
+        content: "This is one of the most important decisions in boat insurance — and one of the biggest surprises at claim time if you don't understand the difference."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Agreed Value"
+      },
+      {
+        type: 'paragraph',
+        content: "With agreed value coverage, you and the insurer agree on your boat's value when the policy starts. If your boat is totaled, you receive that full amount (minus any deductible)."
+      },
+      {
+        type: 'paragraph',
+        content: "Example: You insure your boat for an agreed value of $35,000. Three years later, it's destroyed in a storm. You receive $35,000 (minus deductible), regardless of what the boat might sell for today."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Actual Cash Value (ACV)"
+      },
+      {
+        type: 'paragraph',
+        content: "With ACV coverage, your payout is based on the boat's depreciated value at the time of loss — essentially what it would sell for on the used market."
+      },
+      {
+        type: 'paragraph',
+        content: "Example: You bought your boat for $35,000. Three years later, it's worth $22,000 on the used market. If it's totaled, you receive around $22,000 (minus deductible)."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Which Should You Choose?"
+      },
+      {
+        type: 'paragraph',
+        content: "Agreed value costs slightly more but provides predictable protection. You know exactly what you'll receive if the worst happens."
+      },
+      {
+        type: 'paragraph',
+        content: "ACV costs less upfront but can leave you significantly underinsured — especially on boats that depreciate quickly or after you've made upgrades that don't show in market value."
+      },
+      {
+        type: 'paragraph',
+        content: "For most boat owners, agreed value is worth the modest premium increase. The last thing you want after losing your boat is a claim payment that doesn't cover what you owe on the loan or what it costs to replace."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Boat Insurance vs Homeowners Insurance"
+      },
+      {
+        type: 'paragraph',
+        content: "One of the most common misconceptions: \"My homeowners policy covers my boat.\""
+      },
+      {
+        type: 'paragraph',
+        content: "The reality: Homeowners insurance provides very limited boat coverage — if any."
+      },
+      {
+        type: 'paragraph',
+        content: "Most homeowners policies only cover small boats (typically under 25-26 feet with limited horsepower) and only provide minimal limits. The coverage that does exist is usually actual cash value with low caps — often $1,000-$1,500 for the boat itself."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Homeowners Typically Won't Cover"
+      },
+      {
+        type: 'list',
+        content: [
+          "Boats over length/horsepower limits",
+          "Liability while operating the boat (only liability while boat is on your property)",
+          "Theft away from your property",
+          "Damage while trailering",
+          "Any boat with an inboard motor (on some policies)"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "The bottom line: If your boat is worth more than a couple thousand dollars, or if you use it anywhere other than your own property, you need a dedicated boat insurance policy. Don't assume your homeowners has you covered — check your policy or ask your agent."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Affects Boat Insurance Cost?"
+      },
+      {
+        type: 'paragraph',
+        content: "Boat insurance typically costs between $200 and $500 per year for basic coverage on a typical recreational boat. But rates vary widely based on several factors."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Boat Type and Value"
+      },
+      {
+        type: 'paragraph',
+        content: "Higher-value boats cost more to insure. A $50,000 boat costs more to cover than a $15,000 boat. High-performance boats and boats with powerful engines also command higher premiums due to increased risk."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Boat Age"
+      },
+      {
+        type: 'paragraph',
+        content: "Newer boats typically cost more to insure (higher value) but may qualify for discounts. Older boats may cost less to insure but can be harder to find coverage for — especially boats over 20-25 years old, which may require a marine survey."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "How and Where You Use It"
+      },
+      {
+        type: 'paragraph',
+        content: "Coastal boating typically costs more than inland lakes. Saltwater use, navigation into open ocean, and boating in hurricane-prone areas all increase premiums."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Coverage Type and Limits"
+      },
+      {
+        type: 'paragraph',
+        content: "Agreed value costs more than ACV. Higher liability limits cost more. Lower deductibles cost more. The coverage choices you make directly affect your premium."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Your Boating Experience"
+      },
+      {
+        type: 'paragraph',
+        content: "Completed boating safety courses can reduce premiums. Claims history matters too — previous claims mean higher rates."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Storage and Security"
+      },
+      {
+        type: 'paragraph',
+        content: "Boats stored in secured marinas or dry-stack facilities may qualify for discounts compared to boats left on trailers at home or in unsecured lots."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Deductible Choice"
+      },
+      {
+        type: 'paragraph',
+        content: "Higher deductibles mean lower premiums. If you can afford to pay the first $500 or $1,000 of a claim out of pocket, you'll save on annual premium."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Typical Annual Costs by Boat Type"
+      },
+      {
+        type: 'table',
+        content: {
+          headers: ["Boat Type", "Annual Cost Range"],
+          rows: [
+            ["Small fishing boat (under $15,000)", "$150-$300"],
+            ["Pontoon boat ($20,000-$40,000)", "$250-$450"],
+            ["Bass boat ($30,000-$60,000)", "$300-$600"],
+            ["Ski/wakeboard boat ($40,000-$80,000)", "$400-$800"],
+            ["PWC/Jet ski", "$100-$300"]
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: "These are rough estimates. Your actual quote depends on all the factors above."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Does Boat Insurance Cover Hurricane and Storm Damage, Sinking, and Salvage?"
+      },
+      {
+        type: 'paragraph',
+        content: "Storm and hurricane damage — Yes, boat insurance typically covers damage from storms, hurricanes, high winds, and hail. However, in coastal areas you may have a separate, higher deductible for named storm or hurricane damage — often 2-5% of your coverage amount."
+      },
+      {
+        type: 'paragraph',
+        content: "Example: On a boat insured for $50,000 with a 2% hurricane deductible, you'd pay the first $1,000 of any hurricane-related claim."
+      },
+      {
+        type: 'paragraph',
+        content: "Sinking — Yes, if your boat sinks due to a covered cause (storm, collision, hitting a submerged object), hull coverage pays for the loss."
+      },
+      {
+        type: 'paragraph',
+        content: "Salvage and wreck removal — This is where coverage varies. Some policies include wreck removal; others offer it as optional coverage. If your boat sinks in a navigable waterway, you may be legally required to remove it — and salvage operations can cost $10,000 or more."
+      },
+      {
+        type: 'paragraph',
+        content: "Check whether your policy includes wreck removal coverage and what limits apply. This is especially important for larger boats or boats used in deeper water."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Does Boat Insurance Cover the Trailer?"
+      },
+      {
+        type: 'paragraph',
+        content: "Usually yes, but verify your policy."
+      },
+      {
+        type: 'paragraph',
+        content: "Most boat insurance policies cover the trailer as part of the total insured package — you insure the boat, motor, and trailer together for one agreed or stated value."
+      },
+      {
+        type: 'paragraph',
+        content: "However, some policies have separate trailer coverage with its own limits. Others may not include trailer damage while it's being towed (your auto insurance may cover that portion)."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Key Questions to Ask"
+      },
+      {
+        type: 'list',
+        content: [
+          "Is my trailer covered under my boat policy?",
+          "Is it covered while being towed on the road?",
+          "What's the coverage limit for the trailer specifically?",
+          "Is theft of the trailer (without the boat) covered?"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If you have an expensive trailer or haul your boat frequently, confirm trailer coverage details before you need to file a claim."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Common Marina & Lender Insurance Requirements"
+      },
+      {
+        type: 'paragraph',
+        content: "Marinas and lenders don't just want proof of insurance — they often have specific requirements."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Marina Requirements Typically Include"
+      },
+      {
+        type: 'list',
+        content: [
+          "Minimum liability coverage ($300,000-$500,000 is common)",
+          "The marina named as \"additional insured\" on your policy",
+          "Proof of coverage before your boat enters the slip",
+          "Annual certificate of insurance renewal"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Failing to meet marina requirements can mean losing your slip or paying out of pocket if you damage the marina's property."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Lender Requirements Typically Include"
+      },
+      {
+        type: 'list',
+        content: [
+          "Comprehensive and collision coverage (not liability-only)",
+          "Coverage amount at least equal to loan balance",
+          "The lender named as \"loss payee\" on your policy",
+          "Proof of insurance before loan closing"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If your coverage lapses, lenders may purchase \"force-placed\" insurance on your behalf — which is expensive and provides minimal protection for you."
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Pro tip: When shopping for boat insurance, tell your agent which marina you use and who your lender is. They can make sure your policy meets all requirements from the start."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Do You Need a Marine Survey?"
+      },
+      {
+        type: 'paragraph',
+        content: "A marine survey is a professional inspection of your boat's condition — hull integrity, systems, safety equipment, and overall seaworthiness."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "When Insurers Typically Require a Survey"
+      },
+      {
+        type: 'list',
+        content: [
+          "Boats over 20-25 years old",
+          "High-value boats (thresholds vary by insurer)",
+          "Boats with no recent survey on file",
+          "Boats with previous significant claims"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "When a Survey Usually Isn't Required"
+      },
+      {
+        type: 'list',
+        content: [
+          "Newer boats (under 10-15 years)",
+          "Lower-value boats",
+          "Boats purchased new from a dealer"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Marine surveys typically cost $15-$25 per foot of boat length. A survey on a 25-foot boat might run $400-$600."
+      },
+      {
+        type: 'paragraph',
+        content: "If a survey is required, the insurer is protecting both of you — they want to confirm the boat is in good condition and properly valued. A survey can also uncover issues you didn't know about, potentially saving you from expensive problems later."
+      },
+      {
+        type: 'paragraph',
+        content: "Not all insurers require surveys for the same boats, so if you're being asked for a survey you'd prefer to skip, shopping around may find an alternative."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Seasonal Coverage and Lay-Up Periods"
+      },
+      {
+        type: 'paragraph',
+        content: "If you don't boat year-round, you may be able to reduce premiums during months when your boat is in storage."
+      },
+      {
+        type: 'paragraph',
+        content: "Lay-up periods are times when your boat is out of the water and not in use. During lay-up, your comprehensive coverage (fire, theft, vandalism) remains active, but you're not paying for liability or collision coverage you don't need."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Common Lay-Up Arrangements"
+      },
+      {
+        type: 'list',
+        content: [
+          "Boat in dry storage or shrink-wrapped for winter",
+          "Boat stored on a trailer at home",
+          "Boat in a dry-stack facility"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Changes During Lay-Up"
+      },
+      {
+        type: 'list',
+        content: [
+          "Liability coverage may be reduced or suspended",
+          "Collision coverage may be suspended",
+          "Comprehensive continues (your boat can still be stolen, vandalized, or damaged by fire)",
+          "Premiums are reduced proportionally"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If you boat seasonally — say, April through October — ask about lay-up credits. Some insurers automatically include them; others require you to request the adjustment."
+      },
+      {
+        type: 'callout',
+        variant: 'warning',
+        content: "Important: Make sure you know when your lay-up period ends and full coverage resumes. Using your boat before full coverage is active could leave you unprotected."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Electric Boats and E-Foils — Emerging Coverage"
+      },
+      {
+        type: 'paragraph',
+        content: "The boat market is changing. Electric boats, electric outboard motors, and e-foils (electric hydrofoils) are becoming more common on lakes and coastal waters."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Coverage Considerations for Electric Watercraft"
+      },
+      {
+        type: 'paragraph',
+        content: "Battery replacement costs — Electric boat batteries are expensive. Make sure your coverage includes battery damage and replacement as part of hull coverage, not as a wear-and-tear exclusion."
+      },
+      {
+        type: 'paragraph',
+        content: "Charging equipment — If your boat requires specialized charging infrastructure, ask whether damage to charging equipment is covered and what limits apply."
+      },
+      {
+        type: 'paragraph',
+        content: "E-foils and electric hydrofoils — These newer watercraft may not fit traditional boat insurance categories. Some insurers cover them under PWC policies; others require specialty coverage. Make sure your policy specifically lists your e-foil if you own one."
+      },
+      {
+        type: 'paragraph',
+        content: "Higher values — Electric boats often cost more than comparable gas-powered boats. Make sure your agreed value accurately reflects replacement cost."
+      },
+      {
+        type: 'paragraph',
+        content: "If you're buying an electric boat or e-foil, ask your agent specifically about coverage for electric watercraft. The market is evolving, and not all policies handle these newer vessels the same way."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Where You Boat Matters: Navigation Limits, Territory, and Local Requirements"
+      },
+      {
+        type: 'paragraph',
+        content: "Your boat insurance policy includes a \"navigation territory\" — the geographic area where coverage applies."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Typical Navigation Territories"
+      },
+      {
+        type: 'list',
+        content: [
+          "Inland lakes and rivers only",
+          "Coastal waters within a certain distance from shore (often 75-100 miles)",
+          "Specific named bodies of water",
+          "Exclusions for international waters or specific regions"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "If you boat on Weiss Lake one weekend and head to the Gulf Coast the next month, make sure your policy covers both types of waters. Inland-only policies won't cover you in coastal waters."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Local Considerations for Alabama and Georgia"
+      },
+      {
+        type: 'paragraph',
+        content: "Both states have extensive inland waterways — Lake Guntersville, Weiss Lake, Lake Allatoona, Lake Lanier, the Coosa River system, and dozens of smaller lakes. Coastal Alabama (Mobile Bay, Gulf Shores, Orange Beach) and coastal Georgia (Savannah, Tybee Island) add saltwater considerations."
+      },
+      {
+        type: 'paragraph',
+        content: "If you boat in hurricane-prone coastal areas, your policy may include named storm deductibles that inland-only boaters don't face."
+      },
+      {
+        type: 'paragraph',
+        content: "Navigation limit changes — If your boating habits change (new lake house, coastal vacation, tournament fishing in new waters), update your policy. Coverage gaps can appear when you boat outside your stated territory."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "Do You Need Boat Insurance for a Financed Boat?"
+      },
+      {
+        type: 'paragraph',
+        content: "Yes — your lender will require it."
+      },
+      {
+        type: 'paragraph',
+        content: "If you're financing your boat, the lender has a financial interest in protecting their collateral. They'll require comprehensive and collision coverage at minimum, with coverage limits at least equal to your loan balance."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Lenders Typically Require"
+      },
+      {
+        type: 'list',
+        content: [
+          "Agreed value or comprehensive coverage (not liability-only)",
+          "Lender named as loss payee on the policy",
+          "Proof of insurance before loan closing",
+          "Continuous coverage throughout the loan term"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "What Happens If You Let Coverage Lapse"
+      },
+      {
+        type: 'paragraph',
+        content: "Lenders monitor for coverage lapses. If your boat insurance lapses, the lender may:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Contact you demanding proof of coverage",
+          "Purchase force-placed insurance and add the cost to your loan",
+          "In extreme cases, consider you in default on the loan"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Force-placed insurance is expensive (often 2-3x normal premiums) and provides minimal protection for you — it protects the lender's interest only."
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Pro tip: Set up automatic payments for your boat insurance premium to avoid accidental lapses. If you change insurers mid-loan, make sure the new policy is active before the old one cancels."
+      }
+    ],
+    faqs: [
+      {
+        question: "Is boat insurance required by law in Alabama or Georgia?",
+        answer: "No. Neither Alabama nor Georgia legally requires boat insurance. However, marinas typically require liability coverage, and lenders require comprehensive coverage on financed boats. Even without legal requirements, insurance protects you from significant financial risk."
+      },
+      {
+        question: "Does boat insurance cover passengers?",
+        answer: "Yes. Medical payments coverage pays for injuries to your passengers regardless of fault. Your liability coverage also protects you if a passenger sues after being injured."
+      },
+      {
+        question: "Does boat insurance cover me driving someone else's boat?",
+        answer: "It depends on the policy. Some boat insurance policies cover you as an operator regardless of which boat you're driving. Others cover only the specific boat listed on the policy. Check your policy or ask your agent before borrowing someone's boat."
+      },
+      {
+        question: "Does boat insurance cover theft?",
+        answer: "Yes. Hull coverage includes theft of the boat, motor, and trailer (if included in your policy). Personal effects coverage handles theft of belongings on the boat up to your policy limits."
+      },
+      {
+        question: "Does boat insurance cover mechanical breakdown?",
+        answer: "Usually no. Standard boat insurance covers damage from accidents, storms, and covered perils — not mechanical failure or engine breakdown from wear and tear. Some insurers offer optional mechanical breakdown coverage as an add-on."
+      },
+      {
+        question: "Do I need boat insurance for a kayak or canoe?",
+        answer: "Probably not, unless it's an expensive kayak. Most homeowners policies provide some coverage for small non-motorized watercraft. But if you have a high-end kayak or canoe worth several thousand dollars, check your homeowners limits or consider a separate policy."
+      },
+      {
+        question: "Does boat insurance cover fishing tournaments?",
+        answer: "Standard recreational policies typically cover tournament fishing. However, if you're fishing professionally or for significant prize money, you may need to disclose this to your insurer. Commercial fishing requires commercial coverage."
+      },
+      {
+        question: "What's the difference between boat insurance and marine insurance?",
+        answer: "\"Boat insurance\" typically refers to coverage for recreational boats. \"Marine insurance\" is a broader term that includes commercial vessels, cargo, and shipping. For personal watercraft, you want boat or watercraft insurance."
+      },
+      {
+        question: "How do I get proof of insurance for my marina?",
+        answer: "Ask your insurance agent for a certificate of insurance (COI) naming the marina as additional insured. Most agents can generate this quickly — often same-day. You'll need to provide the marina's full legal name and address."
+      },
+      {
+        question: "Can I suspend boat insurance during winter?",
+        answer: "You can typically reduce coverage during lay-up periods when the boat isn't in use. Full suspension isn't recommended — you still want comprehensive coverage for theft, fire, and vandalism while stored. Ask about lay-up credits to reduce your premium during off-season months."
+      },
+      {
+        question: "Does boat insurance cover the boat if it's in a storage unit?",
+        answer: "Yes. Comprehensive coverage protects your boat whether it's in the water, on a trailer at home, or in a storage facility. Fire, theft, and vandalism coverage applies regardless of location."
+      },
+      {
+        question: "What happens if I hit a submerged object?",
+        answer: "Collision coverage typically covers damage from hitting submerged objects — logs, rocks, sandbars, or debris. This is one of the most common boat insurance claims."
+      }
+    ],
+    relatedArticles: ["auto-insurance-guide", "home-insurance-guide"],
+    internalLinks: [
+      { text: "Get Your Free Boat Insurance Quote", href: "/services/boat-insurance" },
+      { text: "Boat Insurance Coverage", href: "/services/boat-insurance" },
+      { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" }
+    ]
+  },
+  {
     slug: "motorcycle-insurance-guide",
     title: "Motorcycle Insurance Guide: Alabama & Georgia Rider Coverage",
     metaTitle: "Motorcycle Insurance Guide | Alabama & Georgia | Coffey Agencies",
