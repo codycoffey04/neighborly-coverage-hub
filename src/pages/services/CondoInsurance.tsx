@@ -897,6 +897,52 @@ const CondoInsurance = () => {
         </div>
       </section>
 
+      {/* County & ZIP Code Geographic Content */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <h3 className="text-xl md:text-2xl font-bold mb-6">Condo Markets Across Alabama and Georgia</h3>
+          
+          <div className="prose prose-lg max-w-none mb-8">
+            <p className="text-muted-foreground mb-4">
+              Condo insurance (HO-6) needs vary dramatically across our service territory based on each county's condo market maturity, construction types, and master policy landscapes. <strong>Jefferson County</strong> features Alabama's most robust condo market, concentrated in Birmingham's revitalized downtown and Southside districts. Highland Park, Lakeview, and downtown Birmingham offer loft conversions in historic early-20th-century brick warehouses alongside new mid-rise developments. These older conversions present unique challenges—master policies may carry high deductibles, and interior build-outs in loft spaces can be costly to insure given exposed brick, timber beams, and high ceilings requiring specialized replacement cost calculations.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Suburban Jefferson County (Hoover, Homewood) features townhome-style condos in mixed-use developments. A critical local consideration: tornado insurance coordination with HOA master policies. The April 2011 tornado outbreak taught Jefferson County condo associations hard lessons about wind/hail deductibles—many now carry 2-5% named-storm deductibles that could trigger special assessments, making loss assessment coverage essential for unit owners. Birmingham's condo market is mature enough that insurance agencies routinely review master policy declarations to identify coverage gaps.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              <strong>Tuscaloosa County's</strong> condo market revolves around the University of Alabama. High-rise student condos near campus (complexes like "The Chimes") cater to parents and investors buying units for student housing. These see heavy turnover and sometimes elevated claims—water damage from tenant mishaps, fire risk from cooking incidents, and liability concerns from student parties. Downtown Tuscaloosa and Riverwalk luxury condos serve retirees and professionals, many in converted historic buildings requiring careful valuation. Short-term "game-day condos" used only during football season need specific policy provisions for vacancy and occasional rental use.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              <strong>Fulton County</strong> (Atlanta) dominates Georgia's condo market. High-rise condos in Midtown, Buckhead, and Downtown Atlanta often sit in buildings with extensive amenities—doormen, pools, fitness centers—where HOA master policies cover exteriors and common areas but leave owners responsible for unit interiors, personal property, and loss assessment coverage. Historic building conversions in Old Fourth Ward and West End feature exposed brick and timber that drive up interior replacement costs. Suburban Fulton (Sandy Springs, Johns Creek) offers garden-style complexes where shared attic spaces create fire spread risk, sometimes resulting in higher premiums if the complex has prior claims history.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              <strong>Gwinnett County</strong> features predominantly townhome and garden-style condos rather than high-rises. These often serve as starter homes for young professionals working in Atlanta but seeking affordable alternatives to Fulton County. Master policies typically cover roofs and exteriors, but hailstorm damage (Gwinnett sees hail a couple times annually) can trigger HOA special assessments if deductibles are high. <strong>Cobb County</strong> mirrors Gwinnett's townhome-heavy market with added presence around Marietta's revitalized downtown.
+            </p>
+            <p className="text-muted-foreground">
+              <strong>Floyd County</strong> (Rome) has limited condo presence—a few downtown loft conversions and small complexes near Berry College. <strong>Cherokee County</strong> barely has a condo market—housing is 75.9% single-family with only 7.4% multifamily units (mostly apartments). The few lakeside condos near Weiss Lake function more as vacation properties than primary residences. <strong>Etowah</strong>, <strong>Tuscaloosa</strong> (outside the university area), <strong>DeKalb</strong>, and <strong>Bartow</strong> counties all fall somewhere in between—modest condo markets serving specific niches rather than being primary housing forms.
+            </p>
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <p className="text-muted-foreground mb-4">
+              ZIP code specifics reveal condo insurance nuances. Birmingham's <strong>35242</strong> (Hoover) includes several upscale townhome communities where master HOA policies typically carry adequate coverage, but owners should verify wind/hail deductible structures—Jefferson County's tornado history means prudent HOAs maintain 1% or lower wind deductibles, while under-insured associations might carry 5% deductibles that could devastate unit owners through special assessments after a severe storm. Interior replacement costs in these newer (1990s-2010s) townhomes typically run $80-$120 per square foot.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              <strong>35215</strong> (northeast Birmingham) features limited condo stock—mostly smaller apartment-style conversions where master policies may be minimal and owners need robust HO-6 coverage for interiors and contents. <strong>35173</strong> (Trussville) has growing townhome developments where HOAs are relatively new—reviewing master policy details is critical as some young associations haven't yet optimized coverage.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Georgia's <strong>30044</strong> and <strong>30043</strong> (Lawrenceville area) contain numerous townhome communities built during Gwinnett's 1990s-2000s growth boom. These typically feature master policies through large HOA management companies, though hail damage claims can strain association reserves. Loss assessment coverage limits of $50,000-$100,000 are recommended given potential roof replacement costs across 100+ unit complexes. Interior coverage needs usually run $60-$100 per square foot depending on finishes.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Atlanta's <strong>30349</strong> (College Park/airport area) has limited condo stock but what exists tends toward older buildings where master policy adequacy varies widely. Higher property crime in this ZIP code makes theft coverage and liability limits more important. <strong>30161</strong> (Rome) features a handful of downtown lofts and small complexes where the condo market is still developing—owners here may find themselves educating HOAs about proper insurance structures rather than inheriting well-established master policies. <strong>30120</strong> (Cartersville) has growing townhome communities along the I-75 corridor where newer construction and proactive HOA management typically mean well-structured master coverage.
+            </p>
+            <p className="text-muted-foreground">
+              <strong>35960</strong> (Centre in Cherokee County) has virtually no condo presence—the few units that exist are typically lakeside properties near Weiss Lake functioning as vacation condos. These present unique considerations: seasonal occupancy, HOAs that may be informal, and the need for comprehensive coverage given property sits empty much of the year. Across all locations, condo owners should request master policy declarations from their HOA before finalizing HO-6 coverage. Key elements to verify: building coverage limits (are they adequate for full replacement?), wind/hail deductible structure (1-2% is manageable, 5%+ is problematic), what's covered under "all-in" vs. "bare walls-in" master policies, and whether flood insurance is carried (relevant for properties near Chattahoochee River in Fulton/Gwinnett or Coosa River in Etowah/Floyd counties).
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Ways to Save */}
       <section className="py-16 bg-muted/30">
         <div className="container max-w-6xl mx-auto px-4">

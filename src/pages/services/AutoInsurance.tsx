@@ -469,6 +469,40 @@ const AutoInsurance = () => {
           </div>
         </section>
 
+        {/* County & ZIP Code Geographic Content */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <h3 className="text-xl md:text-2xl font-bold mb-6">Coverage Across Alabama & Georgia Counties and Communities</h3>
+            
+            <div className="prose prose-lg max-w-none mb-8">
+              <p className="text-muted-foreground mb-4">
+                Auto insurance needs vary dramatically across our service territory. <strong>Jefferson County</strong> drivers navigate some of Alabama's busiest roads—I-65 through Birmingham handles over 160,000 vehicles daily, with the notorious "Malfunction Junction" interchange recording accident frequencies that push premiums to the state's highest tier. <strong>Tuscaloosa County</strong> faces unique challenges during the academic year when University of Alabama students flood the streets, spiking accident rates on McFarland Boulevard and I-59/20, particularly during football season. In <strong>Cherokee County</strong>, rural highways like U.S. 411 and 278 present different risks—deer collisions and longer response times, though traffic congestion is minimal compared to metro areas.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Georgia's metro counties tell a similar story. <strong>Fulton County</strong> drivers in Atlanta contend with the I-75/85 Downtown Connector carrying 300,000+ vehicles per day, contributing to average premiums around $3,400-$3,500 annually—the state's highest. <strong>Gwinnett County</strong> sees heavy I-85 corridor traffic with 150,000+ daily vehicles, while <strong>Cobb County's</strong> I-75 segment brings its own congestion challenges. <strong>Floyd County</strong> in Rome offers more manageable traffic on U.S. 27 and Georgia 20, though the Coosa River bridges and downtown corridors see their share of fender-benders.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Uninsured motorist coverage is crucial across both states—Alabama's uninsured driver rate sits around 14%, while Georgia's reaches 18%. Whether you're commuting on <strong>Madison County's</strong> I-565 to Huntsville's aerospace employers or navigating <strong>DeKalb County's</strong> Perimeter highways, adequate UM/UIM protection matters. <strong>Etowah County</strong> drivers on I-59 and U.S. 431 face similar exposure, as do <strong>Bartow County</strong> residents on I-75's busy Cartersville corridor.
+              </p>
+            </div>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="text-muted-foreground mb-4">
+                Specific ZIP codes reveal even more granular risk profiles. Birmingham's <strong>35242</strong> (Greystone/Hoover area) sees moderate premiums despite Jefferson County's high average—newer infrastructure and lower crime keep rates below downtown Birmingham's 35203. <strong>35215</strong> (northeast Birmingham near Roebuck) faces higher theft rates that elevate comprehensive coverage costs. <strong>35173</strong> (Trussville) enjoys some of Jefferson County's lowest rates thanks to newer subdivisions, strong fire protection, and family-focused demographics.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Montgomery's <strong>36117</strong> (EastChase/Deer Creek area) combines busy Eastern Boulevard traffic with proximity to Maxwell Air Force Base, creating a mix of commuter and military family insurance needs. Alabama's statewide average hovers around $1,500 annually for minimum coverage, but Jefferson and Tuscaloosa counties often run 20-30% higher.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                In Georgia, <strong>30044</strong> and <strong>30043</strong> (Lawrenceville) reflect Gwinnett County's suburban growth—newer homes, dual-income households, and I-85 corridor commutes. These ZIP codes see premiums around $2,800-$3,200 for full coverage. Atlanta's <strong>30349</strong> (near College Park and the airport) carries higher theft risk and accident frequency, pushing premiums above county averages. <strong>30161</strong> (Rome) maintains more moderate rates around $2,400-$2,600, reflecting Floyd County's smaller-city dynamics. <strong>30120</strong> (Cartersville in Bartow County) balances I-75 corridor exposure with less urban crime, settling in the $2,500-$2,800 range.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>35960</strong> (Centre in Cherokee County) consistently delivers some of Alabama's most competitive rates—rural roads, low theft, and tight-knit community culture keep annual premiums often below $1,400 for full coverage when bundled with home insurance.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Ways to Save */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
