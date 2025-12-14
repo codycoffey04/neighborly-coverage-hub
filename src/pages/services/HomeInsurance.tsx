@@ -284,12 +284,12 @@ const HomeInsurance = () => {
     <>
       <Helmet>
         <title>Homeowners Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies</title>
-        <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.8★ Google rating. Serving AL & GA families." />
+        <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating. Serving AL & GA families." />
         <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Homeowners Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies" />
-        <meta property="og:description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.8★ Google rating. Serving AL & GA families." />
+        <meta property="og:description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating. Serving AL & GA families." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/home-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -300,7 +300,7 @@ const HomeInsurance = () => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Homeowners Insurance Quotes Alabama & Georgia | Compare Rates" />
-        <meta name="twitter:description" content="Homeowners insurance quotes in AL & GA. Compare home insurance rates, coverage, bundle discounts. 4.8★ rating." />
+        <meta name="twitter:description" content="Homeowners insurance quotes in AL & GA. Compare home insurance rates, coverage, bundle discounts. 4.7★ rating." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}

@@ -292,12 +292,12 @@ const AutoInsurance = () => {
     <>
       <Helmet>
         <title>Car Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies</title>
-        <meta name="description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
+        <meta name="description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. 4.7★ Google rating. Serving AL & GA from Centre and Rome offices." />
         <link rel="canonical" href="https://coffeyagencies.com/services/auto-insurance" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Car Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies" />
-        <meta property="og:description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
+        <meta property="og:description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. 4.7★ Google rating. Serving AL & GA from Centre and Rome offices." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/auto-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />

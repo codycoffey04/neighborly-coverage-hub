@@ -375,7 +375,7 @@ const CondoInsurance = () => {
         <title>Condo Insurance Quotes Alabama & Georgia | HO-6 Coverage | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Condo insurance (HO-6) quotes in Alabama & Georgia. Protect your unit, belongings & liability. Walls-in coverage, loss assessment. 4.8★ rating." 
+          content="Condo insurance (HO-6) quotes in Alabama & Georgia. Protect your unit, belongings & liability. Walls-in coverage, loss assessment. 4.7★ rating." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/condo-insurance" />
         
