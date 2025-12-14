@@ -16,6 +16,7 @@ import {
 import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import heroBackground from "@/assets/auto-insurance-hero.jpg";
 
 const coverageTypes = [
@@ -290,13 +291,13 @@ const AutoInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Car Insurance Alabama & Georgia - Compare Auto Insurance Quotes | Coffey Agencies</title>
-        <meta name="description" content="Car insurance in Alabama & Georgia. Compare auto insurance quotes, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
+        <title>Car Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies</title>
+        <meta name="description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
         <link rel="canonical" href="https://coffeyagencies.com/services/auto-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Car Insurance Alabama & Georgia - Compare Auto Insurance Quotes | Coffey Agencies" />
-        <meta property="og:description" content="Car insurance in Alabama & Georgia. Compare auto insurance quotes, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
+        <meta property="og:title" content="Car Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies" />
+        <meta property="og:description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. 4.8★ Google rating. Serving AL & GA from Centre and Rome offices." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/auto-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -306,8 +307,8 @@ const AutoInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Car Insurance Alabama & Georgia - Compare Auto Insurance Quotes" />
-        <meta name="twitter:description" content="Car insurance in Alabama & Georgia. Compare auto insurance quotes, save with bundling discounts. Serving AL & GA." />
+        <meta name="twitter:title" content="Car Insurance Quotes Alabama & Georgia | Compare Rates" />
+        <meta name="twitter:description" content="Car insurance quotes in Alabama & Georgia. Compare auto insurance rates, save with bundling discounts. Serving AL & GA." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -740,6 +741,30 @@ const AutoInsurance = () => {
             <p className="text-center text-muted-foreground">
               Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
             </p>
+          </div>
+        </section>
+
+        {/* Cross-Link to Learn Pages */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <SectionHeading className="mb-6 text-center">Learn More About Auto Insurance</SectionHeading>
+            <p className="text-center text-muted-foreground mb-6">
+              Want to understand coverage types, state requirements, and how to save? Explore our guides:
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 text-center">
+              <Link to="/learn/auto-insurance-guide" className="text-primary font-semibold hover:underline">
+                → Complete Auto Insurance Guide for AL & GA
+              </Link>
+              <Link to="/learn/alabama-insurance-requirements" className="text-primary font-semibold hover:underline">
+                → Alabama Insurance Requirements
+              </Link>
+              <Link to="/learn/georgia-insurance-requirements" className="text-primary font-semibold hover:underline">
+                → Georgia Insurance Requirements
+              </Link>
+              <Link to="/learn/bundling-home-and-auto" className="text-primary font-semibold hover:underline">
+                → How Bundling Saves You Money
+              </Link>
+            </div>
           </div>
         </section>
 

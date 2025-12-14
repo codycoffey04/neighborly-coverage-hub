@@ -1,5 +1,6 @@
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import heroBackground from "@/assets/motorcycle-insurance-hero.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -301,13 +302,13 @@ const MotorcycleInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Motorcycle Insurance Alabama & Georgia - Bike Insurance Quotes | Coffey Agencies</title>
-        <meta name="description" content="Motorcycle insurance in Alabama & Georgia. Bike insurance for cruisers, sport bikes, Harleys. 4.8★ Google rating. Compare quotes from Centre, AL and Rome, GA." />
+        <title>Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage | Coffey Agencies</title>
+        <meta name="description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. 4.8★ Google rating. Compare quotes from Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Motorcycle Insurance Alabama & Georgia - Bike Insurance Quotes | Coffey Agencies" />
-        <meta property="og:description" content="Bike insurance for cruisers, sport bikes, Harleys. Custom parts coverage up to $30,000. Compare quotes from Centre, AL and Rome, GA." />
+        <meta property="og:title" content="Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage | Coffey Agencies" />
+        <meta property="og:description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. Custom parts up to $30,000. Compare quotes from Centre, AL and Rome, GA." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/motorcycle-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -317,8 +318,8 @@ const MotorcycleInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Motorcycle Insurance Alabama & Georgia - Bike Insurance Quotes" />
-        <meta name="twitter:description" content="Bike insurance for cruisers, sport bikes, Harleys. Custom parts coverage up to $30,000." />
+        <meta name="twitter:title" content="Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage" />
+        <meta name="twitter:description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. Custom parts up to $30,000." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -882,7 +883,25 @@ const MotorcycleInsurance = () => {
           </div>
         </section>
 
-        {/* Internal Linking Section - NEW */}
+        {/* Cross-Link to Learn Page */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <SectionHeading className="mb-6 text-center">Learn More About Motorcycle Insurance</SectionHeading>
+            <p className="text-center text-muted-foreground mb-6">
+              Want to understand coverage types, gear protection, and riding legally in Alabama and Georgia? Read our comprehensive guide:
+            </p>
+            <div className="flex justify-center">
+              <Link to="/learn/motorcycle-insurance-guide" className="text-primary font-semibold hover:underline text-lg">
+                → Motorcycle Insurance in Alabama & Georgia: A Rider's Guide
+              </Link>
+            </div>
+            <p className="text-center text-muted-foreground mt-4 text-sm">
+              We cover everything from liability requirements to custom parts coverage, seasonal lay-up options, and how to save on your premium.
+            </p>
+          </div>
+        </section>
+
+        {/* Internal Linking Section */}
         <section className="py-12 px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <p className="text-lg text-muted-foreground">
