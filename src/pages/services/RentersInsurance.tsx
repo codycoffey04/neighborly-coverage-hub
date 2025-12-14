@@ -4,7 +4,7 @@ import heroBackground from "@/assets/renters-insurance-hero.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2, Bike } from "lucide-react";
+import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2, Bike, GraduationCap, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
@@ -36,7 +36,7 @@ const savingsTips = [
   {
     icon: Car,
     title: "Bundle with Auto Insurance",
-    description: "Save 15-25% on both policies by combining renters and auto insurance. Most customers qualify for rates as low as $8-19/month on renters coverage when bundled.",
+    description: "Save 15-25% on both policies by combining renters and auto insurance in AL or GA. Most customers qualify for rates as low as $8-19/month on apartment insurance when bundled.",
   },
   {
     icon: Gem,
@@ -51,24 +51,24 @@ const savingsTips = [
   {
     icon: Umbrella,
     title: "Liability Protection",
-    description: "Covers you if someone is injured in your rental or you accidentally damage someone else's property. Most policies include $100,000, with options to increase.",
+    description: "Covers you if someone is injured in your rental or you accidentally damage someone else's property. Most tenant insurance policies include $100,000, with options to increase.",
   },
   {
     icon: DollarSign,
     title: "Right-Size Your Deductible",
-    description: "Balance premium savings with affordable out-of-pocket costs. We'll model multiple deductible options ($500 or $1,000) to find your sweet spot.",
+    description: "Balance premium savings with affordable out-of-pocket costs. We'll model multiple deductible options ($500 or $1,000) to find your sweet spot for apartment insurance in AL and GA.",
   },
   {
     icon: Key,
     title: "Loss of Use Coverage",
-    description: "Pays for temporary housing, meals, and living expenses if your rental becomes uninhabitable due to a covered loss. Essential protection often overlooked.",
+    description: "Pays for temporary housing, meals, and living expenses if your rental becomes uninhabitable due to a covered loss. Essential protection often overlooked by AL and GA renters.",
   },
 ];
 
 const faqs = [
   {
     question: "How do I qualify for $8/month renters insurance?",
-    answer: "The $8/month rate is available when you bundle renters insurance with your auto policy. Most customers pay $15-30/month depending on coverage amount, location, and bundling. Rates vary based on your ZIP code, coverage limits ($15K-$50K personal property), deductible choice ($500 or $1,000), and multi-policy discounts (15-25% savings when bundled with auto insurance)."
+    answer: "The $8/month rate is available when you bundle renters insurance with your auto policy in AL or GA. Most customers pay $15-30/month depending on coverage amount, location, and bundling. Rates vary based on your ZIP code, coverage limits ($15K-$50K personal property), deductible choice ($500 or $1,000), and multi-policy discounts (15-25% savings when bundled with auto insurance)."
   },
   {
     question: "What does renters insurance cover in Alabama and Georgia?",
@@ -76,7 +76,7 @@ const faqs = [
   },
   {
     question: "Is renters insurance required in Alabama or Georgia?",
-    answer: "Neither Alabama nor Georgia requires renters insurance by law. However, many landlords require it as a lease condition. Even if not required, renters insurance is highly recommended—about 50% of renters lack coverage and risk significant financial loss. The average renters insurance claim in Alabama and Georgia ranges from $3,000-$5,000."
+    answer: "Neither Alabama nor Georgia requires renters insurance by law. However, many landlords require it as a lease condition. Even if not required, apartment insurance is highly recommended—about 50% of renters lack coverage and risk significant financial loss. The average renters insurance claim in AL and GA ranges from $3,000-$5,000."
   },
   {
     question: "Does renters insurance cover tornado damage in Alabama?",
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     question: "How much can I save by bundling renters and auto insurance?",
-    answer: "Bundling renters and auto insurance typically saves 15-25% on both policies. For example, if you pay $15/month for renters and $90/month for auto separately, bundling could save approximately $150-200 per year. Many customers qualify for rates as low as $8-19/month on renters coverage when bundled with auto insurance."
+    answer: "Bundling renters and auto insurance typically saves 15-25% on both policies in AL and GA. For example, if you pay $15/month for renters and $90/month for auto separately, bundling could save approximately $150-200 per year. Many customers qualify for rates as low as $8-19/month on apartment insurance when bundled with auto insurance."
   },
   {
     question: "What's the difference between actual cash value and replacement cost coverage?",
@@ -92,11 +92,11 @@ const faqs = [
   },
   {
     question: "Does my landlord's insurance cover my belongings?",
-    answer: "No. Your landlord's insurance only covers the building structure, not your personal belongings or liability. If there's a fire, theft, or storm damage, you'll have to replace everything out-of-pocket without renters insurance. Renters insurance is the only way to protect your furniture, electronics, clothing, and other personal property."
+    answer: "No. Your landlord's insurance only covers the building structure, not your personal belongings or liability. If there's a fire, theft, or storm damage, you'll have to replace everything out-of-pocket without tenant insurance. Renters insurance is the only way to protect your furniture, electronics, clothing, and other personal property in AL or GA."
   },
   {
     question: "How quickly can I get renters insurance coverage?",
-    answer: "Most renters insurance policies can begin immediately upon approval. Our digital process means you can receive a quote within minutes and have active coverage the same day. We serve Alabama and Georgia residents from our Centre, AL and Rome, GA offices with complete online service—no office visit required."
+    answer: "Most renters insurance policies can begin immediately upon approval. Our digital process means you can receive a quote within minutes and have active coverage the same day. If your landlord requires proof of insurance before move-in, we can provide a certificate of insurance (COI) the same day. Many apartment complexes in Birmingham, Atlanta, and other metro areas require this documentation before handing over keys."
   }
 ];
 
@@ -200,36 +200,15 @@ const serviceSchema = {
   "@type": "Service",
   "@id": "https://coffeyagencies.com/services/renters-insurance#service",
   "serviceType": "Renters Insurance",
+  "alternateName": ["Apartment Insurance", "Tenant Insurance"],
   "provider": {
     "@id": "https://coffeyagencies.com/#organization"
   },
   "areaServed": [
-    { "@id": "https://coffeyagencies.com/centre-al#place" },
-    { "@id": "https://coffeyagencies.com/rome-ga#place" },
-    { "@id": "https://coffeyagencies.com/birmingham-al#place" },
-    { "@id": "https://coffeyagencies.com/montgomery-al#place" },
-    { "@id": "https://coffeyagencies.com/mobile-al#place" },
-    { "@id": "https://coffeyagencies.com/dothan-al#place" },
-    { "@id": "https://coffeyagencies.com/auburn-al#place" },
-    { "@id": "https://coffeyagencies.com/enterprise-al#place" },
-    { "@id": "https://coffeyagencies.com/foley-al#place" },
-    { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
-    { "@id": "https://coffeyagencies.com/troy-al#place" },
-    { "@id": "https://coffeyagencies.com/trussville-al#place" },
-    { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
-    { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
-    { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
-    { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
-    { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
-    { "@id": "https://coffeyagencies.com/duluth-ga#place" },
-    { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
-    { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
-    { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
-    { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
-    { "@id": "https://coffeyagencies.com/summerville-ga#place" },
-    { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
+    { "@type": "State", "name": "Alabama" },
+    { "@type": "State", "name": "Georgia" }
   ],
-  "description": "Affordable renters insurance starting at $8/month when bundled, protecting personal property, liability, and providing temporary housing coverage.",
+  "description": "Affordable renters insurance starting at $8/month when bundled, protecting personal property, liability, and providing temporary housing coverage for AL and GA tenants.",
   "serviceOutput": "Insurance Policy",
   "termsOfService": "https://coffeyagencies.com/terms",
   "offers": {
@@ -312,13 +291,13 @@ const RentersInsurance = () => {
         <title>Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Renters insurance from $8/month when bundled with auto. Protect your belongings, liability, and temporary housing. 4.8★ rated service across Alabama and Georgia." 
+          content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.8★ Google rating. Get a quote today." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/renters-insurance" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies" />
-        <meta property="og:description" content="Renters insurance from $8/month when bundled with auto. Protect your belongings, liability, and temporary housing. 4.8★ rated service across Alabama and Georgia." />
+        <meta property="og:description" content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.8★ Google rating." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/renters-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -329,7 +308,7 @@ const RentersInsurance = () => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Renters Insurance from $8/Month | Alabama & Georgia" />
-        <meta name="twitter:description" content="Protect your belongings, liability, and temporary housing with affordable renters insurance in AL and GA." />
+        <meta name="twitter:description" content="Apartment & tenant insurance protecting your belongings, liability, and temporary housing in AL and GA." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -372,13 +351,13 @@ const RentersInsurance = () => {
                 Renters Insurance in Alabama & Georgia
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
-                Protect your belongings starting at just $8/month when bundled
+                Whether you call it renters insurance or apartment insurance, we protect your belongings starting at just $8/month when bundled. Coverage for AL and GA tenants.
               </p>
-              
+
               {/* CTA Buttons - styled for dark background */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <Link to="/#quote-form">Get Quote</Link>
+                  <Link to="/#quote-form">Get Apartment Insurance Quote</Link>
                 </Button>
                 <Button size="lg" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <TrackedPhone
@@ -434,18 +413,18 @@ const RentersInsurance = () => {
       <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/30">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto space-y-6 text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Affordable Protection for Alabama & Georgia Renters</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Affordable Apartment Insurance for Alabama (AL) & Georgia (GA) Renters</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Nearly 50% of renters across Alabama and Georgia lack insurance coverage, leaving themselves vulnerable to devastating financial loss. The reality is stark: a single apartment fire, burglary, or storm can destroy everything you own, with average claims ranging from $3,000 to $5,000. Without renters insurance, you're responsible for replacing every item out of pocket—furniture, electronics, clothing, and irreplaceable personal items.
+              Nearly 50% of renters across Alabama and Georgia lack insurance coverage, leaving themselves vulnerable to devastating financial loss. Also known as tenant insurance, this protection is essential—a single apartment fire, burglary, or storm can destroy everything you own, with average claims ranging from $3,000 to $5,000. Without renters insurance, you're responsible for replacing every item out-of-pocket—furniture, electronics, clothing, and irreplaceable personal items.
             </p>
             <div className="bg-muted/50 border-l-4 border-accent p-6 rounded-lg">
               <p className="font-semibold text-lg mb-2">Starting at $8/month with auto bundle | Most pay $15-30/month</p>
               <p className="text-sm text-muted-foreground">
-                Rates vary based on coverage amount, location, and bundling. Alabama average: $27-30/month | Georgia average: $33-35/month
+                Rates vary based on coverage amount, location, and bundling. AL average: $20-25/month | GA average: $16-18/month
               </p>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline font-medium">auto insurance</Link> and save 15-25% on both policies—many customers qualify for rates as low as $8-19/month.
+              Bundle with <Link to="/services/auto-insurance" className="text-primary hover:underline font-medium">auto insurance</Link> and save 15-25% on both policies—many customers in AL and GA qualify for rates as low as $8-19/month on their apartment insurance.
             </p>
           </div>
         </div>
@@ -455,9 +434,9 @@ const RentersInsurance = () => {
         <section className="section-spacing">
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-              <h2>What Renters Insurance Covers</h2>
+              <h2>What Does Renters Insurance Cover?</h2>
               <p className="text-lg text-muted-foreground text-balance">
-                Renters insurance provides comprehensive protection far beyond what most people realize. Your policy covers personal property loss from fire, theft, vandalism, wind damage, water damage from burst pipes, and more.
+                Renters insurance—also called apartment insurance or tenant insurance—provides comprehensive protection far beyond what most people realize. Your policy covers personal property loss from fire, theft, vandalism, wind damage, water damage from burst pipes, and more.
               </p>
             </div>
 
@@ -485,7 +464,7 @@ const RentersInsurance = () => {
             <div className="text-center mt-8">
               <Button size="lg" asChild>
                 <a href="#quote-form">
-                  Get Quote <ArrowRight className="ml-2 h-5 w-5" />
+                  Get Tenant Insurance Quote <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <p className="text-sm text-muted-foreground mt-3">
@@ -502,22 +481,22 @@ const RentersInsurance = () => {
               <div className="text-center space-y-4">
                 <h2>What Regional Risks Affect Alabama & Georgia Renters?</h2>
                 <p className="text-lg text-muted-foreground text-balance">
-                  Living in Alabama or Georgia means facing unique weather and crime risks that make renters insurance essential.
+                  Living in AL or GA means facing unique weather and crime risks that make apartment insurance essential for tenants.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6 space-y-4">
-                    <h3 className="text-xl font-semibold">Alabama Risks</h3>
+                    <h3 className="text-xl font-semibold">Alabama (AL) Risks</h3>
                     <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-accent mt-1">•</span>
-                        <span><strong>Tornado Activity:</strong> Alabama ranks in the top 10 states for tornado frequency and sits in the heart of "Dixie Alley" with peak season from March through May.</span>
+                        <span><strong>Tornado Activity:</strong> Alabama ranks in the top 10 states for tornado frequency and sits in the heart of "Dixie Alley" with peak season from March through May. Renters in Jefferson County, Madison County, and Tuscaloosa County face elevated tornado risk.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent mt-1">•</span>
-                        <span><strong>High Burglary Rate:</strong> 7th highest in the nation at approximately 532 burglaries per 100,000 people, with property theft accounting for roughly 40% of all renters insurance claims statewide.</span>
+                        <span><strong>High Burglary Rate:</strong> 7th highest in the nation at approximately 532 burglaries per 100,000 people, with property theft accounting for roughly 40% of all renters insurance claims statewide. Urban areas like Birmingham (ZIP 35215, 35242) and Montgomery (ZIP 36117) see elevated theft rates.</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -525,15 +504,15 @@ const RentersInsurance = () => {
 
                 <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <CardContent className="pt-6 space-y-4">
-                    <h3 className="text-xl font-semibold">Georgia Risks</h3>
+                    <h3 className="text-xl font-semibold">Georgia (GA) Risks</h3>
                     <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-accent mt-1">•</span>
-                        <span><strong>Severe Weather:</strong> Hurricanes, tropical storms, and tornado outbreaks bring destructive winds and flooding. Coastal areas like Savannah and inland cities experience hurricane impacts regularly.</span>
+                        <span><strong>Severe Weather:</strong> Hurricanes, tropical storms, and tornado outbreaks bring destructive winds and flooding. Coastal areas and inland cities experience hurricane impacts regularly. Fulton County, DeKalb County, and Gwinnett County residents should consider comprehensive tenant insurance.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent mt-1">•</span>
-                        <span><strong>Property Crime:</strong> Urban centers including Atlanta, Columbus, and Augusta see elevated property crime rates, with theft and vandalism among the most common insurance claims.</span>
+                        <span><strong>Property Crime:</strong> Urban centers including Atlanta (ZIP 30303, 30332), Lawrenceville (ZIP 30043), and Augusta see elevated property crime rates, with theft and vandalism among the most common apartment insurance claims.</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -543,9 +522,135 @@ const RentersInsurance = () => {
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg">
                 <p className="font-semibold mb-2">Important Coverage Note</p>
                 <p className="text-muted-foreground">
-                  Standard renters insurance covers wind damage from tornadoes and hurricanes, protecting your belongings and providing temporary housing if storm damage makes your rental uninhabitable. However, <strong>flood damage is not covered</strong> under standard policies. Renters on ground floors near rivers, in coastal areas like Mobile or Savannah, or in flood-prone zones should consider separate flood insurance through the National Flood Insurance Program.
+                  Standard renters insurance covers wind damage from tornadoes and hurricanes, protecting your belongings and providing temporary housing if storm damage makes your rental uninhabitable. However, <strong>flood damage is not covered</strong> under standard policies. Renters on ground floors near rivers, in coastal areas like Mobile (ZIP 36695) or Savannah, or in flood-prone zones should consider separate flood insurance through the National Flood Insurance Program.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* College Town Section */}
+        <section className="section-spacing">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="text-center space-y-4">
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 rounded-full bg-primary shadow-md flex items-center justify-center">
+                    <GraduationCap className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+                <h2>Renters Insurance for College Students in Alabama & Georgia</h2>
+                <p className="text-lg text-muted-foreground text-balance">
+                  College students living off-campus need apartment insurance just like any other renter. Whether you're attending Auburn University, University of Alabama, University of Georgia, Georgia Tech, Alabama State, or Troy University, tenant insurance protects your laptop, furniture, clothing, and other belongings from theft, fire, and covered perils.
+                </p>
+              </div>
+
+              <div className="bg-muted/50 border-l-4 border-primary p-6 rounded-lg">
+                <p className="font-semibold mb-2">Parents' Policy Limitation</p>
+                <p className="text-muted-foreground">
+                  Many students assume their parents' homeowners policy covers them—and it might, partially. But coverage is often limited (typically 10% of the parents' personal property limit) and may not cover liability if someone is injured in your apartment. A standalone renters insurance policy costs as little as $8-15/month and provides dedicated protection for students in AL and GA.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <Card className="border border-gray-200 shadow-sm">
+                  <CardContent className="pt-4 text-center">
+                    <p className="font-semibold">Laptop & Electronics</p>
+                    <p className="text-sm text-muted-foreground">Protection for your devices</p>
+                  </CardContent>
+                </Card>
+                <Card className="border border-gray-200 shadow-sm">
+                  <CardContent className="pt-4 text-center">
+                    <p className="font-semibold">Theft Coverage</p>
+                    <p className="text-sm text-muted-foreground">Including from vehicles</p>
+                  </CardContent>
+                </Card>
+                <Card className="border border-gray-200 shadow-sm">
+                  <CardContent className="pt-4 text-center">
+                    <p className="font-semibold">Guest Liability</p>
+                    <p className="text-sm text-muted-foreground">If visitors are injured</p>
+                  </CardContent>
+                </Card>
+                <Card className="border border-gray-200 shadow-sm">
+                  <CardContent className="pt-4 text-center">
+                    <p className="font-semibold">Temporary Housing</p>
+                    <p className="text-sm text-muted-foreground">If apartment is uninhabitable</p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <p className="text-center text-muted-foreground">
+                <strong>Parents:</strong> Adding your student to a renters policy—or helping them get their own apartment insurance—is one of the most affordable ways to protect their belongings while away at school in Auburn (ZIP 36849), Tuscaloosa (ZIP 35401), Athens (ZIP 30602), or Atlanta (ZIP 30332 near Georgia Tech).
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Cost Comparison Section */}
+        <section className="section-spacing bg-muted/30">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="text-center space-y-4">
+                <h2>How Much Does Renters Insurance Cost in Alabama vs Georgia?</h2>
+                <p className="text-lg text-muted-foreground text-balance">
+                  Apartment insurance is one of the most affordable coverage types available for AL and GA tenants.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="border-2 border-primary/20">
+                  <CardContent className="pt-6 text-center">
+                    <h3 className="text-xl font-semibold mb-2">Georgia (GA)</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">$16-18/month</p>
+                    <p className="text-sm text-muted-foreground">$192-216/year average</p>
+                  </CardContent>
+                </Card>
+                <Card className="border-2 border-primary/20">
+                  <CardContent className="pt-6 text-center">
+                    <h3 className="text-xl font-semibold mb-2">Alabama (AL)</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">$20-25/month</p>
+                    <p className="text-sm text-muted-foreground">$240-300/year (higher weather claims)</p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <p className="text-center text-muted-foreground">
+                However, many renters in both states find policies starting as low as <strong>$8-12/month</strong> depending on coverage limits, deductible, and location.
+              </p>
+
+              <div className="bg-background border rounded-lg p-6">
+                <h3 className="text-lg font-semibold mb-4">Factors Affecting Your Tenant Insurance Rate</h3>
+                <ul className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span><strong>Location</strong> — Urban apartments in Atlanta cost more than rural AL rentals</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span><strong>Coverage amount</strong> — Higher personal property limits = higher premium</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span><strong>Deductible</strong> — Choosing $500 vs $1,000 deductible affects monthly cost</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span><strong>Claims history</strong> — Previous claims may increase rates</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span><strong>Bundling</strong> — Adding renters to your auto policy saves 10-15%</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span><strong>Building type</strong> — Newer apartments may qualify for lower rates</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-center text-muted-foreground italic">
+                Despite Alabama's slightly higher average due to tornado and storm claims, renters insurance remains extremely affordable—often less than a streaming subscription.
+              </p>
             </div>
           </div>
         </section>
@@ -557,7 +662,7 @@ const RentersInsurance = () => {
               <div className="text-center space-y-4">
                 <h2>Bundle and Save Up to 25%</h2>
                 <p className="text-lg text-muted-foreground text-balance">
-                  The single most effective way to reduce your renters insurance cost is bundling it with your auto insurance policy. When you combine both policies with the same carrier, you typically save 15-25% on both premiums—essentially getting one of the policies at a steep discount.
+                  The single most effective way to reduce your apartment insurance cost is bundling it with your auto insurance policy. When you combine both policies with the same carrier in AL or GA, you typically save 15-25% on both premiums—essentially getting one of the policies at a steep discount.
                 </p>
               </div>
 
@@ -569,10 +674,10 @@ const RentersInsurance = () => {
                     <div className="space-y-3">
                       <h3 className="text-xl font-semibold">Real Customer: Birmingham Renter Saves with Bundle</h3>
                       <p className="text-muted-foreground">
-                        Marcus, a 28-year-old software developer in Birmingham, was paying $90/month for auto insurance and had no renters coverage. After a coworker's apartment was burglarized, Marcus realized he needed protection for his electronics and furniture worth approximately $25,000.
+                        Marcus, a 28-year-old software developer in Birmingham (Jefferson County), was paying $90/month for auto insurance and had no renters coverage. After a coworker's apartment was burglarized, Marcus realized he needed protection for his electronics and furniture worth approximately $25,000.
                       </p>
                       <p className="text-muted-foreground">
-                        When he contacted us, we bundled his auto and renters policies with the same carrier. The result? His auto premium dropped to $81/month (10% discount), and he got $30,000 in renters coverage for just $8/month—a total savings of $12 annually while gaining complete protection.
+                        When he contacted us, we bundled his auto and apartment insurance policies with the same carrier. The result? His auto premium dropped to $81/month (10% discount), and he got $30,000 in renters coverage for just $8/month—a total savings of $12 annually while gaining complete protection.
                       </p>
                       <blockquote className="border-l-4 border-accent pl-4 italic text-foreground">
                         "I was shocked that bundling actually saved me money while adding renters insurance. For $8 a month, there's no reason not to have it. Best decision I've made."
@@ -615,10 +720,10 @@ const RentersInsurance = () => {
                     <div className="space-y-3">
                       <h3 className="text-xl font-semibold">Real Customer: Tornado Coverage Saves Tuscaloosa Family</h3>
                       <p className="text-muted-foreground">
-                        Sarah and Mike rented a house in Tuscaloosa with their young daughter. After hearing about a nearby tornado touchdown, they decided to get renters insurance for $19/month with $40,000 in coverage. Six months later, an EF-2 tornado struck their neighborhood, destroying their rental home and everything inside.
+                        Sarah and Mike rented a house in Tuscaloosa (Tuscaloosa County, AL) with their young daughter. After hearing about a nearby tornado touchdown, they decided to get tenant insurance for $19/month with $40,000 in coverage. Six months later, an EF-2 tornado struck their neighborhood, destroying their rental home and everything inside.
                       </p>
                       <p className="text-muted-foreground">
-                        Their renters insurance covered $38,000 in damaged belongings—furniture, electronics, appliances, clothing, and their daughter's toys. The policy also paid for three months in a hotel and covered meal expenses while they found a new rental. Without insurance, they would have lost everything.
+                        Their renters insurance covered $38,000 in damaged belongings—furniture, electronics, appliances, clothing, and their daughter's toys. The policy also paid for three months in a hotel and covered meal expenses while they found a new rental. Without apartment insurance, they would have lost everything.
                       </p>
                       <blockquote className="border-l-4 border-accent pl-4 italic text-foreground">
                         "We almost didn't get renters insurance because we thought tornadoes wouldn't happen to us. That $19 a month saved us from financial ruin. We'll never rent without coverage again."
@@ -638,7 +743,7 @@ const RentersInsurance = () => {
               <div className="text-center space-y-4">
                 <h2>Renters Insurance Questions Answered</h2>
                 <p className="text-lg text-muted-foreground text-balance">
-                  Get answers to the most common questions about renters insurance in Alabama and Georgia.
+                  Get answers to the most common questions about apartment insurance in Alabama and Georgia.
                 </p>
               </div>
 
@@ -655,6 +760,30 @@ const RentersInsurance = () => {
                 ))}
               </Accordion>
             </div>
+          </div>
+        </section>
+
+        {/* Cross-Link to Learn Page */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <Card className="border-2 border-primary/20 bg-primary/5">
+              <CardContent className="pt-6 flex flex-col md:flex-row items-center gap-6">
+                <div className="w-16 h-16 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="h-8 w-8 text-white" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl font-semibold mb-2">Learn More About Renters Insurance</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Want to understand exactly what renters insurance covers and why it's worth the investment? Explore answers to common questions like "Does renters insurance cover theft?" and "What happens if my apartment floods?" in our detailed coverage breakdown.
+                  </p>
+                  <Button asChild>
+                    <Link to="/learn/renters-insurance-guide">
+                      Read Our Renters Insurance Guide <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -758,8 +887,17 @@ const RentersInsurance = () => {
         {/* Areas We Serve Section */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Renters Insurance Across Alabama & Georgia</h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                We provide apartment insurance across Alabama — including Jefferson County (Birmingham), Montgomery County, Mobile County, Madison County (Huntsville), Cherokee County (Centre), Lee County (Auburn), and Tuscaloosa County — as well as Georgia communities in Fulton County (Atlanta), Gwinnett County (Lawrenceville), DeKalb County, Cobb County, Floyd County (Rome), and Clarke County (Athens).
+              </p>
+            </div>
+
+            <div className="bg-muted/50 border-l-4 border-accent p-4 rounded-lg mb-8 text-center">
+              <p className="text-sm text-muted-foreground">
+                <strong>ZIP Codes We Serve:</strong> Our tenant insurance coverage extends to ZIP codes including 35294 (UAB area), 36849 (Auburn), 35401 (Tuscaloosa), 36104 (Montgomery), 35960 (Centre), 30602 (Athens), 30332 (Georgia Tech), 30303 (Downtown Atlanta), 30043 (Lawrenceville), 30161 (Rome), and surrounding communities throughout AL and GA.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -767,7 +905,7 @@ const RentersInsurance = () => {
               <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Alabama
+                  Alabama (AL)
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {alabamaCities.map((city, index) => (
@@ -786,7 +924,7 @@ const RentersInsurance = () => {
               <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Georgia
+                  Georgia (GA)
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {georgiaCities.map((city, index) => (
@@ -808,6 +946,17 @@ const RentersInsurance = () => {
           </div>
         </section>
 
+        {/* Internal Linking Section */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl text-center">
+            <p className="text-lg text-muted-foreground">
+              Protect more than your apartment. Explore our{" "}
+              <Link to="/services/auto-insurance" className="text-primary font-semibold hover:underline">auto insurance</Link> for your vehicle,{" "}
+              <Link to="/services/life-insurance" className="text-primary font-semibold hover:underline">life insurance</Link> for your family, or ask about bundling multiple policies to save 10-15% on your premiums across AL and GA.
+            </p>
+          </div>
+        </section>
+
         {/* Final CTA Section */}
         <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light" id="quote-form">
           <div className="container mx-auto max-w-4xl text-center">
@@ -815,7 +964,7 @@ const RentersInsurance = () => {
               Ready to protect your belongings for less than your monthly streaming subscriptions?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Get a quote that fits your budget starting at $8/month
+              Get an apartment insurance quote that fits your budget starting at $8/month
             </p>
             
             {/* Primary CTA - Green Button */}
@@ -824,7 +973,7 @@ const RentersInsurance = () => {
               className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               asChild
             >
-              <Link to="/#quote-form">Get Quote</Link>
+              <Link to="/#quote-form">Get Tenant Insurance Quote</Link>
             </Button>
 
             {/* Phone Links - Secondary CTAs */}
