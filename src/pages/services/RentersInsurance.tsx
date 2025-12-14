@@ -291,13 +291,13 @@ const RentersInsurance = () => {
         <title>Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.8★ Google rating. Get a quote today." 
+          content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.7★ Google rating. Get a quote today." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/renters-insurance" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies" />
-        <meta property="og:description" content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.8★ Google rating." />
+        <meta property="og:description" content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.7★ Google rating." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/renters-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -401,7 +401,7 @@ const RentersInsurance = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Star className="h-5 w-5 text-yellow-400 fill-yellow-400 drop-shadow-md" />
-                  <span className="drop-shadow-md">4.8★ rated service</span>
+                  <span className="drop-shadow-md">4.7★ rated service</span>
                 </div>
               </div>
             </div>

@@ -303,7 +303,7 @@ const MotorcycleInsurance = () => {
     <>
       <Helmet>
         <title>Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage | Coffey Agencies</title>
-        <meta name="description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. 4.8★ Google rating. Compare quotes from Centre, AL and Rome, GA." />
+        <meta name="description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. 4.7★ Google rating. Compare quotes from Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
         
         {/* OpenGraph Meta Tags */}
