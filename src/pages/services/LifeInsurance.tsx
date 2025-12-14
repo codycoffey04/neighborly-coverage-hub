@@ -37,36 +37,15 @@ const LifeInsurance = () => {
     "@type": "Service",
     "@id": "https://coffeyagencies.com/services/life-insurance#service",
     "serviceType": "Life Insurance",
+    "alternateName": ["Burial Insurance", "Final Expense Insurance", "Term Life Insurance", "Whole Life Insurance"],
     "provider": {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
-      { "@id": "https://coffeyagencies.com/centre-al#place" },
-      { "@id": "https://coffeyagencies.com/rome-ga#place" },
-      { "@id": "https://coffeyagencies.com/birmingham-al#place" },
-      { "@id": "https://coffeyagencies.com/montgomery-al#place" },
-      { "@id": "https://coffeyagencies.com/mobile-al#place" },
-      { "@id": "https://coffeyagencies.com/dothan-al#place" },
-      { "@id": "https://coffeyagencies.com/auburn-al#place" },
-      { "@id": "https://coffeyagencies.com/enterprise-al#place" },
-      { "@id": "https://coffeyagencies.com/foley-al#place" },
-      { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
-      { "@id": "https://coffeyagencies.com/troy-al#place" },
-      { "@id": "https://coffeyagencies.com/trussville-al#place" },
-      { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
-      { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
-      { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
-      { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
-      { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
-      { "@id": "https://coffeyagencies.com/duluth-ga#place" },
-      { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
-      { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
-      { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
-      { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
-      { "@id": "https://coffeyagencies.com/summerville-ga#place" },
-      { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
+      { "@type": "State", "name": "Alabama" },
+      { "@type": "State", "name": "Georgia" }
     ],
-    "description": "Term and whole life insurance protection for Alabama and Georgia families, with coverage from $25/month for $500K term life insurance.",
+    "description": "Term life, whole life, burial insurance, and final expense coverage for Alabama and Georgia families. No-exam options available. Coverage from $25/month for $500K term life insurance.",
     "serviceOutput": "Insurance Policy",
     "termsOfService": "https://coffeyagencies.com/terms",
     "offers": {
@@ -245,13 +224,13 @@ const georgiaCities = [
   return (
     <>
       <Helmet>
-        <title>Life Insurance in Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="$500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage and 4.8★ rated service." />
+        <title>Life Insurance Quotes Alabama & Georgia | Term, Whole Life & More | Coffey Agencies</title>
+        <meta name="description" content="Life insurance in Alabama & Georgia. Term life, whole life, final expense & burial insurance. No-exam options available. 4.8★ Google rating. Get a quote today." />
         <link rel="canonical" href="https://coffeyagencies.com/services/life-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Life Insurance in Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="$500K term life insurance from $25/month for healthy adults in their 30s. Protect your family's financial security with affordable coverage." />
+        <meta property="og:title" content="Life Insurance Quotes Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Term life, whole life, final expense & burial insurance in AL & GA. No-exam options available. Protect your family's financial security." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/life-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -262,7 +241,7 @@ const georgiaCities = [
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Life Insurance from $25/Month | Alabama & Georgia" />
-        <meta name="twitter:description" content="$500K term life insurance from $25/month. Protect your family's financial security with affordable coverage." />
+        <meta name="twitter:description" content="Term life, whole life, final expense & burial insurance in AL & GA. No-exam options available." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -305,7 +284,7 @@ const georgiaCities = [
                 Life Insurance in Alabama & Georgia
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
-                Peace of mind starts with the right protection. Term life, whole life, or a blend—we help you choose coverage that fits your family and budget.
+                From term life to final expense and burial insurance, we help Alabama (AL) and Georgia (GA) families find coverage that fits their needs and budget. No-exam options available for faster approval.
               </p>
               
               {/* CTA Buttons - styled for dark background */}
@@ -370,11 +349,15 @@ const georgiaCities = [
             
             <div className="prose prose-slate max-w-none mb-8">
               <p className="text-lg text-muted-foreground">
-                Life insurance provides the ultimate protection for your family's financial future. If something happens to you, life insurance ensures your loved ones can maintain their lifestyle, pay off debts including mortgages, cover final expenses, and fund children's education. Yet approximately <strong>48% of American families lack adequate life insurance coverage</strong>, leaving themselves vulnerable to financial hardship during already difficult times.
+                Families across Alabama and Georgia rely on life insurance to protect what matters most. Whether you're a young professional in Atlanta building your career, a family in Birmingham's suburbs with a new mortgage, or a retiree on the Gulf Coast planning your legacy, life insurance provides financial security for those you love. Yet approximately <strong>48% of American families lack adequate life insurance coverage</strong>, leaving themselves vulnerable to financial hardship during already difficult times.
               </p>
               
               <p className="text-lg text-muted-foreground">
-                The reality is stark but important: the death of a primary income earner creates immediate financial strain. Without life insurance, families face difficult decisions—selling the home, withdrawing children from college, taking on debt, or drastically reducing their standard of living. Life insurance eliminates these concerns by replacing your income and providing a financial cushion during the transition period.
+                The reality is stark but important: the death of a primary income earner creates immediate financial strain. Without life insurance, families in AL and GA face difficult decisions—selling the home, withdrawing children from college, taking on debt, or drastically reducing their standard of living. Life insurance eliminates these concerns by replacing your income and providing a financial cushion during the transition period.
+              </p>
+
+              <p className="text-lg text-muted-foreground">
+                As a local agency with offices in Centre, AL and Rome, GA, we take time to understand your family's situation—not just run you through an online quote engine. Life insurance is deeply personal. The coverage that works for a 28-year-old starting a family in Gwinnett County is different from what a 62-year-old in Mobile needs. We help you find the right fit.
               </p>
             </div>
 
@@ -570,6 +553,225 @@ const georgiaCities = [
                   </p>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Life Insurance for Seniors Section */}
+        <section className="py-12 bg-muted/30">
+          <div className="container max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Life Insurance for Seniors in Alabama & Georgia</h2>
+            
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-lg text-muted-foreground">
+                If you're over 50, 60, or even 70, life insurance is still available and often more affordable than you'd expect. Many seniors in AL and GA choose burial insurance or final expense coverage to ensure their families aren't burdened with end-of-life costs.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Heart className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Final Expense / Burial Insurance</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Smaller policies ($5,000-25,000) designed specifically to cover funeral costs, outstanding medical bills, and other end-of-life expenses. Average funeral costs in Alabama and Georgia range from <strong>$7,000-$12,000</strong>, making a $10,000-$15,000 policy a practical choice.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Premiums:</strong> $30-50/mo at age 50, $50-80/mo at age 60, $80-130/mo at age 70
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Shield className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Guaranteed Issue Life Insurance</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    No health questions, no medical exam, guaranteed approval regardless of health conditions. Coverage amounts are typically limited ($5,000-25,000), and there may be a 2-year waiting period for full benefits.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Ideal for:</strong> Those with serious health issues who've been declined elsewhere
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <FileCheck className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Simplified Issue Life Insurance</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    A few health questions but no medical exam required. Faster approval than fully underwritten policies with higher coverage limits than guaranteed issue options.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Approval time:</strong> Often within 24-48 hours
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <p className="text-center text-muted-foreground mt-8">
+              Whether you're in Birmingham planning for retirement or on the Gulf Coast enjoying your golden years, we help seniors find appropriate burial insurance and final expense coverage without overpaying.
+            </p>
+          </div>
+        </section>
+
+        {/* Life Insurance for Young Families Section */}
+        <section className="py-12">
+          <div className="container max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Life Insurance for Young Families</h2>
+            
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-lg text-muted-foreground">
+                New parents and young families in Georgia's growing suburbs and Alabama's family-friendly communities have unique life insurance needs. When you're raising children, your coverage should account for multiple financial obligations.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <DollarSign className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Income Replacement</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    If something happens to you, how many years of income does your family need? Many advisors recommend <strong>10-12x your annual salary</strong>. A $60,000 income suggests $600,000-$720,000 in coverage.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Home className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Mortgage Protection</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Enough coverage to pay off your home so your family can stay in place. Average mortgages in AL and GA range from $200,000-$350,000—factor this into your coverage amount.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <GraduationCap className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Education Funding</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    College costs continue rising—$50,000-$100,000 for in-state 4-year degrees in Alabama and Georgia. Life insurance can ensure your children's education is funded regardless of what happens.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Users className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Childcare Costs</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    If a stay-at-home parent passes, the surviving spouse may need to pay for childcare—averaging $800-1,200/month per child in AL and GA. Life insurance helps cover this unexpected expense.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="bg-accent/10 border border-accent/30 rounded-lg p-6 text-center">
+              <p className="text-lg text-foreground">
+                <strong>Term life insurance</strong> is often the best fit for young families—it provides maximum coverage at the lowest cost during your highest-need years. A healthy 30-year-old can often get <strong>$500,000 in 20-year term coverage for $25-35/month</strong>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* No-Exam Options Section */}
+        <section className="py-12 bg-muted/30">
+          <div className="container max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">No Medical Exam Life Insurance Options</h2>
+            
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-lg text-muted-foreground text-center">
+                Don't want to deal with a medical exam? Several life insurance options are available without needles, lab work, or doctor visits for AL and GA residents.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <FileCheck className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Simplified Issue</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Answer a few health questions on the application, but no physical exam required. Approval in days rather than weeks. Coverage up to $500,000+ available for healthy applicants.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Best for:</strong> Healthy individuals wanting fast approval
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Shield className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Guaranteed Issue</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    No health questions, no exam, guaranteed approval regardless of health conditions. Ideal for those with serious health issues who've been declined elsewhere. Coverage typically limited to $25,000 with a 2-year graded benefit period.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Best for:</strong> Those with significant health conditions
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
+                    <Zap className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Accelerated Underwriting</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Some carriers use data and algorithms to approve healthy applicants without an exam. If you're young and healthy, you may qualify for full coverage at standard rates without any medical requirements.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Best for:</strong> Young, healthy individuals seeking competitive rates
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 text-center">
+              <p className="text-muted-foreground">
+                <strong>Trade-off:</strong> No-exam policies are convenient but may cost 10-20% more than fully underwritten coverage. For many people—especially those in good health—completing a medical exam results in lower premiums. We'll help you weigh the tradeoffs.
+              </p>
             </div>
           </div>
         </section>
@@ -890,6 +1092,20 @@ const georgiaCities = [
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Life Insurance Across Alabama & Georgia</h2>
             </div>
+
+            {/* Counties paragraph */}
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-muted-foreground text-center">
+                We serve families across Alabama (AL)—including Jefferson County (Birmingham), Montgomery County, Mobile County, Madison County (Huntsville), Baldwin County (Gulf Shores), Cherokee County (Centre), and Tuscaloosa County—as well as Georgia (GA) communities in Fulton County (Atlanta), Gwinnett County, Cobb County, DeKalb County, Floyd County (Rome), and Bartow County (Cartersville).
+              </p>
+            </div>
+
+            {/* ZIP codes paragraph */}
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-muted-foreground text-center">
+                Our life insurance coverage extends to families in ZIP codes including 35242, 35215 (Birmingham area), 36117 (Montgomery), 36695 (Mobile), 35960 (Centre), 30161 (Rome), 30349 (Atlanta South), 30043 (Lawrenceville), 30120 (Cartersville), and communities throughout AL and GA.
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Alabama - gray card wrapper */}
@@ -934,6 +1150,46 @@ const georgiaCities = [
             <p className="text-center text-muted-foreground">
               Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
             </p>
+          </div>
+        </section>
+
+        {/* Cross-Link to Learn Page */}
+        <section className="py-12 bg-muted/30">
+          <div className="container max-w-4xl text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Learn More About Life Insurance</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Trying to decide between term and whole life insurance? Wondering which policy type fits your situation? Read our comprehensive guide.
+            </p>
+            <Button size="lg" variant="outline" asChild>
+              <Link to="/learn/life-insurance-guide">Term vs Whole Life: Which Is Right for You? →</Link>
+            </Button>
+            <p className="text-muted-foreground mt-4">
+              We break down the differences, explain cash value, and help you understand which approach makes sense for your family's needs and budget.
+            </p>
+          </div>
+        </section>
+
+        {/* Internal Linking Section */}
+        <section className="py-12">
+          <div className="container max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">Protect Your Whole Family</h2>
+            <p className="text-lg text-muted-foreground text-center mb-8">
+              Life insurance is one piece of a complete protection plan for Alabama and Georgia families. Explore our other coverage options and ask about bundling multiple policies to save.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button variant="outline" asChild>
+                <Link to="/services/home-insurance">Home Insurance →</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link to="/services/auto-insurance">Auto Insurance →</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link to="/services/renters-insurance">Renters Insurance →</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link to="/#quote-form">Get a Quote →</Link>
+              </Button>
+            </div>
           </div>
         </section>
 
