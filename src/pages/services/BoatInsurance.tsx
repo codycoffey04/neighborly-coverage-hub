@@ -29,7 +29,7 @@ import {
   Sailboat,
   MapPin
 } from "lucide-react";
-import autoHeroImage from "@/assets/auto-insurance-hero.jpg";
+import boatHeroImage from "@/assets/boat-insurance-hero.jpg";
 
 // Coverage types data
 const coverageTypes = [
@@ -338,7 +338,7 @@ const BoatInsurance = () => {
         {/* Hero Section */}
         <section 
           className="relative min-h-[500px] md:min-h-[550px] flex items-end bg-cover bg-center"
-          style={{ backgroundImage: `url(${autoHeroImage})` }}
+          style={{ backgroundImage: `url(${boatHeroImage})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
           
