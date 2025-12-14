@@ -619,6 +619,46 @@ const MotorcycleInsurance = () => {
           </div>
         </section>
 
+        {/* County & ZIP Code Geographic Content */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <h3 className="text-xl md:text-2xl font-bold mb-6">Rider Communities Across Our Service Area</h3>
+            
+            <div className="prose prose-lg max-w-none mb-8">
+              <p className="text-muted-foreground mb-4">
+                Motorcycle riders across our territory face distinct regional challenges shaped by terrain, traffic patterns, and local riding culture. <strong>Jefferson County</strong> motorcyclists navigate Alabama's busiest urban corridors—I-65, I-20/59, and the I-459 beltway—where heavy traffic and distracted drivers contributed to Alabama's 92 motorcyclist fatalities in 2023. The Birmingham metro offers scenic routes like Highway 119 through Cahaba Valley and access to Barber Motorsports Park, but urban theft risk means comprehensive coverage is essential for bikes parked downtown or in apartment complexes.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>Tuscaloosa County</strong> riders enjoy cruises along Lake Tuscaloosa and AL-69's countryside, but the University of Alabama's student population creates traffic unpredictability—especially on game days when McFarland Boulevard and I-59/20 see congestion spikes. <strong>Etowah County</strong> has embraced motorcycle culture with popular meet-ups at Noccalula Falls and scenic routes like AL-211 up Lookout Mountain. Gadsden's position on the I-59 corridor (Birmingham-Chattanooga route) brings through-traffic that riders must navigate carefully.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                In <strong>Cherokee County</strong>, rural highways around Weiss Lake and connecting routes to the Talladega Scenic Drive attract weekend riders. The open roads and mountain foothills offer beautiful rides but present challenges—narrow two-lanes, wildlife crossings, and higher speeds on country roads mean even infrequent accidents can be severe. <strong>Madison County</strong> riders access Huntsville's growing urban grid and quick escapes to rural routes, while <strong>Tuscaloosa</strong> and <strong>Etowah</strong> counties each averaged about one tornado per year historically—a reminder that comprehensive coverage protects bikes from storm damage during Alabama's severe weather season.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Georgia's riders enjoy different dynamics. <strong>Floyd County</strong> provides access to scenic northwest Georgia routes—riders from Rome cruise U.S. 27 to Lookout Mountain or explore backroads toward the Appalachian foothills. <strong>Fulton County</strong> presents Atlanta's challenging urban riding environment: the Downtown Connector and I-285 Perimeter demand defensive riding skills, and Georgia's 217 motorcyclist deaths in 2022 (12% of all traffic fatalities) underscore the risk. Metro Atlanta's vibrant bike nights in East Atlanta Village and charity rides reflect strong rider culture, but bike theft remains a serious concern—high-end sport bikes and custom Harleys disappear from parking decks and apartments.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>Gwinnett County</strong> riders balance suburban routes with I-85 corridor challenges, while <strong>Cobb County</strong> offers both Marietta's city streets and quick access to north Georgia mountain roads. <strong>DeKalb</strong> and <strong>Bartow</strong> counties each see their share of commuter riders and weekend warriors heading to the mountains.
+              </p>
+            </div>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="text-muted-foreground mb-4">
+                ZIP code-level considerations matter for motorcycle insurance pricing and risk. Birmingham's <strong>35242</strong> (Hoover/Greystone) offers suburban garaging advantages—lower theft risk than downtown while maintaining access to Jefferson County's riding community and events. <strong>35215</strong> (northeast Birmingham) sees higher urban theft exposure, making comprehensive coverage critical. <strong>35173</strong> (Trussville) combines safe garaging with proximity to scenic rides toward Pell City and Logan Martin Lake.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Montgomery's <strong>36117</strong> includes EastChase's newer developments where garage parking is common, plus military riders from Maxwell Air Force Base who often carry solid coverage given deployment considerations. <strong>35960</strong> (Centre in Cherokee County) delivers rural garaging benefits—minimal theft risk, lower overall premiums, and easy access to Weiss Lake's scenic loop roads and connections to mountain routes.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Georgia's <strong>30044</strong> and <strong>30043</strong> (Lawrenceville area) reflect Gwinnett's suburban character—many riders garage bikes in newer subdivisions before weekend runs to Helen or Dahlonega. <strong>30161</strong> (Rome) balances small-city affordability with northwest Georgia's riding opportunities. <strong>30120</strong> (Cartersville) provides I-75 corridor access while staying clear of Atlanta's urban theft hotspots. Atlanta's <strong>30349</strong> (College Park area) carries higher theft risk—sport bikes and cruisers need comprehensive coverage and preferably secured parking.
+              </p>
+              <p className="text-muted-foreground">
+                Seasonal patterns affect all these areas: Alabama and Georgia riders enjoy long seasons (March through November), but summer thunderstorms create afternoon hazards, and winter sees reduced riding in December-February. Many riders carry year-round policies to protect against off-season theft and storm damage, though some carriers offer lay-up discounts for stored bikes.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Ways to Save Section */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">

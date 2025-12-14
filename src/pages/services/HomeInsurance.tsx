@@ -517,6 +517,49 @@ const HomeInsurance = () => {
           </div>
         </section>
 
+        {/* County & ZIP Code Geographic Content */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <h3 className="text-xl md:text-2xl font-bold mb-6">Regional Risk Profiles and Local Considerations</h3>
+            
+            <div className="prose prose-lg max-w-none mb-8">
+              <p className="text-muted-foreground mb-4">
+                Homeowners insurance costs across our service area reflect each county's unique combination of weather exposure, construction types, and local risk factors. <strong>Jefferson County</strong> sits at the heart of Alabama's "Tornado Alley"—123 tornadoes since 1950, including the devastating F5 in 1998 and seven twisters during April 2011 alone. That catastrophic 2011 outbreak resulted in over $1.65 billion in Alabama home insurance payouts, with Jefferson heavily impacted. Many homes rebuilt post-2011 with fortified roofing and hurricane clips now qualify for mitigation credits, but wind/hail deductibles (typically 1-2% of dwelling coverage) remain standard.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>Tuscaloosa County's</strong> April 27, 2011 EF4 tornado caused over $2 billion in statewide insured losses and reshaped local building practices. Newer homes meet stricter wind codes, and many residents installed storm shelters. The University of Alabama's presence creates a unique rental market—many older homes converted to student housing require landlord policies with higher liability limits. <strong>Etowah County</strong> experiences frequent tornado warnings each spring, and Gadsden's Coosa River location adds flood exposure to certain neighborhoods requiring separate National Flood Insurance Program policies.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>Cherokee County</strong> homeowners benefit from rural character—75.9% single-family homes and 16.7% mobile homes on larger lots mean lower population density (about 44 people per square mile) and minimal property crime. However, distance from fire stations (many homes over 5 miles from volunteer departments) can affect premium calculations. The county still experiences Dixie Alley weather—about 1.3 tornadoes annually over the last decade—making wind/hail coverage essential. <strong>Madison County</strong> (Huntsville) brings aerospace industry prosperity, higher home values, and urban fire protection that balances tornado exposure.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Georgia counties present different profiles. <strong>Fulton County</strong> faces moderate tornado risk (averaging a couple warnings per year, with the memorable 2008 downtown Atlanta tornado), but urban factors drive premiums—high property values (many neighborhoods exceeding $400,000 median), older housing stock from the 1920s-1950s requiring costly repairs, and property crime variation by neighborhood. ZIP code pricing differentials are stark: north Fulton's Alpharetta sees hail from occasional spring storms, while south Fulton ZIP codes may carry higher theft-related surcharges.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>Gwinnett County</strong> homeowners deal with hailstorms that strike a couple times annually—recent events caused extensive roof damage countywide. Rapid suburban development created impervious surfaces, leading to flash flooding in subdivisions during heavy rains. <strong>Cobb County</strong> shares similar suburban dynamics with added traffic challenges affecting liability exposure. <strong>Floyd County</strong> (Rome) maintains more moderate premiums—newer construction standards, manageable weather risk, and small-city crime rates keep costs below metro Atlanta's levels. <strong>DeKalb</strong> and <strong>Bartow</strong> counties each balance urban/suburban characteristics with their own local considerations.
+              </p>
+            </div>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="text-muted-foreground mb-4">
+                Granular ZIP code analysis reveals significant rate variations within counties. Birmingham's <strong>35242</strong> (Hoover/Greystone) features newer construction, strong fire protection through Hoover Fire Department, and lower crime—resulting in premiums often 15-20% below Birmingham proper despite sitting in high-risk Jefferson County. Median home values around $320,000 drive higher dwelling coverage needs, but mitigation credits for post-2011 fortified construction help offset costs. <strong>35215</strong> (northeast Birmingham near Roebuck) contains older housing stock (many 1950s-1970s homes) with aging systems, plus higher burglary rates that elevate theft coverage costs. <strong>35173</strong> (Trussville) enjoys Jefferson County's most competitive rates—newer subdivisions, excellent fire protection, median home values around $285,000, and family demographics that insurers favor.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Montgomery's <strong>36117</strong> (EastChase/Deer Creek area) balances newer development with proximity to Alabama River flood zones—some properties require flood insurance while others sit safely elevated. The ZIP code includes both upscale neighborhoods with $300,000+ homes and more modest areas, creating rating variation. Maxwell Air Force Base's presence means many military families who may need deployment-specific policy provisions.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>35960</strong> (Centre in Cherokee County) consistently delivers competitive premiums—median home values around $176,000, homeownership rate near 75%, and rural character mean base rates start low. However, distance from fire stations (Centre's volunteer department serves a wide area) and mobile home prevalence (16.7% of housing units) create specific underwriting considerations. Tornado/hail coverage is non-negotiable given the county's weather exposure.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Georgia ZIPs tell their own stories. <strong>30044</strong> (Lawrenceville/Snellville area in Gwinnett) represents suburban growth—median home values around $290,000, homeownership rate near 67%, and newer construction from the 1990s-2010s. The ZIP code sees moderate premiums around $1,800-$2,200 annually, reflecting Gwinnett's balanced risk profile. <strong>30043</strong> (neighboring Lawrenceville) mirrors these characteristics with slight variations in home age and value. Both benefit from Gwinnett County's strong fire protection and suburban crime rates.
+              </p>
+              <p className="text-muted-foreground">
+                Atlanta's <strong>30349</strong> (College Park/near airport) faces urban challenges—higher property crime, older housing stock, and proximity to high-traffic areas push premiums above Fulton County averages despite median home values around $180,000. Fire claims from older electrical systems and liability concerns in dense neighborhoods affect pricing. <strong>30161</strong> (Rome in Floyd County) offers more moderate rates—median home values around $195,000, newer building codes, and small-city dynamics keep annual premiums typically $1,400-$1,700 for comparable coverage. <strong>30120</strong> (Cartersville in Bartow County) balances I-75 corridor growth with manageable risk factors, landing in the $1,500-$1,900 range for standard policies.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Cost Comparison Section - Critical for AL */}
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4">
