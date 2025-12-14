@@ -2,13 +2,13 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Star, FileCheck, CreditCard, DollarSign, CheckCircle, MapPin, Calendar, Car, Key, Bike } from "lucide-react";
+import { Home, Building2, Sofa, BedDouble, Shield, Heart, CloudRain, Droplets, Hammer, Zap, Phone, Star, FileCheck, CreditCard, DollarSign, CheckCircle, MapPin, Calendar, Car, Key, Bike, AlertTriangle, Wind, Umbrella } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import heroBackground from "@/assets/home-insurance-hero.jpg";
-
 const coverageTypes = [
   {
     icon: Home,
@@ -92,28 +92,36 @@ const savingsTips = [
 
 const faqItems = [
   {
-    question: "How do wind/hail or named-storm deductibles work?",
-    answer: "These special deductibles apply to wind or hail claims (and sometimes only to named storms). They can be a fixed dollar amount or a percentage of your dwelling limit. Higher deductibles cut premium but raise what you'll owe after a storm. We'll show side-by-side options and help you pick an amount that balances savings with cash-on-hand."
+    question: "How much does homeowners insurance cost in Alabama vs Georgia?",
+    answer: "Alabama homeowners pay an average of $3,000+ per year—among the highest in the nation due to severe weather exposure, tornado risk, and percentage-based wind/hail deductibles. Georgia homeowners typically pay $1,800-2,300 per year, about 25-40% less than AL for similar coverage. Atlanta metro rates trend higher due to property values, while rural GA often sees lower premiums. Factors affecting your rate include location, home age, roof condition, claims history, credit score, coverage amount, deductible choice, and bundling discounts. Given Alabama's higher-than-average costs, comparing homeowners insurance quotes regularly is essential."
+  },
+  {
+    question: "How do wind and hail deductibles work in Alabama and Georgia?",
+    answer: "Unlike your standard deductible (a flat amount like $1,000 or $2,500), wind and hail deductibles in AL and GA are often percentage-based. A 1% or 2% wind/hail deductible means you pay that percentage of your dwelling coverage before insurance kicks in. On a $300,000 home with a 2% wind deductible, you'd pay the first $6,000 of any wind or hail claim. Coastal Alabama properties may also have separate hurricane deductibles (2-5%) triggered by named storms. Understanding these deductibles before storm season is critical—we'll explain exactly what your homeowners insurance policy includes."
+  },
+  {
+    question: "Does homeowners insurance cover tornado damage?",
+    answer: "Yes, tornado damage is covered under the wind/hail portion of your homeowners insurance policy. If a tornado damages your roof, siding, windows, or interior, your policy pays for repairs minus your deductible. However, the wind/hail deductible (often percentage-based in Alabama and Georgia) applies rather than your standard deductible. Given Alabama's position in Dixie Alley and Georgia's spring storm activity, adequate wind coverage is essential for home insurance in both states."
   },
   {
     question: "What's the difference between RCV and ACV for personal property?",
-    answer: "Replacement Cost (RCV) pays what it costs to replace items with new ones of similar kind and quality (subject to limits). Actual Cash Value (ACV) subtracts depreciation for age and wear. RCV usually costs more but pays better at claim time. We'll price both if you want to compare."
+    answer: "Replacement Cost (RCV) pays what it costs to replace items with new ones of similar kind and quality (subject to limits). Actual Cash Value (ACV) subtracts depreciation for age and wear. RCV homeowners insurance usually costs more but pays better at claim time. We'll price both if you want to compare your home insurance options."
   },
   {
-    question: "What documents do I need for a home quote?",
-    answer: "To provide an accurate home insurance quote for your Alabama or Georgia property, we'll need your complete property address, the year your home was built, detailed information about your roof (age, material, and any recent replacements or repairs), total square footage, and details about any updates you've made to plumbing, electrical systems, or HVAC. If you have prior insurance information and dates of any recent claims (typically within the last 3-5 years), that helps us price your coverage more accurately. Photos of your home's exterior and roof are helpful for us to assess your property's condition and identify potential risk factors, but they're not required to get started. Our licensed agents can walk you through gathering this information step by step."
+    question: "What documents do I need for a homeowners insurance quote?",
+    answer: "To provide an accurate homeowners insurance quote for your Alabama or Georgia property, we'll need your complete property address, the year your home was built, detailed information about your roof (age, material, and any recent replacements), total square footage, and details about updates to plumbing, electrical, or HVAC. Prior insurance information and claims history (last 3-5 years) helps us price your home insurance more accurately. Photos of your home's exterior and roof are helpful but not required to get started."
   },
   {
-    question: "Which factors most affect home insurance price?",
-    answer: "Several key factors directly impact your home insurance premium in Alabama and Georgia. Replacement cost—the amount needed to rebuild your home from scratch—is typically the biggest driver, and construction costs have increased significantly in recent years. Your roof's age and material matter substantially since wind and hail damage are common in our region. A newer impact-resistant roof may qualify for discounts. Your claims history, including any previous insurance claims at this or previous addresses, affects pricing for 3-5 years after the incident. Credit-based insurance scores also factor into premiums in most states. Your specific location's weather exposure—whether you're in a tornado-prone area, coastal zone, or flood plain—significantly influences rates. Finally, the deductibles you choose and any endorsements you add (like water backup coverage or scheduled valuables) affect your premium. We can help optimize your premium by bundling home and auto insurance (typically saves 15-25%), right-sizing your deductibles to match your emergency fund, and ensuring you're getting all eligible discounts without compromising essential protection."
+    question: "Is home insurance required in Alabama or Georgia?",
+    answer: "While homeowners insurance isn't legally required in Alabama or Georgia, mortgage lenders require it to protect their investment. Even if you own your home outright, house insurance protects your most valuable asset from fire, storms, theft, and liability claims. Given the severe weather in AL and GA—tornadoes, hurricanes, hail—going without home insurance puts your financial security at serious risk."
   },
   {
-    question: "Is water backup covered automatically?",
-    answer: "Standard home insurance policies typically exclude water or sewer backup and sump pump overflow damage unless you specifically add a Water Backup and Sump Overflow endorsement to your policy. This coverage is crucial for Alabama and Georgia homeowners, especially if you have a basement, crawlspace, or older plumbing systems that are more susceptible to backup issues. Heavy rainfall from severe thunderstorms, tropical storms, or simply overwhelmed municipal sewer systems can cause thousands of dollars in damage to your finished basement, personal property, and home's foundation. The endorsement usually has its own coverage limit (typically $5,000-$10,000) and may have a separate deductible. Given the frequency of heavy rain events in our region and the potential for expensive damage, we strongly recommend considering this endorsement if your home has these risk factors. It's relatively affordable compared to the potential claim cost and provides valuable protection for one of the most common types of home damage."
+    question: "Can I bundle home and auto insurance for savings?",
+    answer: "Yes! Bundling your homeowners insurance with auto coverage saves 15-25% on both policies—up to $600 or more annually. For Alabama homeowners facing above-average premiums, bundling is one of the most effective ways to reduce home insurance costs without sacrificing coverage. We'll quote both policies together to maximize your savings on house insurance."
   },
   {
-    question: "Will roof age change how a claim is paid?",
-    answer: "Yes, roof age significantly affects how insurance claims are paid, and understanding this difference is crucial for Alabama and Georgia homeowners. Some policies pay Actual Cash Value (ACV)—the depreciated value accounting for age and wear—for older roofs when wind or hail damage occurs. This means a 15-year-old roof might only be covered for 30-40% of replacement cost, leaving you responsible for the difference. However, newer roofs (typically less than 10 years old) or roofs made with certain impact-resistant materials may qualify for Replacement Cost Value (RCV) coverage, which pays to replace your roof with new materials of similar quality. Some carriers also offer roof replacement cost coverage as an optional endorsement for older roofs. Given the frequency of severe weather and hail events in our region, understanding your roof coverage before a storm hits prevents costly surprises. We'll review your roof's age, material, and condition upfront so you know exactly how claims would be handled and can make informed decisions about coverage options that protect your investment."
+    question: "Will roof age change how a homeowners insurance claim is paid?",
+    answer: "Yes, roof age significantly affects how home insurance claims are paid. Some policies pay Actual Cash Value (ACV)—the depreciated value—for older roofs when wind or hail damage occurs. A 15-year-old roof might only be covered for 30-40% of replacement cost. Newer roofs (typically less than 10 years old) or impact-resistant materials may qualify for Replacement Cost Value (RCV) coverage. Understanding your homeowners insurance roof coverage before a storm hits prevents costly surprises."
   }
 ];
 
@@ -188,37 +196,16 @@ const HomeInsurance = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": "https://coffeyagencies.com/services/home-insurance#service",
-    "serviceType": "Home Insurance",
+    "serviceType": "Homeowners Insurance",
+    "alternateName": ["Home Insurance", "House Insurance"],
     "provider": {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
-      { "@id": "https://coffeyagencies.com/centre-al#place" },
-      { "@id": "https://coffeyagencies.com/rome-ga#place" },
-      { "@id": "https://coffeyagencies.com/birmingham-al#place" },
-      { "@id": "https://coffeyagencies.com/montgomery-al#place" },
-      { "@id": "https://coffeyagencies.com/mobile-al#place" },
-      { "@id": "https://coffeyagencies.com/dothan-al#place" },
-      { "@id": "https://coffeyagencies.com/auburn-al#place" },
-      { "@id": "https://coffeyagencies.com/enterprise-al#place" },
-      { "@id": "https://coffeyagencies.com/foley-al#place" },
-      { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
-      { "@id": "https://coffeyagencies.com/troy-al#place" },
-      { "@id": "https://coffeyagencies.com/trussville-al#place" },
-      { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
-      { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
-      { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
-      { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
-      { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
-      { "@id": "https://coffeyagencies.com/duluth-ga#place" },
-      { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
-      { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
-      { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
-      { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
-      { "@id": "https://coffeyagencies.com/summerville-ga#place" },
-      { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
+      { "@type": "State", "name": "Alabama" },
+      { "@type": "State", "name": "Georgia" }
     ],
-    "description": "Complete homeowners insurance protection covering dwelling, personal property, liability, and additional living expenses for Alabama and Georgia properties.",
+    "description": "Complete homeowners insurance protection covering dwelling, personal property, liability, and additional living expenses for Alabama and Georgia properties. Also known as home insurance or house insurance.",
     "serviceOutput": "Insurance Policy",
     "termsOfService": "https://coffeyagencies.com/terms",
     "offers": {
@@ -296,13 +283,13 @@ const HomeInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Home Insurance in Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance with local expertise in Alabama and Georgia." />
+        <title>Homeowners Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies</title>
+        <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.8★ Google rating. Serving AL & GA families." />
         <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Home Insurance in Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance with local expertise in Alabama and Georgia." />
+        <meta property="og:title" content="Homeowners Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies" />
+        <meta property="og:description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.8★ Google rating. Serving AL & GA families." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/home-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -312,8 +299,8 @@ const HomeInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Home Insurance in Alabama & Georgia" />
-        <meta name="twitter:description" content="Clear coverage built around your roof, rebuild cost, and risk. Get home insurance in AL and GA." />
+        <meta name="twitter:title" content="Homeowners Insurance Quotes Alabama & Georgia | Compare Rates" />
+        <meta name="twitter:description" content="Homeowners insurance quotes in AL & GA. Compare home insurance rates, coverage, bundle discounts. 4.8★ rating." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -353,17 +340,17 @@ const HomeInsurance = () => {
             
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-                Home Insurance in Alabama & Georgia
+                Homeowners Insurance in Alabama & Georgia
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md">
-                Clear coverage built around your roof, rebuild cost, and risk
+                Whether you're buying your first home or comparing homeowners insurance rates, we protect Alabama (AL) and Georgia (GA) families with clear, honest coverage
               </p>
               <p className="text-lg text-white/90 max-w-3xl mx-auto mb-8 drop-shadow-md">
-                Build a policy that mirrors real-world risk. Bundle with{" "}
+                Also known as house insurance, your home insurance policy covers your dwelling, personal belongings, liability, and more. From Birmingham suburbs to Atlanta's growing neighborhoods, we serve AL and GA homeowners with personalized coverage. Bundle with{" "}
                 <Link to="/services/auto-insurance" className="text-accent hover:underline font-semibold">
                   auto insurance
                 </Link>{" "}
-                or add umbrella coverage to protect assets beyond your base limits.
+                to save 15-25%.
               </p>
               
               {/* CTA Buttons */}
@@ -455,22 +442,192 @@ const HomeInsurance = () => {
           </div>
         </section>
 
-        {/* Regional Considerations */}
+        {/* Weather Risks & Regional Considerations */}
         <section className="py-12">
           <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                  What Weather Risks Affect Home Insurance in AL & GA?
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {/* Tornado Risk */}
+                <Card className="border-2 border-primary/20 bg-primary/5">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                      <Wind className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-lg">Tornado Risk (Both States)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Central Alabama sits in "Dixie Alley"—the Southern tornado corridor with peak activity from March through May. Northwest Georgia, including Floyd and Bartow counties, also experiences significant tornado activity. Standard homeowners insurance covers tornado damage, but wind/hail deductibles may apply separately from your standard deductible.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Hurricane Risk */}
+                <Card className="border-2 border-primary/20 bg-primary/5">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                      <Umbrella className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-lg">Hurricane Risk (Coastal Areas)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Coastal Alabama (Mobile, Baldwin County, Gulf Shores) and coastal Georgia (Savannah, Chatham County) face hurricane exposure. Many home insurance policies include separate hurricane deductibles—typically 2-5% of your dwelling coverage—that apply when a named storm causes damage.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Wind/Hail Deductibles */}
+                <Card className="border-2 border-primary/20 bg-primary/5">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                      <AlertTriangle className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-lg">Wind and Hail Deductibles</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Unlike your standard deductible (a flat dollar amount like $1,000), wind/hail deductibles in AL and GA are often percentage-based. A 2% wind/hail deductible on a $300,000 home means you pay the first $6,000 of any wind or hail claim. Understanding this distinction is critical for your homeowners insurance before storm season.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Water Damage */}
+                <Card className="border-2 border-primary/20 bg-primary/5">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                      <Droplets className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-lg">Water Damage & Flooding</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Burst pipes, appliance leaks, and water heater failures are covered by home insurance. However, flooding from rising water (rivers, storm surge, heavy rain accumulation) is NOT covered—you need separate flood insurance. Georgia's older homes in Atlanta and Alabama properties near rivers or the Gulf should consider flood coverage.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cost Comparison Section - Critical for AL */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <Card className="border-2 border-primary/20 bg-primary/5">
+              <div className="text-center mb-12">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                  How Much Does Homeowners Insurance Cost in Alabama vs Georgia?
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Home insurance costs vary dramatically between Alabama and Georgia—understanding why can help you find better rates.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                {/* Alabama Cost */}
+                <Card className="border-2 border-primary/20">
+                  <CardHeader className="bg-primary/5">
+                    <CardTitle className="text-xl text-center">Alabama (AL)</CardTitle>
+                    <p className="text-3xl font-bold text-center text-primary">~$3,000+/year</p>
+                  </CardHeader>
+                  <CardContent className="pt-6">
+                    <p className="text-muted-foreground text-sm mb-4">
+                      Alabama has some of the highest homeowners insurance premiums in the nation. Factors driving costs include:
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        Severe weather exposure (tornadoes, Gulf Coast hurricanes)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        High frequency of wind and hail claims
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        Percentage-based wind/hail deductibles (often 1-2%)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        Older housing stock in some areas
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Georgia Cost */}
+                <Card className="border-2 border-accent/20">
+                  <CardHeader className="bg-accent/5">
+                    <CardTitle className="text-xl text-center">Georgia (GA)</CardTitle>
+                    <p className="text-3xl font-bold text-center text-accent">~$1,800-2,300/year</p>
+                  </CardHeader>
+                  <CardContent className="pt-6">
+                    <p className="text-muted-foreground text-sm mb-4">
+                      Georgia homeowners typically pay 25-40% less than Alabama residents for similar home insurance coverage:
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                        Atlanta metro rates trend higher due to property values
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                        Rural Georgia often sees lower premiums
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                        Less coastal hurricane exposure than AL
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                        Newer housing stock in metro suburbs
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Factors Affecting Rate */}
+              <Card className="bg-background border">
                 <CardHeader>
-                  <CardTitle className="text-2xl">
-                    Severe Storms, Tornado Tracks, and Occasional Tropical Impacts
-                  </CardTitle>
+                  <CardTitle className="text-lg">Factors Affecting Your Homeowners Insurance Rate</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Alabama and Georgia see spring and summer thunderstorms, tornado outbreaks, and, at times, tropical remnants that push intense rain and wind inland. Roofing and siding take the brunt, while lightning and surge can affect electronics. We tailor wind/hail deductibles, verify roof details, and confirm whether your personal property is covered at RCV or ACV so your plan matches the realities of our region.
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Prefer a local touch? Many homeowners we serve are near Birmingham 35242 and Lawrenceville 30044, but our quoting process works anywhere in Alabama or Georgia.
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-muted-foreground">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Location</strong> — Coastal AL (Mobile, Gulf Shores) and tornado-prone areas cost more</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Home className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Home age & construction</strong> — Newer homes with updated roofs pay less</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Hammer className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Roof age</strong> — Roofs over 15 years significantly increase premiums</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <FileCheck className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Claims history</strong> — Previous claims raise rates for 3-5 years</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <DollarSign className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Deductible choice</strong> — Raising from $1,000 to $2,500 can save 10-15%</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Car className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span><strong>Bundling</strong> — Adding auto to home insurance saves 15-25%</span>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    Given Alabama's higher-than-average costs, shopping your homeowners insurance regularly is essential. We compare multiple carriers to find the best combination of coverage and price for AL and GA homeowners.
                   </p>
                 </CardContent>
               </Card>
@@ -534,6 +691,24 @@ const HomeInsurance = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Link to Learn Pages */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto max-w-4xl px-4">
+            <SectionHeading className="mb-6 text-center">Learn More About Home Insurance</SectionHeading>
+            <p className="text-center text-muted-foreground mb-6">
+              Want to understand coverage types, deductibles, and how to protect your Alabama or Georgia home? Explore our guides:
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+              <Link to="/learn/home-insurance-guide" className="flex items-center justify-center gap-2 text-primary font-semibold hover:underline">
+                → Home Insurance Coverage Guide: Alabama & Georgia
+              </Link>
+              <Link to="/learn/bundling-home-and-auto" className="flex items-center justify-center gap-2 text-primary font-semibold hover:underline">
+                → How Bundling Home and Auto Saves You Money
+              </Link>
             </div>
           </div>
         </section>
@@ -692,10 +867,20 @@ const HomeInsurance = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
+              <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                  Home Insurance Across Alabama & Georgia
+                  Homeowners Insurance Across Alabama & Georgia
                 </h2>
+              </div>
+
+              {/* Counties and ZIP Codes */}
+              <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  We provide homeowners insurance across <strong>Alabama</strong> — including Jefferson County (Birmingham), Montgomery County, Mobile County, Madison County (Huntsville), Baldwin County (Gulf Shores), Cherokee County (Centre), Tuscaloosa County, and Etowah County (Gadsden) — as well as <strong>Georgia</strong> communities in Fulton County (Atlanta), Gwinnett County (Lawrenceville), Cobb County, DeKalb County, Floyd County (Rome), Bartow County (Cartersville), and Chatham County (Savannah).
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Our home insurance coverage extends to ZIP codes including <strong>35242, 35215, 35173</strong> (Birmingham area), <strong>36117</strong> (Montgomery), <strong>36695</strong> (Mobile), <strong>35960</strong> (Centre), <strong>35801</strong> (Huntsville), <strong>36561</strong> (Gulf Shores), <strong>30044, 30043</strong> (Gwinnett), <strong>30161</strong> (Rome), <strong>30120</strong> (Cartersville), <strong>30349</strong> (South Atlanta), and communities throughout AL and GA.
+                </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -703,7 +888,7 @@ const HomeInsurance = () => {
                 <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                   <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                     <MapPin className="h-5 w-5" />
-                    Alabama
+                    Alabama (AL)
                   </h3>
                   <div className="flex flex-wrap gap-3">
                     {alabamaCities.map((city) => (
@@ -722,7 +907,7 @@ const HomeInsurance = () => {
                 <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                   <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                     <MapPin className="h-5 w-5" />
-                    Georgia
+                    Georgia (GA)
                   </h3>
                   <div className="flex flex-wrap gap-3">
                     {georgiaCities.map((city) => (
@@ -743,9 +928,24 @@ const HomeInsurance = () => {
                 <Link to="/contact" className="text-primary hover:underline">
                   Contact us
                 </Link>{" "}
-                — we serve all of Alabama and Georgia.
+                — we serve all of Alabama and Georgia with homeowners insurance.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Internal Linking Section */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl text-center">
+            <p className="text-muted-foreground leading-relaxed">
+              Protect your whole household. Explore our{" "}
+              <Link to="/services/auto-insurance" className="text-primary hover:underline font-medium">auto insurance</Link>{" "}
+              for your vehicles,{" "}
+              <Link to="/services/life-insurance" className="text-primary hover:underline font-medium">life insurance</Link>{" "}
+              for your family's future, or{" "}
+              <Link to="/services/condo-insurance" className="text-primary hover:underline font-medium">condo insurance</Link>{" "}
+              if you own a condo. As a local agency with offices in Centre, AL and Rome, GA, we understand regional risks that national carriers often miss—that local knowledge translates to better homeowners insurance coverage and better pricing for AL and GA families.
+            </p>
           </div>
         </section>
 
