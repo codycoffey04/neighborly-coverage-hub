@@ -21,6 +21,7 @@ const serviceLinks = [
   { name: "Life Insurance", href: "/services/life-insurance" },
   { name: "Motorcycle Insurance", href: "/services/motorcycle-insurance" },
   { name: "Boat Insurance", href: "/services/boat-insurance" },
+  { name: "ATV/UTV Insurance", href: "/services/atv-utv-insurance" },
 ];
 
 const learnLinks = [
