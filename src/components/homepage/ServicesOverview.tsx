@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Home, Building2, Key, Heart, Bike, Sailboat, ArrowRight } from "lucide-react";
+import { Car, Home, Building2, Key, Heart, Bike, Sailboat, Truck, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
@@ -46,6 +46,12 @@ const services = [
     title: "Boat Insurance",
     description: "Coverage for pontoons, bass boats, jet skis, and sailboats on Weiss Lake, Allatoona, and waterways across Alabama and Georgia.",
     link: "/services/boat-insurance"
+  },
+  {
+    icon: Truck,
+    title: "ATV/UTV Insurance",
+    description: "Coverage for four-wheelers, side-by-sides, and dirt bikes on trails at Indian Mountain, Highland Park, and riding areas across Alabama and Georgia.",
+    link: "/services/atv-utv-insurance"
   }
 ];
 
@@ -62,7 +68,7 @@ export const ServicesOverview = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
