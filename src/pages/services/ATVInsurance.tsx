@@ -692,6 +692,27 @@ const ATVInsurance = () => {
           </div>
         </section>
 
+        {/* Cross-Link to Learn Page */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl text-center">
+            <SectionHeading centered className="mb-6">Learn More About ATV & UTV Insurance</SectionHeading>
+            <p className="text-muted-foreground mb-6">
+              Want to understand liability vs full coverage, trail park requirements, and what affects your rate? Explore our comprehensive guide:
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+              <Link to="/learn/atv-utv-insurance-guide" className="text-primary font-semibold hover:underline">
+                → Complete ATV/UTV Insurance Guide for AL & GA
+              </Link>
+              <Link to="/learn/auto-insurance-guide" className="text-primary font-semibold hover:underline">
+                → Auto Insurance Guide (for tow vehicles)
+              </Link>
+              <Link to="/learn/bundling-home-and-auto" className="text-primary font-semibold hover:underline">
+                → How Bundling Saves You Money
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA Section */}
         <section className="section-spacing bg-primary text-white">
           <div className="container-custom">

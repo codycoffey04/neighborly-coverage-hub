@@ -702,6 +702,24 @@ const BoatInsurance = () => {
           </div>
         </section>
 
+        {/* Cross-Link to Learn Page */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl text-center">
+            <SectionHeading centered className="mb-6">Learn More About Boat Insurance</SectionHeading>
+            <p className="text-muted-foreground mb-6">
+              Want to understand hull coverage, agreed value vs ACV, marina requirements, and how to save? Explore our comprehensive guide:
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+              <Link to="/learn/boat-insurance-guide" className="text-primary font-semibold hover:underline">
+                → Complete Boat Insurance Guide for AL & GA
+              </Link>
+              <Link to="/learn/bundling-home-and-auto" className="text-primary font-semibold hover:underline">
+                → How Bundling Saves You Money
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA Section */}
         <section className="section-spacing bg-primary">
           <div className="container-custom">
