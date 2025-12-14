@@ -2,7 +2,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Car, Home, Key, Building2, Heart, FileText, Layers, Bike, LucideIcon } from "lucide-react";
+import { ArrowRight, Car, Home, Key, Building2, Heart, FileText, Layers, Bike, Sailboat, LucideIcon } from "lucide-react";
 import { learnArticles } from "@/data/learnArticles";
 import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/homepage/Header";
@@ -25,6 +25,7 @@ const hubExcerpts: Record<string, string> = {
   "condo-insurance-guide": "What your HOA's master policy doesn't cover — and why it matters for your finances.",
   "life-insurance-guide": "The conversation nobody wants but everyone needs. Term vs. permanent, how much you need, and when to buy.",
   "motorcycle-insurance-guide": "Everything riders need to know about coverage, costs, and protecting your bike in Alabama and Georgia.",
+  "boat-insurance-guide": "What boat insurance covers, agreed value vs ACV, what affects cost, and when you truly need it.",
   "alabama-insurance-requirements": "State minimums, penalties for non-compliance, and what coverage you actually need.",
   "georgia-insurance-requirements": "State mandates, GEICS verification system, and recommended coverage levels.",
   "bundling-home-and-auto": "How combining policies saves up to $600/year — and when it makes sense.",
@@ -43,6 +44,7 @@ const articleIcons: Record<string, LucideIcon> = {
   "condo-insurance-guide": Building2,
   "life-insurance-guide": Heart,
   "motorcycle-insurance-guide": Bike,
+  "boat-insurance-guide": Sailboat,
   "alabama-insurance-requirements": FileText,
   "georgia-insurance-requirements": FileText,
   "bundling-home-and-auto": Layers,
@@ -53,7 +55,7 @@ const articleIcons: Record<string, LucideIcon> = {
   "mistakes-when-switching-insurance": Layers
 };
 
-const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide", "motorcycle-insurance-guide"];
+const coverageGuides = ["auto-insurance-guide", "home-insurance-guide", "renters-insurance-guide", "condo-insurance-guide", "life-insurance-guide", "motorcycle-insurance-guide", "boat-insurance-guide"];
 const topicGuides = ["alabama-insurance-requirements", "georgia-insurance-requirements", "bundling-home-and-auto", "alabama-vs-georgia-insurance", "what-happens-when-you-file-a-claim", "mistakes-when-switching-insurance"];
 const localGuides = ["auto-insurance-costs-rome-ga", "home-insurance-centre-al-storm-season"];
 
