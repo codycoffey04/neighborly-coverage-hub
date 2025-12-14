@@ -9,7 +9,7 @@ import {
   Shield, Car, Umbrella, Users, Heart, Wrench,
   FileCheck, CreditCard, DollarSign, TrendingDown, Target, Home,
   Phone, MapPin, Star, CheckCircle, Bike, Award, Key, Building2,
-  CloudRain, AlertTriangle, ShieldOff
+  CloudRain, AlertTriangle, ShieldOff, Mountain, Route, Sailboat
 } from "lucide-react";
 import {
   Accordion,
@@ -23,7 +23,7 @@ const coverageTypes = [
   {
     icon: Shield,
     title: "Liability (BI/PD)",
-    description: "Required in both Alabama and Georgia at 25/50/25 minimums. Pays for injuries and property damage you cause to others. Higher limits protect your assets if you're sued after a serious accident—especially important given medical costs and litigation trends."
+    description: "Required in both Alabama (AL) and Georgia (GA) at 25/50/25 minimums. Pays for injuries and property damage you cause to others. Higher limits protect your assets if you're sued after a serious accident—especially important given medical costs and litigation trends."
   },
   {
     icon: Car,
@@ -33,7 +33,7 @@ const coverageTypes = [
   {
     icon: Umbrella,
     title: "Comprehensive",
-    description: "Protects against theft, vandalism, fire, falling objects, and weather damage. With motorcycle theft rates significantly higher than cars and Alabama's severe storm season, comprehensive coverage is worth considering even on older bikes."
+    description: "Protects against theft, vandalism, fire, falling objects, and weather damage. Alabama and Georgia's mild winters mean year-round riding, but spring and fall bring peak season — and peak risk. Comprehensive bike insurance protects against theft (motorcycle theft spikes in warmer months), storm damage, and vandalism whether you're riding or parked."
   },
   {
     icon: Users,
@@ -56,12 +56,12 @@ const savingsTips = [
   {
     icon: FileCheck,
     title: "Complete an MSF course",
-    description: "The Motorcycle Safety Foundation course satisfies licensing requirements and earns premium discounts with most carriers. The skills pay dividends beyond the savings."
+    description: "The Motorcycle Safety Foundation course satisfies licensing requirements and earns 10-15% premium discounts with most carriers. The skills pay dividends beyond the savings."
   },
   {
     icon: Home,
     title: "Bundle policies",
-    description: "Combining motorcycle with auto, home, or renters insurance unlocks multi-policy discounts and simplifies your coverage."
+    description: "Combining your bike insurance with auto, home, or renters insurance unlocks 10-15% multi-policy discounts and simplifies billing. Works for AL and GA riders."
   },
   {
     icon: Bike,
@@ -71,17 +71,17 @@ const savingsTips = [
   {
     icon: Shield,
     title: "Secure storage",
-    description: "Garaging your bike and installing anti-theft devices (alarms, GPS trackers, disc locks) can reduce comprehensive premiums."
+    description: "Garaging your bike and installing anti-theft devices (alarms, GPS trackers, disc locks) can reduce comprehensive premiums significantly."
   },
   {
     icon: DollarSign,
     title: "Pay in full",
-    description: "Annual payment typically costs less than monthly installments. We'll quote both so you can compare."
+    description: "Annual payment typically costs less than monthly installments. We'll quote both options so you can compare and maximize savings."
   },
   {
     icon: Target,
-    title: "Maintain a clean record",
-    description: "Tickets and claims increase rates. Consistent safe riding habits pay off over time."
+    title: "Mature rider & multi-bike discounts",
+    description: "Experienced riders 25+ often qualify for mature rider discounts. Insure two or more motorcycles together for additional multi-bike savings."
   }
 ];
 
@@ -92,11 +92,11 @@ const faqs = [
   },
   {
     question: "How much does motorcycle insurance cost in Alabama and Georgia?",
-    answer: "Liability-only coverage averages around $160/year in Alabama and $190/year in Georgia. Full coverage (adding collision and comprehensive) typically runs $400–$600 annually depending on your bike type, riding history, and location. Sport bikes cost more to insure than cruisers or touring motorcycles. We'll quote your specific situation so you know exactly what to expect."
+    answer: "In Alabama, average full coverage motorcycle insurance runs approximately $369/year (~$31/month). Georgia riders typically pay $400-450/year due to higher urban density and theft rates in the Atlanta metro. Liability-only coverage starts as low as $15-20/month in both states. Sport bikes cost more to insure than cruisers or touring motorcycles. We'll quote your specific situation so you know exactly what to expect."
   },
   {
     question: "Is motorcycle insurance cheaper than car insurance?",
-    answer: "Generally yes. Motorcycles typically cost less to insure because they cause less property damage in accidents. However, medical coverage and liability limits should still be adequate since riders face higher injury risk. Many riders find comprehensive coverage worthwhile given theft rates and weather exposure in the Southeast."
+    answer: "Typically yes. Liability-only motorcycle insurance often costs $15-25/month compared to $100+ for auto liability. However, full coverage for an expensive sport bike can rival car insurance costs. In AL, average full coverage runs about $369/year — roughly 75% less than the average car insurance premium. Factors like bike value, your age, and riding experience affect pricing."
   },
   {
     question: "What does motorcycle insurance cover?",
@@ -104,19 +104,19 @@ const faqs = [
   },
   {
     question: "Does motorcycle insurance cover passengers in Alabama?",
-    answer: "Alabama's guest passenger statute limits a passenger's ability to sue the rider for ordinary negligence, which affects how standard policies respond. Many Alabama riders add guest passenger liability coverage to ensure passengers are fully protected. Georgia treats passengers as third parties with standard coverage. We'll structure your policy appropriately based on where you ride."
+    answer: "Yes. Motorcycle policies in Alabama and Georgia include guest passenger liability, covering injuries to passengers riding with you. Alabama's guest statute limits a passenger's ability to sue the rider for ordinary negligence, which affects how standard policies respond. Many Alabama riders add guest passenger liability coverage to ensure passengers are fully protected. Georgia treats passengers as standard third parties with full coverage. We'll structure your policy appropriately based on where you ride."
   },
   {
     question: "Are custom parts and accessories covered?",
-    answer: "Standard policies include $1,000–$3,000 in accessory coverage. If you've added chrome, saddlebags, custom exhaust, or upgraded components, you can increase this limit up to $30,000 depending on your carrier. Document modifications with photos and receipts for smoother claims. We'll help you determine the right limit for your setup."
+    answer: "Standard policies include $1,000–$3,000 in accessory coverage. If you've added chrome, saddlebags, custom exhaust, or upgraded components, you can increase this limit up to $30,000 depending on your carrier. Document modifications with photos and receipts for smoother claims. We recommend itemizing expensive accessories and adjusting limits accordingly, especially for heavily customized Harleys and custom builds."
   },
   {
     question: "Can I suspend motorcycle insurance during winter?",
-    answer: "Laid-up or storage coverage keeps comprehensive active while suspending liability during months you're not riding. However, Alabama requires continuous liability on registered vehicles. If you suspend coverage, you may need to surrender your registration temporarily. We'll structure the right approach for your situation—keeping you protected without overpaying during the off-season."
+    answer: "Some insurers offer \"lay-up\" or seasonal policies that suspend liability and collision coverage while maintaining comprehensive (theft and fire) protection during storage months. However, if your bike remains registered in AL or GA, state law technically requires continuous liability coverage. Options include: lay-up coverage, reducing to comprehensive-only (if allowed), or temporarily canceling registration. Talk to us about the best approach for your situation."
   },
   {
-    question: "Do motorcycle safety courses lower insurance premiums?",
-    answer: "Yes, completing an MSF (Motorcycle Safety Foundation) course qualifies you for discounts with most carriers. The course also satisfies licensing requirements in both Alabama and Georgia. Other available discounts include multi-policy bundles, anti-theft devices, paid-in-full payments, and claims-free history. We'll identify every discount you qualify for."
+    question: "Does a motorcycle safety course lower insurance?",
+    answer: "Yes. Completing an MSF (Motorcycle Safety Foundation) course or similar approved program typically earns a 10-15% discount with most insurers. The discount often lasts 3-5 years and can be renewed by taking a refresher course. Beyond savings, these courses significantly improve riding skills and accident avoidance — we strongly encourage all riders to complete one."
   }
 ];
 
@@ -168,6 +168,31 @@ const georgiaCities = [
   { name: "Forsyth", slug: "forsyth-ga" }
 ];
 
+const scenicRoutes = {
+  alabama: [
+    { name: "Cheaha Mountain", description: "Alabama's highest point with sweeping curves through Talladega National Forest" },
+    { name: "Little River Canyon Parkway", description: "23 miles of scenic riding along the canyon rim in DeKalb County" },
+    { name: "Natchez Trace Parkway", description: "Historic route through northwest Alabama with no commercial traffic" },
+    { name: "US-431 through Anniston and Gadsden", description: "Popular cruiser corridor connecting northeast Alabama" }
+  ],
+  georgia: [
+    { name: "GA-60 to Suches", description: "Known as \"The Dragon's Lair\" with 60+ miles of mountain curves" },
+    { name: "GA-180/Brasstown Bald", description: "Climb to Georgia's highest peak on twisting mountain roads" },
+    { name: "GA-52 through Ellijay", description: "Apple country with rolling hills and light traffic" },
+    { name: "Richard B. Russell Scenic Highway (GA-348)", description: "14 miles of Alpine-style switchbacks" }
+  ]
+};
+
+const motorcycleBrands = [
+  { name: "Harley-Davidson", models: "Road King, Street Glide, Sportster, and the full touring lineup" },
+  { name: "Honda", models: "Gold Wing, Rebel, Shadow, Africa Twin, and CBR sport bikes" },
+  { name: "Yamaha", models: "V-Star cruisers, MT series, YZF sport bikes, and Super Ténéré adventure bikes" },
+  { name: "Kawasaki", models: "Vulcan cruisers, Ninja sport bikes, and Versys adventure models" },
+  { name: "Indian", models: "Chief, Scout, Chieftain, and the Challenger lineup" },
+  { name: "BMW", models: "R series, K series, and GS adventure bikes" },
+  { name: "Triumph", models: "Bonneville, Street Triple, Tiger, and Rocket 3" }
+];
+
 const MotorcycleInsurance = () => {
   const location = useLocation();
   // JSON-LD Schema for FAQ
@@ -195,30 +220,8 @@ const MotorcycleInsurance = () => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "areaServed": [
-      { "@id": "https://coffeyagencies.com/centre-al#place" },
-      { "@id": "https://coffeyagencies.com/rome-ga#place" },
-      { "@id": "https://coffeyagencies.com/birmingham-al#place" },
-      { "@id": "https://coffeyagencies.com/montgomery-al#place" },
-      { "@id": "https://coffeyagencies.com/mobile-al#place" },
-      { "@id": "https://coffeyagencies.com/dothan-al#place" },
-      { "@id": "https://coffeyagencies.com/auburn-al#place" },
-      { "@id": "https://coffeyagencies.com/enterprise-al#place" },
-      { "@id": "https://coffeyagencies.com/foley-al#place" },
-      { "@id": "https://coffeyagencies.com/phenix-city-al#place" },
-      { "@id": "https://coffeyagencies.com/troy-al#place" },
-      { "@id": "https://coffeyagencies.com/trussville-al#place" },
-      { "@id": "https://coffeyagencies.com/atlanta-ga#place" },
-      { "@id": "https://coffeyagencies.com/alpharetta-ga#place" },
-      { "@id": "https://coffeyagencies.com/calhoun-ga#place" },
-      { "@id": "https://coffeyagencies.com/cartersville-ga#place" },
-      { "@id": "https://coffeyagencies.com/cedartown-ga#place" },
-      { "@id": "https://coffeyagencies.com/duluth-ga#place" },
-      { "@id": "https://coffeyagencies.com/forsyth-ga#place" },
-      { "@id": "https://coffeyagencies.com/lawrenceville-ga#place" },
-      { "@id": "https://coffeyagencies.com/powder-springs-ga#place" },
-      { "@id": "https://coffeyagencies.com/rockmart-ga#place" },
-      { "@id": "https://coffeyagencies.com/summerville-ga#place" },
-      { "@id": "https://coffeyagencies.com/suwanee-ga#place" }
+      { "@type": "State", "name": "Alabama" },
+      { "@type": "State", "name": "Georgia" }
     ],
     "description": "Motorcycle insurance coverage for cruisers, sport bikes, and touring machines including liability, collision, comprehensive, and custom parts protection up to $30,000.",
     "serviceOutput": "Insurance Policy",
@@ -298,13 +301,13 @@ const MotorcycleInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Motorcycle Insurance in Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents who ride, and honest advice on limits." />
+        <title>Motorcycle Insurance Alabama & Georgia - Bike Insurance Quotes | Coffey Agencies</title>
+        <meta name="description" content="Motorcycle insurance in Alabama & Georgia. Bike insurance for cruisers, sport bikes, Harleys. 4.8★ Google rating. Compare quotes from Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Motorcycle Insurance in Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage, local agents, and honest advice on limits." />
+        <meta property="og:title" content="Motorcycle Insurance Alabama & Georgia - Bike Insurance Quotes | Coffey Agencies" />
+        <meta property="og:description" content="Bike insurance for cruisers, sport bikes, Harleys. Custom parts coverage up to $30,000. Compare quotes from Centre, AL and Rome, GA." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/motorcycle-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -314,8 +317,8 @@ const MotorcycleInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Motorcycle Insurance in Alabama & Georgia" />
-        <meta name="twitter:description" content="Coverage for riders—cruisers, sport bikes, touring machines. Custom parts coverage up to $30,000." />
+        <meta name="twitter:title" content="Motorcycle Insurance Alabama & Georgia - Bike Insurance Quotes" />
+        <meta name="twitter:description" content="Bike insurance for cruisers, sport bikes, Harleys. Custom parts coverage up to $30,000." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -358,13 +361,13 @@ const MotorcycleInsurance = () => {
                 Motorcycle Insurance in Alabama & Georgia
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
-                Hit the road with confidence. Custom coverage for your bike, your gear, and your riding style—whether you're cruising backroads or commuting daily.
+                Whether you call it motorcycle insurance or bike insurance, we've got you covered. Hit the road with confidence on Cheaha Mountain, Georgia's Dragon's Lair, or the Natchez Trace. Custom coverage for AL and GA riders—cruisers, sport bikes, touring machines—protecting your bike, your gear, and your riding style.
               </p>
               
               {/* CTA Buttons - styled for dark background */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" asChild>
-                  <Link to="/#quote-form">Get Quote</Link>
+                  <Link to="/#quote-form">Get Bike Insurance Quote</Link>
                 </Button>
                 <Button size="lg" className="bg-white hover:bg-white text-primary border border-primary shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" asChild>
                   <TrackedPhone
@@ -422,7 +425,7 @@ const MotorcycleInsurance = () => {
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Motorcycle Insurance Coverage Do I Need?</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Motorcycle insurance works differently than auto insurance. Riders face unique exposures—no steel cage around you, higher theft rates, and custom modifications that standard policies don't cover. We structure coverage to address these realities while keeping premiums reasonable. Bundle with home or auto for multi-policy savings.
+                Motorcycle insurance works differently than auto insurance. Riders face unique exposures—no steel cage around you, higher theft rates, and custom modifications that standard policies don't cover. We structure bike insurance to address these realities while keeping premiums reasonable. Bundle with home or auto for multi-policy savings.
               </p>
             </div>
 
@@ -447,13 +450,127 @@ const MotorcycleInsurance = () => {
           </div>
         </section>
 
-        {/* Regional Considerations Section */}
+        {/* Cost Comparison Section - NEW */}
         <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">How Much Does Motorcycle Insurance Cost in Alabama vs Georgia?</h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-muted-foreground mb-6">
+                Motorcycle insurance costs significantly less than auto insurance for most riders. In Alabama, average full coverage motorcycle insurance runs approximately <strong>$369 per year</strong> — about $31 per month. Georgia riders typically pay <strong>$400-450 per year</strong> due to higher urban density and theft rates in the Atlanta metro.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                Liability-only bike insurance starts as low as $15-20 per month in both states, meeting the legal minimum of 25/50/25 ($25,000 bodily injury per person, $50,000 per accident, $25,000 property damage). However, we recommend full coverage for financed bikes and any motorcycle worth more than a few thousand dollars.
+              </p>
+              
+              <div className="bg-muted/30 rounded-lg p-6 mb-6">
+                <h3 className="font-bold text-lg mb-4">Factors Affecting Your Motorcycle Insurance Rate:</h3>
+                <ul className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>Bike type (cruisers cost less than sport bikes)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>Engine size and horsepower</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>Your riding experience and age</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>Annual mileage</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>Where you store the bike (garage vs. outside)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>Safety course completion (typically 10-15% discount)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Scenic Routes Section - NEW */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Scenic Routes Do We Insure Riders For?</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Alabama and Georgia offer some of the Southeast's best motorcycle roads. Whether you're cruising Cheaha, carving corners on GA-60, or riding the Natchez Trace, your bike insurance should match the roads you travel.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Alabama Routes */}
+              <div className="bg-background rounded-lg p-6 shadow-sm">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                  <Mountain className="h-5 w-5" />
+                  Alabama Scenic Routes
+                </h3>
+                <div className="space-y-4">
+                  {scenicRoutes.alabama.map((route, index) => (
+                    <div key={index} className="border-l-4 border-accent pl-4">
+                      <h4 className="font-semibold">{route.name}</h4>
+                      <p className="text-muted-foreground text-sm">{route.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Georgia Routes */}
+              <div className="bg-background rounded-lg p-6 shadow-sm">
+                <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+                  <Route className="h-5 w-5" />
+                  Georgia Scenic Routes
+                </h3>
+                <div className="space-y-4">
+                  {scenicRoutes.georgia.map((route, index) => (
+                    <div key={index} className="border-l-4 border-accent pl-4">
+                      <h4 className="font-semibold">{route.name}</h4>
+                      <p className="text-muted-foreground text-sm">{route.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Motorcycle Brands Section - NEW */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">What Motorcycle Brands Do We Cover?</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                We provide bike insurance for all major brands. From a vintage Harley Sportster to a new Honda Gold Wing, we match your bike with the right coverage at competitive rates. Custom builds, trikes, and three-wheelers welcome.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {motorcycleBrands.map((brand, index) => (
+                <Card key={index} className="h-full border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                  <CardContent className="pt-6">
+                    <h3 className="font-bold text-lg mb-2 text-primary">{brand.name}</h3>
+                    <p className="text-muted-foreground text-sm">{brand.models}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Regional Considerations Section */}
+        <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">What Risks Do Alabama & Georgia Riders Face?</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
-                The Southeast offers year-round riding but comes with hazards that shape how we recommend coverage. Georgia recorded 221 motorcyclist fatalities in 2022—the highest in a decade. Alabama saw motorcycle deaths jump 36% from 2023 to 2024. Understanding these risks helps you choose appropriate limits and deductibles.
+                The Southeast offers year-round riding but comes with hazards that shape how we recommend coverage. Georgia recorded 221 motorcyclist fatalities in 2022—the highest in a decade. Alabama saw motorcycle deaths jump 36% from 2023 to 2024. Whether you commute on I-20 through Birmingham, I-75 through Atlanta, I-65 through Montgomery, or US-431 through Anniston, understanding these risks helps AL and GA riders choose appropriate limits and deductibles.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -502,7 +619,7 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* Ways to Save Section */}
-        <section className="py-16 px-4 bg-muted/30">
+        <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-center">How Can I Save on Motorcycle Insurance?</h2>
             
@@ -528,7 +645,7 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* Alabama Guest Passenger Law Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
             <Card className="border-2 bg-accent/5">
               <CardHeader>
@@ -544,7 +661,7 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 px-4 bg-muted/30">
+        <section className="py-16 px-4">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">Motorcycle Insurance Questions We Answer Every Day</h2>
             
@@ -643,6 +760,27 @@ const MotorcycleInsurance = () => {
                 </CardContent>
               </Card>
 
+              {/* Boat Insurance */}
+              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <CardHeader>
+                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
+                    <Sailboat className="h-7 w-7 text-white" />
+                  </div>
+                  <CardTitle>Boat Insurance</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col">
+                  <p className="text-muted-foreground mb-4 flex-grow">
+                    Protect your watercraft on Weiss Lake, Lake Allatoona, and the Coosa River. Coverage for boats, jet skis, and pontoons.
+                  </p>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Boat Insurance">
+                    <Link to="/services/boat-insurance">Learn More →</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Bottom row: 2 cards centered */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
               {/* Renters Insurance */}
               <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <CardHeader>
@@ -657,27 +795,6 @@ const MotorcycleInsurance = () => {
                   </p>
                   <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Renters Insurance">
                     <Link to="/services/renters-insurance">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Bottom row: 2 cards centered */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
-              {/* Condo Insurance */}
-              <Card className="h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center mb-3">
-                    <Building2 className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Condo Insurance</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <p className="text-muted-foreground mb-4 flex-grow">
-                    Specialized coverage for condo owners protecting your unit improvements, personal property, and liability.
-                  </p>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white" asChild aria-label="Learn more about Condo Insurance">
-                    <Link to="/services/condo-insurance">Learn More →</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -704,15 +821,24 @@ const MotorcycleInsurance = () => {
         </section>
 
         {/* Areas We Serve Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Motorcycle Insurance Across Alabama & Georgia</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                We insure riders across Alabama (AL) — including Jefferson County (Birmingham), Montgomery County, Mobile County, Cherokee County (Centre), Etowah County (Gadsden), and Calhoun County (Anniston) — as well as Georgia (GA) communities in Floyd County (Rome), Bartow County (Cartersville), Gordon County (Calhoun), Whitfield County (Dalton), Fulton County (Atlanta), and Gwinnett County.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-lg p-6 shadow-sm mb-8">
+              <p className="text-center text-muted-foreground">
+                <strong>ZIP Codes We Serve:</strong> 35242, 35215 (Birmingham area), 36117 (Montgomery), 36695 (Mobile), 35960 (Centre), 30161 (Rome), 30120 (Cartersville), 30701 (Calhoun), 30720 (Dalton), and surrounding communities throughout AL and GA.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Alabama */}
-              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+              <div className="bg-background shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
                   Alabama
@@ -722,7 +848,7 @@ const MotorcycleInsurance = () => {
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                      className="px-4 py-2 bg-muted rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -731,7 +857,7 @@ const MotorcycleInsurance = () => {
               </div>
 
               {/* Georgia */}
-              <div className="bg-gray-50 shadow-sm rounded-lg p-6">
+              <div className="bg-background shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
                   Georgia
@@ -741,7 +867,7 @@ const MotorcycleInsurance = () => {
                     <Link 
                       key={index}
                       to={`/${city.slug}`}
-                      className="px-4 py-2 bg-white rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                      className="px-4 py-2 bg-muted rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                     >
                       {city.name}
                     </Link>
@@ -756,12 +882,25 @@ const MotorcycleInsurance = () => {
           </div>
         </section>
 
+        {/* Internal Linking Section - NEW */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-4xl text-center">
+            <p className="text-lg text-muted-foreground">
+              Protect more than your bike. Explore our{" "}
+              <Link to="/services/auto-insurance" className="text-primary font-semibold hover:underline">auto insurance</Link> for your car or truck,{" "}
+              <Link to="/services/home-insurance" className="text-primary font-semibold hover:underline">home insurance</Link> for your property, or{" "}
+              <Link to="/services/boat-insurance" className="text-primary font-semibold hover:underline">boat insurance</Link> for your watercraft. 
+              Bundle multiple policies to save 10-15% across all your coverage in AL and GA.
+            </p>
+          </div>
+        </section>
+
         {/* Final CTA Section */}
         <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light text-white">
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Ready to Get Your Motorcycle Covered?</h2>
             <p className="text-lg mb-8 opacity-90">
-              Call us today or request a free quote online. We'll walk you through your options and answer every question.
+              Call us today or request a free bike insurance quote online. We'll walk you through your options and answer every question.
             </p>
             
             <div className="mb-6">
@@ -770,7 +909,7 @@ const MotorcycleInsurance = () => {
                 className="bg-accent text-accent-foreground hover:bg-accent-light text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                 asChild
               >
-                <Link to="/#quote-form">Get Quote</Link>
+                <Link to="/#quote-form">Get Bike Insurance Quote</Link>
               </Button>
             </div>
 
