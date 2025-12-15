@@ -2133,7 +2133,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["30040", "30041", "30028", "30506", "30024"],
     isOfficeCity: false,
     nearestOffice: "rome",
-    localPhone: "(706) 784-6511",
+localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
     customHeroTitle: "Insurance in Cumming, GA (30040)",
     customHeroSubhead: "Auto insurance for GA-400 commuters, homeowners coverage built for half-million-dollar properties, and boat insurance for Lake Lanier. 4.6-star rated service from a family-owned agency that answers the phone.",
