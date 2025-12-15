@@ -4,20 +4,13 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  Car, Home as HomeIcon, Key, Building2, Heart, Bike,
-  Zap, MapPin, Star, Phone, Shield, Users, Clock,
-  CheckCircle, Building, Quote, ArrowRight, Sailboat, Truck
+  Zap, MapPin, Star, Phone,
+  CheckCircle, Quote, ArrowRight
 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Helmet } from "react-helmet-async";
 import { CityData, cityData } from "@/data/cityData";
 
@@ -25,75 +18,6 @@ import { CityData, cityData } from "@/data/cityData";
 interface CityPageTemplateProps {
   city: CityData;
 }
-
-const services = [
-  {
-    icon: Car,
-    title: "Auto Insurance",
-    description: "Protection that travels with you. Liability, collision, comprehensive, and uninsured motorist coverage with rates that reward good drivers.",
-    link: "/services/auto-insurance"
-  },
-  {
-    icon: HomeIcon,
-    title: "Home Insurance",
-    description: "Your home faces Alabama storms and Georgia heat. We build policies around regional risks — wind, hail, water damage — so nothing catches you off guard.",
-    link: "/services/home-insurance"
-  },
-  {
-    icon: Key,
-    title: "Renters Insurance",
-    description: "Your landlord's insurance covers the building, not your stuff. Protect your belongings and add liability coverage starting under $20/month.",
-    link: "/services/renters-insurance"
-  },
-  {
-    icon: Building2,
-    title: "Condo Insurance",
-    description: "Your HOA policy has gaps. We fill them — covering your unit's interior, your belongings, and liability that master policies ignore.",
-    link: "/services/condo-insurance"
-  },
-  {
-    icon: Heart,
-    title: "Life Insurance",
-    description: "The conversation nobody wants to have, but everyone needs. Term and permanent options that protect your family's future without wrecking today's budget.",
-    link: "/services/life-insurance"
-  },
-  {
-    icon: Bike,
-    title: "Motorcycle Insurance",
-    description: "Coverage built for riders — cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.",
-    link: "/services/motorcycle-insurance"
-  },
-  {
-    icon: Sailboat,
-    title: "Boat Insurance",
-    description: "Coverage for pontoons, bass boats, jet skis, and sailboats on Weiss Lake, Allatoona, and waterways across Alabama and Georgia.",
-    link: "/services/boat-insurance"
-  },
-  {
-    icon: Truck,
-    title: "ATV/UTV Insurance",
-    description: "Coverage for four-wheelers, side-by-sides, and dirt bikes on trails at Indian Mountain, Highland Park, and riding areas across Alabama and Georgia.",
-    link: "/services/atv-utv-insurance"
-  }
-];
-
-const whyChoosePillars = [
-  {
-    icon: MapPin,
-    title: "Local Expertise",
-    description: "understanding unique insurance needs and weather risks."
-  },
-  {
-    icon: Users,
-    title: "Real People",
-    description: "When you call, a real person answers—no automated mazes or offshore call centers."
-  },
-  {
-    icon: Clock,
-    title: "Simple Process",
-    description: "Get quotes in minutes, not days. We make insurance straightforward and stress-free."
-  }
-];
 
 const defaultTestimonials: Array<{ name: string; text: string; location?: string }> = [
   {
@@ -126,7 +50,8 @@ const officeDetails = {
     geo: {
       latitude: "34.1520",
       longitude: "-85.6789"
-    }
+    },
+    city: "Centre"
   },
   rome: {
     dba: "Millican & Coffey Agency",
@@ -139,7 +64,8 @@ const officeDetails = {
     geo: {
       latitude: "34.2570",
       longitude: "-85.1647"
-    }
+    },
+    city: "Rome"
   }
 };
 
@@ -161,8 +87,10 @@ const cityCoordinates: Record<string, { latitude: string; longitude: string }> =
   "alpharetta-ga": { latitude: "34.0754", longitude: "-84.2941" },
   "atlanta-ga": { latitude: "33.7489", longitude: "-84.3900" },
   "calhoun-ga": { latitude: "34.5026", longitude: "-84.9511" },
+  "canton-ga": { latitude: "34.2368", longitude: "-84.4908" },
   "cartersville-ga": { latitude: "34.1651", longitude: "-84.7999" },
   "cedartown-ga": { latitude: "34.0153", longitude: "-85.2539" },
+  "dallas-ga": { latitude: "33.9243", longitude: "-84.8407" },
   "duluth-ga": { latitude: "34.0029", longitude: "-84.1446" },
   "forsyth-ga": { latitude: "33.0350", longitude: "-83.9381" },
   "lawrenceville-ga": { latitude: "33.9562", longitude: "-83.9880" },
@@ -188,6 +116,8 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     ? (city.nearestOffice === "centre" ? "centre" : "rome")
     : "city";
 
+  // Get office city name for "Digital Excellence" section
+  const officeCity = nearestOfficeInfo.city;
 
   // JSON-LD Schema for FAQ
   const faqSchema = {
@@ -383,7 +313,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   ];
 
   // Combine all schemas into a single @graph structure for reliable rendering
-  // This ensures all schemas are included in one JSON-LD block
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
@@ -396,6 +325,28 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       ...reviewSchemas,
       ...(localBusinessSchema ? [localBusinessSchema] : [])
     ]
+  };
+
+  // Helper function to render prose paragraphs from text with \n\n separators
+  const renderProseParagraphs = (text: string | string[] | undefined) => {
+    if (!text) return null;
+    
+    // Handle array of paragraphs (like introduction)
+    if (Array.isArray(text)) {
+      return text.map((paragraph, index) => (
+        <p key={index} className="text-muted-foreground leading-relaxed mb-4 last:mb-0">
+          {paragraph}
+        </p>
+      ));
+    }
+    
+    // Handle string with \n\n separators
+    const paragraphs = text.split('\n\n').filter(p => p.trim());
+    return paragraphs.map((paragraph, index) => (
+      <p key={index} className="text-muted-foreground leading-relaxed mb-4 last:mb-0">
+        {paragraph}
+      </p>
+    ));
   };
 
   return (
@@ -424,7 +375,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         <meta name="twitter:description" content={`Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance.`} />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
-        {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
+        {/* Combined Schema Graph */}
         <script type="application/ld+json">
           {JSON.stringify(allSchemas)}
         </script>
@@ -432,7 +383,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
 
       <Header />
 
-      {/* Custom Hero with Background Image */}
+      {/* Hero Section */}
       <section 
         className="relative min-h-[400px] flex items-end pb-16 pt-32"
         role="banner"
@@ -518,290 +469,111 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </div>
       </section>
 
-      {/* Section 2: Opening Paragraph - WHITE */}
-      <section className="py-12 px-4">
+      {/* Opening Paragraphs - WHITE */}
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="prose prose-lg max-w-none">
-            {city.introduction.map((paragraph, index) => (
-              <p key={index} className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          <article className="prose prose-lg max-w-none">
+            {renderProseParagraphs(city.introduction)}
+          </article>
         </div>
       </section>
 
-      {/* Section 3: Main Content - Protecting Residents with Comprehensive Coverage - GRAY */}
+      {/* H2: Protecting Residents with Comprehensive Coverage - GRAY */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+          <SectionHeading className="mb-8">
             Protecting {city.city} Residents with Comprehensive Coverage
-          </h2>
-
-          {/* H3: Weather Risks and Insurance Implications */}
-          {city.weatherRisks && (
-            <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-                Weather Risks and Insurance Implications
-              </h3>
-              <div className="prose prose-lg max-w-none">
-                {city.weatherRisks.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* H3: Neighborhood Coverage Solutions */}
-          {city.neighborhoodCoverage && (
-            <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-                Neighborhood Coverage Solutions
-              </h3>
-              <div className="prose prose-lg max-w-none">
-                {city.neighborhoodCoverage.split('\n\n').map((paragraph, index) => {
-                  // Check if paragraph starts with ** (bold markdown)
-                  if (paragraph.startsWith('**')) {
-                    const parts = paragraph.split('**');
-                    if (parts.length >= 3) {
-                      return (
-                        <div key={index} className="mb-4">
-                          <h4 className="text-xl font-semibold text-foreground mb-2">{parts[1]}</h4>
-                          <p className="text-muted-foreground leading-relaxed text-base">{parts.slice(2).join('').trim()}</p>
-                        </div>
-                      );
-                    }
-                  }
-                  return (
-                    <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
-                      {paragraph}
-                    </p>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* H3: Supporting the Local Economy */}
-          {city.economyInfo && (
-            <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-                Supporting the Local Economy
-              </h3>
-              <div className="prose prose-lg max-w-none">
-                {city.economyInfo.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* H3: Digital Excellence from [Office City] */}
-          {city.localExcellence && (
-            <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-                Digital Excellence from {city.isOfficeCity ? city.city : (city.nearestOffice === "centre" ? "Centre" : "Rome")}
-              </h3>
-              <div className="prose prose-lg max-w-none">
-                {city.localExcellence.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </div>
-          )}
+          </SectionHeading>
+          <article className="prose prose-lg max-w-none">
+            {renderProseParagraphs(city.localConsiderations)}
+          </article>
         </div>
       </section>
 
-      {/* Section 4: Service Cards - WHITE */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <SectionHeading centered className="mb-4">
-              Insurance Services in {city.city}
-            </SectionHeading>
-            <p className="text-lg text-muted-foreground">
-              Complete protection for {city.city} families and businesses
+      {/* H3: Weather Risks and Insurance Implications - WHITE */}
+      {city.weatherRisks && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Weather Risks and Insurance Implications
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.weatherRisks)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H3: Neighborhood Coverage Solutions - GRAY */}
+      {city.neighborhoodCoverage && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Neighborhood Coverage Solutions
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.neighborhoodCoverage)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H3: Supporting the Local Economy - WHITE */}
+      {city.economyInfo && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Supporting the Local Economy
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.economyInfo)}
+            </article>
+            
+            {/* ZIP Codes listing */}
+            <p className="text-muted-foreground leading-relaxed mt-6">
+              <strong>ZIP Codes:</strong> {city.zipCodes.join(', ')}
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Card
-                  key={index}
-                  className="bg-white border border-[#1e3a5f]/20 shadow-md rounded-xl hover:scale-105 hover:shadow-xl hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:border-[#22c55e] transition-all duration-300 ease-in-out group overflow-hidden flex flex-col h-full"
-                >
-                  {/* Compact gray header with icon + title inline */}
-                  <div className="bg-gray-200 px-6 py-4 flex items-center gap-3">
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary transition-colors">
-                      <Icon className="h-6 w-6 text-white" />
-                    </div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
-                  </div>
+        </section>
+      )}
 
-                  {/* White area with description + CTA */}
-                  <CardContent className="p-6 flex-grow flex flex-col">
-                    <CardDescription className="text-base mb-4 flex-grow">
-                      {service.description}
-                    </CardDescription>
-                    <Button
-                      variant="ghost"
-                      className="group/btn p-0 h-auto text-primary hover:text-primary-dark"
-                      asChild
-                    >
-                      <Link to={service.link} aria-label={`Learn about ${service.title}`}>
-                        Learn About {service.title} →
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
+      {/* H3: Digital Excellence from [Office City] - GRAY */}
+      {city.localExcellence && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Digital Excellence from {officeCity}
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.localExcellence)}
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* Section 5: Local Considerations - GRAY */}
+      {/* FAQ Section - Simple Q&A Format - WHITE */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
-            <CardHeader>
-              <div className="flex items-center gap-3 mb-2">
-                <Shield className="h-7 w-7 text-primary" />
-                <CardTitle className="text-2xl">{city.city} Insurance Considerations</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground leading-relaxed">
-                {city.localConsiderations}
-              </p>
-            </CardContent>
-          </Card>
-
-          {city.localArticle && (
-            <div className="mt-10 text-center">
-              <Button variant="outline" asChild>
-                <Link to={city.localArticle.href}>
-                  {city.localArticle.text}
-                </Link>
-              </Button>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Section 5: Neighborhoods We Serve - GRAY */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <SectionHeading centered className="mb-4">
-              Neighborhoods We Serve in {city.city}
-            </SectionHeading>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {city.neighborhoods.map((neighborhood, index) => (
-              <span 
-                key={index}
-                className="px-4 py-2 bg-card border rounded-lg text-sm font-medium hover:border-primary hover:text-primary transition-colors"
-              >
-                {neighborhood}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: FAQ - WHITE */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <SectionHeading centered className="mb-4">
-              {city.city} Insurance Questions Answered
-            </SectionHeading>
-          </div>
-          <Accordion type="single" collapsible className="space-y-4">
-            {city.faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-background border-2 rounded-lg px-6 data-[state=open]:shadow-md transition-shadow">
-              <AccordionTrigger className="text-left hover:no-underline py-5">
-                <span className="font-semibold text-lg pr-4">{faq.question}</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
-      {/* Section 6.5: Learn About Coverage Options */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center">
-          <SectionHeading centered className="mb-4">
-            Learn More About Coverage Before You Bundle
+          <SectionHeading className="mb-8">
+            {city.city} Insurance Questions Answered
           </SectionHeading>
-          <p className="text-lg text-muted-foreground mb-8">
-            Prefer to read first? Explore plain-English guides on insurance requirements and how bundling home and auto can save your {city.city} family money.
-          </p>
-
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild>
-              <Link to="/learn/bundling-home-and-auto">
-                Bundling Home &amp; Auto Guide
-              </Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link to={city.state === "Alabama" ? "/learn/alabama-insurance-requirements" : "/learn/georgia-insurance-requirements"}>
-                {city.state === "Alabama" ? "Alabama Insurance Requirements" : "Georgia Insurance Requirements"}
-              </Link>
-            </Button>
+          <div className="space-y-8">
+            {city.faqs.map((faq, index) => (
+              <div key={index} className="border-b border-border pb-6 last:border-b-0">
+                <p className="font-semibold text-lg text-foreground mb-2">
+                  <strong>Q{index + 1}:</strong> {faq.question}
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  <strong>A{index + 1}:</strong> {faq.answer}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Section 7: Nearby Cities - GRAY */}
+      {/* Testimonials - GRAY */}
       <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <SectionHeading centered className="mb-4">
-              Nearby Cities We Serve
-            </SectionHeading>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {city.nearbyCities.map((citySlug, index) => {
-              const nearbyCity = cityData[citySlug];
-              const displayName = nearbyCity 
-                ? `${nearbyCity.city}, ${nearbyCity.stateAbbr}`
-                : citySlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-              
-              return (
-                <Link key={index} to={`/${citySlug}`}>
-                  <Card className="card-hover border-2 h-full">
-                    <CardContent className="pt-6 text-center">
-                      <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
-                      <h3 className="font-semibold text-lg mb-2">
-                        {displayName}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        View insurance services
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8: Testimonials - WHITE */}
-      <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <SectionHeading centered className="mb-4">
@@ -842,7 +614,42 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </div>
       </section>
 
-      {/* Section 9: Final CTA - NAVY */}
+      {/* Nearby Cities - WHITE */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <SectionHeading centered className="mb-4">
+              Nearby Cities We Serve
+            </SectionHeading>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {city.nearbyCities.map((citySlug, index) => {
+              const nearbyCity = cityData[citySlug];
+              const displayName = nearbyCity 
+                ? `${nearbyCity.city}, ${nearbyCity.stateAbbr}`
+                : citySlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+              
+              return (
+                <Link key={index} to={`/${citySlug}`}>
+                  <Card className="card-hover border-2 h-full">
+                    <CardContent className="pt-6 text-center">
+                      <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
+                      <h3 className="font-semibold text-lg mb-2">
+                        {displayName}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        View insurance services
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA - NAVY */}
       <section className="py-16 px-4 bg-[#1e3a5f]">
         <div className="container mx-auto max-w-4xl text-center">
           <SectionHeading variant="white" centered className="mb-4">
