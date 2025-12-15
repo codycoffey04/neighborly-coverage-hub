@@ -2037,5 +2037,91 @@ export const cityData: Record<string, CityData> = {
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
+  },
+
+  "dallas-ga": {
+    slug: "dallas-ga",
+    city: "Dallas",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["30132", "30157"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    heroImage: "georgia-hero.jpg",
+    customHeroTitle: "Insurance in Dallas, GA (30132)",
+    customHeroSubhead: "Auto insurance for Paulding County's long-haul commuters, homeowners coverage that accounts for Georgia's tornado season, and bundle discounts up to 25%. 4.6-star rated service from a family-owned agency that picks up the phone.",
+    introduction: [
+      "Dallas sits at the heart of Paulding County—Georgia's exurban frontier where 40-minute commutes toward Atlanta and Cobb County are the norm. With nearly 40% of workers driving 45 minutes or more each way on US-278 and GA-120, residents here log serious highway miles before the workday starts. That March 2025 EF-1 tornado that damaged 14 homes from Seven Hills to Bentwater? A reminder that Paulding's rolling hills don't stop severe weather. Coffey Agencies has served Dallas families since 2009, building coverage around how you actually live—not a template written for downtown Atlanta.",
+      "Paulding County's median home value of $346,500 reflects the area's growth as young families trade Atlanta congestion for more space. That price point directly affects dwelling coverage limits—underinsure a $350,000 home by 15% and you're $52,000 short after a total loss. Dallas functions as a bedroom community. Most residents commute out for work, which means the average household owns two vehicles. That creates bundling opportunities—combining home and auto policies typically saves 15-25%—but also requires adequate liability limits for all that road time. Georgia's 25/50/25 minimums won't cover a serious collision on I-20 or GA-120."
+    ],
+    weatherRisks: "On March 15, 2025, an EF-1 tornado with 110 mph winds carved an 11-mile path through Dallas, damaging 14 homes. No fatalities, but a sharp reminder that Paulding County sits in active storm territory. The April 2011 Super Outbreak dropped EF-3 tornadoes in nearby counties. Georgia averages 20-30 tornadoes annually, and March through May brings peak risk.\n\nHail hits several times per year—Georgia recorded 144 hailstorms between 2012 and 2021. Most homeowners policies cover hail, but percentage-based deductibles are common. A 2% wind/hail deductible on a $350,000 home means $7,000 out-of-pocket before coverage kicks in. We review these structures with every Dallas client.\n\nFlood risk remains modest—roughly 6% of properties fall within 100-year flood zones, primarily along Pumpkinvine Creek. Standard policies exclude flood entirely, so properties near creek floodplains need separate coverage through NFIP or private carriers.",
+    neighborhoodCoverage: "**Seven Hills** — This large master-planned community with swim and tennis amenities features newer construction and HOA requirements. Coverage needs focus on replacement cost accuracy and liability for community features.\n\n**Bentwater** — The golf course community attracts higher home values and mature landscaping. Tree coverage increases wind damage exposure; older roofs may require inspection before binding.\n\n**Cedarcrest and Edenwood** — Family-oriented developments with homes ranging from new construction to 15 years old. Roof age and condition directly affect carrier appetite and premium.\n\n**Historic Downtown Dallas** — Established homes near the courthouse square often feature older electrical and plumbing. Replacement cost estimates need to account for period-accurate materials and craftsmanship.\n\n**Lost Creek and Senator's Ridge** — Newer subdivisions with rural character. Distance to fire stations affects ISO ratings and premiums—worth reviewing with each carrier.\n\n**Timberlands** — Wooded lots add curb appeal but increase debris and tree-fall claims during storms. Coverage limits should reflect cleanup costs.",
+    economyInfo: "Dallas serves as Paulding County's seat, anchoring the local economy with government and education jobs. **Paulding County School System** ranks as the largest employer. Teachers and staff benefit from bundling home and auto—savings that stretch a public-sector salary. **Wellstar Paulding Hospital** provides 83 beds plus a 170-bed nursing center. Healthcare workers with long shifts may need coverage adjustments for off-peak commutes. **GreyStone Power Corporation** employs approximately 300 people at its Paulding headquarters—stable utility jobs that support consistent coverage needs.\n\n**Manufacturing anchors** including Interroll, Metromont Corporation, and aerospace firms like Top Flight Aerostructures bring industrial jobs. Shift workers commuting on US-278 toward Hiram and beyond face different exposure than 9-to-5 office commuters. Dallas auto insurance averages ~$231/month—higher than the national average. Why? Those 40-minute commutes, two-car households, and severe weather claims all factor in.\n\n**ZIP Codes:** 30132 (downtown Dallas, Seven Hills, Bentwater), 30157 (Hiram border, eastern Paulding)",
+    localExcellence: "Our Rome office sits 35 miles northwest—about 45 minutes on GA-61. You'll never need to make that drive. Every quote, policy change, and claim question happens by phone, email, or text. Call 706-784-6511 and a licensed Georgia agent (License #149612) answers. Not a call center overseas. Not a chatbot.\n\nSame-day quotes are standard. Policy documents arrive electronically. ID cards hit your phone within minutes of binding. When that next spring storm rolls through Seven Hills or a fender-bender happens on GA-120, you need answers immediately—not an appointment next week.",
+    localConsiderations: "Dallas residents face long commutes (40% drive 45+ minutes), active tornado season (March 2025 EF-1 damaged 14 homes), and hail exposure requiring comprehensive coverage with appropriate deductible review.",
+    neighborhoods: [
+      "Seven Hills",
+      "Bentwater",
+      "Cedarcrest",
+      "Edenwood",
+      "Historic Downtown Dallas",
+      "Lost Creek",
+      "Senator's Ridge",
+      "Timberlands",
+      "Courthouse Square",
+      "US-278 Corridor",
+      "GA-120 Corridor",
+      "Pumpkinvine Creek Area"
+    ],
+    nearbyCities: ["powder-springs-ga", "rome-ga", "canton-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office to get a Dallas quote?",
+        answer: "No. We handle everything remotely—quotes, applications, policy changes, claims support. Call 706-784-6511 or request online. Most Dallas clients never visit our Rome office."
+      },
+      {
+        question: "Why is auto insurance more expensive in Dallas?",
+        answer: "Long commutes—40 minutes average, with 40% of workers driving 45+ minutes—mean more miles and higher accident exposure. Two-car households and severe weather claims also factor into Paulding County rates."
+      },
+      {
+        question: "How much can I save by bundling home and auto?",
+        answer: "Most Dallas households save 15-25% by bundling. With average auto premiums around $231/month, that's meaningful savings—especially for two-vehicle families."
+      },
+      {
+        question: "Does Dallas have tornado risk?",
+        answer: "Yes. An EF-1 tornado damaged 14 homes here in March 2025. Georgia averages 20-30 tornadoes annually, with peak risk from March through May."
+      },
+      {
+        question: "What auto coverage does Georgia require?",
+        answer: "Minimums are 25/50/25 liability. For Dallas commuters logging highway miles on US-278 and GA-120 daily, we recommend significantly higher limits—100/300/100 at minimum."
+      },
+      {
+        question: "Do I need flood insurance in Dallas?",
+        answer: "Most Dallas properties fall outside high-risk flood zones, but about 6% near Pumpkinvine Creek face exposure. Standard policies exclude flood, so check your specific location."
+      },
+      {
+        question: "Do you insure boats for Lake Allatoona?",
+        answer: "Yes. We write boat insurance for Dallas residents using Allatoona, plus motorcycle and ATV coverage for recreation on the Silver Comet Trail area."
+      },
+      {
+        question: "How quickly can coverage start?",
+        answer: "Same day. Once we confirm your information and payment, coverage binds immediately. ID cards and policy documents follow within minutes electronically."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
   }
 };

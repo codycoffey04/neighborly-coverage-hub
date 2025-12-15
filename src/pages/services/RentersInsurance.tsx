@@ -149,7 +149,8 @@ const georgiaCities = [
   { name: "Powder Springs", slug: "powder-springs-ga" },
   { name: "Rockmart", slug: "rockmart-ga" },
   { name: "Forsyth", slug: "forsyth-ga" },
-  { name: "Canton", slug: "canton-ga" }
+  { name: "Canton", slug: "canton-ga" },
+  { name: "Dallas", slug: "dallas-ga" }
 ];
 
 const faqSchema = {
