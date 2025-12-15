@@ -555,8 +555,8 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                       className="group/btn p-0 h-auto text-primary hover:text-primary-dark"
                       asChild
                     >
-                      <Link to={service.link} aria-label={`Learn more about ${service.title}`}>
-                        Learn More →
+                      <Link to={service.link} aria-label={`Learn about ${service.title}`}>
+                        Learn About {service.title} →
                       </Link>
                     </Button>
                   </CardContent>

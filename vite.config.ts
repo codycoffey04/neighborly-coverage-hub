@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { heroImagePreload } from "./vite-plugin-hero-preload";
+import { cssPreload } from "./vite-plugin-css-preload";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -15,6 +16,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     heroImagePreload(),
+    cssPreload(),
     ViteImageOptimizer({
       jpg: {
         quality: 80,

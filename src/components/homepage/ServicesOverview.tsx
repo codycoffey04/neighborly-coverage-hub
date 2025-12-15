@@ -87,8 +87,8 @@ export const ServicesOverview = () => {
                   {service.description}
                 </CardDescription>
                 <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary-dark" asChild>
-                  <Link to={service.link} aria-label={`Learn more about ${service.title}`}>
-                    Learn More 
+                  <Link to={service.link} aria-label={`Learn about ${service.title}`}>
+                    Learn About {service.title}
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
