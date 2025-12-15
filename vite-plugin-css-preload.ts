@@ -9,30 +9,27 @@ export function cssPreload(): Plugin {
     name: 'css-preload',
     transformIndexHtml: {
       order: 'post', // Run after other transforms
-      handler(html, ctx) {
-        // Find CSS files in the built HTML (Vite generates hashed filenames)
-        // Look for <link rel="stylesheet" href="/assets/index-*.css">
-        const cssLinkRegex = /<link\s+rel="stylesheet"\s+href="([^"]*\/assets\/index-[^"]*\.css)"/g;
-        const cssMatches = Array.from(html.matchAll(cssLinkRegex));
+      handler(html) {
+        // More flexible regex to match CSS links regardless of attribute order
+        // Matches: <link href="..." rel="stylesheet"> OR <link rel="stylesheet" href="...">
+        const cssLinkRegex = /<link\s+[^>]*href="([^"]*\.css)"[^>]*>/gi;
         
-        if (cssMatches.length > 0) {
-          // Process each CSS link found
-          cssMatches.forEach(match => {
-            const cssPath = match[1];
-            const fullLinkTag = match[0];
-            
-            // Replace blocking stylesheet link with preload pattern
-            const preloadPattern = `<link rel="preload" href="${cssPath}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        return html.replace(cssLinkRegex, (match, cssPath) => {
+          // Only process if it's a stylesheet link
+          if (!match.includes('rel="stylesheet"')) {
+            return match;
+          }
+          
+          // Skip if already a preload
+          if (match.includes('rel="preload"')) {
+            return match;
+          }
+          
+          // Replace blocking stylesheet link with preload pattern
+          return `<link rel="preload" href="${cssPath}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="${cssPath}"></noscript>`;
-            
-            // Replace the original link tag
-            html = html.replace(fullLinkTag, preloadPattern);
-          });
-        }
-        
-        return html;
+        });
       },
     },
   };
 }
-
