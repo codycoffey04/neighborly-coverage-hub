@@ -518,7 +518,107 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </div>
       </section>
 
-      {/* Section 2: City Introduction with Services - WHITE */}
+      {/* Section 2: Opening Paragraph - WHITE */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="prose prose-lg max-w-none">
+            {city.introduction.map((paragraph, index) => (
+              <p key={index} className="text-muted-foreground leading-relaxed mb-6 text-lg">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Main Content - Protecting Residents with Comprehensive Coverage - GRAY */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+            Protecting {city.city} Residents with Comprehensive Coverage
+          </h2>
+
+          {/* H3: Weather Risks and Insurance Implications */}
+          {city.weatherRisks && (
+            <div className="mb-12">
+              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                Weather Risks and Insurance Implications
+              </h3>
+              <div className="prose prose-lg max-w-none">
+                {city.weatherRisks.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* H3: Neighborhood Coverage Solutions */}
+          {city.neighborhoodCoverage && (
+            <div className="mb-12">
+              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                Neighborhood Coverage Solutions
+              </h3>
+              <div className="prose prose-lg max-w-none">
+                {city.neighborhoodCoverage.split('\n\n').map((paragraph, index) => {
+                  // Check if paragraph starts with ** (bold markdown)
+                  if (paragraph.startsWith('**')) {
+                    const parts = paragraph.split('**');
+                    if (parts.length >= 3) {
+                      return (
+                        <div key={index} className="mb-4">
+                          <h4 className="text-xl font-semibold text-foreground mb-2">{parts[1]}</h4>
+                          <p className="text-muted-foreground leading-relaxed text-base">{parts.slice(2).join('').trim()}</p>
+                        </div>
+                      );
+                    }
+                  }
+                  return (
+                    <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
+                      {paragraph}
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* H3: Supporting the Local Economy */}
+          {city.economyInfo && (
+            <div className="mb-12">
+              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                Supporting the Local Economy
+              </h3>
+              <div className="prose prose-lg max-w-none">
+                {city.economyInfo.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* H3: Digital Excellence from [Office City] */}
+          {city.localExcellence && (
+            <div className="mb-12">
+              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                Digital Excellence from {city.isOfficeCity ? city.city : (city.nearestOffice === "centre" ? "Centre" : "Rome")}
+              </h3>
+              <div className="prose prose-lg max-w-none">
+                {city.localExcellence.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="text-muted-foreground leading-relaxed mb-4 text-base">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Section 4: Service Cards - WHITE */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -567,34 +667,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </div>
       </section>
 
-      {/* Section 3: Why Choose Coffey Agencies - GRAY */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <SectionHeading centered className="mb-4">
-              Why Choose Coffey Agencies in {city.city}
-            </SectionHeading>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {whyChoosePillars.map((pillar, index) => {
-              const Icon = pillar.icon;
-              return (
-                <div key={index} className="text-center space-y-4">
-                  <div className="p-4 rounded-full bg-primary/10 w-fit mx-auto">
-                    <Icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">{pillar.title}</h3>
-                  <p className="text-muted-foreground">
-                    We understand {city.city}'s {pillar.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Local Considerations - WHITE */}
+      {/* Section 5: Local Considerations - GRAY */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
