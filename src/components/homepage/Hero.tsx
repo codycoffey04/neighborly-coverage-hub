@@ -73,7 +73,7 @@ export const Hero = () => {
               </Link>
             </Button>
             <div className="flex flex-col sm:flex-row gap-3">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-4 sm:py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-lg px-10 py-7 min-h-[48px] font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <TrackedPhone
                 phone="(256) 927-6287"
                 phoneRaw="2569276287"
@@ -87,7 +87,7 @@ export const Hero = () => {
                 Centre: (256) 927-6287
               </TrackedPhone>
             </Button>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-base px-6 py-4 sm:py-6 h-auto font-semibold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/95 border-2 border-primary/20 text-lg px-10 py-7 min-h-[48px] font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <TrackedPhone
                 phone="(706) 784-6511"
                 phoneRaw="7067846511"
