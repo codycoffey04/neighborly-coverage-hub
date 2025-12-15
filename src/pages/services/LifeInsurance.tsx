@@ -8,6 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
+import { CompleteYourCoverage } from "@/components/shared/CompleteYourCoverage";
 import { 
   Heart, 
   Shield, 
@@ -1058,108 +1059,7 @@ const georgiaCities = [
           </div>
         </section>
 
-        {/* Cross-Sell Section */}
-        <section className="py-12">
-          <div className="container max-w-5xl">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Complete Your Coverage</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Life insurance is an important part of your financial plan—but most families need more than just one policy. Bundle your coverage and get the protection you deserve.
-              </p>
-            </div>
-
-            {/* Top row: 3 cards */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Car className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Auto Insurance</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <CardDescription className="mb-4 flex-grow">
-                    Required by law and essential for protecting your vehicle. Get liability, collision, and comprehensive coverage that fits your budget.
-                  </CardDescription>
-                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Auto Insurance">
-                    <Link to="/services/auto-insurance">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Home className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Home Insurance</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <CardDescription className="mb-4 flex-grow">
-                    Protect your biggest investment from storms, fire, theft, and liability. Coverage built for Alabama and Georgia homeowners.
-                  </CardDescription>
-                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Home Insurance">
-                    <Link to="/services/home-insurance">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Key className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Renters Insurance</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <CardDescription className="mb-4 flex-grow">
-                    Affordable coverage for your belongings and liability protection. Often costs less than $20/month for solid coverage.
-                  </CardDescription>
-                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Renters Insurance">
-                    <Link to="/services/renters-insurance">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Bottom row: 2 cards centered */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Building2 className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Condo Insurance</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <CardDescription className="mb-4 flex-grow">
-                    HO-6 coverage for walls-in, betterments, and upgrades. Coordinates with your HOA's master policy to fill the gaps.
-                  </CardDescription>
-                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Condo Insurance">
-                    <Link to="/services/condo-insurance">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center flex-shrink-0 mb-3">
-                    <Bike className="h-7 w-7 text-white" />
-                  </div>
-                  <CardTitle>Motorcycle Insurance</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <CardDescription className="mb-4 flex-grow">
-                    Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.
-                  </CardDescription>
-                  <Button variant="outline" asChild className="w-full" aria-label="Learn more about Motorcycle Insurance">
-                    <Link to="/services/motorcycle-insurance">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+        <CompleteYourCoverage excludeService="life" />
 
         {/* Areas We Serve */}
         <section className="py-16 px-4">
