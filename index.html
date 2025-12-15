@@ -25,17 +25,6 @@
     <!-- Google Fonts - Non-blocking load with preload pattern -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" /></noscript>
-    <!-- Fallback for browsers that don't support onload -->
-    <script>
-      (function() {
-        if (typeof window !== 'undefined') {
-          !function(e){"use strict";var t=function(t,n,o){var i,r=e.document,a=e.getComputedStyle,s=r.createElement("link"),l=o||"stylesheet";for(r.getElementsByTagName("head")[0].appendChild(s),s.rel="preload",s.as="style",s.href=t,i=function(e){s.media=e||"all"},r.addEventListener&&s.addEventListener("load",i),s.onloadcssdefined=i,i(s.media),n&&setTimeout(function(){s.rel=l},0)};t.prototype.loadCSS=t,e.loadCSS=t}("undefined"!=typeof global?global:this);
-          if (typeof loadCSS !== 'undefined') {
-            loadCSS("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap");
-          }
-        }
-      })();
-    </script>
     
     <!-- Google Tag Manager - Deferred until after page load to reduce main thread blocking -->
     <script>
