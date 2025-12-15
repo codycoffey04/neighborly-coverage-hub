@@ -150,7 +150,8 @@ const georgiaCities = [
   { name: "Rockmart", slug: "rockmart-ga" },
   { name: "Forsyth", slug: "forsyth-ga" },
   { name: "Canton", slug: "canton-ga" },
-  { name: "Dallas", slug: "dallas-ga" }
+  { name: "Dallas", slug: "dallas-ga" },
+  { name: "Cumming", slug: "cumming-ga" }
 ];
 
 const faqSchema = {

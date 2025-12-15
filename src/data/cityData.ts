@@ -2123,5 +2123,91 @@ export const cityData: Record<string, CityData> = {
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
+  },
+
+  "cumming-ga": {
+    slug: "cumming-ga",
+    city: "Cumming",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["30040", "30041", "30028", "30506", "30024"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(706) 784-6511",
+    heroImage: "georgia-hero.jpg",
+    customHeroTitle: "Insurance in Cumming, GA (30040)",
+    customHeroSubhead: "Auto insurance for GA-400 commuters, homeowners coverage built for half-million-dollar properties, and boat insurance for Lake Lanier. 4.6-star rated service from a family-owned agency that answers the phone.",
+    introduction: [
+      "Cumming anchors Forsyth County—one of Georgia's wealthiest and fastest-growing counties. With a median household income of $138,000 and home values averaging nearly half a million dollars, the stakes are higher here. Add Lake Lanier's 692 miles of shoreline (and the boats, docks, and waterfront properties that come with it), plus a GA-400 commute funneling thousands toward Alpharetta and Atlanta daily, and you get an insurance profile generic carriers consistently underprice. Whether you're protecting a lakefront home in Lanier Heights, a boat at the marina, or the SUV handling the 30-minute commute, Cumming families need coverage built for how they actually live.",
+      "Forsyth County's 85% homeownership rate ranks among the highest in metro Atlanta. These aren't starter homes—the county median sits at $494,000, with Cumming city properties averaging $603,000. Underinsure a home at these values and you're gambling with serious assets. A 15% coverage gap on a $500,000 home means $75,000 out-of-pocket after a total loss. The affluent demographics create distinct insurance needs. Multiple vehicles per household are standard—often three or more. Higher incomes mean more assets to protect, making umbrella policies essential rather than optional. And then there's Lake Lanier: thousands of Forsyth County residents own watercraft ranging from bass boats to cabin cruisers, each requiring hull coverage, liability protection, and trailer insurance."
+    ],
+    weatherRisks: "Forsyth County carries a 40% annual chance of experiencing a tornado. In May 2017, an EF-0 touched down near Cumming with 80 mph winds, uprooting trees and damaging a mobile home. The April 2011 Super Outbreak impacted North Georgia broadly, and that same year a severe thunderstorm killed one person when a tree fell on a vehicle in south Forsyth.\n\nAnnual rainfall of 54 inches—well above the national average—keeps Lake Lanier full but also drives water damage claims. Wind and hail account for approximately 40% of Georgia homeowners claims; water damage adds another 23%. Hail up to 2 inches in diameter has been recorded near Cumming, and percentage-based wind/hail deductibles (typically 1-2% of dwelling value) mean $5,000-$10,000 out-of-pocket on a $500,000 home.\n\nFor lakefront properties, flood insurance is non-negotiable. Roughly 5,500 Forsyth County homes (5.7%) fall within 30-year flood risk zones, concentrated in FEMA Zone AE areas around tributary coves. The 2009 record rainfall swelled Lake Lanier and flooded parks—a reminder that waterfront living comes with waterfront risk.",
+    neighborhoodCoverage: "**Lanier Heights and Lakefront Properties** — Waterfront homes require flood coverage, dock insurance riders, and often umbrella liability for entertaining guests. Fluctuating lake levels can damage docks and shoreline structures—coverage should account for this.\n\n**Polo Golf & Country Club** — Higher home values in this golf course community demand precise replacement cost estimates. Country club memberships often correlate with assets worth protecting under umbrella policies.\n\n**Vickery Village** — This walkable mixed-use community features newer construction with modern building codes. HOA requirements and community amenities affect coverage structures.\n\n**Windermere and Hampton** — Established upscale subdivisions with mature landscaping. Tree coverage increases wind damage exposure; older roofs may require inspection before binding.\n\n**Habersham** — Master-planned community with consistent home values. New construction and HOA oversight typically mean favorable rates, but coverage limits should match current replacement costs.\n\n**Coal Mountain** — North Cumming's more rural feel means larger lots, more wildlife exposure (deer strikes), and potentially longer distances to fire stations affecting ISO ratings.",
+    economyInfo: "Forsyth County's job base spans healthcare, education, manufacturing, and technology. Major employers shape coverage needs across Cumming:\n\n**Forsyth County School System** employs over 8,000 people serving 54,000+ students. Teachers and administrators benefit from bundling—savings that stretch further given the area's high cost of living.\n\n**Northside Hospital Forsyth** operates 407 beds and employs approximately 3,100 people. Healthcare workers with irregular shifts may need coverage adjustments for off-peak commuting.\n\n**Manufacturing anchors** including Tyson Foods, Koch Foods, Solvay Specialty Polymers, and Siemens provide industrial employment. **Scientific Games** and **ARRIS/CommScope** add technology sector jobs.\n\n**Sawnee EMC** headquarters locally with 650 employees—stable utility employment.\n\nThe Lake Lanier economy adds another layer. With 10-12 million annual visitors, the lake drives tourism, marina operations, and waterfront property values. Boat insurance isn't optional here—it's essential.\n\n**ZIP Codes:** 30040 (downtown Cumming, GA-400 corridor), 30041 (south Forsyth toward Alpharetta), 30028 (west Cumming), 30506 (north toward Dawsonville), 30024 (Suwanee border areas)",
+    localExcellence: "Our Rome office sits 67 miles west—about 90 minutes through Canton. You'll never need to make that drive. Every quote, policy change, and claim question happens by phone, email, or text. Call 706-784-6511 and a licensed Georgia agent (License #149612) answers. Not a call center. Not a chatbot.\n\nSame-day quotes are standard for auto, home, and boat coverage. Policy documents arrive electronically. When spring storms roll through or you're adding a new boat before summer, you need answers immediately—not an appointment next week.",
+    localConsiderations: "Cumming residents face GA-400 commuting exposure, Lake Lanier boat and flood considerations, and 40% annual tornado probability requiring comprehensive coverage. High property values demand precise dwelling limits and umbrella liability.",
+    neighborhoods: [
+      "Downtown Cumming",
+      "Lanier Heights",
+      "Polo Golf & Country Club",
+      "Vickery Village",
+      "Windermere",
+      "Hampton",
+      "Habersham",
+      "Coal Mountain",
+      "GA-400 Corridor",
+      "Lake Lanier Waterfront",
+      "South Forsyth",
+      "North Forsyth"
+    ],
+    nearbyCities: ["alpharetta-ga", "duluth-ga", "suwanee-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office for a Cumming quote?",
+        answer: "No. Everything happens remotely—quotes, applications, policy changes, claims support. Call 706-784-6511 or request online. Most Cumming clients never visit our Rome office."
+      },
+      {
+        question: "Do I need boat insurance on Lake Lanier?",
+        answer: "Georgia doesn't legally require it, but lenders do for financed boats, and marinas require liability proof. Given Lanier's traffic (10-12 million annual visitors), liability and hull coverage protect your investment and assets."
+      },
+      {
+        question: "Do lakefront homes in Cumming need flood insurance?",
+        answer: "Usually yes. Properties near Lake Lanier's tributary coves often fall in FEMA Zone AE. Standard homeowners policies exclude flood—separate coverage through NFIP or private carriers is essential."
+      },
+      {
+        question: "How much can bundling save in Cumming?",
+        answer: "Typically 15-25%. For households with multiple vehicles and higher home values, that translates to significant annual savings—often $500-$1,000 or more."
+      },
+      {
+        question: "Does Cumming have tornado risk?",
+        answer: "Forsyth County has a 40% annual chance of a tornado somewhere within its borders. An EF-0 touched down near Cumming in May 2017. Wind coverage and deductible structures deserve attention."
+      },
+      {
+        question: "Should I carry an umbrella policy?",
+        answer: "With Forsyth County's high incomes and asset levels, umbrella coverage is strongly recommended. It extends liability protection beyond auto and home limits—critical when you have significant assets at risk."
+      },
+      {
+        question: "How do deer collisions affect my auto insurance?",
+        answer: "Georgia ranks ninth nationally for deer strikes. Comprehensive coverage pays for deer collision damage minus your deductible. On wooded Cumming roads, it's worth carrying."
+      },
+      {
+        question: "How quickly can coverage start?",
+        answer: "Same day. Coverage binds immediately upon confirmation. ID cards and documents arrive electronically within minutes."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
   }
 };
