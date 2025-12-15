@@ -174,7 +174,8 @@ const georgiaCities = [
   { name: "Alpharetta", slug: "alpharetta-ga" },
   { name: "Powder Springs", slug: "powder-springs-ga" },
   { name: "Rockmart", slug: "rockmart-ga" },
-  { name: "Forsyth", slug: "forsyth-ga" }
+  { name: "Forsyth", slug: "forsyth-ga" },
+  { name: "Canton", slug: "canton-ga" }
 ];
 
 const HomeInsurance = () => {

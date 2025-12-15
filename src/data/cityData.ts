@@ -1951,5 +1951,91 @@ export const cityData: Record<string, CityData> = {
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ]
+  },
+
+  "canton-ga": {
+    slug: "canton-ga",
+    city: "Canton",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["30114", "30115", "30169"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(770) 746-7459",
+    heroImage: "georgia-hero.jpg",
+    customHeroTitle: "Insurance in Canton, GA (30114)",
+    customHeroSubhead: "Auto insurance for drivers navigating I-575, homeowners coverage built for Cherokee County's hail season, and bundle discounts up to 25%. 4.6-star rated service from a family-owned agency that answers the phone.",
+    introduction: [
+      "Canton's 30114 ZIP—covering BridgeMill, Towne Mill, and the Etowah River corridor—has grown 15% since 2020. With Northside Hospital Cherokee employing nearly 4,000 people and I-575 funneling commuters toward Atlanta, this Cherokee County hub faces pressures most carriers overlook: 14 hailstorms in one recent 12-month stretch, flash flood risk along the Etowah, and bumper-to-bumper traffic that makes adequate liability coverage essential. Coffey Agencies has served Canton since 2009.",
+      "Cherokee County's median home value sits at $369,700—well above average and climbing as subdivisions like Great Sky and Governors Preserve fill in. That value directly affects dwelling limits and premiums. Underinsure a $400,000 home and you're gambling with your largest asset. Canton's 54% homeownership rate means robust demand for policies covering Cherokee County's hail exposure. The 46% who rent need coverage their landlord's policy doesn't provide. We match residents with carriers that fit—whether you work at Northside Hospital Cherokee, teach in Cherokee County Schools, or run operations at Belnick's BizChair headquarters."
+    ],
+    weatherRisks: "Cherokee County averages under one tornado yearly, but the April 27, 2011 Super Outbreak dropped an EF2 through the area. Hail presents the consistent threat—14 events recorded recently. Most policies include wind/hail coverage, but separate deductibles of 1-2% mean $3,700-$7,400 out-of-pocket on a $370,000 home.\n\nFlood risk runs along the Etowah River. Roughly 500 Canton properties face exposure, and standard policies exclude flood entirely. Near Boling Park or downtown? Separate flood coverage isn't optional.",
+    neighborhoodCoverage: "**BridgeMill and River Green** — Newer construction but HOA requirements and creek proximity require reviewing flood exposure.\n\n**Woodmont** — Mature trees increase wind damage risk; older roofs may need inspection before binding.\n\n**Laurel Canyon** — Mixed housing including 55+ condos needing HO-6 policies coordinating with HOA coverage.\n\n**Towne Mill and Harmony on the Lakes** — Homes 15-25 years old where roof age affects carrier appetite.\n\n**Governors Preserve and Great Sky** — Higher values requiring precise replacement cost estimates.",
+    economyInfo: "Major employers shape coverage needs. Northside Hospital Cherokee's 3,800 staff often need higher liability limits. Cherokee County School District employees benefit from bundling. Manufacturing workers at Pilgrim's Pride, Chart Industries, and Piolax may need coverage for shift-work commutes.\n\nCanton's I-575 position means 29-30 minute average commutes—81% driving alone. Georgia's 25/50/25 minimums won't cover serious collisions; we recommend 100/300/100 for Canton commuters.\n\n**ZIP Codes:** 30114 (downtown, BridgeMill), 30115 (north Canton, Woodmont), 30169 (PO boxes)",
+    localExcellence: "Our Rome office sits 45 miles west. You'll never need to visit. Every quote and policy change happens by phone at 706-784-6511—answered by licensed Georgia agents, not chatbots. Same-day quotes, electronic documents, instant ID cards. When hail hits BridgeMill or a wreck happens on I-575, you need answers fast.",
+    localConsiderations: "Canton residents face Cherokee County's 14 annual hail events and Etowah River flood exposure requiring comprehensive wind/hail coverage. I-575 commuting patterns call for higher liability limits and UM/UIM protection.",
+    neighborhoods: [
+      "Downtown Canton",
+      "BridgeMill",
+      "River Green",
+      "Woodmont",
+      "Laurel Canyon",
+      "Soleil Laurel Canyon",
+      "Towne Mill",
+      "Harmony on the Lakes",
+      "Governors Preserve",
+      "Great Sky",
+      "Riverstone Parkway",
+      "Hickory Flat Highway"
+    ],
+    nearbyCities: ["alpharetta-ga", "rome-ga", "suwanee-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office for a Canton quote?",
+        answer: "No. Everything happens remotely—call 706-784-6511 or request online. Most Canton clients never visit our Rome office."
+      },
+      {
+        question: "Should Canton homeowners buy flood insurance?",
+        answer: "If you're near the Etowah River or downtown low-lying areas, yes. About 500 properties face flood risk, and standard policies exclude it entirely."
+      },
+      {
+        question: "How much can bundling save in Canton?",
+        answer: "Typically 15-25%. On average local premiums, that's $300-$600 annually back in your pocket."
+      },
+      {
+        question: "What does Georgia require for auto insurance?",
+        answer: "Minimums are 25/50/25 liability. For Canton's I-575 commuters, we recommend much higher limits."
+      },
+      {
+        question: "Will Cherokee County's hail frequency raise my rates?",
+        answer: "It factors in, but roof condition matters most. Impact-resistant shingles can offset regional risk with discounts."
+      },
+      {
+        question: "Do you cover boats for Lake Allatoona?",
+        answer: "Yes—boat and ATV/UTV insurance for Canton residents using Allatoona and local trails."
+      },
+      {
+        question: "What affects auto rates in Canton specifically?",
+        answer: "Driving record, vehicle, mileage, credit, and coverage limits. The I-575 commute corridor and deer-strike frequency also factor in."
+      },
+      {
+        question: "How fast can coverage start?",
+        answer: "Same day. Coverage binds immediately upon confirmation; ID cards arrive electronically within minutes."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
   }
 };

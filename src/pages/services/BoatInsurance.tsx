@@ -235,7 +235,8 @@ const georgiaCities = [
   { name: "Cedartown", slug: "cedartown-ga" },
   { name: "Rockmart", slug: "rockmart-ga" },
   { name: "Summerville", slug: "summerville-ga" },
-  { name: "Forsyth", slug: "forsyth-ga" }
+  { name: "Forsyth", slug: "forsyth-ga" },
+  { name: "Canton", slug: "canton-ga" }
 ];
 
 // Schema data
