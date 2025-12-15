@@ -13,8 +13,8 @@ export const Hero = () => {
     <>
       {/* Preload hero images for LCP discovery - critical for performance */}
       <Helmet>
-        <link rel="preload" as="image" href={heroBackgroundMobileWebP} media="(max-width: 768px)" />
-        <link rel="preload" as="image" href={heroBackgroundWebP} media="(min-width: 769px)" />
+        <link rel="preload" as="image" href={heroBackgroundMobileWebP} media="(max-width: 768px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={heroBackgroundWebP} media="(min-width: 769px)" fetchPriority="high" />
       </Helmet>
     <section 
       role="banner"
@@ -38,6 +38,7 @@ export const Hero = () => {
         <img 
           src={heroBackground} 
           alt="Alabama and Georgia families reviewing insurance options with Coffey Agencies" 
+          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: 'center 45%' }}
           decoding="async"
