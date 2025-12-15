@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 const faqs = [
@@ -86,10 +87,13 @@ export const FAQ = () => {
           <p className="text-muted-foreground mb-4">Still have questions?</p>
           <Button 
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            className="bg-accent text-white hover:bg-accent/90 text-lg px-10 py-7 min-h-[48px] font-bold rounded-xl shadow-lg hover:shadow-xl hover:shadow-[0_0_12px_rgba(34,197,94,0.55)] hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 group"
             asChild
           >
-            <Link to="/#quote-form">Get Quote</Link>
+            <Link to="/#quote-form">
+              Get Quote
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
       </div>
