@@ -24,6 +24,10 @@ export interface CityData {
   economyInfo?: string;
   localExcellence?: string;
   testimonials?: { name: string; text: string; location?: string; }[];
+  localArticle?: {
+    text: string;
+    href: string;
+  };
 }
 
 export const cityData: Record<string, CityData> = {
@@ -85,6 +89,10 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined process means Centre residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes in Downtown Centre, the Gaylesville vicinity, or any other neighborhood throughout the 35960 area."
       }
     ],
+    localArticle: {
+      text: "Storm Season Home Insurance in Centre, AL",
+      href: "/learn/home-insurance-centre-al-storm-season"
+    },
     testimonials: [
       {
         name: "Teresa Gardiner",
@@ -976,6 +984,10 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Rome residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes in West Rome, the Berry College area, or any other neighborhood throughout the 30161 area. Our Rome office is also available for in-person service if you prefer."
       }
     ],
+    localArticle: {
+      text: "What Does Auto Insurance Cost in Rome, GA?",
+      href: "/learn/auto-insurance-costs-rome-ga"
+    },
     testimonials: [
       {
         name: "Teresa Gardiner",

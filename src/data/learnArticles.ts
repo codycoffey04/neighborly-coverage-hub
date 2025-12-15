@@ -726,7 +726,9 @@ export const learnArticles: LearnArticle[] = [
     internalLinks: [
       { text: "get an ATV/UTV insurance quote", href: "/services/atv-utv-insurance" },
       { text: "auto insurance", href: "/services/auto-insurance" },
-      { text: "home insurance", href: "/services/home-insurance" }
+      { text: "home insurance", href: "/services/home-insurance" },
+      { text: "ATV/UTV Insurance in Centre, AL", href: "/centre-al" },
+      { text: "ATV/UTV Insurance in Rome, GA", href: "/rome-ga" }
     ]
   },
   {
@@ -1451,7 +1453,9 @@ export const learnArticles: LearnArticle[] = [
       { text: "Get Your Free Boat Insurance Quote", href: "/services/boat-insurance" },
       { text: "Boat Insurance Coverage", href: "/services/boat-insurance" },
       { text: "Home Insurance Guide", href: "/learn/home-insurance-guide" },
-      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" }
+      { text: "Auto Insurance Guide", href: "/learn/auto-insurance-guide" },
+      { text: "Boat Insurance Near Weiss Lake - Centre, AL", href: "/centre-al" },
+      { text: "Boat Insurance Near Lake Allatoona - Rome, GA", href: "/rome-ga" }
     ]
   },
   {
@@ -1688,7 +1692,9 @@ export const learnArticles: LearnArticle[] = [
       { text: "Motorcycle Insurance Coverage", href: "/services/motorcycle-insurance" },
       { text: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
       { text: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
-      { text: "Bundle Motorcycle + Auto and Save", href: "/learn/bundling-home-and-auto" }
+      { text: "Bundle Motorcycle + Auto and Save", href: "/learn/bundling-home-and-auto" },
+      { text: "Motorcycle Insurance in Rome, GA", href: "/rome-ga" },
+      { text: "Motorcycle Insurance in Birmingham, AL", href: "/birmingham-al" }
     ]
   },
   {
@@ -3387,8 +3393,8 @@ export const learnArticles: LearnArticle[] = [
     ],
     relatedArticles: ["georgia-insurance-requirements", "auto-insurance-guide", "home-insurance-guide"],
     internalLinks: [
-      { text: "Get an Auto Insurance Quote", href: "/contact" },
-      { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Get an Auto Insurance Quote", href: "/services/auto-insurance" },
+      { text: "Get a Home Insurance Quote", href: "/services/home-insurance" },
       { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
       { text: "Home Insurance Coverage", href: "/services/home-insurance" },
       { text: "Insurance in Centre, AL", href: "/centre-al" },
@@ -3645,8 +3651,8 @@ export const learnArticles: LearnArticle[] = [
     ],
     relatedArticles: ["alabama-insurance-requirements", "auto-insurance-guide", "home-insurance-guide"],
     internalLinks: [
-      { text: "Get an Auto Insurance Quote", href: "/contact" },
-      { text: "Get a Home Insurance Quote", href: "/contact" },
+      { text: "Get an Auto Insurance Quote", href: "/services/auto-insurance" },
+      { text: "Get a Home Insurance Quote", href: "/services/home-insurance" },
       { text: "Auto Insurance Coverage", href: "/services/auto-insurance" },
       { text: "Home Insurance Coverage", href: "/services/home-insurance" },
       { text: "Insurance in Rome, GA", href: "/rome-ga" },

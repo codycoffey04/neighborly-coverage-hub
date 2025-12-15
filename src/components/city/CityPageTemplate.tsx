@@ -610,6 +610,16 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
               </p>
             </CardContent>
           </Card>
+
+          {city.localArticle && (
+            <div className="mt-10 text-center">
+              <Button variant="outline" asChild>
+                <Link to={city.localArticle.href}>
+                  {city.localArticle.text}
+                </Link>
+              </Button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -654,6 +664,31 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </section>
+
+      {/* Section 6.5: Learn About Coverage Options */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <SectionHeading centered className="mb-4">
+            Learn More About Coverage Before You Bundle
+          </SectionHeading>
+          <p className="text-lg text-muted-foreground mb-8">
+            Prefer to read first? Explore plain-English guides on insurance requirements and how bundling home and auto can save your {city.city} family money.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button asChild>
+              <Link to="/learn/bundling-home-and-auto">
+                Bundling Home &amp; Auto Guide
+              </Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link to={city.state === "Alabama" ? "/learn/alabama-insurance-requirements" : "/learn/georgia-insurance-requirements"}>
+                {city.state === "Alabama" ? "Alabama Insurance Requirements" : "Georgia Insurance Requirements"}
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
