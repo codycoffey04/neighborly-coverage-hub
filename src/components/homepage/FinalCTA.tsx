@@ -178,7 +178,7 @@ export const FinalCTA = () => {
               <Button 
                 type="submit" 
                 size="lg" 
-                className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" 
+                className="w-full bg-accent hover:bg-accent/90 text-white min-h-[48px] h-14 text-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200" 
                 aria-label="Submit form to get your free insurance quote"
                 disabled={isSubmitting}
               >

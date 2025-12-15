@@ -169,7 +169,7 @@ export const Header = () => {
               </TrackedPhone>
             </div>
             <Link to="/#quote-form">
-              <Button className="bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
+              <Button className="bg-accent text-white hover:bg-accent/90 min-h-[48px] min-w-[48px] px-4" aria-label="Get your free insurance quote">
                 Get Quote
               </Button>
             </Link>
@@ -306,9 +306,9 @@ export const Header = () => {
                 </TrackedPhone>
               </div>
               <Link to="/#quote-form" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-accent text-white hover:bg-accent/90" aria-label="Get your free insurance quote">
-                  Get Quote
-                </Button>
+                  <Button className="w-full bg-accent text-white hover:bg-accent/90 min-h-[48px] px-4" aria-label="Get your free insurance quote">
+                    Get Quote
+                  </Button>
               </Link>
             </nav>
           </div>

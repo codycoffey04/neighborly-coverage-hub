@@ -124,7 +124,7 @@ export const HowItWorks = () => {
           </p>
           <Button 
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            className="bg-accent hover:bg-accent/90 text-white min-h-[48px] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ring-2 ring-white/50"
             asChild
           >
             <Link to="/#quote-form">Get Quote</Link>
