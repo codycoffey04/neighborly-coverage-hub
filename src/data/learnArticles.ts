@@ -1456,8 +1456,8 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "motorcycle-insurance-guide",
-    title: "Motorcycle Insurance Guide: Alabama & Georgia Rider Coverage",
-    metaTitle: "Motorcycle Insurance Guide | Alabama & Georgia | Coffey Agencies",
+    title: "Motorcycle Insurance Guide: Coverage for Every Type of Rider",
+    metaTitle: "Motorcycle Insurance Guide: Coverage for Every Rider | Coffey Agencies",
     metaDescription: "Learn about motorcycle insurance coverage, costs, and Alabama & Georgia requirements. Get expert guidance from Coffey Agencies.",
     excerpt: "Everything Alabama and Georgia riders need to know about coverage, costs, and protecting your bike.",
     category: "Motorcycle Insurance",
@@ -1693,8 +1693,8 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "auto-insurance-guide",
-    title: "Auto Insurance in Alabama & Georgia: What You Actually Need to Know",
-    metaTitle: "Auto Insurance in Alabama & Georgia: Complete Guide | Coffey Agencies",
+    title: "Auto Insurance Guide: What You Actually Need to Know",
+    metaTitle: "Auto Insurance Guide: Coverage, Costs & What You Need | Coffey Agencies",
     metaDescription: "Understand auto insurance requirements, coverage types, and how to save on premiums in Alabama and Georgia. Expert guidance for choosing the right protection.",
     excerpt: "Auto insurance isn't optional in Alabama or Georgia — it's the law. But beyond legal minimums, the right coverage protects your finances when accidents happen.",
     category: "Auto Insurance",
@@ -1911,8 +1911,8 @@ export const learnArticles: LearnArticle[] = [
   },
   {
     slug: "home-insurance-guide",
-    title: "Home Insurance in Alabama & Georgia: Coverage That Matches Your Risks",
-    metaTitle: "Home Insurance in Alabama & Georgia: Coverage Guide | Coffey Agencies",
+    title: "Home Insurance Guide: Coverage That Matches Your Risks",
+    metaTitle: "Home Insurance Guide: Coverage, Risks & How to Save | Coffey Agencies",
     metaDescription: "Learn what home insurance covers in Alabama and Georgia, what standard policies exclude, regional risks like flooding and tornadoes, and how to save on premiums.",
     excerpt: "Your home is likely your largest investment. Home insurance protects that investment — but not all policies are equal, and not all risks are covered.",
     category: "Home Insurance",
