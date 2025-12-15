@@ -103,11 +103,12 @@ export const ServicesOverview = () => {
           <p className="text-lg text-muted-foreground mb-6">Not sure which coverages you need? Start with a quick quote and we'll walk you through options.</p>
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            className="bg-accent text-white hover:bg-accent/90 text-lg px-10 py-7 min-h-[48px] font-bold rounded-xl shadow-lg hover:shadow-xl hover:shadow-[0_0_12px_rgba(34,197,94,0.55)] hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 group"
             asChild
           >
             <Link to="/#quote-form">
-              Get My Free Quote
+              Get Quote
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </div>
