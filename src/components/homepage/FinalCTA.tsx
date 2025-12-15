@@ -105,70 +105,74 @@ export const FinalCTA = () => {
               <input type="hidden" name="service" value={serviceValue} />
               
               {/* Name & Phone Row */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Full Name *</Label>
-                  <Input 
-                    id="name" 
-                    name="name"
-                    type="text" 
-                    placeholder="John Smith" 
-                    required
-                    className="h-12"
-                    disabled={isSubmitting}
-                  />
+              <Suspense fallback={<div className="grid md:grid-cols-2 gap-6"><div className="h-20 bg-muted animate-pulse rounded" /><div className="h-20 bg-muted animate-pulse rounded" /></div>}>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Full Name *</Label>
+                    <Input 
+                      id="name" 
+                      name="name"
+                      type="text" 
+                      placeholder="John Smith" 
+                      required
+                      className="h-12"
+                      disabled={isSubmitting}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Phone Number *</Label>
+                    <Input 
+                      id="phone"
+                      name="phone"
+                      type="tel" 
+                      placeholder="(256) 123-4567" 
+                      required
+                      className="h-12"
+                      disabled={isSubmitting}
+                    />
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number *</Label>
-                  <Input 
-                    id="phone"
-                    name="phone"
-                    type="tel" 
-                    placeholder="(256) 123-4567" 
-                    required
-                    className="h-12"
-                    disabled={isSubmitting}
-                  />
-                </div>
-              </div>
+              </Suspense>
 
               {/* Email & Service Type Row */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address (optional)</Label>
-                  <Input 
-                    id="email"
-                    name="email"
-                    type="email" 
-                    placeholder="john@example.com" 
-                    className="h-12"
-                    disabled={isSubmitting}
-                  />
+              <Suspense fallback={<div className="grid md:grid-cols-2 gap-6"><div className="h-20 bg-muted animate-pulse rounded" /><div className="h-20 bg-muted animate-pulse rounded" /></div>}>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email Address (optional)</Label>
+                    <Input 
+                      id="email"
+                      name="email"
+                      type="email" 
+                      placeholder="john@example.com" 
+                      className="h-12"
+                      disabled={isSubmitting}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="service">Insurance Type</Label>
+                    <Select 
+                      name="service" 
+                      value={serviceValue}
+                      onValueChange={setServiceValue}
+                      disabled={isSubmitting}
+                    >
+                      <SelectTrigger id="service" className="h-12">
+                        <SelectValue placeholder="Select insurance type" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="auto">Auto Insurance</SelectItem>
+                        <SelectItem value="home">Home Insurance</SelectItem>
+                        <SelectItem value="renters">Renters Insurance</SelectItem>
+                        <SelectItem value="condo">Condo Insurance</SelectItem>
+                        <SelectItem value="life">Life Insurance</SelectItem>
+                        <SelectItem value="motorcycle">Motorcycle Insurance</SelectItem>
+                        <SelectItem value="bundle">Bundle (Multiple Policies)</SelectItem>
+                        <SelectItem value="not-sure">Not Sure — Help Me Decide</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="service">Insurance Type</Label>
-                  <Select 
-                    name="service" 
-                    value={serviceValue}
-                    onValueChange={setServiceValue}
-                    disabled={isSubmitting}
-                  >
-                    <SelectTrigger id="service" className="h-12">
-                      <SelectValue placeholder="Select insurance type" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="auto">Auto Insurance</SelectItem>
-                      <SelectItem value="home">Home Insurance</SelectItem>
-                      <SelectItem value="renters">Renters Insurance</SelectItem>
-                      <SelectItem value="condo">Condo Insurance</SelectItem>
-                      <SelectItem value="life">Life Insurance</SelectItem>
-                      <SelectItem value="motorcycle">Motorcycle Insurance</SelectItem>
-                      <SelectItem value="bundle">Bundle (Multiple Policies)</SelectItem>
-                      <SelectItem value="not-sure">Not Sure — Help Me Decide</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
+              </Suspense>
 
               {/* Submit Button */}
               <Button 
