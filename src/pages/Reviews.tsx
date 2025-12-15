@@ -185,14 +185,7 @@ const Reviews = () => {
       "@type": "InsuranceAgency",
       "@id": "https://coffeyagencies.com/#organization",
       "name": "Coffey Agencies Inc.",
-      "telephone": ["(256) 927-6287", "(706) 784-6511"],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.65",
-        "reviewCount": "206",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
+      "telephone": ["(256) 927-6287", "(706) 784-6511"]
     }
   };
 
