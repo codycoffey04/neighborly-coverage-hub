@@ -289,10 +289,7 @@ const RentersInsurance = () => {
     <>
       <Helmet>
         <title>Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies</title>
-        <meta 
-          name="description" 
-          content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.7★ Google rating. Get a quote today." 
-        />
+        <meta name="description" content="Renters insurance from $8/month when bundled with auto. Protect belongings, liability, and temporary housing. 4.7★ rated across Alabama & Georgia." />
         <link rel="canonical" href="https://coffeyagencies.com/services/renters-insurance" />
         
         {/* OpenGraph Meta Tags */}

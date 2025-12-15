@@ -225,7 +225,7 @@ const georgiaCities = [
     <>
       <Helmet>
         <title>Life Insurance Quotes Alabama & Georgia | Term, Whole Life & More | Coffey Agencies</title>
-        <meta name="description" content="Life insurance in Alabama & Georgia. Term life, whole life, final expense & burial insurance. No-exam options available. 4.7★ Google rating. Get a quote today." />
+        <meta name="description" content="Life insurance in Alabama & Georgia. Term life, whole life, final expense options. No-exam available. 4.7★ Google rating. Protect your family today." />
         <link rel="canonical" href="https://coffeyagencies.com/services/life-insurance" />
         
         {/* OpenGraph Meta Tags */}
