@@ -25,11 +25,15 @@
     <!-- Google Fonts - Non-blocking load with preload pattern -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" /></noscript>
-    
-    <!-- Google Tag Manager - Deferred until after page is interactive -->
+    <!-- Fallback for browsers that don't support onload -->
     <script>
-      // Load GTM after page is fully interactive to reduce main thread blocking
-      if (document.readyState === 'complete') {
+      !function(e){"use strict";var t=function(t,n,o){var i,r=e.document,a=e.getComputedStyle,s=r.createElement("link"),l=o||"stylesheet";for(r.getElementsByTagName("head")[0].appendChild(s),s.rel="preload",s.as="style",s.href=t,i=function(e){s.media=e||"all"},r.addEventListener&&s.addEventListener("load",i),s.onloadcssdefined=i,i(s.media),n&&setTimeout(function(){s.rel=l},0)};t.prototype.loadCSS=t,e.loadCSS=t}("undefined"!=typeof global?global:this);
+      loadCSS("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap");
+    </script>
+    
+    <!-- Google Tag Manager - Deferred until after page load to reduce main thread blocking -->
+    <script>
+      window.addEventListener('load', function() {
         setTimeout(function() {
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,17 +41,7 @@
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MKGDDSDX');
         }, 2000);
-      } else {
-        window.addEventListener('load', function() {
-          setTimeout(function() {
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MKGDDSDX');
-          }, 2000);
-        });
-      }
+      });
     </script>
     <!-- End Google Tag Manager -->
     
