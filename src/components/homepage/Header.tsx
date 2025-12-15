@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import coffeyLogo from "@/assets/coffey-logo-transparent-2.png";
+import coffeyLogoWebP from "@/assets/coffey-logo-transparent-2.webp";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import {
   NavigationMenu,
@@ -52,13 +53,18 @@ export const Header = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src={coffeyLogo} 
-              alt="Coffey Agencies - Insurance Services" 
-              width={180}
-              height={56}
-              className="h-14 w-auto"
-            />
+            <picture>
+              <source srcSet={coffeyLogoWebP} type="image/webp" />
+              <img 
+                src={coffeyLogo} 
+                alt="Coffey Agencies - Insurance Services" 
+                width={180}
+                height={56}
+                className="h-14 w-auto"
+                decoding="async"
+                loading="eager"
+              />
+            </picture>
           </Link>
 
           {/* Desktop Navigation */}

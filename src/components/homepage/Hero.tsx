@@ -3,6 +3,8 @@ import { ArrowRight, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import heroBackground from "@/assets/hero-background.jpg";
+import heroBackgroundWebP from "@/assets/hero-background.webp";
+import heroBackgroundMobileWebP from "@/assets/hero-background-mobile.webp";
 
 export const Hero = () => {
   const location = useLocation();
@@ -12,13 +14,30 @@ export const Hero = () => {
       aria-label="Coffey Agencies homepage hero"
       className="relative min-h-[45vh] md:min-h-[55vh] flex items-end pb-12 md:pb-16 overflow-hidden"
     >
-      <img 
-        src={heroBackground} 
-        alt="Alabama and Georgia families reviewing insurance options with Coffey Agencies" 
-        fetchPriority="high"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: 'center 45%' }}
-      />
+      <picture>
+        {/* Mobile: smaller image for faster LCP */}
+        <source 
+          media="(max-width: 768px)" 
+          srcSet={heroBackgroundMobileWebP}
+          type="image/webp"
+        />
+        {/* Desktop: larger image */}
+        <source 
+          media="(min-width: 769px)" 
+          srcSet={heroBackgroundWebP}
+          type="image/webp"
+        />
+        {/* Fallback for browsers that don't support WebP */}
+        <img 
+          src={heroBackground} 
+          alt="Alabama and Georgia families reviewing insurance options with Coffey Agencies" 
+          fetchPriority="high"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: 'center 45%' }}
+          decoding="async"
+          loading="eager"
+        />
+      </picture>
       {/* Subtle dark gradient for text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       
