@@ -12,6 +12,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { SectionHeading } from "@/components/shared/SectionHeading";
+import { CompleteYourCoverage } from "@/components/shared/CompleteYourCoverage";
 import {
   Phone,
   CheckCircle,
@@ -768,6 +769,8 @@ const ATVInsurance = () => {
             </div>
           </div>
         </section>
+
+        <CompleteYourCoverage excludeService="atv" />
 
         {/* Cross-Link to Learn Page */}
         <section className="py-12 px-4 bg-muted/30">

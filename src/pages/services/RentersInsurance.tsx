@@ -4,10 +4,11 @@ import heroBackground from "@/assets/renters-insurance-hero.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Key, Quote, Building2, Bike, GraduationCap, BookOpen } from "lucide-react";
+import { Sofa, Shield, BedDouble, Heart, Zap, Home as HomeIcon, Star, Phone, MapPin, ArrowRight, CheckCircle, Car, Gem, RefreshCw, DollarSign, Umbrella, Quote, GraduationCap, BookOpen, Key } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
+import { CompleteYourCoverage } from "@/components/shared/CompleteYourCoverage";
 
 const coverageTypes = [
   {
@@ -118,38 +119,7 @@ const testimonials = [
   }
 ];
 
-const crossSellServices = [
-  {
-    icon: Car,
-    title: "Auto Insurance",
-    description: "Bundle with renters insurance and save 15-25% on both policies. Complete protection for your vehicles across Alabama and Georgia.",
-    link: "/services/auto-insurance"
-  },
-  {
-    icon: Heart,
-    title: "Life Insurance",
-    description: "Protect your family's financial future with affordable term or whole life coverage starting at $25/month for $500K protection.",
-    link: "/services/life-insurance"
-  },
-  {
-    icon: HomeIcon,
-    title: "Home Insurance",
-    description: "Comprehensive homeowners coverage for Alabama and Georgia properties with protection against regional weather risks and competitive rates.",
-    link: "/services/home-insurance"
-  },
-  {
-    icon: Building2,
-    title: "Condo Insurance",
-    description: "Specialized coverage for condo owners protecting your unit improvements, personal property, and liability with flexible policy options.",
-    link: "/services/condo-insurance"
-  },
-  {
-    icon: Bike,
-    title: "Motorcycle Insurance",
-    description: "Coverage built for riders—cruisers, sport bikes, and touring machines. Custom parts coverage and honest advice on limits.",
-    link: "/services/motorcycle-insurance"
-  }
-];
+// crossSellServices array removed - using CompleteYourCoverage component instead
 
 const alabamaCities = [
   { name: "Centre", slug: "centre-al" },
@@ -888,63 +858,7 @@ const RentersInsurance = () => {
           </div>
         </section>
 
-        {/* Cross-Sell Section */}
-        <section className="section-spacing bg-muted/30">
-          <div className="container-custom">
-            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-              <h2>Complete Your Coverage</h2>
-              <p className="text-lg text-muted-foreground text-balance">
-                Explore additional insurance options to protect every aspect of your life.
-              </p>
-            </div>
-
-            {/* Top row: 3 cards */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-            {crossSellServices.slice(0, 3).map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
-                  <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
-                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-white" />
-                    </div>
-                    <div className="flex-grow">
-                      <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                      <p className="text-muted-foreground">{service.description}</p>
-                    </div>
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild aria-label={`Learn more about ${service.title}`}>
-                      <Link to={service.link}>Learn More →</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
-            </div>
-
-            {/* Bottom row: 2 cards centered */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
-            {crossSellServices.slice(3, 5).map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 border-t-4 border-t-accent shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
-                  <CardContent className="pt-6 space-y-4 flex-grow flex flex-col">
-                    <div className="w-12 h-12 rounded-full bg-primary shadow-md flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-white" />
-                    </div>
-                    <div className="flex-grow">
-                      <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                      <p className="text-muted-foreground">{service.description}</p>
-                    </div>
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-white mt-auto" asChild aria-label={`Learn more about ${service.title}`}>
-                      <Link to={service.link}>Learn More →</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
-            </div>
-          </div>
-        </section>
+        <CompleteYourCoverage excludeService="renters" />
 
         {/* Areas We Serve Section */}
         <section className="py-16 px-4">

@@ -7,6 +7,7 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
+import { CompleteYourCoverage } from "@/components/shared/CompleteYourCoverage";
 import { 
   Breadcrumb, 
   BreadcrumbItem, 
@@ -720,6 +721,8 @@ const BoatInsurance = () => {
             </div>
           </div>
         </section>
+
+        <CompleteYourCoverage excludeService="boat" />
 
         {/* Areas We Serve Section */}
         <section className="section-spacing bg-muted/30">
