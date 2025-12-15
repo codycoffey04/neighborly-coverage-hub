@@ -30,12 +30,12 @@ export const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-balance text-center">
             <span className="block text-white font-semibold tracking-tight text-[clamp(1.25rem,3vw,1.875rem)] drop-shadow-lg">Alabama & Georgia's</span>
-            <span className="block text-white font-[800] tracking-tight text-[clamp(2.2rem,5vw,3.5rem)] mt-2 drop-shadow-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.25)' }}>Trusted Insurance Partner</span>
+            <span className="block text-white font-[800] tracking-tight text-[clamp(2.2rem,5vw,3.5rem)] mt-2 drop-shadow-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.25)' }}>Smarter Way to Insure</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-            From Centre to Rome, we make insurance simple. Get quotes online, talk to real people, and keep more money in your pocket with bundled policies.
+            Bundle home + auto. Save up to 25%. Work with a team that answers the phone and knows your name.
           </p>
 
           {/* CTA Buttons */}
