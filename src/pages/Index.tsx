@@ -25,7 +25,7 @@ const Index = () => {
         "@id": "https://coffeyagencies.com/#organization",
         "name": "Coffey Agencies",
         "legalName": "Coffey Agencies Inc.",
-        "description": "Alabama & Georgia's trusted insurance partner offering auto, home, condo, renters, life, and motorcycle insurance with local expertise and digital convenience.",
+        "description": "Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Auto, home, renters, condo, life, and motorcycle insurance with local expertise.",
         "url": "https://coffeyagencies.com",
         "telephone": ["(256) 927-6287", "(706) 784-6511"],
         "foundingDate": "2009",
@@ -87,7 +87,7 @@ const Index = () => {
           "minValue": 6,
           "maxValue": 10
         },
-        "slogan": "Your trusted insurance partner in Alabama & Georgia",
+        "slogan": "Alabama & Georgia's smarter way to insure",
         "hasCredential": [
           {
             "@type": "GovernmentPermit",
@@ -362,7 +362,7 @@ const Index = () => {
         "@id": "https://coffeyagencies.com/#webpage",
         "url": "https://coffeyagencies.com/",
         "name": "Insurance Agency in Centre, AL & Rome, GA | Coffey Agencies",
-        "description": "Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA.",
+        "description": "Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned agency.",
         "isPartOf": {
           "@id": "https://coffeyagencies.com/#website"
         },
@@ -459,12 +459,12 @@ const Index = () => {
     <>
       <Helmet>
         <title>Coffey Agencies | Auto & Home Insurance in Alabama & Georgia</title>
-        <meta name="description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with local offices." />
+        <meta name="description" content="Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Real people who answer the phone. Free quotes from a family-owned agency." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Coffey Agencies Inc. | Insurance in Alabama & Georgia" />
-        <meta property="og:description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned with offices in Centre, AL and Rome, GA." />
+        <meta property="og:description" content="Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned agency." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -475,7 +475,7 @@ const Index = () => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Coffey Agencies Inc. | Insurance in Alabama & Georgia" />
-        <meta name="twitter:description" content="Alabama & Georgia's trusted insurance partner. Get free quotes on auto, home, renters, condo, life, and motorcycle insurance." />
+        <meta name="twitter:description" content="Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Real people who answer the phone. Free quotes." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         <link rel="preload" as="image" href={heroBackground} />
