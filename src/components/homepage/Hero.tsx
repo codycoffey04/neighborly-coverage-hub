@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import heroBackground from "@/assets/hero-background.jpg";
 import heroBackgroundWebP from "@/assets/hero-background.webp";
@@ -9,6 +10,12 @@ import heroBackgroundMobileWebP from "@/assets/hero-background-mobile.webp";
 export const Hero = () => {
   const location = useLocation();
   return (
+    <>
+      {/* Preload hero images for LCP discovery - critical for performance */}
+      <Helmet>
+        <link rel="preload" as="image" href={heroBackgroundMobileWebP} media="(max-width: 768px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={heroBackgroundWebP} media="(min-width: 769px)" fetchPriority="high" />
+      </Helmet>
     <section 
       role="banner"
       aria-label="Coffey Agencies homepage hero"
@@ -99,5 +106,6 @@ export const Hero = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
