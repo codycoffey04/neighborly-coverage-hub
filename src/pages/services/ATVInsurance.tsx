@@ -473,6 +473,83 @@ const ATVInsurance = () => {
           </div>
         </section>
 
+        {/* Geographic Content: Counties and ZIP Codes */}
+        <section className="section-spacing bg-background">
+          <div className="container-custom">
+            <div className="max-w-5xl mx-auto space-y-8">
+              <SectionHeading centered>Off-Road Communities and Trail Access</SectionHeading>
+              
+              <div className="prose prose-slate max-w-none space-y-4">
+                <p className="text-muted-foreground">
+                  ATV and UTV insurance needs across our service territory reflect each county's terrain, trail access, and off-road recreation culture. <strong>Cherokee County</strong> offers some of Alabama's best ATV riding—Indian Mountain ATV Park near Jacksonville provides 200+ acres of professionally maintained trails attracting riders from across the Southeast. The park requires proof of insurance for entry, making liability coverage essential for Cherokee County riders. Beyond the park, private land ownership is common—many rural residents in Cherokee County own acreage where UTVs serve as farm and ranch vehicles alongside recreational use. Coverage here must address both utility use (a Polaris Ranger checking cattle or hauling feed) and recreational riding (a Can-Am Maverick hitting trails on weekends).
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Cherokee County's rugged terrain—mountain foothills, creek crossings, and rocky trails—creates specific insurance considerations. Comprehensive coverage protects against rollovers (common on steep terrain), collisions with trees or rocks, and damage from creek crossings gone wrong. The county's weather patterns (spring thunderstorms, occasional ice in winter) mean stored ATVs face storm damage risks making comprehensive coverage valuable even during off-season. Many Cherokee County UTV owners customize vehicles with lift kits, winches, LED lights, and expensive tire upgrades—accessory coverage protecting these additions is crucial.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Etowah County</strong> features Highland Park Off-Road Resort near Gadsden—220 acres of trails, mud pits, and hill climbs popular with sport UTV enthusiasts. The park sees Polaris RZRs, Can-Am Mavericks, and Yamaha YXZs tackling challenging terrain on summer weekends. Etowah County riders often carry higher-value sport UTVs ($20,000-$35,000 machines) requiring agreed value coverage to protect investments. The county's mix of public trails and private riding areas means insurance needs to cover diverse use cases—from competitive trail riding to farm utility work.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Jefferson County</strong> (Birmingham area) has limited public trail access but substantial ATV/UTV ownership for rural property management and weekend trips to Cherokee or Etowah county trail parks. Birmingham-area owners typically trailer machines to riding destinations, making trailer coverage and in-transit protection important. The county's relative affluence means many own premium UTVs—$30,000+ Polaris General or Can-Am Defender models used for both recreation and managing hunting property.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Tuscaloosa County</strong> riders access private land and travel to public areas like the Sipsey Wilderness periphery. University of Alabama students and young families often own entry-level ATVs and sport quads for recreation. <strong>Madison County</strong> (Huntsville) serves as a trailering hub—aerospace professionals and defense contractors own quality machines but must travel to riding areas, requiring comprehensive coverage during transport and use.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Georgia's off-road landscape offers different opportunities. <strong>Floyd County</strong> (Rome) provides access to mountain foothills and the extensive Chattahoochee National Forest trail system within reasonable driving distance. Rome-area riders favor mid-size UTVs—Polaris Rangers and Honda Pioneers—for property management and trail riding. The county's mix of farmland and wooded areas creates demand for utility UTVs serving work purposes, meaning coverage must address both recreational risks and farm-use liability.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Bartow County</strong> (Cartersville) offers excellent trail access—Houston Valley ORV Park provides 300+ acres of trails near Cartersville attracting riders throughout northwest Georgia. The park requires insurance verification, and its challenging terrain (creek crossings, hill climbs, mud pits) creates genuine risk justifying comprehensive coverage. Bartow County's I-75 corridor position means many Atlanta-area riders trailer machines here for weekend riding.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Fulton, Gwinnett, Cobb, and DeKalb counties</strong> contribute metro Atlanta's substantial ATV/UTV ownership despite limited local riding areas. These suburban and urban owners primarily trailer to northwest Georgia mountains, Alabama trail parks, or family land in rural Georgia. Coverage needs emphasize in-transit protection, theft prevention (ATVs and UTVs in suburban garages and storage units attract thieves), and comprehensive coverage for machines often stored exposed to weather.
+                </p>
+              </div>
+              
+              <div className="prose prose-slate max-w-none space-y-4">
+                <p className="text-muted-foreground">
+                  ZIP code patterns reveal specific off-road communities and coverage needs. <strong>35960</strong> (Centre in Cherokee County) represents Alabama's ATV/UTV insurance epicenter—proximity to Indian Mountain ATV Park, abundant private riding land, and rural culture where UTVs serve as essential farm vehicles create dense machine ownership. Typical coverage here includes sport ATVs ($8,000-$15,000), utility UTVs ($15,000-$25,000 for Polaris Rangers, Honda Pioneers, or Kawasaki Mules used for farm work), and sport UTVs ($20,000-$35,000 for performance machines). Centre-area riders need liability coverage for trail park entry, comprehensive protection against rollover damage on challenging terrain, and often accessory coverage for customized machines.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>35215</strong> (northeast Birmingham) represents suburban/exurban ownership where UTVs serve hunting property management and weekend recreation. Owners here typically trailer machines to riding destinations—Cherokee County parks, private Blount County land, or even Tennessee trail systems—requiring coverage during both storage at home and use at distant locations. Theft coverage is important given suburban storage; a $25,000 UTV in a garage or carport can attract thieves, especially if customized with visible accessories.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>35242</strong> (Hoover) and <strong>35173</strong> (Trussville) show affluent recreational ownership—families purchasing premium side-by-sides ($30,000-$45,000 for top-end Polaris or Can-Am models) for weekend adventures at trail parks or managing recreational property in surrounding counties. These higher-value machines justify agreed value coverage preventing depreciation disputes after total losses. Many Hoover and Trussville owners also carry significant accessory coverage—$5,000-$8,000 in added equipment (winches, audio systems, roof racks, performance tires) requires specific protection beyond base coverage.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Georgia's <strong>30120</strong> (Cartersville in Bartow County) serves Houston Valley ORV Park's local market—riders here range from entry-level ATV owners to serious sport UTV enthusiasts running $30,000+ machines on technical trails. The park's insurance requirement drives local coverage purchases, and agents in Cartersville understand the specific liability limits (typically $25,000 minimum bodily injury per person) parks demand. Cartersville-area riders also frequently own multiple machines—a family might have a utility UTV for property work plus two sport ATVs for trail riding—requiring aggregate coverage strategies.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>30044</strong> and <strong>30043</strong> (Lawrenceville in Gwinnett County) represent suburban Atlanta ownership patterns—UTVs stored at suburban homes between trips to north Georgia mountains or northwest Georgia trail parks. These households typically own mid-range machines ($18,000-$28,000) with financed purchases often requiring comprehensive and collision coverage per lender mandates. Storage in Gwinnett's newer subdivisions means HOA restrictions sometimes apply—some neighborhoods prohibit visible ATV/UTV storage, pushing machines into garages or storage facilities where theft protection becomes crucial.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>30161</strong> (Rome in Floyd County) shows utility-focused ownership—farmers, ranchers, and property managers using UTVs as work vehicles on acreage. Coverage here emphasizes liability protection (employees or family operating machines on private land), physical damage from work use (fence-line maintenance, pasture checks, equipment hauling), and theft prevention for machines often stored in barns or outbuildings. Rome-area recreational riders also trailer to Chattahoochee National Forest trails and Alabama parks, requiring flexible navigational limits that don't restrict coverage to specific properties.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Metro Atlanta ZIPs (<strong>30303</strong>, <strong>30349</strong>, and others) contribute weekend warriors who trailer significant distances for riding opportunities. Urban storage creates heightened theft risk—sport UTVs stored in apartment complex parking or even home driveways can disappear quickly. These owners need comprehensive coverage emphasizing theft protection alongside traditional collision and rollover coverage for trail use.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Across all locations, ATV/UTV insurance typically costs $100-$400 annually depending on machine value, use (recreational vs. farm utility), and coverage limits selected. Bundling with home and auto policies delivers 10-15% multi-policy discounts. Given trail park insurance requirements, the reality of rollover and collision risks on challenging terrain, and theft exposure for machines often stored in barns or garages, comprehensive coverage proves its value. Whether running a Polaris Ranger along fence lines in Cherokee County, a Can-Am Maverick through Houston Valley's mud pits, or a Honda Pioneer on north Georgia mountain trails, proper insurance protects substantial investments and ensures access to premier riding destinations requiring proof of coverage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Vehicles We Insure Section */}
         <section className="section-spacing bg-background">
           <div className="container-custom">

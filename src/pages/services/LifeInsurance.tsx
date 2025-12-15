@@ -557,6 +557,81 @@ const georgiaCities = [
           </div>
         </section>
 
+        {/* Geographic Content: Counties and ZIP Codes */}
+        <section className="py-12 bg-background">
+          <div className="container max-w-5xl">
+            <h3 className="text-xl md:text-2xl font-bold text-center mb-8">Coverage Needs by Community and Income Level</h3>
+            
+            <div className="prose prose-slate max-w-none space-y-4 mb-8">
+              <p className="text-muted-foreground">
+                Life insurance needs across our service territory reflect each county's economic character, family demographics, and income levels that shape coverage requirements. <strong>Jefferson County</strong> presents Alabama's most diverse life insurance market—Birmingham's professionals in banking, healthcare, and technology sectors often carry substantial term life coverage ($500,000-$1,000,000 policies) to protect families in neighborhoods where median home values exceed $250,000 and dual-income households support private school tuition and lifestyle expenses. Conversely, working-class families in Birmingham's outer neighborhoods seek more modest coverage ($100,000-$250,000 term policies) focused on mortgage protection and replacing lost income for dependents.
+              </p>
+              
+              <p className="text-muted-foreground">
+                UAB's massive medical complex employs thousands of physicians, nurses, and healthcare administrators—many carrying group life insurance through employers but needing supplemental individual policies to adequately protect families. Birmingham's suburbs (Hoover, Vestavia Hills, Trussville) feature financially sophisticated residents who understand the value of permanent life insurance for estate planning and creating tax-advantaged wealth transfer. Jefferson County's economic diversity means we write everything from $25,000 final expense policies for seniors to $2,000,000 term policies for young executives.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>Tuscaloosa County</strong> brings unique dynamics from the University of Alabama's presence. Faculty and staff often need life insurance to supplement university-provided group coverage, ensuring adequate protection for spouses and children. Young families in Tuscaloosa's suburbs—many with University connections—typically seek term life insurance during peak earning years when mortgage debt and childcare expenses create maximum financial vulnerability. The county's median household income around $50,000-$55,000 suggests term life policies in the $250,000-$500,000 range provide appropriate coverage for most families, replacing 5-10 years of income to allow surviving spouses time to adjust financially.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>Cherokee County</strong> reflects rural Alabama's life insurance landscape—modest incomes (median household income around $45,000), high homeownership (75%), and strong family ties mean life insurance often focuses on covering final expenses, paying off property, and leaving something for children. Whole life and final expense policies (typically $10,000-$50,000) are popular among Cherokee County's older residents, while younger families with mortgages seek term coverage matching their home loans ($100,000-$200,000 policies). The county's agricultural character means some farmers carry larger policies to ensure family farms can continue operating if the primary breadwinner dies—succession planning often involves life insurance to equalize inheritances among children who do and don't farm.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>Etowah County</strong> (Gadsden) serves working-class families where manufacturing employment at plants like Goodyear Tire historically provided group life insurance benefits. As traditional manufacturing declines, more Etowah residents need individual coverage. Median household incomes around $45,000-$48,000 suggest term life policies of $200,000-$400,000 provide meaningful protection without breaking family budgets. <strong>Madison County</strong> (Huntsville) presents a different profile—aerospace engineers, defense contractors, and NASA employees often carry substantial coverage ($500,000-$1,500,000 policies) reflecting higher incomes and sophisticated financial planning.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Georgia's counties show similar economic gradients. <strong>Fulton County</strong> (Atlanta) features the state's highest concentration of high-net-worth individuals—Buckhead executives, Midtown professionals, and Sandy Springs tech workers often need $1,000,000+ term life policies or permanent insurance for estate tax planning. Atlanta's cost of living and high home values mean even middle-class families in Fulton need substantial coverage—a family with a $400,000 mortgage, two kids in daycare, and $80,000 combined income might need $750,000-$1,000,000 in term life insurance to truly protect against breadwinner loss.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>Gwinnett County</strong> represents suburban family life insurance needs—dual-income households, median incomes around $70,000-$75,000, newer mortgages, and children in Gwinnett's well-regarded schools all drive term life insurance demand. Policies of $500,000 per spouse are common, often purchased in the 30-40 age range when health allows excellent rates and family obligations peak. <strong>Cobb County</strong> mirrors Gwinnett's demographics with added concentrations of professionals working at the Battery Atlanta, Truist Park area employers, and Marietta's business district.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>Floyd County</strong> (Rome) maintains small-city life insurance patterns—median household income around $52,000, mix of manufacturing and healthcare employment, and strong family orientation mean term life coverage of $250,000-$500,000 serves most families appropriately. Berry College faculty, Redmond Regional Medical Center staff, and local business owners often seek permanent life insurance for wealth accumulation alongside protection. <strong>DeKalb</strong> and <strong>Bartow</strong> counties each contribute their own income levels and coverage patterns to metro Atlanta's diverse life insurance market.
+              </p>
+            </div>
+            
+            <div className="prose prose-slate max-w-none space-y-4">
+              <p className="text-muted-foreground">
+                ZIP code-level income and demographic data reveal specific life insurance coverage patterns. Birmingham's <strong>35242</strong> (Hoover/Greystone/Chapel Hills) features median household incomes around $85,000-$95,000, high homeownership (75%+), and families with children—prime life insurance territory. Residents here typically carry $500,000-$1,000,000 term life policies, often both spouses insured given dual-income households. The ZIP code's affluence also creates demand for permanent life insurance (whole life, universal life) as estate planning tools and college funding vehicles. A healthy 35-year-old couple in 35242 might secure $500,000 of 20-year term coverage each for around $50-$75/month combined—protecting their $350,000 mortgage, children's future education, and family lifestyle.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>35215</strong> (northeast Birmingham near Roebuck/Center Point) shows different patterns—median household income around $45,000-$50,000, more working-class employment, and families often need life insurance but face tighter budgets. Here we emphasize affordable term coverage—$100,000-$250,000 policies providing mortgage protection and income replacement for 3-5 years, often available for $25-$40/month depending on age and health. Final expense whole life policies ($10,000-$25,000) are popular among older residents ensuring funeral costs don't burden children. <strong>35173</strong> (Trussville) combines family demographics with strong incomes (median $85,000+), creating demand similar to Hoover—$500,000-$750,000 term policies are standard for parents in their 30s and 40s.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Montgomery's <strong>36117</strong> (EastChase/Deer Creek area) serves middle-to-upper-middle-class families, Maxwell Air Force Base personnel, and state government employees. Military families often carry substantial SGLI coverage through the VA but need supplemental individual policies for spouses and to maintain coverage after separation from service. Civilian families in this ZIP code typically seek $300,000-$600,000 term coverage matching mortgages and income replacement needs.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>35960</strong> (Centre in Cherokee County) reflects rural life insurance economics—median household income around $42,000-$45,000, high homeownership but modest home values (median $176,000), and coverage needs focused on mortgage protection and final expenses. Term life policies of $100,000-$200,000 serve most families, with permanent life insurance (whole life $15,000-$50,000) popular among older residents for guaranteed final expense coverage. A 40-year-old Centre resident might secure $150,000 of term coverage for $30-$35/month, enough to pay off their home and provide 3-4 years of income replacement.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Georgia's <strong>30044</strong> and <strong>30043</strong> (Lawrenceville/Snellville in Gwinnett County) represent prime life insurance markets—median household incomes $65,000-$75,000, high percentages of families with children, significant mortgages on homes valued $280,000-$320,000, and strong employment in professional and technical fields. Typical coverage here runs $400,000-$750,000 per working spouse, often purchased as 20-30 year level term to cover mortgage duration and children's dependency years. Healthy 35-year-olds in Gwinnett can secure $500,000 of 25-year term for approximately $25-$35/month (males) or $20-$28/month (females)—making adequate protection remarkably affordable.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Atlanta's <strong>30349</strong> (College Park/airport area) shows more working-class life insurance patterns—service industry employment, median incomes around $45,000-$50,000, mix of renters and homeowners, and coverage needs focused on basic income replacement and final expenses. Term policies of $100,000-$300,000 serve many families here, with whole life final expense policies popular among older residents. <strong>30303</strong> (downtown Atlanta) features young urban professionals—many single or newly married—who are prime candidates for convertible term life insurance that can later shift to permanent coverage as wealth accumulates.
+              </p>
+              
+              <p className="text-muted-foreground">
+                <strong>30161</strong> (Rome in Floyd County) reflects small-city demographics—median household income around $48,000-$52,000, mix of manufacturing workers, healthcare employees, and college staff, and life insurance needs centered on mortgage protection ($150,000-$300,000 term policies) and family income replacement. Berry College faculty often seek permanent life insurance as forced savings vehicles complementing TIAA retirement plans. <strong>30120</strong> (Cartersville in Bartow County) serves I-75 corridor families with coverage needs similar to Gwinnett but slightly lower income levels—$250,000-$500,000 term policies are standard for working families.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Across all locations, term life insurance delivers exceptional value during peak earning years—a $500,000 20-year term policy for a healthy 35-year-old often costs $25-$40/month, providing massive leverage that protects families against devastating financial loss. Permanent life insurance serves different needs—final expense coverage for seniors, estate planning for affluent families, and wealth accumulation vehicles for those maxing out retirement account contributions. Our local knowledge helps match coverage types and amounts to each family's specific economic situation, ensuring adequate protection without overinsuring.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Life Insurance for Seniors Section */}
         <section className="py-12 bg-muted/30">
           <div className="container max-w-5xl">

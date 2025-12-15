@@ -489,6 +489,71 @@ const BoatInsurance = () => {
           </div>
         </section>
 
+        {/* Geographic Content: Counties and ZIP Codes */}
+        <section className="section-spacing bg-background">
+          <div className="container-custom">
+            <div className="max-w-5xl mx-auto space-y-8">
+              <SectionHeading centered>Boating Communities Across Alabama and Georgia</SectionHeading>
+              
+              <div className="prose prose-slate max-w-none space-y-4">
+                <p className="text-muted-foreground">
+                  Boat insurance needs across our service territory align closely with waterway access, local boating culture, and the types of vessels popular in each region. <strong>Cherokee County</strong> sits at the heart of Alabama's boat insurance market thanks to Weiss Lake—this 30,200-acre reservoir with 447 miles of shoreline is known as the "Crappie Capital of the World" and hosts thousands of boats during peak season. Centre's location on Weiss Lake means the county sees extensive pontoon boat ownership (families cruising and fishing), bass boats for tournament anglers, and personal watercraft for recreation. Cherokee County boat owners need comprehensive coverage—the lake's size and traffic create collision risks, while severe thunderstorms common in spring and fall can damage boats stored at docks or on lifts. Marina requirements at Weiss Lake facilities often mandate liability coverage, and many financed boats require physical damage coverage from lenders.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Etowah County</strong> benefits from Neely Henry Lake (11,200 acres near Gadsden on the Coosa River)—less crowded than Weiss Lake but popular for bass fishing and recreational boating. Gadsden-area boat owners favor fishing boats and smaller pontoons, with many keeping boats on trailers rather than in slips year-round. The county's position on the Coosa River system creates unique insurance considerations—boats may travel between Neely Henry, Weiss, and Logan Martin lakes, requiring coverage that doesn't restrict navigational limits to a single body of water. <strong>Jefferson County</strong> has limited lakeside access but substantial boat ownership—many Birmingham residents keep boats at Smith Lake (45 minutes north) or trailer to the Gulf Coast. Jefferson County boat owners typically carry higher-value vessels given the county's affluence—$40,000-$80,000 pontoons and $30,000-$60,000 bass boats are common, requiring agreed value coverage to protect investments.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Tuscaloosa County</strong> boat owners primarily use Lake Tuscaloosa (5,885 acres) for fishing and water sports. The University of Alabama's presence creates a market for personal watercraft among students and young families seeking weekend recreation. Many Tuscaloosa boats are stored at private docks requiring specific coverage for dock damage and protection while moored. <strong>Madison County</strong> (Huntsville) serves as a boating hub with Wheeler Lake access and proximity to Guntersville Lake—aerospace professionals and defense contractors often own substantial boats ($50,000+ pontoons, ski boats, and even cabin cruisers) requiring comprehensive agreed-value policies.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Georgia's boat insurance landscape centers on different waterways. <strong>Floyd County</strong> (Rome) provides access to the Coosa River system—the Etowah and Oostanaula rivers merge in Rome, offering small craft boating, kayaking, and fishing opportunities. Local boat ownership skews toward aluminum fishing boats, jon boats, and bass boats suited for river conditions rather than large recreational vessels. <strong>Bartow County</strong> (Cartersville) sits near Lake Allatoona—Georgia's premier recreational boating destination with 12,000 acres and 270 miles of shoreline attracting 3.5 million visitors annually.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Lake Allatoona's proximity to metro Atlanta means <strong>Fulton, Gwinnett, Cobb, and DeKalb counties</strong> contribute massive numbers of boat owners who trailer to the lake on weekends. These metro Atlanta boat owners favor pontoons (extremely popular for family cruising), ski boats, wake boats for water sports, and personal watercraft. Many keep boats stored at home or in storage facilities, requiring comprehensive coverage for theft, storm damage, and trailer accidents during transport. Allatoona's heavy traffic creates higher collision exposure than quieter waterways—hundreds of boats crowd popular coves on summer weekends, making liability coverage and uninsured boater protection essential.
+                </p>
+              </div>
+              
+              <div className="prose prose-slate max-w-none space-y-4">
+                <p className="text-muted-foreground">
+                  ZIP code patterns reveal specific boating communities and insurance needs. <strong>35960</strong> (Centre in Cherokee County) represents Alabama's highest boat ownership density—lakeside properties along Weiss Lake, numerous marinas, and year-round boating culture mean many households own boats. Typical coverage here includes pontoon boats ($25,000-$45,000 agreed value), bass boats ($20,000-$40,000), and personal watercraft ($8,000-$15,000 each). Centre residents keeping boats in slips need marina requirements coverage, while those on private docks want specific coverage for dock damage and boat lifts. Seasonal considerations matter—many boats stay in the water April through October, then winterize for storage, potentially qualifying for lay-up period premium reductions.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>35215</strong> (northeast Birmingham) and <strong>35242</strong> (Hoover) represent Birmingham-area boat owners who trailer to destinations—Smith Lake, Logan Martin Lake, or Gulf Shores. These boat owners need coverage that travels with the vessel, protecting during both storage at home and use at distant waterways. Trailer coverage is essential given frequent highway transport, and many Birmingham boat owners carry higher liability limits given their overall wealth and asset protection needs. <strong>35173</strong> (Trussville) mirrors this pattern with families keeping boats in garages or storage facilities between weekend trips.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Gadsden's boat-owning ZIPs cluster around Neely Henry Lake access points—boats here tend toward practical fishing vessels and family pontoons rather than luxury craft. Coverage needs emphasize actual cash value for older boats alongside liability protection for on-water activities. <strong>36117</strong> (Montgomery) boat owners often trailer to Lake Martin or the Alabama River, requiring flexible navigational limits.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Georgia's Lake Allatoona-adjacent ZIPs show intensive boat ownership. <strong>30120</strong> (Cartersville in Bartow County) serves as a primary access point with numerous marinas, boat ramps, and lakeside communities. Boat owners here run the full range—$15,000 used pontoons to $80,000 new wake boats—requiring varied coverage approaches. The lake's heavy recreational use means collision coverage is strongly recommended; unlike quiet fishing lakes where accidents are rare, Allatoona's congested coves see regular boat-to-boat contact incidents.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>30044</strong> and <strong>30043</strong> (Lawrenceville in Gwinnett County) represent suburban Atlanta boat owners who trailer to Allatoona, Lake Lanier, or even north Georgia mountain lakes. These households typically own mid-range boats ($25,000-$50,000 pontoons and ski boats) with financed purchases requiring comprehensive and collision coverage per lender requirements. Storing boats at suburban homes means theft coverage is important—boats parked in driveways or beside garages can attract thieves, especially high-value personal watercraft.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Atlanta's <strong>30349</strong>, <strong>30303</strong>, and metro ZIPs contribute weekend warriors who trail to Allatoona or even drive to Gulf beaches for saltwater boating. Urban boat owners face higher theft exposure and often carry personal watercraft alongside boats—a family might own a $35,000 pontoon plus two jet skis, creating aggregate coverage needs around $50,000-$60,000 for watercraft alone.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>30161</strong> (Rome in Floyd County) serves river boaters with different needs—smaller jon boats and aluminum fishing boats suited for the Coosa, Etowah, and Oostanaula rivers. Coverage here often runs $5,000-$15,000 agreed value for boats, with emphasis on trailer coverage (frequent launching/loading) and liability protection for river navigation risks.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Across all locations, boat insurance costs typically run $200-$500 annually for standard recreational boats, with personal watercraft adding $150-$300 each. Bundling boat insurance with home and auto policies delivers 10-15% multi-policy discounts, making comprehensive protection affordable while ensuring consistent coverage across all assets. Whether keeping a bass boat at a Weiss Lake dock, a pontoon in a Cartersville slip, or a wake boat in a Lawrenceville garage, proper insurance protects significant investments and provides peace of mind on the water.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Boat Types Section */}
         <section className="section-spacing bg-background">
           <div className="container-custom">

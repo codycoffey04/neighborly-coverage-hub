@@ -529,6 +529,71 @@ const RentersInsurance = () => {
           </div>
         </section>
 
+        {/* Geographic Content: Counties and ZIP Codes */}
+        <section className="section-spacing bg-background">
+          <div className="container-custom">
+            <div className="max-w-5xl mx-auto space-y-8">
+              <h3 className="text-xl md:text-2xl font-bold text-center">Rental Markets Across Alabama and Georgia</h3>
+              
+              <div className="prose prose-slate max-w-none space-y-4">
+                <p className="text-muted-foreground">
+                  Renters insurance needs across our service territory reflect each county's rental market dynamics, student populations, and urban development patterns. <strong>Jefferson County</strong> has Alabama's largest rental market—Birmingham's neighborhoods like Highland Park, Forest Park, and East Lake feature everything from historic duplexes to modern apartment complexes. The county's mix of young professionals, UAB students, and service industry workers creates diverse renter demographics, with many qualifying for bundle discounts when adding renters coverage to their auto policies. Property crime varies widely by neighborhood—downtown Birmingham and areas near UAB see higher theft rates requiring robust personal property coverage, while suburbs like Hoover and Vestavia Hills offer safer environments with lower premiums.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Tuscaloosa County's</strong> rental market revolves around the University of Alabama. During the academic year, over 38,000 students flood Tuscaloosa, many living in purpose-built student housing complexes, older homes converted to rentals near campus, or apartments along McFarland Boulevard. Renters insurance here must account for student-specific risks—frequent moves, roommate situations, and higher liability exposure from social gatherings. The April 2011 tornado devastated rental properties across Tuscaloosa, teaching hard lessons about the importance of personal property coverage when landlord policies only protect the building structure.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Cherokee County</strong> has limited traditional rental stock—most housing is owner-occupied (75% homeownership rate). The rentals that exist tend to be mobile homes, older houses in Centre, or seasonal lakeside properties near Weiss Lake. Rural renters here face different considerations: longer distances from fire protection, potential well water issues, and the reality that replacement costs for personal property may be higher due to limited local shopping options. <strong>Etowah County</strong> (Gadsden) offers more urban rental inventory, particularly in downtown Gadsden and Rainbow City, with working-class renters who often underinsure despite the area's tornado exposure.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Georgia's rental markets tell different stories. <strong>Fulton County</strong> dominates with Atlanta's massive renter population—over 60% of city residents rent rather than own. Midtown's high-rise apartments, Old Fourth Ward's renovated lofts, and Virginia-Highland's bungalow conversions each present unique insurance needs. Urban renters face higher theft risk (comprehensive personal property coverage is essential), potential water damage from aging plumbing in older buildings, and liability concerns in dense multi-family environments. Average renters insurance in Fulton runs $180-$240 annually for $30,000 personal property coverage, but bundling with auto drops costs to the $8-$12/month range that makes coverage a no-brainer.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Gwinnett County</strong> has emerged as a major rental market as millennials priced out of Atlanta seek affordable alternatives in Lawrenceville, Duluth, and Norcross. Many complexes near I-85 offer proximity to Atlanta jobs without city rent prices. The county's diverse immigrant communities often include renters unfamiliar with US insurance norms—we frequently educate Gwinnett renters that landlord policies don't cover their belongings. <strong>Cobb County</strong> (Marietta area) features a mix of upscale apartment communities around the Battery and more affordable options along Cobb Parkway, each with different coverage needs and premium ranges.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>Floyd County</strong> (Rome) maintains a smaller but steady rental market—Berry College students, Redmond Regional Medical Center staff, and young families often rent before buying. Downtown Rome's loft conversions and apartment complexes near the Coosa River serve professionals, while more affordable rentals spread across the county. <strong>DeKalb</strong> and <strong>Bartow</strong> counties each contribute to metro Atlanta's rental ecosystem with their own local characteristics.
+                </p>
+              </div>
+              
+              <div className="prose prose-slate max-w-none space-y-4">
+                <p className="text-muted-foreground">
+                  Specific ZIP codes reveal granular rental market patterns and risk profiles. Birmingham's <strong>35215</strong> (northeast Birmingham near Roebuck and Center Point) has significant rental stock in older apartment complexes and converted single-family homes. This ZIP code sees moderate theft rates and many working-class renters who benefit from our bundle-and-save approach—adding $15,000-$20,000 renters coverage to an existing auto policy often costs just $8-$10/month. <strong>35242</strong> (Hoover/Greystone) features upscale apartment communities with amenities where renters carry higher personal property values—$40,000-$50,000 coverage is common for professionals with electronics, furniture, and recreational equipment. <strong>35173</strong> (Trussville) has limited rental inventory but what exists tends toward newer townhome communities with lower crime and competitive premiums.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Tuscaloosa's rental-heavy <strong>35401</strong> (city proper including campus areas) contains thousands of student renters in purpose-built complexes like The Woodlands, The Exchange, and numerous smaller properties. Student renters here typically need $10,000-$20,000 personal property coverage (enough for laptops, gaming systems, bikes, and clothing), liability coverage for apartment parties, and possibly additional living expense coverage given the challenge of finding alternative housing mid-semester if a fire or storm damages their unit. Many parents purchasing coverage for college students discover that bundling renters insurance with the student's auto policy (still on the family plan) delivers significant savings.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>35960</strong> (Centre in Cherokee County) has minimal rental activity—what exists includes older houses for rent in town and some mobile homes in rural areas. Renters here often overlook insurance despite tornado risk and the reality that replacing belongings would require shopping trips to Gadsden or even Birmingham. Our agents emphasize that even $10,000 coverage provides meaningful protection at low cost.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Georgia's <strong>30044</strong> and <strong>30043</strong> (Lawrenceville/Snellville in Gwinnett County) represent major rental markets—large apartment complexes line Pleasant Hill Road, Sugarloaf Parkway, and near I-85 exits. Median household incomes around $65,000-$70,000 mean many renters carry $25,000-$35,000 personal property coverage. These ZIPs see moderate property crime (car break-ins in apartment parking lots are the main concern), making comprehensive auto coverage equally important when bundling. The presence of immigrant communities means we frequently educate renters that in America, landlord insurance only covers the building—your belongings require separate coverage.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Atlanta's <strong>30349</strong> (College Park/airport area in south Fulton County) has extensive rental stock serving airport workers, Delta employees, and service industry staff. Higher crime rates in parts of this ZIP code mean theft coverage is critical—break-ins at apartment complexes near I-85 occur regularly. Premiums run slightly higher here ($200-$250 annually for standard coverage) due to claims history, but bundling with auto still delivers the $8-$15/month sweet spot that makes coverage accessible. <strong>30303</strong> and <strong>30332</strong> (downtown Atlanta and Georgia Tech area) serve urban renters and students with very different needs—high-rise apartments downtown require different liability considerations than Tech's campus-adjacent housing.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  <strong>30161</strong> (Rome in Floyd County) offers affordable rental options with correspondingly moderate insurance costs—$150-$180 annually for $20,000-$25,000 coverage is typical, dropping to $10-$12/month when bundled with auto. The ZIP code's small-city character means lower theft risk than metro Atlanta but still enough rental activity to support a healthy renters insurance market. <strong>30120</strong> (Cartersville in Bartow County) serves I-75 corridor renters, many employed at nearby manufacturing facilities or commuting to Atlanta, with similar moderate pricing and bundle opportunities.
+                </p>
+                
+                <p className="text-muted-foreground">
+                  Across all locations, renters insurance delivers exceptional value—even standalone policies rarely exceed $200 annually, and bundling with auto insurance typically reduces the effective cost to less than two streaming subscriptions per month while providing $20,000-$30,000 personal property protection, liability coverage, and additional living expenses if your rental becomes uninhabitable due to covered loss.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* College Town Section */}
         <section className="section-spacing">
           <div className="container-custom">
