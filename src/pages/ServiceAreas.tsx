@@ -69,7 +69,7 @@ const ServiceAreas = () => {
     "url": "https://coffeyagencies.com/service-areas",
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 24,
+      "numberOfItems": 27,
       "itemListElement": [
         ...alabamaCities.map((city, index) => ({
           "@type": "ListItem",
