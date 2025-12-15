@@ -4,15 +4,18 @@ import { TrustBar } from "@/components/homepage/TrustBar";
 import { ServicesOverview } from "@/components/homepage/ServicesOverview";
 import { WhyChooseUs } from "@/components/homepage/WhyChooseUs";
 import { HowItWorks } from "@/components/homepage/HowItWorks";
-import { Testimonials } from "@/components/homepage/Testimonials";
 import { ServiceArea } from "@/components/homepage/ServiceArea";
-import { FAQ } from "@/components/homepage/FAQ";
 import { FinalCTA } from "@/components/homepage/FinalCTA";
 import { BottomCTA } from "@/components/homepage/BottomCTA";
 import { Footer } from "@/components/homepage/Footer";
 import { Helmet } from "react-helmet-async";
 import heroBackground from "@/assets/hero-background.jpg";
 import { useScrollToQuoteForm } from "@/hooks/useScrollToQuoteForm";
+import { lazy, Suspense } from "react";
+
+// Lazy load below-the-fold components to reduce initial bundle size
+const Testimonials = lazy(() => import("@/components/homepage/Testimonials").then(m => ({ default: m.Testimonials })));
+const FAQ = lazy(() => import("@/components/homepage/FAQ").then(m => ({ default: m.FAQ })));
 
 const Index = () => {
   useScrollToQuoteForm();
@@ -492,9 +495,13 @@ const Index = () => {
           <WhyChooseUs />
           <ServicesOverview />
           <HowItWorks />
-          <Testimonials />
+          <Suspense fallback={null}>
+            <Testimonials />
+          </Suspense>
           <ServiceArea />
-          <FAQ />
+          <Suspense fallback={null}>
+            <FAQ />
+          </Suspense>
           <FinalCTA />
           <BottomCTA />
         </main>
