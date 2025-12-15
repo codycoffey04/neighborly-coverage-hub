@@ -950,7 +950,7 @@ const RentersInsurance = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Renters Insurance Across Alabama & Georgia</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Renters Insurance Across AL & GA</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
                 We provide apartment insurance across Alabama — including Jefferson County (Birmingham), Montgomery County, Mobile County, Madison County (Huntsville), Cherokee County (Centre), Lee County (Auburn), and Tuscaloosa County — as well as Georgia communities in Fulton County (Atlanta), Gwinnett County (Lawrenceville), DeKalb County, Cobb County, Floyd County (Rome), and Clarke County (Athens).
               </p>
@@ -1003,7 +1003,7 @@ const RentersInsurance = () => {
             </div>
 
             <p className="text-center text-muted-foreground">
-              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
+              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of AL and GA.
             </p>
           </div>
         </section>

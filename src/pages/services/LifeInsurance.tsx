@@ -1165,7 +1165,7 @@ const georgiaCities = [
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Life Insurance Across Alabama & Georgia</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Life Insurance Across AL & GA</h2>
             </div>
 
             {/* Counties paragraph */}
@@ -1187,7 +1187,7 @@ const georgiaCities = [
               <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Alabama
+                  Alabama (AL)
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {alabamaCities.map((city, index) => (
@@ -1206,7 +1206,7 @@ const georgiaCities = [
               <div className="bg-gray-50 shadow-sm rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Georgia
+                  Georgia (GA)
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {georgiaCities.map((city, index) => (
@@ -1223,7 +1223,7 @@ const georgiaCities = [
             </div>
 
             <p className="text-center text-muted-foreground">
-              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
+              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of AL and GA.
             </p>
           </div>
         </section>

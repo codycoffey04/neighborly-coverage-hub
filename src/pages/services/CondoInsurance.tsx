@@ -947,7 +947,7 @@ const CondoInsurance = () => {
       <section className="py-16 bg-muted/30">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">How Can I Save on Condo Insurance?</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">How Can AL & GA Condo Owners Save on Insurance?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {savingsTips.map((tip, index) => (
@@ -1185,7 +1185,7 @@ const CondoInsurance = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
-            <SectionHeading centered className="mb-4">Condo Insurance Across Alabama & Georgia</SectionHeading>
+            <SectionHeading centered className="mb-4">Condo Insurance Across AL & GA</SectionHeading>
           </div>
           
           {/* Counties paragraph */}
@@ -1239,7 +1239,7 @@ const CondoInsurance = () => {
           </div>
 
           <p className="text-center text-muted-foreground">
-            Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia with condo insurance coverage.
+            Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of AL and GA with condo insurance coverage.
           </p>
         </div>
       </section>
