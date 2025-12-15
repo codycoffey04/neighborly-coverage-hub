@@ -225,7 +225,8 @@ const georgiaCities = [
   { name: "Calhoun", slug: "calhoun-ga" },
   { name: "Dalton", slug: null },
   { name: "Canton", slug: "canton-ga" },
-  { name: "Dallas", slug: "dallas-ga" }
+  { name: "Dallas", slug: "dallas-ga" },
+  { name: "Cumming", slug: "cumming-ga" }
 ];
 
 // Testimonials
