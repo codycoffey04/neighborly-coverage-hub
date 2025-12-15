@@ -684,7 +684,7 @@ const HomeInsurance = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                  How Can I Save on Home Insurance?
+                  How Can AL & GA Homeowners Save on Insurance?
                 </h2>
               </div>
 
@@ -912,7 +912,7 @@ const HomeInsurance = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                  Homeowners Insurance Across Alabama & Georgia
+                  Homeowners Insurance Across AL & GA
                 </h2>
               </div>
 
@@ -971,7 +971,7 @@ const HomeInsurance = () => {
                 <Link to="/contact" className="text-primary hover:underline">
                   Contact us
                 </Link>{" "}
-                — we serve all of Alabama and Georgia with homeowners insurance.
+                — we serve all of AL and GA with homeowners insurance.
               </p>
             </div>
           </div>

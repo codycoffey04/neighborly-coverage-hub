@@ -354,7 +354,7 @@ const AutoInsurance = () => {
                 Clear options, fast quotes, and a team that actually picks up the phone
               </p>
               <p className="text-lg text-white/90 max-w-3xl mx-auto mb-6 drop-shadow-md">
-                Whether you need car insurance in Birmingham or coverage in Atlanta, we help you choose coverages that protect your budget and your daily life. Expect straight talk on limits and deductibles for AL and GA drivers, quick paperwork, and follow-through at claim time. Bundle your car insurance with home insurance or condo insurance to unlock additional savings.
+                Whether you need car insurance in Birmingham or coverage in Atlanta, we help Alabama (AL) and Georgia (GA) drivers choose coverages that protect your budget and your daily life. Expect straight talk on limits and deductibles, quick paperwork, and follow-through at claim time. Bundle your car insurance with home insurance or condo insurance to unlock additional savings.
               </p>
               <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
                 {[
@@ -719,7 +719,7 @@ const AutoInsurance = () => {
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Car Insurance Across Alabama & Georgia</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Car Insurance Across AL & GA</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 We serve drivers across Alabama — including Jefferson County (Birmingham), Montgomery County, Mobile County, Cherokee County (Centre), Calhoun County, and Etowah County — as well as Georgia communities in Floyd County (Rome), Fulton County (Atlanta), Gwinnett County, Cobb County, and Bartow County.
               </p>
@@ -773,7 +773,7 @@ const AutoInsurance = () => {
             </div>
 
             <p className="text-center text-muted-foreground">
-              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of Alabama and Georgia.
+              Don't see your city? <Link to="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> — we serve all of AL and GA.
             </p>
           </div>
         </section>
