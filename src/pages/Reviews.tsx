@@ -184,21 +184,15 @@ const Reviews = () => {
     "mainEntity": {
       "@type": "InsuranceAgency",
       "@id": "https://coffeyagencies.com/#organization",
+      "name": "Coffey Agencies Inc.",
       "telephone": ["(256) 927-6287", "(706) 784-6511"],
-      "aggregateRating": [
-        {
-          "@type": "AggregateRating",
-          "ratingValue": "4.7",
-          "reviewCount": "116",
-          "name": "Centre, Alabama Office"
-        },
-        {
-          "@type": "AggregateRating",
-          "ratingValue": "4.6",
-          "reviewCount": "90",
-          "name": "Rome, Georgia Office"
-        }
-      ]
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.65",
+        "reviewCount": "206",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
   };
 
