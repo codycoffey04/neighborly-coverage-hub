@@ -44,7 +44,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
           {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Coffey Agencies Inc.</h4>
+            <p className="text-lg font-semibold mb-4">Coffey Agencies Inc.</p>
             <ul className="space-y-1">
               {company.map((item, index) => (
                 <li key={index}>
@@ -78,7 +78,7 @@ export const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h2 className="text-lg font-semibold mb-4">Services</h2>
             <ul className="space-y-1">
               {services.map((item, index) => (
                 <li key={index}>
@@ -95,7 +95,7 @@ export const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
+            <h2 className="text-lg font-semibold mb-4">Resources</h2>
             <ul className="space-y-1">
               {resources.map((item, index) => (
                 <li key={index}>
@@ -112,7 +112,7 @@ export const Footer = () => {
 
           {/* Office Locations */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Offices</h4>
+            <h2 className="text-lg font-semibold mb-4">Our Offices</h2>
             <div className="space-y-4">
               {/* Centre Office */}
               <div className="space-y-2">

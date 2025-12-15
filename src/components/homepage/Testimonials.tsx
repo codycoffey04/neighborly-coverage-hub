@@ -212,13 +212,20 @@ export const Testimonials = () => {
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={cn(
-                  "h-2 rounded-full transition-all duration-300",
+                  "relative rounded-full transition-all duration-300 p-5 -m-5 min-h-[48px] min-w-[48px] flex items-center justify-center",
                   current === index 
-                    ? "bg-primary w-6" 
-                    : "bg-primary/30 w-2 hover:bg-primary/50"
+                    ? "" 
+                    : ""
                 )}
                 aria-label={`Go to review ${index + 1}`}
-              />
+              >
+                <span className={cn(
+                  "rounded-full transition-all duration-300",
+                  current === index 
+                    ? "h-2 w-6 bg-primary" 
+                    : "h-2 w-2 bg-primary/30 hover:bg-primary/50"
+                )} />
+              </button>
             ))}
           </div>
         </div>

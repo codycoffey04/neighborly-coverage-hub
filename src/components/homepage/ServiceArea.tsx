@@ -38,7 +38,7 @@ export const ServiceArea = () => {
                 
                 {/* White body with CTA */}
                 <CardContent className="p-4 flex items-center justify-center">
-                  <span className="inline-flex items-center text-sm font-medium text-accent group-hover:underline">
+                  <span className="inline-flex items-center text-sm font-medium text-[#0D7D4D] group-hover:underline">
                     Get a Quote
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>

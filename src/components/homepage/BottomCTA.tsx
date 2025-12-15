@@ -12,7 +12,7 @@ export const BottomCTA = () => {
         <SectionHeading variant="default" centered className="mb-4">
           Ready to Save on Insurance?
         </SectionHeading>
-        <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+        <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
           Talk to a local agent today — no pressure, just answers.
         </p>
         
