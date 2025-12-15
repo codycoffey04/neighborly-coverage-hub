@@ -223,7 +223,8 @@ const georgiaCities = [
   { name: "Cedartown", slug: "cedartown-ga" },
   { name: "Cartersville", slug: "cartersville-ga" },
   { name: "Calhoun", slug: "calhoun-ga" },
-  { name: "Dalton", slug: null }
+  { name: "Dalton", slug: null },
+  { name: "Canton", slug: "canton-ga" }
 ];
 
 // Testimonials
