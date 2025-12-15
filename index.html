@@ -124,7 +124,8 @@
     </form>
     
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx" defer></script>
+    <!-- Defer main JS bundle to reduce critical path latency -->
+    <script type="module" src="/src/main.tsx"></script>
     
   </body>
 </html>

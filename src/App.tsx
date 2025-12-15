@@ -5,12 +5,14 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { lazy, Suspense } from "react";
-import { MobileCTABar } from "@/components/shared/MobileCTABar";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
-import { ScrollToTopButton } from "@/components/shared/ScrollToTopButton";
 import { SkipLink } from "@/components/shared/SkipLink";
 import { LoadingSpinner } from "@/components/shared/LoadingSpinner";
 import { ErrorBoundary } from "@/components/shared/ErrorBoundary";
+
+// Lazy load components that only appear after user interaction (scroll)
+const MobileCTABar = lazy(() => import("@/components/shared/MobileCTABar").then(m => ({ default: m.MobileCTABar })));
+const ScrollToTopButton = lazy(() => import("@/components/shared/ScrollToTopButton").then(m => ({ default: m.ScrollToTopButton })));
 
 // Eager load homepage for fastest initial load
 import Index from "./pages/Index";
@@ -71,8 +73,10 @@ const App = () => (
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <SkipLink />
           <ScrollToTop />
-          <MobileCTABar />
-          <ScrollToTopButton />
+          <Suspense fallback={null}>
+            <MobileCTABar />
+            <ScrollToTopButton />
+          </Suspense>
           <ErrorBoundary>
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
