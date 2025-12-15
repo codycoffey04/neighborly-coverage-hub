@@ -182,7 +182,7 @@ export const FinalCTA = () => {
                 aria-label="Submit form to get your free insurance quote"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Submitting..." : "Get My Free Quote"}
+                {isSubmitting ? "Submitting..." : "Get Quote"}
               </Button>
 
               <p className="text-sm text-center text-muted-foreground mb-2">

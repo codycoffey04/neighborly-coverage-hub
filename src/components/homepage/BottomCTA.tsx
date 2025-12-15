@@ -20,7 +20,7 @@ export const BottomCTA = () => {
         <div className="flex flex-col items-center mb-6">
           <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 min-h-[48px] h-auto font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group mb-4">
             <Link to="/#quote-form">
-              Get My Free Quote
+              Get Quote
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
