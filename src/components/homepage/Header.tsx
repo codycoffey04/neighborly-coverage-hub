@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import coffeyLogo from "@/assets/coffey-logo-transparent-2.png";
 import coffeyLogoWebP from "@/assets/coffey-logo-transparent-2.webp";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+
+// Lazy load heavy NavigationMenu component (Radix UI, only needed on hover/click)
+const NavigationMenu = lazy(() => import("@/components/ui/navigation-menu").then(m => ({ default: m.NavigationMenu })));
+const NavigationMenuContent = lazy(() => import("@/components/ui/navigation-menu").then(m => ({ default: m.NavigationMenuContent })));
+const NavigationMenuItem = lazy(() => import("@/components/ui/navigation-menu").then(m => ({ default: m.NavigationMenuItem })));
+const NavigationMenuLink = lazy(() => import("@/components/ui/navigation-menu").then(m => ({ default: m.NavigationMenuLink })));
+const NavigationMenuList = lazy(() => import("@/components/ui/navigation-menu").then(m => ({ default: m.NavigationMenuList })));
+const NavigationMenuTrigger = lazy(() => import("@/components/ui/navigation-menu").then(m => ({ default: m.NavigationMenuTrigger })));
 
 const serviceLinks = [
   { name: "Auto Insurance", href: "/services/auto-insurance" },
@@ -108,31 +108,33 @@ export const Header = () => {
               Reviews
             </Link>
             
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm font-medium text-primary bg-transparent hover:text-primary/80">
-                    Learn
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-56 gap-1 p-2">
-                      {learnLinks.map((link) => (
-                        <li key={link.href}>
-                          <NavigationMenuLink asChild>
-                            <Link 
-                              to={link.href} 
-                              className="block px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors"
-                            >
-                              {link.name}
-                            </Link>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <Suspense fallback={<div className="text-sm font-medium text-primary">Learn</div>}>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="text-sm font-medium text-primary bg-transparent hover:text-primary/80">
+                      Learn
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-56 gap-1 p-2">
+                        {learnLinks.map((link) => (
+                          <li key={link.href}>
+                            <NavigationMenuLink asChild>
+                              <Link 
+                                to={link.href}
+                                className="block px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors"
+                              >
+                                {link.name}
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </Suspense>
           </nav>
 
           {/* Contact & CTA */}

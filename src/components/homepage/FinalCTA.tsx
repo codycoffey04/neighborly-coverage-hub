@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Check } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { useToast } from "@/hooks/use-toast";
+
+// Lazy load heavy form components (Radix UI Select, Input, Label - only needed when form is visible)
+const Input = lazy(() => import("@/components/ui/input").then(m => ({ default: m.Input })));
+const Label = lazy(() => import("@/components/ui/label").then(m => ({ default: m.Label })));
+const Select = lazy(() => import("@/components/ui/select").then(m => ({ default: m.Select })));
+const SelectContent = lazy(() => import("@/components/ui/select").then(m => ({ default: m.SelectContent })));
+const SelectItem = lazy(() => import("@/components/ui/select").then(m => ({ default: m.SelectItem })));
+const SelectTrigger = lazy(() => import("@/components/ui/select").then(m => ({ default: m.SelectTrigger })));
+const SelectValue = lazy(() => import("@/components/ui/select").then(m => ({ default: m.SelectValue })));
 
 // Extend Window interface for dataLayer
 declare global {
