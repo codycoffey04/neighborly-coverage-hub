@@ -551,6 +551,23 @@ const ATVInsurance = () => {
           </div>
         </section>
 
+        {/* ATV/UTV Insurance Guide CTA */}
+        <section className="section-spacing bg-muted/30">
+          <div className="container-custom max-w-4xl text-center">
+            <SectionHeading centered className="mb-4">
+              New to ATV & UTV Insurance?
+            </SectionHeading>
+            <p className="text-lg text-muted-foreground mb-6">
+              See what coverage you actually need for four-wheelers, side-by-sides, and dirt bikes in Alabama and Georgia.
+            </p>
+            <Button asChild>
+              <Link to="/learn/atv-utv-insurance-guide">
+                Read the ATV & UTV Insurance Guide
+              </Link>
+            </Button>
+          </div>
+        </section>
+
         {/* Vehicles We Insure Section */}
         <section className="section-spacing bg-background">
           <div className="container-custom">

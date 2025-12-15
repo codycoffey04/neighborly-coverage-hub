@@ -555,6 +555,23 @@ const BoatInsurance = () => {
           </div>
         </section>
 
+        {/* Boat Insurance Guide CTA */}
+        <section className="section-spacing bg-muted/30">
+          <div className="container-custom max-w-4xl text-center">
+            <SectionHeading centered className="mb-4">
+              Want a Deep Dive on Boat Insurance?
+            </SectionHeading>
+            <p className="text-lg text-muted-foreground mb-6">
+              Learn how boat insurance works in Alabama and Georgia — coverage types, what affects cost, and when you truly need it.
+            </p>
+            <Button asChild>
+              <Link to="/learn/boat-insurance-guide">
+                Read the Boat Insurance Guide
+              </Link>
+            </Button>
+          </div>
+        </section>
+
         {/* Boat Types Section */}
         <section className="section-spacing bg-background">
           <div className="container-custom">

@@ -710,6 +710,23 @@ const AutoInsurance = () => {
           </div>
         </section>
 
+        {/* Local Guide: Auto Insurance Costs in Rome, GA */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-3xl text-center">
+            <SectionHeading centered className="mb-4">
+              Driving in Rome, GA?
+            </SectionHeading>
+            <p className="text-lg text-muted-foreground mb-6">
+              See what drivers in Rome actually pay for auto insurance, what impacts your premium, and how to save with local discounts.
+            </p>
+            <Button asChild>
+              <Link to="/learn/auto-insurance-costs-rome-ga">
+                Read the Rome, GA Auto Insurance Cost Guide
+              </Link>
+            </Button>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
           <div className="container mx-auto max-w-4xl text-center">

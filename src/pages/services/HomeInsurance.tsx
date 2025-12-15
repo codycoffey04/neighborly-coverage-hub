@@ -872,6 +872,23 @@ const HomeInsurance = () => {
           </div>
         </section>
 
+        {/* Local Guide: Storm-Season Home Insurance in Centre, AL */}
+        <section className="py-12 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-3xl text-center">
+            <SectionHeading centered className="mb-4">
+              Live Near Weiss Lake or in Centre, AL?
+            </SectionHeading>
+            <p className="text-lg text-muted-foreground mb-6">
+              Learn how tornadoes, hail, and storm season in Cherokee County affect your home insurance — and what smart coverage looks like.
+            </p>
+            <Button asChild>
+              <Link to="/learn/home-insurance-centre-al-storm-season">
+                Read the Centre, AL Storm-Season Guide
+              </Link>
+            </Button>
+          </div>
+        </section>
+
         {/* Internal Linking Section */}
         <section className="py-12 px-4 bg-muted/30">
           <div className="container mx-auto max-w-4xl text-center">
