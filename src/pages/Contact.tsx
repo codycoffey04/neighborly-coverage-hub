@@ -144,7 +144,13 @@ const Contact = () => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png"
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "116"
+    }
   };
 
   // LocalBusiness schema for Rome office
@@ -178,7 +184,13 @@ const Contact = () => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png"
+    "image": "https://coffeyagencies.com/coffey-logo.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "bestRating": "5",
+      "ratingCount": "90"
+    }
   };
 
   // Combine all schemas into a single @graph structure for reliable rendering
@@ -720,15 +732,15 @@ const Contact = () => {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-white/80">
             <span className="flex items-center gap-1">
               <CheckCircle className="w-4 h-4" />
-              Licensed in AL & GA
+              Licensed in AL #416438 & GA #149612
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Family-owned since 2009
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle className="w-4 h-4" />
               Hablamos Español
-            </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle className="w-4 h-4" />
-              Family Owned
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle className="w-4 h-4" />

@@ -23,7 +23,7 @@ export interface CityData {
   neighborhoodCoverage?: string;
   economyInfo?: string;
   localExcellence?: string;
-  testimonials?: { name: string; text: string; }[];
+  testimonials?: { name: string; text: string; location?: string; }[];
 }
 
 export const cityData: Record<string, CityData> = {
@@ -38,8 +38,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(256) 927-6287",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Centre, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 35960 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Centre, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Centre AL 35960, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 35960 area faces unique insurance challenges requiring specialized understanding of Cherokee County risks. From tornado threats peaking during April and May to flash flooding concerns near the Coosa River and Weiss Lake, residents need insurance protection tailored to Northeast Alabama's specific hazards. Our local Centre office delivers expert coverage recommendations with the convenience of in-person service or digital options for Downtown Centre, Cedar Bluff area, or any neighborhood throughout the region.",
       "With approximately 3,500 residents and a median household income around $35,000, this tight-knit rural community includes educators at Cherokee County Schools, healthcare professionals at Cherokee Medical Center, retail workers at Wal-Mart, public sector employees at Cherokee County Government, and manufacturing workers throughout the area. Each household has distinct insurance needs, whether protecting homes in the Gaylesville vicinity or securing auto coverage for rural commutes. Centre's character as Cherokee County's seat creates specific insurance considerations for both established neighborhoods and rural properties."
@@ -106,8 +106,8 @@ export const cityData: Record<string, CityData> = {
     city: "Trussville",
     state: "Alabama",
     stateAbbr: "AL",
-    customHeroTitle: "Auto Insurance Quote Trussville, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 35173 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Trussville, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Trussville AL 35173, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     zipCodes: ["35173", "35004", "35094", "35120", "35126", "35127", "35146", "35210", "35235"],
     isOfficeCity: false,
     nearestOffice: "centre",
@@ -184,8 +184,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Birmingham, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 35215 and 35235 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Birmingham, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Birmingham AL 35215, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 35215 and 35235 areas of eastern Birmingham face unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns along the Cahaba River and Village Creek, residents need insurance protection tailored to Jefferson County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Roebuck, Huffman, Center Point, or any neighborhood in the region.",
       "With approximately 200,000 residents citywide and a metro population exceeding one million, Birmingham is Alabama's largest city and economic engine. The 35215 ZIP code encompasses Roebuck, Killough Springs, and portions of Huffman, while 35235 covers Center Point, Pinson, Clay, and Chalkville. This diverse community includes healthcare workers at UAB Hospital and Grandview Medical Center, financial professionals at Regions Bank and BBVA, logistics workers at the intermodal facility, and educators throughout Jefferson County Schools. Each household has distinct insurance needs, whether protecting a 1960s ranch in Roebuck or securing auto coverage for I-59 commutes through Center Point."
@@ -257,8 +257,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Montgomery, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36116 and 36117 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Montgomery, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Montgomery AL 36116, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 36116 and 36117 areas of eastern Montgomery face unique insurance challenges requiring specialized understanding of Alabama's capital city. From tornado threats peaking in spring to the daily reality of commuting on I-85 and the Eastern Bypass, residents need insurance protection tailored to Montgomery County's specific risks. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Dalraida, Woodmere, or anywhere across the River Region.",
       "With approximately 200,000 residents in the city and over 385,000 in the metro area, Montgomery is Alabama's capital and second-largest city. The 36116 ZIP code encompasses established eastern neighborhoods including Dalraida, Arrowhead, and areas along Vaughn Road, while 36117 covers the high-growth eastern suburbs including Wynlakes, Pike Road, and the Eastchase corridor. This diverse community includes state government employees, Maxwell-Gunter Air Force Base personnel, healthcare workers at Baptist Health and Jackson Hospital, automotive workers at Hyundai and suppliers, and Riverfront entertainment district employees. Each household has distinct insurance needs, whether protecting an established ranch in Dalraida or securing auto coverage for Eastern Bypass commutes."
@@ -359,8 +359,8 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Mobile, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36601 and 36695 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Mobile, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Mobile AL 36601, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 36601 and 36695 areas of Mobile face insurance challenges unlike anywhere else in Alabama. As the state's only major coastal city, Mobile residents contend with hurricane exposure, flood risk, and wind damage that inland communities simply don't experience. From downtown's historic districts to the growing western suburbs, you need insurance protection built specifically for Gulf Coast living. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Midtown, Spring Hill, or anywhere across Alabama's Port City.",
       "With approximately 190,000 residents in the city and over 430,000 in the metro area, Mobile is Alabama's third-largest city and only coastal metropolitan area. The 36601 ZIP code encompasses historic downtown Mobile, Midtown, and established neighborhoods including Oakleigh Garden District and Old Dauphin Way. The 36695 ZIP code covers West Mobile, Tillmans Corner, and suburban communities stretching toward Theodore. This diverse community includes port workers and logistics professionals, aerospace employees at Airbus and Austal USA, healthcare workers at USA Health and Providence Hospital, and shipbuilding workers at the Mobile Aeroplex. Each household has distinct insurance needs, whether protecting a historic Midtown home or securing auto coverage for I-10 commutes across the Bay."
@@ -449,8 +449,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Dothan, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36301 and 36303 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Dothan, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Dothan AL 36301, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 36301 and 36303 areas of Dothan face unique insurance challenges requiring specialized understanding of Wiregrass Region risks. From tropical storm threats during hurricane season to severe thunderstorms rolling through Houston County year-round, residents need insurance protection tailored to southeast Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Westgate, Northside, or any neighborhood across the Peanut Capital of the World.",
       "With approximately 70,000 residents in the city and over 150,000 in the metro area, Dothan serves as the commercial hub for Alabama's Wiregrass Region and the tri-state area extending into Georgia and Florida. The 36301 ZIP code encompasses downtown Dothan, Westgate, and established neighborhoods south of Ross Clark Circle, while 36303 covers the western and northwestern portions including areas near Dothan Regional Airport. This diverse community includes healthcare workers at Southeast Health, retail and hospitality employees serving the regional shopping destination, military families connected to Fort Novosel (formerly Fort Rucker), and agricultural workers throughout Houston County's peanut and cotton farms. Each household has distinct insurance needs, whether protecting a historic home near downtown or securing auto coverage for Highway 231 commutes."
@@ -522,8 +522,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Auburn, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36830 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Auburn, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Auburn AL 36830, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "Auburn faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with large hail to flooding concerns along Chewacla Creek and Saugahatchee Creek, residents need insurance protection tailored to East Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home near Downtown Auburn, Toomer's Corner, or any neighborhood in Lee County.",
       "With approximately 47,543 residents in the city and 193,773 across the metro area, with a median household income around $63,761, this vibrant community includes Auburn University students and faculty, healthcare workers at East Alabama Medical Center, and professionals at Auburn Research Park tech companies. Each household has distinct insurance needs, whether protecting student apartments near campus, insuring homes near creek flood zones, or securing auto coverage for commutes along the I-85 corridor."
@@ -607,8 +607,8 @@ export const cityData: Record<string, CityData> = {
     stateAbbr: "AL",
     zipCodes: ["36867", "36868", "31902", "31908", "36869", "36870"],
     localPhone: "(334) 553-9258",
-    customHeroTitle: "Auto Insurance Quote Phenix City, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36867 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Phenix City, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Phenix City AL 36867, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     isOfficeCity: false,
     nearestOffice: "centre",
     heroImage: "alabama-hero.jpg",
@@ -683,8 +683,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(251) 551-1350",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Foley, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36535 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Foley, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Foley AL 36535, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 36535 area faces unique insurance challenges requiring specialized understanding of coastal Alabama risks. From hurricane threats peaking June through November to flooding concerns along Wolf Bay and Bon Secour River, residents need insurance protection tailored to Baldwin County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Foley, Magnolia Springs area, or any neighborhood in the region.",
       "With approximately 21,000 residents and a median household income around $48,000, this growing community includes healthcare workers at South Baldwin Regional Medical Center, hospitality professionals at OWA Parks & Resort and Tanger Outlets, and families throughout the county. Each household has distinct insurance needs, whether protecting homes near coastal flood zones or securing auto coverage for commutes along Highway 59. Foley's position as a retail and entertainment hub creates specific traffic patterns that factor into insurance considerations."
@@ -769,8 +769,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Troy, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36081 area, homeowners coverage, and student insurance solutions. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Troy, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Troy AL 36081, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "Troy faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with large hail to flooding concerns along the Conecuh River and Pea River, residents need insurance protection tailored to the Wiregrass region's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Troy, near Troy University campus, or any neighborhood in Pike County.",
       "With approximately 15,513 residents in the city and 33,000 across Pike County, with a median household income around $42,005, this diverse community includes Troy University students and faculty, workers at Lockheed Martin and Wayne Sanderson Farms, and agricultural professionals. Each household has distinct insurance needs, whether protecting student apartments near campus, insuring homes near river flood zones, or securing auto coverage for commutes along US-231."
@@ -842,8 +842,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Enterprise, AL - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 36330 area, homeowners coverage, and military family protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Enterprise, AL - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Enterprise AL 36330, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "Enterprise faces unique insurance challenges requiring specialized understanding of local risks. From severe tornado threats in the Wiregrass region to flooding concerns along the Pea River, residents need insurance protection tailored to Southeast Alabama's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home near Downtown Enterprise, Fort Novosel, or any neighborhood in Coffee County.",
       "With approximately 37,874 residents in the Coffee County portion and a median household income around $71,589, this diverse community includes military families serving at Fort Novosel, workers at M1 Support Services and Wayne Farms, and healthcare professionals at Medical Center Enterprise. Each household has distinct insurance needs, whether protecting homes near Pea River flood zones or securing auto coverage for commutes to Fort Novosel gates."
@@ -929,8 +929,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(706) 784-6511",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Rome, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30161 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Rome, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Rome GA 30161, homeowners coverage, and bundle options. 4.6★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30161 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns at the confluence of the Oostanaula, Etowah, and Coosa rivers, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rome, Garden Lakes, or any neighborhood in the region.",
       "With approximately 37,000 residents and a median household income around $38,000, this diverse community includes healthcare professionals at Floyd Medical Center and Redmond Regional Medical Center, educators at Berry College and Shorter University, manufacturing workers at Pirelli Tire and F&P Georgia, and families throughout Floyd County. Each household has distinct insurance needs, whether protecting homes near the Riverside area or securing auto coverage for commutes through West Rome. Rome's unique position at the three-river confluence creates specific flooding risks that factor into insurance considerations."
@@ -1002,8 +1002,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(678) 679-5311",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Atlanta, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30349 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Atlanta, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Atlanta GA 30349, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30349 area faces unique insurance challenges requiring specialized understanding of metropolitan risks. From severe thunderstorms bringing damaging winds and large hail to urban flooding concerns near the Chattahoochee River and South River, residents need insurance protection tailored to Metro Atlanta's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in College Park area, East Point, or any neighborhood in the region.",
       "With approximately 500,000 residents citywide and a median household income around $42,000, this diverse community includes aviation professionals at Hartsfield-Jackson Airport and Delta Air Lines, corporate employees at Coca-Cola and Home Depot, logistics workers at UPS, and families throughout the metropolitan area. Each household has distinct insurance needs, whether protecting homes in Camp Creek or securing auto coverage for commutes along I-285. Atlanta's role as a major metropolitan hub creates specific traffic patterns and insurance considerations across neighborhoods."
@@ -1075,8 +1075,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Lawrenceville, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30043 and 30044 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Lawrenceville, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Lawrenceville GA 30043, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30043 and 30044 areas of Lawrenceville face unique insurance challenges requiring specialized understanding of Gwinnett County's county seat and the dynamics of Georgia's most populous county. From severe thunderstorm threats throughout spring and summer to the daily reality of Highway 316 and I-85 traffic, residents need insurance protection tailored to this established yet growing community. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Collins Hill, Mountain Park, or anywhere across historic Lawrenceville.",
       "With approximately 30,000 residents in the city and over 950,000 in Gwinnett County, Lawrenceville serves as the governmental and judicial hub for one of America's fastest-growing counties. The 30043 ZIP code encompasses areas south of downtown including Collins Hill, Harbins Road corridor, and portions toward Snellville, while 30044 covers northern Lawrenceville including the downtown square, Mountain Park, and areas stretching toward Buford. This diverse community includes county government employees at the Gwinnett Justice and Administration Center, healthcare workers at Eastside Medical Center, educators throughout Gwinnett County Public Schools, and small business owners in the revitalized downtown. Each household has distinct insurance needs, whether protecting a historic home near the square or securing auto coverage for Highway 316 commutes to Athens or Atlanta."
@@ -1156,8 +1156,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(470) 876-7713",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Duluth, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30095 and 30096 areas, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Duluth, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Duluth GA 30095, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30095 and 30096 areas of Duluth face unique insurance challenges requiring specialized understanding of Gwinnett County's fast-paced growth and metro Atlanta dynamics. From severe thunderstorm threats throughout spring and summer to the daily reality of I-85 traffic, residents need insurance protection tailored to one of Georgia's most dynamic communities. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Sugarloaf, Berkeley Hills, or anywhere across this thriving Gwinnett County city.",
       "With approximately 30,000 residents in the city and situated within the 950,000-population Gwinnett County, Duluth has transformed from a small railroad town to a vibrant cultural and economic center. The 30095 ZIP code encompasses areas near Gas South District (formerly Infinite Energy Center) and portions of Sugarloaf, while 30096 covers central Duluth, Berkeley Hills, and residential areas stretching toward Suwanee and Johns Creek. This diverse community — one of the most ethnically diverse in the Southeast — includes technology workers, healthcare professionals at Northside Hospital Duluth, retail and hospitality employees, and business owners throughout Gwinnett Place and Pleasant Hill corridors. Each household has distinct insurance needs, whether protecting a townhome near downtown Duluth or securing auto coverage for I-85 commutes into Atlanta."
@@ -1247,8 +1247,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Cartersville, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30120 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Cartersville, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Cartersville GA 30120, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "Cartersville faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May to flooding concerns along the Etowah River and Lake Allatoona, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Hamilton Crossing, Red Top Mountain area, or any neighborhood in Bartow County.",
       "With approximately 23,617 residents and a median household income around $78,640, this diverse community includes manufacturing workers at Anheuser-Busch, Qcells, and the new Hyundai/SK On EV Battery facility, healthcare professionals at Harbin Clinic, and educators at Bartow County School District. Each household has distinct insurance needs, whether protecting homes near Etowah River flood zones or securing auto coverage for I-75 commutes to major employers."
@@ -1333,8 +1333,8 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Calhoun, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30701 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Calhoun, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Calhoun GA 30701, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "Calhoun faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May—including the devastating 1888 tornado that reshaped the community—to flooding concerns along the Oostanaula River and Oothkalooga Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Calhoun, Resaca, or any neighborhood in Gordon County.",
       "With approximately 41,694 residents in the ZIP code area and 16,949 in the city proper, and a median household income around $62,075, this diverse community includes manufacturing workers from Mohawk Industries and the broader industrial sector employing over 6,733 people, educators at Georgia Northwestern Technical College and local school districts, and retail professionals. Each household has distinct insurance needs, whether protecting homes near Oostanaula River flood zones or securing auto coverage for I-75 commutes to major employers."
@@ -1406,8 +1406,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Cedartown, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30125 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Cedartown, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Cedartown GA 30125, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "Cedartown faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May to flooding concerns along Silver Creek and Spring Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Cedartown, Big Spring Park area, Piedmont, or any neighborhood in Polk County.",
       "With approximately 10,190 residents in the city and 42,000 throughout Polk County, and a median household income around $55,704, this diverse community includes manufacturing workers continuing the area's industrial heritage, educators at Polk County School District, healthcare professionals, and retail workers. Each household has distinct insurance needs, whether protecting homes near Silver Creek flood zones or securing auto coverage for US-27 commutes to major employers throughout the region."
@@ -1483,8 +1483,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Summerville, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30747 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Summerville, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Summerville GA 30747, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "Summerville faces unique insurance challenges requiring specialized understanding of local risks. Nestled in the Appalachian foothills, this charming community experiences distinct weather patterns from tornado threats peaking between March and May to occasional winter ice storms. Properties near the Chattooga River and Simms Lake need protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Summerville, Lyerly, Menlo, or any rural community in Chattooga County.",
       "With approximately 4,500 residents in the city and 25,000 throughout Chattooga County, and a median household income around $40,000-45,000, this tight-knit community includes educators at Chattooga County School District, manufacturing workers, healthcare professionals, and agricultural operators. Each household has distinct insurance needs, whether protecting homes near Chattooga River flood zones, securing auto coverage for rural roads, or safeguarding agricultural properties unique to the region."
@@ -1536,8 +1536,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Suwanee, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30024 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Suwanee, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Suwanee GA 30024, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30024 area faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms with damaging winds exceeding 60 mph to flash flooding concerns along Suwanee Creek, residents need insurance protection tailored to North Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Suwanee Town Center, Laurel Springs, or any neighborhood in the region.",
       "With approximately 24,000 residents and a median household income around $91,000, this thriving community includes professionals at Mitsubishi Electric, ARRIS International, and healthcare workers at North Fulton Hospital, along with educators at Forsyth County Schools. Each household has distinct insurance needs, whether protecting family homes near Suwanee Creek greenway areas or securing comprehensive auto coverage for I-85 commutes to Atlanta."
@@ -1622,8 +1622,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Alpharetta, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30004 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Alpharetta, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Alpharetta GA 30004, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30004 area faces unique insurance challenges requiring specialized understanding of local risks. From severe thunderstorms peaking between March and August to flash flooding concerns near Big Creek and the Chattahoochee River, residents need insurance protection tailored to North Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Windward, Country Club of the South, or any neighborhood in the region.",
       "With approximately 68,000 residents and a median household income around $113,000, this affluent community includes tech professionals at Verizon Wireless, McKesson, and LexisNexis, along with financial services workers at ADP and Fiserv. Each household has distinct insurance needs, whether protecting high-value homes in prestigious neighborhoods or securing comprehensive auto coverage for GA-400 commutes to Atlanta."
@@ -1695,8 +1695,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(706) 702-1782",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Forsyth, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 31029 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Forsyth, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Forsyth GA 31029, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 31029 area faces unique insurance challenges requiring specialized understanding of Central Georgia risks. From severe thunderstorms capable of producing damaging hail to flooding concerns along the Towaliga River and High Falls Lake, residents need insurance protection tailored to Monroe County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Forsyth, Historic District, or any neighborhood in the region.",
       "With approximately 4,500 residents and a median household income around $62,000, this close-knit community includes educators at Monroe County Schools, healthcare professionals at Monroe County Hospital, law enforcement trainees at Georgia Public Safety Training Center, and families throughout the county seat. Each household has distinct insurance needs, whether protecting homes near the Tift College area or securing auto coverage for commutes through North Forsyth. Forsyth's character as a small-town community with strong values creates specific insurance considerations balancing rural living with modern protection needs."
@@ -1780,8 +1780,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Rockmart, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30153 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Rockmart, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Rockmart GA 30153, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30153 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking in March through May to flooding concerns along Euharlee Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rockmart, Van Wert, or any neighborhood in the region.",
       "With approximately 18,006 residents and a median household income around $55,704, this diverse community includes manufacturing workers at Miura America and Axillon Aerospace, educators at Polk County School District, and healthcare professionals at local medical facilities. Each household has distinct insurance needs, whether protecting homes near Silver Comet Trail waterways or securing auto coverage for commutes to Georgia Northwestern Technical College."
@@ -1865,8 +1865,8 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
-    customHeroTitle: "Auto Insurance Quote Powder Springs, GA - Compare Rates & Save Up to $600",
-    customHeroSubhead: "Local help with auto insurance in the 30127 area, homeowners coverage, and condo protection. Bundle home + auto for value and simplicity—one team, one call.",
+    customHeroTitle: "Auto Insurance Quote Powder Springs, GA - Compare Rates & Save",
+    customHeroSubhead: "Auto insurance Powder Springs GA 30127, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
       "The 30127 area faces unique insurance challenges requiring specialized understanding of Cobb County risks. From severe thunderstorms bringing damaging hail to flash flooding concerns near Sweetwater Creek and Noses Creek, residents need insurance protection tailored to West Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Powder Springs, the Lost Mountain area, or any neighborhood in the region.",
       "With approximately 16,000 residents and a median household income around $65,000, this tight-knit suburban community includes educators at Cobb County School District, healthcare professionals at WellStar Health System, aviation workers at McCollum Airport businesses, and public sector employees at City of Powder Springs. Each household has distinct insurance needs, whether protecting homes in Macedonia or securing auto coverage for commutes along the Brownsville Road corridor. Powder Springs' character as a growing Cobb County community creates specific insurance considerations balancing small-town living with metropolitan proximity."

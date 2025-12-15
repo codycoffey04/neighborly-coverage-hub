@@ -192,6 +192,12 @@ const FAQ = () => {
       "addressRegion": "AL",
       "postalCode": "35960",
       "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "206"
     }
   };
 
@@ -352,17 +358,28 @@ const FAQ = () => {
             Still Have Questions?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            We're here to help. Contact us by phone, email, or stop by one of our offices.
+            We're here to help. Contact us by phone, email, or stop by one of our offices in Centre, AL and Rome, GA.
           </p>
           
-          <Link to="/contact">
-            <Button 
-              size="lg" 
-              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-            >
-              Contact Us
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/#quote-form">
+              <Button 
+                size="lg" 
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+              >
+                Get a Quote
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="bg-white/10 hover:bg-white/20 text-white border-white/30 text-lg px-8 py-6 h-auto shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+              >
+                Contact Us
+              </Button>
+            </Link>
+          </div>
 
           {/* Phone Links */}
           <div className="flex flex-wrap justify-center items-center gap-4 mt-6 text-sm text-white/90">
@@ -400,15 +417,15 @@ const FAQ = () => {
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
             <span className="flex items-center gap-1.5 text-sm text-white">
               <CheckCircle className="h-4 w-4" />
-              Licensed in AL & GA
+              Licensed in AL #416438 & GA #149612
+            </span>
+            <span className="flex items-center gap-1.5 text-sm text-white">
+              <CheckCircle className="h-4 w-4" />
+              Family-owned since 2009
             </span>
             <span className="flex items-center gap-1.5 text-sm text-white">
               <CheckCircle className="h-4 w-4" />
               Hablamos Español
-            </span>
-            <span className="flex items-center gap-1.5 text-sm text-white">
-              <CheckCircle className="h-4 w-4" />
-              Family Owned
             </span>
             <span className="flex items-center gap-1.5 text-sm text-white">
               <CheckCircle className="h-4 w-4" />

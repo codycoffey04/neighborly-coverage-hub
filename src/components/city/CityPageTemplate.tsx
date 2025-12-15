@@ -83,17 +83,20 @@ const whyChoosePillars = [
   }
 ];
 
-const defaultTestimonials = [
+const defaultTestimonials: Array<{ name: string; text: string; location?: string }> = [
   {
     name: "Teresa Gardiner",
+    location: "Centre, AL",
     text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
   },
   {
     name: "Steve Smith",
+    location: "Centre, AL",
     text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
   },
   {
     name: "Ricky Salas",
+    location: "Rome, GA",
     text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
   }
 ];
@@ -298,8 +301,74 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "addressRegion": "AL",
       "postalCode": "35960",
       "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "206"
     }
   };
+
+  // Service Schema
+  const serviceSchema = {
+    "@type": "Service",
+    "serviceType": "Insurance Services",
+    "provider": {
+      "@type": "InsuranceAgency",
+      "name": "Coffey Agencies Inc.",
+      "url": "https://coffeyagencies.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": city.city,
+      "addressRegion": city.state
+    }
+  };
+
+  // WebPage Schema
+  const webpageSchema = {
+    "@type": "WebPage",
+    "url": `https://coffeyagencies.com/${city.slug}`,
+    "name": `Insurance in ${city.city}, ${city.state} | Coffey Agencies`
+  };
+
+  // Review Schemas (3 reviews)
+  const reviewSchemas = [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Teresa Gardiner" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
+      "itemReviewed": {
+        "@type": "InsuranceAgency",
+        "name": "Coffey Agencies Inc.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Centre", "addressRegion": "AL" }
+      }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Steve Smith" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
+      "itemReviewed": {
+        "@type": "InsuranceAgency",
+        "name": "Coffey Agencies Inc.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Centre", "addressRegion": "AL" }
+      }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ricky Salas" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
+      "itemReviewed": {
+        "@type": "InsuranceAgency",
+        "name": "Coffey Agencies Inc.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Rome", "addressRegion": "GA" }
+      }
+    }
+  ];
 
   // Combine all schemas into a single @graph structure for reliable rendering
   // This ensures all schemas are included in one JSON-LD block
@@ -307,9 +376,12 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     "@context": "https://schema.org",
     "@graph": [
       organizationSchema,
+      serviceSchema,
+      webpageSchema,
       faqSchema,
       placeSchema,
       breadcrumbSchema,
+      ...reviewSchemas,
       ...(localBusinessSchema ? [localBusinessSchema] : [])
     ]
   };
@@ -400,7 +472,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </span>
             <span className="flex items-center gap-2 text-white/90 text-sm">
               <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-              4.7 rated service
+              {city.state === "Georgia" && city.city === "Rome" ? "4.6" : "4.7"} rated service
             </span>
           </div>
           
@@ -619,6 +691,12 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
                   </div>
                   <p className="font-semibold text-sm">
                     {testimonial.name}
+                    {testimonial.location && (
+                      <>
+                        , {testimonial.location}
+                        <span className="text-muted-foreground font-normal"> (Google Review)</span>
+                      </>
+                    )}
                   </p>
                 </CardContent>
               </Card>
@@ -626,7 +704,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           </div>
           <div className="text-center mt-8">
             <Button variant="outline" asChild>
-              <Link to="/reviews">Read All Reviews</Link>
+              <Link to="/reviews">Read All 200+ Google Reviews →</Link>
             </Button>
           </div>
         </div>

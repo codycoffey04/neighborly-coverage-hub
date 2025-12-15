@@ -184,6 +184,7 @@ const Reviews = () => {
     "mainEntity": {
       "@type": "InsuranceAgency",
       "@id": "https://coffeyagencies.com/#organization",
+      "telephone": ["(256) 927-6287", "(706) 784-6511"],
       "aggregateRating": [
         {
           "@type": "AggregateRating",
@@ -540,15 +541,15 @@ const Reviews = () => {
           <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
             <span className="flex items-center gap-1">
               <CheckCircle className="w-4 h-4" />
-              Licensed in AL & GA
+              Licensed in AL #416438 & GA #149612
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4" />
+              Family-owned since 2009
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle className="w-4 h-4" />
               Hablamos Español
-            </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle className="w-4 h-4" />
-              Family Owned
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle className="w-4 h-4" />

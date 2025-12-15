@@ -185,6 +185,18 @@ export const FinalCTA = () => {
             </form>
           </div>
 
+          {/* Phone Alternative */}
+          <p className="text-center text-white/90 mt-6 text-sm">
+            Prefer to call?{" "}
+            <a href="tel:2569276287" className="text-white hover:text-accent underline transition-colors">
+              (256) 927-6287
+            </a>
+            {" "}or{" "}
+            <a href="tel:7067846511" className="text-white hover:text-accent underline transition-colors">
+              (706) 784-6511
+            </a>
+          </p>
+
           {/* Trust Indicators */}
           <div className="flex flex-col sm:flex-row justify-center gap-6 mt-12 text-sm text-white/90">
             <span className="flex items-center gap-2 justify-center">

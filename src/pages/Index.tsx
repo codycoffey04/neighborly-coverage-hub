@@ -458,7 +458,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Coffey Agencies | Auto & Home Insurance in Alabama & Georgia</title>
+        <title>Auto & Home Insurance Alabama & Georgia | Coffey Agencies</title>
         <meta name="description" content="Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Real people who answer the phone. Free quotes from a family-owned agency." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
