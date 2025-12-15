@@ -1,14 +1,15 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { lazy, Suspense } from "react";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
 import { SkipLink } from "@/components/shared/SkipLink";
 import { LoadingSpinner } from "@/components/shared/LoadingSpinner";
 import { ErrorBoundary } from "@/components/shared/ErrorBoundary";
+
+// Lazy load toast components (not needed for initial render, only used on form submissions)
+const Toaster = lazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
+const Sonner = lazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
 // Lazy load components that only appear after user interaction (scroll)
 const MobileCTABar = lazy(() => import("@/components/shared/MobileCTABar").then(m => ({ default: m.MobileCTABar })));
@@ -62,58 +63,56 @@ const Terms = lazyWithRetry(() => import("./pages/Terms"));
 const Refer = lazyWithRetry(() => import("./pages/Refer"));
 const ThankYou = lazyWithRetry(() => import("./pages/ThankYou"));
 
-const queryClient = new QueryClient();
-
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-      <TooltipProvider>
+  <HelmetProvider>
+    <TooltipProvider>
+      <Suspense fallback={null}>
         <Toaster />
         <Sonner />
-        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-          <SkipLink />
-          <ScrollToTop />
-          <Suspense fallback={null}>
-            <MobileCTABar />
-            <ScrollToTopButton />
+      </Suspense>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+        <SkipLink />
+        <ScrollToTop />
+        <Suspense fallback={null}>
+          <MobileCTABar />
+          <ScrollToTopButton />
+        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/learn" element={<Learn />} />
+              <Route path="/learn/:slug" element={<LearnArticle />} />
+              <Route path="/service-areas" element={<ServiceAreas />} />
+              <Route path="/services/auto-insurance" element={<AutoInsurance />} />
+              <Route path="/services/home-insurance" element={<HomeInsurance />} />
+              <Route path="/services/renters-insurance" element={<RentersInsurance />} />
+              <Route path="/services/condo-insurance" element={<CondoInsurance />} />
+              <Route path="/services/life-insurance" element={<LifeInsurance />} />
+              <Route path="/services/motorcycle-insurance" element={<MotorcycleInsurance />} />
+              <Route path="/services/boat-insurance" element={<BoatInsurance />} />
+              <Route path="/services/atv-utv-insurance" element={<ATVInsurance />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/claims" element={<Claims />} />
+              <Route path="/thank-you" element={<ThankYou />} />
+              <Route path="/refer" element={<Refer />} />
+              <Route path="/resources/centre-al" element={<CentreALResources />} />
+              <Route path="/resources/rome-ga" element={<RomeGAResources />} />
+              {/* Dynamic city pages */}
+              <Route path="/:citySlug" element={<CityPage />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
           </Suspense>
-          <ErrorBoundary>
-            <Suspense fallback={<LoadingSpinner />}>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/reviews" element={<Reviews />} />
-                <Route path="/learn" element={<Learn />} />
-                <Route path="/learn/:slug" element={<LearnArticle />} />
-                <Route path="/service-areas" element={<ServiceAreas />} />
-                <Route path="/services/auto-insurance" element={<AutoInsurance />} />
-                <Route path="/services/home-insurance" element={<HomeInsurance />} />
-                <Route path="/services/renters-insurance" element={<RentersInsurance />} />
-                <Route path="/services/condo-insurance" element={<CondoInsurance />} />
-                <Route path="/services/life-insurance" element={<LifeInsurance />} />
-                <Route path="/services/motorcycle-insurance" element={<MotorcycleInsurance />} />
-                <Route path="/services/boat-insurance" element={<BoatInsurance />} />
-                <Route path="/services/atv-utv-insurance" element={<ATVInsurance />} />
-                <Route path="/privacy" element={<Privacy />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="/claims" element={<Claims />} />
-                <Route path="/thank-you" element={<ThankYou />} />
-                <Route path="/refer" element={<Refer />} />
-                <Route path="/resources/centre-al" element={<CentreALResources />} />
-                <Route path="/resources/rome-ga" element={<RomeGAResources />} />
-                {/* Dynamic city pages */}
-                <Route path="/:citySlug" element={<CityPage />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </ErrorBoundary>
-        </BrowserRouter>
-      </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
+        </ErrorBoundary>
+      </BrowserRouter>
+    </TooltipProvider>
+  </HelmetProvider>
 );
 
 export default App;
