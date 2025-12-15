@@ -8,31 +8,22 @@ export function cssPreload(): Plugin {
   return {
     name: 'css-preload',
     transformIndexHtml: {
-      order: 'post', // Run after other transforms
+      order: 'post', // Run after other transforms, especially after Vite's HTML injection
       handler(html, ctx) {
-        // Find CSS files in the built HTML (Vite generates hashed filenames)
-        // Match both /assets/index-*.css and assets/index-*.css patterns
-        const cssLinkRegex = /<link\s+rel="stylesheet"\s+href="([^"]*\/assets\/index-[^"]*\.css)"[^>]*>/g;
-        const cssMatches = Array.from(html.matchAll(cssLinkRegex));
+        // Find CSS files in the built HTML (Vite generates hashed filenames like index-D7fjF7Z9.css)
+        // Match <link rel="stylesheet" href="/assets/index-*.css"> with any attributes
+        const cssLinkRegex = /<link([^>]*)\s+rel=["']stylesheet["']([^>]*)\s+href=["']([^"]*\/assets\/index-[^"]*\.css)["']([^>]*)>/gi;
         
-        if (cssMatches.length > 0) {
-          // Process each CSS link found (in reverse to avoid index issues)
-          for (let i = cssMatches.length - 1; i >= 0; i--) {
-            const match = cssMatches[i];
-            const cssPath = match[1];
-            const fullLinkTag = match[0];
-            
-            // Ensure path starts with /
-            const normalizedPath = cssPath.startsWith('/') ? cssPath : '/' + cssPath;
-            
-            // Replace blocking stylesheet link with preload pattern
-            const preloadPattern = `<link rel="preload" href="${normalizedPath}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        // Replace all CSS links with preload pattern
+        html = html.replace(cssLinkRegex, (match, beforeRel, afterRel, href, afterHref) => {
+          // Extract just the href path
+          const cssPath = href;
+          const normalizedPath = cssPath.startsWith('/') ? cssPath : '/' + cssPath;
+          
+          // Create preload pattern with onload swap
+          return `<link rel="preload" href="${normalizedPath}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="${normalizedPath}"></noscript>`;
-            
-            // Replace the original link tag
-            html = html.replace(fullLinkTag, preloadPattern);
-          }
-        }
+        });
         
         return html;
       },
