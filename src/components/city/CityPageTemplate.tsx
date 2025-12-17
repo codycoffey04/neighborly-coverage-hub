@@ -551,6 +551,34 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H3: Cheap Car Insurance - WHITE */}
+      {city.cheapCarInsurance && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Cheap Car Insurance in {city.city}
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.cheapCarInsurance)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H3: Auto Insurance Companies - GRAY */}
+      {city.autoInsuranceCompanies && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              {city.city} Auto Insurance Companies Near You
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.autoInsuranceCompanies)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* FAQ Section - Simple Q&A Format - WHITE */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">

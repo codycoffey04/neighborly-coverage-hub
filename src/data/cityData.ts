@@ -28,6 +28,8 @@ export interface CityData {
     text: string;
     href: string;
   };
+  cheapCarInsurance?: string;
+  autoInsuranceCompanies?: string;
 }
 
 export const cityData: Record<string, CityData> = {
@@ -252,7 +254,9 @@ export const cityData: Record<string, CityData> = {
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ],
-    nearbyCities: ["trussville-al", "montgomery-al", "auburn-al"]
+    nearbyCities: ["trussville-al", "montgomery-al", "auburn-al"],
+    cheapCarInsurance: "Finding cheap car insurance in Birmingham doesn't mean sacrificing coverage. Drivers in Roebuck, Center Point, Huffman, and throughout the 35215 and 35235 ZIP codes can save significantly by comparing rates from multiple carriers. We work with several insurance companies to find the best rates for Birmingham drivers, whether you're commuting on I-59, navigating downtown traffic, or driving through suburban neighborhoods like Pinson and Clay.\n\nBundling your auto insurance with homeowners or renters coverage typically saves Birmingham families 15-25% on combined premiums—often $400-600 per year. Safe driver discounts, good student discounts, and multi-vehicle policies can further reduce your costs. We also help you understand how factors like your garaging address, annual mileage, and driving record affect your rates, so you can make informed decisions about coverage that fits your budget.\n\nMany Birmingham residents are surprised to learn that cheap car insurance doesn't have to mean minimum coverage. We help you find the right balance between affordable premiums and adequate protection, especially important given Alabama's high uninsured driver rate and the heavy traffic on Birmingham's major highways.",
+    autoInsuranceCompanies: "When looking for Birmingham auto insurance companies near you, it helps to work with an independent agency that compares rates from multiple carriers. We represent several insurance companies, giving you options that a single-company agent can't provide. Whether you live in Roebuck, Center Point, Huffman, or any neighborhood in the 35215 and 35235 areas, we can help you find coverage that fits your needs and budget.\n\nUnlike direct insurance companies that only offer their own products, we shop around for you. This means you get quotes from multiple Birmingham auto insurance companies in one place, saving you time and often money. We understand the local market—from the traffic patterns on I-59 and I-20 to the weather risks that affect rates in Jefferson County.\n\nYou don't need to visit a local office to work with us. We serve Birmingham residents digitally from our Centre, AL headquarters, making it easy to get quotes, make policy changes, and file claims from anywhere in the metro area. Our licensed Alabama agents know the Birmingham market and can help you navigate coverage options from various insurance companies to find the best fit for your situation."
   },
 
   "montgomery-al": {
