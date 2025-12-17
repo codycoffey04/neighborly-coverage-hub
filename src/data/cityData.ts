@@ -192,7 +192,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Birmingham, AL - Compare Rates & Save",
+    customHeroTitle: "Cheap Car Insurance Birmingham AL - Compare Auto Insurance Rates",
     customHeroSubhead: "Auto insurance Birmingham AL 35215, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 35215 and 35235 areas of eastern Birmingham face unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns along the Cahaba River and Village Creek, residents need insurance protection tailored to Jefferson County's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Roebuck, Huffman, Center Point, or any neighborhood in the region.",

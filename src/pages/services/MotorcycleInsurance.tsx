@@ -306,12 +306,12 @@ const MotorcycleInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage | Coffey Agencies</title>
+        <title>Motorcycle Insurance Alabama | Bike Coverage Quotes | Coffey Agencies</title>
         <meta name="description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. 4.7★ Google rating. Compare quotes from Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage | Coffey Agencies" />
+        <meta property="og:title" content="Motorcycle Insurance Alabama | Bike Coverage Quotes | Coffey Agencies" />
         <meta property="og:description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. Custom parts up to $30,000. Compare quotes from Centre, AL and Rome, GA." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/motorcycle-insurance" />
@@ -322,7 +322,7 @@ const MotorcycleInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Motorcycle Insurance Quotes Alabama & Georgia | Bike Coverage" />
+        <meta name="twitter:title" content="Motorcycle Insurance Alabama | Bike Coverage Quotes" />
         <meta name="twitter:description" content="Motorcycle insurance quotes in Alabama & Georgia. Bike coverage for cruisers, sport bikes, Harleys. Custom parts up to $30,000." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
@@ -363,7 +363,7 @@ const MotorcycleInsurance = () => {
             
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-                Motorcycle Insurance in Alabama & Georgia
+                Motorcycle Insurance Alabama - Get Bike Coverage Quotes
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
                 Whether you call it motorcycle insurance or bike insurance, we've got you covered. Hit the road with confidence on Cheaha Mountain, Georgia's Dragon's Lair, or the Natchez Trace. Custom coverage for AL and GA riders—cruisers, sport bikes, touring machines—protecting your bike, your gear, and your riding style.
