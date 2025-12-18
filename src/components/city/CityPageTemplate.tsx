@@ -247,13 +247,10 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     "name": `Insurance in ${city.city}, ${city.state} | Coffey Agencies`
   };
 
-  // Review Schemas (3 reviews) - itemReviewed references LocalBusiness by @id to avoid duplicates
+  // Review Schemas (3 reviews) - itemReviewed references LocalBusiness with @id and @type
   const reviewSchemas = testimonials.slice(0, 3).map((testimonial, index) => {
-    // Determine which office based on testimonial location or default to nearest office
-    const reviewOffice = testimonial.location?.includes("Rome") || testimonial.location?.includes("GA")
-      ? "rome"
-      : "centre";
-    const reviewOfficeId = reviewOffice === "centre"
+    // Use the same office as the LocalBusiness schema for this page
+    const reviewOfficeId = city.nearestOffice === "centre"
       ? "https://coffeyagencies.com/#centre-office"
       : "https://coffeyagencies.com/#rome-office";
     
@@ -263,6 +260,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
       "reviewBody": testimonial.text,
       "itemReviewed": {
+        "@type": "LocalBusiness",
         "@id": reviewOfficeId
       }
     };
