@@ -461,10 +461,13 @@ const MotorcycleInsurance = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">How Much Does Motorcycle Insurance Cost in Alabama?</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
-                How much does motorcycle insurance cost in Alabama? Most AL riders pay significantly less than car insurance. Average full coverage motorcycle insurance in Alabama runs approximately <strong>$369 per year</strong> — about $31 per month. That's typically 30-40% less than what you'd pay for auto insurance on a similar vehicle. Whether you're riding in Birmingham, Mobile, Huntsville, or smaller towns like Centre and Rome, Alabama's lower population density and fewer urban theft risks help keep motorcycle insurance costs down compared to other states.
+                How much is motorcycle insurance in Alabama? Most AL riders pay significantly less than car insurance. Average full coverage motorcycle insurance in Alabama runs approximately <strong>$369 per year</strong> — about $31 per month. That's typically 30-40% less than what you'd pay for auto insurance on a similar vehicle. Whether you're riding in Birmingham, Mobile, Huntsville, or smaller towns like Centre, Alabama motorcycle insurance costs benefit from the state's lower population density and fewer urban theft risks compared to other states.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Liability-only bike insurance starts as low as $15-20 per month in Alabama, meeting the state's legal minimum of 25/50/25 ($25,000 bodily injury per person, $50,000 per accident, $25,000 property damage). However, we recommend full coverage for financed bikes and any motorcycle worth more than a few thousand dollars. Full coverage protects your investment and includes collision and comprehensive coverage for theft, vandalism, and weather damage — important considerations for Alabama riders who face tornado season and severe storms.
+                When choosing Alabama motorcycle insurance, you'll decide between liability-only and full coverage motorcycle insurance. Liability-only bike insurance starts as low as $15-20 per month in Alabama, meeting the state's legal minimum of 25/50/25 ($25,000 bodily injury per person, $50,000 per accident, $25,000 property damage). However, we recommend full coverage motorcycle insurance for financed bikes and any motorcycle worth more than a few thousand dollars. Full coverage protects your investment and includes collision and comprehensive coverage for theft, vandalism, and weather damage — important considerations for Alabama riders who face tornado season and severe storms.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                Comprehensive motorcycle insurance covers damage from theft, vandalism, fire, falling objects, and weather events. In Alabama, this protection matters especially during tornado season (March through May) and severe thunderstorm season. Comprehensive coverage also protects against theft, which can be a concern in urban areas like Birmingham and Mobile. While comprehensive motorcycle insurance adds to your premium, it provides peace of mind knowing your bike is protected whether you're riding or it's parked in your garage in Centre or stored outside.
               </p>
               
               <div className="bg-muted/30 rounded-lg p-6 mb-6">
@@ -503,16 +506,46 @@ const MotorcycleInsurance = () => {
         {/* Cheapest Motorcycle Coverage Section */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Cheapest Motorcycle Coverage for AL Riders</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Cheapest Motorcycle Insurance in Alabama</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
-                Finding the cheapest motorcycle coverage for AL riders starts with understanding what you actually need. Liability-only policies are the most affordable option, typically $15-20 per month, but they only cover damage you cause to others—not your bike. If you're riding an older motorcycle you own outright and can afford to replace, liability might be enough. However, if your bike is financed, worth more than a few thousand dollars, or you simply want protection for your investment, full coverage is usually worth the extra cost.
+                Finding the cheapest motorcycle insurance in Alabama starts with understanding what you actually need. Liability-only policies are the most affordable option, typically $15-20 per month, but they only cover damage you cause to others—not your bike. If you're riding an older motorcycle you own outright and can afford to replace, liability might be enough. However, if your bike is financed, worth more than a few thousand dollars, or you simply want protection for your investment, full coverage is usually worth the extra cost.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                The cheapest motorcycle coverage for AL riders often comes from bundling. When you combine your bike insurance with auto or home insurance, you typically save 10-15% on all policies. We also help you qualify for discounts like safe rider programs, motorcycle safety course completion, and multi-bike policies if you own more than one motorcycle. Riders in Birmingham, Mobile, Huntsville, and throughout Alabama can save by working with an independent agency that compares rates from multiple carriers rather than going directly to a single insurance company.
+                The cheapest motorcycle insurance in Alabama often comes from bundling. When you combine car and motorcycle insurance combined, you typically save 10-15% on all policies. Many riders in Birmingham, Mobile, and Huntsville find that bundling their car and motorcycle insurance combined with the same carrier simplifies billing and maximizes savings. We also help you qualify for discounts like safe rider programs, motorcycle safety course completion, and multi-bike policies if you own more than one motorcycle. Riders throughout Alabama can save by working with an independent agency that compares rates from multiple carriers rather than going directly to a single insurance company.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Remember that the cheapest motorcycle coverage isn't always the best value. Alabama's 18% uninsured driver rate means adequate uninsured motorist coverage is essential. We help you find the right balance between affordable premiums and protection that actually covers you when you need it, whether you're commuting in Birmingham or taking weekend rides through the Alabama countryside.
+                Remember that the cheapest motorcycle insurance in Alabama isn't always the best value. Alabama's 18% uninsured driver rate means adequate uninsured motorist coverage is essential. We help you find the right balance between affordable premiums and protection that actually covers you when you need it, whether you're commuting in Birmingham or taking weekend rides through the Alabama countryside.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Best Motorcycle Insurance Section */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Best Motorcycle Insurance in Alabama</h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-muted-foreground mb-6">
+                The best motorcycle insurance in Alabama balances comprehensive protection with affordable premiums. It includes adequate liability limits (we recommend at least 50/100/50, higher than Alabama's 25/50/25 minimum), matching uninsured motorist coverage, and full coverage for your bike if it's financed or worth more than a few thousand dollars. The best policies also offer flexible deductibles, custom parts coverage for modifications, and roadside assistance for breakdowns on Alabama highways. Whether you're riding in Birmingham's urban traffic, cruising Mobile's coastal roads, or exploring Huntsville's mountain routes, the best motorcycle insurance adapts to your riding style and local risks.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                Coffey Agencies offers competitive motorcycle insurance options in Alabama by comparing rates from multiple carriers. We're an independent agency, which means we're not limited to one insurance company's products. This allows us to find the best motorcycle insurance in Alabama for each rider's unique situation—whether you need basic liability for an older bike in Centre or comprehensive coverage for a new Harley in Birmingham. Our licensed Alabama agents understand state requirements and local riding conditions, ensuring you get coverage that protects you without overpaying. We also help you maximize discounts through bundling, safety courses, and multi-bike policies.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Motorcycle Insurance for New Riders Section */}
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Motorcycle Insurance for New Riders</h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-muted-foreground mb-6">
+                Motorcycle insurance for new riders in Alabama typically costs more than for experienced riders, but there are ways to keep premiums manageable. New riders often pay 20-30% more than riders with several years of experience, reflecting the higher accident risk during the first few years. However, completing a Motorcycle Safety Foundation (MSF) course can reduce your premium by 10-15% and teaches essential skills for safe riding. Many new riders in Birmingham, Mobile, and Huntsville start with liability-only coverage to keep costs down, then add full coverage once they've gained experience and confidence. We help new riders understand their coverage options and find policies that protect them without breaking the bank.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                When shopping for motorcycle insurance for new riders, consider starting with a smaller, less powerful bike—insurance costs are significantly lower for cruisers and standard motorcycles compared to sport bikes. New riders should also prioritize uninsured motorist coverage given Alabama's 18% uninsured driver rate, which is higher than the national average. We recommend new riders in Alabama maintain higher liability limits (at least 50/100/50) since inexperience increases the likelihood of at-fault accidents. As you gain experience and maintain a clean riding record, your premiums will decrease. Many of our new rider clients in Centre and throughout Alabama see their rates drop by 15-25% after their first year of safe riding.
               </p>
             </div>
           </div>
@@ -945,3 +978,4 @@ const MotorcycleInsurance = () => {
 };
 
 export default MotorcycleInsurance;
+
