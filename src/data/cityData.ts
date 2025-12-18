@@ -17,6 +17,7 @@ export interface CityData {
   faqs: { question: string; answer: string; }[];
   
   // Extended content for flagship office pages (optional)
+  customMetaTitle?: string; // For <title> tag (separate from H1)
   customHeroTitle?: string;
   customHeroSubhead?: string;
   weatherRisks?: string;
@@ -31,6 +32,7 @@ export interface CityData {
   cheapCarInsurance?: string;
   autoInsuranceCompanies?: string;
   homeInsurance?: string;
+  countyInsurance?: string;
 }
 
 export const cityData: Record<string, CityData> = {
@@ -45,7 +47,8 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(256) 927-6287",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Auto Insurance Quote Centre, AL - Compare Rates & Save",
+    customMetaTitle: "Car Insurance Centre AL - Coffey Agencies | Allstate Insurance Agent",
+    customHeroTitle: "Car Insurance in Centre, AL - Your Local Allstate Agent",
     customHeroSubhead: "Auto insurance Centre AL 35960, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 35960 area faces unique insurance challenges requiring specialized understanding of Cherokee County risks. From tornado threats peaking during April and May to flash flooding concerns near the Coosa River and Weiss Lake, residents need insurance protection tailored to Northeast Alabama's specific hazards. Our local Centre office delivers expert coverage recommendations with the convenience of in-person service or digital options for Downtown Centre, Cedar Bluff area, or any neighborhood throughout the region.",
@@ -109,7 +112,10 @@ export const cityData: Record<string, CityData> = {
         name: "Ricky Salas",
         text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
-    ]
+    ],
+    cheapCarInsurance: "Finding car insurance in Centre AL means working with a locally owned agency that understands Cherokee County. As our headquarters location, we've been serving Centre and surrounding communities since 2009, providing car insurance Centre AL residents trust. Whether you're driving Highway 411 to Gadsden, commuting along Highway 9, or navigating rural roads throughout Cherokee County, we help you find auto insurance Centre AL coverage that fits your needs and budget. Insurance Centre Alabama drivers need accounts for rural driving patterns, longer distances to services, and the unique risks of Northeast Alabama living.\n\nCar insurance in Centre AL costs vary based on your specific address, driving record, and vehicle type, but bundling your auto insurance with homeowners or renters coverage typically saves Centre families 15-25% on combined premiums—often $400-600 per year. We work with multiple insurance companies to find the best rates for Cherokee County drivers, whether you're protecting a vehicle for daily commutes to Weiss Lake, traveling through downtown Centre, or driving to nearby areas like Cedar Bluff, Leesburg, or Gaylesville. Safe driver discounts, good student discounts, and multi-vehicle policies can further reduce your costs. We also help you understand how factors like your garaging address, annual mileage, and driving record affect your rates.\n\nMany Centre residents appreciate that car insurance in Centre AL doesn't have to mean calling an 800-number or working with an online-only company. As your local insurance agent Centre AL, we're right here in town at 1913 W Main Street. You can walk in Monday through Friday, 8:00 AM to 5:00 PM, or call us at (256) 927-6287. Se habla español. We're Cherokee County insurance experts who understand local conditions, rural property considerations, and the unique needs of Centre families. Call or visit today for your free quote.",
+    autoInsuranceCompanies: "When you need an insurance agent Centre AL, you want someone local who knows Cherokee County. As an Allstate agent Centre AL, we're your neighbors—locally owned and operated right here in Centre since 2009. This is our main office and headquarters, not a call center or online-only operation. Whether you need auto insurance, home insurance, or other coverage, our insurance agency Centre Alabama residents trust provides personalized service you can't get from an 800-number. Walk-ins are welcome at 1913 W Main Street, and our local staff speaks both English and Spanish (se habla español).\n\nUnlike online-only insurance companies or call centers, our insurance agent Centre AL approach means you work with real people who live and work in Cherokee County. We understand local risks like tornado season, Weiss Lake flooding concerns, and rural driving patterns. Our insurance agency Centre Alabama location makes us convenient for residents throughout Cherokee County—whether you're in downtown Centre, near the Cherokee County Courthouse, or in surrounding areas like Cedar Bluff, Leesburg, Gaylesville, or Sand Rock. When you call (256) 927-6287, you're talking to a local insurance agent Centre AL, not a call center operator who doesn't know Centre from anywhere else.\n\nAs your local insurance agency Centre Alabama, we offer the full range of Allstate products plus options from other carriers. This means you get the convenience of working with an Allstate agent Centre AL while we compare rates to find your best option. Our local presence means faster service, personal attention, and someone who understands Cherokee County insurance needs. Stop by our office at 1913 W Main Street, call (256) 927-6287, or visit us online. We're here to help with car insurance, home insurance, renters insurance, life insurance, and more. Se habla español.",
+    countyInsurance: "Cherokee County insurance services from your local Centre office cover the entire county and surrounding areas. Whether you live in downtown Centre, near Weiss Lake, along Highway 411, or in rural areas like Cedar Bluff, Leesburg, Gaylesville, or Sand Rock, we provide comprehensive insurance coverage for Cherokee County families. Our headquarters location in Centre makes us convenient for the entire county, and our years of experience serving Cherokee County means we understand local insurance needs from rural properties to downtown businesses.\n\nCherokee County insurance from Coffey Agencies includes auto insurance, home insurance, renters insurance, life insurance, and motorcycle insurance. We help Cherokee County residents find the right coverage whether you're protecting a home near the Coosa River, securing auto coverage for Highway 9 commutes, or insuring a property in the Weiss Lake area. Our local expertise means we understand Cherokee County's unique risks—from spring tornado season to rural property considerations. Call (256) 927-6287 or visit our Centre office at 1913 W Main Street to discuss your Cherokee County insurance needs. Se habla español.",
   },
 
   "trussville-al": {

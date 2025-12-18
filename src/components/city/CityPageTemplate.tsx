@@ -352,7 +352,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   return (
     <>
       <Helmet>
-        <title>{city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`}</title>
+        <title>{city.customMetaTitle || city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`}</title>
         <meta 
           name="description" 
           content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
@@ -360,7 +360,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         <link rel="canonical" href={`https://coffeyagencies.com${location.pathname}`} />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content={city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`} />
+        <meta property="og:title" content={city.customMetaTitle || city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`} />
         <meta property="og:description" content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service.`} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://coffeyagencies.com/${city.slug}`} />
@@ -588,6 +588,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </h3>
             <article className="prose prose-lg max-w-none">
               {renderProseParagraphs(city.homeInsurance)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H3: County Insurance - GRAY */}
+      {city.countyInsurance && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              {city.city === "Centre" ? "Cherokee County Insurance Services" : `${city.city} County Insurance Services`}
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.countyInsurance)}
             </article>
           </div>
         </section>
