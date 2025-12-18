@@ -170,9 +170,6 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "bestRating": "5",
       "worstRating": "1"
     },
-    "parentOrganization": {
-      "@id": "https://coffeyagencies.com/#organization"
-    },
     "priceRange": "$$",
     "image": "https://coffeyagencies.com/og-image.jpg"
   };
@@ -227,40 +224,14 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     ]
   };
 
-  // Organization schema reference
-  const organizationSchema = {
-    "@type": "InsuranceAgency",
-    "@id": "https://coffeyagencies.com/#organization",
-    "name": "Coffey Agencies Inc.",
-    "url": "https://coffeyagencies.com",
-    "telephone": ["(256) 927-6287", "(706) 784-6511"],
-    "email": "info@coffeyagencies.com",
-    "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1913 W Main Street",
-      "addressLocality": "Centre",
-      "addressRegion": "AL",
-      "postalCode": "35960",
-      "addressCountry": "US"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "bestRating": "5",
-      "ratingCount": "206"
-    }
-  };
-
-  // Service Schema
+  // Service Schema - provider references the LocalBusiness by @id to avoid duplicates
   const serviceSchema = {
     "@type": "Service",
     "serviceType": "Insurance Services",
     "provider": {
-      "@type": "InsuranceAgency",
-      "name": "Coffey Agencies Inc.",
-      "url": "https://coffeyagencies.com"
+      "@id": city.nearestOffice === "centre" 
+        ? "https://coffeyagencies.com/#centre-office"
+        : "https://coffeyagencies.com/#rome-office"
     },
     "areaServed": {
       "@type": "City",
@@ -276,50 +247,34 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     "name": `Insurance in ${city.city}, ${city.state} | Coffey Agencies`
   };
 
-  // Review Schemas (3 reviews)
-  const reviewSchemas = [
-    {
+  // Review Schemas (3 reviews) - itemReviewed references LocalBusiness by @id to avoid duplicates
+  const reviewSchemas = testimonials.slice(0, 3).map((testimonial, index) => {
+    // Determine which office based on testimonial location or default to nearest office
+    const reviewOffice = testimonial.location?.includes("Rome") || testimonial.location?.includes("GA")
+      ? "rome"
+      : "centre";
+    const reviewOfficeId = reviewOffice === "centre"
+      ? "https://coffeyagencies.com/#centre-office"
+      : "https://coffeyagencies.com/#rome-office";
+    
+    return {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Teresa Gardiner" },
+      "author": { "@type": "Person", "name": testimonial.name },
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
+      "reviewBody": testimonial.text,
       "itemReviewed": {
-        "@type": "InsuranceAgency",
-        "name": "Coffey Agencies Inc.",
-        "address": { "@type": "PostalAddress", "addressLocality": "Centre", "addressRegion": "AL" }
+        "@id": reviewOfficeId
       }
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Steve Smith" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
-      "itemReviewed": {
-        "@type": "InsuranceAgency",
-        "name": "Coffey Agencies Inc.",
-        "address": { "@type": "PostalAddress", "addressLocality": "Centre", "addressRegion": "AL" }
-      }
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Ricky Salas" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
-      "itemReviewed": {
-        "@type": "InsuranceAgency",
-        "name": "Coffey Agencies Inc.",
-        "address": { "@type": "PostalAddress", "addressLocality": "Rome", "addressRegion": "GA" }
-      }
-    }
-  ];
+    };
+  });
 
   // Combine all schemas into a single @graph structure for reliable rendering
   // Only ONE LocalBusiness schema per page (no duplicates)
+  // Removed organizationSchema to prevent duplicates - LocalBusiness is the primary schema
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
       localBusinessSchema, // ONE LocalBusiness schema for all city pages
-      organizationSchema,
       serviceSchema,
       webpageSchema,
       faqSchema,
