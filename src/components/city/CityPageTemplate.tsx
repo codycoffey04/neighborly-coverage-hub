@@ -579,6 +579,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H3: Home Insurance - WHITE */}
+      {city.homeInsurance && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              {city.city} Home Insurance
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.homeInsurance)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* FAQ Section - Simple Q&A Format - WHITE */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
