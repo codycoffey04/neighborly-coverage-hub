@@ -635,6 +635,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H3: Spanish Content Section - GRAY */}
+      {city.spanishContent && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Seguro de Auto en {city.city}, {city.stateAbbr} - Hablamos Español
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.spanishContent)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* H3: County Insurance - GRAY */}
       {city.countyInsurance && (
         <section className="py-16 px-4 bg-muted/30">
