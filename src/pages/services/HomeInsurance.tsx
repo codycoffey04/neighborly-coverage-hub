@@ -287,12 +287,12 @@ const HomeInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Homeowners Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies</title>
+        <title>Home Insurance Alabama & Georgia | Homeowners Coverage | Coffey Agencies</title>
         <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating. Serving AL & GA families." />
         <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Homeowners Insurance Quotes Alabama & Georgia | Compare Rates | Coffey Agencies" />
+        <meta property="og:title" content="Home Insurance Alabama & Georgia | Homeowners Coverage | Coffey Agencies" />
         <meta property="og:description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating. Serving AL & GA families." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/home-insurance" />
@@ -303,7 +303,7 @@ const HomeInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Homeowners Insurance Quotes Alabama & Georgia | Compare Rates" />
+        <meta name="twitter:title" content="Home Insurance Alabama & Georgia | Homeowners Coverage" />
         <meta name="twitter:description" content="Homeowners insurance quotes in AL & GA. Compare home insurance rates, coverage, bundle discounts. 4.7★ rating." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
@@ -350,7 +350,7 @@ const HomeInsurance = () => {
                 Whether you're buying your first home or comparing homeowners insurance rates, we protect Alabama (AL) and Georgia (GA) families with clear, honest coverage
               </p>
               <p className="text-lg text-white/90 max-w-3xl mx-auto mb-8 drop-shadow-md">
-                Also known as house insurance, your home insurance policy covers your dwelling, personal belongings, liability, and more. From Birmingham suburbs to Atlanta's growing neighborhoods, we serve AL and GA homeowners with personalized coverage. Bundle with{" "}
+                Also known as house insurance, your home insurance policy covers your dwelling, personal belongings, liability, and more. From Birmingham suburbs to Atlanta's growing neighborhoods, we serve AL and GA homeowners with personalized coverage. Our Alabama Georgia insurance expertise helps families in both states find the right protection for their homes. Bundle with{" "}
                 <Link to="/services/auto-insurance" className="text-accent hover:underline font-semibold">
                   auto insurance
                 </Link>{" "}
