@@ -357,7 +357,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           name="description" 
           content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
         />
-        <link rel="canonical" href={`https://coffeyagencies.com/${city.slug}`} />
+        <link rel="canonical" href={`https://coffeyagencies.com${location.pathname}`} />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content={city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`} />
