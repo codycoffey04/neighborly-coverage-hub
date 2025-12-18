@@ -380,7 +380,8 @@ export const cityData: Record<string, CityData> = {
     isOfficeCity: false,
     nearestOffice: "centre",
     heroImage: "alabama-hero.jpg",
-    customHeroTitle: "Cheap Car Insurance Mobile AL - Compare Auto Insurance Quotes",
+    customMetaTitle: "Cheap Car Insurance Mobile AL - Compare Auto Insurance Quotes",
+    customHeroTitle: "Cheap Car Insurance in Mobile AL",
     customHeroSubhead: "Auto insurance Mobile AL 36601, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
       "The 36601 and 36695 areas of Mobile face insurance challenges unlike anywhere else in Alabama. As the state's only major coastal city, Mobile residents contend with hurricane exposure, flood risk, and wind damage that inland communities simply don't experience. From downtown's historic districts to the growing western suburbs, you need insurance protection built specifically for Gulf Coast living. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Midtown, Spring Hill, or anywhere across Alabama's Port City.",
