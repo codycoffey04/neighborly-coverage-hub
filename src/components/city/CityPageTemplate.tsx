@@ -607,6 +607,34 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H3: Motorcycle Insurance - GRAY */}
+      {city.motorcycleInsurance && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              {city.city} Motorcycle Insurance
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.motorcycleInsurance)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H3: Mobile Home Insurance - WHITE */}
+      {city.mobileHomeInsurance && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Mobile Home Insurance in {city.city}
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.mobileHomeInsurance)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* H3: County Insurance - GRAY */}
       {city.countyInsurance && (
         <section className="py-16 px-4 bg-muted/30">
