@@ -593,6 +593,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H3: Renters Insurance - WHITE */}
+      {city.rentersInsurance && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              {city.city} {city.stateAbbr} Renters Insurance
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.rentersInsurance)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* H3: County Insurance - GRAY */}
       {city.countyInsurance && (
         <section className="py-16 px-4 bg-muted/30">
