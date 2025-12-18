@@ -133,27 +133,28 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     }))
   };
 
-  // JSON-LD Schema for LocalBusiness (office cities only)
-  const localBusinessSchema = city.isOfficeCity && office ? {
+  // JSON-LD Schema for LocalBusiness (ALL city pages - one per page)
+  // Use correct office: Alabama cities → Centre, GA cities → Rome
+  const localBusinessSchema = {
     "@type": "LocalBusiness",
     "@id": city.nearestOffice === "centre" 
       ? "https://coffeyagencies.com/#centre-office"
       : "https://coffeyagencies.com/#rome-office",
-    "name": `Coffey Agencies - ${office.dba}`,
+    "name": `Coffey Agencies - ${nearestOfficeInfo.dba}`,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": office.address.split(",")[0],
-      "addressLocality": city.city,
-      "addressRegion": city.stateAbbr,
-      "postalCode": city.zipCodes[0],
+      "streetAddress": nearestOfficeInfo.address.split(",")[0],
+      "addressLocality": nearestOfficeInfo.city,
+      "addressRegion": city.nearestOffice === "centre" ? "AL" : "GA",
+      "postalCode": city.nearestOffice === "centre" ? "35960" : "30161",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": office.geo.latitude,
-      "longitude": office.geo.longitude
+      "latitude": nearestOfficeInfo.geo.latitude,
+      "longitude": nearestOfficeInfo.geo.longitude
     },
-    "telephone": city.localPhone || office.phone,
+    "telephone": displayPhone,
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -164,8 +165,8 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": office.rating,
-      "reviewCount": office.reviews,
+      "ratingValue": nearestOfficeInfo.rating,
+      "reviewCount": nearestOfficeInfo.reviews,
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -173,8 +174,8 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
       "@id": "https://coffeyagencies.com/#organization"
     },
     "priceRange": "$$",
-    "image": "https://coffeyagencies.com/coffey-logo.png"
-  } : null;
+    "image": "https://coffeyagencies.com/og-image.jpg"
+  };
 
   // JSON-LD Schema for Place (all cities)
   const cityGeo = cityCoordinates[city.slug];
@@ -313,17 +314,18 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   ];
 
   // Combine all schemas into a single @graph structure for reliable rendering
+  // Only ONE LocalBusiness schema per page (no duplicates)
   const allSchemas = {
     "@context": "https://schema.org",
     "@graph": [
+      localBusinessSchema, // ONE LocalBusiness schema for all city pages
       organizationSchema,
       serviceSchema,
       webpageSchema,
       faqSchema,
       placeSchema,
       breadcrumbSchema,
-      ...reviewSchemas,
-      ...(localBusinessSchema ? [localBusinessSchema] : [])
+      ...reviewSchemas
     ]
   };
 
