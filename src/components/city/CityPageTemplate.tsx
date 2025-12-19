@@ -78,6 +78,7 @@ const cityCoordinates: Record<string, { latitude: string; longitude: string }> =
   "dothan-al": { latitude: "31.2234", longitude: "-85.3908" },
   "enterprise-al": { latitude: "31.3152", longitude: "-85.8552" },
   "foley-al": { latitude: "30.4066", longitude: "-87.6836" },
+  "huntsville-al": { latitude: "34.7304", longitude: "-86.5861" },
   "mobile-al": { latitude: "30.6954", longitude: "-88.0399" },
   "montgomery-al": { latitude: "32.3668", longitude: "-86.3000" },
   "phenix-city-al": { latitude: "32.4710", longitude: "-85.0008" },
@@ -599,6 +600,76 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </h3>
             <article className="prose prose-lg max-w-none">
               {renderProseParagraphs(city.spanishContent)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H2: Car Insurance in [City], [State] - Huntsville-style */}
+      {city.carInsuranceH2 && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Car Insurance in {city.city}, {city.stateAbbr}
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.carInsuranceH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H2: [City] Home Insurance - Huntsville-style */}
+      {city.homeInsuranceH2 && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              {city.city} Home Insurance
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.homeInsuranceH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H2: [City] Renters Insurance - Huntsville-style */}
+      {city.rentersInsuranceH2 && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              {city.city} Renters Insurance
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.rentersInsuranceH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H2: [City] Motorcycle Insurance - Huntsville-style */}
+      {city.motorcycleInsuranceH2 && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              {city.city} Motorcycle Insurance
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.motorcycleInsuranceH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H3: Insurance Agents in [City], [State] - Huntsville-style */}
+      {city.insuranceAgentsH3 && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Insurance Agents in {city.city}, {city.stateAbbr}
+            </h3>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.insuranceAgentsH3)}
             </article>
           </div>
         </section>
