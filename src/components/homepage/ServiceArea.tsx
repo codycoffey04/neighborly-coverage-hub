@@ -65,8 +65,12 @@ export const ServiceArea = () => {
           {/* View All link */}
           <Link 
             to="/service-areas" 
-            className="inline-flex items-center gap-2 text-white/80 font-medium hover:text-white hover:underline"
+            className="inline-flex items-center gap-2 text-white/80 font-medium hover:text-white hover:underline relative z-10 pointer-events-auto px-2 py-1 -mx-2 -my-1 rounded transition-colors"
             aria-label="View all insurance service locations in Alabama and Georgia"
+            onClick={(e) => {
+              // Ensure navigation happens
+              e.stopPropagation();
+            }}
           >
             View All Locations
             <ArrowRight className="h-4 w-4" />
