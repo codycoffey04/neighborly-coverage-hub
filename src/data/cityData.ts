@@ -49,6 +49,13 @@ export interface CityData {
   rockmartAutoInsuranceAgents?: string; // Auto insurance agents content section for Rockmart
   rockmartRentersInsurance?: string; // Renters insurance content section for Rockmart
   rockmartHomeInsurance?: string; // Home insurance content section for Rockmart
+  
+  // Huntsville-style H2 insurance sections (alternative to weather/neighborhood/economy structure)
+  carInsuranceH2?: string;      // H2: Car Insurance in [City], [State]
+  homeInsuranceH2?: string;     // H2: [City] Home Insurance
+  rentersInsuranceH2?: string;  // H2: [City] Renters Insurance
+  motorcycleInsuranceH2?: string; // H2: [City] Motorcycle Insurance
+  insuranceAgentsH3?: string;   // H3: Insurance Agents in [City], [State]
 }
 
 export const cityData: Record<string, CityData> = {
@@ -945,6 +952,95 @@ export const cityData: Record<string, CityData> = {
       {
         question: "How quickly can I get coverage for my property?",
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Enterprise residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially for military families dealing with relocations or deployments, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes near Downtown Enterprise, Fort Novosel communities, or properties in Level Plains and rural Coffee County areas."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
+  },
+
+  "huntsville-al": {
+    slug: "huntsville-al",
+    city: "Huntsville",
+    state: "Alabama",
+    stateAbbr: "AL",
+    zipCodes: ["35801", "35802", "35803", "35805", "35806", "35810"],
+    isOfficeCity: false,
+    nearestOffice: "centre",
+    localPhone: "(256) 927-6287",
+    heroImage: "alabama-hero.jpg",
+    customMetaTitle: "Car & Home Insurance in Huntsville, AL | Coffey Agencies",
+    customHeroTitle: "Insurance in Huntsville, AL (35801)",
+    customHeroSubhead: "Car insurance for Rocket City commuters, homeowners coverage designed for Alabama's severe storm corridor, and bundle discounts that put money back in your pocket. Coffey Agencies holds a 4.7-star rating from 116 Google reviews—and yes, we actually answer the phone. Se habla español.",
+    introduction: [
+      "Huntsville is no longer just the Rocket City—it's Alabama's fastest-growing metro, with a population now exceeding 230,000. From the historic antebellum homes of Twickenham to the tech-sector boom around Cummings Research Park, Huntsville's insurance needs vary block by block. Madison County recorded 142 tornadoes between 1950 and 2018, and the April 2011 Super Outbreak served as a stark reminder that severe weather isn't theoretical here. Coffey Agencies builds coverage around Huntsville's specific geography, employers, and storm exposure—not some generic state template."
+    ],
+    localConsiderations: "Huntsville residents face tornado corridor exposure, flood risk along the Tennessee and Flint Rivers, and diverse insurance needs from aerospace workers to university students.",
+    carInsuranceH2: "Huntsville drivers log serious miles. The daily commute down Memorial Parkway, the I-565 corridor connecting Research Park to Redstone Arsenal, and US-72 traffic stretching toward Madison create conditions where fender benders and rear-end collisions happen regularly. Auto insurance in Huntsville AL needs to account for this reality.\n\nAlabama requires 25/50/25 liability minimums: $25,000 per person bodily injury, $50,000 per accident bodily injury, and $25,000 property damage. For Huntsville's traffic density, these minimums often prove inadequate. A serious accident on I-565 can exceed state minimums before the ambulance arrives. We typically recommend higher liability limits for Huntsville car insurance policies—the premium difference is often modest compared to the protection gained.\n\nCommute patterns matter for rates. Mazda Toyota Manufacturing employees working rotating shifts travel the I-565 corridor at odd hours. Redstone Arsenal personnel navigate gate traffic and security checkpoints daily. Cummings Research Park workers deal with Bradford Drive congestion during peak hours. We factor your specific commute into quotes to find competitive car insurance in Huntsville AL that reflects your actual driving exposure.\n\nLooking for cheap car insurance in Huntsville AL? Bundle discounts provide the most reliable savings—typically 15% to 25% when combining auto and home policies. Beyond bundling, factors like clean driving records, vehicle safety features, and higher deductibles can reduce premiums. We work to find the best rate for your situation rather than offering one-size-fits-all quotes.\n\nHuntsville car insurance rates also reflect the city's uninsured motorist problem. Alabama consistently ranks among states with the highest uninsured driver rates. Adding uninsured/underinsured motorist coverage protects you when the other driver carries no insurance or insufficient limits—a worthwhile addition for anyone driving Huntsville's busy corridors.",
+    homeInsuranceH2: "Madison County sits squarely in Alabama's tornado corridor, making home insurance in Huntsville AL more complex than in less weather-exposed regions. The National Weather Service recorded 142 tornadoes in the county between 1950 and 2018, with peak activity running March through May and a secondary season in November.\n\nTwo events define Huntsville's storm risk: the November 1989 F4 tornado that killed 21 people during rush hour, and the April 2011 Super Outbreak that resulted in nine Madison County fatalities and left over 650,000 Tennessee Valley residents without power. Standard homeowners insurance in Huntsville covers wind damage, but carriers typically apply separate wind/hail deductibles—often 1% to 2% of your dwelling coverage. On a $350,000 home, that means $3,500 to $7,000 out-of-pocket before insurance kicks in. We review these deductible structures during every quote so you understand exactly what you're buying.\n\nFlood risk adds another layer. Flash flooding threatens properties along the Tennessee River corridor and Flint River tributaries in eastern Madison County. FEMA designates portions of Huntsville in Zone A and Zone AE—high-risk areas where mortgage lenders require flood insurance. Even Zone X properties aren't immune; nearly 30% of flood claims nationwide come from low-to-moderate risk zones. We quote flood coverage through the National Flood Insurance Program or private carriers depending on your elevation and flood zone.\n\nNeighborhood-specific considerations shape coverage needs: Twickenham Historic District features antebellum and Victorian homes dating to the early 1800s. Replacement cost estimates require attention to architectural details, custom millwork, and period-appropriate materials that standard calculators miss. Five Points and Blossomwood offer tree-lined streets with craftsman bungalows. Mature trees mean potential roof and siding damage during storms—coverage limits should reflect this exposure. Hampton Cove attracts families with newer construction and golf course amenities. New builds sometimes carry builder warranty gaps that homeowners policies need to address. Jones Valley, between Monte Sano and Green Mountain, combines mountain views with steeper terrain that can affect fire response times and premium calculations. South Huntsville mixes established subdivisions with ongoing development. Properties near Aldridge Creek Greenway may fall within flood-adjacent zones worth verifying.\n\nWith median home values in Huntsville climbing past $315,000, adequate dwelling coverage matters more than ever. We ensure your home insurance in Huntsville AL reflects actual replacement costs—not outdated valuations from years past.",
+    rentersInsuranceH2: "The University of Alabama in Huntsville enrolls roughly 8,500 students, and the city's apartment inventory has expanded rapidly to house the influx of aerospace and defense workers relocating for Huntsville's booming job market. Renters insurance in Huntsville AL protects the belongings your landlord's policy doesn't cover.\n\nYour landlord's insurance covers the building structure—not your laptop, furniture, clothing, or electronics. A single apartment fire or water leak from an upstairs unit can destroy thousands of dollars in personal property. Renters insurance in Huntsville typically starts around $15-20 per month and covers personal belongings, liability if someone is injured in your unit, and additional living expenses if your apartment becomes uninhabitable.\n\nUAH students living in off-campus apartments or even dorms benefit from renters coverage. Theft from vehicles, fire damage, and water intrusion happen regardless of your student status. Parents can often add students to existing home policies, or standalone renters policies provide affordable protection.\n\nDowntown and MidCity renters occupy the growing inventory of urban apartments near Big Spring Park and the Von Braun Center. Higher-density living means more exposure to neighbor-caused incidents—renters insurance provides a financial buffer.\n\nYoung professionals relocating for jobs at Cummings Research Park, Redstone Arsenal, or Huntsville Hospital often rent before buying. Renters insurance bridges the gap, providing liability coverage and personal property protection until you're ready for homeownership.\n\nWe bundle renters insurance with auto policies for additional savings. The combined discount often exceeds the cost of the renters policy itself—meaning you pay less total than auto-only coverage while gaining significant protection.",
+    motorcycleInsuranceH2: "Huntsville's mild spring and fall weather makes motorcycle commuting attractive, and weekend rides through the Tennessee Valley draw riders from across North Alabama. Motorcycle insurance requirements in Alabama mirror auto minimums (25/50/25 liability), but smart riders carry more.\n\nThe same I-565 and Memorial Parkway traffic that creates auto insurance risk poses even greater danger for motorcyclists. Uninsured motorist coverage becomes critical—you need protection when a distracted driver doesn't see you. Comprehensive coverage protects against theft, vandalism, and storm damage when your bike sits parked.\n\nWe offer competitive motorcycle rates for Huntsville riders, whether you commute daily to Research Park or ride recreationally on weekends.",
+    insuranceAgentsH3: "Finding insurance agents in Huntsville AL who actually answer the phone shouldn't be difficult—but it often is. Coffey Agencies operates differently. Call 256-927-6287 during business hours and reach a licensed agent, not a phone tree.\n\nOur Centre office sits approximately 65 miles from downtown Huntsville. That distance shaped our entire service model around digital convenience and responsive communication. Quotes arrive via email, text, or phone within hours. Policy documents come as PDFs you can store on your phone. Need to add a vehicle, update your address, or adjust coverage? Call us or email anytime.\n\nWe know our carriers inside and out. Every Coffey agent holds proper Alabama licensing (#416438) and has deep expertise in the products we offer. That focused knowledge means we match coverage to your specific situation quickly and accurately—no guessing, no generic recommendations.\n\nHuntsville's workforce diversity requires flexibility. Redstone Arsenal personnel need policies accommodating PCS moves and deployments. Cummings Research Park engineers often own higher-value homes and vehicles where bundling yields maximum savings. Mazda Toyota shift workers benefit from payment schedules aligned with biweekly pay. Huntsville Hospital staff working overnight shifts appreciate 24/7 claims reporting. We structure coverage around how you actually live and work.\n\nSe habla español. We serve Huntsville's growing Spanish-speaking community with the same responsive service as every other customer.",
+    neighborhoods: [
+      "Twickenham Historic District",
+      "Five Points",
+      "Blossomwood",
+      "Hampton Cove",
+      "Jones Valley",
+      "South Huntsville",
+      "Downtown (35801)",
+      "Monte Sano foothills",
+      "MidCity District",
+      "Research Park West",
+      "Big Cove area",
+      "Bailey Cove",
+      "North Huntsville",
+      "Meridianville corridor"
+    ],
+    nearbyCities: ["centre-al", "birmingham-al", "montgomery-al"],
+    faqs: [
+      {
+        question: "Do I need to visit your office to get car insurance quotes in Huntsville?",
+        answer: "No. We handle everything by phone, email, or text. Call 256-927-6287 or request a quote online—most Huntsville customers never visit our Centre office."
+      },
+      {
+        question: "Does my Huntsville home need flood insurance?",
+        answer: "It depends on your FEMA flood zone designation. Homes along the Tennessee River, Flint River, or in Zone A/AE areas typically require flood insurance with a mortgage. Even Zone X properties can flood—we recommend verifying your specific address."
+      },
+      {
+        question: "How much can I save by bundling home and auto insurance in Huntsville?",
+        answer: "Most Huntsville customers save 15% to 25% by bundling. Exact savings depend on driving record, home characteristics, and which carriers offer the best combined rate."
+      },
+      {
+        question: "What are Alabama's minimum auto insurance requirements?",
+        answer: "Alabama requires 25/50/25 liability: $25,000 per person bodily injury, $50,000 per accident, $25,000 property damage. For Huntsville's traffic volume, we typically recommend higher limits."
+      },
+      {
+        question: "How do tornadoes affect Huntsville home insurance rates?",
+        answer: "Madison County's tornado history influences premiums across the board. Roof age, construction materials, and deductible structure matter more than zip code alone. Wind/hail deductibles (1-2% of dwelling coverage) significantly impact out-of-pocket costs after storms."
+      },
+      {
+        question: "Do you offer coverage for Redstone Arsenal employees?",
+        answer: "Yes. We work with carriers experienced in covering military families, federal employees, and defense contractors, structuring policies for relocations and deployments."
+      },
+      {
+        question: "How much does renters insurance cost in Huntsville?",
+        answer: "Renters insurance typically runs $15-25 per month depending on coverage limits and deductible. Bundling with auto insurance often makes the effective cost near zero due to multi-policy discounts."
+      },
+      {
+        question: "How quickly can I get coverage started?",
+        answer: "Same-day coverage is available for most auto and renters policies. Homeowners insurance typically requires 24-48 hours for underwriting, though we can expedite for closing deadlines."
       }
     ],
     testimonials: [

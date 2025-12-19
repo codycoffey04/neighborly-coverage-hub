@@ -209,6 +209,7 @@ const testimonials = [
 // Alabama cities
 const alabamaCities = [
   { name: "Birmingham", slug: "birmingham-al" },
+  { name: "Huntsville", slug: "huntsville-al" },
   { name: "Montgomery", slug: "montgomery-al" },
   { name: "Mobile", slug: "mobile-al" },
   { name: "Centre", slug: "centre-al" },

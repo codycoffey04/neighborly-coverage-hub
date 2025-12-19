@@ -29,6 +29,7 @@ const offices = [
 const alabamaCities = [
   { name: "Centre", slug: "centre-al" },
   { name: "Birmingham", slug: "birmingham-al" },
+  { name: "Huntsville", slug: "huntsville-al" },
   { name: "Montgomery", slug: "montgomery-al" },
   { name: "Mobile", slug: "mobile-al" },
   { name: "Dothan", slug: "dothan-al" },
@@ -69,7 +70,7 @@ const ServiceAreas = () => {
     "url": "https://coffeyagencies.com/service-areas",
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 27,
+      "numberOfItems": 28,
       "itemListElement": [
         ...alabamaCities.map((city, index) => ({
           "@type": "ListItem",
