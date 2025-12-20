@@ -1055,6 +1055,93 @@ export const cityData: Record<string, CityData> = {
     ]
   },
 
+  "tuscaloosa-al": {
+    slug: "tuscaloosa-al",
+    city: "Tuscaloosa",
+    state: "Alabama",
+    stateAbbr: "AL",
+    zipCodes: ["35401", "35404", "35405", "35406"],
+    isOfficeCity: false,
+    nearestOffice: "centre",
+    localPhone: "(205) 880-4893",
+    heroImage: "alabama-hero.jpg",
+    customMetaTitle: "Car & Home Insurance in Tuscaloosa, AL | Coffey Agencies",
+    customHeroTitle: "Insurance in Tuscaloosa, AL (35401)",
+    customHeroSubhead: "Car insurance for drivers navigating McFarland Boulevard and gameday traffic around Bryant-Denny Stadium, homeowners coverage built for tornado alley, and renters insurance designed for 42,000 UA students protecting everything from laptops to furniture. Coffey Agencies delivers 4.7-star rated service to the Druid City. Se habla español.",
+    introduction: [
+      "Tuscaloosa combines a major SEC university, a Mercedes-Benz manufacturing hub, and one of the most tornado-active regions in the country. The city's 114,000 permanent residents share space with 42,000 University of Alabama students, creating a population that swells dramatically during football season and shifts substantially between semesters. Tuscaloosa County's economy depends on UA, the Mercedes-Benz plant in Vance (6,000+ employees), DCH Regional Medical Center, and a network of automotive suppliers stretching along the I-20/I-59 corridor. That economic diversity creates equally diverse insurance needs—from young drivers on University Boulevard to homeowners rebuilding tornado-resistant structures after April 2011's devastation. Coffey Agencies has served Alabama families since 2009, combining digital convenience with licensed agents who actually answer the phone."
+    ],
+    localConsiderations: "Tuscaloosa residents face severe tornado exposure (April 2011 EF4 killed 44), high renter occupancy (55%), UA student population (42,000), and Mercedes-Benz workforce commuting to Vance.",
+    carInsuranceH2: "Tuscaloosa car insurance reflects the city's unique traffic patterns. Gameday Saturdays around Bryant-Denny Stadium bring 100,000+ fans into a city of 114,000—creating gridlock along University Boulevard, McFarland Boulevard, and 15th Street that multiplies accident exposure. The I-20/I-59 interchange funnels regional and commercial traffic through the heart of Tuscaloosa County, and commuters driving to the Mercedes plant in Vance or to Birmingham face daily highway exposure.\n\nAlabama's minimum liability requirements (25/50/25) provide baseline protection, but Tuscaloosa drivers often need more. Collision rates run higher in college towns where inexperienced drivers navigate unfamiliar roads, and parking lot accidents during stadium events add claims that generic carriers don't anticipate. We recommend comprehensive coverage to protect against hail damage (Tuscaloosa County sees significant severe weather annually) and higher liability limits for anyone regularly driving the I-20/I-59 corridor.\n\nLooking for cheap car insurance in Tuscaloosa that actually provides adequate coverage? The key is matching your policy to your actual driving patterns. Students commuting from off-campus apartments, Mercedes employees driving to Vance, and downtown professionals navigating 15th Street face different risks—and deserve policies that reflect those differences. Tuscaloosa car insurance shouldn't mean choosing between affordability and protection. Call 205-880-4893 for a quote built around how you actually drive.",
+    autoInsuranceQuotesH2: "Getting auto insurance quotes in Tuscaloosa should take minutes, not hours. Coffey Agencies delivers same-day Tuscaloosa auto insurance quotes by phone—often while you're still on the line. We'll ask about your vehicle, driving history, where you park overnight, and coverage preferences. Then we compare options from carriers we know thoroughly, explaining the trade-offs so you can make an informed decision.\n\nAuto insurance Tuscaloosa AL costs vary based on several factors: age and driving record, vehicle type, annual mileage, coverage selections, and where you live within the city. Students under 25 typically face higher premiums, but good student discounts, bundling with renters insurance, and telematics programs can reduce costs substantially. If you're comparing Tuscaloosa auto insurance quotes from multiple sources, verify you're comparing equivalent coverage—a cheaper policy with lower limits may cost more after an accident.\n\nNeed coverage to start today? We bind most auto policies same-day, with digital ID cards in your inbox before you leave campus. Whether you're a UA student buying your first policy, a Mercedes employee shopping for better rates, or a longtime Tuscaloosa resident tired of annual premium increases, call 205-880-4893 and let's get you quoted.",
+    homeInsuranceH2: "The April 27, 2011 tornado defines Tuscaloosa's relationship with homeowners insurance. That EF4 storm—with 190 mph winds and a 1.5-mile-wide damage path—killed 44 people in Tuscaloosa alone, destroyed 12% of the city, and caused $2.4 billion in damage between Tuscaloosa and Birmingham. Neighborhoods like Alberta City, Cedar Crest, Rosedale, and Forest Lake were devastated. For homeowners who rebuilt, or who've purchased in areas that were flattened, coverage isn't abstract—it's personal.\n\nTuscaloosa homeowners insurance must account for this tornado exposure. Standard policies cover wind damage, but most carriers apply separate wind/hail deductibles—often 1-2% of dwelling coverage—that trigger during severe weather events. For a $250,000 home, that's $2,500-$5,000 out of pocket before coverage kicks in. Many Tuscaloosa homeowners also need to consider replacement cost endorsements for older homes near downtown and the Riverwalk area, where construction costs to match historic character exceed standard dwelling limits.\n\nHome insurance Tuscaloosa AL pricing reflects construction year, roof condition, proximity to fire services, and claims history. Homes rebuilt after 2011 often qualify for credits due to modern building codes and storm-resistant construction. We'll walk you through Tuscaloosa homeowners insurance cost factors, deductible options, and coverage levels that match your home's actual replacement value. Quotes are free—call 205-880-4893 to protect what you've built.",
+    rentersInsuranceH2: "With 55% of Tuscaloosa housing units occupied by renters—and 42,000 UA students living off-campus in apartments, Greek houses, and rental homes—renters insurance Tuscaloosa AL represents one of our most common policy types. The Strip, University Boulevard, McFarland Boulevard, and the neighborhoods surrounding campus house thousands of students whose landlords' insurance covers the building structure but nothing inside.\n\nYour landlord's policy doesn't protect your laptop, gaming setup, furniture, bike, or clothes. A burst pipe, kitchen fire, or break-in leaves you replacing everything out of pocket unless you carry Tuscaloosa renters insurance. Most policies cost $15-30 monthly for $15,000-$30,000 in personal property protection, liability coverage (critical if someone gets injured in your apartment), and additional living expenses if your unit becomes uninhabitable after a covered loss.\n\nUA students living off-campus should verify whether parents' homeowners policies extend coverage—many don't cover off-campus apartments, and some that do have significant limitations. Roommate situations require attention: each tenant typically needs their own policy, or you need a policy specifically listing all covered residents. Greek housing, student apartments on The Strip, and rental homes near campus all present different considerations. Get your renters insurance Tuscaloosa AL quote at 205-880-4893.",
+    motorcycleInsuranceH2: "Tuscaloosa's mild climate and scenic roads—including routes along the Black Warrior River and through rural Tuscaloosa County—make motorcycle riding practical much of the year. Whether you're commuting to campus, cruising to the Riverwalk, or riding the back roads outside city limits, motorcycle insurance Tuscaloosa AL protects both your bike and your liability exposure.\n\nAlabama requires motorcycle riders to carry liability insurance meeting state minimums (25/50/25), but collision and comprehensive coverage protect your investment against theft, vandalism, and accident damage. Gameday traffic creates additional exposure for riders navigating around Bryant-Denny Stadium, and the I-20/I-59 corridor presents highway risks that warrant adequate coverage. Motorcycle premiums depend on bike type, engine size, riding experience, and how you use the bike (commuting vs. recreation). Storage arrangements—garage vs. outdoor—also affect rates. Whether you ride a cruiser, sportbike, or touring motorcycle, we'll quote coverage that matches your riding patterns. Call 205-880-4893 for a motorcycle insurance quote.",
+    insuranceAgentsH3: "Looking for insurance agents in Tuscaloosa AL who answer the phone? Coffey Agencies operates as a family-owned agency serving Alabama since 2009, licensed statewide (#416438), with carriers we know thoroughly. That focused expertise means we understand Tuscaloosa County's specific risks—student drivers, gameday traffic, severe weather exposure, and the rental market dynamics that make this city different from other Alabama communities.\n\nOur Centre office sits approximately 145 miles northeast, but geography doesn't limit our service. Digital quotes, phone consultations, and email policy management mean Tuscaloosa clients receive the same responsive attention as those down the street. Need a certificate of insurance for your landlord today? We'll have it in your inbox within hours. Questions about your deductible options after a storm? We answer the phone—and we know your name.\n\nAs a Tuscaloosa insurance agency option serving everyone from UA students to Mercedes employees to longtime Druid City residents, we earn trust through service. We also speak Spanish (Se habla español) and work with military families, first-time renters, and homeowners rebuilding after severe weather. Call 205-880-4893 to experience the difference.",
+    neighborhoods: [
+      "Downtown Tuscaloosa",
+      "University of Alabama campus",
+      "Bryant-Denny Stadium area",
+      "The Strip",
+      "Alberta City",
+      "University Boulevard",
+      "McFarland Boulevard",
+      "15th Street corridor",
+      "Riverwalk",
+      "Cedar Crest",
+      "Northport"
+    ],
+    nearbyCities: ["birmingham-al", "montgomery-al", "dothan-al"],
+    faqs: [
+      {
+        question: "Do I need to visit an office to get insurance in Tuscaloosa?",
+        answer: "No. Coffey Agencies handles everything digitally—quotes, policy binding, ID cards, and claims support happen online or by phone. Our Centre office is about 145 miles away, but Tuscaloosa clients receive the same responsive service. Call 205-880-4893 or request a quote online."
+      },
+      {
+        question: "How does the 2011 tornado affect Tuscaloosa home insurance rates today?",
+        answer: "The April 2011 EF4 tornado killed 44 people in Tuscaloosa and destroyed 12% of the city. Carriers now price tornado exposure into premiums, and most apply wind/hail deductibles (1-2% of dwelling coverage). Homes rebuilt to modern codes often qualify for discounts due to storm-resistant construction."
+      },
+      {
+        question: "What should UA students know about renters insurance?",
+        answer: "Off-campus students typically need their own renters policy—parents' homeowners coverage often doesn't extend to off-campus apartments. Renters insurance protects your laptop, furniture, and belongings for $15-30/month while providing liability coverage if someone gets injured in your apartment."
+      },
+      {
+        question: "How much can I save by bundling home and auto insurance in Tuscaloosa?",
+        answer: "Most carriers offer 15-25% discounts when you bundle home (or renters) and auto policies. For a typical Tuscaloosa household, that translates to $300-$600 in annual savings. We quote both separately and bundled so you can see the actual numbers."
+      },
+      {
+        question: "Do you insure motorcycles in Tuscaloosa?",
+        answer: "Yes. Motorcycle insurance covers liability, collision, and comprehensive protection for bikes of all types. Alabama requires minimum liability coverage, and we recommend additional protection given Tuscaloosa's highway exposure and gameday traffic patterns."
+      },
+      {
+        question: "What factors affect Tuscaloosa auto insurance rates?",
+        answer: "Driving record, vehicle type, annual mileage, where you park overnight, and coverage selections all influence premiums. Tuscaloosa-specific factors include the student driver population, gameday traffic around Bryant-Denny, and I-20/I-59 corridor exposure. Good student discounts and bundling reduce costs."
+      },
+      {
+        question: "Do you offer coverage for landlords with rental properties near UA?",
+        answer: "Yes. Landlord insurance covers dwelling structures, liability, and lost rental income for property owners. Tuscaloosa's rental market—driven by 42,000 UA students—creates specific considerations around tenant turnover and property protection."
+      },
+      {
+        question: "How quickly can I get coverage started?",
+        answer: "Same-day coverage is available for most auto, renters, and motorcycle policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 205-880-4893 during business hours and we can often have policy documents before end of day."
+      }
+    ],
+    testimonials: [
+      {
+        name: "Teresa Gardiner",
+        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
+      },
+      {
+        name: "Steve Smith",
+        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
+      },
+      {
+        name: "Ricky Salas",
+        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
+      }
+    ]
+  },
+
   // ===== GEORGIA CITIES =====
   "rome-ga": {
     slug: "rome-ga",
