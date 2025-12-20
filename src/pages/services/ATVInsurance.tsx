@@ -210,6 +210,7 @@ const alabamaCities = [
   { name: "Huntsville", slug: "huntsville-al" },
   { name: "Montgomery", slug: "montgomery-al" },
   { name: "Mobile", slug: "mobile-al" },
+  { name: "Auburn", slug: "auburn-al" },
   { name: "Gadsden", slug: null },
   { name: "Anniston", slug: null },
   { name: "Jacksonville", slug: null },

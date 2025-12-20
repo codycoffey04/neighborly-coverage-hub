@@ -619,6 +619,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H2: Auto Insurance Quotes in [City], [State] - Auburn-style */}
+      {city.autoInsuranceQuotesH2 && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Auto Insurance Quotes in {city.city}, {city.stateAbbr}
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.autoInsuranceQuotesH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* H2: [City] Home Insurance - Huntsville-style */}
       {city.homeInsuranceH2 && (
         <section className="py-16 px-4 bg-muted/30">
@@ -642,6 +656,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             </h2>
             <article className="prose prose-lg max-w-none">
               {renderProseParagraphs(city.rentersInsuranceH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
+      {/* H2: Landlord Insurance in [City], [State] - Auburn-style */}
+      {city.landlordInsuranceH2 && (
+        <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Landlord Insurance in {city.city}, {city.stateAbbr}
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.landlordInsuranceH2)}
             </article>
           </div>
         </section>
