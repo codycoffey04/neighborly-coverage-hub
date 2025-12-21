@@ -111,6 +111,7 @@ const alabamaCities = [
   { name: "Centre", slug: "centre-al" },
   { name: "Birmingham", slug: "birmingham-al" },
   { name: "Decatur", slug: "decatur-al" },
+  { name: "Florence", slug: "florence-al" },
   { name: "Huntsville", slug: "huntsville-al" },
   { name: "Montgomery", slug: "montgomery-al" },
   { name: "Tuscaloosa", slug: "tuscaloosa-al" },

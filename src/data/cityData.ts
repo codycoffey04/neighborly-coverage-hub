@@ -64,6 +64,78 @@ export interface CityData {
 
 export const cityData: Record<string, CityData> = {
   // ===== ALABAMA CITIES =====
+  "florence-al": {
+    slug: "florence-al",
+    city: "Florence",
+    state: "Alabama",
+    stateAbbr: "AL",
+    zipCodes: ["35630", "35631", "35632", "35633", "35634"],
+    isOfficeCity: false,
+    nearestOffice: "centre",
+    localPhone: "(256) 927-6287",
+    heroImage: "alabama-hero.jpg",
+    customMetaTitle: "Auto Insurance Florence AL | Car Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Insurance in Florence, AL (35630)",
+    customHeroSubhead: "Auto insurance for Florence drivers navigating Tennessee River bridges and the Shoals corridor, homeowners coverage built for Lauderdale County storm exposure, and affordable rates for UNA students and music industry workers. Coffey Agencies delivers 4.7-star rated service to the birthplace of the blues and the Hit Recording Capital of the World. Se habla español.",
+    introduction: [
+      "Florence anchors the Shoals—the four-city area including Sheffield, Muscle Shoals, and Tuscumbia that gave the world W.C. Handy, Sam Phillips, FAME Studios, and the Muscle Shoals Sound that shaped American music. The city's 43,000 residents share this Tennessee River community with 10,500 University of North Alabama students, creating a population split between longtime homeowners, young renters, and the creative professionals who still record at studios where Aretha Franklin and the Rolling Stones once tracked hits. That mix creates distinct insurance needs: student drivers navigating unfamiliar bridges, historic homes in downtown districts, apartments near campus, and the storm exposure that comes with living in northwest Alabama's tornado corridor. Coffey Agencies has served Alabama families since 2009, delivering the same responsive service to Florence residents that we provide to communities across the state."
+    ],
+    autoInsuranceQuotesH2: "Auto insurance Florence AL quotes start with understanding how Shoals residents actually drive. The quad-city area means daily bridge crossings between Florence, Sheffield, Muscle Shoals, and Tuscumbia—whether commuting to work at North Alabama Medical Center, attending classes at UNA, or heading to recording sessions at FAME Studios. The Tennessee River and Wilson Dam create natural chokepoints that funnel traffic onto bridges where congestion increases accident exposure during rush hours.\n\nAlabama requires minimum liability limits of 25/50/25, but Florence drivers often need more coverage. The student population at UNA means thousands of inexperienced drivers on roads like Pine Street, Cox Creek Parkway, and Florence Boulevard. University Boulevard sees heavy traffic during class changes and gameday events. We recommend liability limits of 100/300/100 for anyone regularly crossing Tennessee River bridges, plus comprehensive coverage for hail damage during Lauderdale County's storm season.\n\nGetting auto insurance Florence AL shouldn't require visiting an office during business hours. Whether you're a UNA student between classes, a recording engineer working studio hours, or a shift worker at the hospital, we deliver same-day quotes by phone. Coffey Agencies compares options from carriers we know thoroughly, explaining trade-offs so you can make informed decisions. Auto insurance Florence AL rates vary based on driving record, vehicle type, where you park overnight, and coverage selections—but competitive options exist for every situation. Call 256-927-6287.",
+    carInsuranceH2: "Florence car insurance reflects the realities of driving in a quad-city metro area built around river crossings. The US-72 corridor connects Florence to Huntsville (67 miles east) and Memphis beyond, while US-43 and US-72 Alternate link the Shoals cities. Tennessee River bridges—including the spans near Wilson Dam—see daily commuter traffic plus weekend visitors exploring music heritage sites, creating congestion patterns that differ from typical small-city Alabama communities.\n\nCar insurance Florence AL costs depend on several factors beyond the basics. The quad-city structure means many residents drive between Florence, Sheffield, Muscle Shoals, and Tuscumbia daily, accumulating miles even for short trips. Bridge traffic during morning and evening commutes increases exposure, and the mix of local drivers with Nashville and Memphis visitors adds unpredictability. UNA students—many from out of state—navigate unfamiliar roads while learning the area.\n\nLooking for car insurance Florence AL that matches your actual driving patterns? Shoals commuters logging miles between cities need different coverage than retirees making occasional trips downtown. Music industry professionals keeping irregular studio hours face different risks than 9-to-5 hospital workers. We'll quote coverage reflecting how you actually drive, not generic assumptions about Florence drivers. Multi-car households—common when both spouses work in different Shoals cities—often save with bundled policies. Call 256-927-6287 for a Florence car insurance quote.",
+    cheapCarInsurance: "Finding cheap car insurance Florence AL matters especially for UNA students and young families balancing education costs, housing, and transportation. With median household income around $50,400—below the state average—many Florence residents need affordable coverage that doesn't sacrifice essential protection.\n\nSeveral strategies lower premiums without gutting coverage. Higher deductibles reduce monthly costs for drivers with savings to cover out-of-pocket expenses after an accident. Bundling auto with renters insurance (particularly relevant for UNA students) typically saves 15-25%. Good student discounts reward academic achievement, and many carriers offer reduced rates for completing defensive driving courses. Young drivers under 25 face higher premiums, but staying on a family policy rather than purchasing standalone coverage can reduce costs substantially.\n\nCheap car insurance Florence AL doesn't mean minimum-coverage policies that leave you exposed after an accident. Alabama's state minimums (25/50/25) may cost less monthly but won't cover a serious collision involving multiple vehicles or significant injuries. We quote multiple coverage levels so you can see the actual cost difference between bare-minimum and recommended protection—often smaller than expected. For UNA students and young professionals starting careers in the Shoals, the right policy protects your finances without breaking your budget. Call 256-927-6287 for affordable options.",
+    homeInsuranceH2: "Florence homeowners face two primary coverage considerations: Lauderdale County's tornado exposure and the Tennessee River's flood zones. The April 2011 Super Outbreak tracked F5 tornadoes within 30 miles of Florence, and the region sees regular tornado warnings from March through May. Lauderdale County's severe weather history means carriers price storm risk into premiums—and most apply separate wind/hail deductibles (often 1-2% of dwelling coverage) that trigger during significant weather events.\n\nThe city's housing stock ranges from historic Victorian homes in downtown districts to mid-century neighborhoods near McFarland Park to newer construction on the outskirts. Median home values around $174,000 make Florence more affordable than many Alabama markets, but dwelling coverage must still reflect actual replacement costs—not purchase prices. Historic homes near downtown often require updated wiring, plumbing, and roof documentation for full coverage. Properties along the Tennessee River or near Wilson Dam may face flood zone designations requiring separate flood insurance.\n\nHome insurance Florence AL pricing reflects construction year, roof condition, distance to fire services, and claims history. The 48% renter occupancy rate (driven largely by UNA students) means significant rental property activity—landlords insuring investment properties have different needs than owner-occupants. We'll walk through Florence homeowners insurance options, deductible structures, and coverage levels matching your home's actual exposure. Quotes are free—call 256-927-6287.",
+    motorcycleInsuranceH2: "The Shoals region offers some of Alabama's best motorcycle riding conditions. The Natchez Trace Parkway begins near Tuscumbia and stretches 444 miles to Nashville—a scenic route with no commercial traffic that draws riders from across the Southeast. River roads along the Tennessee River, Wilson Dam crossings, and the rural routes through Lauderdale County provide options for everything from afternoon cruises to weekend tours. Florence's mild climate makes riding practical much of the year.\n\nAlabama requires motorcycle riders to carry liability insurance meeting state minimums (25/50/25), but collision and comprehensive coverage protect your investment against theft, vandalism, storm damage, and accident damage. The quad-city bridge crossings present unique exposure—narrow lanes, merging traffic, and varying road surfaces require attentive riding and adequate coverage.\n\nMotorcycle insurance Florence AL premiums depend on bike type, engine size, riding experience, and usage patterns. Riders using the Natchez Trace regularly may have different needs than daily commuters crossing Tennessee River bridges. Storage arrangements matter too—garage storage versus outdoor parking affects both theft risk and storm exposure during Lauderdale County's severe weather season. Whether you ride a cruiser on river roads or a touring bike on the Trace, we'll quote coverage matching your riding patterns. Call 256-927-6287 for a motorcycle insurance quote.",
+    insuranceAgentsH3: "Searching for Allstate insurance Florence Alabama or comparing insurance companies in the Shoals? Florence residents often shop national carriers like Allstate alongside regional options, looking for the right combination of coverage, service, and price. Finding the best fit means understanding what each carrier offers—and whether their standard policies address Lauderdale County's specific risks.\n\nCoffey Agencies operates differently. As a family-owned insurance agency serving Alabama since 2009, we're licensed statewide (#416438) and work with multiple carriers—not just one. That means we compare options across companies to find coverage matching your situation, rather than fitting you into a single carrier's product lineup. We understand Florence's specific needs: UNA student drivers, Tennessee River bridge commuters, historic home coverage, and the storm exposure that defines northwest Alabama weather.\n\nOur Centre office sits approximately 145 miles southeast via US-278, but distance doesn't limit our service. Digital quotes, phone consultations, and email policy management mean Florence clients receive the same responsive attention as neighbors down the street. Need a certificate of insurance for your landlord today? We'll have it in your inbox within hours. Questions about your deductible options after a storm? We answer the phone—and we know your name. We also speak Spanish (Se habla español) and work with UNA students, music industry professionals, and longtime Shoals residents shopping for better coverage. Call 256-927-6287 to experience the difference.",
+    localConsiderations: "Florence residents in the Shoals face Lauderdale County tornado exposure, Tennessee River flood zones, UNA student traffic, and quad-city commuter patterns requiring comprehensive coverage with appropriate liability limits.",
+    neighborhoods: [
+      "Central Florence (35630)",
+      "Downtown historic district",
+      "University of North Alabama campus",
+      "Cox Creek area",
+      "North Florence (35632)",
+      "Killen area",
+      "St. Florian corridor",
+      "East Florence (35634)",
+      "Cloverdale Road area",
+      "Underwood-Petersville"
+    ],
+    nearbyCities: ["huntsville-al", "decatur-al", "centre-al"],
+    faqs: [
+      {
+        question: "Do I need to visit an office to get insurance in Florence?",
+        answer: "No. Coffey Agencies handles everything digitally—quotes, policy binding, ID cards, and claims support happen online or by phone. Our Centre office is about 145 miles away, but Florence clients receive the same responsive service. Call 256-927-6287 or request a quote online."
+      },
+      {
+        question: "How does living near the Tennessee River affect my home insurance?",
+        answer: "Properties near the Tennessee River, Wilson Dam, or low-lying areas may require separate flood insurance—standard homeowners policies don't cover flood damage. We'll help determine if your property falls within FEMA flood zones requiring additional coverage."
+      },
+      {
+        question: "What should UNA students know about auto insurance in Florence?",
+        answer: "Students may be able to stay on parents' policies depending on state regulations and residency. Those needing standalone coverage can often save with good student discounts, bundling with renters insurance, and avoiding coverage gaps. We'll explain options for your specific situation."
+      },
+      {
+        question: "How much can I save by bundling home and auto insurance in Florence?",
+        answer: "Most carriers offer 15-25% discounts when you bundle home (or renters) and auto policies. For a typical Florence household, that translates to $300-$600 in annual savings. We quote both separately and bundled so you can see the actual numbers."
+      },
+      {
+        question: "Do tornadoes affect Florence home insurance rates?",
+        answer: "Yes. Lauderdale County's tornado history—including the devastating 2011 Super Outbreak that tracked F5 tornadoes nearby—influences premiums and policy structures. Most carriers apply wind/hail deductibles (1-2% of dwelling coverage). Roof condition and construction year significantly affect rates."
+      },
+      {
+        question: "Is motorcycle insurance required in Alabama?",
+        answer: "Yes. Alabama requires motorcycle riders to carry liability insurance meeting state minimums (25/50/25). We recommend additional coverage—collision, comprehensive, and higher liability limits—especially for riders using the Natchez Trace Parkway and Tennessee River routes."
+      },
+      {
+        question: "Do you offer coverage for rental properties near UNA?",
+        answer: "Yes. Landlord insurance covers dwelling structures, liability, and lost rental income for property owners. Florence's high renter occupancy (48%)—driven largely by UNA's 10,500 students—makes landlord coverage an important product for local property investors."
+      },
+      {
+        question: "How quickly can I get coverage started?",
+        answer: "Same-day coverage is available for most auto and motorcycle policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 256-927-6287 during business hours and we can often have policy documents before end of day."
+      }
+    ]
+  },
+
   "decatur-al": {
     slug: "decatur-al",
     city: "Decatur",
