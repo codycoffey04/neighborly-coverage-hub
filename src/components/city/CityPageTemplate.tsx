@@ -59,6 +59,7 @@ const cityCoordinates: Record<string, { latitude: string; longitude: string }> =
   "birmingham-al": { latitude: "33.5207", longitude: "-86.8025" },
   "centre-al": { latitude: "34.1520", longitude: "-85.6789" },
   "decatur-al": { latitude: "34.6059", longitude: "-86.9833" },
+  "florence-al": { latitude: "34.7998", longitude: "-87.6773" },
   "dothan-al": { latitude: "31.2234", longitude: "-85.3908" },
   "enterprise-al": { latitude: "31.3152", longitude: "-85.8552" },
   "foley-al": { latitude: "30.4066", longitude: "-87.6836" },
