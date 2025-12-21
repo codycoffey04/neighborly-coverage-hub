@@ -184,3 +184,16 @@ export const defaultTestimonials: Testimonial[] = [
   romeReviews[0],    // Sarah R
   centreReviews[1]   // Tyler M
 ];
+
+// Unique testimonial combinations for each service page
+// No two service pages share the same 3 testimonials
+export const serviceTestimonialSets: Record<string, Testimonial[]> = {
+  "auto-insurance": [centreReviews[0], romeReviews[1], centreReviews[5]],      // Thomas K, Tracey D, John B
+  "home-insurance": [romeReviews[0], centreReviews[2], romeReviews[9]],        // Sarah R, Kim S, Barbara R
+  "renters-insurance": [centreReviews[1], romeReviews[3], centreReviews[7]],   // Tyler M, Sue H, Cassie N
+  "condo-insurance": [romeReviews[2], centreReviews[4], romeReviews[5]],       // Priscilla J, Lloyd N, Patrick R
+  "motorcycle-insurance": [centreReviews[3], romeReviews[6], centreReviews[8]], // Teresa G, Monica W, Kerry G
+  "boat-insurance": [romeReviews[4], centreReviews[6], romeReviews[10]],       // Chad L, Tammy B, Benita D
+  "atv-insurance": [centreReviews[9], romeReviews[7], romeReviews[11]],        // Gina W, Phillip A, Annette C
+  "life-insurance": [romeReviews[8], centreReviews[0], romeReviews[12]]        // Clyde B, Thomas K, Karen P
+};

@@ -9,6 +9,7 @@ import { Link, useLocation } from "react-router-dom";
 import { TrackedPhone } from "@/components/shared/TrackedPhone";
 import { Helmet } from "react-helmet-async";
 import { CompleteYourCoverage } from "@/components/shared/CompleteYourCoverage";
+import { serviceTestimonialSets } from "@/data/testimonialData";
 import { 
   Heart, 
   Shield, 
@@ -30,6 +31,8 @@ import {
   CheckCircle,
   Bike
 } from "lucide-react";
+
+const lifeTestimonials = serviceTestimonialSets["life-insurance"];
 
 const LifeInsurance = () => {
   const location = useLocation();
@@ -1003,56 +1006,24 @@ const georgiaCities = [
           <div className="container max-w-5xl">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">What Our Clients Say</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
-                <CardContent className="pt-6 flex flex-col h-full">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
-                    "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-                  </p>
-                  <div className="mt-auto">
-                    <p className="font-semibold text-foreground">Teresa Gardiner</p>
-                    <p className="text-sm text-muted-foreground">Centre, AL</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
-                <CardContent className="pt-6 flex flex-col h-full">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
-                    "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-                  </p>
-                  <div className="mt-auto">
-                    <p className="font-semibold text-foreground">Steve Smith</p>
-                    <p className="text-sm text-muted-foreground">Centre, AL</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
-                <CardContent className="pt-6 flex flex-col h-full">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
-                    "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-                  </p>
-                  <div className="mt-auto">
-                    <p className="font-semibold text-foreground">Ricky Salas</p>
-                    <p className="text-sm text-muted-foreground">Rome, GA</p>
-                  </div>
-                </CardContent>
-              </Card>
+              {lifeTestimonials.map((testimonial, index) => (
+                <Card key={index} className="bg-white h-full flex flex-col border border-gray-200 shadow-sm hover:shadow-md hover:shadow-[0_0_15px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-200">
+                  <CardContent className="pt-6 flex flex-col h-full">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
+                      "{testimonial.text}"
+                    </p>
+                    <div className="mt-auto">
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
             
             <div className="text-center">

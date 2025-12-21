@@ -232,26 +232,9 @@ const georgiaCities = [
 ];
 
 // Testimonials
-const testimonials = [
-  {
-    name: "Jake T.",
-    location: "Piedmont, AL",
-    quote: "Got my RZR insured through Coffey and they actually understood what I needed. They ride the same trails at Indian Mountain — that's real local knowledge.",
-    rating: 5
-  },
-  {
-    name: "Marcus & Amy D.",
-    location: "Rome, GA",
-    quote: "We have a Polaris Ranger and two dirt bikes for the kids. Coffey bundled everything together and saved us money while getting better coverage.",
-    rating: 5
-  },
-  {
-    name: "Tyler S.",
-    location: "Centre, AL",
-    quote: "My Can-Am got stolen from my trailer. Coffey handled the claim fast and I had a check in two weeks. Couldn't believe how easy they made it.",
-    rating: 5
-  }
-];
+import { serviceTestimonialSets } from "@/data/testimonialData";
+
+const testimonials = serviceTestimonialSets["atv-insurance"];
 
 const ATVInsurance = () => {
   const location = useLocation();
@@ -770,11 +753,11 @@ const ATVInsurance = () => {
                 <Card key={index} className="border border-border/50">
                   <CardContent className="p-6">
                     <div className="flex gap-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
+                      {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                       ))}
                     </div>
-                    <p className="text-muted-foreground mb-4 italic">"{testimonial.quote}"</p>
+                    <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
                     <div>
                       <p className="font-semibold">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">{testimonial.location}</p>
