@@ -24,7 +24,7 @@ export interface CityData {
   neighborhoodCoverage?: string;
   economyInfo?: string;
   localExcellence?: string;
-  testimonials?: { name: string; text: string; location?: string; }[];
+  
   localArticle?: {
     text: string;
     href: string;
@@ -126,20 +126,6 @@ export const cityData: Record<string, CityData> = {
       text: "Storm Season Home Insurance in Centre, AL",
       href: "/learn/home-insurance-centre-al-storm-season"
     },
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ],
     cheapCarInsurance: "Finding car insurance in Centre AL means working with a locally owned agency that understands Cherokee County. As our headquarters location, we've been serving Centre and surrounding communities since 2009, providing car insurance Centre AL residents trust. Whether you're driving Highway 411 to Gadsden, commuting along Highway 9, or navigating rural roads throughout Cherokee County, we help you find auto insurance Centre AL coverage that fits your needs and budget. Insurance Centre Alabama drivers need accounts for rural driving patterns, longer distances to services, and the unique risks of Northeast Alabama living.\n\nCar insurance in Centre AL costs vary based on your specific address, driving record, and vehicle type, but bundling your auto insurance with homeowners or renters coverage typically saves Centre families 15-25% on combined premiums—often $400-600 per year. We work with multiple insurance companies to find the best rates for Cherokee County drivers, whether you're protecting a vehicle for daily commutes to Weiss Lake, traveling through downtown Centre, or driving to nearby areas like Cedar Bluff, Leesburg, or Gaylesville. Safe driver discounts, good student discounts, and multi-vehicle policies can further reduce your costs. We also help you understand how factors like your garaging address, annual mileage, and driving record affect your rates.\n\nMany Centre residents appreciate that car insurance in Centre AL doesn't have to mean calling an 800-number or working with an online-only company. As your local insurance agent Centre AL, we're right here in town at 1913 W Main Street. You can walk in Monday through Friday, 8:00 AM to 5:00 PM, or call us at (256) 927-6287. Se habla español. We're Cherokee County insurance experts who understand local conditions, rural property considerations, and the unique needs of Centre families. Call or visit today for your free quote.",
     autoInsuranceCompanies: "When you need an insurance agent Centre AL, you want someone local who knows Cherokee County. As an Allstate agent Centre AL, we're your neighbors—locally owned and operated right here in Centre since 2009. This is our main office and headquarters, not a call center or online-only operation. Whether you need auto insurance, home insurance, or other coverage, our insurance agency Centre Alabama residents trust provides personalized service you can't get from an 800-number. Walk-ins are welcome at 1913 W Main Street, and our local staff speaks both English and Spanish (se habla español).\n\nUnlike online-only insurance companies or call centers, our insurance agent Centre AL approach means you work with real people who live and work in Cherokee County. We understand local risks like tornado season, Weiss Lake flooding concerns, and rural driving patterns. Our insurance agency Centre Alabama location makes us convenient for residents throughout Cherokee County—whether you're in downtown Centre, near the Cherokee County Courthouse, or in surrounding areas like Cedar Bluff, Leesburg, Gaylesville, or Sand Rock. When you call (256) 927-6287, you're talking to a local insurance agent Centre AL, not a call center operator who doesn't know Centre from anywhere else.\n\nAs your local insurance agency Centre Alabama, we offer the full range of Allstate products plus options from other carriers. This means you get the convenience of working with an Allstate agent Centre AL while we compare rates to find your best option. Our local presence means faster service, personal attention, and someone who understands Cherokee County insurance needs. Stop by our office at 1913 W Main Street, call (256) 927-6287, or visit us online. We're here to help with car insurance, home insurance, renters insurance, life insurance, and more. Se habla español.",
     countyInsurance: "Cherokee County insurance services from your local Centre office cover the entire county and surrounding areas. Whether you live in downtown Centre, near Weiss Lake, along Highway 411, or in rural areas like Cedar Bluff, Leesburg, Gaylesville, or Sand Rock, we provide comprehensive insurance coverage for Cherokee County families. Our headquarters location in Centre makes us convenient for the entire county, and our years of experience serving Cherokee County means we understand local insurance needs from rural properties to downtown businesses.\n\nCherokee County insurance from Coffey Agencies includes auto insurance, home insurance, renters insurance, life insurance, and motorcycle insurance. We help Cherokee County residents find the right coverage whether you're protecting a home near the Coosa River, securing auto coverage for Highway 9 commutes, or insuring a property in the Weiss Lake area. Our local expertise means we understand Cherokee County's unique risks—from spring tornado season to rural property considerations. Call (256) 927-6287 or visit our Centre office at 1913 W Main Street to discuss your Cherokee County insurance needs. Se habla español.",
@@ -202,20 +188,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Trussville residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes in Lake Forest, Cahaba Project, or any other neighborhood throughout the 35173 area."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "birmingham-al": {
@@ -272,20 +244,6 @@ export const cityData: Record<string, CityData> = {
       {
         question: "How quickly can I get coverage for my Birmingham home or vehicle?",
         answer: "Most insurance policies can begin the same day you apply, often within just a few hours of completing your application. Our streamlined digital process means Birmingham residents in 35215 and 35235 receive quotes within about 15 minutes online or by phone, and have active coverage the same day you apply. Once you've reviewed your options and made a decision, coverage activates immediately. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially in a busy metro area like Birmingham, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting a home in Roebuck, Center Point, or any neighborhood throughout eastern Birmingham."
-      }
-    ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
       }
     ],
     nearbyCities: ["trussville-al", "montgomery-al", "auburn-al"],
@@ -383,20 +341,6 @@ export const cityData: Record<string, CityData> = {
           "Most insurance policies can begin the same day you apply, often within just a few hours of completing your application. Our streamlined digital process means Montgomery residents in 36116 and 36117 receive quotes within about 15 minutes online or by phone, and have active coverage the same day you apply. Once you've reviewed your options and made a decision, coverage activates immediately. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially in Alabama's capital city, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting a home in Dalraida, Wynlakes, or any neighborhood throughout eastern Montgomery.",
       },
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!",
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town.",
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough.",
-      },
-    ],
     nearbyCities: ["auburn-al", "birmingham-al", "troy-al"],
   },
 
@@ -473,20 +417,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin the same day you apply, often within just a few hours of completing your application. Our streamlined digital process means Mobile residents in 36601 and 36695 receive quotes within about 15 minutes online or by phone, and have active coverage the same day you apply. Once you've reviewed your options and made a decision, coverage activates immediately. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially in a busy coastal city like Mobile, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation, including proper hurricane and flood considerations. Just let us know your timeline and we'll work to meet it, whether you're protecting a home in Midtown, Spring Hill, or any neighborhood throughout Mobile."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ],
     nearbyCities: ["foley-al", "dothan-al", "montgomery-al"],
     cheapCarInsurance: "Finding affordable **cheap car insurance in Mobile AL** doesn't have to be complicated. Whether you're commuting daily on I-10 or I-65 to the Port of Mobile, navigating local roads around Downtown Mobile, or simply need reliable **car insurance in Mobile AL** coverage for your daily drives, we work with multiple carriers to find rates that fit your budget. Mobile County's diverse community includes port workers, aerospace employees, healthcare workers, and military families—each with unique insurance needs. When searching for **cheap car insurance Mobile AL**, it's important to understand that rates vary based on several factors, but we help you find the best value.\n\nFactors affecting Mobile rates include the coastal location, I-10 and I-65 traffic patterns, and hurricane season considerations. Commuters traveling on I-10, I-65, US-90, or US-98 face different exposure than those driving primarily within Mobile. The area's coastal weather patterns, including hurricane season from June through November, can influence comprehensive coverage needs. Port of Mobile traffic and commercial vehicle exposure also affect rates. Understanding these local factors helps us find **auto insurance Mobile AL** that matches your actual driving patterns. Our experienced agents analyze your specific situation to provide personalized **cheap auto insurance Mobile AL** quotes that account for Gulf Coast living.\n\nGetting **car insurance quotes Mobile AL** and **auto insurance quotes Mobile AL** is quick and easy when you call us. We answer the phone locally—not a call center. When you need **car insurance quotes by phone** or **car insurance quotes over the phone**, you'll speak with a licensed Alabama agent who understands Mobile's unique insurance landscape. Our Centre office serves Mobile and all of Mobile County, making it convenient to get quotes, make policy changes, and file claims. Se habla español, so Spanish-speaking residents can get the same quality service and understand their coverage options clearly. Whether you're near Mobile Bay, the Eastern Shore, USS Alabama Battleship Memorial Park, University of South Alabama, or anywhere in Mobile County, we're here to help.",
     autoInsuranceCompanies: "When searching for **insurance companies Mobile AL** or **insurance companies in Mobile Alabama**, you have choices: national carriers with call centers, generic online quote engines, or working with a licensed agent who knows Mobile County's unique insurance landscape. While national carriers can provide coverage, they often miss important local considerations like I-10 and I-65 traffic patterns, hurricane season risks, and Gulf Coast-specific factors that affect your rates. We work with multiple **car insurance companies Mobile AL** to compare rates and find the best coverage for your needs.\n\nWhy choose a local agent? Our **car insurance agents** provide personalized service and claims help that call centers can't match. When you work with us, you're not just a policy number—you're a Mobile resident with unique needs. Our licensed Alabama agents understand **insurance Mobile AL** requirements and can help you navigate coverage options from various carriers. Whether you're searching for **car insurance companies near me** or need help with a claim after a hurricane, we're here to help. Unlike call centers that don't understand local conditions, our agents know Mobile's unique insurance landscape—from Port of Mobile workers to Eastern Shore commuters. Our Centre office serves Mobile and all of Mobile County, making it easy to get the personalized service you deserve.",
@@ -553,20 +483,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same-day coverage is available for most auto and renters policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 334-553-9258 during business hours and we'll have your policy documents before end of day in most cases."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "auburn-al": {
@@ -624,20 +540,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same-day coverage is available for most auto and renters policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 334-553-9258 during business hours and we can often have your policy documents before end of day."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "phenix-city-al": {
@@ -697,20 +599,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Phenix City residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially for military families dealing with relocations or deployments, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes in Phenix Estates, Ladonia, or any other neighborhood in the area."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "foley-al": {
@@ -795,20 +683,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same-day coverage is available for most auto, renters, and motorcycle policies. Homeowners and condo coverage typically binds within 24-48 hours depending on inspection requirements. Call 251-551-1350 during business hours and we can often have policy documents before end of day."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "troy-al": {
@@ -868,20 +742,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Troy residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially during busy academic semesters or when moving between semesters, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes near Downtown Troy, student apartments near campus, or properties in Henderson and rural Pike County communities."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "enterprise-al": {
@@ -950,20 +810,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same-day coverage is available for most auto, renters, and motorcycle policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 334-553-9258 during business hours and we can often have policy documents before end of day."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "huntsville-al": {
@@ -1039,20 +885,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same-day coverage is available for most auto and renters policies. Homeowners insurance typically requires 24-48 hours for underwriting, though we can expedite for closing deadlines."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "tuscaloosa-al": {
@@ -1126,20 +958,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same-day coverage is available for most auto, renters, and motorcycle policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 205-880-4893 during business hours and we can often have policy documents before end of day."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   // ===== GEORGIA CITIES =====
@@ -1209,20 +1027,6 @@ export const cityData: Record<string, CityData> = {
     autoInsuranceCompanies: "When looking for insurance companies Rome GA residents trust, it helps to work with an independent agency that compares rates from multiple carriers. We represent several insurance companies, giving you options that a single-company agent can't provide. Whether you live in Downtown Rome, Garden Lakes, West Rome, East Rome, or any neighborhood in Floyd County, we can help you find coverage that fits your needs and budget. Unlike direct insurance companies that only offer their own products, we shop around for you—this means you get quotes from multiple insurance companies Rome GA in one place, saving you time and often money. Our Rome office at 1703 Turner McCall Blvd SE is your local Georgia headquarters, and walk-ins are always welcome.\n\nCar insurance agents in Rome understand the local market—from the traffic patterns on US-27 and GA-20 to the weather risks that affect rates in Floyd County. Rome auto insurance companies range from national carriers to regional providers, and we work with multiple options to find the best fit for each driver's situation. Our licensed Georgia agents know the Rome market and can help you navigate coverage options from various insurance companies. Auto insurance in Rome, GA should account for downtown traffic, Shorter Avenue commuting, Berry College area driving, and proximity to the Coosa River and Ridge Ferry Park. We understand these local factors and how they impact your rates, ensuring you get appropriate coverage without overpaying.\n\nThis is our Georgia office location, and we're proud to serve Rome and surrounding communities with in-person service. Walk-ins are welcome Monday-Friday 8:30 AM – 4:30 PM, and se habla español. Rather than calling an 800-number and talking to someone in a call center who doesn't know Rome, you'll work with local staff who understand Floyd County conditions. Our Rome insurance agency approach combines the convenience of digital service with the expertise of local car insurance agents. Whether you prefer to visit our office, call (706) 784-6511, or handle everything online, you'll receive the same personalized attention from licensed Georgia agents who know Rome. Call or visit today for your free Rome auto insurance quote and see why local insurance companies make a difference.",
     rentersInsurance: "Rome, GA renters insurance quotes are quick and affordable, especially important for apartments near Berry College, downtown Rome rentals, and properties throughout Floyd County. Whether you're a student renting your first off-campus apartment, a professional living in Garden Lakes, or a family renting in West Rome, renters insurance protects your personal belongings from theft, fire, water damage, and other covered perils. Rome renters insurance typically costs $15-30 per month for $20,000-30,000 in personal property coverage, making it one of the most affordable insurance products available. Many renters are surprised to learn that their landlord's insurance only covers the building structure, not their personal belongings inside.\n\nGetting rome, ga renters insurance quotes is simple—just call (706) 784-6511 or visit our Rome office at 1703 Turner McCall Blvd SE. We can provide quotes within minutes, and coverage can often start the same day. Renters insurance in Rome covers your furniture, electronics, clothing, and other personal property, plus provides liability protection if someone is injured in your rental unit. For Berry College students, downtown Rome professionals, and families throughout Floyd County, renters insurance offers peace of mind at an affordable price. Bundling your renters insurance with auto insurance typically saves 15-25% on combined premiums, making it even more affordable. Se habla español, and our local Rome staff is ready to help you find the right renters coverage for your situation.",
     homeInsurance: "Rome home insurance quotes reflect Floyd County's unique risks, from tornado exposure during peak season (March-May) to flooding concerns near the Oostanaula, Etowah, and Coosa river confluence. Whether you own a home in Downtown Rome, Garden Lakes, West Rome, East Rome, or any neighborhood in Floyd County, we help you find rome homeowners coverage that provides adequate protection without overpaying. Rome homeowners insurance quotes consider factors like your home's age, construction type, replacement cost, proximity to flood zones, and local claims history. Standard homeowners policies cover fire, wind, hail, theft, and liability, but flood damage requires separate flood insurance—especially important for properties near the three-river confluence.\n\nFinding rome homeowners insurance quotes means working with an agency that understands Northwest Georgia insurance markets. We help Rome homeowners navigate wind deductibles, flood zone requirements, tornado season considerations, and adequate dwelling limits to rebuild after a major storm. Whether you're protecting an established Garden Lakes home, a newer property in West Rome, or a home near Berry College or the Coosa River area, we can find rome home insurance quotes that provide comprehensive protection. Bundling your home and auto insurance typically saves 15-25% on combined premiums—often $400-600 annually for Floyd County families. Our licensed Georgia agents understand Rome's unique insurance landscape and can help you find coverage that addresses tornado exposure, flood risk, and wind damage concerns specific to Northwest Georgia. Call (706) 784-6511 or visit our Rome office for your free rome home insurance quotes and see how bundling can save you money.",
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "atlanta-ga": {
@@ -1282,20 +1086,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Atlanta residents in the 30349 area can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially in a busy metro area like Atlanta, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes in Southwest Atlanta, Camp Creek, or any other neighborhood throughout the 30349 area."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "lawrenceville-ga": {
@@ -1380,11 +1170,6 @@ export const cityData: Record<string, CityData> = {
     autoInsuranceCompanies: "When looking for insurance companies in Lawrenceville GA, working with a local independent agent offers significant advantages over calling national 800-numbers or using online-only services. Local auto insurance agents in Lawrenceville understand the local market—from I-85 traffic patterns to Gwinnett County demographics that affect rates. Unlike direct insurance companies that only offer their own products, we represent multiple carriers, giving you options that a single-company agent can't provide. Whether you live in Downtown Lawrenceville, Collins Hill, Mountain Park, near the Gas South District, or any neighborhood in Gwinnett County, we can help you find coverage that fits your needs and budget. Auto insurance Lawrenceville GA drivers choose should account for local conditions, and our licensed Georgia agents know the Lawrenceville market.\n\nOur service stands out because we have bilingual staff ready to serve the Hispanic community in Lawrenceville and throughout Gwinnett County. Se habla español—you don't need to speak English to get the insurance coverage you need. Our team provides personal attention whether you prefer English or Spanish, ensuring you understand your coverage options and feel comfortable with your insurance decisions. Rather than calling an 800-number and talking to someone who doesn't know Lawrenceville, you'll work with licensed Georgia agents who understand local conditions and can communicate in your preferred language. Insurance Lawrenceville GA residents trust comes from agencies that understand both the local market and the diverse community we serve. Call (770) 746-7459 or visit our Rome office for your free auto insurance Lawrenceville GA quote and see why local insurance companies with bilingual service make a difference.",
     homeInsurance: "Protecting your Lawrenceville home requires understanding coverage options and choosing the right policy for your situation. Lawrenceville homeowners policy options should provide adequate protection for your dwelling, personal property, and liability exposure. Whether you own a historic home near Lawrenceville Square, a newer property in Collins Hill or Mountain Park, or any home in the 30043 or 30044 ZIP codes, we help you find coverage that provides adequate protection without overpaying. Replacement cost coverage pays to rebuild your home at current construction costs, while actual cash value coverage pays the depreciated value—replacement cost typically provides better protection but costs slightly more.\n\nBundling your home and auto insurance typically saves 15-25% on combined premiums—often $400-600 annually for Gwinnett County families. This multi-policy discount makes comprehensive protection more affordable while simplifying your insurance management. One agency handles all your coverage, one renewal date to remember, one point of contact when you have questions, and streamlined billing. Whether you're protecting a home near the Gwinnett Justice Center, a property in the Sugarloaf Parkway corridor, or a home near Highway 316, bundling maximizes your savings. Our licensed Georgia agents understand Lawrenceville's unique insurance landscape, including severe storm season considerations (March-July), flood risks near the Yellow River watershed, and adequate dwelling limits to rebuild after a major storm. Call (770) 746-7459 or visit our Rome office for your free Lawrenceville homeowners policy quote and see how bundling can save you money.",
     spanishContent: "¿Busca seguro de auto en Lawrenceville, Georgia? En Coffey Agencies, tenemos agentes que hablan español y están listos para ayudarle a encontrar la mejor cobertura al mejor precio. Servimos a toda la comunidad hispana del condado de Gwinnett, incluyendo las áreas de Lawrenceville Square, Collins Hill, Mountain Park, y todos los códigos postales 30043 y 30044. Nuestro equipo bilingüe entiende las necesidades únicas de las familias hispanas en Lawrenceville y está aquí para servirle en español.\n\nOfrecemos seguro de auto Lawrenceville GA, seguro de carro Lawrenceville, y aseguranza de carro Lawrenceville para conductores en toda el área. También proporcionamos seguro de casa Lawrenceville GA, seguro de inquilinos (renters insurance), seguro de vida, y seguro de motocicleta. Trabajamos con varias compañías de seguros para encontrar las mejores tarifas para conductores en Lawrenceville, ya sea que esté manejando en la I-85 hacia Atlanta, navegando el tráfico de la Highway 316, o viajando por Sugarloaf Parkway. Seguros en Lawrenceville GA que entienden su comunidad—desde las tiendas latinas cerca de Lawrenceville Square hasta las iglesias hispanas y restaurantes mexicanos en toda el área.\n\n¿Por qué elegirnos? Somos una agencia local, no un número 1-800. Cuando busca aseguranza cerca de mi en Lawrenceville, encontrará un agente de seguros que habla español Georgia que realmente entiende su situación. No necesita hablar inglés—le explicamos todo en español, desde las opciones de cobertura hasta los descuentos disponibles. Nuestra atención personalizada significa que trabajamos con usted para encontrar la cobertura que necesita al precio que puede pagar. A diferencia de las compañías grandes que solo ofrecen sus propios productos, nosotros comparamos tarifas de múltiples compañías para encontrarle la mejor opción.\n\nOfrecemos seguro de auto en español con opciones de cobertura completa (full coverage) o solo responsabilidad (liability only). Entendemos que cada conductor tiene necesidades diferentes—si tiene un buen historial de manejo, puede calificar para descuentos de conductor seguro. Si tiene múltiples vehículos, podemos ayudarle a ahorrar con descuentos por múltiples autos. Si combina su seguro de auto con seguro de casa, puede ahorrar 15-25% en ambas pólizas. Buscamos seguro de carro barato Georgia que aún le proporcione la protección adecuada. Importante: no podemos asegurar conductores sin licencia, pero ayudamos a conductores legales a obtener tarifas asequibles.\n\nLlámenos hoy al (770) 746-7459 para una cotización gratis de seguro de auto Lawrenceville GA. Nuestro equipo bilingüe está listo para servirle en español y ayudarle a encontrar la cobertura que necesita. Ya sea que necesite seguro de auto, seguro de casa Lawrenceville GA, o cualquier otro tipo de seguro, estamos aquí para ayudarle. No espere—proteja su familia y sus bienes con el seguro adecuado. Se habla español, y estamos aquí para servir a la comunidad hispana de Lawrenceville y todo el condado de Gwinnett.",
-    testimonials: [
-      { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
-      { name: "Steve Smith", text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
-      { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
-    ]
   },
 
   "duluth-ga": {
@@ -1461,20 +1246,7 @@ export const cityData: Record<string, CityData> = {
         answer: "Most insurance policies can begin the same day you apply, often within just a few hours of completing your application. Our streamlined digital process means Duluth residents in 30095 and 30096 receive quotes within about 15 minutes online or by phone, and have active coverage the same day you apply. Once you've reviewed your options and made a decision, coverage activates immediately. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, especially for busy Gwinnett County professionals, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
+    
   },
 
 
@@ -1562,96 +1334,7 @@ export const cityData: Record<string, CityData> = {
     motorcycleInsurance: "Motorcycle insurance in Cartersville offers riders flexible coverage options to protect their bikes and themselves. Whether you're cruising Highway 411, exploring scenic routes near Red Top Mountain State Park, or riding around Lake Allatoona, motorcycle insurance Cartersville riders need should match their specific situation. Liability-only coverage meets Georgia's minimum requirements and protects you if you're at fault in an accident, but full coverage provides comprehensive protection including collision, comprehensive, and uninsured motorist coverage. Factors affecting motorcycle insurance rates in Cartersville include your bike type (sport bikes typically cost more than cruisers), your riding experience, where you store your motorcycle, annual mileage, and your driving record. Riders with clean records and multiple years of experience often qualify for significant discounts, while newer riders may pay higher premiums until they build a safe riding history.\n\nGeorgia motorcycle insurance requirements include minimum liability coverage of 25/50/25, matching auto insurance minimums. However, many Cartersville riders choose full coverage to protect their investment, especially for newer or more expensive bikes. Local riders choose us because we understand the unique needs of motorcycle owners in Bartow County—from scenic rides through the countryside to commuting on I-75. We work with multiple insurance companies to find competitive rates for motorcycle insurance Cartersville riders trust. Whether you're riding to the Booth Western Art Museum, exploring Lake Allatoona area roads, or commuting to work, we can help you find coverage that fits your riding style and budget. Bundling your motorcycle insurance with auto or home insurance typically saves 10-15% on premiums, making it even more affordable. Call us at (770) 746-7459 for your free motorcycle insurance Cartersville quote and see why local riders choose Coffey Agencies.",
     homeInsurance: "Protecting your Cartersville home requires understanding coverage options and choosing the right policy for your situation. Homeowners insurance Cartersville GA residents need should provide adequate protection for your dwelling, personal property, and liability exposure. Replacement cost coverage pays to rebuild your home at current construction costs, while actual cash value coverage pays the depreciated value—replacement cost typically provides better protection but costs slightly more. Standard homeowners policies cover fire, wind, hail, theft, and liability, but flood damage requires separate flood insurance—especially important for properties near Lake Allatoona or the Etowah River. Whether you own a home in Downtown Cartersville, Hamilton Crossing, near Red Top Mountain, or any neighborhood in Bartow County, we help you find coverage that provides adequate protection without overpaying.\n\nBundling your home and auto insurance for best home insurance near me in Cartersville typically saves 15-25% on combined premiums—often $400-600 annually for Bartow County families. This multi-policy discount makes comprehensive protection more affordable while simplifying your insurance management. One agency handles all your coverage, one renewal date to remember, one point of contact when you have questions, and streamlined billing. Whether you're protecting a home near the LakePoint Sports Complex, a property in the Main Street area, or a home near Lake Allatoona, bundling maximizes your savings. Our licensed Georgia agents understand Cartersville's unique insurance landscape, including tornado season considerations (March-May), flood risks near waterways, and adequate dwelling limits to rebuild after a major storm. Call (770) 746-7459 or visit our Rome office for your free homeowners insurance Cartersville GA quote and see how bundling can save you money.",
     mobileHomeInsurance: "Mobile home insurance in Cartersville provides essential protection for manufactured and mobile homes throughout Bartow County. Whether you own a mobile home in a community near Lake Allatoona, a manufactured home in Adairsville, White, or Kingston, or a mobile home anywhere in Bartow County, specialized coverage protects your investment. Mobile home insurance near me in Cartersville covers your dwelling structure, personal property, and liability exposure, similar to traditional homeowners insurance but tailored to manufactured housing. Coverage options include replacement cost or actual cash value for your mobile home, personal property protection, and liability coverage if someone is injured on your property. Many mobile home communities in Bartow County have specific insurance requirements, and we help you meet those while finding affordable options that fit your budget.\n\nAffordable mobile home insurance options are available for Cartersville residents, with coverage typically costing less than traditional homeowners insurance due to lower replacement values. We work with multiple insurance companies to find competitive rates for mobile home insurance near me in Cartersville, whether you own your mobile home and land or rent a lot in a mobile home community. Bundling your mobile home insurance with auto insurance typically saves 15-25% on combined premiums, making comprehensive protection more affordable. Our licensed Georgia agents understand the unique needs of mobile home owners in Bartow County and can help you find coverage that provides adequate protection without overpaying. Call us at (770) 746-7459 for your free mobile home insurance quote and see why Cartersville mobile home owners choose Coffey Agencies.",
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ],
     nearbyCities: ["rome-ga", "rockmart-ga", "atlanta-ga"]
-  },
-
-  "calhoun-ga": {
-    slug: "calhoun-ga",
-    city: "Calhoun",
-    state: "Georgia",
-    stateAbbr: "GA",
-    zipCodes: ["30701"],
-    localPhone: "(706) 702-1782",
-    isOfficeCity: false,
-    nearestOffice: "rome",
-    heroImage: "georgia-hero.jpg",
-    customMetaTitle: "Car & Home Insurance in Calhoun, GA | Coffey Agencies",
-    customHeroTitle: "Insurance in Calhoun, GA (30701)",
-    customHeroSubhead: "Car insurance for I-75 commuters traveling the Rome-Dalton corridor, homeowners coverage built for Gordon County storm season, and renters insurance for apartments near Georgia Northwestern Technical College. Coffey Agencies delivers 4.6-star rated service from our Rome office, just 22 miles down the road. Se habla español.",
-    introduction: [
-      "Calhoun sits at the crossroads of northwest Georgia commerce. I-75 runs along the city's eastern edge with five exits serving Gordon County, funneling commuter traffic between Atlanta (68 miles south) and Chattanooga (49 miles north) while connecting Calhoun residents to jobs in Rome's healthcare sector and Dalton's carpet manufacturing plants. That transportation access—combined with affordable housing and a growing population that's increased 68% since 2000—makes Calhoun attractive to young families and working professionals. But Gordon County's location in northwest Georgia's ridge-and-valley terrain means exposure to severe weather that's left a mark on the community, from the 1974 Resaca tornado that killed seven residents to the 2011 EF3 that struck just south of downtown with 150 mph winds. Insurance decisions here matter."
-    ],
-    neighborhoods: ["Downtown Calhoun", "Sonoraville", "Resaca area", "I-75 corridor (Exits 310-318)", "rural Gordon County"],
-    nearbyCities: ["rome-ga", "cartersville-ga", "cedartown-ga"],
-    localConsiderations: "Gordon County's I-75 corridor access creates high-traffic exposure for commuters. Tornado season March-May with 1974 Resaca tornado (7 killed), 2011 EF3 (150 mph winds, 4 injuries), and May 2025 activity (4 tornadoes in one week). Manufacturing sector and GNTC campus drive local insurance needs.",
-    carInsuranceH2: "I-75 defines Calhoun car insurance needs. Five interstate exits serve the city, and thousands of Gordon County residents commute daily—north toward Dalton's flooring manufacturing facilities, south toward Cartersville and metro Atlanta, or west toward Rome's hospitals and colleges. That highway exposure increases accident risk compared to drivers who never leave surface streets, and insurance rates reflect it.\n\nCar insurance Calhoun GA premiums depend on driving record, vehicle type, annual mileage, and where you park overnight. Commuters logging 30+ miles each way face different rate calculations than someone working locally at AdventHealth Gordon or Georgia Northwestern Technical College's campus. Multi-car households—common in a community where public transit doesn't exist and 95% of households own at least one vehicle—can reduce per-vehicle costs through multi-car discounts.\n\nLooking for car insurance quotes in Calhoun GA? We quote multiple options by phone, often while you're still on the line. No office visit required—our Rome location is just 22 miles away, but everything from quotes to claims support happens digitally or by phone. Call 706-702-1782 for Calhoun car insurance built around your actual driving patterns.",
-    autoInsuranceQuotesH2: "Getting auto insurance Calhoun GA coverage should take minutes, not hours. Coffey Agencies provides same-day quotes by phone—call in the morning, drive legally insured by afternoon. We'll ask about your vehicles, driving history, household members, and coverage preferences. Then we compare options and explain trade-offs so you understand what you're buying.\n\nCalhoun auto insurance rates reflect Georgia's minimum liability requirements (25/50/25), but most drivers carry higher limits. Gordon County's mix of rural highways and I-75 interstate exposure means accidents here can involve higher speeds and more serious damage than urban fender-benders. Collision and comprehensive coverage protect your vehicle investment; uninsured motorist coverage matters in a state where roughly 12% of drivers carry no insurance at all.\n\nAuto insurance quotes in Calhoun GA vary significantly between carriers. A difference of $400-$800 annually for equivalent coverage isn't unusual. We shop options so you don't have to. Whether you're a GNTC student needing basic liability, a healthcare professional commuting to AdventHealth Gordon, or a family with teenage drivers, call 706-702-1782 and let's get you covered.",
-    homeInsuranceH2: "Gordon County home values have climbed sharply—up 59% since 2011, with median values around $211,000 and median sale prices pushing toward $275,000. That appreciation means adequate home insurance Calhoun GA coverage matters more than ever. A policy based on outdated dwelling values could leave you significantly underinsured after a total loss.\n\nCalhoun homeowners insurance must account for northwest Georgia's storm exposure. This isn't theoretical risk: the April 1974 Super Outbreak killed seven Gordon County residents in Resaca. In December 2011, an EF3 tornado struck just south of Calhoun with 150 mph winds, destroying homes and injuring four people. As recently as May 2025, four tornadoes touched down in Gordon County within a single week. Standard homeowners policies cover wind damage, but many carriers apply separate wind/hail deductibles—often 1-2% of your home's insured value. On a $275,000 home, that's $2,750-$5,500 out of pocket before coverage kicks in.\n\nRural properties outside Calhoun city limits face additional considerations: distance to fire stations affects premiums, and older homes may require updated electrical, plumbing, or roofing before certain carriers will write coverage. We work with multiple carriers and find solutions that match your property. Quotes are free—call 706-702-1782.",
-    rentersInsuranceH2: "Roughly 31% of Calhoun residents rent rather than own, and that percentage runs higher among students and young professionals drawn to the area by Georgia Northwestern Technical College's Gordon County campus, employment at AdventHealth Gordon, or manufacturing jobs along the I-75 corridor. If you're renting in Calhoun, your landlord's insurance covers the building—not your belongings.\n\nRenters insurance Calhoun GA protects your furniture, electronics, clothing, and personal property against theft, fire, water damage, and storm events. Most policies cost $15-30 monthly for $15,000-$30,000 in coverage, plus liability protection if someone is injured in your apartment and additional living expenses if your unit becomes uninhabitable. Given Gordon County's tornado activity, that coverage matters.\n\nCalhoun GA renters insurance quotes take minutes by phone. Whether you're a GNTC student in an apartment near campus, a young professional renting downtown, or a family in a rental home while saving for a purchase, we can have coverage bound same-day. Call 706-702-1782.",
-    motorcycleInsuranceH2: "Northwest Georgia's riding conditions attract motorcyclists: mild winters, scenic ridge-and-valley terrain, and easy I-75 access for longer trips. Calhoun riders can hit the interstate north toward Chattanooga, cruise rural Gordon County back roads, or connect to mountain routes through the North Georgia highlands. That accessibility makes motorcycle insurance Calhoun GA a practical consideration for local riders.\n\nGeorgia requires motorcycle riders to carry liability insurance meeting state minimums (25/50/25), but collision and comprehensive coverage protect your bike itself. Comprehensive matters particularly for bikes stored outdoors or in carports—Gordon County's hail events and storm activity create real risk of weather damage even when you're not riding. Motorcycle insurance premiums depend on bike type, engine displacement, riding experience, annual mileage, and how you use the bike. Touring riders logging interstate miles face different calculations than weekend cruisers on local roads. Call 706-702-1782 for a motorcycle insurance quote.",
-    insuranceAgentsH3: "Looking for insurance agents Calhoun GA who actually answer the phone? Coffey Agencies operates from our Rome office, just 22 miles southwest of downtown Calhoun—close enough for local knowledge, accessible enough for in-person meetings when needed, but designed for digital convenience so you never have to leave Gordon County for routine policy work.\n\nAs a Calhoun insurance agency alternative, we offer the personal service of a local agent with carrier access that lets us shop multiple options. We've served northwest Georgia since 2009, understanding the region's unique insurance challenges: I-75 corridor commuting, severe weather exposure, rural properties, and the mix of manufacturing, healthcare, and education employment that defines the local economy.\n\nPolicy questions? We answer by phone or email—usually same-day. Need a certificate of insurance? We'll have it in your inbox within hours. Claims support? We advocate on your behalf with carriers, not against you. Licensed in Georgia (#149612), serving Calhoun, Gordon County, and surrounding communities. Se habla español. Call 706-702-1782.",
-    faqs: [
-      {
-        question: "Do I need to visit an office to get insurance in Calhoun?",
-        answer: "No. Our Rome office is 22 miles away, but everything happens digitally or by phone. Same-day quotes, electronic signatures, digital ID cards—all without leaving Calhoun. We're happy to meet in person if you prefer, but it's never required."
-      },
-      {
-        question: "How much can I save by bundling home and auto insurance?",
-        answer: "Most carriers offer 15-25% discounts when you bundle home (or renters) and auto policies. For a typical Calhoun household, that translates to $300-$600 in annual savings. We quote both separately and bundled so you can see the actual difference."
-      },
-      {
-        question: "Does Gordon County's tornado history affect insurance rates?",
-        answer: "It can. Northwest Georgia's severe weather exposure influences how carriers price wind and hail coverage. Many policies apply separate wind/hail deductibles—often 1-2% of your dwelling coverage. Understanding these deductibles before you file a claim prevents surprises."
-      },
-      {
-        question: "What does Georgia require for auto insurance?",
-        answer: "Georgia's minimum liability requirements are 25/50/25: $25,000 per person for bodily injury, $50,000 per accident for bodily injury, and $25,000 for property damage. Most drivers should carry higher limits—accidents on I-75 can involve significant damage and injuries."
-      },
-      {
-        question: "Do you insure students at Georgia Northwestern Technical College?",
-        answer: "Yes. GNTC students living in Calhoun apartments need renters insurance to protect personal belongings. We also cover student vehicles, often qualifying for good student discounts when applicable. Call 706-702-1782."
-      },
-      {
-        question: "What factors affect Calhoun home insurance rates?",
-        answer: "Home value, age of construction, roof condition, distance to fire station, claims history, and coverage selections all influence premiums. Rural Gordon County properties may face different calculations than homes within Calhoun city limits. We explain how each factor affects your quote."
-      },
-      {
-        question: "How quickly can I get coverage started?",
-        answer: "Same-day coverage is available for most auto, renters, and motorcycle policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 706-702-1782 during business hours and we can often have policy documents before end of day."
-      },
-      {
-        question: "Do you offer motorcycle insurance for I-75 riders?",
-        answer: "Yes. We cover touring bikes, cruisers, sport bikes, and everything in between. Georgia's year-round riding weather makes motorcycle insurance practical for Calhoun residents. Premiums depend on bike type, experience, and usage patterns."
-      }
-    ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "cedartown-ga": {
@@ -1729,11 +1412,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most policies can begin immediately upon approval. Our digital process means Cedartown residents can receive quotes within minutes and have active coverage the same day, protecting homes in Big Spring Park area, Piedmont, or any neighborhood throughout Polk County."
       }
     ],
-    testimonials: [
-      { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
-      { name: "Steve Smith", text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
-      { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
-    ]
   },
 
   "summerville-ga": {
@@ -1782,11 +1460,6 @@ export const cityData: Record<string, CityData> = {
       { question: "What factors affect auto insurance rates in Summerville?", answer: "Auto insurance rates consider your ZIP code, driving record, vehicle type, and commute distance. Rural roads, mountainous driving conditions, and local claim history all influence personalized rates for Chattooga County drivers. Longer commutes to employment centers also factor into coverage needs." },
       { question: "How quickly can I get coverage for my property?", answer: "Most policies can begin immediately upon approval. Our digital process means Summerville residents can receive quotes within minutes and have active coverage the same day, protecting homes in Lyerly, Menlo, or any rural community throughout Chattooga County." }
     ],
-    testimonials: [
-      { name: "Teresa Gardiner", text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!" },
-      { name: "Steve Smith", text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town." },
-      { name: "Ricky Salas", text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough." }
-    ]
   },
 
   "suwanee-ga": {
@@ -1858,20 +1531,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes in River Club, Morningview, or any other neighborhood."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ],
     nearbyCities: ["lawrenceville-ga", "duluth-ga", "alpharetta-ga"]
   },
 
@@ -1932,20 +1591,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most policies can begin immediately upon approval. Our digital process means residents can receive quotes within minutes and have active coverage the same day, protecting homes in Deerfield, Preston, or any other neighborhood."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "forsyth-ga": {
@@ -2018,20 +1663,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most policies can begin immediately upon approval. Our digital process means Forsyth residents can receive quotes within minutes and have active coverage the same day, protecting homes in Downtown Forsyth, Johnstonville, or any other neighborhood throughout the 31029 area."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
   "rockmart-ga": {
     slug: "rockmart-ga",
@@ -2108,20 +1739,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most policies can begin immediately upon approval. Our digital process means Rockmart residents can receive quotes within minutes and have active coverage the same day, protecting homes in Taylorsville, Aragon, or any other neighborhood throughout the 30153 area."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
   
   "powder-springs-ga": {
@@ -2193,20 +1810,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Most policies can begin immediately upon approval. Our digital process means Powder Springs residents can receive quotes within minutes and have active coverage the same day, protecting homes in Downtown Powder Springs, New Macland, or any other neighborhood throughout the 30127 area."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "canton-ga": {
@@ -2279,20 +1882,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same day. Coverage binds immediately upon confirmation; ID cards arrive electronically within minutes."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "dallas-ga": {
@@ -2365,20 +1954,6 @@ export const cityData: Record<string, CityData> = {
         answer: "Same day. Once we confirm your information and payment, coverage binds immediately. ID cards and policy documents follow within minutes electronically."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   },
 
   "cumming-ga": {
@@ -2456,19 +2031,5 @@ localPhone: "(770) 746-7459",
         answer: "Same day. Coverage binds immediately upon confirmation. ID cards and documents arrive electronically within minutes."
       }
     ],
-    testimonials: [
-      {
-        name: "Teresa Gardiner",
-        text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-      },
-      {
-        name: "Steve Smith",
-        text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-      },
-      {
-        name: "Ricky Salas",
-        text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-      }
-    ]
   }
 };
