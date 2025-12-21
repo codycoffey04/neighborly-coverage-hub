@@ -1,5 +1,8 @@
-// Master list of 5-star reviews from Reviews page
-// Source: coffeyagencies.com/reviews
+// Master list of 5-star reviews from Coffey Agencies
+// Sources: 
+//   - coffeyagencies.com/reviews
+//   - Experience.com (via Google Business Profile aggregation)
+//   - Google Business Profile (Centre, AL & Rome, GA locations)
 
 export interface Testimonial {
   name: string;
@@ -7,7 +10,7 @@ export interface Testimonial {
   location: string;
 }
 
-// Centre, AL Reviews (10)
+// Centre, AL Reviews (11)
 const centreReviews: Testimonial[] = [
   {
     name: "Thomas K.",
@@ -58,10 +61,16 @@ const centreReviews: Testimonial[] = [
     name: "Gina W.",
     text: "Cody's associates are always ready to help with friendliness and efficiency. I always feel important. They are the best.",
     location: "Centre, AL"
+  },
+  // New review from Google Business Profile (Nov 2025)
+  {
+    name: "Robert S.",
+    text: "Crystal provided excellent service and made switching to Allstate an easy decision. The Centre location is friendly and fast.",
+    location: "Centre, AL"
   }
 ];
 
-// Rome, GA Reviews (15)
+// Rome, GA Reviews (33)
 const romeReviews: Testimonial[] = [
   {
     name: "Sarah R.",
@@ -132,10 +141,108 @@ const romeReviews: Testimonial[] = [
     name: "John G.",
     text: "Cody and the gang helped me understand insurance on a recent home purchase I made. They also got me a better deal.",
     location: "Rome, GA"
+  },
+  // New reviews from Experience.com (2025)
+  {
+    name: "Tony L.",
+    text: "Crystal was helpful and personable, making it a great experience.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Theresa S.",
+    text: "The agency's customer service is excellent. Kathy Sewell consistently goes above and beyond.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Casey J.",
+    text: "Marie was very helpful and professional. She deserves a raise! Coffey Agencies is the best insurance company.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Ricky S.",
+    text: "I've been a long-time customer. Cody and the agents are great. Kathy made terminating my Georgia policy easy when I moved out of state.",
+    location: "Rome, GA"
+  },
+  {
+    name: "California S.",
+    text: "A customer for 44 years! Allstate through Coffey Agencies always delivers excellent service and loyalty. Thank you Cody!",
+    location: "Rome, GA"
+  },
+  {
+    name: "Cynthia E.",
+    text: "I've been with Allstate for over 15 years. Cody handles my auto and home insurance. The team is always there when needed.",
+    location: "Rome, GA"
+  },
+  {
+    name: "William M.",
+    text: "Crystal went above and beyond to help me with questions about my phone and driving test.",
+    location: "Rome, GA"
+  },
+  // New reviews from Experience.com (2024)
+  {
+    name: "Katy S.",
+    text: "The staff is very helpful with auto and home insurance, always responsive and detailed.",
+    location: "Rome, GA"
+  },
+  {
+    name: "David C.",
+    text: "Great customer service!!! I highly recommend the agency.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Janice",
+    text: "The agency's customer service helps with all of my needs. I would recommend them to anyone.",
+    location: "Rome, GA"
+  },
+  {
+    name: "BJ",
+    text: "The team is always helpful and available to answer questions. I appreciate their attention to detail on home and car insurance.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Ed L.",
+    text: "All the employees at the agency are very helpful.",
+    location: "Rome, GA"
+  },
+  // Older reviews from Experience.com (2019-2023)
+  {
+    name: "Rebecca W.",
+    text: "The agency has always done right by me when I needed it.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Kendra W.",
+    text: "Coffey Agencies is the best insurance company I have ever had.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Barry G.",
+    text: "Love the guys at Allstate! They are the greatest!!",
+    location: "Rome, GA"
+  },
+  {
+    name: "Susan M.",
+    text: "Allstate is quick to respond to any problems. I am totally satisfied.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Sharon S.",
+    text: "The office accepted my payment when my regular agent was closed. I value their availability and helpfulness.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Leonard C.",
+    text: "The Rome office has a friendly staff and a great local office.",
+    location: "Rome, GA"
+  },
+  {
+    name: "Lynda R. J.",
+    text: "Maryann and Kimberly are nice, knowledgeable, and always willing to help and answer questions.",
+    location: "Rome, GA"
   }
 ];
 
-// Combined master list
+// Combined master list (44 total: 11 Centre + 33 Rome)
 export const allTestimonials = [...centreReviews, ...romeReviews];
 
 // Unique testimonial combinations for each city (3 per city)
