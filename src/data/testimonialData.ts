@@ -292,15 +292,15 @@ export const defaultTestimonials: Testimonial[] = [
   centreReviews[1]   // Tyler M
 ];
 
-// Unique testimonial combinations for each service page
+// Unique testimonial combinations for each service page (updated with 2025 reviews)
 // No two service pages share the same 3 testimonials
 export const serviceTestimonialSets: Record<string, Testimonial[]> = {
-  "auto-insurance": [centreReviews[0], romeReviews[1], centreReviews[5]],      // Thomas K, Tracey D, John B
-  "home-insurance": [romeReviews[0], centreReviews[2], romeReviews[9]],        // Sarah R, Kim S, Barbara R
-  "renters-insurance": [centreReviews[1], romeReviews[3], centreReviews[7]],   // Tyler M, Sue H, Cassie N
-  "condo-insurance": [romeReviews[2], centreReviews[4], romeReviews[5]],       // Priscilla J, Lloyd N, Patrick R
-  "motorcycle-insurance": [centreReviews[3], romeReviews[6], centreReviews[8]], // Teresa G, Monica W, Kerry G
-  "boat-insurance": [romeReviews[4], centreReviews[6], romeReviews[10]],       // Chad L, Tammy B, Benita D
-  "atv-insurance": [centreReviews[9], romeReviews[7], romeReviews[11]],        // Gina W, Phillip A, Annette C
-  "life-insurance": [romeReviews[8], centreReviews[0], romeReviews[12]]        // Clyde B, Thomas K, Karen P
+  "auto-insurance": [centreReviews[0], romeReviews[21], romeReviews[19]],       // Thomas K, Katy S (auto/home 2024), Cynthia E (15+ years auto/home)
+  "home-insurance": [romeReviews[0], romeReviews[24], romeReviews[21]],         // Sarah R, BJ (home/car 2024), Katy S (auto/home)
+  "renters-insurance": [centreReviews[1], romeReviews[22], centreReviews[7]],   // Tyler M, David C (great service 2024), Cassie N
+  "condo-insurance": [romeReviews[2], romeReviews[15], centreReviews[4]],       // Priscilla J, Theresa S (above & beyond 2025), Lloyd N
+  "motorcycle-insurance": [centreReviews[3], romeReviews[16], centreReviews[8]], // Teresa G, Casey J (best company 2025), Kerry G
+  "boat-insurance": [romeReviews[4], romeReviews[18], romeReviews[10]],         // Chad L, California S (44 years loyalty 2025), Benita D
+  "atv-insurance": [centreReviews[9], romeReviews[14], romeReviews[11]],        // Gina W, Tony L (great experience 2025), Annette C
+  "life-insurance": [centreReviews[10], centreReviews[0], romeReviews[19]]      // Robert S (new Centre 2025), Thomas K, Cynthia E (15+ years trust)
 };
