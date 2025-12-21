@@ -64,6 +64,79 @@ export interface CityData {
 
 export const cityData: Record<string, CityData> = {
   // ===== ALABAMA CITIES =====
+  "decatur-al": {
+    slug: "decatur-al",
+    city: "Decatur",
+    state: "Alabama",
+    stateAbbr: "AL",
+    zipCodes: ["35601", "35602", "35603", "35609"],
+    isOfficeCity: false,
+    nearestOffice: "centre",
+    localPhone: "(256) 927-6287",
+    heroImage: "alabama-hero.jpg",
+    customMetaTitle: "Car Insurance Decatur AL | Auto Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Insurance in Decatur, AL (35601)",
+    customHeroSubhead: "Auto insurance for Decatur drivers and Tennessee River commuters, homeowners coverage built for Morgan County storms and flood zones, motorcycle insurance for Wheeler Refuge routes. 4.7★ rated. Se habla español. Call 256-927-6287.",
+    introduction: [
+      "Decatur straddles the Tennessee River in Morgan and Limestone counties, earning its \"River City\" nickname from Wheeler Lake and the waterway that's shaped local industry since the 1800s. The city's 58,000 residents work at some of North Alabama's most significant employers—United Launch Alliance assembles Atlas and Vulcan rockets in a 2.4-million-square-foot facility, Nucor Steel produces structural steel for construction nationwide, 3M manufactures industrial products, and GE Appliances employs 1,400. That industrial base creates insurance needs distinct from nearby Huntsville: shift workers driving bridge crossings at odd hours, homeowners in flood-adjacent neighborhoods along Wheeler Lake, and families balancing coverage costs against manufacturing wages. Coffey Agencies has served Alabama since 2009, providing Decatur residents the same responsive service whether you're clocking in at the ULA plant or commuting to Huntsville's tech corridor 25 miles east."
+    ],
+    carInsuranceH2: "Decatur car insurance reflects the driving realities of a river city built around industrial employment. The Tennessee River crossings—including the US-31 and US-72 bridges—funnel traffic between Morgan and Limestone counties, creating bottlenecks during shift changes at ULA, Nucor, and 3M. Commuters heading to Huntsville face daily highway exposure on US-72 and I-565, while workers traveling to the industrial parks along Beltline Road navigate commercial truck traffic year-round.\n\nAlabama requires minimum liability limits of 25/50/25, but those minimums often fall short for Decatur drivers. Bridge traffic accidents, industrial corridor collisions, and the mix of commercial vehicles near manufacturing facilities create exposure that warrants higher coverage. We recommend liability limits of 100/300/100 for anyone regularly crossing the Tennessee River bridges or commuting to Huntsville, plus comprehensive coverage for hail damage during Morgan County's active storm season.\n\nLooking for car insurance Decatur AL quotes that reflect your actual commute? Whether you're driving to the ULA facility on Old Highway 20, the 3M plant, or making the daily trip to Research Park in Huntsville, Decatur car insurance should match your driving patterns. Multi-car households with shift workers often qualify for discounts when vehicles aren't all on the road simultaneously. Call 256-927-6287 for a car insurance Decatur quote built around how your family actually drives.",
+    autoInsuranceQuotesH2: "Getting auto insurance Decatur AL quotes shouldn't require taking time off work. Shift workers at Decatur's manufacturing plants operate on schedules that don't align with typical insurance office hours—and we get that. Coffey Agencies delivers same-day Decatur auto insurance quotes by phone, often while you're on break or between shifts. We'll ask about your vehicles, driving records, where you park overnight, and coverage preferences. Then we compare options from carriers we know thoroughly.\n\nAuto insurance quotes in Decatur AL cost depends on several factors: driving record, vehicle types, annual mileage, and where you live within the city. Workers commuting to Huntsville log more highway miles than those working locally, which affects premiums. Multi-vehicle households—common when both spouses work industrial jobs on different shifts—often save with bundled policies covering multiple cars under one account.\n\nDecatur auto insurance rates tend to run lower than Huntsville's, making the River City an attractive option for families seeking affordable coverage without sacrificing protection. If you're comparing Decatur auto insurance against quotes from Huntsville agencies, make sure you're comparing equivalent coverage levels. A cheaper policy with lower limits costs more after an accident. Need coverage today? We bind most policies same-day with digital ID cards in your inbox before your next shift. Call 256-927-6287.",
+    cheapCarInsurance: "Finding cheap car insurance in Decatur AL means balancing affordability against adequate protection—not just chasing the lowest premium. For budget-conscious families, first-time buyers, and young workers starting careers at Decatur's manufacturing plants, the goal is coverage that protects without straining household finances.\n\nSeveral strategies lower premiums without sacrificing essential coverage. Higher deductibles reduce monthly costs for drivers with emergency savings to cover out-of-pocket expenses after an accident. Bundling auto with homeowners or renters insurance typically saves 15-25%. Good driver discounts reward clean records, and some carriers offer discounts for completing defensive driving courses. Young drivers under 25 face higher premiums, but good student discounts and being listed on a family policy rather than purchasing standalone coverage can reduce costs substantially.\n\nCheap car insurance Decatur AL doesn't mean minimum coverage that leaves you exposed. Alabama's state minimums (25/50/25) may cost less monthly but can leave you personally liable for damages exceeding those limits. We'll quote multiple coverage levels so you can see the actual cost difference between minimum and recommended protection—often smaller than people expect. For Decatur families balancing industrial wages against living costs, the right policy protects your finances without breaking them. Call 256-927-6287 for affordable options.",
+    homeInsuranceH2: "Decatur homeowners face two primary insurance considerations: Morgan County's tornado exposure and Tennessee River flood zones. The April 2011 Super Outbreak produced an EF1 tornado that touched down in the Decatur Industrial Park, while an F5 tracked through the region within 30 miles—a reminder that severe weather here isn't theoretical. Morgan County remains in Alabama's tornado alley, with spring storms producing regular warnings from March through May.\n\nStandard homeowners policies cover wind damage from tornadoes and severe storms, but most carriers apply separate wind/hail deductibles—often 1-2% of dwelling coverage—that trigger during significant weather events. For a $200,000 home, that's $2,000-$4,000 out of pocket before coverage kicks in. Equally important: standard homeowners policies do not cover flood damage. Properties near Wheeler Lake, along Flint Creek, or in low-lying areas near the Tennessee River need separate flood insurance through NFIP or private carriers.\n\nHome insurance Decatur AL pricing reflects construction year, roof condition, and proximity to flood zones. The city's largest Victorian-era home district—concentrated in Old Decatur and the historic downtown area—often requires updated wiring, plumbing, and roof documentation for full coverage. Newer construction in southwest Decatur and the 35603 ZIP typically qualifies for lower premiums due to modern building codes. Median home values around $190,500 mean adequate dwelling coverage is more affordable here than in Huntsville, but coverage limits must still reflect actual replacement costs. Decatur homeowners insurance quotes are free—call 256-927-6287 to protect your investment.",
+    motorcycleInsuranceH2: "Decatur's Tennessee River location and Wheeler National Wildlife Refuge create some of North Alabama's best motorcycle riding conditions. The 35,000-acre refuge offers scenic routes through wetlands and bottomland forests, while river roads along Wheeler Lake provide weekend cruising options away from industrial traffic. Point Mallard Park and the Flint Creek shoreline attract riders during warmer months, and the proximity to Huntsville means access to additional routes through Madison County.\n\nAlabama requires motorcycle riders to carry liability insurance meeting state minimums (25/50/25), but collision and comprehensive coverage protect your investment against theft, storm damage, and accident damage. Decatur's industrial environment presents some unique considerations—plant parking lots see commercial vehicle traffic, and bridge crossings during shift changes create congestion that increases accident exposure for riders sharing lanes with trucks and heavy equipment operators.\n\nMotorcycle insurance Decatur AL premiums depend on bike type, engine size, riding experience, and usage patterns. Weekend riders typically pay less than daily commuters. Storage arrangements matter too—garage storage versus outdoor parking affects both theft risk and storm exposure during Morgan County's severe weather season. Whether you ride a cruiser on Wheeler Refuge roads or a sportbike on Highway 72, we'll quote coverage matching your actual riding patterns. Call 256-927-6287 for a motorcycle insurance quote.",
+    insuranceAgentsH3: "Searching for car insurance companies in Decatur AL or insurance agents who understand local conditions? Decatur residents often compare options from Alfa Insurance, State Farm, and regional carriers—but finding the right fit means more than recognizing a name. It means working with agents who understand Morgan County's specific risks: industrial commuter traffic, Tennessee River flood exposure, and the tornado activity that defines North Alabama weather.\n\nCoffey Agencies operates as a family-owned insurance agency serving Alabama since 2009, licensed statewide (#416438), with carriers we know thoroughly. Unlike captive agents representing a single company, we compare options across multiple carriers to find coverage matching your situation. That focused expertise means we understand Decatur's specific needs—shift workers at ULA and Nucor, families in historic districts requiring specialized home coverage, and commuters splitting time between Decatur and Huntsville employment.\n\nOur Centre office sits approximately 100 miles southeast via US-72, but geography doesn't limit our service. Digital quotes, phone consultations, and email policy management mean Decatur clients receive the same responsive attention as those down the street. Need a certificate of insurance for your employer today? We'll have it in your inbox within hours. Questions about flood insurance requirements near Wheeler Lake? We answer the phone—and we know your name. We also speak Spanish (Se habla español) and work with first-time buyers, military families at nearby Redstone Arsenal, and longtime Decatur residents shopping for better rates. Call 256-927-6287 to experience the difference.",
+    localConsiderations: "Decatur residents face Morgan County tornado exposure, Tennessee River flood zones, and industrial commuter traffic requiring comprehensive coverage with appropriate liability limits for bridge crossings and manufacturing corridor driving.",
+    neighborhoods: [
+      "Central Decatur (35601)",
+      "Downtown historic district",
+      "Old Decatur",
+      "Austinville area",
+      "Beltline Road industrial corridor",
+      "Southwest Decatur (35603)",
+      "Point Mallard area",
+      "Flint community",
+      "Wheeler Lake area",
+      "Flint Creek corridor",
+      "Tennessee River neighborhoods"
+    ],
+    nearbyCities: ["huntsville-al", "birmingham-al", "centre-al"],
+    faqs: [
+      {
+        question: "Do I need to visit an office to get insurance in Decatur?",
+        answer: "No. Coffey Agencies handles everything digitally—quotes, policy binding, ID cards, and claims support happen online or by phone. Our Centre office is about 100 miles away, but Decatur clients receive the same responsive service. Call 256-927-6287 or request a quote online."
+      },
+      {
+        question: "How does living near the Tennessee River affect my home insurance?",
+        answer: "Properties near Wheeler Lake, Flint Creek, or low-lying areas along the Tennessee River may be in FEMA-designated flood zones requiring separate flood insurance. Standard homeowners policies do not cover flood damage—that requires a separate policy through NFIP or private carriers."
+      },
+      {
+        question: "How much can I save by bundling home and auto insurance in Decatur?",
+        answer: "Most carriers offer 15-25% discounts when you bundle home and auto policies. For a typical Decatur household, that translates to $300-$600 in annual savings. We quote both separately and bundled so you can see the actual numbers."
+      },
+      {
+        question: "Do you offer coverage for shift workers with non-traditional schedules?",
+        answer: "Yes. We understand Decatur's manufacturing workforce operates around the clock. We handle quotes by phone during hours convenient for your schedule, and same-day coverage is available for most auto policies. Call during your break or after your shift ends."
+      },
+      {
+        question: "How do tornadoes affect Decatur home insurance rates?",
+        answer: "Morgan County's tornado history influences premiums and policy structures. Most carriers apply wind/hail deductibles (1-2% of dwelling coverage) that trigger during severe weather. Roof condition, construction year, and storm-resistant features can affect rates significantly."
+      },
+      {
+        question: "Is car insurance cheaper in Decatur than Huntsville?",
+        answer: "Generally, yes. Decatur's lower population density and different traffic patterns typically result in lower premiums than Huntsville. However, commuters driving to Huntsville daily may see rates reflecting that highway exposure. We'll quote based on your actual driving patterns."
+      },
+      {
+        question: "Do you insure motorcycles for Wheeler Refuge riding?",
+        answer: "Yes. Motorcycle insurance covers liability, collision, and comprehensive protection for bikes of all types. Wheeler National Wildlife Refuge and Tennessee River routes make Decatur excellent for riding—and we'll match coverage to whether you ride weekends only or commute daily."
+      },
+      {
+        question: "How quickly can I get coverage started?",
+        answer: "Same-day coverage is available for most auto and motorcycle policies. Homeowners coverage typically binds within 24-48 hours depending on inspection requirements. Call 256-927-6287 during business hours and we can often have policy documents before end of day."
+      }
+    ]
+  },
+
   "centre-al": {
     slug: "centre-al",
     city: "Centre",
