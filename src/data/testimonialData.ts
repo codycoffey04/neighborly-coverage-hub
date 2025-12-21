@@ -265,6 +265,7 @@ export const testimonialSets: Record<string, Testimonial[]> = {
   "troy-al": [centreReviews[0], centreReviews[3], romeReviews[10]],       // Thomas K, Teresa G, Benita D
   "trussville-al": [centreReviews[2], centreReviews[6], romeReviews[11]], // Kim S, Tammy B, Annette C
   "tuscaloosa-al": [centreReviews[4], centreReviews[8], romeReviews[12]], // Lloyd N, Kerry G, Karen P
+  "decatur-al": [centreReviews[5], centreReviews[10], romeReviews[13]],   // John B, Robert S (new 2025), John G
   
   // ===== GEORGIA CITIES (16) =====
   "rome-ga": [romeReviews[0], romeReviews[1], centreReviews[0]],          // Sarah R, Tracey D, Thomas K
