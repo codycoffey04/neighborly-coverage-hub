@@ -236,23 +236,9 @@ const serviceSchema = {
   }
 };
 
-const testimonials = [
-  {
-    name: "Teresa Gardiner",
-    location: "Centre, AL",
-    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-  },
-  {
-    name: "Steve Smith",
-    location: "Centre, AL",
-    text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-  },
-  {
-    name: "Ricky Salas",
-    location: "Rome, GA",
-    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-  }
-];
+import { serviceTestimonialSets } from "@/data/testimonialData";
+
+const testimonials = serviceTestimonialSets["condo-insurance"];
 
 const alabamaCities = [
   { name: "Centre", slug: "centre-al" },

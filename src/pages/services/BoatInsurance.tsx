@@ -185,26 +185,9 @@ const faqItems = [
 ];
 
 // Testimonials data
-const testimonials = [
-  {
-    name: "Mike T.",
-    location: "Centre, AL",
-    rating: 5,
-    text: "I've been with Coffey for my bass boat and truck insurance for 3 years now. They bundled both policies and saved me over $400 a year. Great local service!"
-  },
-  {
-    name: "Jennifer W.",
-    location: "Rome, GA",
-    rating: 5,
-    text: "When a storm damaged my pontoon at the dock, Coffey walked me through the entire claims process. They made it so easy during a stressful time."
-  },
-  {
-    name: "David M.",
-    location: "Gadsden, AL",
-    rating: 5,
-    text: "Finally found an agency that understands boat insurance on Weiss Lake. They knew exactly what coverage I needed for my fishing tournaments."
-  }
-];
+import { serviceTestimonialSets } from "@/data/testimonialData";
+
+const testimonials = serviceTestimonialSets["boat-insurance"];
 
 // Alabama cities
 const alabamaCities = [
@@ -721,7 +704,7 @@ const BoatInsurance = () => {
                 <Card key={index} className="border shadow-sm">
                   <CardContent className="pt-6 flex flex-col h-full">
                     <div className="flex items-center gap-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
+                      {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                       ))}
                     </div>
