@@ -155,6 +155,7 @@ const LifeInsurance = () => {
     { name: "Birmingham", slug: "birmingham-al" },
     { name: "Huntsville", slug: "huntsville-al" },
     { name: "Montgomery", slug: "montgomery-al" },
+    { name: "Tuscaloosa", slug: "tuscaloosa-al" },
     { name: "Mobile", slug: "mobile-al" },
     { name: "Dothan", slug: "dothan-al" },
     { name: "Auburn", slug: "auburn-al" },
