@@ -251,6 +251,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://coffeyagencies.com/decatur-al</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://coffeyagencies.com/dothan-al</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -259,6 +265,12 @@
   <url>
     <loc>https://coffeyagencies.com/enterprise-al</loc>
     <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://coffeyagencies.com/florence-al</loc>
+    <lastmod>2025-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
