@@ -13,29 +13,12 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { CityData, cityData } from "@/data/cityData";
+import { testimonialSets, defaultTestimonials } from "@/data/testimonialData";
 
 
 interface CityPageTemplateProps {
   city: CityData;
 }
-
-const defaultTestimonials: Array<{ name: string; text: string; location?: string }> = [
-  {
-    name: "Teresa Gardiner",
-    location: "Centre, AL",
-    text: "Lexi was very patient and helpful when I stopped by yesterday to ask multiple questions. She is truly an asset to your office!"
-  },
-  {
-    name: "Steve Smith",
-    location: "Centre, AL",
-    text: "Customer service at Cody Coffey's Centre office is amazing, a lost art, a total delight. Give them 1000 out of 100 :). Friendly, knowledgeable. So grateful to have found them when moving to a new town."
-  },
-  {
-    name: "Ricky Salas",
-    location: "Rome, GA",
-    text: "I was with this agency for several years and had nothing but positive experiences with Cody and the other agents. When I had to move out of state, Kathy made it incredibly easy to end my Georgia policy and settle things up. I can't recommend them enough."
-  }
-];
 
 // Office data for Centre and Rome
 const officeDetails = {
@@ -106,7 +89,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   const location = useLocation();
   const office = city.isOfficeCity ? officeDetails[city.nearestOffice] : null;
   const nearestOfficeInfo = officeDetails[city.nearestOffice];
-  const testimonials = city.testimonials || defaultTestimonials;
+  const testimonials = testimonialSets[city.slug] || defaultTestimonials;
   
   // Get phone number for this city - use localPhone if available, otherwise use nearest office phone
   const displayPhone = city.localPhone || nearestOfficeInfo.phone;
