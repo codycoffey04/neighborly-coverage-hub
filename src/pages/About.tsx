@@ -103,7 +103,7 @@ const offices = [
     phone: "(256) 927-6287",
     hours: "Monday–Friday: 8:00 AM – 5:00 PM",
     rating: "4.7",
-    reviews: "116",
+    reviews: "117",
   },
   {
     name: "Rome, Georgia",
@@ -111,7 +111,7 @@ const offices = [
     phone: "(706) 784-6511",
     hours: "Monday–Friday: 8:30 AM – 4:30 PM",
     rating: "4.6",
-    reviews: "90",
+    reviews: "93",
   },
 ];
 
@@ -187,7 +187,7 @@ const About = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.7",
-      "reviewCount": "116",
+      "reviewCount": "117",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -228,7 +228,7 @@ const About = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.6",
-      "reviewCount": "90",
+      "reviewCount": "93",
       "bestRating": "5",
       "worstRating": "1"
     },

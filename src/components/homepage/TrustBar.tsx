@@ -27,14 +27,14 @@ export const TrustBar = () => {
           <div className="text-center space-y-2">
             <p className="text-3xl font-bold text-foreground">4.7<span className="text-yellow-400">★</span></p>
             <p className="text-sm text-muted-foreground">Centre, AL</p>
-            <p className="text-xs text-muted-foreground">(116 reviews)</p>
+            <p className="text-xs text-muted-foreground">(117 reviews)</p>
           </div>
 
           {/* Rome Rating */}
           <div className="text-center space-y-2">
             <p className="text-3xl font-bold text-foreground">4.6<span className="text-yellow-400">★</span></p>
             <p className="text-sm text-muted-foreground">Rome, GA</p>
-            <p className="text-xs text-muted-foreground">(90 reviews)</p>
+            <p className="text-xs text-muted-foreground">(93 reviews)</p>
           </div>
         </div>
 

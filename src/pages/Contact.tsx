@@ -34,7 +34,7 @@ const offices = [
     phoneRaw: "2569276287",
     hours: "Monday–Friday\n8:00 AM – 5:00 PM",
     rating: "4.7",
-    reviews: "116",
+    reviews: "117",
     placeId: "ChIJJ80TpQ5hiogRn3tzQbqNLMA",
     mapEmbed: "https://maps.google.com/maps?q=1913+W+Main+Street,+Centre,+AL+35960&t=m&z=15&output=embed",
     mapAddress: "1913 W Main Street, Centre, AL 35960",
@@ -49,7 +49,7 @@ const offices = [
     phoneRaw: "7067846511",
     hours: "Monday–Friday\n8:30 AM – 4:30 PM",
     rating: "4.6",
-    reviews: "90",
+    reviews: "93",
     placeId: "ChIJZQwKAM-kiogR_bIpdOhQm7o",
     mapEmbed: "https://maps.google.com/maps?q=1703+Turner+McCall+Blvd+SE,+Rome,+GA+30161&t=m&z=15&output=embed",
     mapAddress: "1703 Turner McCall Blvd SE, Rome, GA 30161",
@@ -149,7 +149,7 @@ const Contact = () => {
       "@type": "AggregateRating",
       "ratingValue": "4.7",
       "bestRating": "5",
-      "ratingCount": "116"
+      "ratingCount": "117"
     }
   };
 
@@ -189,7 +189,7 @@ const Contact = () => {
       "@type": "AggregateRating",
       "ratingValue": "4.6",
       "bestRating": "5",
-      "ratingCount": "90"
+      "ratingCount": "93"
     }
   };
 
