@@ -33,6 +33,7 @@ const alabamaCities = [
   { name: "Florence", slug: "florence-al" },
   { name: "Helena", slug: "helena-al" },
   { name: "Huntsville", slug: "huntsville-al" },
+  { name: "Mountain Brook", slug: "mountain-brook-al" },
   { name: "Montgomery", slug: "montgomery-al" },
   { name: "Mobile", slug: "mobile-al" },
   { name: "Tuscaloosa", slug: "tuscaloosa-al" },

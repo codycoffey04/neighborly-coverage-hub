@@ -65,6 +65,7 @@ const cityCoordinates: Record<string, { latitude: string; longitude: string }> =
   "foley-al": { latitude: "30.4066", longitude: "-87.6836" },
   "helena-al": { latitude: "33.2943", longitude: "-86.8439" },
   "huntsville-al": { latitude: "34.7304", longitude: "-86.5861" },
+  "mountain-brook-al": { latitude: "33.4998", longitude: "-86.7523" },
   "mobile-al": { latitude: "30.6954", longitude: "-88.0399" },
   "montgomery-al": { latitude: "32.3668", longitude: "-86.3000" },
   "phenix-city-al": { latitude: "32.4710", longitude: "-85.0008" },
