@@ -305,19 +305,19 @@ const BoatInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Boat Insurance in Alabama & Georgia | Coffey Agencies</title>
+        <title>Boat Insurance Alabama & Georgia | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Protect your boat on Weiss Lake, Lake Allatoona, and waterways across Alabama and Georgia. Get boat insurance quotes for pontoons, bass boats, jet skis, and sailboats." 
+          content="Boat insurance for Alabama & Georgia lakes. Weiss Lake, Allatoona, Lanier coverage. Pontoons, bass boats, jet skis. 4.7★ (117+ reviews). Free quotes." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/boat-insurance" />
-        <meta property="og:title" content="Boat Insurance in Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Protect your boat on Weiss Lake, Lake Allatoona, and waterways across Alabama and Georgia. Get boat insurance quotes for pontoons, bass boats, jet skis, and sailboats." />
+        <meta property="og:title" content="Boat Insurance Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Boat insurance for Alabama & Georgia lakes. Weiss Lake, Allatoona, Lanier coverage. Pontoons, bass boats, jet skis. 4.7★ (117+ reviews). Free quotes." />
         <meta property="og:url" content="https://coffeyagencies.com/services/boat-insurance" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Boat Insurance in Alabama & Georgia | Coffey Agencies" />
-        <meta name="twitter:description" content="Protect your boat on Weiss Lake, Lake Allatoona, and waterways across Alabama and Georgia. Get boat insurance quotes for pontoons, bass boats, jet skis, and sailboats." />
+        <meta name="twitter:title" content="Boat Insurance Alabama & Georgia | Coffey Agencies" />
+        <meta name="twitter:description" content="Boat insurance for Alabama & Georgia lakes. Weiss Lake, Allatoona, Lanier coverage. Pontoons, bass boats, jet skis. 4.7★ (117+ reviews). Free quotes." />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

@@ -363,16 +363,16 @@ const CondoInsurance = () => {
       <Header />
 
       <Helmet>
-        <title>Condo Insurance Quotes Alabama & Georgia | HO-6 Coverage | Coffey Agencies</title>
+        <title>Condo Insurance Alabama & Georgia | HO-6 Coverage | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Condo insurance (HO-6) quotes in Alabama & Georgia. Protect your unit, belongings & liability. Walls-in coverage, loss assessment. 4.7★ rating." 
+          content="Condo insurance (HO-6) in Alabama & Georgia. Walls-in coverage, belongings, liability, loss assessment. 4.7★ (117+ reviews). Get a free quote." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/condo-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Condo Insurance Quotes Alabama & Georgia | HO-6 Coverage | Coffey Agencies" />
-        <meta property="og:description" content="Condo insurance (HO-6) quotes in AL & GA. Protect your unit, personal property & liability. Walls-in coverage, loss assessment, master policy coordination." />
+        <meta property="og:title" content="Condo Insurance Alabama & Georgia | HO-6 Coverage | Coffey Agencies" />
+        <meta property="og:description" content="Condo insurance (HO-6) in Alabama & Georgia. Walls-in coverage, belongings, liability, loss assessment. 4.7★ (117+ reviews). Get a free quote." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/condo-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -382,8 +382,8 @@ const CondoInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Condo Insurance Quotes Alabama & Georgia | HO-6 Coverage" />
-        <meta name="twitter:description" content="Condominium insurance (HO-6) quotes for AL & GA unit owners. Walls-in coverage, loss assessment, master policy coordination." />
+        <meta name="twitter:title" content="Condo Insurance Alabama & Georgia | HO-6 Coverage | Coffey Agencies" />
+        <meta name="twitter:description" content="Condo insurance (HO-6) in Alabama & Georgia. Walls-in coverage, belongings, liability, loss assessment. 4.7★ (117+ reviews). Get a free quote." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}

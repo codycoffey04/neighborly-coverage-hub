@@ -251,13 +251,13 @@ const RentersInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies</title>
-        <meta name="description" content="Renters insurance from $8/month when bundled with auto. Protect belongings, liability, and temporary housing. 4.7★ rated across Alabama & Georgia." />
+        <title>Renters Insurance Alabama & Georgia | Coffey Agencies</title>
+        <meta name="description" content="Renters insurance from $8/mo in Alabama & Georgia. Protect belongings, liability, temporary housing. 4.7★ (117+ reviews). Bundle with auto & save." />
         <link rel="canonical" href="https://coffeyagencies.com/services/renters-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Renters Insurance Alabama & Georgia | From $8/Month | Coffey Agencies" />
-        <meta property="og:description" content="Renters insurance in Alabama & Georgia from $8/month. Apartment & tenant coverage for personal property, liability, theft. 4.7★ Google rating." />
+        <meta property="og:title" content="Renters Insurance Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Renters insurance from $8/mo in Alabama & Georgia. Protect belongings, liability, temporary housing. 4.7★ (117+ reviews). Bundle with auto & save." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/renters-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -267,8 +267,8 @@ const RentersInsurance = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Renters Insurance from $8/Month | Alabama & Georgia" />
-        <meta name="twitter:description" content="Apartment & tenant insurance protecting your belongings, liability, and temporary housing in AL and GA." />
+        <meta name="twitter:title" content="Renters Insurance Alabama & Georgia | Coffey Agencies" />
+        <meta name="twitter:description" content="Renters insurance from $8/mo in Alabama & Georgia. Protect belongings, liability, temporary housing. 4.7★ (117+ reviews). Bundle with auto & save." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
