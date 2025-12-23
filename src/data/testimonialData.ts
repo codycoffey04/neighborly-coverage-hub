@@ -10,7 +10,7 @@ export interface Testimonial {
   location: string;
 }
 
-// Centre, AL Reviews (11)
+// Centre, AL Reviews (10)
 const centreReviews: Testimonial[] = [
   {
     name: "Thomas K.",
@@ -61,16 +61,10 @@ const centreReviews: Testimonial[] = [
     name: "Gina W.",
     text: "Cody's associates are always ready to help with friendliness and efficiency. I always feel important. They are the best.",
     location: "Centre, AL"
-  },
-  // New review from Google Business Profile (Nov 2025)
-  {
-    name: "Robert S.",
-    text: "Crystal provided excellent service and made switching to Allstate an easy decision. The Centre location is friendly and fast.",
-    location: "Centre, AL"
   }
 ];
 
-// Rome, GA Reviews (33)
+// Rome, GA Reviews (29)
 const romeReviews: Testimonial[] = [
   {
     name: "Sarah R.",
@@ -164,16 +158,6 @@ const romeReviews: Testimonial[] = [
     location: "Rome, GA"
   },
   {
-    name: "California S.",
-    text: "A customer for 44 years! Allstate through Coffey Agencies always delivers excellent service and loyalty. Thank you Cody!",
-    location: "Rome, GA"
-  },
-  {
-    name: "Cynthia E.",
-    text: "I've been with Allstate for over 15 years. Cody handles my auto and home insurance. The team is always there when needed.",
-    location: "Rome, GA"
-  },
-  {
     name: "William M.",
     text: "Crystal went above and beyond to help me with questions about my phone and driving test.",
     location: "Rome, GA"
@@ -216,16 +200,6 @@ const romeReviews: Testimonial[] = [
     location: "Rome, GA"
   },
   {
-    name: "Barry G.",
-    text: "Love the guys at Allstate! They are the greatest!!",
-    location: "Rome, GA"
-  },
-  {
-    name: "Susan M.",
-    text: "Allstate is quick to respond to any problems. I am totally satisfied.",
-    location: "Rome, GA"
-  },
-  {
     name: "Sharon S.",
     text: "The office accepted my payment when my regular agent was closed. I value their availability and helpfulness.",
     location: "Rome, GA"
@@ -242,7 +216,7 @@ const romeReviews: Testimonial[] = [
   }
 ];
 
-// Combined master list (44 total: 11 Centre + 33 Rome)
+// Combined master list (39 total: 10 Centre + 29 Rome)
 export const allTestimonials = [...centreReviews, ...romeReviews];
 
 // Unique testimonial combinations for each city (3 per city)
@@ -265,8 +239,8 @@ export const testimonialSets: Record<string, Testimonial[]> = {
   "troy-al": [centreReviews[0], centreReviews[3], romeReviews[10]],       // Thomas K, Teresa G, Benita D
   "trussville-al": [centreReviews[2], centreReviews[6], romeReviews[11]], // Kim S, Tammy B, Annette C
   "tuscaloosa-al": [centreReviews[4], centreReviews[8], romeReviews[12]], // Lloyd N, Kerry G, Karen P
-  "decatur-al": [centreReviews[5], centreReviews[10], romeReviews[13]],   // John B, Robert S (new 2025), John G
-  "florence-al": [centreReviews[0], centreReviews[7], romeReviews[19]],   // Thomas K, Cassie N, Cynthia E (15+ years)
+  "decatur-al": [centreReviews[5], centreReviews[9], romeReviews[13]],    // John B, Gina W, John G
+  "florence-al": [centreReviews[0], centreReviews[7], romeReviews[17]],   // Thomas K, Cassie N, Ricky S (long-time customer)
   "helena-al": [centreReviews[1], centreReviews[9], romeReviews[0]],      // Tyler M, Gina W, Sarah R
   "mountain-brook-al": [centreReviews[3], centreReviews[5], romeReviews[3]], // Teresa G, John B, Sue H
   "owens-cross-roads-al": [centreReviews[4], centreReviews[7], romeReviews[5]], // Lloyd N, Cassie N, Patrick R
@@ -300,12 +274,12 @@ export const defaultTestimonials: Testimonial[] = [
 // Unique testimonial combinations for each service page (updated with 2025 reviews)
 // No two service pages share the same 3 testimonials
 export const serviceTestimonialSets: Record<string, Testimonial[]> = {
-  "auto-insurance": [centreReviews[0], romeReviews[21], romeReviews[19]],       // Thomas K, Katy S (auto/home 2024), Cynthia E (15+ years auto/home)
-  "home-insurance": [romeReviews[0], romeReviews[24], romeReviews[21]],         // Sarah R, BJ (home/car 2024), Katy S (auto/home)
-  "renters-insurance": [centreReviews[1], romeReviews[22], centreReviews[7]],   // Tyler M, David C (great service 2024), Cassie N
+  "auto-insurance": [centreReviews[0], romeReviews[19], romeReviews[17]],       // Thomas K, Katy S (auto/home 2024), Ricky S (long-time customer)
+  "home-insurance": [romeReviews[0], romeReviews[22], romeReviews[19]],         // Sarah R, BJ (home/car 2024), Katy S (auto/home)
+  "renters-insurance": [centreReviews[1], romeReviews[20], centreReviews[7]],   // Tyler M, David C (great service 2024), Cassie N
   "condo-insurance": [romeReviews[2], romeReviews[15], centreReviews[4]],       // Priscilla J, Theresa S (above & beyond 2025), Lloyd N
   "motorcycle-insurance": [centreReviews[3], romeReviews[16], centreReviews[8]], // Teresa G, Casey J (best company 2025), Kerry G
-  "boat-insurance": [romeReviews[4], romeReviews[18], romeReviews[10]],         // Chad L, California S (44 years loyalty 2025), Benita D
+  "boat-insurance": [romeReviews[4], romeReviews[12], romeReviews[10]],         // Chad L, Karen P (customer since 1989), Benita D
   "atv-insurance": [centreReviews[9], romeReviews[14], romeReviews[11]],        // Gina W, Tony L (great experience 2025), Annette C
-  "life-insurance": [centreReviews[10], centreReviews[0], romeReviews[19]]      // Robert S (new Centre 2025), Thomas K, Cynthia E (15+ years trust)
+  "life-insurance": [centreReviews[8], centreReviews[0], romeReviews[17]]       // Kerry G (switched all insurance), Thomas K, Ricky S (long-time customer)
 };
