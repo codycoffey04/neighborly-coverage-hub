@@ -3,7 +3,9 @@ import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
-import { Helmet } from "react-helmet-async";
+import heroBackground from "@/assets/hero-background.jpg";
+import heroBackgroundWebP from "@/assets/hero-background.webp";
+import heroBackgroundMobileWebP from "@/assets/hero-background-mobile.webp";
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -21,8 +23,23 @@ export const PageLayout = ({ children, title, description, breadcrumbs }: PageLa
       <Header />
       
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-primary via-primary-dark to-secondary pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-6xl">
+      <section className="relative bg-primary pt-32 pb-16 px-4 overflow-hidden">
+        {/* Background Image */}
+        <picture>
+          <source media="(max-width: 768px)" srcSet={heroBackgroundMobileWebP} type="image/webp" />
+          <source media="(min-width: 769px)" srcSet={heroBackgroundWebP} type="image/webp" />
+          <img 
+            src={heroBackground} 
+            alt="" 
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: 'center 45%' }}
+            loading="eager"
+          />
+        </picture>
+        {/* Dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/30" />
+        
+        <div className="relative z-10 container mx-auto max-w-6xl">
           {/* Breadcrumbs */}
           {breadcrumbs && breadcrumbs.length > 0 && (
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-primary-foreground/80 mb-4">
