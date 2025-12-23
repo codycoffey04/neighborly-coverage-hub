@@ -12,7 +12,7 @@ const CityPage = () => {
   
   const city = cityData[citySlug];
   
-  return <CityPageTemplate city={city} />;
+  return <CityPageTemplate key={citySlug} city={city} />;
 };
 
 export default CityPage;
