@@ -43,7 +43,8 @@ const alabamaCities = [
   { name: "Foley", slug: "foley-al" },
   { name: "Troy", slug: "troy-al" },
   { name: "Enterprise", slug: "enterprise-al" },
-  { name: "Trussville", slug: "trussville-al" }
+  { name: "Trussville", slug: "trussville-al" },
+  { name: "Owens Cross Roads", slug: "owens-cross-roads-al" }
 ];
 
 const georgiaCities = [
