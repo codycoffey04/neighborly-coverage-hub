@@ -310,13 +310,28 @@ const ATVInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>ATV & UTV Insurance in Alabama & Georgia | Coffey Agencies</title>
+        <title>ATV Insurance Alabama & Georgia | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Protect your four-wheeler, side-by-side, or dirt bike with ATV insurance from local agents who ride the same trails. Coverage for Indian Mountain, Highland Park, and trails across Alabama & Georgia." 
+          content="ATV & UTV insurance in Alabama & Georgia. Four-wheelers, side-by-sides, dirt bikes. Local trails coverage. 4.7★ (117+ reviews). Free quotes." 
         />
         <meta name="keywords" content="ATV insurance Alabama, UTV insurance, side-by-side insurance, four-wheeler insurance, off-road vehicle insurance, dirt bike insurance, Polaris insurance, Can-Am insurance" />
         <link rel="canonical" href="https://coffeyagencies.com/services/atv-utv-insurance" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="ATV Insurance Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="ATV & UTV insurance in Alabama & Georgia. Four-wheelers, side-by-sides, dirt bikes. Local trails coverage. 4.7★ (117+ reviews). Free quotes." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coffeyagencies.com/services/atv-utv-insurance" />
+        <meta property="og:site_name" content="Coffey Agencies" />
+        <meta property="og:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ATV Insurance Alabama & Georgia | Coffey Agencies" />
+        <meta name="twitter:description" content="ATV & UTV insurance in Alabama & Georgia. Four-wheelers, side-by-sides, dirt bikes. Local trails coverage. 4.7★ (117+ reviews). Free quotes." />
+        <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
+        
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
