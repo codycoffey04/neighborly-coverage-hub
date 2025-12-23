@@ -431,12 +431,12 @@ const About = () => {
     <>
       <Helmet>
         <title>About Coffey Agencies | Your Local Insurance Team Since 2009</title>
-        <meta name="description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
+        <meta name="description" content="Meet the Coffey Agencies team. Licensed since 2009 with 4.7★ (117 AL reviews) & 4.6★ (93 GA reviews). A+ BBB Rating. Offices in Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/about" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="About Coffey Agencies | Your Local Insurance Team Since 2009" />
-        <meta property="og:description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
+        <meta property="og:description" content="Meet the Coffey Agencies team. Licensed since 2009 with 4.7★ (117 AL reviews) & 4.6★ (93 GA reviews). A+ BBB Rating. Offices in Centre, AL and Rome, GA." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/about" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -447,7 +447,7 @@ const About = () => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Coffey Agencies | Your Local Insurance Team Since 2009" />
-        <meta name="twitter:description" content="Meet the Coffey Agencies team. Licensed in Alabama and Georgia since 2009, with offices in Centre, AL and Rome, GA. A+ BBB Rating." />
+        <meta name="twitter:description" content="Meet the Coffey Agencies team. Licensed since 2009 with 4.7★ (117 AL reviews) & 4.6★ (93 GA reviews). A+ BBB Rating. Offices in Centre, AL and Rome, GA." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
@@ -726,8 +726,8 @@ const About = () => {
                   <li>• 16+ years serving Alabama and Georgia families</li>
                   <li>• A+ Rating with the Better Business Bureau</li>
                   <li>• 100+ years combined team experience</li>
-                  <li>• 4.7★ Google rating in Centre (116 reviews)</li>
-                  <li>• 4.6★ Google rating in Rome (90 reviews)</li>
+                  <li>• 4.7★ Google rating in Centre (117 reviews)</li>
+                  <li>• 4.6★ Google rating in Rome (93 reviews)</li>
                 </ul>
               </CardContent>
             </Card>
