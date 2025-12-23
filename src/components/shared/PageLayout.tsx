@@ -33,7 +33,8 @@ export const PageLayout = ({ children, title, description, breadcrumbs }: PageLa
             alt="" 
             className="absolute inset-0 w-full h-full object-cover"
             style={{ objectPosition: 'center 45%' }}
-            loading="eager"
+            loading="lazy"
+            decoding="async"
           />
         </picture>
         {/* Dark gradient overlay for text readability */}
