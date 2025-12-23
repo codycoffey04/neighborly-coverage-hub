@@ -67,6 +67,7 @@ const cityCoordinates: Record<string, { latitude: string; longitude: string }> =
   "huntsville-al": { latitude: "34.7304", longitude: "-86.5861" },
   "mountain-brook-al": { latitude: "33.4998", longitude: "-86.7523" },
   "mobile-al": { latitude: "30.6954", longitude: "-88.0399" },
+  "owens-cross-roads-al": { latitude: "34.5884", longitude: "-86.4536" },
   "montgomery-al": { latitude: "32.3668", longitude: "-86.3000" },
   "phenix-city-al": { latitude: "32.4710", longitude: "-85.0008" },
   "troy-al": { latitude: "31.8088", longitude: "-85.9700" },
