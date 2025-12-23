@@ -275,7 +275,7 @@ const HomeInsurance = () => {
     <>
       <Helmet>
         <title>Home Insurance Alabama & Georgia | Homeowners Coverage | Coffey Agencies</title>
-        <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating. Serving AL & GA families." />
+        <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating (117+ reviews). Serving AL & GA families." />
         <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
         
         {/* OpenGraph Meta Tags */}

@@ -223,7 +223,7 @@ const Index = () => {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.7",
-          "reviewCount": "116",
+          "reviewCount": "117",
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -262,7 +262,7 @@ const Index = () => {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.6",
-          "reviewCount": "90",
+          "reviewCount": "93",
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -462,7 +462,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Auto & Home Insurance Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Real people who answer the phone. Free quotes from a family-owned agency." />
+        <meta name="description" content="Alabama & Georgia's smarter way to insure. 4.7★ (117+ reviews). Bundle home + auto and save up to 25%. Real people who answer the phone. Free quotes from family-owned agency." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
         {/* OpenGraph Meta Tags */}
