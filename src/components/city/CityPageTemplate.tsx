@@ -63,6 +63,7 @@ const cityCoordinates: Record<string, { latitude: string; longitude: string }> =
   "dothan-al": { latitude: "31.2234", longitude: "-85.3908" },
   "enterprise-al": { latitude: "31.3152", longitude: "-85.8552" },
   "foley-al": { latitude: "30.4066", longitude: "-87.6836" },
+  "helena-al": { latitude: "33.2943", longitude: "-86.8439" },
   "huntsville-al": { latitude: "34.7304", longitude: "-86.5861" },
   "mobile-al": { latitude: "30.6954", longitude: "-88.0399" },
   "montgomery-al": { latitude: "32.3668", longitude: "-86.3000" },
