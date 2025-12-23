@@ -28,7 +28,7 @@ const officeDetails = {
     phone: "(256) 927-6287",
     hours: "Monday–Friday 8:00 AM – 5:00 PM",
     rating: "4.7",
-    reviews: "116",
+    reviews: "117",
     team: ["Kimberly Fletcher", "Crystal Brozio", "Maria Rocha-Guzman"],
     geo: {
       latitude: "34.1520",
@@ -42,7 +42,7 @@ const officeDetails = {
     phone: "(706) 784-6511",
     hours: "Monday–Friday 8:30 AM – 4:30 PM",
     rating: "4.6",
-    reviews: "90",
+    reviews: "93",
     team: ["Kathy Sewell", "Brandy Wilkins"],
     geo: {
       latitude: "34.2570",

@@ -14,13 +14,13 @@ const officeRatings = [
   {
     office: "Centre, Alabama",
     rating: "4.7",
-    reviews: 116,
+    reviews: 117,
     googleUrl: "https://search.google.com/local/writereview?placeid=ChIJJ80TpQ5hiogRn3tzQbqNLMA",
   },
   {
     office: "Rome, Georgia",
     rating: "4.6",
-    reviews: 90,
+    reviews: 93,
     googleUrl: "https://search.google.com/local/writereview?placeid=ChIJZQwKAM-kiogR_bIpdOhQm7o",
   },
 ];
@@ -246,12 +246,12 @@ const Reviews = () => {
     <>
       <Helmet>
         <title>Customer Reviews | 4.7★ Rating | Coffey Agencies</title>
-        <meta name="description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (116 reviews) and 4.6★ in Rome, GA (90 reviews). See why families trust us." />
+        <meta name="description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (117 reviews) and 4.6★ in Rome, GA (93 reviews). See why families trust us." />
         <link rel="canonical" href="https://coffeyagencies.com/reviews" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Customer Reviews | 4.7★ Rating | Coffey Agencies" />
-        <meta property="og:description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (116 reviews) and 4.6★ in Rome, GA (90 reviews). See why families trust us." />
+        <meta property="og:description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (117 reviews) and 4.6★ in Rome, GA (93 reviews). See why families trust us." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/reviews" />
         <meta property="og:site_name" content="Coffey Agencies" />
