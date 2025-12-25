@@ -6,6 +6,92 @@
 /services/life    /services/life-insurance    301
 /services/motorcycle    /services/motorcycle-insurance    301
 
+# ===== OLD /insurance/ PATH REDIRECTS =====
+# Redirects from old site structure (/insurance/city-state-zip/) to new city pages
+# Includes both trailing slash and no-trailing-slash versions
+
+# Alabama Cities
+/insurance/auburn-al-36830/          /auburn-al          301!
+/insurance/auburn-al-36830           /auburn-al          301!
+/insurance/birmingham-al-35215/      /birmingham-al      301!
+/insurance/birmingham-al-35215       /birmingham-al      301!
+/insurance/birmingham-al-35235/      /birmingham-al      301!
+/insurance/birmingham-al-35235       /birmingham-al      301!
+/insurance/birmingham-al-35242/      /birmingham-al      301!
+/insurance/birmingham-al-35242       /birmingham-al      301!
+/insurance/centre-al-35960/          /centre-al          301!
+/insurance/centre-al-35960           /centre-al          301!
+/insurance/centre-al-35960/centre-al-updated/  /centre-al  301!
+/insurance/centre-al-35960/centre-al-updated    /centre-al  301!
+/insurance/dothan-al-36103/          /dothan-al          301!
+/insurance/dothan-al-36103           /dothan-al          301!
+/insurance/dothan-al-36301/          /dothan-al          301!
+/insurance/dothan-al-36301           /dothan-al          301!
+/insurance/dothan-al-36303/          /dothan-al          301!
+/insurance/dothan-al-36303           /dothan-al          301!
+/insurance/enterprise-al-36330/      /enterprise-al      301!
+/insurance/enterprise-al-36330       /enterprise-al      301!
+/insurance/foley-al-36535/           /foley-al           301!
+/insurance/foley-al-36535            /foley-al           301!
+/insurance/mobile-al-36601/          /mobile-al          301!
+/insurance/mobile-al-36601           /mobile-al          301!
+/insurance/mobile-al-36695/          /mobile-al          301!
+/insurance/mobile-al-36695           /mobile-al          301!
+/insurance/montgomery-al-36116/      /montgomery-al       301!
+/insurance/montgomery-al-36116       /montgomery-al       301!
+/insurance/montgomery-al-36117/      /montgomery-al       301!
+/insurance/montgomery-al-36117      /montgomery-al       301!
+/insurance/phenix-city-al-36867/     /phenix-city-al      301!
+/insurance/phenix-city-al-36867      /phenix-city-al      301!
+/insurance/troy-al-36081/            /troy-al            301!
+/insurance/troy-al-36081             /troy-al            301!
+/insurance/trussville-al-35173/      /trussville-al      301!
+/insurance/trussville-al-35173       /trussville-al      301!
+
+# Georgia Cities
+/insurance/alpharetta-ga-30004/      /alpharetta-ga      301!
+/insurance/alpharetta-ga-30004      /alpharetta-ga      301!
+/insurance/atlanta-ga-30349/         /atlanta-ga          301!
+/insurance/atlanta-ga-30349          /atlanta-ga          301!
+/insurance/atlanta-ga-30331/         /atlanta-ga          301!
+/insurance/atlanta-ga-30331          /atlanta-ga          301!
+/insurance/calhoun-ga-30701/         /calhoun-ga          301!
+/insurance/calhoun-ga-30701          /calhoun-ga          301!
+/insurance/cartersville-ga-30120/    /cartersville-ga    301!
+/insurance/cartersville-ga-30120     /cartersville-ga    301!
+/insurance/cedartown-ga-30125/       /cedartown-ga        301!
+/insurance/cedartown-ga-30125        /cedartown-ga        301!
+/insurance/duluth-ga-30095/          /duluth-ga          301!
+/insurance/duluth-ga-30095           /duluth-ga          301!
+/insurance/duluth-ga-30096/          /duluth-ga          301!
+/insurance/duluth-ga-30096           /duluth-ga          301!
+/insurance/forsyth-ga-31029/         /forsyth-ga          301!
+/insurance/forsyth-ga-31029          /forsyth-ga          301!
+/insurance/lawrenceville-ga-30043/   /lawrenceville-ga    301!
+/insurance/lawrenceville-ga-30043    /lawrenceville-ga    301!
+/insurance/lawrenceville-ga-30044/   /lawrenceville-ga    301!
+/insurance/lawrenceville-ga-30044    /lawrenceville-ga    301!
+/insurance/lawrenceville-ga-30046/   /lawrenceville-ga    301!
+/insurance/lawrenceville-ga-30046    /lawrenceville-ga    301!
+/insurance/powder-springs-ga-30127/   /powder-springs-ga  301!
+/insurance/powder-springs-ga-30127   /powder-springs-ga  301!
+/insurance/rockmart-ga-30153/        /rockmart-ga         301!
+/insurance/rockmart-ga-30153         /rockmart-ga         301!
+/insurance/rome-ga-30161/             /rome-ga            301!
+/insurance/rome-ga-30161             /rome-ga            301!
+/insurance/summerville-ga-30747/      /summerville-ga    301!
+/insurance/summerville-ga-30747      /summerville-ga    301!
+/insurance/suwanee-ga-30024/          /suwanee-ga          301!
+/insurance/suwanee-ga-30024          /suwanee-ga          301!
+
+# Unmatched cities - redirect to service areas page
+/insurance/columbus-ga-31901/        /service-areas      301!
+/insurance/columbus-ga-31901         /service-areas      301!
+/insurance/gainesville-ga-30501/     /service-areas      301!
+/insurance/gainesville-ga-30501     /service-areas      301!
+/insurance/marietta-ga-30060/        /service-areas      301!
+/insurance/marietta-ga-30060         /service-areas      301!
+
 # Netlify SPA redirect - serve index.html for all routes
 # This allows React Router to handle client-side routing
 # Static assets (JS, CSS, images) are served automatically by Netlify
