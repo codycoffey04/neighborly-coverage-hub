@@ -44,6 +44,7 @@ const FAQ = lazyWithRetry(() => import("./pages/FAQ"));
 const Reviews = lazyWithRetry(() => import("./pages/Reviews"));
 const Learn = lazyWithRetry(() => import("./pages/Learn"));
 const LearnArticle = lazyWithRetry(() => import("./pages/LearnArticle"));
+const Services = lazyWithRetry(() => import("./pages/Services"));
 const ServiceAreas = lazyWithRetry(() => import("./pages/ServiceAreas"));
 const AutoInsurance = lazyWithRetry(() => import("./pages/services/AutoInsurance"));
 const HomeInsurance = lazyWithRetry(() => import("./pages/services/HomeInsurance"));
@@ -88,6 +89,7 @@ const App = () => (
               <Route path="/learn" element={<Learn />} />
               <Route path="/learn/:slug" element={<LearnArticle />} />
               <Route path="/service-areas" element={<ServiceAreas />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/services/auto-insurance" element={<AutoInsurance />} />
               <Route path="/services/home-insurance" element={<HomeInsurance />} />
               <Route path="/services/renters-insurance" element={<RentersInsurance />} />
