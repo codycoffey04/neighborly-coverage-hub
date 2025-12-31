@@ -497,6 +497,7 @@ export const cityData: Record<string, CityData> = {
     zipCodes: ["36601", "36695"],
     isOfficeCity: false,
     nearestOffice: "centre",
+    localPhone: "(251) 551-1350",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Cheap Car Insurance Mobile AL - Auto Insurance Quotes | Coffey Agencies",
     customHeroTitle: "Cheap Car Insurance in Mobile, AL",
