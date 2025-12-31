@@ -705,6 +705,20 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         </section>
       )}
 
+      {/* H2: Bundle Home and Auto Insurance in [City], [State] */}
+      {city.bundleH2 && (
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Bundle Home and Auto Insurance in {city.city}, {city.stateAbbr}
+            </h2>
+            <article className="prose prose-lg max-w-none">
+              {renderProseParagraphs(city.bundleH2)}
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* H3: Insurance Agents in [City], [State] - Huntsville-style */}
       {city.insuranceAgentsH3 && (
         <section className="py-16 px-4">
