@@ -1563,6 +1563,79 @@ export const cityData: Record<string, CityData> = {
     ],
   },
 
+  "calhoun-ga": {
+    slug: "calhoun-ga",
+    city: "Calhoun",
+    state: "Georgia",
+    stateAbbr: "GA",
+    zipCodes: ["30701", "30703"],
+    isOfficeCity: false,
+    nearestOffice: "rome",
+    localPhone: "(706) 702-1782",
+    heroImage: "georgia-hero.jpg",
+    customMetaTitle: "Auto Insurance Calhoun GA | Car Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Insurance in Calhoun, GA (30701)",
+    customHeroSubhead: "Auto insurance Calhoun GA 30701, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
+    introduction: [
+      "Calhoun faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking between March and May to flooding concerns along the Oostanaula River and Coosawattee River, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Calhoun, Red Bud, or any neighborhood in Gordon County.",
+      "With approximately 16,900 residents in the city and 58,000 throughout Gordon County, and a median household income around $48,000, this diverse community includes manufacturing workers at Mohawk Industries and other local facilities, educators at Gordon County School District, healthcare professionals, and retail workers. Each household has distinct insurance needs, whether protecting homes near river flood zones or securing auto coverage for US-41 and I-75 commutes to major employers throughout the region."
+    ],
+    weatherRisks: "Living in Calhoun means preparing for severe weather year-round. Tornado season brings heightened risk from March through May, with severe thunderstorms capable of producing damaging hail and destructive winds. These weather patterns make comprehensive homeowners insurance essential, particularly with coverage for wind and hail damage that standard policies might limit separately. The Oostanaula River and Coosawattee River present flooding risks that standard policies typically exclude. Properties near waterways in Calhoun and throughout Gordon County should consider flood insurance as critical protection. Flash flooding during heavy rainfall events can damage homes quickly, especially in low-lying areas and river valleys. We analyze your specific location to determine flood risk levels and recommend appropriate coverage for Calhoun residents. Occasional winter ice storms add another dimension to property and auto coverage needs throughout the area.",
+    neighborhoodCoverage: "Each local neighborhood presents unique insurance considerations. Downtown Calhoun features a mix of historic and newer construction that may require specialized replacement cost assessments. The Red Bud area combines residential charm with proximity to commercial corridors. Areas near I-75 and US-41 have distinct community characteristics affecting coverage needs. Rural Gordon County properties require attention to outbuildings, extended property boundaries, and longer emergency response times. Bundling home and auto insurance in Calhoun saves money while creating comprehensive protection for Northwest Georgia living. Whether commuting on I-75, navigating local roads to manufacturing facilities, or traveling to Rome or Atlanta for work and shopping, coordinated coverage simplifies claims and eliminates protection gaps. Save up to $600 annually with our bundle options designed specifically for Gordon County households.",
+    economyInfo: "The regional economy drives specific insurance needs across our community. With Calhoun's manufacturing presence including Mohawk Industries and other local facilities, many residents require reliable auto coverage for daily commutes. Gordon County School District employs educators and staff who benefit from understanding coverage options that fit public service budgets. Healthcare professionals at area medical facilities may need higher liability limits given professional responsibilities. The retail sector provides employment for many residents requiring affordable, comprehensive coverage. ZIP codes served include 30701, 30703, 30120, 30161, and 30165—each with distinct demographic and risk profiles. Our digital platform analyzes these factors to provide customized quotes reflecting your specific situation in Calhoun, whether you're a manufacturing worker near Downtown Calhoun, a first-time homebuyer in Red Bud, or updating established household coverage in rural Gordon County.",
+    localExcellence: "Operating from Rome headquarters, we've perfected digital insurance delivery to Calhoun and throughout Gordon County. You receive comprehensive coverage analysis and personalized attention matching in-person meetings, with the convenience of handling everything from home or office. Licensed Georgia agents (License #149612) understand state regulations and local conditions, ensuring coverage meets all requirements while addressing regional risks specific to Calhoun. Technology enables faster quotes, streamlined claims support, and efficient policy management without office visits. This efficiency translates to competitive rates for auto insurance in the 30701 area while maintaining personal service expected from local agents, despite our Rome location. Digital tools allow instant policy updates, payment processing, and claims filing 24/7, perfect for busy manufacturing workers, educators, healthcare professionals, and families across Calhoun and Gordon County.",
+    localConsiderations: "Calhoun's position in Northwest Georgia creates specific insurance needs. Spring weather brings tornado risks requiring comprehensive wind coverage. Properties near the Oostanaula River and Coosawattee River need flood insurance beyond standard homeowners policies. I-75 and US-41 corridor traffic affects auto insurance rates. Our Rome-based team understands these local factors and provides coverage recommendations tailored to Gordon County's unique risk profile.",
+    neighborhoods: [
+      "Downtown Calhoun",
+      "Red Bud",
+      "I-75 corridor",
+      "US-41 corridor",
+      "Rural Gordon County",
+      "North Calhoun",
+      "South Calhoun",
+      "East Calhoun",
+      "West Calhoun",
+      "River area",
+      "Industrial district",
+      "Residential subdivisions"
+    ],
+    nearbyCities: ["rome-ga", "cartersville-ga", "cedartown-ga", "atlanta-ga"],
+    faqs: [
+      {
+        question: "Do I need to visit your office to get insurance in Calhoun?",
+        answer: "No office visit is required. We provide complete insurance services digitally from our Rome, GA office. Everything from quotes to policy changes can be handled online or by phone, saving 30701 residents time while receiving comprehensive coverage and personal service tailored to Gordon County needs."
+      },
+      {
+        question: "How do the Oostanaula and Coosawattee rivers affect flood insurance needs?",
+        answer: "Properties near the Oostanaula River and Coosawattee River face elevated flood risks, especially during heavy rainfall. Standard homeowners policies don't cover flood damage, making separate flood insurance essential for waterfront and low-lying properties in Gordon County. We analyze FEMA flood maps for your specific address in Calhoun to determine risk levels and coverage needs."
+      },
+      {
+        question: "What bundle savings are available for Calhoun residents?",
+        answer: "Bundling home and auto insurance typically saves 15-25% on premiums, up to $600 annually. Residents can maximize savings by combining multiple policies, whether insuring a home in Downtown Calhoun and vehicles for manufacturing facility commutes, or protecting a property in Red Bud with auto coverage for I-75 travel."
+      },
+      {
+        question: "What are Georgia's minimum auto insurance requirements?",
+        answer: "Georgia requires minimum liability coverage of 25/50/25: $25,000 bodily injury per person, $50,000 per accident, and $25,000 property damage. However, I-75 corridor traffic and commutes to manufacturing centers often warrant higher limits for adequate protection in Gordon County."
+      },
+      {
+        question: "How does tornado season affect insurance premiums in Calhoun?",
+        answer: "Northwest Georgia experiences tornado threats primarily from March through May. Homeowners insurance rates reflect this elevated risk, with wind and hail deductibles often applying separately from standard deductibles. Proper coverage ensures protection when severe weather strikes the area."
+      },
+      {
+        question: "What coverage do manufacturing workers in Calhoun need?",
+        answer: "Employees at local manufacturing facilities like Mohawk Industries should consider comprehensive and collision coverage for vehicles, along with adequate liability limits for commuting. Many workers benefit from bundling home and auto policies for maximum savings, especially important for families in the area."
+      },
+      {
+        question: "What factors affect auto insurance rates in Calhoun?",
+        answer: "Auto insurance rates consider your ZIP code, driving record, vehicle type, and commute distance. Traffic patterns on I-75 and US-41, proximity to manufacturing centers, and local claim history all influence personalized rates for Gordon County drivers. We analyze these factors to provide competitive quotes."
+      },
+      {
+        question: "How quickly can I get coverage for my property?",
+        answer: "Most policies can begin immediately upon approval. Our digital process means Calhoun residents can receive quotes within minutes and have active coverage the same day, protecting homes in Red Bud, Downtown Calhoun, or any neighborhood throughout Gordon County."
+      }
+    ],
+  },
+
   "summerville-ga": {
     slug: "summerville-ga",
     city: "Summerville",
