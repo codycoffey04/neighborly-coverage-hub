@@ -76,7 +76,7 @@ const ServiceAreas = () => {
     "url": "https://coffeyagencies.com/service-areas",
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 29,
+      "numberOfItems": 34,
       "itemListElement": [
         ...alabamaCities.map((city, index) => ({
           "@type": "ListItem",
@@ -139,13 +139,13 @@ const ServiceAreas = () => {
       breadcrumbs={[{ label: "Service Areas", href: "/service-areas" }]}
     >
       <Helmet>
-        <title>Service Areas | Alabama & Georgia Insurance | Coffey Agencies</title>
-        <meta name="description" content="Coffey Agencies serves 29 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
+        <title>Service Areas - 34 Cities in Alabama & Georgia | Coffey Agencies</title>
+        <meta name="description" content="Coffey Agencies serves 34 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
         <link rel="canonical" href="https://coffeyagencies.com/service-areas" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Service Areas | Alabama & Georgia Insurance | Coffey Agencies" />
-        <meta property="og:description" content="Coffey Agencies serves 29 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
+        <meta property="og:title" content="Service Areas - 34 Cities in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Coffey Agencies serves 34 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/service-areas" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -155,8 +155,8 @@ const ServiceAreas = () => {
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Service Areas | Alabama & Georgia Insurance" />
-        <meta name="twitter:description" content="Coffey Agencies serves 29 cities across Alabama and Georgia. Find local insurance coverage near you." />
+        <meta name="twitter:title" content="Service Areas - 34 Cities in Alabama & Georgia" />
+        <meta name="twitter:description" content="Coffey Agencies serves 34 cities across Alabama and Georgia. Find local insurance coverage near you." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph - All schemas in one JSON-LD block for reliable rendering */}
