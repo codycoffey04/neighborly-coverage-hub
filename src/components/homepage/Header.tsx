@@ -17,6 +17,7 @@ const NavigationMenuTrigger = lazy(() => import("@/components/ui/navigation-menu
 const serviceLinks = [
   { name: "Auto Insurance", href: "/services/auto-insurance" },
   { name: "Home Insurance", href: "/services/home-insurance" },
+  { name: "Mobile Home Insurance", href: "/services/mobile-home-insurance" },
   { name: "Renters Insurance", href: "/services/renters-insurance" },
   { name: "Condo Insurance", href: "/services/condo-insurance" },
   { name: "Life Insurance", href: "/services/life-insurance" },
