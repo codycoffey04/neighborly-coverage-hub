@@ -65,7 +65,7 @@ const faqItems = [
   },
   {
     question: "How much does mobile home insurance cost in Georgia?",
-    answer: "Georgia mobile home insurance typically costs $300-$700 per year. Georgia's slightly milder overall climate keeps average premiums lower than some neighboring states, though north Georgia's tornado exposure and coastal hurricane risk can increase rates for those areas. Factors like your home's age, value, and distance from fire protection all affect your final premium. We shop multiple carriers to find competitive rates for Georgia manufactured home owners."
+    answer: "Georgia mobile home insurance typically costs $300-$700 per year. Georgia's slightly milder overall climate keeps average premiums lower than some neighboring states, though north Georgia's tornado exposure and coastal hurricane risk can increase rates for those areas. Factors like your home's age, value, and distance from fire protection all affect your final premium. We help Georgia manufactured home owners find competitive rates through our specialized coverage options."
   },
   {
     question: "Is mobile home insurance required in Alabama?",
@@ -215,8 +215,8 @@ const MobileHomeInsurance = () => {
       {
         "@type": "HowToStep",
         "position": 2,
-        "name": "We Shop Multiple Carriers",
-        "text": "Unlike captive agents who represent only one company, we work with multiple carriers that actually write mobile home coverage in Alabama and Georgia."
+        "name": "We Match You With The Right Coverage",
+        "text": "Our agents specialize in mobile home coverage options that actually work for Alabama and Georgia manufactured homes — including older units other agencies turn away."
       },
       {
         "@type": "HowToStep",
@@ -766,9 +766,9 @@ const MobileHomeInsurance = () => {
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
-                <h3 className="font-semibold mb-2">We Shop Multiple Carriers</h3>
+                <h3 className="font-semibold mb-2">We Match You With The Right Coverage</h3>
                 <p className="text-sm text-muted-foreground">
-                  Unlike captive agents who represent only one company, we work with multiple carriers that actually write mobile home coverage in Alabama and Georgia — including Foremost, American Modern, and others.
+                  Our agents specialize in mobile home policies that actually work for Alabama and Georgia — including coverage for older manufactured homes that other agencies turn away.
                 </p>
               </div>
               <div className="text-center">
