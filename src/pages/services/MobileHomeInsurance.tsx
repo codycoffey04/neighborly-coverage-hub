@@ -339,9 +339,9 @@ const MobileHomeInsurance = () => {
                     className="border-white text-white bg-white/10 hover:bg-white/20 text-lg px-6 py-6 min-h-[48px]"
                     asChild
                   >
-                    <TrackedPhone phoneNumber="256-927-6287" className="flex items-center gap-2" aria-label="Call Alabama office">
+                    <TrackedPhone phone="(256) 927-6287" phoneRaw="2569276287" location="Centre, AL" office="centre" pageType="service" className="flex items-center gap-2" aria-label="Call Alabama office">
                       <Phone className="h-5 w-5" />
-                      AL: 256-927-6287
+                      AL: (256) 927-6287
                     </TrackedPhone>
                   </Button>
                   <Button 
@@ -350,9 +350,9 @@ const MobileHomeInsurance = () => {
                     className="border-white text-white bg-white/10 hover:bg-white/20 text-lg px-6 py-6 min-h-[48px]"
                     asChild
                   >
-                    <TrackedPhone phoneNumber="706-784-6511" className="flex items-center gap-2" aria-label="Call Georgia office">
+                    <TrackedPhone phone="(706) 784-6511" phoneRaw="7067846511" location="Rome, GA" office="rome" pageType="service" className="flex items-center gap-2" aria-label="Call Georgia office">
                       <Phone className="h-5 w-5" />
-                      GA: 706-784-6511
+                      GA: (706) 784-6511
                     </TrackedPhone>
                   </Button>
                 </div>
@@ -422,15 +422,15 @@ const MobileHomeInsurance = () => {
               <p className="text-muted-foreground mb-4">Need coverage for your mobile home?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-accent hover:bg-accent/90">
-                  <TrackedPhone phoneNumber="256-927-6287">
+                  <TrackedPhone phone="(256) 927-6287" phoneRaw="2569276287" location="Centre, AL" office="centre" pageType="service">
                     <Phone className="h-4 w-4 mr-2" />
-                    AL: 256-927-6287
+                    AL: (256) 927-6287
                   </TrackedPhone>
                 </Button>
                 <Button asChild className="bg-accent hover:bg-accent/90">
-                  <TrackedPhone phoneNumber="706-784-6511">
+                  <TrackedPhone phone="(706) 784-6511" phoneRaw="7067846511" location="Rome, GA" office="rome" pageType="service">
                     <Phone className="h-4 w-4 mr-2" />
-                    GA: 706-784-6511
+                    GA: (706) 784-6511
                   </TrackedPhone>
                 </Button>
               </div>
@@ -559,15 +559,15 @@ const MobileHomeInsurance = () => {
               <p className="text-muted-foreground mb-4">Whether you're in rural Alabama or metro Atlanta, we can find coverage that fits.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-accent hover:bg-accent/90">
-                  <TrackedPhone phoneNumber="256-927-6287">
+                  <TrackedPhone phone="(256) 927-6287" phoneRaw="2569276287" location="Centre, AL" office="centre" pageType="service">
                     <Phone className="h-4 w-4 mr-2" />
-                    AL: 256-927-6287
+                    AL: (256) 927-6287
                   </TrackedPhone>
                 </Button>
                 <Button asChild className="bg-accent hover:bg-accent/90">
-                  <TrackedPhone phoneNumber="706-784-6511">
+                  <TrackedPhone phone="(706) 784-6511" phoneRaw="7067846511" location="Rome, GA" office="rome" pageType="service">
                     <Phone className="h-4 w-4 mr-2" />
-                    GA: 706-784-6511
+                    GA: (706) 784-6511
                   </TrackedPhone>
                 </Button>
               </div>
@@ -735,15 +735,15 @@ const MobileHomeInsurance = () => {
               <p className="text-muted-foreground mb-4">Want to know your actual cost?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-accent hover:bg-accent/90">
-                  <TrackedPhone phoneNumber="256-927-6287">
+                  <TrackedPhone phone="(256) 927-6287" phoneRaw="2569276287" location="Centre, AL" office="centre" pageType="service">
                     <Phone className="h-4 w-4 mr-2" />
-                    AL: 256-927-6287
+                    AL: (256) 927-6287
                   </TrackedPhone>
                 </Button>
                 <Button asChild className="bg-accent hover:bg-accent/90">
-                  <TrackedPhone phoneNumber="706-784-6511">
+                  <TrackedPhone phone="(706) 784-6511" phoneRaw="7067846511" location="Rome, GA" office="rome" pageType="service">
                     <Phone className="h-4 w-4 mr-2" />
-                    GA: 706-784-6511
+                    GA: (706) 784-6511
                   </TrackedPhone>
                 </Button>
               </div>
@@ -962,9 +962,9 @@ const MobileHomeInsurance = () => {
                 className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6"
                 asChild
               >
-                <TrackedPhone phoneNumber="256-927-6287">
+                <TrackedPhone phone="(256) 927-6287" phoneRaw="2569276287" location="Centre, AL" office="centre" pageType="service">
                   <Phone className="h-5 w-5 mr-2" />
-                  Alabama: 256-927-6287
+                  Alabama: (256) 927-6287
                 </TrackedPhone>
               </Button>
               <Button 
@@ -972,9 +972,9 @@ const MobileHomeInsurance = () => {
                 className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6"
                 asChild
               >
-                <TrackedPhone phoneNumber="706-784-6511">
+                <TrackedPhone phone="(706) 784-6511" phoneRaw="7067846511" location="Rome, GA" office="rome" pageType="service">
                   <Phone className="h-5 w-5 mr-2" />
-                  Georgia: 706-784-6511
+                  Georgia: (706) 784-6511
                 </TrackedPhone>
               </Button>
             </div>
