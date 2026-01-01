@@ -797,8 +797,8 @@ const MobileHomeInsurance = () => {
             <Accordion type="single" collapsible className="space-y-4">
               {faqItems.map((faq, index) => (
                 <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border px-6">
-                  <AccordionTrigger className="text-left font-semibold py-4">
-                    {faq.question}
+                  <AccordionTrigger className="text-left hover:no-underline py-5">
+                    <span className="font-semibold text-lg pr-4">{faq.question}</span>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-4">
                     {faq.answer}

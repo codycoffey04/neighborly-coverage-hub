@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, Home, Key, Building2, Heart, Bike, Anchor, Truck } from "lucide-react";
+import { Car, Home, Key, Building2, Heart, Bike, Anchor, Truck, Building } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-type ServiceKey = 'auto' | 'home' | 'renters' | 'condo' | 'life' | 'motorcycle' | 'boat' | 'atv';
+type ServiceKey = 'auto' | 'home' | 'renters' | 'condo' | 'life' | 'motorcycle' | 'boat' | 'atv' | 'mobile-home';
 
 interface ServiceInfo {
   key: ServiceKey;
@@ -28,6 +28,13 @@ const allServices: ServiceInfo[] = [
     title: "Home Insurance",
     description: "Protect your home and belongings from storms, fire, theft, and liability claims.",
     link: "/services/home-insurance"
+  },
+  {
+    key: 'mobile-home',
+    icon: Building,
+    title: "Mobile Home Insurance",
+    description: "Coverage for manufactured homes that other agencies won't touch. Specialty carriers for older mobile homes.",
+    link: "/services/mobile-home-insurance"
   },
   {
     key: 'renters',
