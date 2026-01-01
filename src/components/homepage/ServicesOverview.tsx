@@ -52,6 +52,12 @@ const services = [
     title: "ATV/UTV Insurance",
     description: "Coverage for four-wheelers, side-by-sides, and dirt bikes on trails at Indian Mountain, Highland Park, and riding areas across Alabama and Georgia.",
     link: "/services/atv-utv-insurance"
+  },
+  {
+    icon: Home,
+    title: "Mobile Home Insurance",
+    description: "Coverage for manufactured homes that other agencies won't touch. We work with carriers who specialize in mobile home risks across Alabama and Georgia.",
+    link: "/services/mobile-home-insurance"
   }
 ];
 

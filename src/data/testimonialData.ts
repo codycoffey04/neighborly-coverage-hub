@@ -281,5 +281,6 @@ export const serviceTestimonialSets: Record<string, Testimonial[]> = {
   "motorcycle-insurance": [centreReviews[3], romeReviews[16], centreReviews[8]], // Teresa G, Casey J (best company 2025), Kerry G
   "boat-insurance": [romeReviews[4], romeReviews[12], romeReviews[10]],         // Chad L, Karen P (customer since 1989), Benita D
   "atv-insurance": [centreReviews[9], romeReviews[14], romeReviews[11]],        // Gina W, Tony L (great experience 2025), Annette C
-  "life-insurance": [centreReviews[8], centreReviews[0], romeReviews[17]]       // Kerry G (switched all insurance), Thomas K, Ricky S (long-time customer)
+  "life-insurance": [centreReviews[8], centreReviews[0], romeReviews[17]],      // Kerry G (switched all insurance), Thomas K, Ricky S (long-time customer)
+  "mobile-home-insurance": [romeReviews[5], centreReviews[3], romeReviews[18]]  // Patrick R, Teresa G, William M
 };
