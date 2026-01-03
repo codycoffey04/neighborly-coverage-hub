@@ -92,6 +92,48 @@
 /insurance/marietta-ga-30060/        /service-areas      301!
 /insurance/marietta-ga-30060         /service-areas      301!
 
+# ===== TRAILING SLASH REDIRECTS FOR CITY PAGES =====
+# Redirect trailing-slash city page URLs to non-trailing-slash versions
+# This prevents duplicate content issues (e.g., /cumming-ga/ vs /cumming-ga)
+# Must come BEFORE the SPA catch-all redirect below
+# Added 2025-01-27 to fix duplicate content issues identified by Google Search Console
+
+# Alabama Cities
+/alpharetta-ga/        /alpharetta-ga        301!
+/atlanta-ga/           /atlanta-ga           301!
+/auburn-al/            /auburn-al            301!
+/birmingham-al/        /birmingham-al        301!
+/calhoun-ga/           /calhoun-ga           301!
+/canton-ga/            /canton-ga            301!
+/cartersville-ga/      /cartersville-ga      301!
+/cedartown-ga/         /cedartown-ga         301!
+/centre-al/            /centre-al            301!
+/cumming-ga/           /cumming-ga           301!
+/dallas-ga/            /dallas-ga            301!
+/decatur-al/           /decatur-al           301!
+/dothan-al/            /dothan-al            301!
+/duluth-ga/            /duluth-ga            301!
+/enterprise-al/        /enterprise-al        301!
+/florence-al/          /florence-al          301!
+/foley-al/             /foley-al             301!
+/forsyth-ga/           /forsyth-ga           301!
+/helena-al/            /helena-al            301!
+/huntsville-al/        /huntsville-al        301!
+/lawrenceville-ga/     /lawrenceville-ga     301!
+/mobile-al/            /mobile-al            301!
+/montgomery-al/        /montgomery-al        301!
+/mountain-brook-al/    /mountain-brook-al    301!
+/owens-cross-roads-al/ /owens-cross-roads-al 301!
+/phenix-city-al/       /phenix-city-al       301!
+/powder-springs-ga/    /powder-springs-ga    301!
+/rockmart-ga/          /rockmart-ga          301!
+/rome-ga/              /rome-ga              301!
+/summerville-ga/       /summerville-ga       301!
+/suwanee-ga/           /suwanee-ga           301!
+/troy-al/              /troy-al              301!
+/trussville-al/        /trussville-al        301!
+/tuscaloosa-al/        /tuscaloosa-al        301!
+
 # Netlify SPA redirect - serve index.html for all routes
 # This allows React Router to handle client-side routing
 # Static assets (JS, CSS, images) are served automatically by Netlify
