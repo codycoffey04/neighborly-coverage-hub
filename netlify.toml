@@ -5,3 +5,14 @@
 [build.environment]
   NODE_VERSION = "18"
 
+[headers]
+  # Never cache HTML files - ensures meta tags, canonical tags, etc. update immediately
+  for = "/*.html"
+    [headers.values]
+      Cache-Control = "public, max-age=0, must-revalidate"
+  
+  # Cache static assets for better performance
+  for = "/assets/*"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000, immutable"
+
