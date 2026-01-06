@@ -35,6 +35,9 @@ const learnLinks = [
   { name: "Motorcycle Insurance Guide", href: "/learn/motorcycle-insurance-guide" },
   { name: "Boat Insurance Guide", href: "/learn/boat-insurance-guide" },
   { name: "ATV/UTV Insurance Guide", href: "/learn/atv-utv-insurance-guide" },
+  { name: "Alabama Insurance Requirements", href: "/learn/alabama-insurance-requirements" },
+  { name: "Georgia Insurance Requirements", href: "/learn/georgia-insurance-requirements" },
+  { name: "Bundling Home & Auto", href: "/learn/bundling-home-and-auto" },
   { name: "Alabama vs Georgia Insurance", href: "/learn/alabama-vs-georgia-insurance" },
   { name: "Auto Insurance Costs: Rome, GA", href: "/learn/auto-insurance-costs-rome-ga" },
   { name: "Storm Season: Centre, AL", href: "/learn/home-insurance-centre-al-storm-season" },
@@ -70,31 +73,43 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm font-medium text-primary bg-transparent hover:text-primary/80">
-                    Services
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-56 gap-1 p-2">
-                      {serviceLinks.map((link) => (
-                        <li key={link.href}>
-                          <NavigationMenuLink asChild>
-                            <Link 
-                              to={link.href} 
-                              className="block px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors"
-                            >
-                              {link.name}
-                            </Link>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <div className="flex items-center group">
+              <Link 
+                to="/services"
+                className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              >
+                Services
+              </Link>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="text-sm font-medium text-primary bg-transparent hover:text-primary/80 p-0 h-auto w-auto ml-1">
+                      <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-56 gap-1 p-2">
+                        {serviceLinks.map((link) => (
+                          <li key={link.href}>
+                            <NavigationMenuLink asChild>
+                              <Link 
+                                to={link.href} 
+                                className="block px-3 py-2 text-sm rounded-md hover:bg-muted transition-colors"
+                              >
+                                {link.name}
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
+            
+            <Link to="/service-areas" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+              Service Areas
+            </Link>
             
             <Link to="/about" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
               About
@@ -107,6 +122,9 @@ export const Header = () => {
             </Link>
             <Link to="/reviews" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
               Reviews
+            </Link>
+            <Link to="/claims" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+              Claims
             </Link>
             
             <Suspense fallback={<div className="text-sm font-medium text-primary">Learn</div>}>
@@ -197,15 +215,24 @@ export const Header = () => {
             <nav className="flex flex-col gap-4">
               {/* Services - expandable */}
               <div className="space-y-2">
-                <button
-                  onClick={() => setServicesExpanded(!servicesExpanded)}
-                  className="flex items-center justify-between w-full text-base font-medium text-primary hover:text-primary/80 transition-colors min-h-[44px] py-3"
-                  aria-expanded={servicesExpanded}
-                  aria-controls="mobile-services-menu"
-                >
-                  Services
-                  <ChevronDown className={`h-5 w-5 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
-                </button>
+                <div className="flex items-center justify-between">
+                  <Link
+                    to="/services"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-base font-medium text-primary hover:text-primary/80 transition-colors min-h-[44px] py-3 flex items-center flex-1"
+                  >
+                    Services
+                  </Link>
+                  <button
+                    onClick={() => setServicesExpanded(!servicesExpanded)}
+                    className="p-3 text-primary hover:text-primary/80 transition-colors"
+                    aria-expanded={servicesExpanded}
+                    aria-controls="mobile-services-menu"
+                    aria-label="Toggle services menu"
+                  >
+                    <ChevronDown className={`h-5 w-5 transition-transform ${servicesExpanded ? 'rotate-180' : ''}`} />
+                  </button>
+                </div>
                 {servicesExpanded && (
                   <div id="mobile-services-menu" className="pl-4 space-y-1">
                     {serviceLinks.map((link) => (
@@ -221,6 +248,14 @@ export const Header = () => {
                   </div>
                 )}
               </div>
+
+              <Link 
+                to="/service-areas" 
+                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Service Areas
+              </Link>
 
               <Link 
                 to="/about" 
@@ -249,6 +284,13 @@ export const Header = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Reviews
+              </Link>
+              <Link 
+                to="/claims" 
+                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Claims
               </Link>
 
               {/* Learn - expandable */}
