@@ -388,6 +388,16 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
             Serving ZIP {city.zipCodes.length > 1 ? 'codes' : 'code'}: <span className="font-semibold text-white">{city.zipCodes.join(', ')}</span>
           </p>
           
+          {/* Local Resources Link (Rome, GA only) */}
+          {city.slug === 'rome-ga' && (
+            <p className="text-sm text-white/80 mb-6">
+              <Link to="/resources/rome-ga" className="text-white hover:text-accent underline transition-colors">
+                View Rome, GA local resources
+              </Link>
+              {" "}(DMV, police, courts, emergency services)
+            </p>
+          )}
+          
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg" asChild>

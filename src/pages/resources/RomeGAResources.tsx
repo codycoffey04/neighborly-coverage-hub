@@ -665,6 +665,23 @@ const RomeGAResources = () => {
                 Request copies of accident reports from the responding agency (Floyd County Sheriff, Rome Police, or Floyd County Police). Georgia accident reports can also be requested online through the Georgia Open Records portal.
               </p>
             </div>
+
+            {/* Insurance Services Link */}
+            <div className="border-l-4 border-accent pl-6 py-4">
+              <h3 className="text-xl font-semibold text-primary mb-2">
+                Need Insurance Coverage in Rome?
+              </h3>
+              <p className="text-muted-foreground mb-3">
+                Learn about our insurance services for Rome, GA residents — auto, home, renters, and life insurance with local expertise.
+              </p>
+              <Link 
+                to="/rome-ga" 
+                className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors font-medium"
+              >
+                View Rome Insurance Services
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
