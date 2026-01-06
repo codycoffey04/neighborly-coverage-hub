@@ -73,7 +73,7 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <div className="flex items-center group">
+            <div className="flex items-center group relative">
               <Link 
                 to="/services"
                 className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
@@ -107,10 +107,6 @@ export const Header = () => {
               </NavigationMenu>
             </div>
             
-            <Link to="/service-areas" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-              Service Areas
-            </Link>
-            
             <Link to="/about" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
               About
             </Link>
@@ -122,9 +118,6 @@ export const Header = () => {
             </Link>
             <Link to="/reviews" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
               Reviews
-            </Link>
-            <Link to="/claims" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-              Claims
             </Link>
             
             <Suspense fallback={<div className="text-sm font-medium text-primary">Learn</div>}>
@@ -250,14 +243,6 @@ export const Header = () => {
               </div>
 
               <Link 
-                to="/service-areas" 
-                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Service Areas
-              </Link>
-
-              <Link 
                 to="/about" 
                 className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
                 onClick={() => setMobileMenuOpen(false)}
@@ -284,13 +269,6 @@ export const Header = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Reviews
-              </Link>
-              <Link 
-                to="/claims" 
-                className="text-base font-medium text-primary hover:text-primary/80 transition-colors py-3 min-h-[44px] flex items-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Claims
               </Link>
 
               {/* Learn - expandable */}
