@@ -229,13 +229,13 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>Frequently Asked Questions | Coffey Agencies</title>
-        <meta name="description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
+        <title>Insurance FAQ | Common Questions | Coffey Agencies</title>
+        <meta name="description" content="Get answers to frequently asked questions about auto, home, life, and specialty insurance. Learn about coverage, claims, and policies from Coffey Agencies." />
         <link rel="canonical" href="https://coffeyagencies.com/faq" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Frequently Asked Questions | Coffey Agencies" />
-        <meta property="og:description" content="Get answers to common insurance questions about auto, home, renters, condo, and life insurance in Alabama and Georgia." />
+        <meta property="og:title" content="Insurance FAQ | Common Questions | Coffey Agencies" />
+        <meta property="og:description" content="Get answers to frequently asked questions about auto, home, life, and specialty insurance. Learn about coverage, claims, and policies from Coffey Agencies." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/faq" />
         <meta property="og:site_name" content="Coffey Agencies" />

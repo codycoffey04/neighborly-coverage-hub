@@ -247,12 +247,12 @@ const MobileHomeInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Mobile Home Insurance Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Mobile home insurance in Alabama & Georgia. We work with carriers that specialize in manufactured homes — get multiple quotes with one call." />
+        <title>Mobile Home Insurance Centre AL & Rome GA | Coffey Agencies</title>
+        <meta name="description" content="Specialized mobile home and manufactured home insurance in Alabama & Georgia. Protect your home with coverage from Coffey Agencies. Get a free quote." />
         <link rel="canonical" href="https://coffeyagencies.com/services/mobile-home-insurance" />
         
-        <meta property="og:title" content="Mobile Home Insurance Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Mobile home insurance in Alabama & Georgia. We work with carriers that specialize in manufactured homes — get multiple quotes with one call." />
+        <meta property="og:title" content="Mobile Home Insurance Centre AL & Rome GA | Coffey Agencies" />
+        <meta property="og:description" content="Specialized mobile home and manufactured home insurance in Alabama & Georgia. Protect your home with coverage from Coffey Agencies. Get a free quote." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/mobile-home-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />

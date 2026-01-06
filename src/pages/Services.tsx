@@ -122,12 +122,12 @@ const Services = () => {
     <>
       <Helmet>
         <title>Insurance Services | Auto, Home, Life & More | Coffey Agencies</title>
-        <meta name="description" content="Insurance services in Alabama & Georgia. Auto, home, renters, condo, life, motorcycle, boat, ATV coverage. 4.7★ (117+ reviews). Compare quotes from 25+ carriers." />
+        <meta name="description" content="Explore our full range of insurance services: auto, home, life, renters, boat, motorcycle, ATV/UTV, condo, and mobile home coverage across Alabama & Georgia." />
         <link rel="canonical" href="https://coffeyagencies.com/services" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Insurance Services | Auto, Home, Life & More | Coffey Agencies" />
-        <meta property="og:description" content="Insurance services in Alabama & Georgia. Auto, home, renters, condo, life, motorcycle, boat, ATV coverage. 4.7★ (117+ reviews). Compare quotes from 25+ carriers." />
+        <meta property="og:description" content="Explore our full range of insurance services: auto, home, life, renters, boat, motorcycle, ATV/UTV, condo, and mobile home coverage across Alabama & Georgia." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -173,7 +173,7 @@ const Services = () => {
           </Breadcrumb>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-            Insurance Services
+            Our Insurance Services
           </h1>
           <p className="text-xl text-white/90 max-w-3xl leading-relaxed drop-shadow-md">
             Coverage that fits your life — not the other way around. We represent 25+ top-rated carriers to find you the right protection at the right price.

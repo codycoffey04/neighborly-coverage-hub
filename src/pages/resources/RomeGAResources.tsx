@@ -48,10 +48,10 @@ const RomeGAResources = () => {
   return (
     <>
       <Helmet>
-        <title>Local Resources for Rome, GA | Floyd County | Coffey Agencies</title>
+        <title>Insurance in Rome, GA | Local Coverage | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="DMV, police, courts, emergency services, and more for Floyd County, Georgia. Your local resource guide from Coffey Agencies in Rome." 
+          content="Coffey Agencies has served Rome, Georgia since 2012. Local insurance expertise for Floyd County. Auto, home, life & specialty coverage." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/resources/rome-ga" />
         
@@ -93,7 +93,7 @@ const RomeGAResources = () => {
         <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
-              Local Resources for Rome, GA & Floyd County
+              Insurance in Rome, GA
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-md">
               Quick access to DMV offices, law enforcement, courts, emergency services, and more — all in one place.

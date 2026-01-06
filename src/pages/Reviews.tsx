@@ -245,13 +245,13 @@ const Reviews = () => {
   return (
     <>
       <Helmet>
-        <title>Customer Reviews | 4.7★ Rating | Coffey Agencies</title>
-        <meta name="description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (117 reviews) and 4.6★ in Rome, GA (93 reviews). See why families trust us." />
+        <title>Customer Reviews | Coffey Agencies</title>
+        <meta name="description" content="See what our customers say about Coffey Agencies. Read reviews from policyholders across Centre, AL, Rome, GA, and 33 cities in Alabama & Georgia." />
         <link rel="canonical" href="https://coffeyagencies.com/reviews" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Customer Reviews | 4.7★ Rating | Coffey Agencies" />
-        <meta property="og:description" content="Read customer reviews for Coffey Agencies. 4.7★ in Centre, AL (117 reviews) and 4.6★ in Rome, GA (93 reviews). See why families trust us." />
+        <meta property="og:title" content="Customer Reviews | Coffey Agencies" />
+        <meta property="og:description" content="See what our customers say about Coffey Agencies. Read reviews from policyholders across Centre, AL, Rome, GA, and 33 cities in Alabama & Georgia." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/reviews" />
         <meta property="og:site_name" content="Coffey Agencies" />

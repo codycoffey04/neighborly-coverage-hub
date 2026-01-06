@@ -139,13 +139,13 @@ const ServiceAreas = () => {
       breadcrumbs={[{ label: "Service Areas", href: "/service-areas" }]}
     >
       <Helmet>
-        <title>Service Areas - 34 Cities in Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Coffey Agencies serves 34 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
+        <title>Service Areas | 33 Cities in Alabama & Georgia | Coffey Agencies</title>
+        <meta name="description" content="Coffey Agencies serves 33 cities across Alabama and Georgia. Find insurance coverage in your area from our offices in Centre, AL and Rome, GA." />
         <link rel="canonical" href="https://coffeyagencies.com/service-areas" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Service Areas - 34 Cities in Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Coffey Agencies serves 34 cities across Alabama and Georgia with offices in Centre, AL and Rome, GA. Find local insurance coverage near you." />
+        <meta property="og:title" content="Service Areas | 33 Cities in Alabama & Georgia | Coffey Agencies" />
+        <meta property="og:description" content="Coffey Agencies serves 33 cities across Alabama and Georgia. Find insurance coverage in your area from our offices in Centre, AL and Rome, GA." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/service-areas" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -168,7 +168,7 @@ const ServiceAreas = () => {
         <div className="container mx-auto max-w-6xl">
           {/* Page Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Service Areas</h2>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Areas We Serve</h1>
             <p className="text-lg text-muted-foreground">
               Two convenient office locations and comprehensive coverage across Alabama and Georgia. 
               Wherever you are, we're here to help.

@@ -49,10 +49,10 @@ const CentreALResources = () => {
   return (
     <>
       <Helmet>
-        <title>Local Resources for Centre, AL | Cherokee County | Coffey Agencies</title>
+        <title>Insurance in Centre, AL | Local Coverage | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="DMV, police, courts, emergency services, and more for Cherokee County, Alabama. Your local resource guide from Coffey Agencies in Centre." 
+          content="Coffey Agencies has served Centre, Alabama since 2009. Get local insurance expertise for Cherokee County residents. Auto, home, life & more." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/resources/centre-al" />
         
@@ -94,7 +94,7 @@ const CentreALResources = () => {
         <div className="relative z-10 w-full py-16 px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
-              Local Resources for Centre, AL & Cherokee County
+              Insurance in Centre, AL
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 drop-shadow-md">
               Quick access to DMV offices, law enforcement, courts, emergency services, and more — all in one place.

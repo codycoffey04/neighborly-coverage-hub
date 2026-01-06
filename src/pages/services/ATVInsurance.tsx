@@ -310,10 +310,10 @@ const ATVInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>ATV Insurance Alabama & Georgia | Coffey Agencies</title>
+        <title>ATV & UTV Insurance Centre AL & Rome GA | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="ATV & UTV insurance in Alabama & Georgia. Four-wheelers, side-by-sides, dirt bikes. Local trails coverage. 4.7★ (117+ reviews). Free quotes." 
+          content="Cover your ATV, UTV, or side-by-side with insurance from Coffey Agencies. Off-road vehicle protection for riders in Alabama & Georgia. Get a free quote." 
         />
         <meta name="keywords" content="ATV insurance Alabama, UTV insurance, side-by-side insurance, four-wheeler insurance, off-road vehicle insurance, dirt bike insurance, Polaris insurance, Can-Am insurance" />
         <link rel="canonical" href="https://coffeyagencies.com/services/atv-utv-insurance" />

@@ -113,13 +113,13 @@ const Learn = () => {
   return (
     <>
       <Helmet>
-        <title>Insurance Learning Center | Coffey Agencies</title>
-        <meta name="description" content="Expert insurance guides covering auto, home, renters, condo, and life insurance in Alabama and Georgia. Plain English answers to your coverage questions." />
+        <title>Insurance Learning Center | Guides & Tips | Coffey Agencies</title>
+        <meta name="description" content="Learn about insurance with guides, tips, and educational articles from Coffey Agencies. Make informed decisions about your auto, home, and life coverage." />
         <link rel="canonical" href="https://coffeyagencies.com/learn" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Insurance Learning Center | Coffey Agencies" />
-        <meta property="og:description" content="Expert insurance guides covering auto, home, renters, condo, and life insurance in Alabama and Georgia. Plain English answers to your coverage questions." />
+        <meta property="og:title" content="Insurance Learning Center | Guides & Tips | Coffey Agencies" />
+        <meta property="og:description" content="Learn about insurance with guides, tips, and educational articles from Coffey Agencies. Make informed decisions about your auto, home, and life coverage." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/learn" />
         <meta property="og:site_name" content="Coffey Agencies" />

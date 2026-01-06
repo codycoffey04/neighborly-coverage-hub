@@ -305,10 +305,10 @@ const BoatInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Boat Insurance Alabama & Georgia | Coffey Agencies</title>
+        <title>Boat Insurance Centre AL & Rome GA | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Boat insurance for Alabama & Georgia lakes. Weiss Lake, Allatoona, Lanier coverage. Pontoons, bass boats, jet skis. 4.7★ (117+ reviews). Free quotes." 
+          content="Protect your boat with comprehensive coverage from Coffey Agencies. Watercraft insurance for Weiss Lake, Lake Allatoona & beyond. Get your free quote today." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/boat-insurance" />
         <meta property="og:title" content="Boat Insurance Alabama & Georgia | Coffey Agencies" />

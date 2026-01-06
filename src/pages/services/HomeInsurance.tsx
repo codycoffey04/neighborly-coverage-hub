@@ -274,13 +274,13 @@ const HomeInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Home Insurance Alabama & Georgia | Homeowners Coverage | Coffey Agencies</title>
-        <meta name="description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating (117+ reviews). Serving AL & GA families." />
+        <title>Home Insurance Centre AL & Rome GA | Coffey Agencies</title>
+        <meta name="description" content="Protect your home with coverage from Coffey Agencies. Dwelling, personal property, liability & more for homeowners in Alabama & Georgia. Get a free quote." />
         <link rel="canonical" href="https://coffeyagencies.com/services/home-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Home Insurance Alabama & Georgia | Homeowners Coverage | Coffey Agencies" />
-        <meta property="og:description" content="Homeowners insurance quotes in Alabama & Georgia. Compare home insurance rates, coverage options, bundle discounts. 4.7★ Google rating. Serving AL & GA families." />
+        <meta property="og:title" content="Home Insurance Centre AL & Rome GA | Coffey Agencies" />
+        <meta property="og:description" content="Protect your home with coverage from Coffey Agencies. Dwelling, personal property, liability & more for homeowners in Alabama & Georgia. Get a free quote." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/home-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />

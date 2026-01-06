@@ -173,10 +173,10 @@ const Claims = () => {
   return (
     <>
       <Helmet>
-        <title>How to File an Insurance Claim | Coffey Agencies Inc.</title>
+        <title>File an Insurance Claim | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Step-by-step guidance for filing auto, home, renters, condo, or life insurance claims. Call Coffey Agencies first — we'll help you through the process." 
+          content="Need to file an Allstate insurance claim? We'll guide you through the process. Contact Coffey Agencies in Centre, AL or Rome, GA for claims assistance." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/claims" />
         
@@ -234,7 +234,7 @@ const Claims = () => {
             </nav>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-              Need to File a Claim? We're Here to Help.
+              File a Claim
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               Accidents and losses are stressful. You don't have to figure this out alone — call us first and we'll guide you through every step.

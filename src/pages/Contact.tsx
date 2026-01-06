@@ -246,13 +246,13 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Coffey Agencies | Alabama & Georgia Insurance</title>
-        <meta name="description" content="Contact Coffey Agencies for insurance quotes. 4.7★ (117+ reviews). Offices in Centre, AL (256) 927-6287 and Rome, GA (706) 784-6511. Free quote today." />
+        <title>Contact Coffey Agencies | Centre, AL & Rome, GA</title>
+        <meta name="description" content="Get in touch with Coffey Agencies. Call Centre, AL at (256) 927-6287 or Rome, GA at (706) 784-6511. Request a free insurance quote today." />
         <link rel="canonical" href="https://coffeyagencies.com/contact" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Contact Us | Coffey Agencies | Alabama & Georgia Insurance" />
-        <meta property="og:description" content="Contact Coffey Agencies for insurance quotes. 4.7★ (117+ reviews). Offices in Centre, AL (256) 927-6287 and Rome, GA (706) 784-6511. Free quote today." />
+        <meta property="og:title" content="Contact Coffey Agencies | Centre, AL & Rome, GA" />
+        <meta property="og:description" content="Get in touch with Coffey Agencies. Call Centre, AL at (256) 927-6287 or Rome, GA at (706) 784-6511. Request a free insurance quote today." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/contact" />
         <meta property="og:site_name" content="Coffey Agencies" />

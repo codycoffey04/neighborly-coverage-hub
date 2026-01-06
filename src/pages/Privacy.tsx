@@ -52,13 +52,13 @@ const Privacy = () => {
       breadcrumbs={[{ label: "Privacy Policy", href: "/privacy" }]}
     >
       <Helmet>
-        <title>Privacy Policy | Coffey Agencies Inc.</title>
-        <meta name="description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
+        <title>Privacy Policy | Coffey Agencies</title>
+        <meta name="description" content="Read the Coffey Agencies privacy policy. Learn how we collect, use, and protect your personal information when you use our insurance services." />
         <link rel="canonical" href="https://coffeyagencies.com/privacy" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Privacy Policy | Coffey Agencies Inc." />
-        <meta property="og:description" content="Privacy policy for Coffey Agencies Inc. Learn how we collect, use, and protect your personal information." />
+        <meta property="og:title" content="Privacy Policy | Coffey Agencies" />
+        <meta property="og:description" content="Read the Coffey Agencies privacy policy. Learn how we collect, use, and protect your personal information when you use our insurance services." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/privacy" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -81,6 +81,8 @@ const Privacy = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="space-y-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Privacy Policy</h1>
+            
             {/* Last Updated */}
             <p className="text-muted-foreground">
               Last updated: October 14, 2025

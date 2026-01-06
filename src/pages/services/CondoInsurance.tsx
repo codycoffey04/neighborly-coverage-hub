@@ -363,10 +363,10 @@ const CondoInsurance = () => {
       <Header />
 
       <Helmet>
-        <title>Condo Insurance Alabama & Georgia | HO-6 Coverage | Coffey Agencies</title>
+        <title>Condo Insurance Centre AL & Rome GA | Coffey Agencies</title>
         <meta 
           name="description" 
-          content="Condo insurance (HO-6) in Alabama & Georgia. Walls-in coverage, belongings, liability, loss assessment. 4.7★ (117+ reviews). Get a free quote." 
+          content="Condo insurance to protect your unit, belongings & liability. Coverage that works with your HOA policy in Alabama & Georgia. Contact Coffey Agencies today." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/services/condo-insurance" />
         

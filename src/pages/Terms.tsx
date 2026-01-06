@@ -48,13 +48,13 @@ const Terms = () => {
       breadcrumbs={[{ label: "Terms of Service", href: "/terms" }]}
     >
       <Helmet>
-        <title>Terms of Service | Coffey Agencies Inc.</title>
-        <meta name="description" content="Terms of service for Coffey Agencies Inc. Read our terms and conditions for using our website and services." />
+        <title>Terms of Service | Coffey Agencies</title>
+        <meta name="description" content="Review the terms of service for Coffey Agencies website and insurance services. Understand your rights and responsibilities as a customer." />
         <link rel="canonical" href="https://coffeyagencies.com/terms" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Terms of Service | Coffey Agencies Inc." />
-        <meta property="og:description" content="Terms of service for Coffey Agencies Inc. Read our terms and conditions for using our website and services." />
+        <meta property="og:title" content="Terms of Service | Coffey Agencies" />
+        <meta property="og:description" content="Review the terms of service for Coffey Agencies website and insurance services. Understand your rights and responsibilities as a customer." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/terms" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -75,6 +75,8 @@ const Terms = () => {
       </Helmet>
 
       <div className="max-w-4xl mx-auto space-y-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Terms of Service</h1>
+        
         <p className="text-sm text-muted-foreground">
           Last updated: October 14, 2025
         </p>

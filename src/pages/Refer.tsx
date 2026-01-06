@@ -71,10 +71,10 @@ const Refer = () => {
   return (
     <>
       <Helmet>
-        <title>Refer a Friend | Coffey Agencies</title>
+        <title>Refer a Friend | Coffey Agencies Referral Program</title>
         <meta 
           name="description" 
-          content="Know someone who needs an insurance quote? Refer them to Coffey Agencies and get a gift card as our thanks. No purchase necessary." 
+          content="Know someone who needs insurance? Refer them to Coffey Agencies and help your friends and family get great coverage in Alabama & Georgia." 
         />
         <link rel="canonical" href="https://coffeyagencies.com/refer" />
         <script type="application/ld+json">

@@ -235,13 +235,13 @@ const georgiaCities = [
   return (
     <>
       <Helmet>
-        <title>Life Insurance Quotes Alabama & Georgia | Term, Whole Life & More | Coffey Agencies</title>
-        <meta name="description" content="Life insurance in Alabama & Georgia. Term life, whole life, final expense options. No-exam available. 4.7★ Google rating (117+ reviews). Protect your family today." />
+        <title>Life Insurance Centre AL & Rome GA | Coffey Agencies</title>
+        <meta name="description" content="Secure your family's future with life insurance from Coffey Agencies. Term, whole life & universal options available in Alabama & Georgia. Free consultation." />
         <link rel="canonical" href="https://coffeyagencies.com/services/life-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Life Insurance Quotes Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Term life, whole life, final expense & burial insurance in AL & GA. No-exam options available. Protect your family's financial security." />
+        <meta property="og:title" content="Life Insurance Centre AL & Rome GA | Coffey Agencies" />
+        <meta property="og:description" content="Secure your family's future with life insurance from Coffey Agencies. Term, whole life & universal options available in Alabama & Georgia. Free consultation." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/life-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />

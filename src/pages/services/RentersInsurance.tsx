@@ -251,13 +251,13 @@ const RentersInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Renters Insurance Alabama & Georgia | Coffey Agencies</title>
-        <meta name="description" content="Renters insurance from $8/mo in Alabama & Georgia. Protect belongings, liability, temporary housing. 4.7★ (117+ reviews). Bundle with auto & save." />
+        <title>Renters Insurance Centre AL & Rome GA | Coffey Agencies</title>
+        <meta name="description" content="Affordable renters insurance to protect your belongings. Personal property, liability & additional living expenses coverage in Alabama & Georgia. Get a quote." />
         <link rel="canonical" href="https://coffeyagencies.com/services/renters-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Renters Insurance Alabama & Georgia | Coffey Agencies" />
-        <meta property="og:description" content="Renters insurance from $8/mo in Alabama & Georgia. Protect belongings, liability, temporary housing. 4.7★ (117+ reviews). Bundle with auto & save." />
+        <meta property="og:title" content="Renters Insurance Centre AL & Rome GA | Coffey Agencies" />
+        <meta property="og:description" content="Affordable renters insurance to protect your belongings. Personal property, liability & additional living expenses coverage in Alabama & Georgia. Get a quote." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/renters-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
