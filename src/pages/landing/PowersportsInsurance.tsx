@@ -83,6 +83,12 @@ const PowersportsInsurance = () => {
   const product = searchParams.get("product") || "default";
   const loc = searchParams.get("loc") || "al";
 
+  // UTM tracking parameters
+  const utmSource = searchParams.get("utm_source") || "";
+  const utmMedium = searchParams.get("utm_medium") || "";
+  const utmCampaign = searchParams.get("utm_campaign") || "";
+  const utmContent = searchParams.get("utm_content") || "";
+
   const currentPhone = phones[loc] || phones.al;
   const currentHeadline = headlines[product] || headlines.default;
   const currentHeroImage = heroImages[product] || heroImages.default;
@@ -405,8 +411,16 @@ const PowersportsInsurance = () => {
             >
               <input type="hidden" name="form-name" value="powersports-quote" />
               <input type="hidden" name="bot-field" />
+              
+              {/* UTM Tracking */}
+              <input type="hidden" name="utm_source" value={utmSource} />
+              <input type="hidden" name="utm_medium" value={utmMedium} />
+              <input type="hidden" name="utm_campaign" value={utmCampaign} />
+              <input type="hidden" name="utm_content" value={utmContent} />
+              
+              {/* Page Context */}
               <input type="hidden" name="product" value={product} />
-              <input type="hidden" name="location" value={loc} />
+              <input type="hidden" name="loc" value={loc} />
 
               <input
                 type="text"
