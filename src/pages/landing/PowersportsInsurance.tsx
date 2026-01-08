@@ -70,7 +70,7 @@ const reviews = [
 
 const coverageTypes = [
   { icon: Car, title: "UTV / Side-by-Side", brands: "Polaris, Can-Am, Kawasaki" },
-  { icon: Car, title: "Golf Carts", brands: "Street-legal & off-road" },
+  { icon: Car, title: "Golf Carts", brands: "Gas & electric carts" },
   { icon: Bike, title: "Motorcycles", brands: "Harley, Indian, Sport bikes" },
   { icon: Car, title: "ATVs", brands: "Honda, Yamaha, Suzuki" }
 ];
@@ -302,7 +302,7 @@ const PowersportsInsurance = () => {
               pageType="landing_powersports"
               pageUrl={window.location.href}
             >
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold">
                 <Phone className="w-5 h-5 mr-2" />
                 Call to Discuss Your Setup
               </Button>
