@@ -156,7 +156,7 @@ const PowersportsInsurance = () => {
             pageType="landing_powersports"
             pageUrl={window.location.href}
           >
-            <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-semibold">
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </Button>
@@ -302,7 +302,7 @@ const PowersportsInsurance = () => {
               pageType="landing_powersports"
               pageUrl={window.location.href}
             >
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
                 <Phone className="w-5 h-5 mr-2" />
                 Call to Discuss Your Setup
               </Button>
