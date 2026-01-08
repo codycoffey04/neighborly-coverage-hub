@@ -322,16 +322,20 @@ const PowersportsInsurance = () => {
           </p>
 
           {/* Team Members */}
-          <div className="flex flex-wrap justify-center gap-8 mb-16 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-16 max-w-4xl mx-auto">
             {teamMembers.map((member, i) => (
-              <div key={i} className="text-center">
+              <div key={i} className="text-center w-36 md:w-44">
                 <img
                   src={member.image}
                   alt={member.name}
                   className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover mx-auto mb-3 border-4 border-white shadow-lg"
                 />
-                <h3 className="font-bold text-foreground">{member.name}</h3>
-                <p className="text-sm text-muted-foreground">{member.role}</p>
+                <h3 className="font-semibold text-foreground text-sm md:text-base leading-tight">
+                  {member.name}
+                </h3>
+                <p className="text-xs md:text-sm text-muted-foreground leading-snug mt-1">
+                  {member.role}
+                </p>
               </div>
             ))}
           </div>
