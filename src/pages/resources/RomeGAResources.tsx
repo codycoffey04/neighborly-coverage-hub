@@ -17,7 +17,8 @@ import {
   MapPin,
   Clock,
   ExternalLink,
-  CheckCircle
+  CheckCircle,
+  ArrowRight
 } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
