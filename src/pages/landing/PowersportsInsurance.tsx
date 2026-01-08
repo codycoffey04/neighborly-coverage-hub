@@ -52,19 +52,19 @@ const teamMembers = [
 
 const reviews = [
   {
-    text: "Cody made switching from GEICO painless. Saved $400/year on my side-by-side and truck combo.",
-    name: "Mark T.",
+    text: "Great experience. They cover my vehicles, RV, boat and home. Crystal makes sure I always leave satisfied.",
+    name: "John B.",
     location: "Centre, AL"
   },
   {
-    text: "Finally, an agent who actually understands powersports. No call centers, no runaround.",
-    name: "Jennifer S.",
-    location: "Rome, GA"
+    text: "Recently switched all my insurance with Cody. Customer service is impressive and rates are lower. Transition was painless.",
+    name: "Kerry G.",
+    location: "Centre, AL"
   },
   {
-    text: "They handled my golf cart claim in 3 days. Try getting that from a 1-800 number.",
-    name: "David R.",
-    location: "Cedartown, GA"
+    text: "I've been a customer since 1989. Every issue, question or claim has always been cared for quickly, friendly and professionally. Give Cody Coffey a call — you'll be glad you did.",
+    name: "Karen P.",
+    location: "Rome, GA"
   }
 ];
 
@@ -190,7 +190,7 @@ const PowersportsInsurance = () => {
           >
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 font-semibold">
               <Phone className="w-5 h-5 mr-2" />
-              Get a Quote in 5 Minutes
+              Tap to Call for a Quote
             </Button>
           </TrackedPhone>
 
@@ -598,7 +598,7 @@ const PowersportsInsurance = () => {
         >
           <Button className="w-full bg-accent hover:bg-accent/90 text-white font-semibold py-4 text-lg">
             <Phone className="w-5 h-5 mr-2" />
-            Call for a Free Quote
+            Call for Quote
           </Button>
         </TrackedPhone>
       </div>
