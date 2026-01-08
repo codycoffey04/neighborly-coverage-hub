@@ -512,7 +512,7 @@ const PowersportsInsurance = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary" />
-                    <span>Mon-Fri 8:30 AM - 5:00 PM</span>
+                <span>Mon-Fri 8:00 AM - 5:00 PM CT</span>
                   </div>
                 </div>
               </div>
@@ -551,7 +551,7 @@ const PowersportsInsurance = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary" />
-                    <span>Mon-Fri 8:30 AM - 5:00 PM</span>
+                    <span>Mon-Fri 8:30 AM - 4:30 PM ET</span>
                   </div>
                 </div>
               </div>
