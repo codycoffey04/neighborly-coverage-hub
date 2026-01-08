@@ -168,7 +168,7 @@ const PowersportsInsurance = () => {
       <section
         className="relative min-h-[600px] md:min-h-[700px] flex items-center pt-24 pb-16"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url(${currentHeroImage})`,
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.50)), url(${currentHeroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
