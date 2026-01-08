@@ -202,7 +202,7 @@ const PowersportsInsurance = () => {
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-accent fill-accent" />
-              <span>4.9 Stars</span>
+              <span>4.7 Stars</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-accent" />
@@ -322,9 +322,9 @@ const PowersportsInsurance = () => {
           </p>
 
           {/* Team Members */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 mb-16 max-w-5xl mx-auto">
             {teamMembers.map((member, i) => (
-              <div key={i} className="text-center w-36 md:w-44">
+              <div key={i} className={`text-center ${i === 4 ? 'col-span-2 md:col-span-1 max-w-[144px] mx-auto md:max-w-none' : ''}`}>
                 <img
                   src={member.image}
                   alt={member.name}
@@ -349,7 +349,7 @@ const PowersportsInsurance = () => {
                 className="w-full h-48 md:h-56 object-cover"
               />
               <div className="bg-white p-4 text-center">
-                <h3 className="font-bold text-foreground">Centre, AL Office</h3>
+                <h3 className="font-semibold text-sm text-foreground">Centre, AL Office</h3>
                 <p className="text-sm text-muted-foreground">1913 W Main Street</p>
               </div>
             </div>
@@ -360,7 +360,7 @@ const PowersportsInsurance = () => {
                 className="w-full h-48 md:h-56 object-cover"
               />
               <div className="bg-white p-4 text-center">
-                <h3 className="font-bold text-foreground">Rome, GA Office</h3>
+                <h3 className="font-semibold text-sm text-foreground">Rome, GA Office</h3>
                 <p className="text-sm text-muted-foreground">1703 Turner McCall Blvd SE</p>
               </div>
             </div>
