@@ -44,10 +44,10 @@ const phones: Record<string, { display: string; raw: string }> = {
 
 const teamMembers = [
   { name: "Cody Coffey", role: "Agency Owner", image: codyCoffey },
-  { name: "Crystal Brozio", role: "Customer Service", image: crystalBrozio },
-  { name: "Kathy Sewell", role: "Customer Service", image: kathySewell },
-  { name: "Kimberly Fletcher", role: "Customer Service", image: kimberlyFletcher },
-  { name: "Maria Rocha-Guzman", role: "Customer Service", image: mariaRochaGuzman }
+  { name: "Kimberly Fletcher", role: "Office Manager & Senior Sales Producer", image: kimberlyFletcher },
+  { name: "Crystal Brozio", role: "Customer Service Manager", image: crystalBrozio },
+  { name: "Maria Rocha-Guzman", role: "Senior Sales Producer (Bilingual)", image: mariaRochaGuzman },
+  { name: "Kathy Sewell", role: "Customer Service Specialist", image: kathySewell }
 ];
 
 const reviews = [
@@ -278,13 +278,17 @@ const PowersportsInsurance = () => {
             {coverageTypes.map((type, i) => (
               <div
                 key={i}
-                className="bg-muted rounded-xl p-6 text-center hover:shadow-lg transition-shadow"
+                className="bg-muted rounded-xl p-6 text-center hover:shadow-lg transition-shadow flex flex-col items-center min-h-[220px]"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 flex-shrink-0">
                   <type.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-bold text-foreground mb-1">{type.title}</h3>
-                <p className="text-sm text-muted-foreground">{type.brands}</p>
+                <div className="flex-1 flex flex-col justify-center">
+                  <h3 className="font-bold text-foreground text-base md:text-lg leading-tight mb-2">
+                    {type.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">{type.brands}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -474,7 +478,7 @@ const PowersportsInsurance = () => {
             {/* Centre, AL */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.4!2d-85.6794!3d34.1522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888a44fa5c1c8a8b%3A0x3e3f76de69d7c6e1!2s1909%20Main%20St%20Suite%20B%2C%20Centre%2C%20AL%2035960!5e0!3m2!1sen!2sus!4v1704067200000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.4!2d-85.6794!3d34.1522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1913%20W%20Main%20Street%2C%20Centre%2C%20AL%2035960!5e0!3m2!1sen!2sus!4v1704067200000!5m2!1sen!2sus"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}
@@ -513,7 +517,7 @@ const PowersportsInsurance = () => {
             {/* Rome, GA */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.4!2d-85.1651!3d34.2570!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888a3c9b3c9b3c9b%3A0x3e3f76de69d7c6e1!2s725%20Shorter%20Ave%2C%20Rome%2C%20GA%2030165!5e0!3m2!1sen!2sus!4v1704067200000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.4!2d-85.1651!3d34.2570!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1703%20Turner%20McCall%20Blvd%20SE%2C%20Rome%2C%20GA%2030161!5e0!3m2!1sen!2sus!4v1704067200000!5m2!1sen!2sus"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}
