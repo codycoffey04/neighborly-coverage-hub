@@ -64,6 +64,7 @@ const Privacy = lazyWithRetry(() => import("./pages/Privacy"));
 const Terms = lazyWithRetry(() => import("./pages/Terms"));
 const Refer = lazyWithRetry(() => import("./pages/Refer"));
 const ThankYou = lazyWithRetry(() => import("./pages/ThankYou"));
+const PowersportsInsurance = lazyWithRetry(() => import("./pages/landing/PowersportsInsurance"));
 
 const App = () => (
   <HelmetProvider>
@@ -107,6 +108,7 @@ const App = () => (
               <Route path="/refer" element={<Refer />} />
               <Route path="/resources/centre-al" element={<CentreALResources />} />
               <Route path="/resources/rome-ga" element={<RomeGAResources />} />
+              <Route path="/powersports-insurance" element={<PowersportsInsurance />} />
               {/* Dynamic city pages */}
               <Route path="/:citySlug" element={<CityPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
