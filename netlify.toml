@@ -5,6 +5,11 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Edge function to strip trailing slashes (runs before redirects)
+[[edge_functions]]
+  function = "strip-slash"
+  path = "/*"
+
 [[headers]]
   # Never cache HTML files - ensures meta tags, canonical tags, etc. update immediately
   for = "/*.html"
