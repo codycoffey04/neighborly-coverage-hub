@@ -462,7 +462,6 @@ const Index = () => {
     <>
       <Helmet>
         <title>Coffey Agencies | Insurance in Centre, AL & Rome, GA</title>
-        <meta name="description" content="Family-owned Allstate agency serving 33 cities across Alabama & Georgia since 2009. Auto, home, life & specialty insurance. Call (256) 927-6287 for a free quote." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
         {/* OpenGraph Meta Tags */}
