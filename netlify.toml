@@ -4,6 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  # Required for Puppeteer in Netlify build environment
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = "true"
+  PUPPETEER_EXECUTABLE_PATH = "/usr/bin/chromium-browser"
 
 # Edge function to strip trailing slashes (runs before redirects)
 [[edge_functions]]
