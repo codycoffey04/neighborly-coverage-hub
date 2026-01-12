@@ -73,7 +73,7 @@ const App = () => (
         <Toaster />
         <Sonner />
       </Suspense>
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <BrowserRouter>
         <SkipLink />
         <ScrollToTop />
         <Suspense fallback={null}>
