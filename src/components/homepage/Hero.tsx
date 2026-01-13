@@ -54,9 +54,7 @@ export const Hero = () => {
              style={{ animationDuration: '0.8s', animationDelay: '0.3s', animationFillMode: 'both' }}>
           
           {/* Main Headline */}
-          <h1 className="text-balance text-center">
-            <span className="block text-white font-[800] tracking-tight text-[clamp(2.2rem,5vw,3.5rem)] drop-shadow-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.25)' }}>Your Local Insurance Agency in Centre, AL & Rome, GA</span>
-          </h1>
+          <h1 className="text-balance text-center text-white font-[800] tracking-tight text-[clamp(2.2rem,5vw,3.5rem)] drop-shadow-lg" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.25)' }}>Your Local Insurance Agency in Centre, AL & Rome, GA</h1>
 
           {/* Subheadline */}
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/90 text-balance text-center leading-relaxed max-w-3xl mx-auto drop-shadow-md">
