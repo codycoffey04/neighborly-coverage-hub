@@ -45,9 +45,9 @@ export default defineConfig(({ mode }) => ({
     mode === "production" && prerender({
       routes: getPrerenderRoutes(),
       renderer: new puppeteerRenderer({
-        // Wait 3 seconds for lazy-loaded components to finish rendering
-        renderAfterTime: 3000,
         headless: true,
+        maxConcurrentRoutes: 1, // Process one page at a time for reliable Helmet updates
+        renderAfterTime: 5000, // Wait 5 seconds per page for Helmet to update
       }),
     }),
   ].filter(Boolean),
