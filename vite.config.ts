@@ -5,10 +5,6 @@ import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { heroImagePreload } from "./vite-plugin-hero-preload";
 import { cssPreload } from "./vite-plugin-css-preload";
-import prerender from "@prerenderer/rollup-plugin";
-import puppeteerRenderer from "@prerenderer/renderer-puppeteer";
-import { getPrerenderRoutes } from "./scripts/generate-prerender-routes.js";
-
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
@@ -41,14 +37,6 @@ export default defineConfig(({ mode }) => ({
       },
       cache: true,
       cacheLocation: '.cache/vite-plugin-image-optimizer',
-    }),
-    mode === "production" && prerender({
-      routes: getPrerenderRoutes(),
-      renderer: new puppeteerRenderer({
-        headless: true,
-        maxConcurrentRoutes: 1, // Process one page at a time for reliable Helmet updates
-        renderAfterTime: 5000, // Wait 5 seconds per page for Helmet to update
-      }),
     }),
   ].filter(Boolean),
   resolve: {
