@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { useToast } from "@/hooks/use-toast";
+import { TrackedPhone } from "@/components/shared/TrackedPhone";
 
 // Lazy load heavy form components (Radix UI Select, Input, Label - only needed when form is visible)
 const Input = lazy(() => import("@/components/ui/input").then(m => ({ default: m.Input })));
@@ -198,13 +199,31 @@ export const FinalCTA = () => {
           {/* Phone Alternative */}
           <p className="text-center text-white/90 mt-6 text-sm">
             Prefer to call?{" "}
-            <a href="tel:2569276287" className="text-white hover:text-accent underline transition-colors">
+            <TrackedPhone
+              phone="(256) 927-6287"
+              phoneRaw="2569276287"
+              location="Centre, AL"
+              office="centre"
+              pageType="final-cta"
+              pageUrl={location.pathname}
+              className="text-white hover:text-accent underline transition-colors"
+              ariaLabel="Call Centre, Alabama office at (256) 927-6287"
+            >
               (256) 927-6287
-            </a>
+            </TrackedPhone>
             {" "}or{" "}
-            <a href="tel:7067846511" className="text-white hover:text-accent underline transition-colors">
+            <TrackedPhone
+              phone="(706) 784-6511"
+              phoneRaw="7067846511"
+              location="Rome, GA"
+              office="rome"
+              pageType="final-cta"
+              pageUrl={location.pathname}
+              className="text-white hover:text-accent underline transition-colors"
+              ariaLabel="Call Rome, Georgia office at (706) 784-6511"
+            >
               (706) 784-6511
-            </a>
+            </TrackedPhone>
           </p>
 
           {/* Trust Indicators */}
