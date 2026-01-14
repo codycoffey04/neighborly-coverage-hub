@@ -1,3 +1,12 @@
+# Query string cleanup - strip ?form=basic parameter
+# These URLs are being crawled with query params and causing canonical issues in GSC
+/?form=basic    /    301!
+/quote?form=basic    /quote    301!
+/insurance/*?form=basic    /insurance/:splat    301!
+
+# Legacy URL redirects
+/quote.html    /quote    301!
+
 # Service page redirects - redirect common variations to full URLs
 /services/auto    /services/auto-insurance    301
 /services/home    /services/home-insurance    301
