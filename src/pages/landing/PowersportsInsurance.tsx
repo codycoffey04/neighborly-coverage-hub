@@ -28,13 +28,6 @@ import centreOffice from "@/assets/powersports/centre-office.png";
 import romeOffice from "@/assets/powersports/rome-office.jpg";
 
 // Configuration
-const headlines: Record<string, string> = {
-  utv: "Protect Your Side-by-Side Without the Call Center Runaround",
-  golfcart: "Golf Cart Insurance That Actually Covers What Matters",
-  motorcycle: "Real Coverage for Your Harley from Local Agents",
-  atv: "ATV Insurance Made Simple. Local Service, Real Protection.",
-  default: "Affordable Insurance for Your Toys in Alabama & Georgia"
-};
 
 const heroImages: Record<string, string> = {
   utv: heroUtv,
@@ -97,7 +90,7 @@ const PowersportsInsurance = () => {
   const utmContent = searchParams.get("utm_content") || "";
 
   const currentPhone = phones[loc] || phones.al;
-  const currentHeadline = headlines[product] || headlines.default;
+  
   const currentHeroImage = heroImages[product] || heroImages.default;
 
   // Scroll listener for sticky header
