@@ -175,10 +175,10 @@ const PowersportsInsurance = () => {
       >
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 max-w-4xl mx-auto leading-tight">
-            {currentHeadline}
+            UTV, Golf Cart & Motorcycle Insurance — Alabama & Georgia
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Skip the 1-800 numbers. Talk to a real person at our Centre or Rome office.
+            Local agents. Same-day quotes. No 1-800 runaround.
           </p>
           <TrackedPhone
             phone={currentPhone.display}
@@ -190,9 +190,14 @@ const PowersportsInsurance = () => {
           >
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 font-semibold">
               <Phone className="w-5 h-5 mr-2" />
-              Tap to Call for a Quote
+              Get a Quote in 10 Minutes
             </Button>
           </TrackedPhone>
+          
+          {/* No-obligation reassurance */}
+          <p className="text-white/90 text-sm mt-4">
+            ✓ Free quote, no obligation
+          </p>
 
           {/* Trust Badges */}
           <div className="flex flex-wrap justify-center gap-6 md:gap-10 mt-12 text-sm md:text-base">
