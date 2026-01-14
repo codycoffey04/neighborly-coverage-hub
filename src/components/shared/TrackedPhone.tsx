@@ -15,6 +15,7 @@ interface TrackedPhoneProps {
 declare global {
   interface Window {
     dataLayer?: Array<Record<string, unknown>>;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -41,6 +42,18 @@ export const TrackedPhone = ({
         page_type: pageType || "unknown",
         page_url: pageUrl || window.location.href,
         timestamp: new Date().toISOString(),
+      });
+    }
+    
+    // Direct GA4 tracking via gtag
+    if (window.gtag) {
+      window.gtag('event', 'click_to_call', {
+        event_category: 'engagement',
+        event_label: phone,
+        phone_number: phone,
+        location: location || "Unknown",
+        office: office || "unknown",
+        page_type: pageType || "unknown"
       });
     }
   };

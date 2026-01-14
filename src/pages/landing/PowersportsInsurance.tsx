@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, unknown>>;
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 import { Helmet } from "react-helmet-async";
 import { Phone, MapPin, Clock, Star, Shield, Users, Headphones, X, Check, Car, Bike } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -125,8 +132,57 @@ const PowersportsInsurance = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData as any).toString()
     })
-      .then(() => setFormSubmitted(true))
+      .then(() => {
+        setFormSubmitted(true);
+        
+        // GA4 form submission tracking
+        if (window.gtag) {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'form',
+            event_label: 'powersports_callback_form',
+            form_name: 'powersports-quote',
+            vehicle_type: formData.get('vehicle-type'),
+            utm_source: utmSource,
+            utm_medium: utmMedium,
+            utm_campaign: utmCampaign
+          });
+        }
+        
+        // Also push to dataLayer for GTM
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: 'form_submission',
+            form_name: 'powersports-quote',
+            vehicle_type: formData.get('vehicle-type'),
+            utm_source: utmSource,
+            utm_medium: utmMedium,
+            utm_campaign: utmCampaign
+          });
+        }
+      })
       .catch((error) => console.error("Form submission error:", error));
+  };
+
+  const handleOutboundClick = () => {
+    // GA4 outbound link tracking
+    if (window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'outbound',
+        event_label: 'coffeyagencies_main_site',
+        link_url: 'https://coffeyagencies.com',
+        page_location: window.location.href
+      });
+    }
+    
+    // Also push to dataLayer for GTM
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'outbound_click',
+        link_url: 'https://coffeyagencies.com',
+        link_text: 'Learn more about Coffey Agencies',
+        page_url: window.location.href
+      });
+    }
   };
 
   return (
@@ -589,6 +645,21 @@ const PowersportsInsurance = () => {
           </TrackedPhone>
         </div>
       </section>
+
+      {/* Minimal Footer */}
+      <footer className="py-8 bg-muted border-t border-border">
+        <div className="container mx-auto px-4 text-center">
+          <a 
+            href="https://coffeyagencies.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleOutboundClick}
+            className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1"
+          >
+            Learn more about Coffey Agencies →
+          </a>
+        </div>
+      </footer>
 
       {/* Sticky Mobile Footer */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.15)]">
