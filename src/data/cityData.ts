@@ -1066,9 +1066,9 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car & Home Insurance in Tuscaloosa, AL | Coffey Agencies",
-    customHeroTitle: "Car Insurance Tuscaloosa AL — Auto, Home & Renters Insurance Quotes",
-    customHeroSubhead: "Car insurance for drivers navigating McFarland Boulevard and gameday traffic around Bryant-Denny Stadium, homeowners coverage built for tornado alley, and renters insurance designed for 42,000 UA students protecting everything from laptops to furniture. Coffey Agencies delivers 4.7-star rated service to the Druid City. Se habla español.",
+    customMetaTitle: "Car Insurance Tuscaloosa AL - Auto & Home Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Car Insurance Tuscaloosa - Auto Insurance Quotes",
+    customHeroSubhead: "Car insurance Tuscaloosa AL drivers trust. Auto insurance for McFarland Boulevard commuters and gameday traffic. Homeowners coverage for tornado alley. Renters insurance for 42,000 UA students. 4.7★ Google rating. Se habla español.",
     introduction: [
       "Looking for car insurance Tuscaloosa AL drivers can count on? Coffey Agencies provides auto insurance Tuscaloosa families trust — from UA students needing their first policy to longtime residents protecting their homes near the Black Warrior River. Whether you need car insurance in Tuscaloosa for your McFarland Boulevard commute or gameday traffic around Bryant-Denny, we shop multiple carriers to find your best rate. As your local insurance Tuscaloosa agency with 200+ reviews, we make coverage simple. Tuscaloosa combines a major SEC university, a Mercedes-Benz manufacturing hub, and one of the most tornado-active regions in the country. The city's 114,000 permanent residents share space with 42,000 University of Alabama students, creating a population that swells dramatically during football season and shifts substantially between semesters. Tuscaloosa County's economy depends on UA, the Mercedes-Benz plant in Vance (6,000+ employees), DCH Regional Medical Center, and a network of automotive suppliers stretching along the I-20/I-59 corridor. That economic diversity creates equally diverse insurance needs—from young drivers on University Boulevard to homeowners rebuilding tornado-resistant structures after April 2011's devastation. Coffey Agencies has served Alabama families since 2009, combining digital convenience with licensed agents who actually answer the phone."
     ],
