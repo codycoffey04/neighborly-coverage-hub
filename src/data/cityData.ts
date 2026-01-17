@@ -147,9 +147,9 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(256) 927-6287",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car Insurance Decatur AL — Auto & Home Insurance Quotes | Coffey Agencies",
-    customHeroTitle: "Car Insurance Decatur AL — Cheap Auto Insurance Quotes",
-    customHeroSubhead: "Auto insurance for Decatur drivers and Tennessee River commuters, homeowners coverage built for Morgan County storms and flood zones, motorcycle insurance for Wheeler Refuge routes. 4.7★ rated. Se habla español. Call 256-927-6287.",
+    customMetaTitle: "Auto Insurance Decatur AL - Car Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Auto Insurance in Decatur, AL - Car Insurance Quotes",
+    customHeroSubhead: "Auto insurance Decatur AL and car insurance Decatur AL from your local agent. Decatur car insurance quotes in minutes. Homeowners coverage for Morgan County. 4.7★ Google rating. Se habla español.",
     introduction: [
       "Looking for car insurance Decatur AL that fits a working family's budget? Coffey Agencies provides auto insurance decatur drivers trust — from Nucor Steel shift workers to ULA rocket engineers commuting across the Tennessee River bridges. Whether you need auto insurance decatur al for your daily drive to the industrial corridor or coverage for a teen driver, we shop multiple carriers to find your best rate. As your local decatur car insurance agency with 200+ Google reviews, we make coverage simple. Decatur straddles the Tennessee River in Morgan and Limestone counties, earning its \"River City\" nickname from Wheeler Lake and the waterway that's shaped local industry since the 1800s. The city's 58,000 residents work at some of North Alabama's most significant employers—United Launch Alliance assembles Atlas and Vulcan rockets in a 2.4-million-square-foot facility, Nucor Steel produces structural steel for construction nationwide, 3M manufactures industrial products, and GE Appliances employs 1,400. That industrial base creates insurance needs distinct from nearby Huntsville: shift workers driving bridge crossings at odd hours, homeowners in flood-adjacent neighborhoods along Wheeler Lake, and families balancing coverage costs against manufacturing wages. Coffey Agencies has served Alabama since 2009, providing Decatur residents the same responsive service whether you're clocking in at the ULA plant or commuting to Huntsville's tech corridor 25 miles east."
     ],
