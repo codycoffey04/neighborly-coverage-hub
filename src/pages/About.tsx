@@ -430,13 +430,13 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Coffey Agencies | Family-Owned Since 2009</title>
-        <meta name="description" content="Meet the Coffey family - serving Centre, AL since 2009 and Rome, GA since 2012. Learn why thousands trust us for their insurance needs across Alabama & Georgia." />
+        <title>About Coffey Agencies | Auto Insurance Agency Since 2009</title>
+        <meta name="description" content="Meet the Coffey family - your local auto insurance agency serving Centre, AL since 2009 and Rome, GA since 2012. Learn why thousands trust us for their insurance needs." />
         <link rel="canonical" href="https://coffeyagencies.com/about" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="About Coffey Agencies | Family-Owned Since 2009" />
-        <meta property="og:description" content="Meet the Coffey family - serving Centre, AL since 2009 and Rome, GA since 2012. Learn why thousands trust us for their insurance needs across Alabama & Georgia." />
+        <meta property="og:title" content="About Coffey Agencies | Auto Insurance Agency Since 2009" />
+        <meta property="og:description" content="Meet the Coffey family - your local auto insurance agency serving Centre, AL since 2009 and Rome, GA since 2012. Learn why thousands trust us for their insurance needs." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/about" />
         <meta property="og:site_name" content="Coffey Agencies" />
