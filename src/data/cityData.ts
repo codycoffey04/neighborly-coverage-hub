@@ -1918,9 +1918,9 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customMetaTitle: "Car Insurance Rockmart GA - Auto Insurance Quotes | Coffey Agencies",
-    customHeroTitle: "Car Insurance in Rockmart, GA",
-    customHeroSubhead: "Auto insurance Rockmart GA 30153, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
+    customMetaTitle: "Auto Insurance Rockmart GA - Car Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Auto Insurance in Rockmart, GA - Car Insurance Quotes",
+    customHeroSubhead: "Auto insurance Rockmart GA and car insurance Rockmart GA from your local agent. Rockmart auto insurance quotes in minutes. Homeowners coverage for Polk County. 4.7★ Google rating.",
     introduction: [
       "The 30153 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking in March through May to flooding concerns along Euharlee Creek, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rockmart, Van Wert, or any neighborhood in the region.",
       "With approximately 18,006 residents and a median household income around $55,704, this diverse community includes manufacturing workers at Miura America and Axillon Aerospace, educators at Polk County School District, and healthcare professionals at local medical facilities. Each household has distinct insurance needs, whether protecting homes near Silver Comet Trail waterways or securing auto coverage for commutes to Georgia Northwestern Technical College."
