@@ -293,7 +293,7 @@ const Index = () => {
       {
         "@type": "Service",
         "@id": "https://coffeyagencies.com/#insurance-services",
-        "serviceType": "Insurance Agency Services",
+        "serviceType": "Auto Insurance Agency Services",
         "provider": {
           "@id": "https://coffeyagencies.com/#organization"
         },
@@ -364,7 +364,7 @@ const Index = () => {
         "@type": "WebPage",
         "@id": "https://coffeyagencies.com/#webpage",
         "url": "https://coffeyagencies.com/",
-        "name": "Insurance Agency in Centre, AL & Rome, GA | Coffey Agencies",
+        "name": "Auto Insurance Agency in Centre, AL & Rome, GA | Coffey Agencies",
         "description": "Alabama & Georgia's smarter way to insure. Bundle home + auto and save up to 25%. Free quotes on auto, home, renters, condo, life, and motorcycle insurance. Family-owned agency.",
         "isPartOf": {
           "@id": "https://coffeyagencies.com/#website"
@@ -461,7 +461,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Coffey Agencies | Insurance in Centre, AL & Rome, GA</title>
+        <title>Coffey Agencies | Auto Insurance Agency in Centre, AL & Rome, GA</title>
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
         {/* OpenGraph Meta Tags */}

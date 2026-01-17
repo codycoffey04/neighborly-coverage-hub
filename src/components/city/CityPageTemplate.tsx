@@ -296,16 +296,16 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
   return (
     <>
       <Helmet>
-        <title>{city.customMetaTitle || city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`}</title>
-        <meta 
-          name="description" 
-          content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
+        <title>{city.customMetaTitle || city.customHeroTitle || `Auto Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`}</title>
+        <meta
+          name="description"
+          content={city.customHeroSubhead || `Local auto insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service. Serving ${city.zipCodes.length > 1 ? 'ZIP codes' : 'ZIP code'} ${city.zipCodes.join(', ')}.`}
         />
         <link rel="canonical" href={`https://coffeyagencies.com/${city.slug}`} />
-        
+
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content={city.customMetaTitle || city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`} />
-        <meta property="og:description" content={city.customHeroSubhead || `Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service.`} />
+        <meta property="og:title" content={city.customMetaTitle || city.customHeroTitle || `Auto Insurance Agency in ${city.city}, ${city.state} | Coffey Agencies`} />
+        <meta property="og:description" content={city.customHeroSubhead || `Local auto insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance with personalized service.`} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://coffeyagencies.com/${city.slug}`} />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -316,7 +316,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`Insurance in ${city.city}, ${city.stateAbbr} | Coffey Agencies`} />
-        <meta name="twitter:description" content={`Local insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance.`} />
+        <meta name="twitter:description" content={`Local auto insurance agency serving ${city.city}, ${city.state}. Auto, home, renters, condo, and life insurance.`} />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         {/* Combined Schema Graph */}
@@ -361,7 +361,7 @@ export const CityPageTemplate = ({ city }: CityPageTemplateProps) => {
           
           {/* Title & Subhead */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            {city.customHeroTitle || `Insurance Agency in ${city.city}, ${city.state}`}
+            {city.customHeroTitle || `Auto Insurance Agency in ${city.city}, ${city.state}`}
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mb-6 drop-shadow">
             {city.customHeroSubhead || `Local expertise for ${city.city} families — auto, home, renters, condo, and life insurance`}
