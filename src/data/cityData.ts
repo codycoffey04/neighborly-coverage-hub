@@ -2138,8 +2138,9 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customHeroTitle: "Insurance in Dallas, GA (30132)",
-    customHeroSubhead: "Auto insurance for Paulding County's long-haul commuters, homeowners coverage that accounts for Georgia's tornado season, and bundle discounts up to 25%. 4.6-star rated service from a family-owned agency that picks up the phone.",
+    customMetaTitle: "Auto Insurance Dallas GA - Car Insurance Quotes | Coffey Agencies",
+    customHeroTitle: "Auto Insurance in Dallas, GA - Car Insurance Quotes",
+    customHeroSubhead: "Auto insurance Dallas GA and car insurance Dallas GA from your local agent. Insurance bundle Dallas GA saves up to 25%. Homeowners coverage for Paulding County. 4.6★ Google rating.",
     introduction: [
       "Dallas sits at the heart of Paulding County—Georgia's exurban frontier where 40-minute commutes toward Atlanta and Cobb County are the norm. With nearly 40% of workers driving 45 minutes or more each way on US-278 and GA-120, residents here log serious highway miles before the workday starts. That March 2025 EF-1 tornado that damaged 14 homes from Seven Hills to Bentwater? A reminder that Paulding's rolling hills don't stop severe weather. Coffey Agencies has served Dallas families since 2009, building coverage around how you actually live—not a template written for downtown Atlanta.",
       "Paulding County's median home value of $346,500 reflects the area's growth as young families trade Atlanta congestion for more space. That price point directly affects dwelling coverage limits—underinsure a $350,000 home by 15% and you're $52,000 short after a total loss. Dallas functions as a bedroom community. Most residents commute out for work, which means the average household owns two vehicles. That creates bundling opportunities—combining home and auto policies typically saves 15-25%—but also requires adequate liability limits for all that road time. Georgia's 25/50/25 minimums won't cover a serious collision on I-20 or GA-120."
