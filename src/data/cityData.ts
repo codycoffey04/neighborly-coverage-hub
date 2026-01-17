@@ -1143,7 +1143,7 @@ export const cityData: Record<string, CityData> = {
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Auto Insurance Rome GA - Car Insurance Quotes | Coffey Agencies",
     customHeroTitle: "Auto Insurance in Rome, GA - Car Insurance Quotes",
-    customHeroSubhead: "Auto insurance Rome GA and car insurance Rome GA from your local agent. Homeowners coverage and bundle options. 4.6★ Google rating. Digital service from our Rome, GA office.",
+    customHeroSubhead: "Auto insurance Rome GA and car insurance Rome GA from your local agent. Compare insurance companies Rome GA trusts. Homeowners coverage and bundle options. 4.6★ Google rating.",
     introduction: [
       "The 30161 area faces unique insurance challenges requiring specialized understanding of local risks. From tornado threats peaking March through May to flooding concerns at the confluence of the Oostanaula, Etowah, and Coosa rivers, residents need insurance protection tailored to Northwest Georgia's specific hazards. Our digital service model delivers expert coverage recommendations without requiring you to leave your home in Downtown Rome, Garden Lakes, or any neighborhood in the region.",
       "With approximately 37,000 residents and a median household income around $38,000, this diverse community includes healthcare professionals at Floyd Medical Center and Redmond Regional Medical Center, educators at Berry College and Shorter University, manufacturing workers at Pirelli Tire and F&P Georgia, and families throughout Floyd County. Each household has distinct insurance needs, whether protecting homes near the Riverside area or securing auto coverage for commutes through West Rome. Rome's unique position at the three-river confluence creates specific flooding risks that factor into insurance considerations."
@@ -1187,6 +1187,10 @@ export const cityData: Record<string, CityData> = {
       {
         question: "How quickly can I get coverage for my property?",
         answer: "Most insurance policies can begin immediately upon approval, often within just a few hours of completing your application. Our streamlined digital process means Rome residents can receive quotes within minutes online or by phone, and have active coverage the same day you apply. If you need proof of insurance quickly—for example, to finalize a car purchase at a dealership, satisfy a lender requirement, or provide documentation to a landlord before signing a lease—we can typically issue your insurance ID cards and declarations page within hours. Our team understands that life doesn't always wait, so we prioritize fast turnaround times while still ensuring you have the right coverage for your situation. Just let us know your timeline and we'll work to meet it, whether you're protecting homes in West Rome, the Berry College area, or any other neighborhood throughout the 30161 area. Our Rome office is also available for in-person service if you prefer."
+      },
+      {
+        question: "What insurance companies do you work with in Rome, GA?",
+        answer: "As an exclusive agency, we work with multiple insurance companies Rome GA residents can choose from. Unlike captive agents who only sell one company's products, we compare rates from several carriers to find the best fit for your situation. This means you get quotes from multiple insurance companies in one call, saving time while often finding better rates. Our Rome office represents trusted carriers for auto, home, renters, and other coverage types."
       }
     ],
     localArticle: {
