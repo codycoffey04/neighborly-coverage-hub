@@ -296,13 +296,13 @@ const MotorcycleInsurance = () => {
   return (
     <>
       <Helmet>
-        <title>Motorcycle Insurance Centre AL & Rome GA | Coffey Agencies</title>
-        <meta name="description" content="Ride protected with motorcycle insurance from Coffey Agencies. Liability, collision, comprehensive & custom parts coverage in Alabama & Georgia. Free quotes." />
+        <title>Motorcycle Insurance Alabama & Georgia | Bike Coverage Quotes</title>
+        <meta name="description" content="Motorcycle insurance Alabama and motorcycle insurance Georgia from your local agency. Cheap motorcycle insurance quotes for cruisers, sport bikes, Harleys. Serving AL & GA riders." />
         <link rel="canonical" href="https://coffeyagencies.com/services/motorcycle-insurance" />
         
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="Motorcycle Insurance Centre AL & Rome GA | Coffey Agencies" />
-        <meta property="og:description" content="Ride protected with motorcycle insurance from Coffey Agencies. Liability, collision, comprehensive & custom parts coverage in Alabama & Georgia. Free quotes." />
+        <meta property="og:title" content="Motorcycle Insurance Alabama & Georgia | Bike Coverage Quotes" />
+        <meta property="og:description" content="Motorcycle insurance Alabama and motorcycle insurance Georgia from your local agency. Cheap motorcycle insurance quotes for cruisers, sport bikes, Harleys." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/motorcycle-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -353,7 +353,7 @@ const MotorcycleInsurance = () => {
             
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-                Motorcycle Insurance Alabama - Get Bike Coverage Quotes
+                Motorcycle Insurance Alabama & Georgia
               </h1>
               <p className="text-xl md:text-2xl text-white/95 mb-6 drop-shadow-md max-w-3xl mx-auto">
                 Whether you call it motorcycle insurance or bike insurance, we've got you covered. Hit the road with confidence on Cheaha Mountain, Georgia's Dragon's Lair, or the Natchez Trace. Custom coverage for AL and GA riders—cruisers, sport bikes, touring machines—protecting your bike, your gear, and your riding style.
@@ -526,8 +526,26 @@ const MotorcycleInsurance = () => {
           </div>
         </section>
 
-        {/* Motorcycle Insurance for New Riders Section */}
+        {/* Motorcycle Insurance Georgia Section */}
         <section className="py-16 px-4 bg-muted/30">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Motorcycle Insurance Georgia - Coverage for GA Riders</h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-muted-foreground mb-6">
+                <strong>Motorcycle insurance Georgia</strong> riders need reflects the state's unique riding environment. From Atlanta's urban traffic to north Georgia's mountain roads, Georgia motorcycle insurance must address diverse risks. Georgia recorded 221 motorcyclist fatalities in 2022—the highest in a decade—making adequate coverage essential for every GA rider. Whether you're commuting on I-285, carving corners on GA-60 near Suches, or cruising through Savannah, your motorcycle insurance Georgia policy should match how and where you ride.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                How much does <strong>motorcycle insurance in Georgia</strong> cost? Georgia riders typically pay $400-450 per year for full coverage—slightly higher than Alabama due to higher urban density and theft rates in the Atlanta metro area. The cheapest motorcycle insurance Georgia offers starts around $20-25/month for liability-only coverage meeting the state's 25/50/25 minimum requirements. However, we recommend higher limits given Georgia's traffic density and uninsured driver rates. <strong>Georgia motorcycle insurance</strong> rates depend on your location (Fulton and Gwinnett counties cost more than rural areas), bike type, riding experience, and coverage selections.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                Finding <strong>cheap motorcycle insurance Georgia</strong> riders can afford starts with bundling. Combine your motorcycle with auto or home insurance for 10-15% savings. MSF course completion earns additional discounts with most carriers. For riders in Rome, Cartersville, Dalton, and throughout northwest Georgia, our local knowledge helps match you with carriers that understand Georgia riding conditions. We serve riders across Floyd County, Bartow County, Gordon County, Whitfield County, and the greater Atlanta metro—comparing rates to find competitive <strong>motorcycle insurance Georgia</strong> coverage.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Motorcycle Insurance for New Riders Section */}
+        <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Motorcycle Insurance for New Riders</h2>
             <div className="prose prose-lg max-w-none">
