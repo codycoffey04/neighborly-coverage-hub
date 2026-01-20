@@ -286,12 +286,12 @@ const AutoInsurance = () => {
     <>
       <Helmet>
         <title>Auto Insurance Centre AL & Rome GA | Coffey Agencies</title>
-        <meta name="description" content="Get affordable auto insurance in Centre, AL & Rome, GA. Liability, collision, comprehensive & more. Free quotes from your local Allstate agent. Call today." />
+        <meta name="description" content="Get affordable auto insurance in Centre, AL & Rome, GA. Liability, collision, comprehensive & more. Free quotes from Coffey Agencies. Call today!" />
         <link rel="canonical" href="https://coffeyagencies.com/services/auto-insurance" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Auto Insurance Centre AL & Rome GA | Coffey Agencies" />
-        <meta property="og:description" content="Get affordable auto insurance in Centre, AL & Rome, GA. Liability, collision, comprehensive & more. Free quotes from your local Allstate agent. Call today." />
+        <meta property="og:description" content="Get affordable auto insurance in Centre, AL & Rome, GA. Liability, collision, comprehensive & more. Free quotes from Coffey Agencies. Call today!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/services/auto-insurance" />
         <meta property="og:site_name" content="Coffey Agencies" />
