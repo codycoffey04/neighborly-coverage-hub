@@ -18,6 +18,7 @@ export interface CityData {
   
   // Extended content for flagship office pages (optional)
   customMetaTitle?: string; // For <title> tag (separate from H1)
+  customMetaDescription?: string; // For meta description (separate from hero subhead)
   customHeroTitle?: string;
   customHeroSubhead?: string;
   weatherRisks?: string;
@@ -992,6 +993,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(256) 927-6287",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car & Home Insurance in Huntsville, AL | Coffey Agencies",
+    customMetaDescription: "Car & home insurance in Huntsville, AL. Coverage for Rocket City commuters and storm-prone homes. 4.7★ rated, 116 reviews. Se habla español. Free quotes.",
     customHeroTitle: "Insurance in Huntsville, AL (35801)",
     customHeroSubhead: "Car insurance for Rocket City commuters, homeowners coverage designed for Alabama's severe storm corridor, and bundle discounts that put money back in your pocket. Coffey Agencies holds a 4.7-star rating from 116 Google reviews—and yes, we actually answer the phone. Se habla español.",
     introduction: [
