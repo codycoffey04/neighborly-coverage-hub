@@ -462,11 +462,12 @@ const Index = () => {
     <>
       <Helmet>
         <title>Coffey Agencies | Auto Insurance Agency in Centre, AL & Rome, GA</title>
+        <meta name="description" content="Insurance agency in Centre, AL & Rome, GA serving Alabama and Georgia. Free quotes for auto, home, life & more. 4.7★ rated. Se habla español." />
         <link rel="canonical" href="https://coffeyagencies.com/" />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="Coffey Agencies | Insurance in Centre, AL & Rome, GA" />
-        <meta property="og:description" content="Family-owned Allstate agency serving 33 cities across Alabama & Georgia since 2009. Auto, home, life & specialty insurance. Call (256) 927-6287 for a free quote." />
+        <meta property="og:description" content="Insurance agency in Centre, AL & Rome, GA serving Alabama and Georgia. Free quotes for auto, home, life & more. 4.7★ rated. Se habla español." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://coffeyagencies.com/" />
         <meta property="og:site_name" content="Coffey Agencies" />
@@ -477,7 +478,7 @@ const Index = () => {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Coffey Agencies | Insurance in Centre, AL & Rome, GA" />
-        <meta name="twitter:description" content="Family-owned Allstate agency serving 33 cities across Alabama & Georgia since 2009. Auto, home, life & specialty insurance. Call (256) 927-6287 for a free quote." />
+        <meta name="twitter:description" content="Insurance agency in Centre, AL & Rome, GA serving Alabama and Georgia. Free quotes for auto, home, life & more. 4.7★ rated. Se habla español." />
         <meta name="twitter:image" content="https://coffeyagencies.com/og-image.jpg" />
         
         <link rel="preload" as="image" href={heroBackground} />
