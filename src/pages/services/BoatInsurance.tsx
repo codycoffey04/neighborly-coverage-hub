@@ -301,6 +301,29 @@ const breadcrumbSchema = {
   ]
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get Boat Insurance in Alabama & Georgia",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Request a Quote",
+      "text": "Call us or fill out our online form to request a free boat insurance quote."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Review Your Options",
+      "text": "We'll explain your coverage options and help you choose the right policy."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Get Covered",
+      "text": "Complete your application and get proof of insurance, often same-day."
+    }
+  ]
+};
+
 const BoatInsurance = () => {
   return (
     <>
@@ -321,6 +344,7 @@ const BoatInsurance = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
       </Helmet>
 
       <Header />

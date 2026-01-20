@@ -307,6 +307,30 @@ const ATVInsurance = () => {
     ]
   };
 
+  // HowTo Schema
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Get ATV & UTV Insurance in Alabama & Georgia",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Request a Quote",
+        "text": "Call us or fill out our online form to request a free ATV/UTV insurance quote."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Review Your Options",
+        "text": "We'll explain your coverage options and help you choose the right policy."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Get Covered",
+        "text": "Complete your application and get proof of insurance, often same-day."
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -335,13 +359,14 @@ const ATVInsurance = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
       </Helmet>
 
       <Header />
 
       <main id="main-content">
         {/* Hero Section */}
-        <section 
+        <section
           className="relative min-h-[500px] md:min-h-[550px] flex items-end bg-cover bg-center"
           style={{ backgroundImage: `url(${atvHeroImage})` }}
         >
