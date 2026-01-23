@@ -28,3 +28,29 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# 301 Redirects - Old URL structure to new
+[[redirects]]
+  from = "/auto-insurance"
+  to = "/services/auto-insurance"
+  status = 301
+
+[[redirects]]
+  from = "/home-insurance"
+  to = "/services/home-insurance"
+  status = 301
+
+[[redirects]]
+  from = "/condo-insurance"
+  to = "/services/condo-insurance"
+  status = 301
+
+[[redirects]]
+  from = "/life-insurance"
+  to = "/services/life-insurance"
+  status = 301
+
+[[redirects]]
+  from = "/quote"
+  to = "/contact"
+  status = 301
+
