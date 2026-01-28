@@ -72,9 +72,9 @@ const Refer = () => {
     <>
       <Helmet>
         <title>Refer a Friend | Coffey Agencies Referral Program</title>
-        <meta 
-          name="description" 
-          content="Know someone who needs insurance? Refer them to Coffey Agencies and help your friends and family get great coverage in Alabama & Georgia." 
+        <meta
+          name="description"
+          content="Refer a friend to Coffey Agencies and get a $10 gift card when we quote them. No purchase necessary. Serving Alabama & Georgia."
         />
         <link rel="canonical" href="https://coffeyagencies.com/refer" />
         <script type="application/ld+json">
@@ -108,15 +108,15 @@ const Refer = () => {
                 <Users className="h-8 w-8 text-white" />
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-lg">
-                Refer a Friend
+                Refer a Friend, Get $10
               </h1>
             </div>
 
             <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-md">
-              Know someone who needs an insurance quote? Send them our way. When your referral gets a quote, we'll thank you with a gift card.
+              Know someone who needs insurance? We'll send you a <strong>$10 gift card</strong> just for the referral — no purchase necessary.
             </p>
             <p className="text-lg text-white/80 mt-4 drop-shadow-md">
-              Just share their contact info with us. We'll handle the rest.
+              Share their info below. We'll reach out within 24 hours.
             </p>
           </div>
         </section>
@@ -240,7 +240,7 @@ const Refer = () => {
 
             {/* Small text */}
             <p className="text-center text-sm text-muted-foreground mt-8">
-              No purchase necessary.
+              Your $10 gift card is ready for pickup once we provide their quote. No purchase necessary.
             </p>
           </div>
         </section>
