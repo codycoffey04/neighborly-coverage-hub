@@ -149,6 +149,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(256) 927-6287",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Auto Insurance Decatur AL - Car Insurance Quotes | Coffey Agencies",
+    customMetaDescription: "Auto insurance Decatur AL from your local agent. Car insurance quotes in minutes. Homeowners coverage for Morgan County. 4.7★ rated. Se habla español.",
     customHeroTitle: "Auto Insurance in Decatur, AL - Car Insurance Quotes",
     customHeroSubhead: "Auto insurance Decatur AL and car insurance Decatur AL from your local agent. Decatur car insurance quotes in minutes. Homeowners coverage for Morgan County. 4.7★ Google rating. Se habla español.",
     introduction: [
@@ -224,7 +225,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(256) 927-6287",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Quotes Centre AL | Auto & Home Bundle | Coffey Agencies",
-    customMetaDescription: "Get car insurance quotes in Centre, AL from your local agent since 2009. Auto insurance, homeowners insurance, renters coverage. Office: 1913 W Main St. (256) 927-6287",
+    customMetaDescription: "Car insurance quotes in Centre, AL from your local agent since 2009. Auto, homeowners, and renters coverage. Office: 1913 W Main St. (256) 927-6287",
     customHeroTitle: "Car Insurance Quotes in Centre, AL",
     customHeroSubhead: "Get Centre auto insurance quotes from your local insurance agent since 2009. Car insurance, homeowners insurance, and renters coverage. Insurance bundle Centre AL saves up to $600. 4.7★ Google rating.",
     introduction: [
@@ -354,6 +355,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Birmingham AL | Auto & Home | Coffey Agencies",
+    customMetaDescription: "Auto insurance Birmingham AL for I-65 commuters. Homeowners coverage and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     customHeroTitle: "Car Insurance Birmingham AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Auto insurance Birmingham AL 35215, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
@@ -419,6 +421,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Montgomery AL | Free Quotes | Coffey Agencies",
+    customMetaDescription: "Auto insurance Montgomery AL for capital city drivers. Homeowners coverage and bundle options. 4.7★ Google rating. Digital service from Centre, AL office.",
     customHeroTitle: "Car Insurance Montgomery AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Auto insurance Montgomery AL 36116, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
@@ -517,6 +520,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(251) 551-1350",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Mobile AL | Auto & Home | Coffey Agencies",
+    customMetaDescription: "Auto insurance Mobile AL for Gulf Coast drivers. Homeowners coverage for hurricane season. Bundle options available. 4.7★ rated. Se habla español.",
     customHeroTitle: "Car Insurance Mobile AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Auto insurance Mobile AL 36601, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
@@ -600,6 +604,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Dothan AL | Auto & Home | Coffey Agencies",
+    customMetaDescription: "Car insurance for Circle City drivers. Homeowners coverage for Wiregrass storm season. Bundle discounts up to 25%. 4.7★ rated. Se habla español.",
     customHeroTitle: "Car Insurance Dothan AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Car insurance for Circle City drivers, homeowners coverage built for Wiregrass storm season, and bundle discounts up to 25%. Coffey Agencies brings 4.7-star rated service to the Peanut Capital of the World—no office visit required. Se habla español.",
     introduction: [
@@ -663,6 +668,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Auburn AL | Auto & Home | Coffey Agencies",
+    customMetaDescription: "Car insurance for Auburn drivers and Lee County homeowners. Coverage for gameday traffic, college students, and storm season. 4.7★ rated. Se habla español.",
     customHeroTitle: "Car Insurance Auburn AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Car insurance for Auburn drivers navigating gameday traffic and college corridors, homeowners coverage built for Lee County storms, and renters insurance designed for AU students protecting laptops, bikes, and everything in between. Coffey Agencies delivers 4.7-star rated service to the Loveliest Village on the Plains. Se habla español.",
     introduction: [
@@ -935,6 +941,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car & Home Insurance in Enterprise, AL | Coffey Agencies",
+    customMetaDescription: "Car insurance for military families near Fort Novosel. Homeowners and renters coverage for Enterprise AL. 4.7★ rated service. Se habla español.",
     customHeroTitle: "Insurance in Enterprise, AL (36330)",
     customHeroSubhead: "Car insurance for military families navigating PCS moves and multi-vehicle households, homeowners coverage for first-time buyers near Fort Rucker, and renters insurance designed for soldiers protecting belongings through deployments and temporary duty assignments. Coffey Agencies delivers 4.7-star rated service to the heart of Army Aviation country. Se habla español.",
     introduction: [
@@ -1079,6 +1086,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
     customMetaTitle: "Car Insurance Tuscaloosa AL | Free Quotes | Coffey Agencies",
+    customMetaDescription: "Car insurance Tuscaloosa AL for McFarland Blvd commuters. Homeowners coverage for tornado season. Renters insurance for UA students. 4.7★ rated.",
     customHeroTitle: "Car Insurance Tuscaloosa - Auto Insurance Quotes",
     customHeroSubhead: "Car insurance Tuscaloosa AL drivers trust. Auto insurance for McFarland Boulevard commuters and gameday traffic. Homeowners coverage for tornado alley. Renters insurance for 42,000 UA students. 4.7★ Google rating. Se habla español.",
     introduction: [
@@ -1154,7 +1162,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(706) 784-6511",
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Car Insurance Quotes Rome GA | Auto & Home Bundle | Coffey Agencies",
-    customMetaDescription: "Get car insurance quotes in Rome, GA from your local agent. Compare auto insurance, home & renters coverage. Office: 1703 Turner McCall Blvd. Se habla español. (706) 784-6511",
+    customMetaDescription: "Car insurance quotes in Rome, GA from your local agent. Auto, home, and renters coverage. 1703 Turner McCall Blvd. Se habla español. (706) 784-6511",
     customHeroTitle: "Car Insurance Quotes in Rome, GA",
     customHeroSubhead: "Get Rome auto insurance quotes from your local agent. Compare car insurance, home insurance, and renters coverage from insurance companies Rome GA trusts. Bundle and save up to $600. 4.6★ Google rating. Se habla español.",
     introduction: [
@@ -1229,6 +1237,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(678) 679-5311",
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Car Insurance Atlanta GA | Compare Rates | Coffey Agencies",
+    customMetaDescription: "Auto insurance Atlanta GA for metro area drivers. Homeowners coverage and bundle discounts up to 25%. 4.7★ rated. Digital service from our Rome office.",
     customHeroTitle: "Auto Insurance Quote Atlanta, GA - Compare Rates & Save",
     customHeroSubhead: "Auto insurance Atlanta GA 30349, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
@@ -1451,6 +1460,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Car Insurance Cartersville GA | Free Quotes | Coffey Agencies",
+    customMetaDescription: "Auto insurance Cartersville GA for I-75 commuters. Homeowners coverage and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     customHeroTitle: "Cheap Car Insurance in Cartersville, GA",
     customHeroSubhead: "Auto insurance Cartersville GA 30120, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
@@ -1811,6 +1821,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Car Insurance Alpharetta GA | Free Quotes | Coffey Agencies",
+    customMetaDescription: "Auto insurance Alpharetta GA for North Fulton commuters. Homeowners coverage and bundle options. 4.7★ Google rating. Digital service from Rome, GA office.",
     customHeroTitle: "Auto Insurance Quote Alpharetta, GA - Compare Rates & Save",
     customHeroSubhead: "Auto insurance Alpharetta GA 30004, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
@@ -2092,6 +2103,7 @@ export const cityData: Record<string, CityData> = {
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Car Insurance Canton GA | Auto & Home Quotes | Coffey Agencies",
+    customMetaDescription: "Auto insurance for Canton GA drivers on I-575. Homeowners coverage for Cherokee County hail season. Bundle and save up to 25%. 4.6★ rated service.",
     customHeroTitle: "Insurance in Canton, GA (30114)",
     customHeroSubhead: "Auto insurance for drivers navigating I-575, homeowners coverage built for Cherokee County's hail season, and bundle discounts up to 25%. 4.6-star rated service from a family-owned agency that answers the phone.",
     introduction: [
@@ -2238,6 +2250,7 @@ export const cityData: Record<string, CityData> = {
 localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
     customMetaTitle: "Car Insurance Cumming GA - Auto Insurance Quotes | Coffey Agencies",
+    customMetaDescription: "Auto insurance for GA-400 commuters. Homeowners coverage for Forsyth County. Boat insurance for Lake Lanier. 4.6★ rated family-owned agency.",
     customHeroTitle: "Car Insurance in Cumming, GA",
     customHeroSubhead: "Auto insurance for GA-400 commuters, homeowners coverage built for half-million-dollar properties, and boat insurance for Lake Lanier. 4.6-star rated service from a family-owned agency that answers the phone.",
     introduction: [
