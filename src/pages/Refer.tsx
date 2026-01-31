@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { CheckCircle, ChevronRight, Users } from "lucide-react";
+import { CheckCircle, ChevronRight, Users, Gift, Phone, CreditCard } from "lucide-react";
 import referHero from "@/assets/refer-hero.jpg";
 import { Header } from "@/components/homepage/Header";
 import { Footer } from "@/components/homepage/Footer";
@@ -118,6 +118,39 @@ const Refer = () => {
             <p className="text-lg text-white/80 mt-4 drop-shadow-md">
               Share their info below. We'll reach out within 24 hours.
             </p>
+          </div>
+        </section>
+
+        {/* How It Works Section */}
+        <section className="py-12 bg-muted/30">
+          <div className="container-custom">
+            <h2 className="text-2xl font-bold text-center text-foreground mb-8">How It Works</h2>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center text-center p-6 bg-background rounded-xl border border-border">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                  <Users className="h-6 w-6 text-accent" />
+                </div>
+                <div className="text-sm font-semibold text-accent mb-2">Step 1</div>
+                <h3 className="font-semibold text-foreground mb-2">Submit a Referral</h3>
+                <p className="text-sm text-muted-foreground">Share your friend's name and phone number using the form below.</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6 bg-background rounded-xl border border-border">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                  <Phone className="h-6 w-6 text-accent" />
+                </div>
+                <div className="text-sm font-semibold text-accent mb-2">Step 2</div>
+                <h3 className="font-semibold text-foreground mb-2">We Call Them</h3>
+                <p className="text-sm text-muted-foreground">Our team reaches out within 24 hours to provide a free quote.</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6 bg-background rounded-xl border border-border">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                  <Gift className="h-6 w-6 text-accent" />
+                </div>
+                <div className="text-sm font-semibold text-accent mb-2">Step 3</div>
+                <h3 className="font-semibold text-foreground mb-2">Get Your $10</h3>
+                <p className="text-sm text-muted-foreground">Pick up your gift card once the quote is provided. No purchase necessary.</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -242,6 +275,31 @@ const Refer = () => {
             <p className="text-center text-sm text-muted-foreground mt-8">
               Your $10 gift card is ready for pickup once we provide their quote. No purchase necessary.
             </p>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-12 bg-muted/30">
+          <div className="container-custom max-w-2xl">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Common Questions</h2>
+            <div className="space-y-4">
+              <div className="bg-background rounded-lg border border-border p-5">
+                <h3 className="font-semibold text-foreground mb-2">Do they have to buy a policy for me to get the gift card?</h3>
+                <p className="text-muted-foreground">No. You get the $10 gift card once we provide them a quote — no purchase necessary.</p>
+              </div>
+              <div className="bg-background rounded-lg border border-border p-5">
+                <h3 className="font-semibold text-foreground mb-2">How many people can I refer?</h3>
+                <p className="text-muted-foreground">There's no limit. Refer as many friends and family as you'd like — $10 for each quote we provide.</p>
+              </div>
+              <div className="bg-background rounded-lg border border-border p-5">
+                <h3 className="font-semibold text-foreground mb-2">How do I pick up my gift card?</h3>
+                <p className="text-muted-foreground">Stop by our Centre, AL or Rome, GA office. We'll have it ready for you.</p>
+              </div>
+              <div className="bg-background rounded-lg border border-border p-5">
+                <h3 className="font-semibold text-foreground mb-2">Do I have to be a current customer?</h3>
+                <p className="text-muted-foreground">No. Anyone can refer a friend and earn the $10 gift card.</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
