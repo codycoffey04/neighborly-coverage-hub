@@ -34,9 +34,9 @@ export interface LearnArticle {
 export const learnArticles: LearnArticle[] = [
   {
     slug: "atv-utv-insurance-guide",
-    title: "ATV & UTV Insurance Guide: Do You Need It, What It Covers, and What It Costs",
-    metaTitle: "ATV & UTV Insurance Guide | Off-Road Coverage | Coffey Agencies",
-    metaDescription: "Learn about ATV and UTV insurance requirements and coverage options. Protect your off-road vehicle in Alabama and Georgia.",
+    title: "ATV & UTV Insurance Guide: Coverage Types, Costs, and Tips for Alabama & Georgia",
+    metaTitle: "ATV & UTV Insurance Guide | Coverage, Costs & Tips | Coffey Agencies",
+    metaDescription: "Complete guide to ATV and UTV insurance: what coverage you need, typical costs ($75-$500/yr), discounts, and tips for Alabama and Georgia riders.",
     excerpt: "Everything ATV and UTV owners need to know about coverage types, costs, and when insurance is required vs just smart to have.",
     category: "ATV/UTV Insurance",
     readTime: "15 min read",
@@ -325,6 +325,196 @@ export const learnArticles: LearnArticle[] = [
       {
         type: 'paragraph',
         content: "These are estimates. Your actual quote depends on all factors above."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "ATV Insurance Discounts — How to Lower Your Premium"
+      },
+      {
+        type: 'paragraph',
+        content: "Most insurers offer discounts that can reduce your ATV or UTV insurance premium. Here are the most common ways to save."
+      },
+      {
+        type: 'list',
+        content: [
+          "Safety course discount — Complete an ATV Safety Institute course or similar approved program. Many insurers offer 5-15% off for riders who've completed safety training within the past 3 years.",
+          "Multi-vehicle discount — Insure multiple ATVs, UTVs, motorcycles, or snowmobiles on the same policy. Savings typically range from 10-25%.",
+          "Bundling discount — Add ATV insurance to your existing auto, home, or renters policy with the same company. This often provides 5-10% savings on each policy.",
+          "Paid-in-full discount — Pay your annual premium upfront instead of monthly installments. Expect 5-10% savings.",
+          "Homeowner discount — Owning a home (even if insured elsewhere) may qualify you for lower rates.",
+          "Theft-recovery device discount — Installing a GPS tracker or other recovery device on your ATV or UTV can reduce comprehensive premiums.",
+          "Riding association discount — Membership in approved ATV or off-road riding associations may qualify for additional savings."
+        ]
+      },
+      {
+        type: 'callout',
+        variant: 'info',
+        content: "Tip: Ask about every available discount when getting quotes. Combining multiple discounts — like safety course + multi-vehicle + paid-in-full — can reduce your premium by 20-30% or more."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "ATV Insurance Tips for Alabama and Georgia Riders"
+      },
+      {
+        type: 'paragraph',
+        content: "Here are practical tips to help you get the right coverage at the best price in Alabama or Georgia."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Before You Buy Coverage"
+      },
+      {
+        type: 'list',
+        content: [
+          "Know your vehicle's value — Check NADA Guides or recent sales for your ATV/UTV model. This helps you choose appropriate coverage limits.",
+          "Inventory your accessories — Document aftermarket parts and upgrades with photos and receipts. Standard policies often limit accessory coverage to $500-$1,000.",
+          "Understand how you'll ride — Off-road only? Occasional road use? Trail parks? Your usage affects what coverage you need.",
+          "Check lender requirements early — If financing, get lender requirements before shopping. This prevents surprises at closing.",
+          "Get multiple quotes — Prices vary significantly between insurers. Compare at least 3 quotes for the same coverage."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Saving Money on Your Policy"
+      },
+      {
+        type: 'list',
+        content: [
+          "Choose the right deductible — Higher deductibles mean lower premiums. If you can afford a $500 or $1,000 deductible, you'll pay less than with a $250 deductible.",
+          "Bundle with your auto policy — Many insurers offer significant discounts when you add ATV coverage to existing auto insurance.",
+          "Take a safety course — The ATV Safety Institute offers courses that may qualify for insurance discounts and make you a safer rider.",
+          "Consider liability-only for older ATVs — If your ATV is worth less than $3,000, the cost of collision/comprehensive may not justify the coverage.",
+          "Review coverage annually — As your ATV depreciates, you may want to adjust coverage limits or drop comprehensive on older vehicles."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Managing Your Policy"
+      },
+      {
+        type: 'list',
+        content: [
+          "Keep your policy active — A lapse in coverage can increase future premiums and may void lender agreements.",
+          "Update coverage after modifications — Major upgrades (engine, suspension, accessories) may require coverage adjustments.",
+          "Store proof of insurance digitally — Keep a photo or PDF of your insurance card on your phone for quick access at trail parks.",
+          "Review your policy before riding season — Spring is a good time to confirm your coverage still meets your needs."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "What Type of ATV Insurance Do You Need? Quick Decision Guide"
+      },
+      {
+        type: 'paragraph',
+        content: "Not sure what coverage to get? Use this quick guide based on your situation."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "You NEED Liability Coverage If:"
+      },
+      {
+        type: 'list',
+        content: [
+          "You ride anywhere other than your own property",
+          "You ride with passengers",
+          "You have assets to protect (home, savings, income)",
+          "You ride at trail parks that require insurance",
+          "You plan to register for road use (Georgia MPOHV)"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "You NEED Full Coverage (Liability + Collision + Comprehensive) If:"
+      },
+      {
+        type: 'list',
+        content: [
+          "You're financing your ATV or UTV (lender requires it)",
+          "Your vehicle is worth more than $5,000",
+          "You couldn't afford to replace it out of pocket",
+          "You store your ATV away from home (higher theft risk)",
+          "You transport your ATV on a trailer frequently"
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Liability-Only MAY Be Enough If:"
+      },
+      {
+        type: 'list',
+        content: [
+          "Your ATV is worth less than $2,000-$3,000",
+          "You own it outright (no loan)",
+          "You could afford to replace it out of pocket",
+          "You primarily ride on your own property"
+        ]
+      },
+      {
+        type: 'callout',
+        variant: 'warning',
+        content: "Important: Even if you only ride on private property, liability coverage protects you if a guest is injured. Lawsuits don't care where the accident happened — they care who was at fault."
+      },
+      {
+        type: 'heading',
+        level: 2,
+        content: "ATV Insurance Resources for Alabama and Georgia"
+      },
+      {
+        type: 'paragraph',
+        content: "Here are helpful resources for ATV and UTV owners in Alabama and Georgia."
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "State DMV and Registration"
+      },
+      {
+        type: 'list',
+        content: [
+          "Alabama — ALEA Motor Vehicle Division handles off-road vehicle registration where required. County requirements vary for road use under SB64.",
+          "Georgia — Georgia DOR handles MPOHV registration for road-legal UTVs. Check with your county for specific road-use rules."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Safety Training"
+      },
+      {
+        type: 'list',
+        content: [
+          "ATV Safety Institute (SVIA) — Offers hands-on and online ATV safety courses. Completion may qualify for insurance discounts.",
+          "Recreational Off-Highway Vehicle Association (ROHVA) — Provides UTV/side-by-side specific safety training."
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        content: "Popular Riding Areas (Alabama and Georgia)"
+      },
+      {
+        type: 'list',
+        content: [
+          "Indian Mountain ATV Park — Piedmont, AL",
+          "Highland Park Off-Road Resort — Cedartown, GA",
+          "Durhamtown Off-Road — Union Point, GA",
+          "Houston Valley OHV — Dalton, GA",
+          "Beasley Knob OHV — Suches, GA",
+          "Stony Lonesome OHV — Bremen, AL"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Most organized riding areas require proof of liability insurance. Check specific park requirements before visiting."
       },
       {
         type: 'heading',
@@ -673,6 +863,10 @@ export const learnArticles: LearnArticle[] = [
       }
     ],
     faqs: [
+      {
+        question: "What type of insurance do I need for my ATV?",
+        answer: "At minimum, you need liability coverage if you ride anywhere other than your own property or carry passengers. If your ATV is financed or worth more than $5,000, you need full coverage (liability + collision + comprehensive). For older ATVs worth under $3,000 that you own outright, liability-only may be sufficient."
+      },
       {
         question: "Is ATV insurance required by law in Alabama or Georgia?",
         answer: "Not for off-road use. However, if you register a UTV for road use under Georgia's MPOHV law, liability insurance is required. Lenders also require coverage on financed vehicles, and many trail parks require proof of insurance."
