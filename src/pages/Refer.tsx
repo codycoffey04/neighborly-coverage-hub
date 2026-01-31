@@ -284,19 +284,19 @@ const Refer = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Common Questions</h2>
             <div className="space-y-4">
               <div className="bg-background rounded-lg border border-border p-5">
-                <h3 className="font-semibold text-foreground mb-2">Do they have to buy a policy for me to get the gift card?</h3>
+                <div className="font-semibold text-foreground mb-2">Do they have to buy a policy for me to get the gift card?</div>
                 <p className="text-muted-foreground">No. You get the $10 gift card once we provide them a quote — no purchase necessary.</p>
               </div>
               <div className="bg-background rounded-lg border border-border p-5">
-                <h3 className="font-semibold text-foreground mb-2">How many people can I refer?</h3>
+                <div className="font-semibold text-foreground mb-2">How many people can I refer?</div>
                 <p className="text-muted-foreground">There's no limit. Refer as many friends and family as you'd like — $10 for each quote we provide.</p>
               </div>
               <div className="bg-background rounded-lg border border-border p-5">
-                <h3 className="font-semibold text-foreground mb-2">How do I pick up my gift card?</h3>
+                <div className="font-semibold text-foreground mb-2">How do I pick up my gift card?</div>
                 <p className="text-muted-foreground">Stop by our Centre, AL or Rome, GA office. We'll have it ready for you.</p>
               </div>
               <div className="bg-background rounded-lg border border-border p-5">
-                <h3 className="font-semibold text-foreground mb-2">Do I have to be a current customer?</h3>
+                <div className="font-semibold text-foreground mb-2">Do I have to be a current customer?</div>
                 <p className="text-muted-foreground">No. Anyone can refer a friend and earn the $10 gift card.</p>
               </div>
             </div>
