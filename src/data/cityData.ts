@@ -353,7 +353,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car Insurance Birmingham AL — Auto, Home & Renters Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Birmingham AL | Auto & Home | Coffey Agencies",
     customHeroTitle: "Car Insurance Birmingham AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Auto insurance Birmingham AL 35215, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
@@ -418,7 +418,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car Insurance Montgomery AL — Auto & Home Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Montgomery AL | Free Quotes | Coffey Agencies",
     customHeroTitle: "Car Insurance Montgomery AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Auto insurance Montgomery AL 36116, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
@@ -516,7 +516,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(251) 551-1350",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Cheap Car Insurance Mobile AL - Auto Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Mobile AL | Auto & Home | Coffey Agencies",
     customHeroTitle: "Car Insurance Mobile AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Auto insurance Mobile AL 36601, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Centre, AL office.",
     introduction: [
@@ -599,7 +599,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car Insurance Dothan AL — Auto & Home Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Dothan AL | Auto & Home | Coffey Agencies",
     customHeroTitle: "Car Insurance Dothan AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Car insurance for Circle City drivers, homeowners coverage built for Wiregrass storm season, and bundle discounts up to 25%. Coffey Agencies brings 4.7-star rated service to the Peanut Capital of the World—no office visit required. Se habla español.",
     introduction: [
@@ -662,7 +662,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(334) 553-9258",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car Insurance Auburn AL — Auto, Home & Renters Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Auburn AL | Auto & Home | Coffey Agencies",
     customHeroTitle: "Car Insurance Auburn AL — Cheap Auto Insurance Quotes",
     customHeroSubhead: "Car insurance for Auburn drivers navigating gameday traffic and college corridors, homeowners coverage built for Lee County storms, and renters insurance designed for AU students protecting laptops, bikes, and everything in between. Coffey Agencies delivers 4.7-star rated service to the Loveliest Village on the Plains. Se habla español.",
     introduction: [
@@ -1078,7 +1078,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "centre",
     localPhone: "(205) 880-4893",
     heroImage: "alabama-hero.jpg",
-    customMetaTitle: "Car Insurance Tuscaloosa AL - Auto & Home Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Tuscaloosa AL | Free Quotes | Coffey Agencies",
     customHeroTitle: "Car Insurance Tuscaloosa - Auto Insurance Quotes",
     customHeroSubhead: "Car insurance Tuscaloosa AL drivers trust. Auto insurance for McFarland Boulevard commuters and gameday traffic. Homeowners coverage for tornado alley. Renters insurance for 42,000 UA students. 4.7★ Google rating. Se habla español.",
     introduction: [
@@ -1228,6 +1228,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(678) 679-5311",
     heroImage: "georgia-hero.jpg",
+    customMetaTitle: "Car Insurance Atlanta GA | Compare Rates | Coffey Agencies",
     customHeroTitle: "Auto Insurance Quote Atlanta, GA - Compare Rates & Save",
     customHeroSubhead: "Auto insurance Atlanta GA 30349, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
@@ -1449,7 +1450,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
-    customMetaTitle: "Cheap Car Insurance Cartersville GA - Auto Insurance Quotes | Coffey Agencies",
+    customMetaTitle: "Car Insurance Cartersville GA | Free Quotes | Coffey Agencies",
     customHeroTitle: "Cheap Car Insurance in Cartersville, GA",
     customHeroSubhead: "Auto insurance Cartersville GA 30120, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
@@ -1809,6 +1810,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
+    customMetaTitle: "Car Insurance Alpharetta GA | Free Quotes | Coffey Agencies",
     customHeroTitle: "Auto Insurance Quote Alpharetta, GA - Compare Rates & Save",
     customHeroSubhead: "Auto insurance Alpharetta GA 30004, homeowners coverage, and bundle options. 4.7★ Google rating. Digital service from our Rome, GA office.",
     introduction: [
@@ -2089,6 +2091,7 @@ export const cityData: Record<string, CityData> = {
     nearestOffice: "rome",
     localPhone: "(770) 746-7459",
     heroImage: "georgia-hero.jpg",
+    customMetaTitle: "Car Insurance Canton GA | Auto & Home Quotes | Coffey Agencies",
     customHeroTitle: "Insurance in Canton, GA (30114)",
     customHeroSubhead: "Auto insurance for drivers navigating I-575, homeowners coverage built for Cherokee County's hail season, and bundle discounts up to 25%. 4.6-star rated service from a family-owned agency that answers the phone.",
     introduction: [
