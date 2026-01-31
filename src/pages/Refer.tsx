@@ -131,7 +131,7 @@ const Refer = () => {
                   <Users className="h-6 w-6 text-accent" />
                 </div>
                 <div className="text-sm font-semibold text-accent mb-2">Step 1</div>
-                <h3 className="font-semibold text-foreground mb-2">Submit a Referral</h3>
+                <div className="text-lg font-semibold text-foreground mb-2">Submit a Referral</div>
                 <p className="text-sm text-muted-foreground">Share your friend's name and phone number using the form below.</p>
               </div>
               <div className="flex flex-col items-center text-center p-6 bg-background rounded-xl border border-border">
@@ -139,7 +139,7 @@ const Refer = () => {
                   <Phone className="h-6 w-6 text-accent" />
                 </div>
                 <div className="text-sm font-semibold text-accent mb-2">Step 2</div>
-                <h3 className="font-semibold text-foreground mb-2">We Call Them</h3>
+                <div className="text-lg font-semibold text-foreground mb-2">We Call Them</div>
                 <p className="text-sm text-muted-foreground">Our team reaches out within 24 hours to provide a free quote.</p>
               </div>
               <div className="flex flex-col items-center text-center p-6 bg-background rounded-xl border border-border">
@@ -147,7 +147,7 @@ const Refer = () => {
                   <Gift className="h-6 w-6 text-accent" />
                 </div>
                 <div className="text-sm font-semibold text-accent mb-2">Step 3</div>
-                <h3 className="font-semibold text-foreground mb-2">Get Your $10</h3>
+                <div className="text-lg font-semibold text-foreground mb-2">Get Your $10</div>
                 <p className="text-sm text-muted-foreground">Pick up your gift card once the quote is provided. No purchase necessary.</p>
               </div>
             </div>
