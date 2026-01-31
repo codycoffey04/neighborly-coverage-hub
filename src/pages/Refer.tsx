@@ -288,8 +288,8 @@ const Refer = () => {
                 <p className="text-muted-foreground">No. You get the $10 gift card once we provide them a quote — no purchase necessary.</p>
               </div>
               <div className="bg-background rounded-lg border border-border p-5">
-                <div className="font-semibold text-foreground mb-2">How many people can I refer?</div>
-                <p className="text-muted-foreground">There's no limit. Refer as many friends and family as you'd like — $10 for each quote we provide.</p>
+                <div className="font-semibold text-foreground mb-2">Will my friend know I referred them?</div>
+                <p className="text-muted-foreground">Only if you want them to. We'll mention you recommended us, but we won't share your contact info.</p>
               </div>
               <div className="bg-background rounded-lg border border-border p-5">
                 <div className="font-semibold text-foreground mb-2">How do I pick up my gift card?</div>
